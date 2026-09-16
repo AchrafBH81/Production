@@ -1,0 +1,158 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : MClient
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1c33e08004632085
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      MClient est une Classe <mapping=Client>
+      
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis l'analyse.
+      	<MAPPING>
+      	m_IDClient						est un entier							<mapping=IDClient, clé unique>
+      	m_nom							est une chaîne ANSI						<mapping=nom>
+      	m_numero						est une chaîne ANSI						<mapping=numero>
+      	m_fini							est un entier sur 2 octets				<mapping=fini>
+      	m_tolerancei					est un entier sur 2 octets				<mapping=tolerancei>
+      	m_tolerances					est un entier sur 2 octets				<mapping=tolerances>
+      	m_secteur						est une chaîne ANSI						<mapping=secteur>
+      	m_crue							est une chaîne ANSI						<mapping=crue>
+      	m_cville						est une chaîne ANSI						<mapping=cville>
+      	m_ccodepostal					est une chaîne ANSI						<mapping=ccodepostal>
+      	m_ctelephone					est une chaîne ANSI						<mapping=ctelephone>
+      	m_cfax							est une chaîne ANSI						<mapping=cfax>
+      	m_CEMAIL						est une chaîne ANSI						<mapping=CEMAIL>
+      	m_cmesure						est un entier sans signe sur 1 octet	<mapping=cmesure>
+      	m_cescompteinex					est un réel								<mapping=cescompteinex>
+      	m_cescomptecap					est un réel								<mapping=cescomptecap>
+      	m_cescomptecapillaire			est un réel								<mapping=cescomptecapillaire>
+      	m_cformatvideojet				est un entier sur 2 octets				<mapping=cformatvideojet>
+      	m_bulletinspecial				est un entier sans signe sur 1 octet	<mapping=bulletinspecial>
+      	m_cgazargon3					est un réel								<mapping=cgazargon3>
+      	m_cgazargon4					est un réel								<mapping=cgazargon4>
+      	m_cgazargon5					est un réel								<mapping=cgazargon5>
+      	m_cgazargon6					est un réel								<mapping=cgazargon6>
+      	m_videojet						est une chaîne ANSI						<mapping=videojet>
+      	m_ctransfertspecial				est un entier sans signe sur 1 octet	<mapping=ctransfertspecial>
+      	m_cactivationchampspecuaix		est un entier sans signe sur 1 octet	<mapping=cactivationchampspecuaix>
+      	m_cforme99defaut				est un entier sans signe sur 1 octet	<mapping=cforme99defaut>
+      	m_cimprimecarrelagenon			est un entier sans signe sur 1 octet	<mapping=cimprimecarrelagenon>
+      	m_surcharge						est un entier sans signe sur 1 octet	<mapping=surcharge>
+      	m_cdelaidegrace					est un entier sur 2 octets				<mapping=cdelaidegrace>
+      	m_cintercallaire				est un entier sans signe sur 1 octet	<mapping=cintercallaire>
+      	m_cachatminimum					est un réel								<mapping=cachatminimum>
+      	m_ctransport					est un réel								<mapping=ctransport>
+      	m_categorie						est une chaîne ANSI						<mapping=categorie>
+      	m_ckilomatre					est un entier sur 2 octets				<mapping=ckilomatre>
+      	m_cimpvideojetnon				est un entier sans signe sur 1 octet	<mapping=cimpvideojetnon>
+      	m_csurchargebase				est un réel								<mapping=csurchargebase>
+      	m_csurchargeverreunite			est un réel								<mapping=csurchargeverreunite>
+      	m_Csurchargecarrelage			est un réel sur 4 octets				<mapping=Csurchargecarrelage>
+      	m_Csurchargeforme				est un réel sur 4 octets				<mapping=Csurchargeforme>
+      	m_cnomcourt						est une chaîne ANSI						<mapping=cnomcourt>
+      	m_cspacerdefaut					est une chaîne ANSI						<mapping=cspacerdefaut>
+      	m_cminimuma						est un réel								<mapping=cminimuma>
+      	m_cminimumm						est un réel								<mapping=cminimumm>
+      	m_CImpressionAngMet				est un entier sur 2 octets				<mapping=CImpressionAngMet>
+      	m_CalculCarrPied				est un booléen							<mapping=CalculCarrPied>
+      	m_cDateDerniereListe			est une date							<mapping=cDateDerniereListe>
+      	m_ccourrielFacture				est une chaîne ANSI						<mapping=ccourrielFacture>
+      	m_cQteSpecialeContour			est un booléen							<mapping=cQteSpecialeContour>
+      	m_CLangue						est un entier sur 2 octets				<mapping=CLangue>
+      	m_cminimuma3					est un réel								<mapping=cminimuma3>
+      	m_Cminimuma4					est un réel								<mapping=Cminimuma4>
+      	m_cminimuma5					est un réel								<mapping=cminimuma5>
+      	m_cminimuma6					est un réel								<mapping=cminimuma6>
+      	m_cminimumm3					est un réel								<mapping=cminimumm3>
+      	m_cminimumm4					est un réel								<mapping=cminimumm4>
+      	m_cminimumm5					est un réel								<mapping=cminimumm5>
+      	m_cminimumm6					est un réel								<mapping=cminimumm6>
+      	m_cminimumPeinture				est un réel								<mapping=cminimumPeinture>
+      	m_CPrixSpecialPeintureCarrelage	est un réel								<mapping=CPrixSpecialPeintureCarrelage>
+      	m_cconfirmation					est un entier sur 2 octets				<mapping=cconfirmation>
+      	m_Cpourescompte					est un réel sur 4 octets				<mapping=Cpourescompte>
+      	m_ccondpaiement					est une chaîne ANSI						<mapping=ccondpaiement>
+      	m_Cextracarrelagedemi			est un réel sur 4 octets				<mapping=Cextracarrelagedemi>
+      	m_Calculsurfacereelle			est un booléen							<mapping=Calculsurfacereelle>
+      	m_CaDresselivraison				est un booléen							<mapping=CaDresselivraison>
+      	m_ccontact						est une chaîne ANSI						<mapping=ccontact>
+      	m_ccontacttitre					est une chaîne ANSI						<mapping=ccontacttitre>
+      	m_ccontactTel					est une chaîne ANSI						<mapping=ccontactTel>
+      	m_cBolqueLivraison				est un booléen							<mapping=cBolqueLivraison>
+      	m_tabccourrielBonLivraison			est un tableau de chaine //						<mapping=ccourrielBonLivraison>
+      	m_ccourrielConfirmation			est une chaîne ANSI						<mapping=ccourrielConfirmation>
+      	m_LivraisonPourVideojet			est un booléen							<mapping=LivraisonPourVideojet>
+      	m_CourrielListePrix				est une chaîne ANSI						<mapping=CourrielListePrix>
+      	m_surchargeverreunite			est un booléen							<mapping=surchargeverreunite>
+      	m_SUrchargecarrelage			est un booléen							<mapping=SUrchargecarrelage>
+      	m_SUrchargeforme				est un booléen							<mapping=SUrchargeforme>
+      	m_cetat							est un entier sur 2 octets				<mapping=cetat>
+      	m_dateDerniereCommande			est une date							<mapping=dateDerniereCommande>
+      	m_DateMiseInactif				est une date							<mapping=DateMiseInactif>
+      	m_cminimumatrempe				est un réel								<mapping=cminimumatrempe>
+      	m_cminimummtrempe				est un réel								<mapping=cminimummtrempe>
+      	m_IDTaxeGroupe					est un entier							<mapping=IDTaxeGroupe>
+      	m_cInterurbain					est un booléen							<mapping=cInterurbain>
+      	m_Cscellant						est un entier sur 2 octets				<mapping=Cscellant>
+      	m_cmessage						est une chaîne							<mapping=cmessage>
+      	m_cRapportLivraisonDetaille		est un booléen							<mapping=cRapportLivraisonDetaille>
+      	m_cvendeur						est un entier							<mapping=cvendeur>
+      	m_cfacture						est un entier sur 2 octets				<mapping=cfacture>
+      	m_CSurchargeTauxBase			est un réel sur 4 octets				<mapping=CSurchargeTauxBase>
+      	m_CSurchargeTauxVerreUnite		est un réel sur 4 octets				<mapping=CSurchargeTauxVerreUnite>
+      	m_CSurchargeTauxCarrelage		est un réel sur 4 octets				<mapping=CSurchargeTauxCarrelage>
+      	m_CSurchargeTauxForme			est un réel sur 4 octets				<mapping=CSurchargeTauxForme>
+      	m_SUrchargeTaux					est un booléen							<mapping=SUrchargeTaux>
+      	m_SUrchargeTauxCarrelage		est un booléen							<mapping=SUrchargeTauxCarrelage>
+      	m_SUrchargeTauxVerreUnite		est un booléen							<mapping=SUrchargeTauxVerreUnite>
+      	m_SurchargeTauxForme			est un booléen							<mapping=SurchargeTauxForme>
+      	m_ediType						est un entier sans signe sur 1 octet	<mapping=ediType>
+      	m_limiteCredit					est un réel								<mapping=limiteCredit>
+      	m_Soldefacture					est un réel								<mapping=Soldefacture>
+      	m_TotalCommande					est un réel								<mapping=TotalCommande>
+      	m_SoldeDisponible				est un réel								<mapping=SoldeDisponible>
+      	m_TYpeQuestionCredit			est un entier sur 2 octets				<mapping=TYpeQuestionCredit>
+      	m_dateLimite					est une date							<mapping=dateLimite>
+      	m_IDHeuresOuverture				est un entier							<mapping=IDHeuresOuverture>
+      	m_bPrintGroupShippingBill est un booleen <mapping=GroupShippingBill>
+      	<FIN>
+      	
+      FIN
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2032214697308528773
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2032214697308594309
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x181202850006c2e1
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

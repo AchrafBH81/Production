@@ -1,0 +1,142 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cPurchaseOrderItem
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1ff1e91a005c02a8
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cPurchaseOrderItem est une Classe
+      	PurchaseOrderId est une chaîne
+      	PurchaseOrderItemId est une chaîne
+      	VisibleIndex est un entier
+      	TrnNumber est une chaîne
+      	Note est une chaîne
+      	Spacer est une chaîne
+      	Finish est une chaîne
+      	Energetic est une chaîne
+      	Pane1 est une chaîne
+      	Pane2 est une chaîne
+      	Pane3 est une chaîne
+      	GlassDescription est une chaîne
+      	Grill est une chaîne
+      	GrillDescription est une chaîne
+      	GrillInteriorColor est une chaîne
+      	GrillExteriorColor est une chaîne
+      	GrillHalfThermos est une chaîne
+      	GrillSeal est une chaîne
+      	Tempered est une chaîne
+      	Quantity est un numérique
+      	GrillBase est un entier
+      	GrillHeight est un entier
+      	Height est une chaîne
+      	Width est une chaîne
+      	Shape est une chaîne
+      	ShapeDescription est une chaîne
+      	Option1 est une chaîne
+      	Option2 est une chaîne
+      	Option3 est une chaîne
+      	
+      	GrillNumberInternal est une chaîne  // numéro de carrelage interne
+      	
+      	SpacerID est un entier
+      	Intercalaire1 est une chaîne
+      	intercalaire2 est une chaîne
+      	ComposantBase1 est une chaîne
+      	ComposantBase2 est une chaîne
+      	ComposantBase3 est une chaîne
+      	DescriptionThermos est une chaîne
+      	epaisseur est un réel
+      	energiverre est un booléen
+      	nbverre est un entier
+      	ThermosID est un entier
+      	ThermosNumber est une chaîne
+      	ProduitDeBase est une chaîne
+      	PrixUnitaire est un réel
+      	PrixUnitaireM est un réel
+      	PrixPied est un réel
+      	PrixPiedM est un réel
+      	Special est un booléen               // vrai si on a trouvé un prix spécial pour ce client/produit.
+      	unitedemesure est un entier
+      	
+      	
+      	CalculException10X5X est un booléen
+      	
+      	
+      	PrixException10X est un réel
+      	PrixException5X est un réel
+      	HauteurCachee est une chaîne  // dimension cachée lors de la saisie d'une commande.Ca correspond a la valeur entrée avant qu'elle soit
+      	LargeurCachee est une chaîne  // transformée en anglais avec décimale ou en métrique avec un point.
+      	SurchargeEnergie est un réel
+      	
+      	SurfaceAnglais est un réel
+      	SurfaceMetrique est un réel
+      	SurfaceAnglaisReel est un réel
+      	SurfaceMetriqueReel est un réel
+      	
+      	bMessage est un booléen
+      	TexteMessage est une chaîne
+      	bLigne est un entier
+      	
+      	typecarrelage est une chaîne// type de carrelage
+      	NbCarreau est un entier
+      	Variablex est un réel
+      	variablex1 est un réel
+      	CodeGlCarrelage est une chaîne
+      	CodeGLThermos est une chaîne
+      	DescriptionCarrelage est une chaîne
+      	PrixUnitaireCarrelage est un réel
+      	PrixDeBaseCarreau est un réel
+      	
+      	Option1PrixUnitaire est un réel
+      	Option2PrixUnitaire est un réel
+      	Option3PrixUnitaire est un réel
+      	
+      	istempered est un booléen
+      	
+      	ExceptionForcee est un booléen
+      	ExceptionForceeTexte est une chaîne
+      	extraShape est un réel
+      	oCarrelage est un Calculator
+      	
+      	SortingType est un entier  
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2301877182447551144
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2301877182447616680
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1ff1e90100599f79
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

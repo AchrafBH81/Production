@@ -1,0 +1,311 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Mconfig
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x11099b671a1eaff6
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      Mconfig est une Classe <mapping=config>
+      	
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis l'analyse.
+      	<MAPPING>
+      	m_nCOCLEUNIK							est un entier								<mapping=COCLEUNIK, clé unique>
+      	m_sNomCompagnie							est une chaîne ANSI							<mapping=NomCompagnie>
+      	m_sNomCompagnie2						est une chaîne ANSI							<mapping=NomCompagnie2>
+      	m_sRueCompagnie							est une chaîne ANSI							<mapping=RueCompagnie>
+      	m_sVilleCompagnie						est une chaîne ANSI							<mapping=VilleCompagnie>
+      	m_sCodePostalCompagnie					est une chaîne ANSI							<mapping=CodePostalCompagnie>
+      	m_sTelephoneCompagnie					est une chaîne ANSI							<mapping=TelephoneCompagnie>
+      	m_sFaxCompagnie							est une chaîne ANSI							<mapping=FaxCompagnie>
+      	m_sEmailCompagnie						est une chaîne ANSI							<mapping=EmailCompagnie>
+      	m_sSiteWebCompagnie						est une chaîne ANSI							<mapping=SiteWebCompagnie>
+      	m_nNumFact								est un entier								<mapping=NumFact>
+      	m_sDossierComptabilite					est une chaîne ANSI							<mapping=DossierComptabilite>
+      	m_sDossierData							est une chaîne ANSI							<mapping=DossierData>
+      	m_nNumcomm								est un entier								<mapping=Numcomm>
+      	m_sImprimantefacture					est une chaîne ANSI							<mapping=imprimantefacture>
+      	m_sImprimanteetiquette					est une chaîne ANSI							<mapping=imprimanteetiquette>
+      	m_sImprimanterapport					est une chaîne ANSI							<mapping=imprimanterapport>
+      	m_rConversionam							est un réel sur 4 octets					<mapping=conversionam>
+      	m_rConversionma							est un réel sur 4 octets					<mapping=conversionma>
+      	m_rIntercallaireinexd					est un réel sur 4 octets					<mapping=intercallaireinexd>
+      	m_rIntercallaireinext					est un réel sur 4 octets					<mapping=intercallaireinext>
+      	m_rIntercallaireinexnd					est un réel sur 4 octets					<mapping=intercallaireinexnd>
+      	m_rIntercallaireinexnt					est un réel sur 4 octets					<mapping=intercallaireinexnt>
+      	m_rGazargond							est un réel sur 4 octets					<mapping=gazargond>
+      	m_rGazargont							est un réel sur 4 octets					<mapping=gazargont>
+      	m_rCapd									est un réel sur 4 octets					<mapping=capd>
+      	m_rCapt									est un réel sur 4 octets					<mapping=capt>
+      	m_rCapillaired							est un réel sur 4 octets					<mapping=capillaired>
+      	m_rCapillairet							est un réel sur 4 octets					<mapping=capillairet>
+      	m_sTexteinexnoir						est une chaîne ANSI							<mapping=texteinexnoir>
+      	m_sTexteinex							est une chaîne ANSI							<mapping=texteinex>
+      	m_sTextecap								est une chaîne ANSI							<mapping=textecap>
+      	m_sTextegaz								est une chaîne ANSI							<mapping=textegaz>
+      	m_sTextecapillaire						est une chaîne ANSI							<mapping=textecapillaire>
+      	m_rTauxtps								est un réel sur 4 octets					<mapping=tauxtps>
+      	m_rTauxtvq								est un réel sur 4 octets					<mapping=tauxtvq>
+      	m_sGlventedefaut						est une chaîne ANSI							<mapping=glventedefaut>
+      	m_sGltps								est une chaîne ANSI							<mapping=gltps>
+      	m_sGltvq								est une chaîne ANSI							<mapping=gltvq>
+      	m_sDossierOptimisation					est une chaîne ANSI							<mapping=DossierOptimisation>
+      	m_sVjthermafix							est une chaîne ANSI							<mapping=vjthermafix>
+      	m_sVjstnazaire							est une chaîne ANSI							<mapping=vjstnazaire>
+      	m_sVjindcover							est une chaîne ANSI							<mapping=vjindcover>
+      	m_sVjlw									est une chaîne ANSI							<mapping=vjlw>
+      	m_sVjz									est une chaîne ANSI							<mapping=vjz>
+      	m_nVjintercallaire						est un entier sur 2 octets					<mapping=vjintercallaire>
+      	m_sVjvariable1							est une chaîne ANSI							<mapping=vjvariable1>
+      	m_sVjvariable2							est une chaîne ANSI							<mapping=vjvariable2>
+      	m_sVjvariable3							est une chaîne ANSI							<mapping=vjvariable3>
+      	m_sVjvariable4							est une chaîne ANSI							<mapping=vjvariable4>
+      	m_nVjclient								est un entier sur 2 octets					<mapping=vjclient>
+      	m_nVjclientjust							est un entier sans signe sur 1 octet		<mapping=vjclientjust>
+      	m_nVjnumcommclient						est un entier sur 2 octets					<mapping=vjnumcommclient>
+      	m_nVjnumcommclientjust					est un entier sans signe sur 1 octet		<mapping=vjnumcommclientjust>
+      	m_nVjnumcommthermafix					est un entier sur 2 octets					<mapping=vjnumcommthermafix>
+      	m_nVjnumcommthermafixjust				est un entier sans signe sur 1 octet		<mapping=vjnumcommthermafixjust>
+      	m_nNumeropreparation					est un entier								<mapping=numeropreparation>
+      	m_dCanneeencoursdebut					est une date								<mapping=canneeencoursdebut>
+      	m_dCanneeencoursfin						est une date								<mapping=canneeencoursfin>
+      	m_sCformatdedate						est une chaîne ANSI							<mapping=cformatdedate>
+      	m_rCenergiethermos						est un réel									<mapping=cenergiethermos>
+      	m_rCenergieverre						est un réel									<mapping=cenergieverre>
+      	m_nNombredejour							est un entier sur 2 octets					<mapping=nombredejour>
+      	m_rDimensionmaxanglais					est un réel									<mapping=dimensionmaxanglais>
+      	m_rDimensionmaximetrique				est un réel									<mapping=dimensionmaximetrique>
+      	m_rSurchargebase						est un réel									<mapping=surchargebase>
+      	m_rSurchargeadd							est un réel									<mapping=surchargeadd>
+      	m_rSurchargeverreunite					est un réel									<mapping=surchargeverreunite>
+      	m_nSurchargeactive						est un entier sans signe sur 1 octet		<mapping=surchargeactive>
+      	m_sSurchargedescription					est une chaîne ANSI							<mapping=surchargedescription>
+      	m_sSurchargegl							est une chaîne ANSI							<mapping=surchargegl>
+      	m_sTransportdesc						est une chaîne ANSI							<mapping=transportdesc>
+      	m_sTrasportgl							est une chaîne ANSI							<mapping=trasportgl>
+      	m_sFormulecontour						est une chaîne ANSI							<mapping=formulecontour>
+      	m_sFormulesemicontour					est une chaîne ANSI							<mapping=formulesemicontour>
+      	m_nSecteurcredit						est un entier								<mapping=secteurcredit>
+      	m_nCArrAnglais							est un entier								<mapping=cArrAnglais>
+      	m_nCArrMet								est un entier								<mapping=cArrMet>
+      	m_nCArrDefaut							est un entier								<mapping=cArrDefaut>
+      	m_nCnbmilcap							est un entier								<mapping=Cnbmilcap>
+      	m_bCalculcapactif						est un booléen								<mapping=calculcapactif>
+      	m_bSupprimelot							est un booléen								<mapping=Supprimelot>
+      	m_nNumBL								est un entier								<mapping=NumBL>
+      	m_sTaxedescription						est une chaîne ANSI							<mapping=Taxedescription>
+      	m_rTaxeTaux								est un réel sur 4 octets					<mapping=TaxeTaux>
+      	m_nToleranceMilli						est un entier sans signe sur 2 octets		<mapping=ToleranceMilli>
+      	m_bFichierThermosCommun					est un booléen								<mapping=FichierThermosCommun>
+      	m_sDossierforme							est une chaîne ANSI							<mapping=Dossierforme>
+      	m_nNbcopiefacture						est un entier								<mapping=nbcopiefacture>
+      	m_nNbCopieFactureCourriel				est un entier sans signe sur 1 octet		<mapping=NbCopieFactureCourriel>
+      	m_nNbcopieBlivraison					est un entier								<mapping=nbcopieBlivraison>
+      	m_nNbCopieBlivraisonCourriel			est un entier sans signe sur 1 octet		<mapping=NbCopieBlivraisonCourriel>
+      	m_nNbCopieConfirmation					est un entier sans signe sur 1 octet		<mapping=NbCopieConfirmation>
+      	m_nNbCopieConfirmationCourriel			est un entier sans signe sur 1 octet		<mapping=NbCopieConfirmationCourriel>
+      	m_nLienAcomba							est un entier sur 2 octets					<mapping=LienAcomba>
+      	m_sTexteigma							est une chaîne ANSI							<mapping=texteigma>
+      	m_sCapGL								est une chaîne ANSI							<mapping=CapGL>
+      	m_sExtraFormeGL							est une chaîne ANSI							<mapping=ExtraFormeGL>
+      	m_sServeurSMTP							est une chaîne ANSI							<mapping=ServeurSMTP>
+      	m_sEmailGestionErreur					est une chaîne ANSI							<mapping=EmailGestionErreur>
+      	m_nProchainErreur						est un entier sans signe sur 4 octets		<mapping=ProchainErreur>
+      	m_sDossierFichierPDF					est une chaîne ANSI							<mapping=DossierFichierPDF>
+      	m_sCformulegaz							est une chaîne ANSI							<mapping=Cformulegaz>
+      	m_sCFormulecap							est une chaîne ANSI							<mapping=CFormulecap>
+      	m_sCProduitAssocieGaz					est une chaîne ANSI							<mapping=cProduitAssocieGaz>
+      	m_sCProduitAssocieCap					est une chaîne ANSI							<mapping=cProduitAssocieCap>
+      	m_rCMDO									est un réel sur 4 octets					<mapping=CMDO>
+      	m_sCMDOformule							est une chaîne ANSI							<mapping=CMDOformule>
+      	m_nCUniteMDO							est un entier sur 2 octets					<mapping=cUniteMDO>
+      	m_rCFournitureAutre						est un réel sur 4 octets					<mapping=CFournitureAutre>
+      	m_sCFournitureAutreFormule				est une chaîne ANSI							<mapping=cFournitureAutreFormule>
+      	m_nCUniteAut							est un entier sur 2 octets					<mapping=cUniteAut>
+      	m_rCFraisGeneraux						est un réel sur 4 octets					<mapping=CFraisGeneraux>
+      	m_sCFraisGenerauxFormule				est une chaîne ANSI							<mapping=CFraisGenerauxFormule>
+      	m_nCUniteFRG							est un entier sur 2 octets					<mapping=cUniteFRG>
+      	m_rCPourcPerteVerre						est un réel sur 4 octets					<mapping=cPourcPerteVerre>
+      	m_rCPourcPerteCarrelage					est un réel sur 4 octets					<mapping=cPourcPerteCarrelage>
+      	m_rCPourcPerteSpacer					est un réel sur 4 octets					<mapping=cPourcPerteSpacer>
+      	m_rCMDOCarrelage						est un réel sur 4 octets					<mapping=cMDOCarrelage>
+      	m_sCMDOFormuleCarrelage					est une chaîne ANSI							<mapping=cMDOFormuleCarrelage>
+      	m_nCUniteMDOCarrelage					est un entier sur 2 octets					<mapping=cUniteMDOCarrelage>
+      	m_nCHauteurTest							est un entier sans signe sur 2 octets		<mapping=cHauteurTest>
+      	m_nCLargeurTest							est un entier sans signe sur 2 octets		<mapping=cLargeurTest>
+      	m_nCNbCarreauL							est un entier sans signe sur 1 octet		<mapping=cNbCarreauL>
+      	m_nCNbCarreauH							est un entier sans signe sur 1 octet		<mapping=cNbCarreauH>
+      	m_nNumCF								est un entier sans signe sur 4 octets		<mapping=NumCF>
+      	m_rCMDOM								est un réel sur 4 octets					<mapping=cMDOM>
+      	m_rCMDOcarrelageM						est un réel sur 4 octets					<mapping=cMDOcarrelageM>
+      	m_rCFraisgenerauxM						est un réel sur 4 octets					<mapping=cFraisgenerauxM>
+      	m_rCFournitureAutreM					est un réel sur 4 octets					<mapping=cFournitureAutreM>
+      	m_rConversionamlineaire					est un réel sur 4 octets					<mapping=conversionamlineaire>
+      	m_sNoTaxeCompagnie						est une chaîne ANSI							<mapping=NoTaxeCompagnie>
+      	m_nAenleverInex							est un entier sans signe sur 2 octets		<mapping=AenleverInex>
+      	m_nAenleverInexArgon					est un entier sans signe sur 2 octets		<mapping=AenleverInexArgon>
+      	m_nAenleverAlu							est un entier sans signe sur 2 octets		<mapping=AenleverAlu>
+      	m_nAenleverAluArgon						est un entier sans signe sur 2 octets		<mapping=AenleverAluArgon>
+      	m_rPrixMinimumPeinture					est un réel									<mapping=prixMinimumPeinture>
+      	m_nImpressionFeuilleTravail				est un entier sur 2 octets					<mapping=ImpressionFeuilleTravail>
+      	m_nValeurAlum							est un entier sans signe sur 2 octets		<mapping=ValeurAlum>
+      	m_nVAleurICN							est un entier sans signe sur 2 octets		<mapping=vAleurICN>
+      	m_rLongueurbarreCarrelageA				est un réel sur 4 octets					<mapping=LongueurbarreCarrelageA>
+      	m_rLongueurbarreCarrelageM				est un réel sur 4 octets					<mapping=LongueurbarreCarrelageM>
+      	m_sGlTVH								est une chaîne ANSI							<mapping=glTVH>
+      	m_nProvince								est un entier sur 2 octets					<mapping=Province>
+      	m_bSUrchargeSurForme					est un booléen								<mapping=SUrchargeSurForme>
+      	m_sGlPeinturecarrelage					est une chaîne ANSI							<mapping=GlPeinturecarrelage>
+      	m_sNoTvqCompagnie						est une chaîne ANSI							<mapping=NoTvqCompagnie>
+      	m_sNoGlrecevable						est une chaîne ANSI							<mapping=NoGlrecevable>
+      	m_sNoGlPeinture							est une chaîne ANSI							<mapping=NoGlPeinture>
+      	m_sDescSurchargePeinture				est une chaîne ANSI							<mapping=DescSurchargePeinture>
+      	m_rException5							est un réel sur 4 octets					<mapping=Exception5>
+      	m_rException10							est un réel sur 4 octets					<mapping=Exception10>
+      	m_rLMaxCote								est un réel sur 4 octets					<mapping=lMaxCote>
+      	m_rSmaxDouble							est un réel sur 4 octets					<mapping=SmaxDouble>
+      	m_rSmaxTriple							est un réel sur 4 octets					<mapping=SmaxTriple>
+      	m_nAffichageCoutantOuTotal				est un entier sur 2 octets					<mapping=AffichageCoutantOuTotal>
+      	m_rCDoubleScellant						est un réel sur 4 octets					<mapping=cDoubleScellant>
+      	m_rCDoubleScellantA						est un réel sur 4 octets					<mapping=cDoubleScellantA>
+      	m_sException5desc						est une chaîne ANSI							<mapping=Exception5desc>
+      	m_sException10Desc						est une chaîne ANSI							<mapping=Exception10Desc>
+      	m_bSupprimeLotCarrelage					est un booléen								<mapping=SupprimeLotCarrelage>
+      	m_sCMotDePasseSpecial					est une chaîne ANSI							<mapping=cMotDePasseSpecial>
+      	m_nSUrchargeforme						est un entier								<mapping=SUrchargeforme>
+      	m_rSUrchargecarrelage					est un réel sur 4 octets					<mapping=SUrchargecarrelage>
+      	m_nNbJourPdf							est un entier sans signe sur 2 octets		<mapping=NbJourPdf>
+      	m_nNbJourLogFile						est un entier sans signe sur 2 octets		<mapping=NbJourLogFile>
+      	m_bImprimeCondPmt						est un booléen								<mapping=ImprimeCondPmt>
+      	m_nTableSpacerAngMet					est un entier sur 2 octets					<mapping=TableSpacerAngMet>
+      	m_bActiveSecurite						est un booléen								<mapping=ActiveSecurite>
+      	m_nMaxCase								est un entier sans signe sur 2 octets		<mapping=MaxCase>
+      	m_nTimeOutEmail							est un entier sans signe sur 2 octets		<mapping=TimeOutEmail>
+      	m_sNoClientComptant						est une chaîne ANSI							<mapping=NoClientComptant>
+      	m_nMaxQteClair1300Plus					est un entier sans signe sur 1 octet		<mapping=MaxQteClair1300Plus>
+      	m_nMaxQteClair1300Moins					est un entier sans signe sur 1 octet		<mapping=MaxQteClair1300Moins>
+      	m_nMaxQteHER1300Plus					est un entier sans signe sur 1 octet		<mapping=MaxQteHER1300Plus>
+      	m_nMaxQteHER1300Moins					est un entier sans signe sur 1 octet		<mapping=MaxQteHER1300Moins>
+      	m_nMaxQteTableSiIdentique				est un entier sans signe sur 1 octet		<mapping=MaxQteTableSiIdentique>
+      	m_nMaxQteTriDeux						est un entier sans signe sur 1 octet		<mapping=MaxQteTriDeux>
+      	m_nDimensionAverifierPrep				est un entier sans signe sur 2 octets		<mapping=DimensionAverifierPrep>
+      	m_nEcartHauteur							est un entier sans signe sur 2 octets		<mapping=EcartHauteur>
+      	m_nEcartLargeur							est un entier sans signe sur 2 octets		<mapping=EcartLargeur>
+      	m_bCDoubleScellantTous					est un booléen								<mapping=cDoubleScellantTous>
+      	m_rCDoubleScellantAI					est un réel sur 4 octets					<mapping=cDoubleScellantAI>
+      	m_rCDoubleScellantMI					est un réel sur 4 octets					<mapping=cDoubleScellantMI>
+      	m_rCDoubleScellantAT					est un réel sur 4 octets					<mapping=cDoubleScellantAT>
+      	m_rCDoubleScellantMT					est un réel sur 4 octets					<mapping=cDoubleScellantMT>
+      	m_nAEnleverICN							est un entier sans signe sur 2 octets		<mapping=AEnleverICN>
+      	m_nAEnleverICNArgon						est un entier sans signe sur 2 octets		<mapping=AEnleverICNArgon>
+      	m_nDimensionThermosTop					est un entier sans signe sur 2 octets		<mapping=DimensionThermosTop>
+      	m_nEcartHauteurTriFinal					est un entier sans signe sur 2 octets		<mapping=EcartHauteurTriFinal>
+      	m_nEcartLargeurTriFinal					est un entier sans signe sur 2 octets		<mapping=EcartLargeurTriFinal>
+      	m_rCDoubleScellantMS					est un réel sur 4 octets					<mapping=cDoubleScellantMS>
+      	m_rCDoubleScellantAS					est un réel sur 4 octets					<mapping=cDoubleScellantAS>
+      	m_sException5desca						est une chaîne ANSI							<mapping=Exception5desca>
+      	m_sException10desca						est une chaîne ANSI							<mapping=Exception10desca>
+      	m_sDescSurchargePeinturea				est une chaîne ANSI							<mapping=DescSurchargePeinturea>
+      	m_nValeurArgon							est un entier sans signe sur 2 octets		<mapping=ValeurArgon>
+      	m_sVariableIntercalaire1				est une chaîne ANSI							<mapping=VariableIntercalaire1>
+      	m_sVariableIntercalaire2				est une chaîne ANSI							<mapping=VariableIntercalaire2>
+      	m_sVariableIntercalaire3				est une chaîne ANSI							<mapping=VariableIntercalaire3>
+      	m_sVariableIntercalaire4				est une chaîne ANSI							<mapping=VariableIntercalaire4>
+      	m_sVariableIntercalaire5				est une chaîne ANSI							<mapping=VariableIntercalaire5>
+      	m_sTexteBasConfirmation					est une chaîne								<mapping=TexteBasConfirmation>
+      	m_sLienDemiThermos						est une chaîne ANSI							<mapping=lienDemiThermos>
+      	m_bCMessageAjout						est un booléen								<mapping=CMessageAjout>
+      	m_bCMessageModification					est un booléen								<mapping=CMessageModification>
+      	m_sTextebaspage1listeprix				est une chaîne								<mapping=textebaspage1listeprix>
+      	m_sTextebaspageformelisteprix			est une chaîne								<mapping=textebaspageformelisteprix>
+      	m_bSUrchargeTauxActive					est un booléen								<mapping=SUrchargeTauxActive>
+      	m_rSurChargeTauxBase					est un réel sur 4 octets					<mapping=SurChargeTauxBase>
+      	m_sSUrchargeTauxDescription				est une chaîne ANSI							<mapping=SUrchargeTauxDescription>
+      	m_sSUrchargeTauxGl						est une chaîne ANSI							<mapping=SUrchargeTauxGl>
+      	m_sTexteBasConfirmationAnglais			est une chaîne								<mapping=TexteBasConfirmationAnglais>
+      	m_sTexteBasPage1ListePrixAnglais		est une chaîne								<mapping=TexteBasPage1ListePrixAnglais>
+      	m_sTexteBasPageFormeListePrixAnglais	est une chaîne								<mapping=TexteBasPageFormeListePrixAnglais>
+      	m_rRatioDoubleTripleForme				est un réel sur 4 octets					<mapping=ratioDoubleTripleForme>
+      	m_bCalculTauxSurSurcharge				est un booléen								<mapping=calculTauxSurSurcharge>
+      	m_sMessage1								est une chaîne								<mapping=message1>
+      	m_sMessage2								est une chaîne								<mapping=message2>
+      	m_sMessage3								est une chaîne								<mapping=message3>
+      	m_sUserSMTP								est une chaîne ANSI							<mapping=UserSMTP>
+      	m_sMdpSMTP								est une chaîne ANSI							<mapping=MdpSMTP>
+      	m_sEmailCommandeAchat					est une chaîne ANSI							<mapping=EmailCommandeAchat>
+      	m_sEmailListePrix						est une chaîne ANSI							<mapping=EmailListePrix>
+      	m_sEmailFacture							est une chaîne ANSI							<mapping=EmailFacture>
+      	m_sEmailConfirmation					est une chaîne ANSI							<mapping=EmailConfirmation>
+      	m_sEmailBonLivraison					est une chaîne ANSI							<mapping=EmailBonLivraison>
+      	m_sEmailSoumission						est une chaîne ANSI							<mapping=EmailSoumission>
+      	m_sEmailSpacer1							est une chaîne ANSI							<mapping=EmailSpacer1>
+      	m_sEmailSpacer2							est une chaîne ANSI							<mapping=EmailSpacer2>
+      	m_sEmailSpacer3							est une chaîne ANSI							<mapping=EmailSpacer3>
+      	m_sEmailSpacer4							est une chaîne ANSI							<mapping=EmailSpacer4>
+      	m_sEmailSpacer5							est une chaîne ANSI							<mapping=EmailSpacer5>
+      	m_sEmailSpacer6							est une chaîne ANSI							<mapping=EmailSpacer6>
+      	m_sEmailSpacer7							est une chaîne ANSI							<mapping=EmailSpacer7>
+      	m_sEmailSpacer8							est une chaîne ANSI							<mapping=EmailSpacer8>
+      	m_sCheminPdfSpacer						est une chaîne ANSI							<mapping=CheminPdfSpacer>
+      	m_sAdresseWebService					est une chaîne ANSI							<mapping=AdresseWebService>
+      	m_sSujetSpacer							est une chaîne ANSI							<mapping=SujetSpacer>
+      	m_sTexteSpacer							est une chaîne ANSI							<mapping=TexteSpacer>
+      	m_sEmailPreparation						est une chaîne ANSI							<mapping=EmailPreparation>
+      	m_sLienExtraArgon						est une chaîne ANSI							<Mapping = LienExtraArgon>
+      	m_sLienExtraWarranty					est une chaîne ANSI							<Mapping = LienExtraWarranty>
+      	m_sNIR									est une chaine ansi							<mapping=NIR>
+      	m_sBascoFTPAddress						est une chaine								<mapping=BascoFtpAddress>
+      	m_sBascoUser							est une chaine								<mapping = BascoUser>
+      	m_sBascoPassword						est une chaine								<mapping = bascoPassword>
+      	m_bComponentPositionForPrep est un booleen <mapping = ComponentPositionForPrep>
+      	
+      	<FIN>
+      	m_tabCheminTransfertVideojet	est un tableau de 10 chaines
+      	m_tabCheminTransfertCarrelage	est un tableau de 10 chaines
+      	m_tabNomConstante				est un tableau de 30 chaines
+      	m_tabSujetFrancais				est un tableau de 6 chaines
+      	m_tabTexteFrancais				est un tableau de 6 chaines
+      	m_tabSujetAnglais				est un tableau de 6 chaines
+      	m_tabTexteAnglais				est un tableau de 6 chaines
+      	m_tabDescriptionFourniture		est un tableau de 10 chaînes
+      	m_tabCDefautFourniture			est un tableau de 10 chaines
+      	
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1227683240557588470
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1227683240557654006
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x11099b691a2ab7d6
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,54 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ThermosClient
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x182a48ba604a4871
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      ThermosClient est une Classe
+      		IdClient est une chaîne = "" //IdClient
+      		IdThermos est une chaîne = "" //IdThermos
+      		Tprixa est un réel //Prix anglais
+      		Tprixm est un réel //Prix métrique
+      		ListeDePrix est un booléen //IdClient+IdThermos
+      		prixSpecial est un booléen //ListeDePrix
+      //		refIdClientIdhermos est un persoens dynamique
+      Fin
+       
+       
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1741284171248781425
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur( )
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1741284171248846961
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x182a47694c112503
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

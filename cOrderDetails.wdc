@@ -1,0 +1,87 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cOrderDetails
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1ff9d7320dca4fe4
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cOrderDetails est une Classe
+      	m_nIDOrderDetails				est un entier sur 8 octets			
+      	m_sThermosCode					est une chaîne ANSI					
+      	m_sThermosDescription			est une chaîne ANSI					
+      	m_sThermosNote					est une chaîne ANSI					
+      	m_sSpacerType					est une chaîne ANSI					
+      	m_sSpacerDimension				est une chaîne ANSI					
+      	m_sFinish						est une chaîne ANSI					
+      	m_sFinishFraction				est une chaine ANSI					
+      	m_sThermosHeight				est une chaîne ANSI					
+      	m_sThermosWidth					est une chaîne ANSI					
+      	m_sThermosHeightFraction		est une chaîne ANSI					
+      	m_sThermosWidthFraction			est une chaîne ANSI					
+      	m_sPane1						est une chaîne ANSI					
+      	m_sPane2						est une chaîne ANSI					
+      	m_sPane3						est une chaîne ANSI					
+      	m_sGrillNote					est une chaîne ANSI					
+      	m_sGrillCode					est une chaîne ANSI					
+      	m_sGrillDescription				est une chaine ANSI					
+      	m_nGrillBase					est un entier						
+      	m_nGrillheight					est un entier						
+      	m_bGrillHalfThermos				est un booléen						
+      	m_sHalfgrillmeasure				est une chaîne ANSI					
+      	m_bGrillContour					est un booléen						
+      	m_sGrillContourmeasure			est une chaîne ANSI					
+      	m_nIDOrders						est un entier sur 8 octets			
+      	m_bIsDeleted					est un booléen						
+      	m_nQuantity						est un entier						
+      	m_nQuantityReceived				est un entier						
+      	m_sInteriorColorCode			est une chaine						
+      	m_sInteriorColordescription		est une chaine						
+      	m_sEXteriorColorCode			est une chaine						
+      	m_sEXteriorColordescription		est une chaine						
+      	m_nRepetedZoneLineNumber		est un entier						
+      	m_nDrawingType					est un entier						
+      	m_nNumberOfGlasses				est un entier						
+      	m_sHeaderDimension				est une chaine						
+      	m_sContourVisible				est une chaine		
+      	m_sShapeNumber 					est une chaîne
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2304109294356484068
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2304109294356549604
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1ff9d7290dc72d1a
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

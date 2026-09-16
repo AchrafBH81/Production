@@ -1,0 +1,1529 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ProceduresEDIBasco
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1aa42eff672edf00
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      
+      formule est une chaine
+      aEnlever est un entier = 0 
+      aenlevertete est un entier = 0
+      fvtcv est une chaine
+      fvtch est une chaine
+      positionInvent est un entier
+      lOldNBH est un entier // pour garder la valeur de NBH lors du calcul du carrelage de tete
+      NbMorceau est un entier
+      DimensionMorceau est un reel
+      
+      
+      NBL est un entier
+      NBH est un entier
+      C est un entier
+      H1 est un reel
+      L1 est un  reel
+      ETH est un reel
+      ETL est un reel
+      VT1 est un reel
+      HT1 est un reel
+      LCC est un reel
+      HCC est un reel
+      HTE est un reel    // hauteur carrelage de tete
+      VTP est un reel    // = trou precedent
+      COL est un reel    // collecteur
+      EMB est un reel      // embout
+      AJI est un reel 
+      
+      K1 est un reel
+      K2 est un reel
+      K3 est un reel
+      K4 est un reel
+      K5 est un reel
+      K6 est un reel
+      K7 est un reel
+      K8 est un reel
+      K9 est un reel
+      K10 est un reel
+      K11 est un reel
+      K12 est un reel
+      K13 est un reel
+      K14 est un reel
+      K15 est un reel
+      K16 est un reel
+      K17 est un reel
+      K18 est un reel
+      K19 est un reel
+      K20 est un reel
+      K21 est un reel
+      K22 est un reel
+      K23 est un reel
+      K24 est un reel
+      K25 est un reel
+      K26 est un reel
+      K27 est un reel
+      K28 est un reel
+      K29 est un reel
+      K30 est un reel
+      
+      
+      PourPerte est un reel
+      SurchargeCarrelageEDI est un entier
+     type : 720896
+  procedures :
+   -
+     name : ConvertAnglais
+     procedure_id : 1919711015649468223
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ConvertAnglais (<variable> [, <provenance>])
+      //
+      // Paramètres :
+      // 	variable : <indiquez ici le rôle de variable>
+      // 	provenance (valeur par défaut="") : < indiquez ici le rôle de provenance >
+      // Valeur de retour :
+      // 	réel : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE ConvertAnglais(variable,provenance = "")
+      MemCrée("Tableau_millimetre")
+      MemCrée("Tableau_anglais")
+      MemCrée("Tableau_metrique")
+      remplittableauAnglaisMetrique()
+      
+      //variable est une chaine = moimeme
+      HLitPremier("config","COCLEUNIK")
+      longueur est un entier = taille(variable)
+      position_espace est un entier = position(variable," ")
+      //position_espace1 est un entier = position(variable," ",position_espace+1)
+      resultat_gauche est une chaine  
+      resultat_droit est une chaine        
+      valeuraretourner est un reel
+      SI position_espace = 0 ALORS
+      	SI Position(variable,"/") = 0 ALORS
+      		resultat_gauche = ""
+      	SINON
+      		resultat_gauche = "0"
+      	FIN	
+      SINON	
+      	
+      	resultat_gauche = Gauche(variable,position_espace-1)
+      	
+      FIN
+      SI position_espace = 0 ALORS
+      	
+      	resultat_droit = variable
+      	
+      SINON	
+      	
+      	resultat_droit = Milieu(variable,position_espace +1, longueur - position_espace)
+      	
+      FIN
+      
+      
+      SI PAS Position(resultat_droit,"/") = 0 ALORS
+      	resultat_droit = MemRecherche("tableau_metrique",resultat_droit)
+      FIN
+      
+      
+      
+      
+      
+      SI provenance = "fini" ALORS
+      	valeuraretourner = resultat_gauche+resultat_droit
+      	
+      SINON
+      	MoiMême = resultat_gauche+resultat_droit
+      	valeuraretourner = Vrai
+      	
+      FIN
+      
+      SI Val(MoiMême) > gclConfig.m_rDimensionmaxanglais ET PAS MoiMême = "" ALORS
+      
+      	valeuraretourner = Faux
+      FIN
+      
+      
+      
+      RENVOYER valeuraretourner
+      
+      
+     type : 458752
+   -
+     name : CalculAnglais
+     procedure_id : 1919711015649795903
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CalculAnglais (<dimensionacalculer>)
+      //
+      // Paramètres :
+      // 	dimensionacalculer : <indiquez ici le rôle de dimensionacalculer>
+      // Valeur de retour :
+      // 	chaîne : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculAnglais(dimensionacalculer)
+      
+      // ramener une valeur décimale en anglais
+      
+      j est un entier = memoccurrence("tableau_anglais")
+      k est un entier = 1
+      lapartiedecimaletexte est une chaine = ""
+      lapartieentiere est une chaine = sansespace(numeriqueverschaine(partieentiere(val(dimensionacalculer)/25.4)))
+      lapartiedecimale est un entier = arrondi(partiedecimale(val(dimensionacalculer)/25.4),3)*1000
+      
+      SI lapartiedecimale > 0 ALORS
+      	MemPremier("tableau_anglais")
+      	TANTQUE MemValClé("tableau_anglais") < lapartiedecimale 
+      		SI MemEnCours("tableau_anglais") = j ALORS
+      			SORTIR
+      		SINON	
+      			MemSuivant("tableau_anglais")
+      		FIN
+      	FIN
+      	
+      	SI MemValClé("tableau_anglais") < lapartiedecimale ALORS
+      		lapartiedecimaletexte = ""
+      		lapartieentiere = NumériqueVersChaîne(Val(lapartieentiere)+1)
+      	SINON
+      		
+      		lapartiedecimaletexte = MemRécupère("tableau_anglais",MemEnCours("tableau_anglais"))
+      	FIN
+      SINON
+      	lapartiedecimaletexte = ""
+      FIN
+      
+      RENVOYER lapartieentiere + " "+lapartiedecimaletexte
+     type : 458752
+   -
+     name : CalculFraction
+     procedure_id : 1919711015649861439
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CalculFraction (<dimensionacalculer>)
+      //
+      // Paramètres :
+      // 	dimensionacalculer : <indiquez ici le rôle de dimensionacalculer>
+      // Valeur de retour :
+      // 	chaîne : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculFraction(dimensionacalculer)
+      // ramener une valeur décimale en anglais
+      
+      j est un entier = memoccurrence("tableau_anglais")
+      k est un entier = 1
+      lapartiedecimaletexte est une chaine = ""
+      lapartieentiere est une chaine = partieentiere(dimensionacalculer)
+      lapartiedecimale est un entier = arrondi(partiedecimale(dimensionacalculer)*1000)
+      //lapartiedecimale -= config.ToleranceMilli  // tolérance millimetre pour calcul des fractions
+      //lapartiedecimale -= client.Tolerancei  // tolérance millimetre pour calcul des fractions
+      SI lapartiedecimale > 0 ALORS
+      	MemPremier("tableau_anglais")
+      	
+      	TANTQUE MemValClé("tableau_anglais") < lapartiedecimale 
+      		SI MemEnCours("tableau_anglais") = j ALORS
+      			SORTIR
+      		SINON	
+      			MemSuivant("tableau_anglais")
+      		FIN
+      	FIN
+      	SI MemValClé("tableau_anglais") < lapartiedecimale ALORS
+      		lapartiedecimaletexte = ""
+      		lapartieentiere = NumériqueVersChaîne(Val(lapartieentiere)+1)
+      	SINON
+      		
+      		lapartiedecimaletexte = MemRécupère("tableau_anglais",MemEnCours("tableau_anglais"))
+      	FIN
+      	
+      SINON
+      	lapartiedecimaletexte = ""
+      FIN
+      
+      RENVOYER lapartieentiere + " "+lapartiedecimaletexte
+      
+     type : 458752
+   -
+     name : remplittableauAnglaisMetrique
+     procedure_id : 1919711015649926975
+     type_code : 15
+     code : |1+
+      Procédure remplittableauAnglaisMetrique()
+      
+      memajoute("tableau_metrique","1/16",".063")
+      memajoute("tableau_metrique","2/32",".063")
+      
+      memajoute("tableau_metrique","1/8",".125")
+      memajoute("tableau_metrique","2/16",".125")
+      memajoute("tableau_metrique","4/32",".125")
+      
+      memajoute("tableau_metrique","3/16",".188")
+      memajoute("tableau_metrique","6/32",".188")
+      
+      memajoute("tableau_metrique","1/4",".250")
+      memajoute("tableau_metrique","2/8",".250")
+      memajoute("tableau_metrique","4/16",".250")
+      memajoute("tableau_metrique","8/32",".250")
+      
+      memajoute("tableau_metrique","5/16",".313")
+      memajoute("tableau_metrique","10/32",".313")
+      
+      memajoute("tableau_metrique","3/8",".375")
+      memajoute("tableau_metrique","6/16",".375")
+      memajoute("tableau_metrique","12/32",".375")
+      
+      memajoute("tableau_metrique","7/16",".438")
+      memajoute("tableau_metrique","14/32",".438")
+      
+      memajoute("tableau_metrique","1/2",".500")
+      memajoute("tableau_metrique","2/4",".500")
+      memajoute("tableau_metrique","4/8",".500")
+      memajoute("tableau_metrique","8/16",".500")
+      memajoute("tableau_metrique","16/32",".500")
+      
+      memajoute("tableau_metrique","1/32",".031")
+      memajoute("tableau_metrique","3/32",".094")
+      memajoute("tableau_metrique","5/32",".156")
+      memajoute("tableau_metrique","7/32",".219")
+      memajoute("tableau_metrique","9/32",".281")
+      memajoute("tableau_metrique","11/32",".344")
+      memajoute("tableau_metrique","13/32",".406")
+      memajoute("tableau_metrique","15/32",".469")
+      memajoute("tableau_metrique","17/32",".531")
+      memajoute("tableau_metrique","19/32",".594")
+      memajoute("tableau_metrique","21/32",".656")
+      memajoute("tableau_metrique","23/32",".719")
+      memajoute("tableau_metrique","25/32",".781")
+      memajoute("tableau_metrique","27/32",".844")
+      memajoute("tableau_metrique","29/32",".906")
+      memajoute("tableau_metrique","31/32",".969")
+      
+      memajoute("tableau_metrique","9/16",".563")
+      memajoute("tableau_metrique","18/32",".563")
+      
+      memajoute("tableau_metrique","5/8",".625")
+      memajoute("tableau_metrique","10/16",".625")
+      memajoute("tableau_metrique","20/32",".625")
+      
+      memajoute("tableau_metrique","11/16",".688")
+      memajoute("tableau_metrique","22/32",".688")
+      
+      memajoute("tableau_metrique","3/4",".750")
+      memajoute("tableau_metrique","6/8",".750")
+      memajoute("tableau_metrique","12/16",".750")
+      memajoute("tableau_metrique","24/32",".750")
+      
+      memajoute("tableau_metrique","13/16",".813")
+      memajoute("tableau_metrique","26/32",".813")
+      
+      memajoute("tableau_metrique","7/8",".875")
+      memajoute("tableau_metrique","14/16",".875")
+      memajoute("tableau_metrique","28/32",".875")
+      
+      memajoute("tableau_metrique","15/16",".938")
+      memajoute("tableau_metrique","30/32",".938")
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //memtri("tableau_metrique")
+      MemTrie("tableau_metrique")
+      
+      memajoute("tableau_millimetre","1/16","1.6")
+      memajoute("tableau_millimetre","1/8","3.2")
+      memajoute("tableau_millimetre","3/16","4.8")
+      memajoute("tableau_millimetre","1/4","6.4")
+      memajoute("tableau_millimetre","5/16","7.9")
+      memajoute("tableau_millimetre","3/8","9.5")
+      memajoute("tableau_millimetre","7/16","11.1")
+      memajoute("tableau_millimetre","1/2","12.7")
+      memajoute("tableau_millimetre","1/32","0.8")
+      memajoute("tableau_millimetre","3/32","2.4")
+      memajoute("tableau_millimetre","5/32","4.0")
+      memajoute("tableau_millimetre","7/32","5.6")
+      memajoute("tableau_millimetre","9/32","7.1")
+      memajoute("tableau_millimetre","11/32","8.7")
+      memajoute("tableau_millimetre","13/32","10.3")
+      memajoute("tableau_millimetre","15/32","11.9")
+      memajoute("tableau_millimetre","17/32","13.5")
+      memajoute("tableau_millimetre","19/32","15.1")
+      memajoute("tableau_millimetre","21/32","16.7")
+      memajoute("tableau_millimetre","23/32","18.3")
+      memajoute("tableau_millimetre","25/32","19.8")
+      memajoute("tableau_millimetre","27/32","21.4")
+      memajoute("tableau_millimetre","29/32","23.0")
+      memajoute("tableau_millimetre","31/32","24.6")
+      memajoute("tableau_millimetre","13/16","20.7")
+      memajoute("tableau_millimetre","5/8","15.9")
+      memajoute("tableau_millimetre","11/16","17.5")
+      memajoute("tableau_millimetre","3/4","19.1")
+      memajoute("tableau_millimetre","13/16","20.6")
+      memajoute("tableau_millimetre","7/8","22.2")
+      memajoute("tableau_millimetre","15/16","23.8")
+      memajoute("tableau_millimetre","1","25.4")
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //memtri("tableau_millimetre")
+      MemTrie("tableau_millimetre")
+      
+      
+      
+      memajoute("tableau_anglais",63,"1/16")
+      
+      memajoute("tableau_anglais",125,"1/8")
+      
+      memajoute("tableau_anglais",188,"3/16")
+      
+      memajoute("tableau_anglais",250,"1/4")
+      
+      memajoute("tableau_anglais",313,"5/16")
+      
+      memajoute("tableau_anglais",375,"3/8")
+      
+      memajoute("tableau_anglais",438,"7/16")
+      
+      memajoute("tableau_anglais",500,"1/2")
+      
+      memajoute("tableau_anglais",31,"1/32")
+      memajoute("tableau_anglais",094,"3/32")
+      memajoute("tableau_anglais",156,"5/32")
+      memajoute("tableau_anglais",219,"7/32")
+      memajoute("tableau_anglais",281,"9/32")
+      memajoute("tableau_anglais",344,"11/32")
+      memajoute("tableau_anglais",406,"13/32")
+      memajoute("tableau_anglais",469,"15/32")
+      memajoute("tableau_anglais",531,"17/32")
+      memajoute("tableau_anglais",594,"19/32")
+      memajoute("tableau_anglais",656,"21/32")
+      memajoute("tableau_anglais",719,"23/32")
+      memajoute("tableau_anglais",781,"25/32")
+      memajoute("tableau_anglais",844,"27/32")
+      memajoute("tableau_anglais",906,"29/32")
+      memajoute("tableau_anglais",969,"31/32")
+      
+      memajoute("tableau_anglais",563,"9/16")
+      
+      memajoute("tableau_anglais",625,"5/8")
+      
+      memajoute("tableau_anglais",688,"11/16")
+      
+      memajoute("tableau_anglais",750,"3/4")
+      
+      memajoute("tableau_anglais",813,"13/16")
+      
+      memajoute("tableau_anglais",875,"7/8")
+      
+      memajoute("tableau_anglais",938,"15/16")
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //memtri("tableau_anglais")
+      MemTrie("tableau_anglais")
+      
+     type : 458752
+   -
+     name : ConvertMetrique
+     procedure_id : 1919711015649992511
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ConvertMetrique (<variable>)
+      //
+      // Paramètres :
+      //	variable : <indiquez ici le rôle de variable>
+      // Valeur de retour :
+      // 	Type indéterminé : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	videpermis (valeur par défaut=1) : < indiquez ici le rôle de videpermis >
+      PROCEDURE ConvertMetrique(variable)
+      
+      
+      longueur est un entier = taille(variable)
+      partie_decimale est une chaine
+      partie_entier est une chaine
+      SI longueur <> 0 ALORS
+      	SI Position(variable,".") = 0 ALORS
+      		SI longueur <= 3 ALORS
+      			variable = "."+Répète("0",3-longueur)+variable
+      		SINON
+      			partie_decimale = Droite(variable,3)
+      			partie_entier   = Gauche(variable,longueur-3)
+      			variable = partie_entier+"."+partie_decimale
+      		FIN
+      	FIN
+      FIN 	
+      
+      
+      RENVOYER variable
+      
+      
+     type : 458752
+   -
+     name : ValiderItemAcommanderEDI
+     procedure_id : 1919711015650123583
+     type_code : 15
+     code : |1-
+      //Procédure ValiderItemAcommanderEDI(o_calculator est un calculator dynamique)
+      //selon fdetail.ftype
+      //	cas 1
+      //		si sansespace(fdetail.fdcomposant1) <> "" alors
+      //			si HLitRecherche(invent,INUM,fdetail.fdcomposant1) alors
+      //				si invent.ICommandespeciale alors
+      //					TCommandeTempo.tproduit = fdetail.fdcomposant1
+      //					TCommandeTempo.tdescription = invent.idesc
+      //					TCommandeTempo.tqte = fdetail.fdqteafacturer
+      //					tcommandetempo.TFournisseur = invent.iFournisseur
+      //					tcommandetempo.thauteur = fdetail.fdhauteura
+      //					TCommandeTempo.tlargeur = fdetail.fdlargeura
+      //					TCommandeTempo.iDfdetail = fdetail.FDCLEUNIK
+      //					tcommandetempo.IDFacture = facture.FACLEUNIK
+      //					
+      //					si invent.iNoprodFrn <> "" alors
+      //						TCommandeTempo.TProduitFrn = invent.iNoprodFrn
+      //					sinon
+      //						TCommandeTempo.TProduitFrn = fdetail.fdcomposant1
+      //					fin
+      //					si invent.IDescprodFrn <> "" alors
+      //						TCommandeTempo.TDescriptionFrn = invent.IDescprodFrn
+      //					sinon
+      //						TCommandeTempo.TDescriptionFrn = invent.idesc
+      //					fin
+      //					
+      //					hajoute(TCommandeTempo)
+      //				FIN
+      //			FIN
+      //		FIN
+      //		si sansespace(fdetail.fdcomposant2) <> "" alors
+      //			si HLitRecherche(invent,INUM,fdetail.fdcomposant2) alors
+      //				si invent.ICommandespeciale alors
+      //					TCommandeTempo.tproduit = fdetail.fdcomposant2
+      //					TCommandeTempo.tdescription = invent.idesc
+      //					TCommandeTempo.tqte = fdetail.fdqteafacturer
+      //					tcommandetempo.TFournisseur = invent.iFournisseur
+      //					tcommandetempo.thauteur = fdetail.fdhauteura
+      //					TCommandeTempo.tlargeur = fdetail.fdlargeura
+      //					TCommandeTempo.iDfdetail = fdetail.FDCLEUNIK
+      //					TCommandeTempo.IDFacture = FACTURE.FACLEUNIK
+      //					si invent.iNoprodFrn <> "" alors
+      //						TCommandeTempo.TProduitFrn = invent.iNoprodFrn
+      //					sinon
+      //						TCommandeTempo.TProduitFrn = fdetail.fdcomposant2
+      //					fin
+      //					si invent.IDescprodFrn <> "" alors
+      //						TCommandeTempo.TDescriptionFrn = invent.IDescprodFrn
+      //					sinon
+      //						TCommandeTempo.TDescriptionFrn = invent.idesc
+      //					fin
+      //					
+      //					hajoute(TCommandeTempo)
+      //				FIN
+      //			FIN
+      //		FIN
+      //		si sansespace(fdetail.fdcomposant3) <> "" alors
+      //			si HLitRecherche(invent,INUM,fdetail.fdcomposant3) alors
+      //				si invent.ICommandespeciale alors
+      //					TCommandeTempo.tproduit = fdetail.fdcomposant3
+      //					TCommandeTempo.tdescription = invent.idesc
+      //					TCommandeTempo.tqte = fdetail.fdqteafacturer
+      //					tcommandetempo.TFournisseur = invent.iFournisseur
+      //					tcommandetempo.thauteur = fdetail.fdhauteura
+      //					TCommandeTempo.tlargeur = fdetail.fdlargeura
+      //					TCommandeTempo.iDfdetail = fdetail.FDCLEUNIK
+      //					TCommandeTempo.IDFacture = FACTURE.FACLEUNIK
+      //					si invent.iNoprodFrn <> "" alors
+      //						TCommandeTempo.TProduitFrn = invent.iNoprodFrn
+      //					sinon
+      //						TCommandeTempo.TProduitFrn = fdetail.fdcomposant3
+      //					fin
+      //					si invent.IDescprodFrn <> "" alors
+      //						TCommandeTempo.TDescriptionFrn = invent.IDescprodFrn
+      //					sinon
+      //						TCommandeTempo.TDescriptionFrn = invent.idesc
+      //					fin
+      //					
+      //					hajoute(TCommandeTempo)
+      //				FIN
+      //			FIN
+      //		FIN
+      //	cas 2
+      //		si HLitRecherche(invent,INUM,fdetail.fdnumprod) alors
+      //			
+      //			
+      //			si invent.ICommandespeciale alors
+      //				TCommandeTempo.tproduit = fdetail.fdnumprod
+      //				TCommandeTempo.tdescription = invent.idesc
+      //				TCommandeTempo.tqte = fdetail.fdqteafacturer
+      //				tcommandetempo.TFournisseur = invent.iFournisseur
+      //				tcommandetempo.thauteur = fdetail.fdhauteura
+      //				TCommandeTempo.tlargeur = fdetail.fdlargeura
+      //				TCommandeTempo.iDfdetail = fdetail.FDCLEUNIK
+      //				TCommandeTempo.IDFacture = FACTURE.FACLEUNIK
+      //				si invent.iNoprodFrn <> "" alors
+      //					TCommandeTempo.TProduitFrn = invent.iNoprodFrn
+      //				sinon
+      //					TCommandeTempo.TProduitFrn = fdetail.fdcomposant3
+      //				fin
+      //				si invent.IDescprodFrn <> "" alors
+      //					TCommandeTempo.TDescriptionFrn = invent.IDescprodFrn
+      //				sinon
+      //					TCommandeTempo.TDescriptionFrn = invent.idesc
+      //				fin
+      //				
+      //				hajoute(TCommandeTempo)
+      //			FIN
+      //		FIN
+      //		
+      //	CAS 4
+      //		SI HLitRecherche(Invent,INUM,Fdetail.fdnumcarr) ALORS
+      //			SI Invent.ICommandespeciale ALORS
+      //				selon invent.iTypeCalcul
+      //					cas 1
+      //						
+      //						TCommandeTempo.tproduit = Fdetail.fdnumcarr
+      //						TCommandeTempo.tdescription = Invent.IDESC
+      //						TCommandeTempo.tqte = Fdetail.fdqteafacturer
+      //						TCommandeTempo.TFournisseur = Invent.iFournisseur
+      //						TCommandeTempo.iDfdetail = Fdetail.FDCLEUNIK
+      //						SI Invent.iNoprodFrn <> "" ALORS
+      //							TCommandeTempo.TProduitFrn = Invent.iNoprodFrn
+      //						SINON
+      //							TCommandeTempo.TProduitFrn = Fdetail.fdcomposant3
+      //						FIN
+      //						SI Invent.IDescprodFrn <> "" ALORS
+      //							TCommandeTempo.TDescriptionFrn = Invent.IDescprodFrn
+      //						SINON
+      //							TCommandeTempo.TDescriptionFrn = Invent.IDESC
+      //						FIN
+      //						
+      //						HAjoute(TCommandeTempo)
+      //						
+      //					cas 2
+      //						
+      //					calculcarrelageedi(o_calculator)
+      //					
+      //						
+      //				fin
+      //			FIN
+      //			
+      //		FIN
+      //		
+      //		
+      //FIN
+     type : 458752
+   -
+     name : VerifieSiEnergiverre
+     procedure_id : 1919711015650320191
+     type_code : 15
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] VerifieSiEnergiverre (<comp1> est chaîne, <comp2> est chaîne, <comp3> est chaîne)
+      //
+      // Paramètres :
+      //	comp1 (chaîne) : <indiquez ici le rôle de comp1>
+      //	comp2 (chaîne) : <indiquez ici le rôle de comp2>
+      //	comp3 (chaîne) : <indiquez ici le rôle de comp3>
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE VerifieSiEnergiverre(comp1 est une chaine,comp2 est une chaine,comp3 est une chaine)
+      
+      si sansespace(comp1) <> "" _et_ hlitrecherche(invent,INUM,comp1) alors
+      	si (invent.ienergieverre OU invent.ienergieverreESC) alors renvoyer vrai
+      FIN
+      SI SansEspace(comp2) <> "" _ET_ HLitRecherche(Invent,INUM,comp2) ALORS
+      	SI (invent.ienergieverre OU invent.ienergieverreESC) ALORS RENVOYER Vrai
+      FIN
+      SI SansEspace(comp3) <> "" _ET_ HLitRecherche(Invent,INUM,comp3) ALORS
+      	SI (invent.ienergieverre OU invent.ienergieverreESC) ALORS RENVOYER Vrai
+      FIN
+      
+      renvoyer faux
+     type : 458752
+   -
+     name : RecupereCommandeEDIBasco
+     procedure_id : 1919711015650385727
+     type_code : 15
+     code : |1+
+      PROCEDURE RecupereCommandeEDIBasco()
+      //FtpHost est une chaîne UNICODE = "ftp://influencefx.ddns.net"
+      //FtpUsername est une chaîne UNICODE = "trn"
+      //FtpPassword est une chaîne UNICODE = "trn123"
+      //FtpFolderRoot est une chaîne UNICODE = "/Sandbox/Suppliers/ThermosRiveNord/"
+      
+      //FtpHost est une chaîne UNICODE = "ftp://prod1.seigma.com"
+      //FtpUsername est une chaîne UNICODE = "basco-trn"
+      //FtpPassword est une chaîne UNICODE = "hJ6ef7p3ZLj3"
+      //FtpHost		est une chaîne UNICODE	= gclconfig.m_sBascoFTPAddress
+      //FtpHost		est une chaine UNICODE		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,1,":")+ExtraitChaîne(gclConfig.m_sBascoFTPAddress,2,":") 
+      
+      //FtpPort		est un entier				= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,3,":")
+      
+      FtpUsername	est une chaîne UNICODE		= gclConfig.m_sBascoUser
+      FtpPassword	est une chaîne UNICODE	= gclConfig.m_sBascoPassword
+      FtpFolderRoot est une chaîne UNICODE = "/"
+      FtpHost	est une chaine		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,1,":")+":"+ExtraitChaîne(gclConfig.m_sBascoFTPAddress,2,":")
+      FtpPort	est un entier		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,3,":")
+      FTPHostForDotNet est une chaine UNICODE = sansespace(gclconfig.m_sBascoFTPAddress)
+      
+      si enmodetest() alors
+      	FtpHost = "ftp://192.168.1.47"
+      	FtpUsername  = "trn"
+      	FtpPassword  = "trn"
+      	FtpFolderRoot  = "/"
+      	ftpport = 21
+      	FTPHostForDotNet = "ftp://192.168.1.47"
+      FIN
+      nid est un entier = ftpconnecte(FtpHost,FtpUsername,FtpPassword,ftpport)
+      si nid = -1 alors
+      	erreur("Serveur FTP non disponible !!!! ")
+      	ferme(mafenetre)
+      FIN
+      po est un PurchaseOrderDto, utile
+      cpt est un entier
+      nCptItem est un entier
+      
+      _tabPurchaseOrder est un "List<PurchaseorderDTo>"
+      _TabPurchaseOrderBasco est un TabPurchaseOrderBasco
+      _purchaseorder est un PurchaseOrderBasco
+      
+      
+      
+      //po.BascoFranchise = "Ceci est un test"
+      //po.EdiKey = DonneGUID()
+      //ajoute(tabPurchaseOrder,po)
+      
+      
+      
+      
+      _get est un PurchaseOrderProcessor(FtpHostfordotnet,FtpUsername,FtpPassword,FtpFolderRoot+"PurchaseOrder/") 
+      
+       
+       
+      _tabPurchaseOrder.AddRange(_get.get())
+      cpt = _tabPurchaseOrder.get_count()
+      
+      
+      sdReqsql est une source de donnees
+      
+      POUR CHAQUE _po de _tabPurchaseOrder
+      	_purchaseorder = allouer un PurchaseOrderBasco()
+      
+      //	SI HExécuteRequêteSQL(reqsql,hRequêteDéfaut,ChaîneConstruit("select fanumero from facture where fanocommande = '%1'",_po.Display)) ALORS
+      //		SI HNbEnr(reqsql) > 0 ALORS
+      //			continuer
+      //			
+      //		FIN
+      //	FIN
+      	
+      	_purchaseorder.TransfertPo(_po)
+      	//	si _purchaseorder.unitedemesure = 0 alors _purchaseorder.unitedemesure = _po.unitedemesure
+      	//	TransfertPoBasco(_purchaseorder,_po)
+      	Ajoute(_TabPurchaseOrderBasco._tabPurchaseorderBasco,_purchaseorder)
+      
+      FIN
+      
+      
+      renvoyer _TabPurchaseOrderBasco
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : ParserCommandeCSV
+     procedure_id : 1919711015650451263
+     type_code : 15
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ParserCommandeCSV ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	tableau : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE ParserCommandeCSV()
+      TabCommande est une tableau de cCommandeEDI()
+      
+      
+      
+      
+      renvoyer TabCommande
+     type : 458752
+   -
+     name : ValideCondition
+     procedure_id : 1924892874808943130
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ValideCondition (<condition>, <ocalculator> est Calculator)
+      //
+      // Paramètres :
+      //	condition :<indiquez ici le rôle de condition>
+      //	ocalculator (Calculator) :<indiquez ici le rôle de ocalculator>
+      // Valeur de retour :
+      // 	Type indéterminé : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE ValideCondition(condition,ocalculator est un calculator)
+      
+      
+      
+      _formule est une chaine = sansespace(condition)
+      si _formule = "" alors renvoyer faux
+      _comparaison est une chaîne = GetPositionComparaison(_formule)
+      si _comparaison = "" alors renvoyer Faux
+      
+      
+      ChaineGauche est une chaine = sansespace(ExtraitChaîne(condition,1,_comparaison))
+      ChaineDroite est une chaine = sansespace(ExtraitChaîne(condition,2,_comparaison))
+      ValeurGauche est un reel = ocalculator.Compute(ChaineGauche)
+      ValeurDroite est un reel = ocalculator.Compute(ChaineDroite)
+      
+      
+      renvoyer evalueexpression(ValeurGauche +_comparaison + ValeurDroite)
+      
+     type : 458752
+   -
+     name : GetPositionComparaison
+     procedure_id : 1924905557867622613
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetPositionComparaison (<condition>)
+      //
+      // Paramètres :
+      //	condition :<indiquez ici le rôle de contition>
+      // Valeur de retour :
+      // 	chaîne ANSI : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE GetPositionComparaison(condition)
+      
+      SI Position(condition,">=") ALORS RENVOYER ">="
+      SI Position(condition,"<=") ALORS RENVOYER "<="
+      SI Position(condition,"<>") ALORS RENVOYER "<>"
+      SI Position(condition,"<") ALORS RENVOYER "<"
+      SI Position(condition,">") ALORS RENVOYER ">"
+      SI Position(condition,"=") ALORS RENVOYER "="
+      
+      RENVOYER ""
+      
+      
+      
+     type : 458752
+   -
+     name : CalculPrixLigne
+     procedure_id : 1983584663760242419
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CalculPrixLigne (<IdCommande> est entier, <NoLigne> est entier)
+      //
+      // Paramètres :
+      //	IdCommande (entier) :<indiquez ici le rôle de IdCommande>
+      //	NoLigne (entier) :<indiquez ici le rôle de NoLigne>
+      // Valeur de retour :
+      // 	variant : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculPrixLigne(IdCommande est un entier,NoLigne est un entier)
+      
+      TotalLigne est un numerique
+      reqsql1 est une source de données
+      txtsql est une chaîne = [
+      	select ftype, fdnumprod,fdqte,fdprixu,fdprixtotal,surchargeenergie,ftotalpeinture,fdextra5x,fdextra10x 
+      	from fdetail where fdetail.fdnocomm = %1 and fdetail.fdligneEdi = %2
+      	]
+      	
+      		
+      		
+      
+      
+      si HExécuteRequêteSQL(reqsql1,hRequêteDéfaut,ChaîneConstruit(txtsql,IdCommande,NoLigne)) alors
+      	    pour TOUT reqsql1 
+      	    	selon reqsql1.ftype
+      	    		cas 1
+      	    		  TotalLigne+= reqsql1.fdprixtotal+reqsql1.surchargeenergie+reqsql1.fdextra5x+reqsql1.fdextra10x
+      			CAS 2
+      				TotalLigne+= reqsql1.fdprixtotal
+      				
+      			CAS 4
+      				TotalLigne+= reqsql1.fdprixtotal+reqsql1.ftotalpeinture
+      				
+      	    		
+      	    	
+      	    	fin	
+      	    	
+      	    FIN
+      	sinon
+      	 //
+      FIN
+      
+      renvoyer arrondi(TotalLigne,2)
+     type : 458752
+   -
+     name : SendEdiBascoConfirmation
+     procedure_id : 2031776722248016099
+     type_code : 15
+     code : |1+
+      PROCEDURE SendEdiBascoConfirmation(SaisieNo)
+      
+      //FtpHost est une chaîne UNICODE = "ftp://influencefx.ddns.net"
+      //FtpUsername est une chaîne UNICODE = "trn"
+      //FtpPassword est une chaîne UNICODE = "trn123"
+      //FtpFolderRoot est une chaîne UNICODE = "/Sandbox/Suppliers/ThermosRiveNord/"
+      
+      //FtpHost est une chaîne UNICODE = "ftp://prod1.seigma.com"
+      //FtpUsername est une chaîne UNICODE = "basco-trn"
+      //FtpPassword est une chaîne UNICODE = "hJ6ef7p3ZLj3"
+      FtpHost			est une chaîne UNICODE		= gclconfig.m_sBascoFTPAddress
+      //FtpHost		est une chaine UNICODE		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,1)
+      //FtpPort		est un entier				= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,2)
+      FtpUsername		est une chaîne UNICODE		= gclConfig.m_sBascoUser
+      FtpPassword		est une chaîne UNICODE		= gclConfig.m_sBascoPassword
+      FtpFolderRoot	est une chaîne UNICODE		= "/"
+      TotalAvantTaxe	est un MONETAIRE
+      TPS				est un MONETAIRE
+      TVQ				est un MONETAIRE
+      TaxeTaux1		est un reel
+      TaxeTaux2		est un reel
+      TaxeCombine		est un booleen
+      GrandTotal		est un MONETAIRE
+      _tableautaxe	est un tableau dynamique
+      
+      SI EnModeTest() ALORS
+      	FtpHost			= "ftp://192.168.1.47"
+      	FtpUsername		= "trn"
+      	FtpPassword		= "trn"
+      	FtpFolderRoot	= "/"
+      	
+      FIN
+      
+      
+      _item est une Structure
+      	Quantity			est un entier
+      	UnitCost			est un réel
+      	Width				est une chaîne
+      	height				est une chaîne
+      	Finish				est une chaîne
+      	GrillBase			est une chaîne
+      	GrillHeight			est une chaîne
+      	GrillSupplierCode	est une chaîne
+      	ShapeSupplierCode	est une chaîne
+      	GrillHalfThermos	est un booléen
+      	GrillInteriorColor	est une chaîne 
+      	GrillExteriorColor	est une  chaîne 
+      	_Spacer				est une chaîne
+      	PurchaseOrderItemID	est une chaîne
+      FIN
+      
+      
+      txtsql est une chaîne =  [
+      	select fdqteafacturer,fdligneedi,fdlargeur,fdhauteur,ffini,fdcarreauv,fdcarreauh,ftypespacer,idpurchaseorderitemEDI,fdnumcarr,Tdemicarrelage 
+      	, fnopeintureexttout,fnopeintureinterieure from fdetail where ftype = 1 and fdetail.fdnocomm = %1 order by fdligneedi
+      ]
+      txtsql = ChaîneConstruit(txtsql,SaisieNo)
+      reqsql			est une source de Données
+      reqsqlPeinture	est une source de Données
+      tabLigne		est un tableau associatif de _item
+      SI HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtsql) ALORS
+      	POUR TOUT reqsql 
+      		_Unitem est un _item
+      		_Unitem.Quantity			= reqsql.fdqteafacturer
+      		_Unitem.Width				= reqsql.fdlargeur
+      		_Unitem.height				= reqsql.fdhauteur
+      		_Unitem.Finish				= reqsql.ffini
+      		_Unitem.GrillBase			= reqsql.fdcarreauv
+      		_Unitem.GrillHeight			= reqsql.fdcarreauh
+      		_Unitem.GrillSupplierCode	= reqsql.fdnumcarr
+      		_Unitem.GrillExteriorColor	= reqsql.fnopeintureexttout
+      		_Unitem.GrillInteriorColor	= reqsql.fnopeintureinterieure
+      		_Unitem.GrillHalfThermos	= reqsql.Tdemicarrelage
+      		SI HLitRecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,reqsql.ftypespacer) ALORS
+      			_Unitem._Spacer = IntercalaireCouleurs.DescriptionCourte
+      		FIN
+      		_Unitem.PurchaseOrderItemID	= reqsql.idpurchaseorderitemedi
+      		tabLigne[reqsql.fdligneedi]	=  _Unitem
+      	FIN
+      	
+      FIN
+      
+      txtsql =  [
+      	select sum(round(fdprixtotal,2)) as totthermos,sum(round(fdetail.surchargeenergie,2)) as totSurcharge,sum(round((fdetail.FDextra5x+fdetail.FDextra10X)*fdetail.fdqte,2)) as totextra
+      	,sum(round(fdetail.PietageArgon*fdetail.ExtraArgonPrice*fdetail.fdqte,2)) as TotExtraArgon,sum(fdetail.ftotalpeinture) as TotPeinture,IDPurchaseOrderItemEdi,fdligneEdi ,fdqte,fdqteafacturer
+      	from fdetail where fdnocomm = %1 AND FDnumprod <> '%2' group by IDPurchaseOrderItemEdi,fdligneedi ,fdqte,fdqteafacturer order by fdligneedi
+      ]
+      sTxtsqlpeinture est une chaine = [
+      	select sum(round(fdetail.ftotalpeinture*fdetail.fdqte,2)) as TotPeinture,IDPurchaseOrderItemEdi,fdligneEdi ,fdqte,fdqteafacturer
+      	from fdetail where fdnocomm = %1 AND FDnumprod <> '%2' and ftype <> 4 group by IDPurchaseOrderItemEdi,fdligneedi ,fdqte,fdqteafacturer order by fdligneedi
+      ]
+      
+      txtsql			= ChaîneConstruit(txtsql,SaisieNo,gsExtraArgon)
+      sTxtsqlpeinture	= chaineconstruit(sTxtsqlpeinture,SaisieNo,gsExtraArgon)
+      SI HExécuteRequêteSQL(reqsqlPeinture,hRequêteDéfaut,sTxtsqlpeinture) ALORS
+      	
+      fin
+      
+      rTotPeinture est un reel	
+      
+      
+      SI HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtsql) ALORS
+      	POUR TOUT reqsql 
+      		si reqsql.fdqte <> 0 alors
+      			si hlitrecherche(reqsqlPeinture,fdligneedi,reqsql.fdligneedi) alors
+      				rTotPeinture = reqsqlPeinture.totpeinture
+      			sinon
+      				rTotPeinture = 0
+      				
+      			fin
+      			TotalAvantTaxe += (reqsql.totthermos+ reqsql.totsurcharge+reqsql.totextra+reqsql.totExtraArgon+rTotPeinture) * reqsql.fdqteafacturer / reqsql.fdqte
+      			si reqsql.fdligneedi <> 0 alors
+      				si tabLigne[reqsql.fdligneedi].Quantity <> 0 alors
+      					tabLigne[reqsql.fdligneedi].UnitCost = (reqsql.totthermos+ reqsql.totsurcharge+reqsql.totextra+reqsql.totExtraArgon+rTotPeinture) /   tabLigne[reqsql.fdligneedi].Quantity
+      				sinon
+      					tabLigne[reqsql.fdligneedi].UnitCost = 0
+      				fin
+      			FIN
+      			
+      		fin
+      	FIN
+      FIN
+      
+      
+      //TotalTVH = Arrondi(TotalAvantTaxe * TaxeTaux1 / 100,2)
+      //TotalTVQ = Arrondi((totalfacture + totalsurcharge+TotalSurchargeTaux+(TaxeCombine ? TotalTVH SINON 0)) * TaxeTaux2 / 100,2)
+      //GrandTotal = Totaldefacture + TotalTVH + TotalTVQ
+      
+      SI HLitRecherche(Facture,fanumero,SaisieNo) ALORS
+      	_tableautaxe = trouvetauxtaxe("139",DateValide(Facture.fadate) ? Facture.fadate SINON DateSys())
+      	SI Dimension(_tableautaxe) >= 4 ALORS
+      		TaxeTaux1 = _tableautaxe[1,2]
+      		//	TaxeGL1 = _tableautaxe[1,3]
+      	FIN
+      	SI Dimension(_tableautaxe) = 8 ALORS
+      		TaxeTaux2	= _tableautaxe[2,2]
+      		//	TaxeGL2 = _tableautaxe[2,3]
+      		TaxeCombine	= _tableautaxe[2,4]
+      	FIN
+      	
+      	
+      	
+      	
+      	TPS			= Arrondi(TotalAvantTaxe * TaxeTaux1 / 100,2)
+      	TVQ			= Arrondi((TotalAvantTaxe+(TaxeCombine ? TPS SINON 0)) * TaxeTaux2 / 100,2)
+      	GrandTotal	= TotalAvantTaxe+ TPS + TVQ
+      	
+      	
+      	_purchaseConfirmation est un PurchaseConfirmationDto
+      	//	_purchaseConfirmation.OrderNumber = sansespace(facture.fanojob)
+      	_purchaseConfirmation.SubTotal			= TotalAvantTaxe
+      	_purchaseConfirmation.TPS				= TPS
+      	_purchaseConfirmation.TVQ				= TVQ
+      	_purchaseConfirmation.Total				= GrandTotal
+      	_purchaseConfirmation.ReferenceNumber	= Facture.fanumero
+      	_purchaseConfirmation.EdiKey			= Facture.IdEdiKey
+      	_purchaseConfirmation.PurchaseOrderId	= Facture.IdPurchaseOrderEdi
+      	_purchaseConfirmation.set_Display(SansEspace(remplace(Facture.fanocommande,""""," ")))
+      	
+      	eta est un datetime = Facture.FDATEREQUISe
+      	_purchaseConfirmation.ETADate				= eta
+      	//	_purchaseConfirmation.BascoFranchise = facture.lNom
+      	_purchaseConfirmation.BillingStreet			= Facture.adresse
+      	_purchaseConfirmation.BillingCity			= Facture.ville
+      	_purchaseConfirmation.BillingPostalCode		= Facture.CodePostal
+      	
+      	//	si hlitrecherche(ClientLivraison,IDClientLivraison,facture.idLivraison) alors
+      	_purchaseConfirmation.ShippingStreet		= ClientLivraison.lRue
+      	_purchaseConfirmation.ShippingCity			= ClientLivraison.lVille
+      	_purchaseConfirmation.ShippingPostalCode	= ClientLivraison.lCodePostal
+      	//	FIN
+      	tabPurchaseconfirmationitem est un "List<PurchaseConfirmationItemDTo>"	
+      	POUR CHAQUE _ligne de tabLigne
+      		_purchaseitemconfirmation est un PurchaseConfirmationItemDto
+      		_purchaseitemconfirmation.PurchaseOrderId		= Facture.IdPurchaseOrderEdi
+      		_purchaseitemconfirmation.PurchaseOrderItemId	= _ligne.PurchaseOrderItemID
+      		_purchaseitemconfirmation.Quantity				= _ligne.Quantity
+      		_purchaseitemconfirmation.UnitCost				= _ligne.UnitCost
+      		_purchaseitemconfirmation.Finish				= _ligne.Finish
+      		_purchaseitemconfirmation.width					= _ligne.Width
+      		_purchaseitemconfirmation.Height				= _ligne.height
+      		_purchaseitemconfirmation.GrillBase				= _ligne.GrillBase
+      		_purchaseitemconfirmation.Grillheight			= _ligne.GrillHeight
+      		_purchaseitemconfirmation.GrillHalfThermos		= _ligne.GrillHalfThermos
+      		_purchaseitemconfirmation.spacer				= _ligne._Spacer
+      		_purchaseitemconfirmation.GrillSupplierCode		= _ligne.GrillSupplierCode
+      		_purchaseitemconfirmation.GrillInteriorColor	=  _ligne.GrillInteriorColor
+      		_purchaseitemconfirmation.GrillExteriorColor	= _ligne.GrillExteriorColor
+      		tabPurchaseconfirmationitem.add(_purchaseitemconfirmation)
+      	FIN
+      	_purchaseConfirmation.set_PurchaseConfirmationItems(tabPurchaseconfirmationitem)
+      FIN
+      
+      
+      
+      
+      
+      
+      //_purchaseConfirmation est un PurchaseConfirmationDto
+      //_purchaseConfirmation.OrderNumber = "Salut les amis"
+      //_purchaseConfirmation.EdiKey = edikeyPO
+      //_purchaseConfirmation.PurchaseOrderId = idPO
+      //_purchaseConfirmation.set_Display("TestCF-1234")
+      
+      //_purchaseitemconfirmation est un PurchaseConfirmationItemDto
+      ////_purchaseitemconfirmation.set_PurchaseOrderId("123456")
+      //_purchaseitemconfirmation.set_PurchaseOrderItemId(DonneGUID())
+      //_purchaseitemconfirmation.set_PurchaseOrderId(idPO)
+      ////_purchaseitemconfirmation.set_VisibleIndex(1)
+      ////_purchaseitemconfirmation.set_Sku("Sku")
+      ////_purchaseitemconfirmation.set_SquareFootPrice(10)
+      ////_purchaseitemconfirmation.set_SquareFootQty(6.2)
+      //
+      //
+      //tabPurchaseconfirmationitem est un "List<PurchaseConfirmationItemDTo>"
+      //tabPurchaseconfirmationitem.add(_purchaseitemconfirmation)
+      ////info(tabPurchaseconfirmationitem.get_Count())
+      ////info(_purchaseitemconfirmation.sku)
+      //_purchaseConfirmation.set_PurchaseConfirmationItems(tabPurchaseconfirmationitem)
+      //
+      //testItem est un "List<PurchaseConfirmationItemDTo>"
+      //testItem <- _purchaseConfirmation.get_PurchaseConfirmationItems()
+      //_TestItemUn est un PurchaseConfirmationItemDto
+      //_TestItemUn <- testItem.get_Item(0)
+      //
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      _put est un PurchaseConfirmationProcessor(FtpHost,FtpUsername,FtpPassword,FtpFolderRoot+"PurchaseConfirmation/")
+      _put.Put(_purchaseConfirmation)
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : ClosePurchaseorder
+     procedure_id : 2086248229142781583
+     type_code : 15
+     code : |1-
+      PROCEDURE ClosePurchaseorder(sPurchaseOrderID est une chaine)
+      
+      
+      
+      //FtpHost est une chaîne UNICODE = "ftp://prod1.seigma.com"
+      //FtpUsername est une chaîne UNICODE = "basco-trn"
+      //FtpPassword est une chaîne UNICODE = "hJ6ef7p3ZLj3"
+      FtpHost		est une chaîne UNICODE	= gclconfig.m_sBascoFTPAddress
+      //FtpHost		est une chaine UNICODE		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,1)
+      //FtpPort		est un entier				= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,2)
+      FtpUsername	est une chaîne UNICODE		= gclConfig.m_sBascoUser
+      FtpPassword	est une chaîne UNICODE	= gclConfig.m_sBascoPassword
+      FtpFolderRoot est une chaîne UNICODE = "/"
+      _tabTestPurchase est un "List<PurchaseorderDTo>"
+      cpt est un entier
+      SI EnModeTest() ALORS
+      	FtpHost = "ftp://192.168.1.47"
+      	FtpUsername  = "trn"
+      	FtpPassword  = "trn"
+      	FtpFolderRoot  = "/"
+      	
+      FIN
+      
+      //_get est un PurchaseorderProcessor(FtpHost,FtpUsername,FtpPassword,FtpFolderRoot+"PurchaseOrder/") 
+      _get est un PurchaseorderProcessor(FtpHost,FtpUsername,FtpPassword,FtpFolderRoot+"PurchaseOrder") 
+      
+      //_get.close(_po)
+      //
+      //renvoyer Vrai
+      
+      //Liste les commandes en cours sur le FTP
+      _tabTestPurchase.AddRange(_get.get())
+      // retrouve le nombre de commande
+      cpt = _tabTestPurchase.get_count()
+      
+      
+      PUOR est un PurchaseOrderDto
+      
+      //PI est un PurchaseOrderItemDto
+      //Boucle dans toutes les commandes actives pour retrouver la commande a fermer
+      POUR i = 0 _a_ cpt -1
+      	
+      	PUOR <- _tabTestPurchase.get_Item(i)
+      	
+      	SI PUOR.PurchaseOrderId = SansEspace(sPurchaseOrderID) ALORS
+      		
+      		_get.Close(PUOR)
+      		sortir
+      	FIN
+      	
+      FIN
+     type : 458752
+   -
+     name : SendEdiBascoFacture
+     procedure_id : 2034837882891288234
+     type_code : 15
+     code : |1+
+      PROCEDURE SendEdiBascoFacture(SaisieNo)
+      SI HLitRecherche(hfacture,fanofacture,SaisieNo) ALORS
+      	si sansespace(hfacture.IdEdiKey) = "" alors renvoyer vrai
+      sinon 
+      	renvoyer vrai
+      FIN
+      //FtpHost est une chaîne UNICODE = "ftp://influencefx.ddns.net"
+      //FtpUsername est une chaîne UNICODE = "trn"
+      //FtpPassword est une chaîne UNICODE = "trn123"
+      //FtpFolderRoot est une chaîne UNICODE = "/Sandbox/Suppliers/ThermosRiveNord/"
+      
+      //FtpHost est une chaîne UNICODE = "ftp://prod1.seigma.com"
+      //FtpUsername est une chaîne UNICODE = "basco-trn"
+      //FtpPassword est une chaîne UNICODE = "hJ6ef7p3ZLj3"
+      ftpHost			est une chaîne UNICODE		= gclconfig.m_sBascoFTPAddress
+      //FtpHost		est une chaine UNICODE		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,1)
+      //FtpPort		est un entier				= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,2)
+      FtpUsername		est une chaîne UNICODE		= gclConfig.m_sBascoUser
+      FtpPassword		est une chaîne UNICODE		= gclConfig.m_sBascoPassword
+      FtpFolderRoot	est une chaîne UNICODE		= "/"
+      TotalAvantTaxe	est un reel
+      TPS				est un reel
+      TVQ				est un reel
+      rTaxeTaux1		est un reel
+      rTaxeTaux2		est un reel
+      bTaxeCombine	est un booleen
+      GrandTotal		est un reel
+      SubTotal		est un reel
+      eta				est un datetime
+      NoComm			est une chaine 
+      _tableautaxe	est un tableau dynamique
+      SI HLitRecherche(hfacture,fanofacture,SaisieNo) ALORS
+      	//	NoComm = hfacture.fanumero
+      	NoComm = hfacture.fanofacture
+      FIN
+      
+      SI EnModeTest() ALORS
+      	ftpHost			= "ftp://192.168.1.47"
+      	FtpUsername		= "trn"
+      	FtpPassword		= "trn"
+      	FtpFolderRoot	= "/"
+      	
+      FIN
+      _item est une Structure
+      	Quantity			est un entier
+      	UnitCost			est un réel
+      	Width				est une chaîne
+      	height				est une chaîne
+      	Finish				est une chaîne
+      	GrillBase			est une chaîne
+      	GrillHeight			est une chaîne
+      	GrillSupplierCode	est une chaîne
+      	ShapeSupplierCode	est une chaîne
+      	GrillHalfThermos	est un booléen
+      	GrillInteriorColor	est une chaîne 
+      	GrillExteriorColor	est une  chaîne 
+      	_Spacer				est une chaîne
+      	PurchaseOrderItemID	est une chaîne
+      FIN
+      
+      
+      
+      //txtsql est une chaîne =  [
+      //	select fdqte,fdligneedi,fdlargeur,fdhauteur,ffini,fdcarreauv,fdcarreauh,ftypespacer,idpurchaseorderitemEDI,fdnumcarr from hfdetail where ftype = 1 and hfdetail.fdnocomm = %1 order by fdligneedi
+      //]
+      txtsql est une chaîne =  [
+      	select fdqteafacturer,fdligneedi,fdlargeur,fdhauteur,ffini,fdcarreauv,fdcarreauh,ftypespacer,idpurchaseorderitemEDI,fdnumcarr, fnopeintureexttout,fnopeintureinterieure 
+      	from hfdetail where ftype = 1 and hfdetail.fdnofact = %1 order by fdligneedi
+      ]
+      txtsql = ChaîneConstruit(txtsql,NoComm)
+      reqsql			est une source de Données
+      reqsqlPeinture	est une source de Données
+      tabLigne		est un tableau associatif de _item
+      SI HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtsql) ALORS
+      	POUR TOUT reqsql 
+      		
+      		_Unitem est un _item
+      		_Unitem.Quantity			= reqsql.fdqteafacturer
+      		//		_Unitem.Quantity = reqsql.fdqte
+      		_Unitem.Width				= reqsql.fdlargeur
+      		_Unitem.height				= reqsql.fdhauteur
+      		_Unitem.Finish				= reqsql.ffini
+      		_Unitem.GrillBase			= reqsql.fdcarreauv
+      		_Unitem.GrillHeight			= reqsql.fdcarreauh
+      		_Unitem.GrillSupplierCode	= reqsql.fdnumcarr
+      		_Unitem.GrillExteriorColor	= reqsql.fnopeintureexttout
+      		_Unitem.GrillInteriorColor	= reqsql.fnopeintureinterieure
+      		
+      		SI HLitRecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,reqsql.ftypespacer) ALORS
+      			_Unitem._Spacer = IntercalaireCouleurs.DescriptionCourte
+      		FIN
+      		_Unitem.PurchaseOrderItemID	= reqsql.idpurchaseorderitemedi
+      		tabLigne[reqsql.fdligneedi]	=  _Unitem
+      		
+      		
+      	FIN
+      	
+      FIN
+      //txtsql =  [
+      //	select sum(round(fdprixtotal,2)) as totthermos,sum(round(hfdetail.surchargeenergie,2)) as totSurcharge,IDPurchaseOrderItemEdi,fdligneEdi from hfdetail where fdnocomm = %1 group by IDPurchaseOrderItemEdi,fdligneedi order by fdligneedi
+      //]
+      txtsql =  [
+      	select sum(round(fdprixu+frcarrprixu,2)* fdqteafacturer) as totthermos,sum(round(hfdetail.surchargeenergie,2)) as totSurcharge,
+      	sum(round((hfdetail.FDextra10X+hfdetail.FDextra5x) * hfdetail.fdqteafacturer,2)) as totExtra,
+      	sum(round((hfdetail.FDExtraForme) * hfdetail.fdqteafacturer,2)) as totExtraForme,
+      	sum(round(hfdetail.extraArgonPrice * hfdetail.PietageArgon * hfdetail.fdqteafacturer,2)) as totExtraArgon,
+      	IDPurchaseOrderItemEdi,fdligneEdi from hfdetail where hfdetail.ftype <> 4 and fdnofact = %1 and FDnumprod <> '%2'group by IDPurchaseOrderItemEdi,fdligneedi order by fdligneedi
+      	//select sum(round(fdprixtotal,2)) as totthermos,sum(round(hfdetail.surchargeenergie,2)) as totSurcharge,IDPurchaseOrderItemEdi,fdligneEdi from hfdetail where fdnofact = %1 group by IDPurchaseOrderItemEdi,fdligneedi order by fdligneedi
+      	
+      ]
+      
+      sTxtsqlpeinture est une chaine = [
+      	select sum(round(hfdetail.ftotalpeinture*hfdetail.fdqteafacturer,2)) as TotPeinture,IDPurchaseOrderItemEdi,fdligneEdi ,fdqte,fdqteafacturer
+      	from hfdetail where fdnofact = %1 AND FDnumprod <> '%2' and ftype <> 4 group by IDPurchaseOrderItemEdi,fdligneedi ,fdqte,fdqteafacturer order by fdligneedi
+      ]
+      
+      
+      txtsql			= ChaîneConstruit(txtsql,NoComm,gsExtraArgon)
+      sTxtsqlpeinture	= ChaîneConstruit(sTxtsqlpeinture,NoComm,gsExtraArgon)
+      SI HExécuteRequêteSQL(reqsqlPeinture,hRequêteDéfaut,sTxtsqlpeinture) ALORS
+      	
+      FIN
+      
+      rTotPeinture est un reel	
+      
+      
+      
+      
+      SI HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtsql) ALORS
+      	POUR TOUT reqsql 
+      		si sansespace(reqsql.IDPurchaseOrderItemEdi) <> "" alors
+      			SI HLitRecherche(reqsqlPeinture,fdligneedi,reqsql.fdligneedi) ALORS
+      				rTotPeinture = reqsqlPeinture.totpeinture
+      			SINON
+      				rTotPeinture = 0
+      			FIN
+      			
+      			si tabLigne[reqsql.fdligneedi].Quantity <> 0 alors 
+      				TotalAvantTaxe += (reqsql.totthermos+ reqsql.totsurcharge+reqsql.totextra+rTotPeinture)
+      				tabLigne[reqsql.fdligneedi].UnitCost = (reqsql.totthermos+ reqsql.totsurcharge+reqsql.totextra+reqsql.totextraForme+reqsql.totExtraArgon+rTotPeinture) /   tabLigne[reqsql.fdligneedi].Quantity
+      			SINON
+      				tabLigne[reqsql.fdligneedi].UnitCost = 0 
+      			FIN
+      		FIN
+      		
+      	FIN
+      FIN
+      
+      
+      //TotalTVH = Arrondi(TotalAvantTaxe * TaxeTaux1 / 100,2)
+      //TotalTVQ = Arrondi((totalfacture + totalsurcharge+TotalSurchargeTaux+(TaxeCombine ? TotalTVH SINON 0)) * TaxeTaux2 / 100,2)
+      //GrandTotal = Totaldefacture + TotalTVH + TotalTVQ
+      
+      SI HLitRecherche(hfacture,fanofacture,SaisieNo) ALORS
+      	SI HLitRecherche(BonLivraison,Bnumero,SaisieNo) ALORS
+      		TPS			= BonLivraison.BTPS
+      		TVQ			= BonLivraison.BTVQ
+      		GrandTotal	= BonLivraison.BStotal+ BonLivraison.BTPS + BonLivraison.BTVQ
+      		SubTotal	= BonLivraison.BStotal
+      		eta			= BonLivraison.bdate
+      	FIN
+      	_tableautaxe = trouvetauxtaxe("139",DateValide(Facture.fadate) ? Facture.fadate SINON DateSys())
+      	
+      	
+      	
+      	_PurchaseInvoice est un PurchaseInvoiceDto
+      	//	_PurchaseInvoice.OrderNumber = sansespace(facture.fanojob)
+      	_PurchaseInvoice.SubTotal				= SubTotal
+      	_PurchaseInvoice.TPS					= TPS
+      	_PurchaseInvoice.TVQ					= TVQ
+      	_PurchaseInvoice.Total					= GrandTotal
+      	_PurchaseInvoice.SupplierInvoiceNumber	= BonLivraison.Bfacture
+      	_PurchaseInvoice.EdiKey					= Facture.IdEdiKey
+      	_PurchaseInvoice.PurchaseOrderId		= hfacture.IdPurchaseOrderEdi
+      	_PurchaseInvoice.set_Display(SansEspace(hfacture.fanocommande))
+      	//	eta est un datetime = hFacture.fadate
+      	_PurchaseInvoice.ETADate			= eta
+      	//	_PurchaseInvoice.BascoFranchise = facture.lNom
+      	_PurchaseInvoice.BillingStreet		= hfacture.Adresse
+      	_PurchaseInvoice.BillingCity		= hfacture.Ville
+      	_PurchaseInvoice.BillingPostalCode	= hfacture.CodePostal
+      	
+      	//	si hlitrecherche(ClientLivraison,IDClientLivraison,facture.idLivraison) alors
+      	_PurchaseInvoice.ShippingStreet		= hfacture.lRue
+      	_PurchaseInvoice.ShippingCity		= hfacture.lVille
+      	//		_PurchaseInvoice.ShippingPostalCode = clientlivraison.lCodePostal
+      	//	FIN
+      	tabPurchaseinvoiceitem est un "List<PurchaseInvoiceItemDTo>"	
+      	POUR CHAQUE _ligne de tabLigne
+      		_PurchaseItemInvoice est un PurchaseInvoiceItemDto
+      		_PurchaseItemInvoice.PurchaseOrderId		= hfacture.IdPurchaseOrderEdi
+      		_PurchaseItemInvoice.PurchaseOrderItemId	= _ligne.PurchaseOrderItemID
+      		_PurchaseItemInvoice.Quantity				= _ligne.Quantity
+      		_PurchaseItemInvoice.UnitCost				= _ligne.UnitCost
+      		_PurchaseItemInvoice.Finish					= _ligne.Finish
+      		_PurchaseItemInvoice.width					= _ligne.Width
+      		_PurchaseItemInvoice.Height					= _ligne.height
+      		_PurchaseItemInvoice.GrillBase				= _ligne.GrillBase
+      		_PurchaseItemInvoice.Grillheight			= _ligne.GrillHeight
+      		_PurchaseItemInvoice.spacer					= _ligne._Spacer
+      		_PurchaseItemInvoice.GrillSupplierCode		= _ligne.GrillSupplierCode
+      		_PurchaseItemInvoice.GrillInteriorColor		= _ligne.GrillInteriorColor
+      		_PurchaseItemInvoice.GrillExteriorColor		= _ligne.GrillExteriorColor
+      		
+      		tabPurchaseinvoiceitem.add(_PurchaseItemInvoice)
+      	FIN
+      	_PurchaseInvoice.set_PurchaseInvoiceItems(tabPurchaseinvoiceitem)
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      _put est un PurchaseInvoiceProcessor(ftpHost,FtpUsername,FtpPassword,FtpFolderRoot+"PurchaseInvoice/")
+      _put.Put(_PurchaseInvoice)
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : CountBascoOrders
+     procedure_id : 2287899902911076132
+     type_code : 15
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CountBascoOrders ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	entier : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CountBascoOrders()
+      
+      //FtpHost est une chaîne UNICODE = "ftp://prod1.seigma.com"
+      //FtpUsername est une chaîne UNICODE = "basco-trn"
+      //FtpPassword est une chaîne UNICODE = "hJ6ef7p3ZLj3"
+      FtpHost		est une chaîne UNICODE	= gclconfig.m_sBascoFTPAddress
+      //FtpHost	est une chaine UNICODE		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,1)
+      //FtpPort	est un entier				= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,2)
+      
+      FtpUsername	est une chaîne UNICODE	= gclConfig.m_sBascoUser
+      FtpPassword	est une chaîne UNICODE	= gclConfig.m_sBascoPassword
+      FtpFolderRoot est une chaîne UNICODE = "/"
+      
+      SI EnModeTest() ALORS
+      	FtpHost = "ftp://192.168.1.47"
+      	FtpUsername  = "trn"
+      	FtpPassword  = "trn"
+      	FtpFolderRoot  = "/"
+      	
+      FIN
+      po est un PurchaseOrderDto, utile
+      cpt est un entier
+      nCptItem est un entier
+      
+      _tabPurchaseOrder est un "List<PurchaseorderDTo>"
+      cl_TabPurchaseOrderBasco est un TabPurchaseOrderBasco
+      cl_purchaseorder est un PurchaseOrderBasco
+      
+      
+      
+      //po.BascoFranchise = "Ceci est un test"
+      //po.EdiKey = DonneGUID()
+      //ajoute(tabPurchaseOrder,po)
+      
+      
+      
+      
+      _get est un PurchaseOrderProcessor(FtpHost,FtpUsername,FtpPassword,FtpFolderRoot+"PurchaseOrder/") 
+      
+      
+      
+      _tabPurchaseOrder.AddRange(_get.get())
+      cpt = _tabPurchaseOrder.get_count()
+      
+      renvoyer cpt
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x1785828a0557be44
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

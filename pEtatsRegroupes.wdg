@@ -1,0 +1,165 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pEtatsRegroupés
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1c84c918003bb445
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CQAAAAkAAABPOo5wfzL5PtlmH9g6pVlcqG1md+uM4GM8B/k/aVja5R6ZseBzxTGWZbo12UeE8bWym5Rl91AKrNq9wTYnFyamg2lAMw==
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      // Collection de procédures pour mémoriser une liste d'états à imprimer
+      // les uns à la suite des autres (via le mécanisme d'imbrication).
+      
+      
+      // File contenant la liste des états que l'on souhaite imprimer
+      FileEtats est une File de chaine
+      gnNbEtat est un entier
+      
+     type : 720896
+  procedures :
+   -
+     name : AjouteEtat
+     procedure_id : 2054989096333873381
+     type_code : 15
+     code : |1-
+      // Résumé : Ajout d'un état dans la liste des états à imprimer
+      // Syntaxe :
+      //AjouteEtat (<_sNomEtat>)
+      //
+      // Paramètres :
+      // 	_sNomEtat : Nom de l'état à inclure dans la liste des états à imprimer
+      
+      PROCEDURE AjouteEtat(_sNomEtat)
+      
+      // Ajout de l'état dans la file...
+      Enfile(FileEtats, _sNomEtat)
+     type : 458752
+   -
+     name : bEstVide
+     procedure_id : 2054990513673410567
+     type_code : 15
+     code : |1-
+      // Résumé : teste si au moins un état a été ajouté à la file des états à imprimer
+      // Syntaxe :
+      //[ <Résultat> = ] bEstVide ()
+      //
+      // Valeur de retour :
+      // 	booléen : Vrai si la file est vide, faux dans le cas contraire
+      
+      fonction bEstVide()
+      
+      renvoyer FileEtats..vide
+     type : 458752
+   -
+     name : sImprimeEtats
+     procedure_id : 2054991312537448820
+     type_code : 15
+     code : |1+
+      // Résumé : Retourne successivement les noms des états contenus dans la file
+      // Syntaxe :
+      //[ <Résultat> = ] sImprimeEtats ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne : // 	Non du prochain état à imprimer
+      
+      fonction sImprimeEtats()
+      
+      sNomEtat est une chaine
+      Défile(FileEtats, sNomEtat)	
+      gnNbEtat++
+      
+      renvoyer sNomEtat
+     type : 458752
+   -
+     name : ImprimeEtatSuivant
+     procedure_id : 2056516811915397903
+     type_code : 15
+     code : |1-
+      // Résumé : Appelée depuis le code après impression de la fin de document, lance l'état suivant s'il y en a un
+      //			L'état doit être configuré avec l'impression du bas de page avant le bloc de fin de document.
+      // Syntaxe :
+      //ImprimeEtatSuivant ( [<sNomBasPage>])
+      //
+      // Paramètres :
+      // 	sNomBasPage (valeur par défaut="BAS_DE_PAGE") : Nom du bas de page s'il n'est pas celui par défaut
+      
+      PROCEDURE ImprimeEtatSuivant(sNomBasPage = "BLOC_BAS")
+      
+      // S'il reste un état à imprimer dans la file, il est lancé après un saut de page...
+      SI PAS pEtatsRegroupés.bEstVide() ALORS
+      
+      	iHautBasPageImbriqué(Vrai)
+      	iTerminePage()
+      	sImprimeEtatAvecParametres(sImprimeEtats())
+      SINON
+      	// S'il n'y a plus d'état à chaîner, impression du bas de page si il y a eu plusieurs états
+      	si gnNbEtat > 1 alors iImprimeBloc(sNomBasPage)
+      	gnNbEtat = 0
+      FIN
+     type : 458752
+   -
+     name : sImprimeEtatAvecParametres
+     procedure_id : 1624312595356405346
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //sImprimeEtatAvecParametres (<lChaine> est chaîne [, <sNomBasPage>])
+      //
+      // Paramètres :
+      //	lChaine (chaîne) : <indiquez ici le rôle de lChaine>
+      // 	sNomBasPage (valeur par défaut="BAS_DE_PAGE") : < indiquez ici le rôle de sNomBasPage >
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE sImprimeEtatAvecParametres(lChaine est une chaine,sNomBasPage = "BAS_DE_PAGE")
+      lNomEtat est une chaine = extraitchaine(lChaine,1,tab)
+      _param1 est une chaîne
+      _param2 est une chaîne
+      _param3 est une chaîne
+      _param4 est une chaîne
+      
+      pour i = 1 _a_ chaineoccurrence(lChaine,tab)
+      	{"_param"+i} = extraitchaine(lChaine,i+1,tab)
+      FIN
+      
+      //iHautBasPageImbriqué(Vrai)
+      iimprimeetat(lNomEtat,_param1,_param2,_param3,_param4)
+      //SI PAS listeprix.ListeImprimee ET PAS pEtatsRegroupés.bEstVide() ALORS
+      si  pas pEtatsRegroupés.bEstVide() alors
+      	iapercu(100)
+      
+      	sImprimeEtatAvecParametres(sImprimeEtats())
+      
+      FIN
+      
+      
+      
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ProcéduresGlobales1
+resources :
+ string_res :
+  identifier : 0x1c84c918003ab445
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

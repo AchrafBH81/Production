@@ -1,0 +1,405 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cOrderToPrint
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x19879ca43324ad1a
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cOrderToPrint est une Classe
+      	
+      	
+      	m_nOrderNumber			est un entier sur 8 octets
+      	m_sCustomerOrderNumber	est une chaîne
+      	m_sCustomerNumberJob	est une chaîne
+      	m_dOrderRequiredDate est une date
+      	
+      	m_moTotal	est un monetaire
+      	m_moTPS		est un monetaire
+      	m_moTVQ		est un monetaire
+      	m_nSellerID est un entier
+      	m_nTruckID est un entier
+      	m_tabOrderDetail est un tableau de cOrderDetail
+      	m_tabDetailToPtrint est un tableau de cOrderDetailToPrint
+      FIN
+      
+      
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1839611201850813722
+     type_code : 27
+     code : |1+
+      procédure Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1839611201850879258
+     type_code : 28
+     code : |1+
+      procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetOrder
+     procedure_id : 1839936031503593952
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //GetOrder (<nOrderID> est entier)
+      //
+      // Paramètres :
+      //	nOrderID (entier) : <indiquez ici le rôle de nOrderID>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetOrder(nOrderID est un entier)
+      
+      
+      si hlitrecherche(Facture,FACLEUNIK,nOrderID) ALORS
+      	CheckDimensionException(facture.fanumero)
+      	:m_nOrderNumber = facture.fanumero
+      	:m_sCustomerNumberJob = facture.fanocommande
+      	:m_sCustomerNumberJob = facture.fanojob
+      	
+      	
+      FIN
+      
+      
+     type : 458752
+   -
+     name : UpdateHistory
+     procedure_id : 1841457775675904740
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //UpdateHistory (<nShippingBillNumber> est entier sur 8 octets)
+      //
+      // Paramètres :
+      //	nShippingBillNumber (entier sur 8 octets) : <indiquez ici le rôle de nShippingBillNumber>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure UpdateHistory(nShippingBillNumber est un entier  sur 8 octets)
+      clCurrentOrderToPrint est un cOrderDetailToPrint
+      
+      
+      HGèreIntégrité(Faux)
+      
+      multiplicateur est un entier
+      
+      HLitRecherche(Facture,fanumero,:m_nOrderNumber)
+      
+      
+      SI Facture.fatypedocument  = 2 ALORS
+      	multiplicateur = -1
+      SINON
+      	multiplicateur = 1	
+      FIN
+      
+      hfacture.ftransfere				= Faux
+      hfacture.fanumero				= Facture.fanumero
+      hfacture.fadate					= Facture.FDATEREQUISE
+      hfacture.fadatecommande			= Facture.fadate
+      hfacture.fatype					= Facture.fatype
+      hfacture.faclient				= Facture.faclient
+      hfacture.Bnumero				= nShippingBillNumber
+      hfacture.fanofacture			= nShippingBillNumber
+      hfacture.fanojob				= Facture.fanojob
+      hfacture.fanocommande			= Facture.fanocommande
+      hfacture.fasecteur				= Facture.fasecteur
+      hfacture.facalcul				= Facture.facalcul
+      hfacture.fasurcharge			= Facture.fasurcharge 
+      hfacture.fatotal				= Facture.fatotal     
+      hfacture.fatps					= Facture.fatps       
+      hfacture.fatvq					= Facture.fatvq   
+      hfacture.fatypedocument			= Facture.fatypedocument
+      hfacture.fareference			= Facture.fareference
+      hfacture.fabonlivraison			= Facture.fabonlivraison
+      hfacture.NoLot					= Facture.NoLot
+      hfacture.fafraistransport		= Facture.fafraistransport * multiplicateur
+      hfacture.fsurchargepeinture		= Facture.fsurchargepeinture
+      hfacture.NoGlSurchargePeinture	= Facture.NoGlSurchargePeinture
+      hfacture.idlivraison			= Facture.idLivraison
+      hfacture.SUrchargePeinture		= Facture.SUrchargePeinture
+      hfacture.fpeinture				= Facture.fpeinture
+      hfacture.idlivraison			= Facture.idLivraison
+      hfacture.nom					= Facture.nom
+      hfacture.Adresse				= Facture.adresse
+      hfacture.Ville					= Facture.ville
+      hfacture.CodePostal				= Facture.CodePostal
+      hfacture.noTelephone			= Facture.noTelephone
+      hfacture.ftypecredit			= Facture.Ftypecredit
+      hfacture.cvendeur				= Facture.cvendeur
+      hfacture.lNom					= Facture.lNom
+      hfacture.lRue					= Facture.lRue
+      hfacture.lVille					= Facture.lVille
+      hfacture.lCodePostal			= Facture.lCodePostal
+      hfacture.lAdresseManuelle		= Facture.lAdresseManuelle
+      hfacture.lNote					= Facture.lNote
+      hfacture.IdPurchaseOrderEdi		= Facture.IdPurchaseOrderEdi
+      hfacture.IdEdiKey				= Facture.IdEdiKey
+      hfacture.IDCamions				= Facture.IDCamions
+      //hfacture.surchargeTauxPourc = facture.surchargeTauxPourc
+      SI gclConfig.m_bSUrchargeTauxActive ALORS
+      	SI HLitRecherche(client,numero,hfacture.faclient) _ET_ client.SUrchargeTaux ALORS
+      		SI client.CSurchargeTauxBase <> 0 ALORS
+      			hfacture.surchargeTauxPourc = client.CSurchargeTauxBase
+      		SINON
+      			hfacture.surchargeTauxPourc = gclConfig.m_rSurChargeTauxBase
+      		FIN	
+      	SINON
+      		hfacture.surchargeTauxPourc = 0
+      	FIN
+      FIN
+      HAjoute(hfacture)
+      
+      
+      :m_moTotal = hfacture.fatotal
+      :m_moTPS = hfacture.fatps
+      :m_moTvq = hfacture.fatvq
+      :m_nSellerID = hfacture.cvendeur
+      
+      
+      HLitRecherche(Fdetail,fdnocomm,Facture.fanumero)
+      
+      
+      TANTQUE Fdetail.fdnocomm = Facture.fanumero ET PAS HEnDehors()
+      	SI Fdetail.fdqteafacturer <> 0 ALORS  
+      		clCurrentOrderToPrint = allouer un cOrderDetailToPrint()
+              clCurrentOrderToPrint.m_nLineNumber = fdetail.fdligne
+              clCurrentOrderToPrint.m_nLineType = fdetail.ftype
+              clCurrentOrderToPrint.m_nMasterLineNumber = fdetail.fdlien
+              clCurrentOrderToPrint.m_nQty = fdetail.fdqteafacturer
+              clCurrentOrderToPrint.m_sBatchNumber = fdetail.fNoLot
+              clCurrentOrderToPrint.m_sFinish = fdetail.ffini
+              clCurrentOrderToPrint.m_sJobLineNumber = fdetail.FDJOBLIGNE   
+              clCurrentOrderToPrint.m_sProductDescription = fdetail.fddesc
+              clCurrentOrderToPrint.m_sSpacer1 = fdetail.fdespace     
+              clCurrentOrderToPrint.m_sSpacer2 = fdetail.FDespace2
+              clCurrentOrderToPrint.m_nOrderNumber = :m_nOrderNumber
+              clCurrentOrderToPrint.m_sImperialHeight = fdetail.fdhauteura   
+              clCurrentOrderToPrint.m_sImperialwidth = fdetail.fdlargeura   
+              clCurrentOrderToPrint.m_nGridWHeight = fdetail.fdcarreauv
+              clCurrentOrderToPrint.m_nGridWidth = fdetail.fdcarreauh
+              clCurrentOrderToPrint.m_sRackSlotNumber = :GetRackNumber(clCurrentOrderToPrint.m_nOrderNumber,clCurrentOrderToPrint.m_nLineNumber)
+                
+              :m_tabDetailToPtrint.ajoute(clCurrentOrderToPrint)
+              
+              
+              
+      		hfdetail.fdnocomm						= Facture.fanumero
+      		hfdetail.fdligne						= Fdetail.fdligne
+      		hfdetail.fdnumprod						= Fdetail.fdnumprod
+      		hfdetail.fddesc							= Fdetail.fddesc
+      		hfdetail.fdqte							= Fdetail.fdqte
+      		hfdetail.fdqteafacturer					= Fdetail.fdqteafacturer  * multiplicateur
+      		hfdetail.fdqtedejafacture				= Fdetail.fdqtedejafacture  * multiplicateur
+      		hfdetail.fdespace						= Fdetail.fdespace
+      		hfdetail.fdlargeur						= Fdetail.fdlargeur
+      		hfdetail.fdhauteur						= Fdetail.fdhauteur
+      		hfdetail.fdhauteur1						= Fdetail.fdhauteur1
+      		hfdetail.fdlargeura						= Fdetail.fdlargeura
+      		hfdetail.fdhauteura						= Fdetail.fdhauteura
+      		hfdetail.fdhauteur1a					= Fdetail.fdhauteur1a
+      		hfdetail.fdprixu						= Fdetail.fdprixu
+      		hfdetail.fdcarrelage					= Fdetail.fdcarrelage
+      		hfdetail.fdcarreauh						= Fdetail.fdcarreauh
+      		hfdetail.fdcarreauv						= Fdetail.fdcarreauv
+      		hfdetail.fdnumcarr						= Fdetail.fdnumcarr
+      		hfdetail.ftype							= Fdetail.ftype
+      		hfdetail.fdprixtotal					= Fdetail.fdprixtotal
+      		hfdetail.fdcarrpruxuc					= Fdetail.fdcarrpruxuc
+      		hfdetail.frcarrprixu					= Fdetail.frcarrprixu * multiplicateur
+      		hfdetail.fdcarrprixtotal				= Fdetail.fdcarrprixtotal * multiplicateur
+      		hfdetail.fdprixupied					= Fdetail.fdprixupied
+      		hfdetail.fdcodegl						= Fdetail.fdcodegl
+      		hfdetail.fcapgaztube					= Fdetail.fcapgaztube 
+      		hfdetail.fdverreunite					= Fdetail.fdverreunite
+      		hfdetail.fdnofact						= nShippingBillNumber
+      		hfdetail.FDJOBLIGNE						= Fdetail.FDJOBLIGNE
+      		hfdetail.fdcomposant1					= Fdetail.fdcomposant1
+      		hfdetail.fdcomposant2					= Fdetail.fdcomposant2
+      		hfdetail.fdcomposant3					= Fdetail.fdcomposant3
+      		hfdetail.fdcarrprixdebase				= Fdetail.fdcarrprixdebase * multiplicateur
+      		hfdetail.surchargeenergie				= Fdetail.surchargeenergie  * multiplicateur
+      		hfdetail.fdcommentaire					= Fdetail.fdcommentaire
+      		hfdetail.fdlargeuru						= Fdetail.fdlargeuru
+      		hfdetail.fdhauteuru						= Fdetail.fdhauteuru
+      		hfdetail.fdforme						= Fdetail.fdforme
+      		hfdetail.fdextraforme					= Fdetail.fdextraforme //* MULTIPLICATEUR
+      		hfdetail.HFCLEUNIK						= hfacture.HFCLEUNIK
+      		hfdetail.ffini							= Fdetail.ffini 
+      		hfdetail.fdhauteuranglais				= Fdetail.fdhauteuranglais
+      		hfdetail.fdhauteuranglais1				= Fdetail.fdhauteuranglais1
+      		
+      		hfdetail.fdlargeuranglais				= Fdetail.fdlargeuranglais
+      		hfdetail.fdpiedcarre					= Fdetail.fdpiedcarre
+      		hfdetail.fdpiedcarrefacture				= Fdetail.fdpiedcarrefacture
+      		hfdetail.ftypespacer					= Fdetail.ftypespacer
+      		hfdetail.FDespace2						= Fdetail.FDespace2
+      		hfdetail.fdprixupiedfacture				= Fdetail.fdprixupiedfacture
+      		hfdetail.FDExtraCap						= Fdetail.FDEXTRACAP //* MULTIPLICATEUR 
+      		hfdetail.Fnotes							= Fdetail.fnotes
+      		hfdetail.fnotes1						= Fdetail.fnotes1
+      		hfdetail.fdvariablex					= Fdetail.fdvariablex
+      		hfdetail.fdvariablex1					= Fdetail.FDvariablex1
+      		hfdetail.fdtypecalcul					= Fdetail.fdtypecalcul
+      		hfdetail.fdnbcarreau					= Fdetail.fdnbcarreau
+      		hfdetail.fTypePeinture					= Fdetail.fTypePeinture
+      		hfdetail.fNoPeintureExtTout				= Fdetail.fNoPeintureExtTout
+      		hfdetail.FnopeintureInterieure			= Fdetail.FnopeintureInterieure
+      		hfdetail.fdescpeintureExtTout			= Fdetail.fdescpeintureExtTout
+      		hfdetail.fDescPeintureInterieure		= Fdetail.fDescPeintureInterieure
+      		hfdetail.fTotalPeinture					= Fdetail.fTotalPeinture
+      		hfdetail.fPrixCarreauPeinture			= Fdetail.fPrixCarreauPeinture
+      		hfdetail.Ftotalcarreaupeinture			= Fdetail.Ftotalcarreaupeinture
+      		hfdetail.fpeinture						= Fdetail.fpeinture
+      		hfdetail.libelleNbCarreauExtTlt			= Fdetail.libelleNbCarreauExtTlt
+      		hfdetail.libelleNbcarreauinterieur		= Fdetail.libelleNbcarreauinterieur
+      		hfdetail.FtotalbarrePeinture			= Fdetail.FtotalbarrePeinture
+      		hfdetail.fnopeinture					= Fdetail.fnopeinture
+      		hfdetail.fdescpeinture					= Fdetail.fdescpeinture
+      		hfdetail.fextrapeinture					= Fdetail.fextrapeinture
+      		hfdetail.FDescpeinture1					= Fdetail.FDescpeinture1
+      		hfdetail.ftypepeinture1					= Fdetail.ftypepeinture1
+      		hfdetail.fnopeinture1					= Fdetail.fnopeinture1
+      		hfdetail.FDnbcarreauPeinture1			= Fdetail.FDnbcarreauPeinture1
+      		hfdetail.fdprixcarreaupeinture1			= Fdetail.fdprixcarreaupeinture1
+      		hfdetail.fdfabrication					= Fdetail.FDfabrication
+      		hfdetail.SUrchargeafacturer				= Fdetail.SUrchargeafacturer
+      		hfdetail.surchargeenergie				= Fdetail.SUrchargeafacturer
+      		hfdetail.SUrchargedejafacture			= Fdetail.SUrchargedejafacture
+      		hfdetail.FDextra10X						= Fdetail.FDextra10X
+      		hfdetail.FDextra5x						= Fdetail.FDextra5x
+      		hfdetail.TDemiCarrelage					= Fdetail.TDemiCarrelage
+      		hfdetail.FDextraCarrelagedemi			= Fdetail.FDextraCarrelagedemi
+      		hfdetail.fdpiedcarrefacture				= Fdetail.fdpiedcarrefacture
+      		hfdetail.fdsurfacemodifie				= Fdetail.fdsurfacemodifie
+      		hfdetail.FDprixmodifie					= Fdetail.FDprixmodifie
+      		hfdetail.IDPurchaseOrderItemEdi			= Fdetail.IDPurchaseOrderItemEdi
+      		hfdetail.fdligneEdi						= Fdetail.fdligneEdi
+      		hfdetail.ExtraArgonPrice				= Fdetail.ExtraArgonPrice
+      		hfdetail.CalculArgon					= Fdetail.CalculArgon
+      		hfdetail.PietageArgon					= Fdetail.PietageArgon
+      		hfdetail.fdbase							= Fdetail.fdbase
+      		hfdetail.ExceptionForShippingBill		= Fdetail.ExceptionForShippingBill
+      		hfdetail.fNoLot							= Fdetail.fNoLot
+      		HAjoute(hfdetail)
+      		
+      		
+      		
+      	FIN
+      	HLitSuivant(Fdetail,fdnocomm)
+      	
+      FIN
+      
+      HGèreIntégrité(Vrai)
+      
+     type : 458752
+   -
+     name : GetRackNumber
+     procedure_id : 1842156811462041333
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetRackNumber (<nNoreference> est entier, <DetailLineNumber> est entier)
+      //
+      // Paramètres :
+      //	nNoreference (entier) : <indiquez ici le rôle de Noreference>
+      //	DetailLineNumber (entier) : <indiquez ici le rôle de DetailLineNumber>
+      // Valeur de retour :
+      // 	chaîne ANSI : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetRackNumber(nNoreference est un entier,DetailLineNumber est un entier )
+      
+      
+      SlotNumber est une chaine
+      RackNumber est une chaine
+      
+      sTxtreqsqlTop est un chaine = [
+      	select top 1 racking.LineNumber,Racking.RackNumber from racking where racking.ordernumber = {pOrderNumber} and racking.OrderDetailLine = {pLineNumber} order by linenumber
+      ]
+      
+      sTxtreqsqlBottom est un chaine = [
+      	select bottom 1 racking.LineNumber from racking where racking.ordernumber = {pOrderNumber} and racking.OrderDetailLine = {pLineNumber} order by linenumber
+      ]
+      
+      
+      
+      sdReqSqlTop		est une source de donnees
+      sdReqSqlBottom	est une source de donnees
+      sdReqSqlTop.pOrderNumber	= Remplace(nNoreference," ","")
+      sdReqSqlTop.plineNumber		= DetailLineNumber
+      sdReqSqlBottom.pOrderNumber	= Remplace(nNoreference," ","")
+      sdReqSqlBottom.plineNumber	= DetailLineNumber
+      sTopLineNumber		est une chaine	= ""
+      sBottomLineNumber	est une chaine	= ""
+      
+      
+      SI HExécuteRequêteSQL(sdReqSqlTop,hRequêteDéfaut,sTxtreqsqlTop) ALORS
+      	SI HNbEnr(sdReqSqlTop) <> 0 ALORS
+      		HLit(sdReqSqlTop,1)
+      		sTopLineNumber = sdReqSqlTop.LineNumber
+      	FIN
+      FIN
+      
+      SI HExécuteRequêteSQL(sdReqSqlBottom,hRequêteDéfaut,sTxtreqsqlBottom) ALORS
+      	SI HNbEnr(sdReqSqlBottom) <> 0 ALORS
+      		HLit(sdReqSqlBottom,1)
+      		sBottomLineNumber = sdReqSqlBottom.LineNumber
+      	FIN
+      FIN
+      
+      SI sTopLineNumber <> "" _ET_ sBottomLineNumber <> "" ALORS
+      	SI sTopLineNumber = sBottomLineNumber ALORS
+      		SlotNumber = (sTopLineNumber = 0 ? "" SINON sTopLineNumber )
+      	SINON
+      		SlotNumber = sTopLineNumber + "-"+ sBottomLineNumber	
+      	FIN
+      FIN
+      
+      SI HLitRecherche(CustomerrackNumber,RackdateCurrentRackNumber,[datesys(),sdReqSqlTop.RackNumber]) ALORS
+      	RackNumber = CustomerrackNumber.NewRackNumber
+      SINON
+      	RackNumber = sdReqSqlTop.RackNumber
+      	
+      FIN
+      
+      renvoyer RackNumber+"/"+SlotNumber
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x19879c87331e3cbc
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

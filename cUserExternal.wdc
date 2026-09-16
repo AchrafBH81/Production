@@ -1,0 +1,69 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cUserExternal
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x149594ea07b2ff65
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cUserExternal est une Classe <mapping=Usager>
+      
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis l'analyse.
+      	<MAPPING>
+      		m_IdexternalUsers			est un entier		<mapping=IDExternalusers, clé unique>
+      		m_sUserCode est une chaine <Mapping=UserCode>
+              m_sUsername est une chaine <mapping=UserName>
+              m_sUserPassWord est une chaine <mapping=UserPassWord>
+              m_sCustomerNumber est une chaine <Mapping=CustomerNumber> 
+              m_sCustomerName est une chaine <mapping = CustomerName>
+              m_sMasterCode est une chaine <mapping=mastercode>
+              
+              m_bIsmaster est un booleen <mapping= Ismaster>
+              m_bIsActive est un booleen <mapping=IsActive>
+              m_bIsnew est un booleen <mapping = IsNew>
+              m_sCredentials est une chaine <mapping = credentials>
+      
+      	<FIN>
+      			m_sPassWordEncrypted est une chaine
+      			m_bIsModified est un booleen
+      			
+      	
+      FIN
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1483255385161006949
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1483255385161072485
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x149594ee07b610aa
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

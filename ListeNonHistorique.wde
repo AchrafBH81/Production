@@ -1,0 +1,264 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ListeNonHistorique
+ major_version : 29
+ minor_version : 0
+ type : 3
+ description : ""
+ subtype : 0
+report :
+ identifier : 0x41bd0b1474c61b2b
+ internal_properties : CQAAAAkAAAAoecYLhPVZEG0Wc86mkPWiNMuYTqFyL4vr/r6M5/muqquOXCPRl7sPBXpNXS30siBd5BAGj2yCTG5IgDw9c0xguBQjiewWKPw1AVfisQ3ULvA+Vm2nV+Eat6pz3T/3QEmC5FR1a7D/4RwtfhAca1zjYhe7P2auM3D2YFEoiujX52R7BRlbopgXRMoiCkaNFDGgNvnqFV6BpVYvhrmNbtuxRp+ywotvIfsUWC2DTbg+Ll/GRJX1k3FD5QX/MsgIXiOGag84gyKbafgoI92NDDJSHXzQ5UdFb94OtFPHYlBdwrocvxUvPyvv4SE3YfFX7uMivlNKZUbhAyylhwydvWCJsEltoeLkGnPKDds8PK360iwSY0t7Ii1OcPfsNxApDWi0+6jb45bHwmHgUmAceg2upN4GLUozLtchYFqBaNQSdewJzutke+YaOomQan3m4TuilrecwaDb/MYKI8GR6wkFORUEu8Zz4TOcsR4iBWmfjnpQ2PqhrDMNPtdtiGrjslX075jCMxexeidD8PtWLZfWa41/M4QAInld3FyA8Mcx2JmrrajmbmwtZdOu92Ix+mpUAr0iQwx7a0rrGoFcORBxuvJdCFfNkwanYgIVMFdfiotbwgXJpxsjDPvY1U/ZeLsMHBJRrp7k1bexf3qXK6bAI6AKQeZR8DWepg4kDxofxrFfELa9NHcvftyCls/uLlCguHBsbJXf+a1PA8j56PyXBsN1BHfhHMNY0D+qbQi3WVw4iBMz1rb7UftC3dvL2qTKVlnTZsYri9QUL8Xs8CWyOLLbSIBamJbCdMCkZgPmC5dBaIjaW6LvzHaEgR93jJUfrkVbepdLBYXSjJ0nxCU3Kg==
+ languages :
+  - fr-FR
+ blocks :
+  -
+    name : CORPS
+    identifier : 0x41bd0b146e831b2b
+    internal_properties : CQAAAAkAAABKVVsGqqkdiHa/xL0BeVbHu+iEFQz0CBiSVCSRB7+DvaY9Y5PJEcNIHs21FufigbbsFdf40HInoaB/Jha+gg7jJWH+LAuQesF7TxqzOHrndnabhhe+0q64yb01Y+OYnMkllkkJnP1YCjMmrsp16+xPHxP9Z4751i3+VCBZ6bKRYtHcQpvvQRCVAXUkbo+xbIFQ1Zub03FoBryijPY8tJsQRtTwIPtkEoIWkrIT/yyJVdM7sLKgYml0ZJvDb7rXv2ZZ2Q==
+    properties :
+     width : 195.9
+     height : 1.265
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1-
+         
+        type : 327692
+      -
+        code : |1-
+         
+         
+         
+         
+         
+         
+         iHautBasPageImbriqué(vrai)
+         pour i = 1 a 7
+         	lrapportaimprimer = POSITION(lordre,NumériqueVersChaine(i))
+         
+         	selon lrapportaimprimer
+         		cas 1	
+         		    iFenêtreAbandon(faux)
+         			lNombreenrImprime = 0
+         			si listeprix.rapportaimprimer[1] ALORS
+         				iImprimeEtat(ListeUniteClient,0)
+         				
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         			fin
+         		cas 2	
+         			iFenêtreAbandon(faux)
+         			lNombreenrImprime = 0
+         			si listeprix.rapportaimprimer[2]
+         				iImprimeEtat(ListeCarrelageClient,0)
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         			fin
+         		cas 3
+         			iFenêtreAbandon(faux)
+         			lNombreenrImprime = 0
+         			si listeprix.rapportaimprimer[3]
+         				iImprimeEtat(ListeVerreUniteClient,0)
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         			fin
+         		cas 4
+         			iFenêtreAbandon(faux)
+         			lNombreenrImprime = 0
+         			si listeprix.rapportaimprimer[4]	
+         				iImprimeEtat(Listepeintureclient,0)
+         
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         			fin
+         		cas 5
+         			iFenêtreAbandon(faux)
+         			lNombreenrImprime = 0
+         			si listeprix.rapportaimprimer[5]
+         				selon gFormatFacture
+         					cas 1	
+         						iImprimeEtat(ListeThermosPrixClient,0)
+         						
+         					cas 2
+         						iImprimeEtat(ListeThermosPrixClientTRN,0)
+         				fin
+         
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         			fin
+         			
+         		cas 6
+         			iFenêtreAbandon(faux)
+         			lNombreenrImprime = 0
+         			si listeprix.rapportaimprimer[6]
+         				iImprimeEtat(listeformeclient,client.numero)
+         
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         			fin
+         
+         		cas 7
+         			iFenêtreAbandon(faux)
+         			lNombreenrImprime = 0
+         			si listeprix.rapportaimprimer[7]
+         
+         //				iImprimeEtat(ListeExtraPrixClient,client.numero)
+         				iImprimeEtat(ListeExtraPrixClientTrieStandard,client.numero,"1")
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         				iImprimeEtat(ListeExtraPrixClientTrieStandard,client.numero,"2")
+         				si lNombreenrImprime <> 0 alors
+         					iterminepage()
+         				fin
+         			fin
+         
+         	fin
+         
+         fin
+         si pas FenEtat(FenAttentePetite)=Inexistant alors
+             multitache(200)
+         	ferme(FenAttentePetite)
+         FIN
+        type : 327693
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BAS_DE_PAGE
+    identifier : 0x41bd0b1403231b2b
+    internal_properties : CQAAAAkAAACE4N4bH8PBD1y1WD34bn7h0vNDy8b0iNI6dcwarBLFlUK0S5XspteVnineFFARbhwUnvkbbVtqEYjjtVuVxVWSYnA3XbkiesQIk8PHSrfNgsDc5i14swN3L2kNh3eaCzG1QMHFMYkZz9mcnydiNq7b5LCMUIOBDEKQuu/HdXJNtCw394Hc5HmT06JjT2Dfqe0YRtG3U1VtM21LAcrL3zj6LzgkPp3qr2uUkNeRtGGngbg2XyhvPdOkcf7KADhkbgcnsBB6BiN5jUPt
+    controls :
+     -
+       name : NOMCLIENT
+       identifier : 0x4615647c680a11aa
+       internal_properties : CQAAAAkAAACdWBJKoQ6sMD7V/NWtEEkoiFfG7Ja4NvYSbA+gNe6DOeUfLWsZzn1o3ywI+2fv5G6cqYb7NpRBdkdzIT04syJPY9hxXg6EMLc+PNKgONEDUl14/WCPKrzxwLeO1V+G+8AWfnfFJ+HeC9EukgukWlW4xUf372idUwFXxanTJ/vslo6zkyUfAgX8p+k4rBJUXUNxErXoucMFMrxLmWN0ZwErkVG1d+cAJ+b37yIPRvqcXybNpNLVnAzyIfwNxl7B31cQds+w2t4Cr0mgHzEY2sWFqVRpl8coDdPPG1zvl5AWpsGsYjPr8tpYwqBNW51EfWhTGLzZDwkRdMfxOMddFcmGh/IGgfoUn4GyNlh3r86QDof8yXG+n2s1vPKLr0/eUgusA1+ygbkpix4wBqJ0BY86D94s6c7WiNNGWup84UTGiIUIIUSfrfrwqcPjQbQiuVdqEAJ6KtvUlFn1
+       properties :
+        x : 0.119
+        y : 24.242
+        width : 96.5
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            hlitrecherche("client","numero",cl.numero)
+            si pas HEnDehors() et HTrouve() alors
+             nomclient = client.nom
+            fin 
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LIBELLE21
+       identifier : 0x4615647c0de21207
+       internal_properties : CQAAAAkAAAC6VgECJPqh6yphKcVeinLSPONihI/9cQL/r0k2J0TlYpq36C+EvaRAq6C7W3sygtczxFSec7m68VX4d4As2MGALPZaCBlkmdHnne1DSOdQWOR0F4otoIKywm+v9A6FmAkgyaABCUaVJ+dz5f1nPtaFjRAyXY7pycEI+E51VaZu8amgUwS4J1RLZMdaWaoDyRFWhq/H0OwtgDU/OISlCSFb0BglKbj9toj3KW2Ve9m18GiGRuP+tdRWEbPbFRH/rYEpVcMGFhWBfo5NLw0HWdIobf1eGBB175f2wElaq6Z1s37bJUZ+u4j6fqpYBbUd9L1H1pWNqIjB6aXrmUFhDIiV9RNgd6wrnp33bQ64I6R4z7y7T5S9MlWqMAix194+P0hYSFzHA+gVa+7p8GqBK4kBPaaHsOrAstNhelZ8RVHbeSkSoFD6nuvxH+GRXKB2sDzPjsq+9PwhN0W1fUP4OoRWtrlPWcBhIhA+JTqaLi7b6a+r
+       properties :
+        x : 171.64
+        y : 24.242
+        width : 12.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : HD_PAGE1
+       identifier : 0x4615647c4f0f1207
+       internal_properties : CQAAAAkAAACc6Qs9S5j93RazgQ11TBzRSxAJkgmvT2V2e4Pb4oY9LRXFggpfIvJ92N9IdBxbIXWAU2qHkDu+jmC0/byZhw5WTPzpcn20xmJYzYg+uoY3W9HJ45kyc2U2U3SZN4x2eyBenUo4al2S7GHcPevIRu8rOu/uF1TsSrJCD486dnaLAdbaiuWUCMcdaXsouYKAEjsa3BCA6L2YN63oEFvMGY7muSvoUTkMYYHLraFD7G6fxv2Ff8DLZAvRG9ElEKwCRJjnVlC4OaR+Gs4i9Bbe5BIxQpz3g2D7nUzMcFPUGFSTs+VO4yysvMPjns1MgNjl6dI0NgbT65QoA/Oe/HFclLDbdgXQKzXjWfe+G/1197p6e0lZymOb52FjnuV06nt9mIJcGLMQpChSZn7cQZthbO+XnNQR8MVdskGQ2yvZnttkvRK99LifFRC+vv9V5/rIPM2MVZ/GZpSXVSXYvRSfonuI
+       properties :
+        x : 183.5
+        y : 24.242
+        width : 12.4
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            {"HD_PAGE1"}=iNumPage()
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : iMessage
+       identifier : 0x5689de5d7a485ae6
+       internal_properties : CQAAAAkAAABwbhXYVpW8vB5lldEraavzNzjsBc60csXMzUUZ5UNO40ew38S/x/XuTuyf3K4RtZh+2jkB35ymzUZgZErHB79K6Mkxkr5eeXnsBLeTFcMjGgvg3VufG3YV8D8fVszKFbozZz0C3N5szd6rSxGFl4Id9W5m2/Io4ap0ZJtgN2OQfSS2adfBrzcXdgksHK9ls3WsGgu1PtOSoFQk8/jTWZQRHMjcNLjxGhE+YDu4z8Br5O3B8d5VvsUwA5Pe05riVAjpxub1Ky8kcjDdlQMjtkZGZqwfhpi6v0rRT5D2e0+YjHWRVedLOda2wN6lP3wgBae0HtB4dqxjuF1tB0iRkbxf+1UIV2SfHocjkf3J9Gy7CX6yGoe+mz1zrmEmGFRR77e4Xlo8mV3POJKoGlM0GC+gqs+EsrEgipzYKdUWIAbTzd+k9jcCJJWTd91IsOarkv6xB4SFZLAQYFuwuO1ww7dVCWbKnw11Qmg7GdE=
+       properties :
+        width : 195.846
+        height : 10.96
+       code_elements :
+        type_code : 29
+        p_codes : []
+    properties :
+     y : 1.265
+     width : 195.9
+     height : 30.108
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1+
+         selon lrapportaimprimer
+         	cas 5
+         		imessage..visible = Vrai
+         		
+         		imessage = config.textebaspage1listeprix
+         	CAS 6
+         		iMessage..Visible = Vrai
+         		
+         		iMessage = config.textebaspageformelisteprix		
+         	AUTRE CAS
+         		
+         FIN
+         
+         
+        type : 327692
+      -
+        type : 327697
+        enabled : false
+ controls : []
+ code_elements :
+  type_code : 13
+  p_codes :
+   -
+     code : |1+
+      procedure ListeNonHistorique(lordre="")
+      
+      lrapportaimprimer est un ENTIER
+      
+      
+     type : 327680
+   -
+     code : |1-
+      
+      si listeprix.nouvelleliste alors
+      	listeprix.nouvelleliste = Faux
+      	listeprix.ListeEffective = Faux
+      FIN
+     type : 327682
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  integrate_compiled_code : true
+resources :
+ string_res :
+  identifier : 0x41bd0b1545bd1b35
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=

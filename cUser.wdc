@@ -1,0 +1,79 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cUser
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x10df05a610ad7f65
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cUser est une Classe <mapping=Usager>
+      
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis l'analyse.
+      	<MAPPING>
+      		m_IDUsager			est un entier		<mapping=IDUsager, clé unique>
+      		m_nom				est une chaîne ANSI	<mapping=nom>
+      		m_MotDePasse		est une chaîne ANSI	<mapping=MotDePasse>
+      		m_Administrateur	est un booléen		<mapping=Administrateur>
+      		m_Prenom			est une chaîne ANSI	<mapping=Prenom>
+      		m_NomUsager			est une chaîne ANSI	<mapping=NomUsager>
+      		m_IDGroupe			est un entier		<mapping=IDGroupe>
+      		m_Isdeleted 		est un booleen 		<mapping = Isdeleted>
+      		m_bIsActive 		est un booleen		 <mapping = isactive>
+      		m_sCompanyNumber est une chaine <mapping = CompanyNumber>
+      		m_bIsNew est un booleen <mapping = isnew>
+      	<FIN>
+      			m_sPassWordEncrypted est une chaine
+      			m_bIsModified est un booleen
+      			
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1215696635215904613
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1215696635215970149
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  properties :
+   -
+     name : Nomprenom
+     identifier : 0x10df06a310de592c
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         PROCEDURE PUBLIQUE Nomprenom()
+          renvoyer :m_Prenom + " "+:m_nom
+          
+        type : 1966080
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x10df058910a60c87
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

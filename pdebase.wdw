@@ -1,0 +1,143 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pdebase
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Produit de base
+ subtype : 0
+window :
+ name : pdebase
+ identifier : 0x41f184673fd09f75
+ internal_properties : CQAAAAkAAAD0+9NXk4lcRlSm3a81MFurJVEdzcvwYVbY0q3f0aoyi+atO3xLCZI2HXiBb8F+IBoI421hdWNFuvPePnwD2WIecSx2j11LEQHWQtwO7BUKrV/fcBBlV3qjUKblqoMoMDRksAe4DvD/XZVz99g3hqxAfK8xb4ENI6e1lFImE6exui34S8PvCce8Wc00DTweTaF55uN2sBPZDeq1hI6EokJ6Bxosolai6KeuvHTK8R2MqUPxc55aZeIdlQ2pJpmHggYwiRv8+vcnSTDmP3xER9U46eDzHygA/EiXlU6WZNddvv7b88fBFGo/lW+R1caH5pvPjUai7Akre4bwwmSL6pU+ZZG16q8PN5N+iYlbbMUMp4Kx5qR7lyq2B3rYGHU6fAUGpH05GJ79aBDmFWn8JEKGYpDzzaJUE1fEDpGuiGKiM18OV3lykohizxWAv/Md7WDptNS5v+zbrYrpkTHut6RqZMwSP8/bmcztkbhs9xZhMU011PL/UWLTgzxIjZxPvfiGX2LaIlmurV663NKO8f0AhrtcMgw2PMBTPeSouoWpwNscj27URctjDPa4MnBHLT+FyaijFzVuVUbPbs9c4Tb59Q8qvufjdPcx9O1DMNNB5LSkBI7B0f8kFqB9l9Tmfj2HvGvvyN4UuPsdFDOzLZEEb+Du3dQhP0It+ULxohX/zj8qhkRGpBQZNmnnMeDtgTAxiRLOx/gp7ah2EKcUsi8cJIQRluCvCNFh/AxVlJS63ZcXsnxausFICQYW9VGq+SdTJIC4XUjP
+ properties :
+  x : 120
+  y : 50
+  width : 278
+  height : 135
+  widthClient : 276
+  heightClient : 103
+ controls :
+  -
+    name : PRODUITDEBASE
+    identifier : 0x41f184672cfd9f7f
+    internal_properties : CQAAAAkAAADNieCvxIG/c68b+HUdxwKnJuuq/7Cq7YG6Hqcsv6GgHIJy4u+Brna2bKjjFJ+kfyMIk+O3FOJMkkAJ1Zv31HfkB9G6aptf2muAtbwgIK3HBAQ7VlHikhnNvy/f8fy6wg2U8AzxveWPBENazHjp4lK48qQKmmfQgL3pjLaFetOZHyobWdnnOXUsd9q3lcnfIOk5TcJ83CwfjC6x4xU2QKx/sS/iBtOFJfI+gz93FYwJDaF5jzPufC79PtusMyFOBNzKIiH3b0TgdP8Zjr8y3/ItSpmjFi6Zmgnzv0VTX3p38eFpdLuAEUblzH7BBsmgcgUxzJndme1F0jhBMiT1PXgKuK1+ApminUx453czrzD+m8uaBHLjwhNpifW8nzCiIZOX4TMjvOFXWsDCDlZD7IZ/P0NWr9eZqjWGvx52hJLCqeg/CmMW6fI57BZmSI8Iy/K0X77XW6HjhPcRXBpORHUgMLph9KWOdoU7Q1mNw6Atri7Ic9liKuI/9IJBkMDmzZg0g2dA7SZhMizo6etwBRPlXFwphNJMolxfKzs1ir4p0jIrhQrmIwhwncPO5Gcy/KAwotzNgU9u6wyUekebFZocKRpgsex3I6f5YoO5oHtKgxp7gLONn5BFD3SWTDNfkBfb5lVoDtbYHDYAkv/XBYzu10T4T6XthVncLpb1CDdU1DstCvPiFOyNsfYTL3XJUxsik/gIdk+BuLYE7x2Be5ygwp1h6HHh13Cg8kh2u82oWeMw45BvUJLXVXFRwx5kvHqMpjB5adihAeTDq+S9ADDDmMQSjgRazwfDZovfxElGWiwfCKbeH5moQ77grNQ=
+    properties :
+     x : 61
+     y : 35
+     width : 144
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         hpos est un entier = hsauveposition("invent")
+         RESTAURE_BOUTON()
+         hlitrecherche("invent","INUM",produitdebase)
+         
+         //Code WinDev 5.5 remplacé par la migration :
+         //si pas h.endehors et h.trouve alors
+         si pas HEnDehors() et HTrouve() alors
+             commandeTRN.cdcodegl = invent.ICODEGL
+         	hretourposition(hpos)
+         	ferme
+         sinon
+         	produitdebase = ""
+         	reprisesaisie(produitdebase)
+         FIN
+         
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : BTN_OK
+    identifier : 0x41f1846721be9f7f
+    internal_properties : CQAAAAkAAACO0hegKIaa5JxBOa/gocmyJiYsUp2H0Z3ePipcRnCXueVtlRYwZRaYx8xjyyfB1d0A4pjo85aNCGzOv5jTphIEVVb9VyA4WbRq8z521HH3pJWgPHaGWsP7M+xbjSdDS+bykWe13AG1Q6CshmUwaLdkjld245NbRhk3dsVoNbRs9hWDFZ9vws1I7+QbWvVcJUoze/+8HkhDNl4IcKuGFgDQWnmVKLUHA6k20VCQ+u3/346P321r8220lRwlkKeQcjBL94/g4H+1mBPbwtKSyV9i1tYK+fyQoUpAvbvl5Js21tTbIhO9vBMlYZdc0KL13Fn8deznbfhrnF38sieCTMNK1f8m+wc7EnoB98D6QnKYiLC7HwhUjwU/R+dERnaGzWPdDf663iVFfu2WqfpuwG2fUJihdBiP7yn9pd5+74dc9QC5KSi3I4/1N9eCI+ncXWVc9ESwaJqRaalwT/hkhFCXFf7NV4vMF/AxC1gzBh7OP4uHWrj1cdSEJ/vgxSg0K3v+6tH1m5DYaP3usFcq9SVBcr5dpu/2InLE7N9e3Q3IimHM8TAXneZ8uwZVycTt+Zg381MdF/PPi9z2LP55y9qbXkLJs/0LCYrK4OBjPp4VYeWbHmB5+TjAI/lgGo2eBdhAXaIAfOe9hUaHMhLeG0Cpg/fqNr5daNAOU2GeTozXpPVBFPcflg/DjR4Bmt/Bgu43PaRcL5FN62/2fg3zhMyyqnYdEMpctKyG
+    properties :
+     x : 285
+     y : 17
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         pdebase..ValeurRenvoyée = pdebase.PRODUITDEBASE
+         ferme(pdebase)
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x41f1846749b69f75
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAAoCH4dbWJg8ZqDj4WZbyOF4nZym3YcMSm/PMbNFC8NzLPs81yPwzGnjMLIcq0OQ1qCiWsoyveDQA/8u5DSrRYBzgTv59teMVljAjmtievWfbxpy5GGfKQ5AGN0bw==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      procedure pdebase(valeur = "")
+      
+      // Pour compatibilité 5.5
+      MoiMême..Visible=Vrai
+      
+      produitdebase = valeur
+      
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      renvoyer produitdebase
+      
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x41f18467259d9f75
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,139 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cRelationThermos
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x178156380141039b
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cRelationThermos est une classe
+       //  hérite de crelation
+         idRelation est un entier <MAPPING = IdRelationEdi>
+         ProduitBase est une chaîne <MAPPING = ExtraCustomer>
+         IsTempered est un booleen
+         IsEnergetic est un booleen
+         IsException est un booleen
+         ExceptionTexte est une chaîne
+         extraSupplier est une chaine
+         isModified est un booleen 
+         IsDeleted est un booleen
+         
+      Fin
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1693729733407277979
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+      :isModified = faux
+      :isdeleted = faux
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1693729733407343515
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : ParserThermos
+     procedure_id : 1693729905206140547
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //ParserThermos ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE virtuelle ParserThermos()
+      
+     type : 458752
+   -
+     name : Deleterelation
+     procedure_id : 2009249979851904169
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // Deleterelation ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE Deleterelation()
+      
+      si :idRelation <> 0 alors
+      	si hlitrecherche(RelationEDI,IDRelationEDI,:idRelation) alors
+      		hsupprime(relationedi,hNumEnrEnCours)
+      	FIN
+      FIN
+     type : 458752
+   -
+     name : SaveRelation
+     procedure_id : 2008872160059936314
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SaveRelation (<idclient> est chaîne)
+      //
+      // Paramètres :
+      //	idclient (chaîne ANSI) : <indiquez ici le rôle de idclient>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SaveRelation(idclient est une chaine)
+      
+      
+      si :idRelation = 0 alors
+      	MémoireVersFichier(objet,RelationEDI)
+      	relationedi.IdClient = idclient
+      	hajoute(RelationEDI)
+      	SI HErreurDoublon() ALORS
+      		
+      	FIN
+      sinon
+      	si hlitrecherche(RelationEDI,IDRelationEDI,:idRelation) alors
+            MémoireVersFichier(objet,RelationEDI)		
+      	  HModifie(RelationEDI,hNumEnrEnCours)
+      	FIN
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x17815638013e035c
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

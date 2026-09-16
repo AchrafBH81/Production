@@ -1,0 +1,95 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cOrder
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1ff9d7160dc3e3fb
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cOrder est une Classe
+      	m_nIDCotation							est un entier sur 8 octets				<MAPPING =IDCotation, clé unique>
+      	m_dCotationDate							est une Date							<MAPPING =CotationDate>
+      	m_sIdentification						est une chaîne ANSI						<MAPPING =identification>
+      	m_sJobNumber							est une chaîne							<MAPPING = Jobnumber>
+      	m_nCurrentUserID						est un entier							<MAPPING = idCustomer>
+      	m_moCotationTotal						est un monétaire						<MAPPING = CotationTotal>
+      	m_moFifteenYearsWarrantyTotal			est un monétaire						<MAPPING = FifteenYearsWarrantyTotal>
+      	m_moExtraArgonGazTotal					est un monétaire						<MAPPING = ExtraArgonGazTotal>
+      	m_sCalculType							est une chaîne							<MAPPING = calculType>
+      	m_sCotationNumber						est une chaîne							<MAPPING = CotationNumber>
+      	m_bOrderSended							est un booléen							<MAPPING =  sended>
+      	m_dRequireddate							est une Date							<MAPPING = RequiredDate>
+      	m_nShippingAddressID					est un entier							<MAPPING = ShippingAddressID>
+      	m_nTruckID								est un entier							<MAPPING = TruckID>
+      	
+      	m_tabCorderitem				est un tableau de CExternalOrderDetails
+      	m_clCustomerInfo est un mclient
+      	m_clShippingdetail est un cClientLivraison
+      	
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2304109174096978939
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+      Constructeur m_clShippingdetail(:m_nShippingAddressID,m_clCustomerInfo.m_numero)
+      
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2304109174097044475
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : GetCustomerInfo
+     procedure_id : 1521097526041618292
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // GetCustomerInfo ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetCustomerInfo()
+      
+      si HLitRecherchePremier(Client,IDClient,:m_nCurrentUserID) alors
+      	FichierVersMémoire(:m_clCustomerInfo,client)
+      FIN
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1ff9d7110dc0cf2b
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

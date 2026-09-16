@@ -1,0 +1,287 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : OperationSpeciale
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : OperationSpeciale
+ identifier : 0x2f899353042c7e1b
+ internal_properties : CQAAAAkAAADKDPXNeCb9Zi1pNoe2EWsSuj2IMYqZtR7eeD458eENwvr3MW76skakhgqgCXbsBy0UtuYdWe5c5K2u6xtXrMRDsbNYaCXe5vFG7GRs6/PEGzNTQmq9wNpYEOqlXlU1vuJ3cWDJrcHsSPdkVqPC0o5FkmqhdRaiw1hTNUuG8G9TSt5UOkRwv4DWoC63Yek9HheXxf3JDNU9BMpVvGVDr1uLCvNPE4siIZhlgDYnsD7sdrscdJNLWIdcTJxoItGz/9YK9j3fA8n5Jg9D8pJQyMB9Q4GZuMfll/823uBiaBeH6eaaVnwHrztHdIC01MAIaOqZGHEf62yQtFmqNzN7gnkUqIiTs26PjAnWf9cq1zFy6qU34H/Bp4aQkSRTDg9LSjuoaJx4Ms9X5QsnL/oTD9uIcmYHTXt9hjeIwfhSBqiaiQfaQB41Ubm6J3ngkHhtdRYKQtEvLmRTekdndIEglkPeKE4LpJpz2d+RxyS0lX1++73EQn0ZGZrmqI2OHDh/4w+NFNkXJNeqrosTiAHHqk4Ooh+MmA5SOWFWkaq2Wop4sDXpPVrejRWoSgwJkXLE6NKfiBB/zuVqPizEW/fd/9hsw8IWgO3djEZltnNdh4z453Y1i4b8Rv1tUgDDurK+GInnFF/y5q6OGrR+1qbkLbE5rXdLN9/9Ze4E1pw9HDZO10zf2oFFTe54ttaTyEJuKXwYI+SEuXC9XaRneNMTFY8Mcb77qa0uAW9MRemoT/XJwfyR6Yxmcn4oYbj+Jbx530m4lGQxIfTivsDHhKLvHOrakPmikT9Mw6K4yyyqNc77IdiQdbelVBKVQd+008ag2Pa3hXUS7Bf3937+G9rmLgSvvfBXdy+2p3oYMTzx5Z/iOFMYjSrMdnNwYVebATZjyO0eE1ewtwvpqdFrO/D3h21dZllHyLNtDG4UH81pyBIZ9+AgUBMH0h7MHfEMiw==
+ properties :
+  width : 800
+  height : 623
+  widthClient : 798
+  heightClient : 591
+ controls :
+  -
+    name : Bouton1
+    identifier : 0x2f89935e0491a819
+    internal_properties : CQAAAAkAAAByM1HOf8xWY1GgRFPT8jVIPC+zJNn8TZA3zjuI+9SEX2/qkhBAIwcKZ3DrtzOecpBXwsrxeOoEfh+u2VeAR6zOSucmdeSLJcohySToFNlnK7UfOiGH3AMe06j864ogXFFsi/aTzBVhb0w0ti24tEjPpgMBr51Ry5X1MrUAeBQMlrhTAI75CHOpMaT14/or564Xq3BuUXvrGdIIjpdxAGUln0/3IJXokILNy397FkXP4i5S3hVwai5LGuvNrgSYcICBqyyFOv0xk5v+xvm6Cr5yQ70WBCW5ujGygyuKUNo7o7prxfZ6m34iY0t0fQE8uBDX5uPLG5+Rr+vqOKYy5tTlvZr5++unw08TCPppuipyrLzmOGxWaxftGiEqRiZckfIwSq4tvMQ/+3jJ2ZnX4v4dFtuFin33Oa5NpceAHS1yxESjOupMI9F3h0EWbwHGu4ri9DmhFPUOOW0cUQWvmV4/Y7pooFFNEnz35Nh26EByb3r2Cg/Sm8gJ3ED6mycWT6eFrj5/h1H9Lp2jQaNe0uSGYdB5ky1HzfGOeBTzTRhD14/TrhqB7wid+rBbJuzqUxFNETHf0dti6uEWLGetcwY93A529XlWc+tve6Yq5PGeZ0dPpDV5e7ZwJnAUkKwoK99wsPU57gFf2oFIOVYdI7hTQnKdAkaDfgc65hfF1fB5AXf6IQPASzW1h6TaNG/3Zqkf3lC/r6b7H4vtZ73hpnqLKACfGd5Y5f/6dUknLCSNYwEyvfsQKfT1sJg=
+    properties :
+     x : 56
+     y : 55
+     width : 246
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         pour tout facture 
+         
+         	message(facture.fanumero)
+         	multitacherepeint()
+         	si facture.fatypedocument <> 3 _et_ sansespace(facture.faclient) = "139" alors
+         		facture.isedi = Vrai
+         		hmodifie(Facture,hNumEnrEnCours)
+         	sinon
+         		Facture.IsEDI = faux
+         		HModifie(Facture,hNumEnrEnCours)
+         		
+         	FIN
+         FIN
+         
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton2
+    identifier : 0x2f899fdd04d6763d
+    internal_properties : CQAAAAkAAABWI2L6nfwV5gi4dHcEFYSael4UMxflWZu727WjaphfU2xnVCdQi+jyiRjWv2FCW1CY55+qCRBW4gvVeRQwteJ2x6jd1f5tnCUXQMQBUezuVrIz78+6OKIn9BbTPZFDghcRXgmocf6j6sWKK5PVKqyfGPvVI/SbWgNC2zqElJBxOfeuip04Jt9xarEJbkPUBb6uCXWBMW4xc84rYeNx7tu2Q2qnuW9j4Pl5fzpOhk70WzGz+0wTQcalUtwGhfXOKnabc6W6OGItE4cx4+cXwtqMl+VDo6JQhyopnmwlVcjXaFnqkg0CPj3x1E1AgSEOifQdDDu6Yo2YaGmJhho2L3dcBvn0GDXjZx+pL2sTT/647cewUWlW2EmunmFzB3+QTacoX8omouGnD9joglkBG7DC7M+ZF9h9DhygBqagnpflaXLL7nIFE3zC79Y/xXPnIH934s8OklQw59hxQ+8oAbthf+/4nPuogbHDGKfxj9sUzQgT+85NXyXcuWZWm3KL0BWEaKQDy6j5tW7kzj8n9p0bDfo4BDM6Scn5pGRKV3KrIcVJnZ58QEPPoA5pghYXHbdfUZWutPvX51Kmv8AM05+5GRh4i94lPBov1w3nVzk3WAwQCABQRZPbLCAXGspttDMHVe4tiJYpeDlXh5AmgEx6EbaDu6Bo2Ag4vVBEjOIwcOJIHlGM7cjCg8uNmi+UR9oGgb8xQAgy3ScHMB8KWotK1JLQof9K9qzISmQaakUIno89b+wFS3qvnlnV
+    properties :
+     x : 56
+     y : 208
+     width : 246
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         pour CHAQUE Facture 
+         	message(facture.fanumero)
+         	MultitâcheRepeint()
+         	majtracking(facture.fanumero,facture.computername,facture.isedi)
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton3
+    identifier : 0x2f89a731a004163d
+    internal_properties : CQAAAAkAAAAusujI2X0muNNgVpm4rg8CwYgf/hyTOzdE9JLSD78cjHZereQXqsYHPNTVo/haWASjQAA+7pvNpazjUoRQ/R+OPlfi4qsT+hK3vhO4DMJrwp3cIHqBf2oCddVqVbkA53BRbKZ3wLwDv8qufVGSTkJ0+4K7JmbpUIO6jfr4JZ4/OOd009jXhlldGzjpIbqWu1FsQ4TwFY2SXjckXepTVpdOPWIsIwo/EFRrwJ6K4moHinZl74szW2ux7X+d0Ty7GNMB1OkHGy5iPkNBUg5W/kl134fVbW1e64UIxOWGXsKgwjE8KMS//G+EYI2f2BXICMknanTepDJsQuQUkPqwNS/iXXppI251rXxpPKE9rVUHn+yoOVy9IJ9nRozLI7irRz63A6uN8pMRCYq/lLiTnwipn8+00qADvMKuBxA5BkWL4LlXZe8H80CcIRePhsHz8KyQhrbv9CbSidJQF2Bq52nOvLnBX4teN8epk1FwDxFybBPLxt/Bp6FGq83c2BArlKSr+hUeN6D1FQJTRI4BOHdAEuI9BdsQF40pcUxltcB5HhZ1Yi8klFvRwtGxSzjrHeLaJ9hNhgfP5wY/2+u2VbGq7tjrWF4RHIwpcNFyby2nDzsCSxn6nfc9nvUXffQJdPCAAyluvgTXRLHyiaO/Ljw7/iBePrzKahzojq7d9p4YH6Wwv6aUMya42SBtx9+wT/Ghd5w43vL0j0mQsOzaYre3CaQX5G/MMOS51OG9dA0ekhAwCE4TgOiWg1yDMZU=
+    properties :
+     x : 56
+     y : 85
+     width : 246
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         txtreq est une chaine = [
+         update facture 
+         inner join logfile on logfile.lNoCommande = facture.fanumero
+         set facture.Computername = logfile.lUtilisateur
+         
+         where LogFile.lFonction = 'HAjoute'
+         ]
+         reqsql est une source de Données
+         si HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtreq) alors
+         sinon
+         	info("erreur")	
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton4
+    identifier : 0x2f89b270a2120724
+    internal_properties : CQAAAAkAAAAdjjhKQN+zSMSFSZgThNsNvDwxanJEqOFsvwExXYiwl5DnNTwZQkjlh1csU13VFWExKGmFYA+uSmjILtSX3/hzS0WsCzZreAwjreX5ktQy0Eha3hV0lVvLNxN7QEVNTQS1Gq10FvC3tjWQ6R5tnvo2dOzngxQ6hGD/jW7SVOBFOJlj26ve5bHiOnfL+vkbawyGwkMPQDr1oFgf7c0qOBOxMnLUeRCDfZjExUvXr5AyPAFqfKDerSbclimdnv5QiQ7G33fAl/eyfXGRjVqhJmH879Mb4Dw2DTINakPMJxqEVvXjqE5E+p1FemMBbH9onO1H3/xWoNa0RLf6+jA8TYrG/ovY4+BQUFFqSWOyBvGMboWlcmMIHnjc23s0/exOlucab1au8yde5Rb6RsW+/6W16vZL6dMfO2ggirp0M78S1GIM8s4sKxNw5RRVwSj3kW4NL+8W9yp5kVrPn6On6Yhsvb7GXGquLn1DtOO3lkGzTlTAZ6bUVaA4GVoIwy0nE5oAwwqnmJZ6F2D+xkXWzFQsmd1gCOL6iCd3TlhGavRC6utWt7qNduzfXIo5MmFP1q7n2CUsmf1kE0LKJUCP/44ah43EL2txLSQBpffdjp+qrSDbXLwnPezVdo75pO+9ZVKFbOKRoZjINnfB8RQ4KhGNzK6JKwKqWX0WRhUJndbrRf49zRwXJ6zyn2auEq5R7Hjy+QJfHTpH+wXtKjMphuiPugFNsJNNoEEx8Q/id/Gb7VYS4ZrwwJbkbXKXO5K4vTSPMxDn
+    properties :
+     x : 56
+     y : 254
+     width : 246
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //txtreq est une chaine = [
+         //select * from hfacture where hfacture.fadate > '20181231'
+         //]
+         //reqsql est une source de donnees
+         //
+         //si HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtreq) alors
+         POUR CHAQUE hfacture
+         	si hfacture.fadatecommande > "20181231" alors
+         		Message(hfacture.fanumero)
+         		MultitâcheRepeint()
+         		majtrackingHisto(hfacture.fanumero)
+         	FIN
+         fin
+         
+         //FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton5
+    identifier : 0x2fa59d11a1d6709c
+    internal_properties : CQAAAAkAAACSH7HByWv7jJqzxQ6JnuGbMKe6tcb25q558ExUCSz8oeFJgUwMoKIL8/6JSUdzu0CNHKHTSmlAsJwcYAAvF5Qvf/EozYhdhkr/UUuZsmj2pGwG2mfu/86yZPsTOKG9aThVOolMrggLds1wmX45DlZ6pJR700RSmOCHfSaKgEC5fInTj6MeDW2S2j8DEqWbJyDGepf/UCpBqDg/na0m8O/1UgqQIUDjqYAcbSNfExB2eEmiOOBeBRq0TuldxhLovWrmB9PIb0dmrUFBzZrlnkXIlwO/YJS+wQIFYtvk4xoYSn1rNA40irllQmuhpPuouDln9xje2DYABMfyEoDwjVY65mv0cxDAJOHq0ftSYuEggtX9FgvAxowsE3tcbQCugjtqJ4zUxRVEg0DY3GNQDYufdDhBv9Wdoc7KyPgqzdWIXhSGMLweqZm+tzqLnyLl99DvYZWEeTiP57zVvVHZ35Z+V+D8Chx8/At9IlEVOK95gP66ZUw2uxbu05g2kfdtuez6LcglWiQA3Xoc5BugysqWYx8u1jzQdg1pdH4cBErgFI0IPRBfpBL9zuAvODNdPHCpuhMiq2OyoXx405YJPdz0YY/ibTW/c+oLwz2LYG3gt6oFssIpg0JraORPYpFbuzT/pmBH0y5eTNlnlwh2KMZJixUoiofdhCb/T6CEKhFEPH3kLKuEMr9P2Cft2Rc4pYd9fDHO40xFkb8++H/hfhyw9bQK0j/p7C0COIAptiv+L9eshFNX2av7VI1UZOWNNK0Gqp9o
+    properties :
+     x : 56
+     y : 318
+     width : 246
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         txtreq est une chaine = [
+         	select commandeachat.IDCommandeAchat,commandeachat.CaNumero,CommandeAchatDetail.cNoLigne,commandeachat.CanoCommande,fdetail.ThermosType,CommandeAchatDetail.cadNoProduit from CommandeAchatDetail
+         	inner join CommandeAchat on commandeachat.IDCommandeAchat = CommandeAchatDetail.IDCommandeAchat
+         	inner join fdetail on fdetail.fdnocomm = commandeachat.CanoCommande and fdetail.fdligne = commandeachatdetail.cNoLigne
+         	where CommandeAchat.CaFermeExterieur=0 and fdetail.ThermosType in ('D','T')
+         ]
+         reqsql est une source de donnees
+         
+         si HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtreq) alors
+         	pour tout reqsql
+         		si hlitrecherche(commandeachat,idcommandeachat,reqsql.idcommandeachat) alors
+         			si pas HLitRecherche(invent,INUM,reqsql.cadnoproduit) alors
+         				commandeachat.CaFermeExterieur = vrai
+         				hmodifie(commandeachat,hnumenrencours)
+         			fin
+         		fin
+         	fin
+         fin
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CQAAAAkAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+  controls :
+   -
+     name : Case1
+     identifier : 0x2f8993f604a9fad3
+     internal_properties : CQAAAAkAAADYRazTKiSR1co8PN6iDL//wRelKXJKXhKoDIg2HN7wSwTslPGr3VHNo5FsWlFglV3MOUuVE84baygJZ6WgToE31KD9dHBJyXLcn71UnSloxJxzZYBlOblI
+     type : 62
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+  procedures :
+   -
+     name : dessinejauge
+     procedure_id : 2272648280743654386
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // dessinejauge ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE dessinejauge()
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1f89934a0a1c5a18
+  internal_properties : CQAAAAkAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+  strings :
+   -
+     text : {}
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

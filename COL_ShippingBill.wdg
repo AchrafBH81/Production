@@ -1,0 +1,519 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_ShippingBill
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x18dc39165128de5e
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      tabTaxes  est un tableau dynamique de 0 par 4 chaine
+      
+      
+     type : 720896
+  procedures :
+   -
+     name : SavePrintShippingBill
+     internal_properties : CQAAAAkAAAAETzEdwRNMKZCPH5biRPuGIhjJRSEy3U5JTZLOlnghFVmFZRAIgAj/DndRQNodyJtsm+0/ZceFTWe1eMnQaGiLmgPfLUoNfKg7ZDSdjQfgE4hHDRZHlxXQX2O7phicXMgmI90vZoTwQshKoz41fdqz8xIKS6ylpZC1pX+bK8EWsw4U
+     procedure_id : 1791369519800376926
+     type_code : 15
+     code : |1+
+      // Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      
+      Procédure SavePrintShippingBill(nOrderNumber est un entier sur 8 octets,sPrinterName est une chaine,nShippingBillNumber est un entier,bSendByMail est un booleen)
+      
+      
+      
+      HTransactionDébut("hfacture,hfdetail,facture,fdetail,BonLivraison")
+      
+      
+      j						est un entier
+      i						est un entier
+      numerofacture			est un entier 
+      sAdresseCourriel		est une chaine
+      
+      sListeFichier			est une chaine
+      
+      sSujet					est une chaine
+      sMessage				est une chaine 
+      sCommandeTransferee	est une chaine
+      lNbCopieBlivraison		est un entier
+      snomfichier			est une chaine
+      lcombinetaxe			est un booleen
+      
+      
+      
+      
+      
+      
+      lNbCopieBlivraison	= gclconfig.m_nNbCopieBlivraisonCourriel
+      
+      
+      CheckDimensionException(nOrderNumber)
+      
+      hraz(BonLivraison)
+      lcombinetaxe					= AdjustOrderdetail(nOrderNumber,nShippingBillNumber)
+      
+      
+      bonlivraison.Bclient			= hfacture.faclient
+      bonlivraison.bdate				= datesys()
+      bonlivraison.Bnumero			= nShippingBillNumber
+      bonlivraison.Bcommandeclient	= hfacture.fanocommande
+      bonlivraison.Bnocommande		= hfacture.fanumero
+      bonlivraison.bstotal			= hfacture.fatotal
+      bonlivraison.btvh				= hfacture.fatps
+      BonLivraison.bTauxTvh			= hfacture.fatps
+      BonLivraison.bTauxTvq			= hfacture.fatvq
+      //		BonLivraison.bTauxTvh = config.tauxtps
+      //		BonLivraison.bTauxTvq = config.tauxtvq
+      
+      
+      SI hfacture.fatps = 0 OU hfacture.fatvq=0 ALORS
+      	tabTaxes = GetTaxRates(hfacture.faclient, datesys())
+      	SI Dimension(tabTaxes) >= 4 ALORS
+      		BonLivraison.bTauxTaxe1 = tabTaxes[1,2]
+      	FIN
+      	SI Dimension(tabTaxes) = 8 ALORS
+      		BonLivraison.bTauxTaxe2			= tabTaxes[2,2]
+      		BonLivraison.bCalculTaux2sur1	= tabTaxes[2,4]
+      	FIN
+      SINON
+      	BonLivraison.bTauxTaxe1			= hfacture.fatps
+      	BonLivraison.bTauxTaxe2			= hfacture.fatvq
+      	BonLivraison.bCalculTaux2sur1	= lcombinetaxe
+      FIN
+      
+      
+      
+      
+      bonlivraison.brien		= numeriqueverschaine(hfacture.fatypedocument)
+      
+      BonLivraison.cvendeur	= hfacture.cvendeur
+      hajoute(BonLivraison)
+      
+      HTransactionFin()
+      
+      
+      
+      
+      si herreurdoublon() alors
+      FIN
+      hexecuterequete(RequeteBlEtat,hrequetedefaut,bonlivraison.bnumero)
+      iconfigure(sansespace(sPrinterName),vrai)
+      iParamètre("DEFAUT=NON")
+      iParamètre("QUALITE=HAUTE")
+      iapercu()
+      iImprimeEtat(ShippingBill,lNbCopieBlivraison,requetebletat.Abreviation)
+      
+      SI bSendByMail  ALORS
+      	FenAttentePetite.libelle1 = "Préparation du fichier PDF en cours ....."
+      	iFenêtreAbandon(Faux)
+      	Sablier(Vrai)
+      	Multitâche(100)
+      	SI HLitRecherche(client,numero,BonLivraison.Bclient) ALORS
+      		POUR i = 1 À 4
+      			SI SansEspace(client.ccourrielBonLivraison[i]) <> "" ALORS
+      				sAdresseCourriel += SansEspace(client.ccourrielBonLivraison[i])+";"
+      			FIN
+      		FIN
+      		SI client.CLangue = 1 ALORS
+      			sSujet		= SansEspace(gclConfig.m_tabSujetFrancais[2]) //+" "+bonlivraison.Bnumero
+      			sMessage	= gclConfig.m_tabTexteFrancais[2]
+      		SINON
+      			sSujet		= SansEspace(gclConfig.m_tabSujetAnglais[2])//+" "+bonlivraison.Bnumero
+      			sMessage	= gclConfig.m_tabTexteAnglais[2]
+      		FIN	
+      	FIN
+      	
+      	snomfichier = ComplèteRep(repdonnees)+"PDF\"+SansEspace(BonLivraison.Bclient)+"\BonLivraison\BdeL"+BonLivraison.Bnumero+".pdf"+";"
+      	iConfigure(SansEspace(imprimantefacture),Vrai)
+      	iParamètre("DEFAUT=NON")
+      	iParamètre("FORMATPAPIER=LETTRE")
+      	iDestination(iPDFGénérique,snomfichier)
+      	iImprimeEtat(shippingBill)
+      	FenAttentePetite.libelle1	= "Préparation du fichier PDF BdeL"+BonLivraison.Bnumero+" en cours..."
+      	
+      	
+      	
+      	Sablier(Faux)
+      	
+      	sListeFichier+=snomfichier
+      	
+      	SI sListeFichier <> ""
+      		Ouvre(FenEmail,sAdresseCourriel,sSujet+" #"+BonLivraison.Bnumero,sMessage,sListeFichier,client.numero,Faux,3)
+      	FIN	
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      CAS EXCEPTION:
+      HTransactionAnnule()
+     type : 458752
+   -
+     name : AdjustOrderdetail
+     procedure_id : 1791369519800573534
+     type_code : 15
+     code : |1+
+      Procédure AdjustOrderdetail(nOrderNumber est un entier sur 8 octets,nShippingBillNumber est un entier)
+      
+      updateqty(nOrderNumber)
+      hlitrecherche(Facture,fanumero,nOrderNumber)
+      
+      lcombinetaxe est un booleen = faux
+      UpdateHisto(nOrderNumber,nShippingBillNumber)
+      toutelafacture est un booléen= vrai
+      hlitrecherche(fdetail,fdnocomm,facture.fanumero)
+      
+      tantque fdetail.fdnocomm = facture.fanumero et pas HEnDehors()
+      	fdetail.fdqtedejafacture =  fdetail.fdqtedejafacture + fdetail.fdqteafacturer
+      	fdetail.fdqteafacturer = fdetail.fdqte - fdetail.fdqtedejafacture
+          fdetail.SUrchargedejafacture = fdetail.SUrchargedejafacture+fdetail.SUrchargeafacturer
+          fdetail.SUrchargeafacturer = fdetail.surchargeenergie- fdetail.SUrchargedejafacture
+      	si fdetail.fdqteafacturer <> 0 alors
+      		toutelafacture = faux
+      	fin
+      	
+      	hmodifie(fdetail)
+      	hlitsuivant(fdetail,fdnocomm)
+      FIN
+      lcombinetaxe = facture.fCombineTaxe
+      si toutelafacture alors
+      	facture.FPREPARATION = "B"
+      	facture.livrepartiel = ""
+      	hmodifie(Facture,hNumEnrEnCours)
+      sinon
+          facture.livrepartiel = "P"
+      	facture.faimprimer = 0
+      	hmodifie(facture,hNumEnrEnCours)	
+      FIN
+      
+      renvoyer lcombinetaxe
+      
+     type : 458752
+   -
+     name : UpdateQty
+     procedure_id : 1791369519800639070
+     type_code : 15
+     code : |1+
+      Procédure UpdateQty(nOrderNumber est une entier sur 8 octets)
+      
+      
+      lNoRec		est un entier
+      lnocomm		est un entier
+      lnoligne	est un entier
+      lnocomm		= nOrderNumber
+      
+      sdReqsql est une source de donnees
+      sTxtsql est une chaine = "Select fdetail.fdnocomm,fdetail.ftype,fdetail.fdligne from fdetail where fdetail.fdnocomm = {pOrderNumber} and fdetail.ftype = 4"
+      
+      sdReqsql.pOrderNumber = nOrderNumber
+      si HExécuteRequêteSQL(sdReqsql,hRequêteDéfaut,sTxtsql) ALORS
+      
+      POUR TOUT sdReqsql
+          lnoligne	= sdReqsql.fdligne
+      	pour tout fdetail avec "fdnocomm = "+lnocomm+ "et fdlien= "+lnoligne
+      		fdetail.fdqteafacturer		= Fdetail.fdqte-Fdetail.fdqtedejafacture
+      		fdetail.SUrchargeafacturer	= fdetail.surchargeenergie - fdetail.SUrchargedejafacture
+      		hmodifie(fdetail,hNumEnrEnCours)
+      	fin
+      	
+      FIN
+      
+      
+      FIN
+      
+      
+      
+      
+     type : 458752
+   -
+     name : UpdateHisto
+     procedure_id : 1791369519800704606
+     type_code : 15
+     code : |1-
+      Procédure UpdateHisto(nOrderNumber est un entier sur 8 octets,nShippingBillNumber est un entier)
+      
+      
+      hgereintegrite(faux)
+      
+      multiplicateur est un entier
+      hlit(config,1)
+      hlitrecherche(Facture,fanumero,nOrderNumber)
+      si facture.fatypedocument  = 2 alors
+      	multiplicateur = -1
+      sinon
+      	multiplicateur = 1	
+      FIN
+      hfacture.ftransfere      = faux
+      hfacture.fanumero        = facture.fanumero
+      hfacture.fadate          = facture.fdaterequise
+      hfacture.fadatecommande  = facture.fadate
+      hfacture.fatype          = facture.fatype
+      hfacture.faclient        = facture.faclient
+      hfacture.bnumero         = nShippingBillNumber
+      hfacture.fanofacture     = nOrderNumber
+      hfacture.fanojob         = facture.fanojob
+      hfacture.fanocommande    = facture.fanocommande
+      hfacture.fasecteur       = facture.fasecteur
+      hfacture.facalcul        = facture.facalcul
+      hfacture.fasurcharge     = facture.fasurcharge 
+      hfacture.fatotal         = facture.fatotal     
+      hfacture.fatps           = facture.fatps       
+      hfacture.fatvq           = facture.fatvq   
+      hfacture.fatypedocument  = Facture.fatypedocument
+      hfacture.fareference     = Facture.fareference
+      hfacture.fabonlivraison  = facture.fabonlivraison
+      hfacture.NoLot           = facture.nolot
+      hfacture.fafraistransport= Facture.fafraistransport * multiplicateur
+      hfacture.fsurchargepeinture = facture.fsurchargepeinture
+      hfacture.NoGlSurchargePeinture = facture.NoGlSurchargePeinture
+      hfacture.idlivraison        = facture.idLivraison
+      hfacture.SUrchargePeinture = facture.SUrchargePeinture
+      hfacture.fpeinture = facture.fpeinture
+      hfacture.idlivraison = facture.idLivraison
+      hfacture.nom 			 = facture.nom
+      hfacture.adresse		 = facture.adresse
+      hfacture.Ville 			 = facture.ville
+      hfacture.CodePostal		 = facture.CodePostal
+      hfacture.noTelephone	 = facture.noTelephone
+      hfacture.ftypecredit     = facture.Ftypecredit
+      hfacture.cvendeur        = facture.cvendeur
+      hfacture.lnom 			 = facture.lNom
+      hfacture.lRue 			 = facture.lRue
+      hfacture.lVille 		 = facture.lVille
+      hfacture.lcodepostal 	 = facture.lCodePostal
+      hfacture.lAdresseManuelle=facture.lAdresseManuelle
+      hfacture.lnote            = facture.lnote
+      hfacture.IdPurchaseOrderEdi = facture.IdPurchaseOrderEdi
+      hfacture.IdEdiKey           = facture.IdEdiKey
+      hfacture.IDCamions    = facture.IDCamions
+      //hfacture.surchargeTauxPourc = facture.surchargeTauxPourc
+      SI config.SUrchargeTauxActive alors
+      	si hlitrecherche(client,numero,hfacture.faclient) _et_ Client.SUrchargeTaux ALORS
+      		SI Client.CSurchargeTauxBase <> 0 ALORS
+      			hfacture.surchargeTauxPourc = Client.CSurchargeTauxBase
+      		SINON
+      			hfacture.surchargeTauxPourc = config.SurChargeTauxBase
+      		FIN	
+      	SINON
+      			hfacture.surchargeTauxPourc = 0
+      	FIN
+      fin
+      hajoute("hfacture")
+      //Code WinDev 5.5 remplacé par la migration :
+      //si hdoublon() alors
+      si HErreurDoublon() alors
+      	erreur("Impossible d'ajouter la facture "+numeriqueverschaine(facture.fanofacture,"10d"))
+      	renvoyer vrai
+      FIN
+      
+      
+      hlitrecherche("fdetail","fdnocomm",facture.fanumero)
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //tantque fdetail.fdnocomm = facture.fanumero et pas h.endehors
+      tantque fdetail.fdnocomm = facture.fanumero et pas HEnDehors()
+      	si fdetail.fdqteafacturer <> 0 alors  
+      		hfdetail.fdnocomm       = facture.fanumero
+      		hfdetail.fdligne        = fdetail.fdligne
+      		hfdetail.fdnumprod      = fdetail.fdnumprod
+      		hfdetail.fddesc         = fdetail.fddesc
+      		hfdetail.fdqte          = fdetail.fdqte
+      		hfdetail.fdqteafacturer = fdetail.fdqteafacturer  * multiplicateur
+      		hfdetail.fdqtedejafacture = fdetail.fdqtedejafacture  * multiplicateur
+      		
+      		hfdetail.fdespace       = fdetail.fdespace
+      		hfdetail.fdlargeur      = fdetail.fdlargeur
+      		hfdetail.fdhauteur      = fdetail.fdhauteur
+      		hfdetail.fdhauteur1     = fdetail.fdhauteur1
+      		hfdetail.fdlargeura     = fdetail.fdlargeura
+      		hfdetail.fdhauteura     = fdetail.fdhauteura
+      		hfdetail.fdhauteur1a    = fdetail.fdhauteur1a
+      		hfdetail.fdprixu        = fdetail.fdprixu
+      		hfdetail.fdcarrelage    = fdetail.fdcarrelage
+      		hfdetail.fdcarreauh     = fdetail.fdcarreauh
+      		hfdetail.fdcarreauv     = fdetail.fdcarreauv
+      		hfdetail.fdnumcarr      = fdetail.fdnumcarr
+      		hfdetail.ftype          = fdetail.ftype
+      		hfdetail.fdprixtotal    = fdetail.fdprixtotal
+      		hfdetail.fdcarrpruxuc   = fdetail.fdcarrpruxuc
+      		hfdetail.frcarrprixu    = fdetail.frcarrprixu * multiplicateur
+      		hfdetail.fdcarrprixtotal= fdetail.fdcarrprixtotal * multiplicateur
+      		hfdetail.fdprixupied    = fdetail.fdprixupied
+      		hfdetail.fdcodegl       = fdetail.fdcodegl
+      		hfdetail.fcapgaztube    = fdetail.fcapgaztube 
+      		hfdetail.fdverreunite   = fdetail.fdverreunite
+      		hfdetail.fdnofact       = nOrderNumber
+      		hfdetail.FDJOBLIGNE      = fdetail.FDJOBLIGNE
+      		hfdetail.fdcomposant1    =fdetail.fdcomposant1
+      		hfdetail.fdcomposant2    =fdetail.fdcomposant2
+      		hfdetail.fdcomposant3    =fdetail.fdcomposant3
+      		hfdetail.fdcarrprixdebase=fdetail.fdcarrprixdebase * multiplicateur
+      		hfdetail.surchargeenergie=fdetail.surchargeenergie  * multiplicateur
+      		hfdetail.fdcommentaire   = fdetail.fdcommentaire
+      		hfdetail.fdlargeuru      = fdetail.fdlargeuru
+      		hfdetail.fdhauteuru      = fdetail.fdhauteuru
+      		hfdetail.fdforme         = fdetail.fdforme
+      		hfdetail.fdextraforme    = fdetail.fdextraforme //* MULTIPLICATEUR
+      		hfdetail.HFCLEUNIK       = hfacture.HFCLEUNIK
+      		hfdetail.ffini           = fdetail.ffini 
+      		hfdetail.fdhauteuranglais=Fdetail.fdhauteuranglais
+      		hfdetail.fdhauteuranglais1=Fdetail.fdhauteuranglais1
+      		
+      		hfdetail.fdlargeuranglais=fdetail.fdlargeuranglais
+      		hfdetail.fdpiedcarre     = fdetail.fdpiedcarre
+      		hfdetail.fdpiedcarrefacture=fdetail.fdpiedcarrefacture
+      		hfdetail.ftypespacer       = fdetail.ftypespacer
+      		hfdetail.FDespace2         = fdetail.FDespace2
+      		hfdetail.fdprixupiedfacture=fdetail.fdprixupiedfacture
+      		hfdetail.fdextracap       = fdetail.fdextracap //* MULTIPLICATEUR 
+      		hfdetail.fnotes           = fdetail.fnotes
+      		hfdetail.fnotes1           = fdetail.fnotes1
+      		hfdetail.fdvariablex       = fdetail.fdvariablex
+      		hfdetail.fdvariablex1       = fdetail.fdvariablex1
+      		hfdetail.fdtypecalcul     = fdetail.fdtypecalcul
+      		hfdetail.fdnbcarreau       = fdetail.fdnbcarreau
+      		hfdetail.fTypePeinture         = fdetail.fTypePeinture
+      		hfdetail.fNoPeintureExtTout     = fdetail.fNoPeintureExtTout
+      		hfdetail.FnopeintureInterieure     = fdetail.FnopeintureInterieure
+      		hfdetail.fdescpeintureExtTout    = fdetail.fdescpeintureExtTout
+      		hfdetail.fDescPeintureInterieure    = fdetail.fDescPeintureInterieure
+      		hfdetail.fTotalPeinture             = fdetail.fTotalPeinture
+      		hfdetail.fPrixCarreauPeinture      = fdetail.fPrixCarreauPeinture
+      		hfdetail.Ftotalcarreaupeinture     = fdetail.Ftotalcarreaupeinture
+      		hfdetail.fpeinture                  = fdetail.fpeinture
+      		hfdetail.libelleNbCarreauExtTlt     = fdetail.libelleNbCarreauExtTlt
+      		hfdetail.libelleNbcarreauinterieur     = fdetail.libelleNbcarreauinterieur
+      		hfdetail.FtotalbarrePeinture     = fdetail.FtotalbarrePeinture
+      		hfdetail.fnopeinture = fdetail.fnopeinture
+      		hfdetail.fdescpeinture = fdetail.fdescpeinture
+      		hfdetail.fextrapeinture = fdetail.fextrapeinture
+      		hfdetail.fdescpeinture1 = fdetail.fdescpeinture1
+      		hfdetail.fTypePeinture1     = fdetail.fTypePeinture1
+      		hfdetail.fnopeinture1 = fdetail.fnopeinture1
+      		hfdetail.FDnbcarreauPeinture1 = fdetail.FDnbcarreauPeinture1
+      		hfdetail.fdprixcarreaupeinture1 = fdetail.fdprixcarreaupeinture1
+      		hfdetail.fdfabrication = fdetail.FDfabrication
+      		hfdetail.SUrchargeafacturer = fdetail.SUrchargeafacturer
+      		hfdetail.surchargeenergie = fdetail.SUrchargeafacturer
+      		hfdetail.SUrchargedejafacture = fdetail.SUrchargedejafacture
+      		hfdetail.FDextra10X=fdetail.FDextra10x
+      		hfdetail.FDextra5X=fdetail.FDextra5x
+      		hfdetail.TDemiCarrelage = fdetail.TDemiCarrelage
+      		hfdetail.FDextraCarrelagedemi = fdetail.FDextraCarrelagedemi
+      		hfdetail.fdpiedcarrefacture = Fdetail.fdpiedcarrefacture
+      		hfdetail.fdsurfacemodifie = fdetail.fdsurfacemodifie
+      		hfdetail.FDprixmodifie = fdetail.FDprixmodifie
+      		hfdetail.IDPurchaseOrderItemEdi = Fdetail.IDPurchaseOrderItemEdi
+      		hfdetail.fdligneEdi = fdetail.fdligneedi
+      		hfdetail.ExtraArgonPrice = fdetail.ExtraArgonPrice
+      		hfdetail.CalculArgon = fdetail.CalculArgon
+      		hfdetail.PietageArgon = fdetail.PietageArgon
+      		hfdetail.fdbase = Fdetail.fdbase
+      		hfdetail.ExceptionForShippingBill = fdetail.ExceptionForShippingBill
+      		hfdetail.fnolot = fdetail.fnolot
+      		hajoute("hfdetail")
+      		
+      		
+      		
+      	fin
+      	hlitsuivant("fdetail","fdnocomm")
+      	
+      FIN
+      
+      hgereintegrité(vrai)
+     type : 458752
+   -
+     name : GetTaxRates
+     procedure_id : 1791369519800770142
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetTaxRates (<_NumeroClient> [, <_date> [, <_langue>]])
+      //
+      // Paramètres :
+      //	_NumeroClient : <indiquez ici le rôle de _IDTaxeGroupe>
+      //	_date : <indiquez ici le rôle de _date>
+      //	_langue (valeur par défaut=1) : < indiquez ici le rôle de _langue >
+      // Valeur de retour :
+      // 	tableau (chaîne ANSI) : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE GetTaxRates(_NumeroClient,_date = datesys(),_langue = 1)
+      _tableautaxe est un tableau dynamique de 0 par 4 chaine
+      
+      si hlitrecherche(Client,numero,_NumeroClient) alors
+      	Reqsql est une source de donnees
+      	txtreq est une chaine = 
+      	[
+      	SELECT 
+      	TaxeGroupeDate.IDTaxeGroupeDate AS IDTaxeGroupeDate,	
+      	TaxeGroupeDate.IDTaxeGroupe AS IDTaxeGroupe,	
+      	TaxeGroupeDate.DateDebut AS DateDebut,	
+      	TaxeGroupeDate.DateFin AS DateFin,	
+      	TaxeGroupeDateTaux.IDTaxeGroupeDateTaux AS IDTaxeGroupeDateTaux,	
+      	TaxeGroupeDateTaux.IDTaxeGroupeDate AS IDTaxeGroupeDate_Ta,	
+      	TaxeGroupeDateTaux.Ordre AS Ordre,	
+      	TaxeGroupeDateTaux.Description AS Description,	
+      	TaxeGroupeDateTaux.Taux AS Taux,	
+      	TaxeGroupeDateTaux.nogl AS nogl,	
+      	TaxeGroupeDateTaux.Combine AS Combine,	
+      	TaxeGroupeDateTaux.DescriptionAnglaise AS DescriptionAnglaise
+      	FROM 
+      	TaxeGroupeDate,	
+      	TaxeGroupeDateTaux
+      	WHERE 
+      	TaxeGroupeDateTaux.IDTaxeGroupeDate	=	TaxeGroupeDate.IDTaxeGroupeDate
+      	AND
+      	(
+      	TaxeGroupeDate.IDTaxeGroupe = %1
+      	AND	TaxeGroupeDate.DateDebut <= '%2'
+      	AND	TaxeGroupeDate.DateFin >= '%2'
+      	)
+      	ORDER BY 
+      	Ordre ASC
+      	]
+      	
+      	txtreq = ChaîneConstruit(txtreq,client.IDTaxeGroupe,_date)
+      	
+      	si hexecuterequetesql(Reqsql,hRequêteDéfaut,txtreq)
+      		pour TOUT Reqsql 
+      			
+      			tableauajouteligne(_tableautaxe,_langue = 1 ? Reqsql.description sinon Reqsql.descriptionanglaise,Reqsql.taux,Reqsql.nogl,Reqsql.combine)
+      		fin
+      		
+      	fin
+      fin
+      renvoyer _tableautaxe
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x185d56950727253d
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

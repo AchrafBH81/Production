@@ -1,0 +1,160 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : numerodegrandlivre
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : numerodegrandlivre
+ identifier : 0x3e9d90c96edf9be7
+ internal_properties : CQAAAAkAAABq4yuhb1jzSNPnVnnvDFSVP+w+SUVMDyMa8yMKbSXXFL1F59R7pI931Lk3kU5TyA8nscHGpbO9upxF1q1c/7Koz0Qe9doVAoVkf/krdsTMQ0CKwEw3Y8Vf3zMoYJuFQPlrJzNj6q+VIcjuzrufcNsg+wpQSqCWpQpwLXDnEgkA/h6WYkyhqUF+Q7eGBkJo70HfN8YIvXiiaEqQncd9RBzvwj4Tarabcg+smXhAwqf1ZdAaFCHW8aSQvxvqAMiincDNkt+fwPh3xroQ26E/ldrE1yV2MyIW43wDP3dFGosFdM3nBwX2OlEQSXZo58RqBt21waE1xUNYR8TDNyVC6ycr16q+416F6mb7xp/EZPE4GJzyLRei0SOnAcDj6TlFAHr+jjXCto1EWoj71eZW3eak04mn7w84w+NaIlNJ9qZaAvCmDTzHsHNLHjvgkl+7J7s5flywc3QjkF5f63baRZkL7IgOmDB8xAMPl8YEvPPJYye0qCPNFofEbJk9BytUfImipbyItwAtGUsQ35SioBOhTyoXx2LtOqVA6bBZWX5i3h3kCjwMhYuA2AdrHQPSPm3A1fBQ2MoeyaFc+jLYI8WZw7G9eiA2v1sGvN3PjwAfZXMUJJ0H+EFBqUEYNJFfqyPusJ5lrXg9g2R8njgeOdm4ZBWFBZpD0FB7TAmrBPU291xfGyFzlvFp8bksw49QRNk1IpChUSDHHx7E2Qn32OAtGngkYY7rhMJTAZW6HW+tUPPgMbVAGJXrpBqhkURDL0nL8qwHH6mk+zP+aD32d5u4bkAfmG1oxziHQ6QHLjUDWTQ8GOyHCfkFwxlhsNqBW6qd2ui0lQ4=
+ properties :
+  x : 120
+  y : 50
+  width : 289
+  height : 148
+  widthClient : 287
+  heightClient : 116
+ controls :
+  -
+    name : SAISIENOGL
+    identifier : 0x3e9d90c9616a9bf1
+    internal_properties : CQAAAAkAAACGOG+UWrRJ0NOtL+iIu9i/cfuIbmn3GMyAsilGstgV649yG1dEJvkaPZ2saJCw1sMwJpytGyL8TOlDQVzzknFnCJPL/jza1fSXpWuGn8cDWPxJ89VDITpmHNPF4DQDpeM53GCVp//wL7uq6ByG9WIEAstF8Sv0CRj/zYn+54jsgMH0dR+mY94x//g3bJVAKUUfoGvmpz7+tsGC/XfKw2FPLcxE9zM5oXgFd3xrIWjHgVASX5VTa/Y1reOs2ih0McIWXF3RIAsqcrjf0tUb2PBgoEO3fNSgYazvbAbHsPYyFM56TWqRUh197H9sQJhshXm4FIv3sCBKeuEFZFi8+CD7Eq0T9na4eeaPPNY8xYbqRKygSwl4z/R5XMXQaKu9QLOSH57WEMwYkT3+ZnBBBmyWj5Om0ex9bTc/pVufngL50NP0w0ICuX+HZIa1rRgBx3xQXrXVlBcGws6Go6JALg9YQIs19sXxOFZfj7FhirheoAmRBAtmQHZmJG6StvqGEjfsqC+ObanbjzUuPG4GstyT63sm8avBoa37lty8irucLsSKpdZImNCRP0p9lRFGVB+Ts+sB/cxQS2uJDDVLf7fMK3MIOgyGVg7d9jDT+fVQoPzFP36DSwcds1znJcnxJWyz7mXyGlhFKbamNhypJbVvvomzQP4Shx3B/TWaOqinjt4KA//CSe/lYgznBEJgdKnbeaNFsonzZXsUhIY2TVupOYm+30P/CTFc2+lPX/NWgMlgQZDWdwAwSGRJzR7S2qP+1HhHnt0PayZS9L15BXQ3/Q06aex2Qh16+3ucx84hLQOEg4Wdapgs8t4GpjPE/E2NlQ==
+    properties :
+     x : 50
+     y : 38
+     width : 172
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         si pas gLogCompt = "Cameleon" alors
+         si 	hlitrecherche(GLivre,numerogl,complete(moimeme,7))
+         	erreur(<§$0001§>)   //2001:Numéro de Grand Livre inexist...
+         	reprisesaisie
+         FIN
+         fin
+         
+         ferme
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+      -
+        code : |1+
+         moimeme = ouvre(rechercheGrandLivre)
+        type : 66051
+  -
+    name : BTN_OK
+    identifier : 0x3e9d90c92cf69bfb
+    internal_properties : CQAAAAkAAAB5SpyPxxYrxR+RV8XYOBSk5O+oNJ/ybyWhR4Qytyc1VJCe9MOkKAebOPhbdSJxWpK+rrZFuCxZAC2t7c7AOecmC790+JxE0ENy3aFhyfmSe+e48AFRvu1+M5kWhZGIbyIcUReqsQLU5ER56e9zy+FZ4nOM0Pnlw+Of0RcCHmaBNTYlBjTN94NdvtT6Va8Dp0ng4zWzoSCSn8hdUPQ8qUa/rT0HY9xCaB2eRG5cotmVP1X9PaQEmS427yxhiRRNgDVP1BLONkUlQJYkXHeSNf2Hd24ra4pGy2cB81IIpb1+vauIt/8BS2cm1sRxu0iwuhyTMYVn3TEWjQn+GRkelUUG9d3/wcyknMvxwv1Zfj3O4tvwl4JO/oYOVNKCNqjSspgBl9IwtlDwhE90E/qmzHNanEeuQK96XCRjNvUFD47omo8vwb8IQufhhRU5N7W8AIC6PHsD9YC5Yp9Us+lAJOqJrgPw4liZF5S+3FlG5TG5x+t3nMcql8uUYxpcxxoaTx7mZUjGIWZLPOOnrOXxJU+uFOuF5xQrV6HDvVwH6uuXfnWyFHLr6RplntHPJqNjHwmnvpP137XYwfl/P7SaOhiiOJaKYQ/s7zQdXvixTeIysjoUZj/bvcHa60TGvt1ShVsuAb6D9i7rCIt9gHWc7pp683jMkPnaqUJeN1UcWzyfpVjPpRUhFiCIRagjXTGdnzTpC8qv4anT3Rha9pFHu54R+RFO6iorHE5M6k0k4FpXcnwpDJcQifBvxkh/opA2OgeqQO0znCW02RLRSw4qcow=
+    properties :
+     x : 313
+     y : 19
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        type : 161
+        enabled : false
+  -
+    name : BtnRecherche
+    identifier : 0x428f882d6ebebaf0
+    internal_properties : CQAAAAkAAADj7RHoz0a7NescK/zwGcr+iBUi5apFccEbuqWi0D7xc4filFV/CqsWRsuTtdu0Pdy5xMVO9O4Dc4tDOP8cE0MCEJcmKq5VN1nVN8aC8/n6skJmodmJmEVmN7a39cQGRJyfrs2S7v/0rlFPJaEz2UBqLfCvZ2Wu7rjaf4TkXj5CIZll4P0IZKdg6n1VAYOpbFv3QkRyUiiwbMHk1DFlcnwL+534p2u9K8ieJhATwoN7rZRv/EucMDPShhxfM/t9oUvXsnfO9Iz8U4KLD5ra0pmHh3NTun03BXlMOlaxt9mFk+hqzwekaTCfAI8lSpbrr4tXHTYamkvg/BA0bAePqGcAxdyNvUDdmdWe846ncrNZ65dUBWoQIggwf72/y6vTkY/hUdE7rAQ85RF8uaKWqiY7upPMw73qdU7T4eSitXvGYyBlBe0A8pBmAyT7jlwAQWv9QsYvN/cX/Rol521fMagFsna9Gyd5auyQaiJHoeq1iqOw/bYS2GzXm3nXCXyFBIn79wixwbXrgx64tQBtGeZNeJwFnblhVDXrQ/6htj3oM4eW7HxjlWlfza0dO1R4//4VBSzxbrr8lKNF5jW8pNYYLYsOA7VhEf8q2T2M4GMnxCEvOmdfTYchfIExk6Y5UKTGcJ1tHo6o4c+kp/i29pUGAeLIm9zl74iuWZS1PYHhgN9weBoBJX+fSQ==
+    properties :
+     x : 228
+     y : 39
+     width : 20
+     height : 20
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         numerodegrandlivre.SAISIENOGL = ouvre(rechercheGrandLivre)
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3e9d90c91ef69be7
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAABUnHIRYWZ0Jc6vQyltk/eZhhIuJ8I6W49tjpwgZbmchm2GvRzFgWkzGkRsXDVmdMlzHvKTWy7GBUazvq+jmaowmmzv+7OG/aW/rlVJbRciyWid9+UyiKg9BGcIkw==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      
+      
+      
+      // Pour compatibilité 5.5
+      MoiMême..Visible=Vrai
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      renvoyer saisienogl
+      
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3e9d90c905979be7
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Numéro invalide
+     index : 0
+   -
+     text :
+      fr-FR : Numéro de Grand Livre inexistant
+     index : 1
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

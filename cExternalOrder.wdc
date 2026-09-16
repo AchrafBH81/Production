@@ -1,0 +1,656 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cExternalOrder
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x151c554016baae1c
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cExternalOrder est une Classe <mapping=ExternalOrder>
+      	
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis le menu contextuel
+      	// du fichier dans l'explorateur de projet ou dans l'analyse "..Regénérer la classe modèle"
+      	<MAPPING>
+      	m_nIDCotation					est un entier sur 8 octets				<mapping=IDCotation, clé unique>
+      	m_dCotationDate					est une date							<mapping=CotationDate>
+      	m_sNotes						est une chaîne							<mapping=Notes>
+      	m_bIsDeleted					est un booléen							<mapping=IsDeleted>
+      	m_sIdentification				est une chaîne							<mapping=Identification>
+      	m_nIdCustomer					est un entier sans signe sur 8 octets	<mapping=IdCustomer>
+      	m_moCotationTotal				est un monétaire						<mapping=CotationTotal>
+      	m_sCotationNumber				est une chaîne							<mapping=CotationNumber>
+      	m_sCalculType					est une chaîne							<mapping=CalculType>
+      	m_moFifteenYearsWarrantyTotal	est un monétaire						<mapping=FifteenYearsWarrantyTotal>
+      	m_moExtraArgonGazTotal			est un monétaire						<mapping=ExtraArgonGazTotal>
+      	m_bSended						est un booléen							<mapping=Sended>
+      	m_sJobnumber					est une chaîne							<mapping=Jobnumber>
+      	m_dRequiredDate					est une date							<mapping=RequiredDate>
+      	m_nShippingAddressID			est un entier							<mapping=ShippingAddressID>
+      	m_nTruckID						est un entier sans signe sur 2 octets	<mapping=TruckID>
+      	m_sManualOrderNumber			est une chaine							<mapping = ManualOrderNumber>
+      	m_bIsArgon						est un booleen	
+      	
+      	<FIN>
+      	m_tabCExternalorderitem				est un tableau de cExternalOrderDetails
+      	m_clCustomerInfo					est un MClient
+      	m_clShippingdetail					est un cClientLivraison
+      	m_sInternalNumber					est une chaîne
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1521184507892051484
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+      Constructeur m_clShippingdetail(:m_nShippingAddressID,m_clCustomerInfo.m_numero)
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1521184507892117020
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+   -
+     name : GetCustomerInfo
+     procedure_id : 1521186161454976110
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // GetCustomerInfo ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetCustomerInfo()
+      
+      si HLitRecherchePremier(Client,IDClient,:m_nIdCustomer) alors
+      	FichierVersMémoire(:m_clCustomerInfo,client)
+      FIN
+      
+     type : 458752
+   -
+     name : GenererCommande
+     procedure_id : 1521199424317336599
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GenererCommande ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	_po (PurchaseOrderBasco) : <indiquez ici le rôle de _po>
+      PROCEDURE GenererCommande()
+      nEstTrempe					est un entier	= 0
+      rLPrixcarreauPeinture		est un reel
+      FlagPeinture				est un booleen	= faux
+      nNextOrderNumber			est un entier	= 0
+      bIsWarranty					est un booleen	= Faux
+      moTotalWarranty				est un monetaire
+      bIsArgon					est un booleen	= Faux
+      moTotalArgon				est un monetaire
+      rBilledSurface				est un reel
+      rBilledSurfaceArgon			est un reel
+      bWithTriple					est un booleen
+      bWithSpecialProduct			est un booleen
+      bWithSatine					est un booleen
+      bWithPinHead				est un booleen
+      bWithUltraClair				est un booleen
+      bWithEnergyGlass				est un booleen
+      bWithEnergyGlassESC				est un booleen
+      
+      bWithTemperedGlass				est un booleen
+      nNumberOfThermos est un entier
+      
+      
+      
+      stExtraBarrotin				est une structure
+      	nQuantity	est un entier
+      	rTotal		est un reel
+      	rUnitPrice	est un reel
+      	
+      fin
+      taExtraBarrotin				est un tableau associatif (*, *, wlEntier) de stextrabarrotin
+      
+      
+      
+      HTransactionDébut(gConnexionHF,"facture,fdetail,tracking")
+      POUR i = 1 À 19
+      	
+      	SI TableauCherche(:m_tabCExternalorderitem,tcLinéaire,"m_nSortingType",i) = -1 ALORS CONTINUER
+      	bIsWarranty					= Faux
+      	moTotalWarranty				= 0
+      	rBilledSurface				= 0
+      	bIsArgon					= Faux
+      	moTotalArgon				= 0
+      	rBilledSurfaceArgon			= 0
+      	FlagPeinture				= faux
+      	bWithTriple					= faux
+      	bWithSpecialProduct			= faux
+      	bWithSatine					= faux
+      	bWithPinHead				= faux
+      	bWithUltraClair				= faux
+      	bWithEnergyGlass			= faux
+      	bWithEnergyGlassESC			= faux
+      	bWithTemperedGlass			= faux
+      	nNumberOfThermos = 0
+      	HRAZ(Facture)
+      	Facture.fadate				= DateDuJour()
+      	Facture.FDATEREQUISE		= :m_dRequiredDate
+      	Facture.faclient			= :m_clCustomerInfo.m_numero
+      	
+      	si gnManualOrderNumber = 2 alors
+      		Facture.fanocommande		= :m_sManualOrderNumber
+      	sinon
+      		Facture.fanocommande		= :m_sCotationNumber
+      	FIN
+      	Facture.fanojob				= :m_sJobNumber
+      	
+      	
+      	
+      	
+      	Facture.fasecteur			= :m_clCustomerInfo.m_secteur
+      	Facture.nom					=  :m_clCustomerInfo.m_nom
+      	Facture.adresse				=  :m_clCustomerInfo.m_crue
+      	Facture.ville				= :m_clCustomerInfo.m_cville
+      	Facture.CodePostal			= :m_clCustomerInfo.m_ccodepostal
+      	Facture.noTelephone			= :m_clCustomerInfo.m_ctelephone
+      	Facture.FSURCHARGEENERGIE	= :m_clCustomerInfo.m_surcharge
+      	Facture.cvendeur			= :m_clCustomerInfo.m_cvendeur
+      	Facture.IDClient			= :m_clCustomerInfo.m_IDClient
+      	
+      	Facture.idLivraison			= :m_nShippingAddressID
+      	Facture.lNom				= :m_clShippingdetail.m_sLNom
+      	Facture.lRue				= :m_clShippingdetail.m_sLRue
+      	Facture.lVille				= :m_clShippingdetail.m_slVille
+      	Facture.lCodePostal			= :m_clShippingdetail.m_slCodePostal
+      	facture.lnote				= :m_clShippingdetail.m_sNote
+      	
+      	
+      	Facture.facalcul			= :m_sCalculType = "M" ? 2 sinon 1
+      	Facture.fatypedocument		= 1
+      	Facture.IDCamions			= :m_nTruckID
+      	facture.NewEdiOrder			= vrai
+      	nNextOrderNumber			= GetNextOrderNumber()
+      	SI nNextOrderNumber = 0 ALORS
+      		Erreur("Impossible d'attribuer un numéro de commande. La procédure est annulée!")
+      		HTransactionAnnule(gConnexionHF)
+      		RENVOYER Faux
+      	FIN
+      	Facture.fanumero		= nNextOrderNumber
+      	:m_sInternalNumber = nNextOrderNumber
+      	
+      	
+      	//	HLit(config,1)
+      	//	Facture.fanumero	= config.Numcomm
+      	//	
+      	//	config.Numcomm		= Facture.fanumero + 1
+      	//	HModifie("config")	
+      	
+      	facture.isedi			= Vrai
+      	facture.computername	= NetNomMachine()
+      	Facture.Username		= gsUser
+      	Facture.CreatedTime		= HeureSys()
+      	HAjoute(Facture)
+      	cpt							est un entier	= 0
+      	AvecCarrelage				est un booleen
+      	bAvecForme					est un booleen
+      	bAvecProduitSpeciaux		est un booleen
+      	bAvecPinede					est un booleen
+      	bAvecSatine					est un booleen
+      	bAvecUltraClair				est un booleen
+      	
+      	
+      	
+      	
+      	POUR CHAQUE _item de :m_tabCExternalorderitem
+      		si _item.m_nSortingType <> i alors continuer
+      		
+      		
+      		AvecCarrelage = SansEspace(_item.m_sGridCode) <> "" ? 1 SINON 0
+      		cpt++
+      		_item.m_nTrnNumber	= Facture.fanumero
+      		_item.m_nligne		= cpt
+      		HRAZ(Fdetail)
+      		Fdetail.fdnocomm				= Facture.fanumero
+      		Fdetail.fdligne					= cpt
+      		Fdetail.fdnumprod				= _item.m_sThermosCode
+      		fdetail.fdjobligne				= _item.m_sTag
+      		Fdetail.fdforme					= _item.m_sShapeCode
+      		Fdetail.fdqte					= _item.m_nQuantity
+      		Fdetail.fdqteafacturer			= _item.m_nQuantity
+      		nNumberOfThermos+= _item.m_nQuantity
+      		Fdetail.fdespace				= _item.Intercalaire1
+      		Fdetail.FDespace2				= _item.intercalaire2
+      		Fdetail.fdlargeur				= _item.m_sThermosWidthCalculate
+      		Fdetail.fdlargeura				= _item.m_sThermosWidth
+      		Fdetail.fdhauteur				= _item.m_sThermosHeightCalculate
+      		Fdetail.fdhauteura				= _item.m_sThermosHeight
+      		fdetail.fdhauteur1				= _item.m_sThermosHeight1
+      		fdetail.fdhauteur1a				= _item.m_sThermosHeight1Calculate
+      		fdetail.fdhauteuranglais		= Fdetail.fdhauteura
+      		fdetail.fdlargeuranglais		= Fdetail.fdlargeura
+      		Fdetail.ftypespacer				= _item.SpacerID
+      		Fdetail.ftype					= 1
+      		Fdetail.fdprixu					= _item.m_moThermosUnitPrice
+      		Fdetail.fdprixupied				= _item.m_moSquarefeetPrice
+      		Fdetail.fdprixupiedfacture		= _item.m_moSquarefeetPrice
+      		Fdetail.fdextraforme			= _item.m_moShapeUnitPrice
+      		Fdetail.fdprixtotal				= (_item.m_moShapeUnitPrice+ _item.m_moThermosUnitPrice) * _item.m_nQuantity
+      		Fdetail.fdlien					=  SansEspace(_item.m_sGridCode) <> "" ? cpt SINON 0
+      		Fdetail.fdcarrelage				=  SansEspace(_item.m_sGridCode) <> "" ? 1 SINON 0
+      		//			Fdetail.fdpiedcarrefacture = _item.unitedemesure = 1 ? _item.SurfaceAnglais SINON _item.SurfaceMetrique
+      		//			Fdetail.fdpiedcarrereel = _item.unitedemesure = 1 ? _item.SurfaceAnglaisReel SINON _item.SurfaceMetriqueReel
+      		Fdetail.fdpiedcarrefacture		= _item.m_rBilledSurface
+      		Fdetail.fdpiedcarre				= _item.m_rBilledSurface
+      		Fdetail.fdpiedcarrereel			= _item.m_rRealSurface
+      		
+      		Fdetail.fdcomposant1			= _item.m_sPane1
+      		Fdetail.fdcomposant2			= _item.m_sPane2
+      		Fdetail.fdcomposant3			= _item.m_sPane3
+      		
+      		Fdetail.fdbase				= _item.m_sBaseproduct
+      		facture.EpaisseurVerre		= val(droite(sansespace(fdetail.fdbase),2))
+      		Fdetail.ffini				= _item.m_sFinish
+      		Fdetail.surchargeenergie	= _item.m_moEnergySurcharge 
+      		fdetail.SUrchargeafacturer	= _item.m_moEnergySurcharge  
+      		Fdetail.FDextra5x			= _item.m_moPrice5X
+      		Fdetail.FDextra10X			= _item.m_moPrice10X
+      		Fdetail.ThermosType			= Gauche(ThermosType[CalculNombreVerre(Fdetail.fdcomposant1,Fdetail.fdcomposant2,Fdetail.fdcomposant3)],1)
+      		si sansespace(fdetail.ThermosType) = "T" alors bWithTriple = vrai
+      		si hlitrecherche(invent,INUM,fdetail.fdnumprod) alors
+      			si bWithSpecialProduct = faux alors bWithSpecialProduct = invent.IproduitSpecial
+      			si bWithSatine = faux alors bWithSatine = invent.ISatine
+      			si bWithPinHead = faux alors bWithPinHead = invent.IPinede
+      			si bWithUltraClair = faux alors bWithUltraClair = invent.IPinede
+      		FIN	
+      
+      		fdetail.ftypespacer			= GetSpacerID(_item.m_sSpacerType) 
+      		//	Fdetail.fidintercalaire = _commande.IDSpacerRelation
+      		Fdetail.fddesc				= _item.m_sThermosDescription
+      		Fdetail.fdescoriginale		= _item.m_sThermosDescription
+      		Fdetail.fdcodegl			= _item.m_sThermosGL
+      		si sansespace(fdetail.fdforme) <> "" alors 
+      			facture.avecforme	= vrai
+      			fdetail.fdw			= _item.m_sWidth
+      			fdetail.fdw1		= _item.m_sWidth1
+      			fdetail.fdw2		= _item.m_sWidth2
+      			fdetail.fdh			= _item.m_sHeight
+      			fdetail.fdh1		= _item.m_sHeight1
+      			fdetail.fdh2		= _item.m_sHeight2
+      			fdetail.fdr			= _item.m_sradius
+      			fdetail.fdr1		= _item.m_sRadius1
+      			fdetail.fdr2		= _item.m_sRadius2
+      			fdetail.fdd			= _item.m_sDiameter
+      			si _item.m_bTemplateToCome alors 
+      				fdetail.fnotes = "Gabarit à venir"
+      				_item.TexteMessage += "Gabarit à venir"+RC
+      				_item.bMessage = vrai
+      			FIN
+      		FIN
+      		
+      		//Fdetail.fdenergiverre = _item.energiverre
+      		
+      		SI AvecCarrelage ALORS
+      			fdetail.fdcarrelage				= vrai
+      			Fdetail.fdnumcarr				= _item.m_sGridCode
+      			Fdetail.FDJOBLIGNE				= _item.m_sTag
+      			SI _item.m_bGridHalfThermos ALORS
+      				Fdetail.TDemiCarrelage			= Vrai
+      				Fdetail.fdbarrotin				= _item.m_nBarrotinID
+      				Fdetail.fdt						= _item.m_nDTH
+      				fdetail.FDextraCarrelagedemi	= _item.m_moHalfGridPrice
+      				fdetail.fnotes					= "DTH:"+_item.m_nDTH
+      				fdetail.fnotes1					= _item.m_sBarrotinDescription
+      			FIN
+      			Fdetail.fdcarreauv			= _item.m_nGridBase
+      			Fdetail.fdcarreauh			= _item.m_nGridheight
+      			Fdetail.fdcarrpruxuc		= _item.m_moGridTilePrice
+      			Fdetail.fdcarrprixdebase	= _item.m_moGridbaseprice
+      			Fdetail.fdnbcarreau			= _item.m_nNumberOfTiles
+      			Fdetail.frcarrprixu			= _item.m_nNumberOfTiles * (_item.m_moGridTilePrice + _item.m_moHalfGridPrice)
+      			Fdetail.fdcarrprixtotal		= (Fdetail.frcarrprixu + Fdetail.fdcarrprixdebase) * _item.m_nQuantity
+      			_item.GetGrillType()
+      			Fdetail.fdtypecalcul	= _item.m_sTypecarrelage
+      			Fdetail.FDdesccarr		= _item.m_sGridDescription
+      			Fdetail.fdvariablex		= _item.Variablex
+      			Fdetail.FDvariablex1	= _item.variablex1
+      //			fdetail.fdCarrNote      = _item.m_sGrillNote
+      			SI _item.m_sInteriorColorCode <> "" ALORS
+      				Fdetail.FnopeintureInterieure	= _item.m_sInteriorColorCode
+      				Fdetail.fdprixcarreaupeinture1	= _item.m_moGridTilePrice
+      				Fdetail.FDnbcarreauPeinture1	= _item.m_nNumberOfTiles
+      				Fdetail.fTotalPeinture += Fdetail.FDnbcarreauPeinture1 * Fdetail.fdprixcarreaupeinture1
+      				Fdetail.fDescPeintureInterieure		= _item.m_sInteriorColorDescription
+      				Fdetail.libelleNbcarreauinterieur	= "1 X " + _item.m_nNumberOfTiles + " carreaux"
+      				Fdetail.fpeinture					= Vrai
+      				fdetail.fTypePeinture1 = 1
+      			FIN
+      			SI _item.m_sExteriorColorCode <> "" ALORS
+      				Fdetail.fNoPeintureExtTout		= _item.m_sExteriorColorCode
+      				Fdetail.fPrixCarreauPeinture	=  _item.m_moGridTilePrice
+      				Fdetail.Ftotalcarreaupeinture	= _item.m_nNumberOfTiles
+      				Fdetail.fTotalPeinture += Fdetail.Ftotalcarreaupeinture * Fdetail.fPrixCarreauPeinture
+      				Fdetail.fdescpeintureExtTout	= _item.m_sexteriorColorDescription
+      				Fdetail.libelleNbCarreauExtTlt	= "1 X " + _item.m_nNumberOfTiles + " carreaux"
+      				Fdetail.fpeinture				= Vrai
+      				Fdetail.fTypePeinture			= 1
+      				FlagPeinture					= Vrai
+      			FIN
+      			
+      			
+      		FIN
+      		
+      		nBcomposant			est un entier	= 0
+      		nBComposantSpeciaux	est un entier	= 0
+      		facture.AvecProduitSpeciaux	= :CheckIfSpecialProduct(fdetail.fdcomposant1,Fdetail.fdcomposant2,Fdetail.fdcomposant3,bWithPinHead,bWithSatine,bWithUltraClair,bWithSpecialProduct,bWithEnergyGlass,bWithTemperedGlass,bWithEnergyGlassESC)
+      		facture.AvecPinede			= bWithPinHead
+      		facture.avecsatine			= bWithSatine
+      		facture.AvecUltraClair		= bWithUltraClair
+      		Fdetail.PoidsUnitaire		= CalculPoidsThermos(Fdetail.fdpiedcarrereel,Fdetail.ThermosType,Fdetail.fdbase,facture.facalcul)
+      
+      		si _item.m_bExtraGazArgon _ou_ bWithEnergyGlass _ou_ bWithEnergyGlassESC alors fdetail.fcapgaztube= "Z"
+      //		si bWithEnergyGlass ou bWithEnergyGlassESC alors
+      //			Fdetail.fcapgaztube= "Z"
+      //		FIN
+      		
+      		
+      		
+      		HAjoute(Fdetail)
+      		
+      		SI  AvecCarrelage ALORS
+      			Facture.AvecCarrelage = Vrai
+      			cpt++
+      			HRAZ(Fdetail)	
+      			Fdetail.fdcarrelage			= 1
+      			si _item.m_bGridHalfThermos alors
+      				fdetail.TDemiCarrelage			= Vrai
+      				fdetail.fdbarrotin				= _item.m_nBarrotinID
+      				fdetail.fdt						= _item.m_nDTH
+      				Fdetail.FDextraCarrelagedemi	= _item.m_moHalfGridPrice
+      			FIN
+      			
+      			Fdetail.fdnocomm				= Facture.fanumero
+      			Fdetail.fdligne					= cpt
+      			Fdetail.fdnumprod				= _item.m_sThermosCode
+      			Fdetail.FDJOBLIGNE				= _item.m_sTag
+      			Fdetail.fdqteafacturer			= _item.m_nQuantity
+      			Fdetail.fdqte					= _item.m_nQuantity
+      			Fdetail.fdnumprod				= _item.m_sGridCode
+      			Fdetail.fdnumcarr				= _item.m_sGridCode
+      			Fdetail.fdcodegl				= _item.m_sGridGL
+      			Fdetail.fdcarreauv				= _item.m_nGridBase
+      			Fdetail.fdcarreauh				= _item.m_nGridheight
+      			Fdetail.fdcarrpruxuc			= _item.m_moGridTilePrice
+      			Fdetail.fdcarrprixdebase		= _item.m_moGridBaseprice
+      			Fdetail.fdnbcarreau				= _item.m_nNumberOfTiles
+      			Fdetail.frcarrprixu				= _item.m_nNumberOfTiles * (_item.m_moGridtilePrice + _item.m_moHalfGridPrice)
+      			Fdetail.fdcarrprixtotal			= (Fdetail.frcarrprixu + Fdetail.fdcarrprixdebase) * _item.m_nQuantity
+      			_item.GetGrillType()
+      			Fdetail.fdtypecalcul	= _item.m_stypecarrelage
+      			Fdetail.FDdesccarr		= _item.m_sGridDescription
+      			Fdetail.fddesc			= _item.m_sGridDescription
+      			Fdetail.fdlien			= cpt-1
+      			Fdetail.ftype			= 4
+      			Fdetail.fdprixtotal		= Fdetail.fdcarrprixtotal
+      			Fdetail.fdvariablex		= _item.Variablex
+      			Fdetail.FDvariablex1	= _item.variablex1		
+      			SI _item.m_sInteriorColorCode <> "" ALORS
+      				Fdetail.FnopeintureInterieure	= _item.m_sInteriorColorCode
+      				Fdetail.fdprixcarreaupeinture1	= _item.m_mopaintTilePriceInt
+      				Fdetail.FDnbcarreauPeinture1	= _item.m_nNumberOfTiles
+      				Fdetail.fTotalPeinture += Fdetail.FDnbcarreauPeinture1 * Fdetail.fdPrixCarreauPeinture1
+      				Fdetail.fDescPeintureInterieure		= _item.m_sInteriorColorDescription
+      				Fdetail.libelleNbcarreauinterieur	= "1 X " + _item.m_nNumberOfTiles + " carreaux"
+      				Fdetail.fpeinture					= Vrai
+      				Fdetail.fTypePeinture1			= 1
+      			FIN
+      			SI _item.m_sExteriorColorCode <> "" ALORS
+      				Fdetail.fNoPeintureExtTout		= _item.m_sExteriorColorCode
+      				Fdetail.fPrixCarreauPeinture	= _item.m_moPaintTilePriceExt
+      				Fdetail.Ftotalcarreaupeinture	= _item.m_nNumberOfTiles
+      				Fdetail.fTotalPeinture += Fdetail.Ftotalcarreaupeinture * Fdetail.fprixcarreaupeinture
+      				Fdetail.fdescpeintureExtTout	= _item.m_sExteriorColorDescription
+      				Fdetail.libelleNbCarreauExtTlt	= "1 X " + _item.m_nNumberOfTiles + " carreaux"
+      				Fdetail.fpeinture				= Vrai
+      				Fdetail.fTypePeinture			= 1
+      				FlagPeinture					= vrai
+      			FIN
+      			
+      			si _item.m_moBarrotinPrice <> 0 alors
+      				
+      				taExtraBarrotin[_item.m_nBarrotinID].rTotal += _item.m_moBarrotinPrice * _item.m_nQuantity
+      				taExtraBarrotin[_item.m_nBarrotinID].nQuantity += _item.m_nQuantity
+      				taExtraBarrotin[_item.m_nBarrotinID].rUnitPrice += _item.m_moBarrotinPrice
+      				
+      			FIN
+      			
+      			HAjoute(Fdetail)
+      			
+      		FIN
+      		
+      		si _item.m_bFifteenYearsWarranty alors
+      			rBilledSurface += _item.m_rBilledSurface * _item.m_nQuantity
+      			moTotalWarranty +=  _item.m_moFifteenYearsWarrantyTotal
+      			bIsWarranty = vrai
+      		FIN
+      		si _item.m_bExtraGazArgon alors
+      			rBilledSurfaceArgon += _item.m_rBilledSurface  * _item.m_nQuantity
+      			moTotalArgon +=  _item.m_moExtraArgonGazTotal
+      			bIsArgon = vrai
+      		FIN
+      		
+      	FIN
+      	
+      	SI bIsWarranty ALORS
+      		HRAZ(Fdetail)
+      		cpt++
+      		Fdetail.fdnocomm			= Facture.fanumero
+      		Fdetail.fdligne				= cpt
+      		Fdetail.fdnumprod			= gclConfig.m_sLienExtraWarranty
+      		Fdetail.fdqteafacturer		= rBilledSurface
+      		Fdetail.fdqte				= rBilledSurface
+      		Fdetail.fdprixtotal			= moTotalWarranty
+      		Fdetail.fdcodegl			= gsExtraWarrantyGL
+      		Fdetail.fdprixupied			= grExtraWarrantyPrice
+      		Fdetail.fddesc				= gsExtraWarrantyDescription
+      		Fdetail.fdprixu				= grExtraWarrantyPrice
+      		Fdetail.ftype				= 2
+      		HAjoute(Fdetail)
+      	FIN
+      	
+      	SI bIsArgon ALORS
+      		HRAZ(Fdetail)
+      		cpt++
+      		Fdetail.fdnocomm			= Facture.fanumero
+      		Fdetail.fdligne				= cpt
+      		Fdetail.fdnumprod			= gclConfig.m_sLienExtraWarranty
+      		Fdetail.fdqteafacturer		= rBilledSurfaceArgon
+      		Fdetail.fdqte				= rBilledSurfaceArgon
+      		Fdetail.fdprixtotal			= moTotalArgon
+      		Fdetail.fdcodegl			= gsExtraArgonGL
+      		Fdetail.fdprixupied			= grExtraArgonPrice
+      		Fdetail.fddesc				= gsExtraArgonDescription
+      		Fdetail.fdprixu				= grExtraArgonPrice
+      		Fdetail.ftype				= 2
+      		HAjoute(Fdetail)
+      	FIN
+      	
+      	SI taExtraBarrotin..Occurrence <> 0 ALORS
+      		pour chaque rBarrotin,nCle de taExtraBarrotin
+      			si HLitRecherche(Barrotin,IDBarrotin,nCle) alors
+      				si sansespace(barrotin.ExtraNumber) <> "" alors
+      					si hlitrecherche(invent,INUM,barrotin.extranumber) alors
+      						hraz(fdetail)
+      						cpt++
+      						Fdetail.fdnocomm			= Facture.fanumero
+      						Fdetail.fdligne				= cpt
+      						Fdetail.fdnumprod			= Barrotin.ExtraNumber
+      						Fdetail.fdqteafacturer		= rBarrotin.nQuantity
+      						Fdetail.fdqte				= rBarrotin.nQuantity
+      						Fdetail.fdprixtotal			= rBarrotin.rTotal
+      						Fdetail.fdcodegl			= invent.ICODEGL
+      						Fdetail.fdprixupied			= rBarrotin.rUnitPrice
+      						Fdetail.fddesc				= invent.IDESC
+      						Fdetail.fdprixu				= rBarrotin.rUnitPrice
+      						Fdetail.ftype				= 2
+      						HAjoute(Fdetail)
+      						
+      					FIN
+      					
+      				FIN
+      			FIN
+      		FIN
+      	FIN
+      	
+      	
+      	SI FlagPeinture ALORS
+      		Facture.fpeinture			= FlagPeinture ? 2 sinon 0
+      	fin	
+      		facture.AvecTriple			= bWithTriple
+      		facture.AvecProduitSpeciaux	= bWithSpecialProduct
+      		facture.Avecsatine			= bWithSatine
+      		facture.AvecPinede			= bWithPinHead
+      		facture.AvecUltraClair		= bWithUltraClair
+      		facture.AvecEnergiverre		= bWithEnergyGlass
+      		facture.AvecEnergiverreESC	= bWithEnergyGlassESC
+      		facture.AvecTrempe		    = bWithTemperedGlass
+      		facture.NumberOfThermosToProduce = nNumberOfThermos
+      		
+      		//	HModifie(Facture,hNumEnrEnCours)
+      	hmodifie(Facture,hNumEnrEnCours)
+      	majtracking(facture.fanumero,NetNomMachine(),vrai,facture.faclient,vrai)
+      	
+      fin
+      //
+      HTransactionfin(gConnexionHF)
+     type : 458752
+   -
+     name : CheckIfSpecialProduct
+     procedure_id : 1521284039295679079
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CheckIfSpecialProduct (<sComposant1> est chaîne, <sComposant2> est chaîne, <sComposant3> est chaîne, <Avecpinede>, <Avecsatine>, <AvecUltraClair>, <avecProduitSpeciaux>, <avecenergiverre>, <avectrempe>, <avecenergiverreESC>)
+      //
+      // Paramètres :
+      //	sComposant1 (chaîne ANSI) : <indiquez ici le rôle de nbcomposant>
+      //	sComposant2 (chaîne ANSI) : <indiquez ici le rôle de nbComposantSpeciaux>
+      //	sComposant3 (chaîne ANSI) : <indiquez ici le rôle de composant3>
+      //	Avecpinede : <indiquez ici le rôle de Avecpinede>
+      //	Avecsatine : <indiquez ici le rôle de Avecsatine>
+      //	AvecUltraClair : <indiquez ici le rôle de AvecUltraClair>
+      //	avecProduitSpeciaux : <indiquez ici le rôle de avecProduitSpeciaux>
+      //	avecenergiverre : <indiquez ici le rôle de avecenergiverre>
+      //	avectrempe : <indiquez ici le rôle de avectrempe>
+      //	avecenergiverreESC : <indiquez ici le rôle de avecenergiverrsESC>
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CheckIfSpecialProduct(sComposant1 est un chaine <utile>,sComposant2 est une chaîne <utile>,sComposant3 est une chaine <utile>,Avecpinede,Avecsatine,AvecUltraClair,avecProduitSpeciaux,avecenergiverre,avectrempe,avecenergiverreESC)
+      
+      
+      nbcomposant est un entier = 0
+      nbComposantSpeciaux est un entier = 0
+      POUR i = 1 À 3
+      	SI SansEspace({"scomposant"+i,indVariable}) <> "" ALORS 
+      		nbcomposant++
+      	FIN
+      	SI HLitRecherche(invent,INUM,{"scomposant"+i,indVariable}) ALORS
+      		SI invent.IproduitSpecial ALORS
+      			nbComposantSpeciaux++
+      		FIN
+      		si pas Avecpinede alors Avecpinede = invent.IPinede
+      		si pas Avecsatine alors Avecsatine = invent.ISatine
+      		si pas AvecUltraClair alors AvecUltraClair = invent.IsUltraClair
+      		si pas avecenergiverre alors avecenergiverre = invent.ienergieverre
+      		si pas avecenergiverreESC alors avecenergiverreESC = invent.ienergieverreESC
+      		si pas avectrempe alors avectrempe = invent.IsTempered
+      		
+      	FIN
+      FIN
+      si pas avecProduitSpeciaux alors avecProduitSpeciaux = (nbcomposant <> 0 _ET_ nbComposantSpeciaux = nbcomposant)
+      
+      renvoyer nbcomposant <> 0 _et_ nbComposantSpeciaux = nbcomposant
+     type : 458752
+   -
+     name : GetSpacerID
+     procedure_id : 1521659320608319766
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetSpacerID (<sSpacerDescription> est chaîne)
+      //
+      // Paramètres :
+      //	sSpacerDescription (chaîne ANSI) : <indiquez ici le rôle de sPacerDescription>
+      // Valeur de retour :
+      // 	Type indéterminé : // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetSpacerID(sSpacerDescription est une chaine)
+      sdReqsql est une source de données
+      
+      
+      si HExécuteRequêteSQL(sdReqsql,hRequêteDéfaut,chaineconstruit("select IntercalaireCouleurs.IDIntercalaireCouleurs from IntercalaireCouleurs where IntercalaireCouleurs.Description = '%1'",sSpacerDescription)) alors
+      	si hnbenr(sdReqsql) > 0 alors
+      		hlit(sdReqsql,1)	
+      		renvoyer sdreqsql.IDIntercalaireCouleurs
+      		
+      	sinon
+      		renvoyer 0
+      	FIN
+      	
+      	
+      	
+      FIN
+      
+      renvoyer 0
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x151c4ed616b39eb4
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text : {}
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

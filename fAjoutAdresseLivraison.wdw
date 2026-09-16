@@ -1,0 +1,1626 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : fAjoutAdresseLivraison
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : fAjoutAdresseLivraison
+ identifier : 0x4756adea63b7b50a
+ internal_properties : CQAAAAkAAACmSyU5lJPcdjuZLY4cgitJyNQuwkTZ3s1qN3YHB96NZJVw9Cx/iBTaiN6Ejt1qTsU+WDhGIQbhYJP6CsPb747uO0Z15r2CGg7UvbazxXPE5FpTjvLBfzeiOOPw9pYZieMtzawwwezoULXZR37eZDNtKYuc2FcDoG1xnGcrSJdrthOgC3/z375FK3CsMBUyzdlxwoj1CpGdilN6Oz5TUbYZOJhzxFPLXNAY3pWOP7XLJkVacCOrorzbTGU1KMXuHu0tzfraaVDymCURZDP/TyQw3wGxP1iMJiI+S0pGEPqoaPwWw3XBj8wl4E3SqZy/5Lc28fSxIGpW/5A+wYreAvLBo1+FiKwaxImyzPm8tUbqq2HocCR9ft0/jJn9qe8GJckYV+nS97vICAXh2sVxnFTnBe+EPwLV3VKr3+xImtuoUBtSSF3LSHyVo2IEw0ZCFsMeeowdQiwMEUAsssSeAuDYj/pkz/YNqqx6WOcsc3ti/8MqqjdH00dz/MhvWiuw9Rgk344K882X4WVv/uz25ujNx4z6+DSXTxzt2LBTeEmRxsDWGoCGlSUVVWQDC8lte49CeJigwzaeB8eFS/bWILX6RiHl7uj1fBwqqiYoI2e0vyyBOpJHDfFZ8Xx+spLX0iWEKIfruPjpqtylt7gF2UWrwzNz+4kJ3VDgl4EPuDawfVtrQ617S2Ni0KzQhop1BicNTKCDxMcpGtlu9+Ww0EzblGtyI3dKxZxIsBpiEpqZDgE1evugQP9Qa+j/NRAm7sNQAoZ9evAw0v4jDdFnQaSbjT5BR/ojPYJi390fi3eUvmU6oM2RTq2MfpKtFpOHNFcGu/4JYkZ3LzUWkBMQVb1YtRvS57TPT44=
+ properties :
+  width : 693
+  height : 509
+  widthClient : 691
+  heightClient : 477
+ controls :
+  -
+    name : BTN_SORTIE
+    identifier : 0x4756b026273d70e1
+    internal_properties : CQAAAAkAAACPVJu7MekGehh1q1rh2kD9nxOj1E5EJkaNWxw4rA6Iue7p3PUxFF0GVZI5rk4NMRrdsFHz8HKnCnVGeUT1kbJ/z8hhui3Phg+NS3kEamnvjS0mXcFt64LhfJny6DgltR0E+WCeFrNhudx4J7bmZq4OCTW99ieu0NyAQXj9SasTHMAsN4vKJilgsW+rhJNPBMeIpizJGYA6GcgR2NbdlIIzJ/P5QEnbqJ7c3YPLguQAAhYwd4tMQo6CWM9w1rsRIGNDYVH2eMJVq1qxshD8LMKc2nC9y77Zg6N+4Vf8y+KbMa2C6xvx4AEqjaE8QLo33QA9hAviuObF2WNxDnUISxW9oNAv4Z8arSgK92jqfPBSMJt6kR5n6pPjGjPJA51oPs2AhiQhCSz1Rq1fpUBKHrtsm1+ivBT+Znulr3vXWKO7TfXlFgquubdVj1D/5z1xQwRGI0f2t53Q+uN2+Oq+8WiMXU5U/hf6bdo07T8Hp6l0a8F8Mc7PFSzyEjnPDpYHsDXJLeIW8Jh28RIvvRYt4+ZWIXWFlPKi4zBqK++H3SmxY3V2S7LAf+7X3AIu+lqemg2SQbBb0tLaYFShmZoeVkfH8pNItXPwNU0Oa83dIgrSlR0UYUzDZGIsLOUq6PZ+oPdYDozu6hRXavJHo2WeGJRAP74t6hG8eTkDGGo3dGQoPyLmGXwdDIeLfAaNPedVoixdjNVxAVneB3F8COkB9mDC48nGUfXHRaGl29zHQK1/SbaLQikD6yj93imo8EJEXshKN0LltE9EpWRJkcrJLYvscOrgnVxMjbcs692fpbeX69uMRU5hq8ZFk3ObAhYKQoLY7WJV
+    properties :
+     x : 26
+     y : 6
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         si grpdata..Modifié alors
+         	si acso_message("Question","Certaines modifications n'ont pas été sauvegardé"+rc+"Voulez-vous quitter sans sauvegarder?","OuiNon") = idyes ALORS
+         		ferme(fAjoutAdresseLivraison)
+         	FIN
+         sinon
+         	ferme(fAjoutAdresseLivraison)
+         
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_OK
+    identifier : 0x4756b0262c5b70e1
+    internal_properties : CQAAAAkAAACylJV5ABUHyvUQB64MRsBPsT/aDrs9Ev7SO3hFX+gLueaZBSR2fmjFSwZ0KbBT95hntLeDyzoieQwEuL1nZkfgD9NSV4WzJjPb9lQuJmoLHfM6NDQDdakzRmcy1vrwnLyFFkwSTITFrz/6afmrRskXOXLIHKMZm45uMMczGr5god+SobNNoZGpDPLRyC/Xse41AuoZzIgh43RnR8dmsWlAovm27DxK6FO1RJGDe2wvNsZ6YLDfVSzl5+yClhpZ3A3odMn/K84IMeov679U0pxnA73t5BVs+B7+aNRHxVyJDVfC1HLFTigLlMDl52EkETjeJN5rJA1EvjMvRJSPJd7CM+UuRbeEBPWXm6r/liDraLXrBvjTzXO8EgGjC2cKBY3gW2ZWYWXpgt415RYtmvpDocv7x5xF8ny2Tc36YlTPRKYHp9pFj3VviMBUqmtvCopCHU/GhshQnetVlpWP8alEcpGrv5LLKu1ATxFRs6jhsQxi9ddvwMTYKp9WefxEmKjZZxUkbMgPiZKII9Px31JjGk1otId6pQTHcbAt57DXkIx0YfLlRT3H2bFNHuL6BjdJ7wothegciqyxsG6JYPPCNpBfs2vmrAiaitWFqhar6aL00tfMepVsWnvEMbnZomVSchuTAycCq/LGEYzXxiwV9wCs2hndB/omtSGuHnJDZxY5zeqFxPNB+y+VNvHXKIqFefj+sydXWjOOzwMlE64ZcqWnFVLd/IQRHBz5WP61T+7twaf017xDUcbYfSdSnVSxngeGOYvfDHjmcgbL8azwKhQTdsil1uh0rCGR4fsr2oubHzeBpAbokg==
+    properties :
+     x : 70
+     y : 6
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         EcranVersFichier(fAjoutAdresseLivraison,ClientLivraison)
+         selon ltype
+         	cas "A"
+         		ecranversfichier(fAdresseLivraison,ClientLivraison)
+         		ClientLivraison.idclient = sansespace(client.numero)
+         		hajoute(ClientLivraison)
+         		SaveJourCamion(ltype,Client.IDClient,ClientLivraison.IDClientLivraison)
+         		SaveFrequence(ClientLivraison.IDClientLivraison)
+         	cas "M"
+         		EcranVersFichier(fAdresseLivraison,ClientLivraison)
+         		hmodifie(ClientLivraison,hNumEnrEnCours)
+         		si pas IntJourLivraison alors
+         			SaveJourCamion(ltype,Client.IDClient,ClientLivraison.IDClientLivraison)
+         		sinon
+         			POUR TOUT JourLivraisonClient AVEC IdAdresseLivraison = ClientLivraison.IDClientLivraison
+         				HSupprime(JourLivraisonClient,hNumEnrEnCours)
+         			FIN
+         		fin
+         		SaveFrequence(ClientLivraison.IDClientLivraison)
+         		
+         FIN
+         
+         ferme(fAjoutAdresseLivraison)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : OngletAdresseLivraison
+    identifier : 0x2d9757aec4b89c95
+    internal_properties : CQAAAAkAAAAFB2TD4+MsQqjANDFdcb4D1/RBKy1IMNkK9O6JkvND3AB9fLsimtHNnlVNxXauMRmIy32s/hn8BCnWRE2lANULg7uFgR/2UXC+0y2zS519epmsIhmFROQe7nV9C3N7wQjNx18quz5UDhLkdf44JvnIyGZPnU3CLgmvyt/9+15Zkmp/w0KJd+oq+DQuZAdBEncyUFyNOYqEOsZpdqm/bLdGmWVeR4aUhpJZiJNLQjjJz+cssMU/zWvjbDBxsxjArfGRyenWnolAgIJgZSKQZtnDaNgOxxgkMiuw6FVtp2ANvRyK4oPo6z3EFWpzmkuloW6E5hHQnPdH+s+RkOe4GRUpq7uTEF4JXHkl1+VpjfTb7Q4msApSMthzBy7C1hbIfRDe1ZwGW2bugs/NSLZqYE8K3ke1C8/mWNIDYv0D9NZkmfjneL50IyjqXsBYeZvqYlUf9PlS//KWrXjq5UNKl5hpkFPUarkSEak2ggCUnzMTpRT/5TrXs9pMMC/HmUfiPeGEDQi24zjGUApEE+Pc7T58oqk6cuPMOvpgi4R94jXOHT+vEksnmvZCI//2CDZzgK+YDj5y2cYmk+sBzoS9LrlxCSI708XK4PhCA63/qwtNSnpTd6Oj2bUpim9Z4vDoMibefn1A6NxBtier9GfdBJv6el7JVU2fs58kBi8ZXF32DHLlEr3Ozm1jn+bEep4=
+    properties :
+     x : 6
+     y : 46
+     width : 669
+     height : 431
+    tabs :
+     -
+       internal_properties : CQAAAAkAAADJ+UdJrkKuOlm4/WxyGlYr/P0E9sdPAPo3JeY4qSyhoAVVTbwHGFcu+Yjqz+z8vc6iTz7mQvFLoTf4oQCalw9SixiPDeetJtqLo8kLOVVtqWtHsBTnC/8bPPl711ZVX5ftO+Z65Jcjliy1uaVDwohlvOIPKCrfc52HsW+AIZGD22eeAwfvi4CB
+       controls :
+        -
+          name : lNom
+          identifier : 0x4756ae08223b2a4a
+          internal_properties : CQAAAAkAAADuEXH7qUdJ4Fm3EhPlw21cdyv+O49QBZLqLyN1XkxS2n+SoMqqDMtsB6Whvw7BvyPOjBNRtUCHHqKs2WY4rp7sTfXoN/x0qTcjWRZ0LPVf7KBE4gThvTqf31yLqfYFFkibuhGL7CaKkyuJOtZmw9r8DBxgsRUyWOty2qkN8S04/GxMo+k7MPf+eh2OGYjjIzYLScWjgAIdl0XbAHRoIUyJ5/Xomc6IdWXDfaq41lTKvVbGtO5PoaSngy5Ikzr8oLF9OmMUqWI+l0R6xXsbzNsZfv9seol9h9Os5KnN9VHAzmJMRVsCF+HHojvZoqRwxmxR4EmGRLluHrVcERGC3fGkeqFMzxoOWNcSC3l8uG6AmJMoiDoiUSjul9VWhABGoupYZz91YE61DiGjkCTvrWUgA2WkMhVkzWjHL8Ty0iEI334CeowyiTPyAYBFg2MAaqChgsNJvDOUU010kfO8qIDyDxebQCYB0CGq2F9AYfYN9lYhk+5zm0Prs1aA/39X6JtsLyP+Qat7w0Ho/a3YCIvCibaERWEK8Hqb1gg4MIZ98BuWq7V5X2LLOk1bWLFhHb3di0lTsdth0mKP8hGFTA408l/TprwjpgsnZ30Xfm/MAif2JC4TccZvVo1iyuB7oOgca1nBe8DTqRTQ0HC89YZ5Y3L/O29+lGLzR2F1Vn22uBeGPMiIGLK9pyYPL4LevNv/LKZ6350Bw+95bb/A7Q+9zs0ZM7SmiM9+Evw8g7nwWcpmi4wg1dlzkuNj4+fsOCciK/vv7wSITgZq1tuKxMpT79EcsQFst7UwUjQDYTIsy0hNt2odQlIS7Qd9hOmijfgsxh9d6pm3+GJO4sc2TK7leteHkyIBh0Y=
+          properties :
+           x : 56
+           y : 5
+           width : 300
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : lRue
+          identifier : 0x4756ae09070e316e
+          internal_properties : CQAAAAkAAACmt0XnS2+2RzwEkzQoSry2ZJZhRpZN1tcuwWVolwglky/xx0yfNUSSP6U800O/uzT7lJf3/PSdee/FSV0IHrFaC2mXSemDl/+gJC8CvYgO7qNf9ouSvgKdiG5oqzRSq/JoL1N4a+wIMvwwTXdfO5PP/A4PQFFrNpvOkKLKC92C5KBe6+XCJ3ex4e3jDcfkguLz4JdrmkZd/kUS/ksPt73BuxcqJkxv9cVKmLk31Ru2INjKoJgYF3Y4DNxrScenZVocuc5RtCMTrRUw7uNXj0bTghHKyt6QxidcllPWwlwtfhYmb5Tna9ntqKEWQ/osnoZCsa3kXULxxTWs3pMwi2NSXcsZCiK8xTRY/f61H4KLKWJgFwvG5X9CjfqcHJK8CqcVpWrqo5c56UWWHEVx0dGekw4fYnszO3bils/C45xy9J59I8MjA5DeSDTfBXJX3svCPsepRAeJK1gCxSOjSzhpjGW3uCi7r03VYPmSPmfnmXu5wfzRAcxFtETg80gAdMg/w28+5aPco6xSbUlzV2FhJkTa671ie4TummiE5zltJ/gm+5EvNaFfyWsP0PjQ2ZgYFV9xjbummiUBTlGgT4hT6YX/rigDYYGSo90D7cZQhaqgdKKneWOBpY8YOOeynvnZOalFWa5k+7NMVEilVvKwAgJbo5u+Nf7oWzt//TAgO9ZWMu7cCMebUOBTx1mlCrIaUtYuqI+uJ/4rr62GhdLzZNbQ0IdPrIzGuwlTa+eX6ZrhUKMy7ecusLTwSYcIIT5THhnld5fKaj2y49Ui07rv8lWK1+/Cj+KsMMEkuy3qgw8lHCExyqq0Om+kqAEDPiBZZbDSw3daDOazvIpIVhcrbHFXqAfSOKlkzA==
+          properties :
+           x : 56
+           y : 28
+           width : 300
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : lVille
+          identifier : 0x4756ae0d3bb53efa
+          internal_properties : CQAAAAkAAABxHXQql8cIL1Sw7hmjyrNI7kdp2s7L9F8xyLdnEBbhHRSUae0740CtSRJRM2KTAxktKA0jFgv8bsr3kvGmz2JdWg2z0MfK/EfOWK3oIUyg0aDQbqNEWcozmfYOtDJIGQL6FCjqyqsLZAb8rxJG39CgQYZ5ngy2Ek/2w8/T5hcaSHOui2NOpdpDNv2qIuPvCUIrBYAXh2HmUs+Tn3rQUzvHxi9oXuIrOpvGerpIcjrPr+N4SQpwM8ErF5jv0A2nHdfHI7inq5b5H3mrf5nsVFMu8UrH9klYxixJggiXQ2lsW87nQ5ahsSmlPcBXO7wgAqCGHAs4vGIwaUssHV+e0OmBd5MrldDGOdDkvtoe83k+HB17tbs4S6S2QI5ChqEtQpvMQx+XbA74SeXLiyNJhcltio2NGPdD1gBsAYAd6X7O1BiOSo5h6wt7LkojIuD0xP5Ws2VZOXQG2RlYc3+3M9+C3kauekdodoAgdOPBzwy632XZH9LaIxrWtIGkqnT11dx+1bvVPNXl03WlbEeYCqRcNqMdnPWPodE1zr5jdaUWniC1VXIBUZVVjIbrpmw+3DeIwDjUiN7jhw1xMZmEaEiNUx7Ze643e9FwoFOMxgcqmAayfkazeRe8RlHrbrwHsilPiI+yo0C4wpDC68LlVzTflwHIEsJvEXYvd1maAE3XFR7HniVDEb9BJOl6Fg5yu4A4FvV2JOWp0XMYGMvgLIdjH3QT4ZzsTExAFZPV/YAzS+Hpq4bWSlm+Oh9CAg6fHZ3vWQpiLjlIPIIG5yE8rhhVCwbGiqCFwinxmAJ3bBHkaDUknmYPahEIjq2ZiTGQsWb0O/rJgk83Iv0lnp8CRMMQjgSlacEo9MAqQshSi8Sx0gTA
+          properties :
+           x : 56
+           y : 50
+           width : 300
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : lprovince
+          identifier : 0x4756ae1651eb6261
+          internal_properties : CQAAAAkAAADn5wSfBKbMKRt94z9CknfTNLlp5sPUdL5dijglvN1DNfq2Ksg5vwNzC1zXbZl49hcYx7L7IHcuU7wLW0hmZj0ccpE+v1H79H8Vv1FRDh+O1ohZwFMS18EJRTd61YMmuRbkiBhPftBdCFw63y3ibf+LSCmLOUJUTk2QOA/L8q6N9W65RxZZqtQCT4aQenMdtWngRm+Eat1fAXJdxcn7ajn7ZBKoaSJV03R6kkiICk75cWc+260+TbpuEkpQi8/D992kLmVrRQcL0MMZ04ZvcI6cDCJnAvSwXj1jFtGcOpfEIHdgJNXlfgFacrccP1DCzEn9/LQylxBgyjaDt/3uKBpDy1E8hG/hy/4okwUgY125dfFfPcnuPJtaB2zLRCq7MsMtcdANOSr1Rqfl4EwwjD7A0a8h3PCGV3m7FYTrwIjDDFjBGYrtJve3lo2k9gW/HGfWzVbpJKj+MVHENC32JI/Zsmz7MAzCUOYMJmArcLu0Dg+38nCrsdAMkoGDKp9Kf6Nmy1TdlZOjEVOJK2MTX3jB3uVk2E6V/0N/wCNbEDr6U2Ch/HyEtVX9lLI+omeTAmpIHMvU/84Xg7WPtvmDObb2HxZS/6ndwY+aZCYc98Y+bQB2DSg4HS9I1Ivu+AHieEoZ2Iom3CDkzuBonOxmpqaclTMLQAfBo1h17Q6EAZwfVM6/Vfsa2TsNFN/tCjnX27E2Cs4ugyTdEXp2MBEoS2wuO4ayEsRrqfdPkbQZfbEmRay/WAx/eOD9u+Pq8tmIznbvbdf6g6zuAE5E+A/BkG9bBihzQpLGuBV8Ox7F+nNy/bI2GF7zBQTlPXFiDvigFt9kD4WCD7Dk9Qrh8iTLHBOodQ3g6q7vhUkywa6lKrYJVmzIJq67Vf+lTw==
+          properties :
+           x : 56
+           y : 72
+           width : 300
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : lCodePostal
+          identifier : 0x4756ae1956046f13
+          internal_properties : CQAAAAkAAABFcITij21mfWtxPi4ucOTWFVMuSVVJVqbuNuk8V89lyeyxu1J5sP9QGZfX/J0x/fWM6d/W5acvJw0geLx2lRNQyz24GTP9A6UO8A8/nYYvY3T832ovmhzrnjKLRurnHAXOigaIozdPpC/XT27cCPk7ZOlCtN+i8kWRfcbx5m2unTCAr5B3Gz5zWWYzPqpdScWp+5nVadzgyt2GghEJV1VNNjFWenIJayEantT/ET55fQ3JLjIcb5S9UX/qSnl7VMNxnHXDwjJU7Gw+guYh3+WK15tg/Sk4RmsywcD3eaYCG8Of37+SivASWXmg7la1O/LKwlgxVWIgCV9oiIx4tAf7yKOP/NilswYqq1labKtsBAnb4PKS2JEpsxpv8SKnT3yI62JliQgRlKUTmt8VqgltbeGgrGl6QEqw+8V+sYokWbB4PdYJ3SLbS38ERMEOlYU2PVrZBwheNm9lRa+lGvD3piRG8b09PMHrvZnhrKjmbUSKRRqCVbZhDkxKc8wE/CreoK+cpL198BkCNTaIqbQE7Ep4GFG0PnB13fGI2VC/IfUy3AIl4JVvG6r2/zf3zKipDfcJETE4SDNFtrnQQ2wS3vUL/xJwwNmEtvZDDTg00ri660aJ4+GNbqIS0JMegAwnBY36aWg5/oWhYJEGRc6ByJBt4COOdPVc7SL1qnYn/e0r/yoB2TcmxpGc94/iwDCIiKD6YIvC6IpDli2OxbosgoCsueiP+THiMe1dTHmwdSlqvR6W1g2Dfl0pLcLoy/yX/xYdbFE7g9yYwC7azP6IotfIHcHg5VfQYnJF7P2YMRjQSDVHPSVAhi8SHlzKtT8s8atGqZGKAw+oRDGtcYRmiPnjr6Mmyj8PkKrAsPAZqIrtcGLTgkIq+AO4CYI3m0XjQXu02YMBB81spA==
+          properties :
+           x : 56
+           y : 107
+           width : 131
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : lContact
+          identifier : 0x4756ae1b5ec077be
+          internal_properties : CQAAAAkAAAByzxFs4V3jKS7AB1q3gyOQRI/TJWmncFEMJwkzvG3VOwev2JRlpIClhZxmuaNatkquVC+XHaxxJ7fXmh14YqvYv7hptC7nM3jfqHDL/uDeEClrjk0cUsZU9WGh8eYgQZJvypKhix6vWS4QW9AT//BEldlUZaemioRWlMaEDCeGE12FTYSJUDxz5Roj+RWnlVrZ4E+XFfKOJ5RlBml4TzdHjLHhflg4hVRZwJAk13UAFINGLxrL4QW00yehNhpE9HtlBE7rpaLPv0CYhYDdYSl3Tiyz6SM2ppK75VimPXLX9uSRwFbR+pRvBv3jpkg9MiKOO3woDVL/yDlf6GHAQbHVHZxSmt1sHN/7aBrYdKBoeC7uw8gh/EV4eTLtbwJCm0pfXI5yEfmzAXOvQ5l4gm2bUtoos/d+aoIXo2wFI46C2WuLzXW0dPbb+8hpa/+pCRVQFt3C+h+I+Vrw+woC7DA1IMHCN8KZFrKF9CFq/BPVYI2QZR11bHD2aYOYLwkENj+m5Osoo7rvm1j/9EyVCcXn1u7r34hQgb8qqIYorHpf0dD+16P4Bu3fuZ49vanVI8wcEU6bz6vzXeKPWxpnaTUs7yfhEiHYm3c/ilnL2QA9OZ7pJp2I0KOuGYNTSWOcKR6/YYFBPDv8dBsy+6EIWKEuLZ5018GMgXho8efF2Zhw8FYaorDaFlu/G/HSY+XXws2C+7Xzw97cptsO2biXgTjrrnnXSPP3Xt5OFKJZJBE6cEOP9OX/4MST0bkoB8WYNRrbl/n4GEoY0dskPvkJhRVqn6jI8B9oaz/8OUflsif1XRl5LxEWR9HW1VP32vTR4IO20oTAofI2IE4bvbyprwqxhi3snIfHoEhVql6eeuaX+jZKfwg=
+          properties :
+           x : 56
+           y : 136
+           width : 300
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : ltelephone
+          identifier : 0x4756ae1d33c47f8e
+          internal_properties : CQAAAAkAAABSRbjW/QauDhEjGtIekE4JIgdEUVWlE7nt/vr36wtQsK/3CEpuOQs7EpjY4z4mPcwfNajbL4B+uKt1tQ5zoHzycI2iIhiVMsFBcuYyfVv1dbrt1ost+3NAxTzpKc/jIo6UCgsFuoBfcBBK5YVqYOGbQ0Q0RX0Bx6UtTcPsmRXyo4O81oUObZHp+pW3y+V+838ULqFzcPZkFwcEaUDn898NNX8d2yZBONJ6gskm3TrBEDUHYF+yYWplTqVEzUl27bAbclNreLDZWGKQmVBQMbiqNCjcOs8KNVHuLqTvb3Ur3Cbj56AmmJ2qJT9mnjru2dd/2UkNEK8ADBjNpB3SCM8wKcg1klyokruRTv3kVgQY8k4hVi3Hg8vbnOhg0pT1KoIoemd3Uh9C5C10qkynf+cMZUS7fjUIsiG2V32at1BIFe7HLfvCAgyo21U+ES0pPfFS+aWTOxHe7gBjUlo3CeIFbaQ/7OFQymT6aFo6RNtOxc2ktt8+vKIq6y3j/riDvHrDburFPjaFWfrHSh3w6hqejSph+wn96PtMIKrV+de9Y2ToGaNTsfHqQoHROqvUYCzO68AOwfZyrQAyUQTOqsRKjV3uqBTBkFBDFXXik1totu3I1MExFIGSL6vBQ8krhpa2LfLb588hT87Sk+J+Ij4hgeLoix8ZatC3uFV6KJfXzYYVipnNlHvFnajL4AM5il7lXKVR6qxut4kON27UKGRixfv35UD/tq1No3X/wdeL3g6sbQbsWwcUq+osYFob+R5kc7mS7qmQfO0mDB9tvFX2VPA0EsWDTMJaw0x+Fi6qRpc2KPv5RWW8hg2X1kEzN/1nKPzdIpDpGfXQjEyWqZ6quBzAEm2EIxFagGJR/O8fZbbCnBD8cLBX13kuFtOYkQQIQQNOfUVyZhhFv00P3bYfDbRHIA==
+          properties :
+           x : 198
+           y : 107
+           width : 158
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : lNumeroVideojet
+          identifier : 0x487b74665c2fd8e8
+          internal_properties : CQAAAAkAAAB1x/Ssqi653rhb0ZRBA4sxohEm6Ig1670eOzBSfEQybX6dS9WUOPgtL6Hi1c1oFfUOhY+RDLlqmGnoqGw+UdbW8XPfpSUDtZejC0ZsCcCYi220iMoaWkMBHwW+QqnzW9ZVJ8FTdYTx2j+QxqsMAOwWGj47j50qKA/+HQLd2P2FWWbkDUWgVmNPUtfY++DmAexNMbG/oAE2gtrvFW8oSmcWDXyXhQmJhnLgqsvHIH54jrwSa4YH7CBULe5SEwFnIjGyYJ4cQf7Q5BqN3P7LeZXhfFWWpj8AkpUf6aj9JMeP+nOHmx7HZiYACq3cxiblhpYZE0lEVYAiAg17wj3hdP1iy6l7UJtUROH18vlj/YrKd2LaHaESHGSCQxsXWFV3W/AQhDFSrNxytCS2eIKssv7cSvjUCTN0MwXbvIyL1PFg7WbvyiNLkhmAtcvi+2HhBRHUdDm60T55VvkjoMruHGonpff5nz65VeVHIcjcOLOTHmbA0JEXLr8JGSI9metu1B09dBgI/wKoKBDu5wTLFxk/U5QOm/iUTLqinTU8nJ4nVWFYlENAEmT6a9taL0VVQUp14fkjM3N+bIYczgSld8UIbJFKCh2AIkaDn0pVEawH+7tJyXt6upYNF2yQuXdc5Z6OHzCB1k3L3+Vhogte/o1uDIhpAcdifp2e+DA7Yew2nkXO89CS+nY+QcwRh2knCimPr9wPnX//Z31pMl7hhDXrK2lhq49fydyoaGYqZbeoWfvk5NZaodsGmnUxvrfcrNQ8csE5PcW4W2uv+1Oe0JBbyK03zPVsVyL72eHj88+lRgv1jb4tJzcHZVeZT1T/Z9NQSeWKWXlYCLjBVAoCfgBv+vc4UbT5zx7WWBN+9oNTzUv9TRK8dfGooAviuC3lY+bH7j9kMLp2mqTru6E+mL8cYOQ=
+          properties :
+           x : 56
+           y : 202
+           width : 178
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : BtnRechercheVideojet
+          identifier : 0x487b77d308e93929
+          internal_properties : CQAAAAkAAADiOaTU0c+NgHO1nIvdZ84iJwxcAco3YVt9eDLsdkaAge9MeXO71+QcIXQ+enp8jc9aMg6k24lBySN4hMW5PiPqhRCalKlBjlX8q5RSBPsx1yOKeRlSNFc9mONQvZuip3qk0UjL6QDuV3Z2TuH5SOB5o+jXSSOVtwcMj4RxvLpb8varECLehs147vi7rvQxHAXhzocSWqVuumodZ+6OiRIIjwxFFVS7dNIVXo1awFtsfgNqGSRlW7bnAbPY2wP27qdIlnx3jD+q2Ac8FaJ1OG4mQxn7T1rnjfKUGsmRMssg+JdNc77rqzKjLECaoCcQJMLuZgA6P3DDkvkVizDzdXwJeAnDTApu67HWNZpbF0iqsDk7wxWJlxoJUVR7gxtzkt4ApkM5ENWfp5awBtdHorCGGu8VxnuA29LhGHrcfilQOIMDgoZT67J/S+BYI79vUtV6Ivov200SjvfZTDowu7HobdZTGDjgUayp/yGkfVB+jWESjb7vfIUOW61vAQF/QqT30h3ucclLmnbZkt/idFbukHCLP1Y3EQiYNc+l+reKwm3tbAuig1ml7P14A7+dgvrF5lJkFM99/HFJbSKPEZ6Wkm84b9AroEtebZsQr69uah3SfEUvL1Qe6it3UI8WS9MBhZbzhhuVxnVmvKAC68yImaBCCoVZHoEBpBfEkYLr2M88ctnt/r3q39V3Kj9wyuCtQNCuACIwavtpBwhmSzQxuqA33F4/tqdiBQsM5P54SPWTEMILxR3WuzoswAjX70lSBVTHJgcyyU7DWw==
+          properties :
+           x : 240
+           y : 203
+           width : 20
+           height : 20
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              code : |1+
+               lNumeroVideojet=ouvre(rechercheVideojet,lNumeroVideojet)
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : lIdentifiant
+          identifier : 0x2ab7b515055afb06
+          internal_properties : CQAAAAkAAADus73C9/fj7uD8WgWx4e/Wj1CfJ+oqsdUUHz3K78j/mGtB5UK9vfTKKSqu8tXBzajH8aQsE/Lrw1UJYHbwWTh4SBSnj32BkQxjBm6026Cs8ID0lq2UhD0BffDvR4Yj6TymtKalT/ddeLLhVhZkRiWST1Z+/G7cKYRNSr2da7WK9a5ePEXubykABofne4gH2NUadQcqPZZzP9qSJEZFjJvBhLhnpS8+61sSK8DYp3gM4nDaqusvcxBtBdZhBWYb/EzQxcqsHczGZc0JAcMaDYVBKfGenVXuzu0BAIxjtEbB3DfcZJn0ql3VybeAKSIKd06z2p1oQhI6/8fiOK5aLlsf0uHHi4vCEnZfIDnNaROP9CMvHtZoZnxsw1THoxp1U6y2TBxvHZZQT8PcxfFtgxK3uyzkTJjllZLq56XuEBDZ89+sYNnMgOWPbdn2+Spb3vrMjtpJvfmZDGLNEdKn7qsoScHkbc12uidBtWjqzdtSaT56EbHQaZo7j+yDfM0Pqnnum4hrNy6ipznBsU8zTNNHFsUgyDreHOPDZJuQaeT+qNGScSXxjZNSd/MTf9CV/kNTAUz11G7dNhJg+5d3UKss5RLyA4EYEE29J1X/Vu8Kui2FhnoMAKv24TRlp5pZlxuR6RxiveGtgwSdFT7bI8zJkV8ErZBISLYWLOqjuQkagAypRGmgzGzzyma4uIIjyVWjQTwMmnNOHDd6qypzqOFeW5mxKTia0IBMNGqkWxCwF46RH5eGLvwvyc0opAnzqhsdvRG6pJ4utC1wV5HfkKReqVxcfX7cg90fOse2La6MAbMeMNOJd7+S0uEN7cNi57m5Ct2wJhFbtr+Hvn3VBWMhNW0z+qJPhOCyezCcCFroDE08vaiuQqwXnXU+dskvlZtK
+          properties :
+           x : 56
+           y : 165
+           width : 188
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : sai_note
+          identifier : 0x2ca6900a12d1f11e
+          internal_properties : CQAAAAkAAAAfeMc+DfEkJrrUx978yutApwzq51ESEsfUwK5JmtMb3i7GQgRp6yFWLnUaL8l63muu1RQEpEKVe9aWiZgfxikGVYrtKGyL56Feg5gqoInZGoPsnmnngyAYBJplg6sfCGydbsRcTYpsJY4zrXpFRlrWWYP9d9Nuz+txl++23jU752iy6G5s7FzOwmHsebnfEzxI11m5GTTwQtTEN44UNJ1okOtcPVDLrPpl72+1HSyexQnfFD7kau100ivIpI8ijmAdivzf6ifwTrMn/BPkLufysLLTBcxSco2EQTpF3i/z76E0pyGFdPmmNQL8If06St8123fU1kJVTux4eh4oXJlOanGSb1+vB6TPho8PBa3j75D6Fe4NR39jP90zQMsKG5ibA6rLf7ZZcjH9jjPFyBnw/TBxRKgQz4PI9kiu0V1Q7BhL/g7SIBu9b4FXn+ijMjrnjNbhBV82w1fEm5Q68Hnkmclw6e1AkYmGxgeHLo1GNisybVwZU/1nqR6dKos10ASr1tcIPsXKYzE9J91eesJtjaDhVwuCiatmK1Nzd1j0rPYrtbsPV1wv0mdxOj/MMrWhDu6gN1S+XbcTB6KqHR1Kn50F1M3o8rLZfMBxWxnfM+kUNG8OKb7zBiV1DBryLFLtzD2Z12zLIObQRBTDDQVooYT/htkD67Pxm5rOqEWYEgUNpJkOd3r6fYvRh7MkvvHaJ8/VEn2uXQnN1/VlXBo7BZk8Exd2xNlLFhqApU4jfyIeSzaGz8k5TJ+VR7a+BGqtElpu7gZ2XTngtwMSV7bvSoeTbOUSCCccw0yG51rkvWJ5YicGI7e7YBSivQNE2yWtCb8IhC4+MFPo+mMMYcmwjYfiFbI0U5wq3pWLIqSNcUTocw+1qEuBGutFy4wr
+          properties :
+           x : 56
+           y : 232
+           width : 310
+           height : 84
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+        -
+          name : IntJourLivraison
+          identifier : 0x2d9755a6c349ae7e
+          internal_properties : CQAAAAkAAACZ458G96eJdckSVTMHO3LjGUqQ3/7DveqKdjYjBpZb3fcfFtzoJXHZPBEbaqJEy9TKrnrzToLDMS3kmBv84osRMaL3EIePM+6DWqguHVGdfUaHN17lTzawM0Cv8v4ngQGBtkq/LcFuz7tX9NByMhwIKi5qwVSwbbFby6Na5YOlK+fiQN88lkMIrjGqCzpis9NIKIGv7t450W3JuAF1QB/ach1gZz1Bc2Vim2KGcjRyRo/hHZwpaEkphEUWfheRSsmGSCHnafa1iIit2rSE47uZtyiBuyjn2Q6YARGy9E0hDymlUdeQjUrFl0pz4BhCpyRmdF47CeCvVWxTtGhd64ee3OuBCuryUGL6mSXW9bGYWHdS3eoZvLH6ZtqOOf1LrLil63bIh4/Kdhuy5eZOQq0HBa68NICb7RwekPJI7a+kZVwSVSbjmLNQeZ7I/7CSxW2ppc121ilLISLScPzIPfsMftfrYXuceM6CwNpEPeKjnrdB/1eEKFEmG8B72YYZ1mkPHF8aJHNa3tOe7IbFgKFSjA5Z2CmsKuXIprCtJ7lkf8ywXDK58QG5iVsN7Hn2sCa0txyplBOl/WymgKVO7R1sTOs4gGhjvE7flhF6OIPpUONUyNeZ/zHOczg6NTnrRSY5mHQVYwpiRqWtYYoOD6jC8V9FmLkY94NPt7kT/Fw14yDU8wMoOYbY0DA5vjLO7V6DI+k4ilgsyo6GE9DMsMMwnKN3rFwhY3wTQji5vZ9B3B58SezjA7o8GZf5GSi2sAwiU79Q7ueFxfxhS/yaZCmYMnAVmFiJeWGLQRU/IGtFZAqiyjNrZ7nBOTevTH4myqGn3oiDph+/jiu1Rw5NxWxUINYjGt75IwkcTg2M+i3e7q70OvpqUQ/6kfzlLImm4vXplpo=
+          properties :
+           x : 91
+           y : 318
+           width : 177
+           height : 42
+          options :
+           -
+             internal_properties : CQAAAAkAAADBGwsIyUTOpDEM4UZ2VY+rs+OtVSrpPa24dTEfyKksWE9xOc9wWOOuEG3yblq/IncHFyHxAQh8JyJG/BuWht0vqumII4py8Ia+ukQyrGIbqUfBzjECjtEiyUMpuTLjKv0GLKvlhk11dX8omghWHwrwb/95xd1i6iWq0LUyZDvdruVTgLWMJtNoOBUhdDkfUnqP105dW+GDdcNr
+          type : 5
+          controls : []
+          code_elements :
+           type_code : 5
+           p_codes :
+            -
+              code : |1-
+               si moimeme _ou_ IntPickUp alors
+               	OngletAdresseLivraison[2]..etat = grise 
+               sinon 
+               	si pas IntPickUp alors
+               		si TAjourlivraisonsaison..occurrence = 0 alors
+               			POUR TOUT SaisonLivraison 
+               				jourlivraison = allouer un stJoursLivraison
+               				TAjourlivraisonsaison[SaisonLivraison.IDSaisonLivraison] = jourlivraison
+               			FIN
+               		fin
+               		
+               		OngletAdresseLivraison[2]..etat = actif
+               		ListeSelectPlus(Combo_SaisonLivraison,1)
+               		ExécuteTraitement(Combo_SaisonLivraison,trtSélection)
+               	fin
+               fin
+              type : 17
+        -
+          name : IntPickUp
+          identifier : 0x2da24dbdab380767
+          internal_properties : CQAAAAkAAAAflj19vjn2UeNEsujLm9VS7wmKf1+Kv+o4fuUO9lOq+T7ihVdyHpqU1eM97BIseygjBwURVWHuTEFnktoPw6a3ZC2CmglBiRAmAN/Oh98R6aaDANvbianjPePGfxa35I1BA0bI2A7pZ/PVohMQO+OdfGszt8FXIDTRr9eH30w+BveaTTkNKjfHAVmAeAdFV9RUTxcBkJdZbznYoTnH7H6iH/ZdM5HMtu7OsbImuJdXCImZTNgq+pCuZXdhmmVCNdM7F2DEQc2MlZw4l7LkBfWGxRHn2Txc+KelVQy65PxBCsi57XuKlK3CJaeYvPXI6FLQ9kN5iBz7+deNJBYYjdHJrpbonGZoubR6FCEHu0xh54SQbzw01b/nvpbUjFisT6thg/PRES+WnyDi7c/QfaL+A9T8Q6PQYwhIhBm8eI4eoIyfGUs5LC5DTxW8IZOmajYi2/VFl3ZJ7+WmV/CdfvvrorkVuuJLWrDlHIuS9D+7HYEh+WRvKevwKKwOn7OI6maBWKuj14A+osrsM5Y+ccdbMuLVtZT5BO+FCoV3eoLm5pIgiP1yxEmhvrF+fjqN2OUEvWJmB4KlbeHczU2vWsO/VB3MYb+aHJ5MzBDQb0jXq/HgXLyIlod0ACbBaSbqK7HhouCSGqmc0Ci5HMp1xvp5oRU97UyZ26dcnY45SS1FDK7Ag7THoB5gXRxYhrE/uZNZkwEDU7MSMCsqtKSHTeUGA5xwiJS5YldrO3jm0r4GCuGyfsd0isj2ZBXM0+lVxWQcDwwWKfA2+Ruu6gYIQcM4v8HrAZ94tC6+Xs/+ibG5eglcPjBb7lxiTB1oMHwPwSEwveW/qbHVq2TrT7VdejkLA5ltbcZjQgGmONFrJ5nFRrQH+iHY8w==
+          properties :
+           x : 91
+           y : 361
+           width : 417
+           height : 42
+          options :
+           -
+             internal_properties : CQAAAAkAAABMDJSGcSEVSQXRRNt2i4Pu5XB+SN1LokE7Zlr9Xshv1mjSbLzcnmpvNDMvsQ2ghdfGkSPMal17//Y8hYLGhf/1N4yKIppHdAIr04xMYa2n1RX8NUIvJACwJPvgNiBS6wCahZDCrMwJrFyIwzyJJSXoZk1Rq6OCvlmY7xOpcSpO//GBDEov97Vm+B3ai2b3x6VlKErqbNzXCfS3m85FRk4GxxCSXB90ZBA6EV6B+f4RLHNmzUcJLXH0LCj5wvRf0ze1LUDPWw==
+          type : 5
+          controls : []
+          code_elements :
+           type_code : 5
+           p_codes :
+            -
+              code : |1-
+               si moimeme _ou_ IntJourLivraison alors
+               	OngletAdresseLivraison[2]..etat = grise 
+               sinon 
+               	si pas IntJourLivraison alors
+               		si TAjourlivraisonsaison..occurrence = 0 alors
+               			POUR TOUT SaisonLivraison 
+               				jourlivraison = allouer un stJoursLivraison
+               				TAjourlivraisonsaison[SaisonLivraison.IDSaisonLivraison] = jourlivraison
+               			FIN
+               		fin
+               		
+               		OngletAdresseLivraison[2]..etat = actif
+               		ListeSelectPlus(Combo_SaisonLivraison,1)
+               		ExécuteTraitement(Combo_SaisonLivraison,trtSélection)
+               	fin
+               fin
+              type : 17
+     -
+       internal_properties : CQAAAAkAAABsp7fh7ecsvEjspsz3Dj+UyK00+IMoECHTEOVZasfnHX3vL9dZzpuhdnY+MA+v5mESpiRuoEr+7qRf+CZQb7TVlfiTni3xdo4IJcyML6Yf5bL6vrN2Qe99K23GSvbeUfkoCnpzueUHeFkXOqa2mK4VSfNhU9fPcOiPwcviBypt7vCNCiH9es8sJJpbFxg0CPHd9/zdBGwtSMVXexB2
+       controls :
+        -
+          name : JoursLivraison
+          identifier : 0x2d9759b8c9ad93b4
+          internal_properties : CQAAAAkAAAAUug7RtfH9L9xpVeqaQTfaFjNmRetVtT0DdM8N0+gHWb4qurCm7aFIPqIuO4soeJ8vYDF50Z1eF7Dju4ULGxBblVFXfIf/uUmOlURcNihdt09aA+qgdI28vtaY4HK1dKHeJgPDLyDiYxXO0z/YFyPc3PZqgcxDYeAzfq/QwwBmeiJucMCOYhyvRMJnTpAmctyQqYYi2hxZjcAWx7yiqGRWO+ahxR8+B8sbM4xrMF7RjsKrYy4+MjzDDU0D+tMIK/+Tg60jrXhV1n564c1YlbTdulFPU57sPErl6HAhjg08skmm/ejkBWlMdsthzIqlCVwt9D/k6JcCHjOk0gQJzKIkD3s4+8FLizSnoQdt08djuX+BHMfLbkHMZ7c34jfGdB4I5xmwz6zdy09GylhdbS7wIPfWiX6rXoyQZUyBiCTYL7vYZg4dQm/bg+jciH50ll6rzovW61v5/HbvsKAGkDj/EDI3Z3Soz4/qWx+O2/D6R7l/jLV28UYGm0E1pO84R4zyIlHkJbq2D3ytZQTyVS/+07texEI68BgUphqx5h9n4xrjozvaP89LhIANOkJeSiqMTC5BaP9a44fuW3ED51quAA5T4lWGUGDjpKOiKVF1XyZkAeD3MXa4G7S50UCzIpi/AxmyRb6Tfcu1WNdOBJNg721RCzKf2tygmEUkKYqZt9YQ3Ez0vWg0/QrIK4f8XIMcyOVOVVAOLggCqvyo75eFJrKeAdtuBvf/Et8mmoPzHPEGkBk0rfrOrA0/xoU844ZmOPo4bmJmDDOmntWqKiDqtxl42UmmSz0Yt/DI9mTn7lHAfNhPo/EHvJ4r136Uuvueis+87U5OELce040/cZQl3w/EJ21aOj80j0rx5REhSyVRkqoZc5JeCflg0n8W9yTze3r3jFluTDo=
+          properties :
+           x : 30
+           y : 124
+           width : 328
+           height : 166
+          options :
+           -
+             internal_properties : CQAAAAkAAAAKrKSs3nZPm6RWxyBLwBKbp3fBsr/Tt8y5pH4oZ3vWbBm35Ayhq37HUBnp6yViribAAJmPuBpDznDzEDkOoHSKcsTfVWACtR6Ol9hROLlLL4PKUea2ove+LjoaAT1EWS4gwLVjsAzDeJYf+T8ISvJgUO6JRi7WEQ==
+           -
+             internal_properties : CQAAAAkAAAAilLxUFj6XU2yuj1iT6Mrjjw9pFaG1fTovOCZub7WKgvnnNnyZ8SC1SimtYXWcKmTM/DP3jO271sSfYPvEOtZkrHN+sONLTnsr2sMeKVbOTuCdXNGpb/yHd+G5Ev4pfI3Rl54LGOSbUL73wXdAArqoGDZBHkb+OQ==
+           -
+             internal_properties : CQAAAAkAAABFjJSjiTqeGomz+GSxRkEdUdmfIyS7c2g064148alAsf0JkvWAG51KkhWJ2NvNfSufZSovhVGPPEDtboX/3doXFwF5PyK5/7SEivziJ5rfppqxwUyEzc/Clv2UQNqNdcdxnRHS93GLesYI1BgwvcSohO7SplFUzIlloLg=
+           -
+             internal_properties : CQAAAAkAAAAErt62dIB55dagUUql/gyJsWGTdl95lfp3ghSupbUEHu/VItJ7AWT1xndn4bPM/Mi2lqfVak8fugDtEj4PtWf9x5YZkw5kYww40crn3mvBeYU0y2QsLJ3EMCw0DxuO7wgicoEp/v6xZoAJ02V2/EAygpgjPCTYHw==
+           -
+             internal_properties : CQAAAAkAAACfun65gwyIFP+d6jZjqBt/u2fJkbY1xXtKGqF8CfE8ic2lKp1Q87GmWhF1XAO1KXPvUcq/PanzaDADDu2vMVZTC3v/zZCPyQaiXPLwteAZDFSTP8IqKzGkpL8yhhBD/x17rCJAheP56HBivnZWZ5L6dtjEtEde0o9/ipI=
+           -
+             internal_properties : CQAAAAkAAAAjGpdhppnv+ClTk1Q7FhZY6f/tL7JxTVhEdMIEWU+SkfXOJNLe8Ta8Xiy7waVrb4hoHey89oZvb3BXINUnihWHgIti6F9mFvzFOJ17JLAj/15ZpIll1loqZfs/h8WPRRwPdomPFzW7FX8i4xGQ6EyufUWLFw6ih14K
+           -
+             internal_properties : CQAAAAkAAADd5Lz7QULWQkHboBwZ/un1OeGX+xBHQnsJG49qbWumCffxKt+2UZWgBIF7Sp//y9tRNXrh20enZu6ZaIv/3tsWGAwmiOuW8qejKf0DAIewZceIEpGZFgaBieg55Yf++upC7KNBh7XTMu7gPPDIFWzQrJYK/gmcFFE9yFA=
+          type : 5
+          controls : []
+          code_elements :
+           type_code : 5
+           p_codes :
+            -
+              code : |1+
+               //JLiv est un entier = 0
+               //JLiv = gpclPresentation.JoursLivraison
+               //i est entier
+               //POUR i = 1 A 7
+               //	si JLiv & Puissance(2,i-1) > 0 alors
+               //		JoursLivraison[i] = (JoursLivraison[i]..etat = actif)
+               //	sinon
+               //		JoursLivraison[i] = faux
+               //	FIN
+               //FIN
+               
+              type : 14
+            -
+              code : |1-
+               
+              type : 15
+            -
+              code : |1+
+               //JLiv est un entier = 0
+               //i est entier
+               //
+               //SI PAS blnMemesJoursLivraisonPourTousClients ALORS
+               //	POUR i = 1 A 7
+               //		JLiv += (JoursLivraison[i] ? 1 SINON 0) * Puissance(2,i-1)
+               //	FIN
+               //	gpclPresentation.JoursLivraison = JLiv
+               //FIN
+               //
+               //si pas blnEnChargement alors
+               //	ProcéduresInterface.configurer_Ecran_Fiche("M")
+               //	
+               //	BtnFlechePrecedent..Grisé = Vrai
+               //	BtnFlecheSuivant..Grisé = Vrai
+               //FIN
+               //ExécuteTraitement(OngletAdresseLivraison.BtnSave,trtClic)
+               TAjourlivraisonsaison[Combo_SaisonLivraison].JoursLivraisonClientCompile=0
+               POUR i = 1 A 7
+               	
+               	TAjourlivraisonsaison[Combo_SaisonLivraison].JoursLivraisonClientCompile += (JoursLivraison[i] ? 1 SINON 0) * Puissance(2,i-1)
+               FIN
+               
+               
+               
+               AfficherJourLivraisonPourUnMois()
+               lIndice est un entier = indiceencours()
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraison[lIndice] = jourslivraison[lIndice]
+               si pas JoursLivraison[lIndice] alors TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[lIndice] = 0
+               
+               	si JoursLivraison[lIndice] alors
+               		{"Combo_Camion"+lIndice,indChamp}..visible = Vrai
+               		{"Combo_Camion"+lIndice,indChamp}..etat = actif
+               		{"SaiSequence"+lIndice,indChamp}..visible = Vrai
+               		{"SaiSequence"+lIndice,indChamp}..etat = actif
+               		
+               	sinon
+               		{"Combo_Camion"+lIndice,indChamp}..valeur = -1
+               		{"Combo_Camion"+lIndice,indChamp}..Visible = faux
+               		{"Combo_Camion"+lIndice,indChamp}..Etat = AffichageSeulement
+               		{"SaiSequence"+lIndice,indChamp}..visible = faux
+               		{"SaiSequence"+lIndice,indChamp}..etat = AffichageSeulement
+               	FIN
+              type : 17
+        -
+          name : Combo_Camion1
+          identifier : 0x2d9759b8c9b893b4
+          internal_properties : CQAAAAkAAAAmOYX9FVX5uwkfc3C/ZOiHnYIeTwnpX9lWPbnevfL1ARaSS4n33sQtJzbf9Pn4wIFq4iVcAlF/SD4xeCHR0f3AmfAQLTzPA26mlseAdyR6I00RsEAJzW4Rgoz/4vmlzGISQfmVGqcCjak4D9D2dnvk6y8rr4ECKk7d/P0RjmVMByTDT8qLkIq7Zl89H1rD3jDnDGuCHaCFrIlffVaXsvIgnZPfBhuI2v19EgAciUGT9J2fo/LcvUyQQNvD/G/IOXNiFHwzke/bMLXyK93sntSFGbnF+Os8LTOR43GYLQNi9IZjYJaTt2d1V2pB0jYytrLv4aomFdclewzsGmEPyGf2045IXjqGguvxQdwJ/ngK1h20tsS7+bFRNF5x/ikxeZjrjQqqerqCfI0WqPAtLuZrDFevZsxe8scT/yhIbyUq0JUw47Kz/XWiPtBlvdJL+wTY85+1yFlEvHFV/5k/Nmu6yjEZEQLd4un/roPD8ISR/rM4JLJSqgSg3WMUoNBGQoMAlTghjfKuiPEUvm5mNNslZu027bAaGE34JQjD4rS5kgLunivFiLZ4iyiek8q2aD7vYHYcQwRpHsFsL2uOjCT8UQ83uk6c7C8ZCGkZn6vhtfKVdg+pLdAQBmRisdudOYmF3HzTJBVVyUc9oyieFZfNRJ0gD+p/5f7zdTjPnpNdwdgTzpSMIKolIquM33S69+YMDJhbMDuE2BojJmRYZtdqXjJQ82dYE4U3IRW+iXc3iRerYWTq9YifZHGgrqRoSnzFW7w+kFqj2SyvCN3VLiY1ErG5mBJJ59bLW/gdOsbGZc47ka3eL6B5M/jtVRB0ZtMPGCVW12+GH24WupViBm4tC+wG3+GfQxGYnXSCqQ02RY+ynL5fhYBjfZ6ik0lbincrLlp80+nENxgk/p0H6dJAJk0UBj2VQN/1tXuRuMSN1Khq56eYI7yYnuDSJ491Jfxkvmj2BujxRIf5gXhLLNapdjEjm0U5KAXMOAPSllTY7kOtHrmWPhXLIDyXquDLjfaJ1LqQLAMcr0aH86QSZlMPA9GCk7JzRUFxWbYOEBNOQ2l7S//r9d2P8HmwayxGOKwdrhIWh6XQnXjM9mBQnBiWk6vaiQkofm9LDM3E47homAfHJNI79LdlMApB0pDjCMADCMpnUbpLz614ihg3+4ukAdDvSGSttM/n2z8ch4O1/ENXGzhh9vCB4EZtYZQgVjrCZdtq5jMvcZJWyArgvyiRLcSDhJzJUBskxvRwf6ufngv1rkl6nCNCDfkxGTPI72a7IyLstJG4zNyHt5B+zWLheEHYnwbHS6bPbAqArfnKojTyVbf2CfTI2BB1tvy64ZpSRPfRCdM1gvf/FhAngbuXClKm1ZxC6IntE9gpq0rfDvXanPm0wgDvmuLUsR34ZRPiOQ+kG1npI3kDgO4BH6LaKCBxeTtY/vhgzdzVVJ0V4BLdQkEoRDDpjcHb2QSbmzMi
+          properties :
+           x : 140
+           y : 143
+           width : 144
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[droite(moimeme..Nom,1)] = moimeme
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : Combo_Camion2
+          identifier : 0x2d9759b8c9bc93d4
+          internal_properties : CQAAAAkAAABUz3OLk4s/zV+xEVaVAhItg1AE5ZcvpWNsH79ss+BnqE0CvN0/v43J7YqA2eGOa7ECItVsCgHXmPYBMHkBye1YyZgYNcx340a2LveAbzQCoyVBMDAx1W6pAnTPklE15JKqgYllQsea7YF4d0jGTss8u1dTNwGaqha9NA3hNnVEF4yTzzoTcHIrPg+1d1rrHsg3BEM6XZiV5Em3XZaPYgrgxcMf9mNo8p1l4kgU6alzXM0Xe1qcxbzoYNNzvEfYwcP6BLwjCZ+zwL1y04W8ZgS9OWGtEKsU/dvxS+GYlVOqpE6jkKYbZ6/VHxqZOiZ6dsq/GWJOtf/FQyw0+oHXqM+mK044/rK2iutZoSTRjoD6Lg1s7uy7gQHpBCYhbuHRsdgTTdrq8npajPWmgOjthsZDnK8nXjwGAt/jN2iIt2XykM2AQ4I7nZ1yFhA9dTIze+xoC3fNaAEk1MHtr5k3ZpNq4lGpMao92gkXjjvLABwBdsMwfLpC8gTonTs0oNimGvO4VaiRZZJGGFlEJpYGXIvNptU+1XDS2IX4LZgjyoQB0so+/mtdeE6I0/hGeyr+uPavqJ5Uk/w5lgH0r5umzGwsWd/3GrastL/h6GEhz/OhzTLd/vf5FeDIhiyykfOdQQm9PExDvBXNSe+tW3DO/ffVxGWItyqHhVbjzajflvOlgVDzHgSUkMKVyvtENySS124MhNDDsAP0YOorBjRwRk/6xoJw008oO/UDRTF6bYsT3XsX1YDGwWSjcLV8WggM1tCJx4D6HBY/fYhjpFl5EnI5Nj1NdE6VM8r3P9TZ/gpiyVIHVVlqm0z9n4x5YXQYchcj9AkCI/vS8zpKVgGWevoB39h6ay07fyXkkaB+TfGiycNOsKqrcXyHiWKuPz3PxnsvSg7IT7XAu5RIaulLvd4EaglYQjnRTPPByQeNvPjZiJymq2OU7zicyvTuwwPpwVAoumziEvQNeMMdbaS/0PINai0Xh2GVpOmInP8+2ojksvcZ4mUy6gFfvLADVoSvqfqdoJ5MeG9Yk0J7P/Cmao+D180GHz5vQbX93cIqZKfal43HH6snIVmz/B3cB5Aa5PDBasbyswF8USSAMtwkoMSK1xe+lfXUWiMnUJmw95xkTFuTCO4H0JO5vJ7dfrRHVPTXRI4TvWZ3g3n8tiQLjzeoFQyjBKD5AHNDb0uo21dhMGdzz/StorxFjIo5fbiEwl4GIa8WQv/7Na6qhNZUMwQ1gdAHANilbL/wSjBsY89Lwi/R4vXGKL9mGR0d9dcsC2qPX+a4oJ1EABj7I2wCUd413C3Mm0Lzp5rL8DbMgQ3mRnj++QPipeCs1LSRUlBeXc5mUIu9FW+xdvPDEhw7lUc7Tj4aUeiO5I2JhwSlD/6rYlmmYKXQjsxTJnZwrRH8ERfGlRAV+BcyxPQU/jFEXp5q80avu+WWEOo2M7IfvgMPHvCT+BtCYlKLYxehE34RLUHQ
+          properties :
+           x : 140
+           y : 163
+           width : 144
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[Droite(MoiMême..Nom,1)] = MoiMême
+               
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : Combo_Camion3
+          identifier : 0x2d9759b8c9c093f3
+          internal_properties : CQAAAAkAAAACi5kPZdKWUWYZRfKBhAQQUb3ri9Dbtc4gTMilhV9Dh5RXfdePteqXy1q9MoppQTAa/UOnp3xfAMMEih1TulJCx36NPBUYZrEoAnncXw2dcKR+qcj3DddzAhAqCaHZCOMpsW2kcx860RYIDl8a/cdNBFo4UodcfvqKtqI5ErULcd2ytbxhOuMNUs9mUpHxoh//oYFWeblHoR2FL0BiBn9jX5wKJjvMVkZ1rNAJDkjU1EdFbRqG8j4tzKwhcp6vO45Qj6Dxdf2clnFoXlOMvFStD1qwoOEFUK4QkrOb1KwTam1k/1qLa5chNeAoMb2VtuMQ15/wG+u/t67RAwxLr6VrZe4SKedFQHALgo3HBUNVLa0AzrAy+A/O/JRP5pRQvIHkd2IiduHWf05n9vtjqj2pRYXDPN6HC3HM41beP0n/R3BXiveoF85IEeopGGsN/Me3mCwSuCE+mPXqnllyPLQH/nW90dmNWjv9SjWnyGIgw6rz2UHNI9MH1yXuoBwsVwE5u1lTTkjt3TIEz5ECNSHc8X1ahpaAKFa3jMzj1yPzwHBxV6C6lH1NVWRcQVndNZEvoH4FaPzKMgNT37Un5UuxjzNp/+heNyQc3fuIVSYxEF4lT7Mbmru/qGJuAVDjMqUJNDNbAOF21IWyU7daHKqA3Rihn3ZSL6ANeacDTwhXrinoNZW89hTe/ejf76TsE9eYjJQTw66BKQ9RCBsDcSfIxQ82D52J9o68ACfDxRjfO8SgIeX2/SJSaWo6m47ZmMyO+nTJvDKRUnm+ivxraxBF8Ua5x56ZZWsw5CTQsINIyQlMVSzgeXDKhqFb4NRTDlmWbWVpVX3eqi0rOszE92ztbldCwH2ncTSzvK7ZpXSw1TzfdBWFI8iqQP3+7F3ixDPA58ZPUbeAtvkNesbfJuxI96TKH7Wx+vqQMq9sItV1ahsrTfK8Gzr98dUSkAMm/RJve6Bx4hiLfagW57XvI+af7WYlynPHsMgVMzXlQNXOkowY7ijQQJVSbaHBVZrMKzpOycrdfAcOuGeUX2UulyFf+BBOmAQ9Vdi0MAKbxDzUNwSYtcJ1zyn03Ux0xIbJpiCUc4LnEUeofNPXClsUFVgAbHTkQvMiHhhOLXu529PcApCgWtuDkAlMYec9q1hoerAeJbK+pSo5qpLf2N0T+tsSwB/HMyyBypLYjPtzrSgnIH50BZulZjrO042t9kbZzEoPFm+XFueN5mdV4iuGPvAPwEO/B2xlkkyvnw6Pg/I/PJiyRFLePGWr+l5rNlFli0igIOxvlutYWedKrzMuYjzBo576KhJ3GYFIV96FiyjiBHHBT37WdabxdzODhW6badh1o2mem4XN5wzE5DlL2MtxzZWOMJye5oZ2Sgi4RZU13ny9gLJ4Yr5CyfEMJEtN/1el7Kg4aBNNv5BstcL6ZsAS4rjoeNNWxC9pjz6j6RgVO+KmXFrbaxXBf8jTtsbKBRbzBw==
+          properties :
+           x : 140
+           y : 183
+           width : 144
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1-
+               
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : Combo_Camion4
+          identifier : 0x2d9759b8c9c49403
+          internal_properties : CQAAAAkAAAD62kbaW8igmy6zBaqr1kicjdsba4Z59wCEMuAVr+kL/6C9mbMtE0zxZ2j5VtCvA3/kN8V5YX4xermOoHelnIRY8eBnjl8SyOvG7OceecffJi7gAzITIWv7+ryasUU1lHdJ1WWcH5v2cRb8zl8WEStJxDa4UpOgEkp6alrppsnvhb3epVRNptclsvN+QkXNztt/5XmWJc2jAV3pD6AWEiu/52D6Tqew0ubFkKgZ2lTAMC8BRZJyHtL1FDi5AoITb9qQEzCR6emA1sk0xrvYaAgxF75oWM15VJaghkvTYDCnxn3Q/xKXf9OhBWSQEdEhcqe4oyfQvwf732aNg2yPU4mnbZrysWtJ9KCrBrVvYc9ZScUkjsCWbKuuNNAvvog0SE3UU/piOi0i3x5rVtuf1qGNXVl7fKr7r2lsR/6+U+2ru4Czgscks3oIGQbR+IdxMFPX1BTCZBUKwFWODuGuODhTZqn9yf1RXqsdrm33tAaEL7rvwUHZlw9PB5k+CNBQs7UJd0Gz0vRJPVqgTwmeaQVI8UFCxmrMvMbP6OTbA2cnxBC1FxDGeFkl9diE+UXBeTXXjLYF9DguwuMHz4WT4T+t58fx33zqgwysIZt4GeL1lOaJf/Pv1h+vwK6WwQTvtinZCHPjVKUS5L2em1cmqHYkreQRV7puk/hNnb9re+xzOsF0xV3wmoBezSzHp5BY33NQwGyDRxJtwW9FGGuHHQsULasOl2nd2k70GjX9uxJtbUJiR88Er1Ds1wR4pQwrVmaU/FpTIpQ/3E+g0La57R5/p5BXuayLQ2UGJvo63kUOKzemA+4uM8aMrKOxSuJ17KMMN6Mro+/cpKvVaOZSaXLnNNkg4lvJX+7RZtzzCx6OL6KRqt/TnT4c9h+UzqO8Ym2W2TTR79k+8B/vUCi1gBICPU5YAduLcLw2lOU+KL8DlJFVwxxypcB/Ty/w8qGIExQ9jXarsAIRX05Irec1HeSZ41gTbNFpXnK7latn/id8zLICHPr+Wmvkc6OHxxBmkayM8+CnotHket0GJZ9Ugcfxdlpcekq/E1I6stiV6sbCIRpCK+xDef+mI+6aXozTJPrKFcDJPxFeTgGBiJ1Kz6byusa67EGcBAr8Z9kTcX0ihF5CMIXZsgd2JwkzvdbqeGqU5/BwC1TfXOBJ9j8phNk85km9PSqD+HwebjE9Q7KlkgyWY71zELBw2W/zaNwj+gxNgOURlCETGC2XWHXE8MYZptUloeqv+B5duXxhKSz9Ru7skpR0pssNECBBEH8nSSLGAoqxRP0W823M5b1sJHpL6SCw9FAxj0MGcZyP8fIgxp9T/UAM/3xjXVV5j0RlJ0qDvXeQuafrkZJGGgORYkELZ88QPoKwFJQgxFK2289zuFa3athGnBT4U2vWUpk/DQGPBpG145g4NKdx+Ie9o4OXqUU/kcqfu/DIDLkoxC38JCmjiysKBMxSOlGy392TBUHLXw==
+          properties :
+           x : 140
+           y : 203
+           width : 144
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : Combo_Camion5
+          identifier : 0x2d9759b8c9c89412
+          internal_properties : CQAAAAkAAAC/LXsvjoOzTJ1mzP1uUdUhBlbgGFVIphEXgQs8htDAwJkUYlSM8usGTq8gGTv6VuZZKnoOtCk8d2xZQ37s+y0Zpu9MG8qFQ5TF9zaRbJKgq3tDyJapfyUhXlqGgUd/eNM5t0Ew4TUM77Z+8ps07z+FmNxcXp1KQFhyjNo95I8DiXn0rZQLnHnPAp3W4udPPkNPX+Euo3uF63mnN+DQ1OOHv5KuUg3m1Jgd2qi9gAosBFfrsQ78uIhv+OadUjwV04ZgzbRFM2OemPnWxv++xqRdO0xoSNc7UrAQkE+fznZvbiFOZwLJYYkDTV4MpaeHEu9wDScgVX2F+ZLrg+D9yRkPRWSuFdVromob2PmTx5W9xVmqZtAYHtFMnJIvTkJGEF2UTWJ6TCdosdbFQtflpJ1Jwb+r7CgR+UcQhSoS0dt3Z8DNHuOqYTTecUA5KMGD4AN7MqQCzs/4Wp3YXpkgksRPZrs9+bu/mN2lKOVP5jhwqzJJgXEPfckxk//2DLZ2E3WF3XnDwLpbG4Lyy5EQUyXQbccylpDSxlQ/+mBbPTEDKNA/G6QwEt9XHRrcDSunMT2TegI52gZIZHOBV3Vt4yOpZ+GNA0I4FR5UM7dgQxyFhFYbQ6+ZYF3hjJS6oTbxTpHVVnePRneIVgUwHyMkZja0LWbdW8z4UQ6tx7P/GQLTelE2EXFaTNb0jRaX4972r0Mcpiyzrdjf32dH5LNpF+/gMYmeJ/dzzLSwwwzeWnP40m0L2jyvxCsdPrFLSn/YLa/rSSkEcQ02OZZ902uEImX4BqVeIjPMUhbtI60XcdKF9GZbKkfFnN1te6hU9z0aQzzv0CaoFnyfnTZW329Jcn38Z0qzb75movdQC58wbpuJBJVileTeQqnRjYzPizYJHeKtttu65ppNpc5085XIbSHbrPP/WnI8r3kZ1YRXJ4DO+XzeVokF0iPI7rRbD+RF0m3UOoUcN8MAtBGxvNjEfg9++gVCLRBqTXO+ZuIwZaAHUQHHW7tNC6qFjqz2EK+3OMXjAFdAKUrrY6g/TKjzwv6yrUeTQ3lAguvl4/euUY8Frt2zdgFOdgKb1n8BPxs0u9OVLiveKq6x62AGw+JtjGl35c9tyVRBn7dHMCjMmDZ1YUlLqwpED3rHlsbe0iG/J/sHMGsFbimauXvyxWiwLTD9NeY8zoF8z53Vi/xyrjcQN1dvRtpWfQPhrNBqMQvkvaGgkTDG9/4mYcDQN5bLCbE2QQ5IDlUEg/cAGpPCWC2E5yWh2d0z5wrG330sbYosQBvBc3VGt0qZOKRpYDoHmYn0MI2Hra9KZuB1Bic8fHefVzL8MK2nZMfIkCZomOPmGgcu1hrtNCReCm1nOTTAU1Dc7pavj0M/9T8X86nXJLaSUblinSX779FPYnLVW+L23Loe5fbquMNt626IjygeQmLwABwGWvO21ItXm8jZtVzPeZweDqiPv4GJbQTl7CJeMG6Wog==
+          properties :
+           x : 140
+           y : 223
+           width : 144
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : Combo_Camion6
+          identifier : 0x2d9759b8c9cc9431
+          internal_properties : CQAAAAkAAABKSpYKKxhQa34DVRr7BvhMXQsrWxaJZ9DUQjBFf5n7bzCt6eP9YzxBt/gJRiCfPT6KG0s/hSo5Tn9OLlVpYArKH4ShkMv2WPPw0L2g8a8FmLgwsf5BNz2RFsoOASdfANORzzkYiSXM17Z2YjOsV08tmKz8nl2iWLhqnLK9lH9bKREMheyzjIk3MlVGOq+H7ps/P9Fe44Ody3H3P9AAtAu3R9pW2hXmRKBt0qiFuOIcbDcbse6sMOBP4LbVsqy1m9ZIBYxtG6OeYDkOZmfmrkTlmyxYqHeTStB4MEePTvaHTvnmH0pxQflbLTYcLQ8/oqdAnaeg1cU9GYrbyxB9eeHfDcxWba0LIpLrIOlrn33NPUlK9hDYFvm8xMK3LlKG2H0MVQrCZOfYmUa94n/9HG0hsR+7LIg5kcd4pXKysfvfp9i1RptyMURGcUipAPmbgLvrQsSyDtew6kVYNhkgYmyvHlPVYTPPCJU1sDVXXhAAszJpkfGvJUGRKy/erDZGCwXtVbF7KHprcwJqG9n4+/UovUcChqDqzgTnyri7vaH7mFhHQ6w4ck8fTUIshTNvYRWjKsK5Sp7glIvh7+U9gxs5L9mlm0q4NYZUC/do+3SlbDbrg88JKJWxhLRSoVaRJsGdfn8nPueIrjX4H2usLnYMHTYd6yzgWe7FBzvveeL7Snn+GflS/IZcPX4nWzbur7usppyT3aAXnz8XPGNZl2eweUF2/x8TnAyAT/A6/t8cztGHPliTYO+5Yp3v5lMU4YvfZa2Q1ZnqVcpJVzcovkkUauEi7mfIBqLBb7FDpY7JYMo3rjPpeKFZn7SYY0HGF6gDDCokqphTyRpiQzsdnkFo6+Y36zIyNtP0ZyPskkdtwBk+mWBS3j1dMdiDJ5qlga5RYk+mCsaxUdJAF2EMCZWnQH9z5ua4wwVtQXijm1zitfB6GqUJzvfEghDfy8iRhlnoNokYW1/0QOXdMGQoCnMqHhFWKSQWgQ+igmZs2VxLLWWjXzexp45BctjqrIPjHNHnDIucvcZf/zybAIT33uJOETNnbz3Mxufpz0saRYv5ipHPGn3Cwtb3KuuVWw9QH6/Zel+qXmqFF6TCRx6BuL3zeVvhtYgd0xPLrLw4rDL53Q3nbzY4G95jqtJyfpVLm3ebrA/hcmWudc9+WZREuSTpCdJwCjW4kzm597B+MrMkM6vLyraKeWftMCwODa9wMc20XQSCS6pKHYQ8m3LfxfUi5Vp86pnwd/MEJsfeDGm48zmd/Snnc25iQ+mwKd4YZMdlj7mCi/bt9Mh1VFYblQ0QdNm76VP2moxZAms4UJMDY3boxAlbsPukhCJc5IdyHiPy0h7pWMCSFvEDvWAU70QopijXZ2WdN6WPfeXT0hi2JS2YqZmBWec96tQBL8AIzOrul8uFE6hIxDfBSHet09NnmbWvITpvi8CYXAmYdJ0MNNnTu3u6VBwiyqECj43DVRE7zw==
+          properties :
+           x : 140
+           y : 243
+           width : 144
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : Combo_Camion7
+          identifier : 0x2d9759b8c9d09441
+          internal_properties : CQAAAAkAAAAiov6i83D4g/aL7ZJDvgDExZNDo06xvzhc2pitF4HzdyjFcVuFuySZL0BBPmjX/bYyQ6P3XVKhVkdm9l3xiALiNwwZiEMeILvYyEXoGdf98NCYyYYpNz2RFsoOASdfANORzzkYiSXM17Z2YjOsV08tmKz8nl2iWLhqnLK9lH9bKREMheyzjIk3MlVGOq+H7ps/P9Fe44Ody3H3P9AAtAu3R9pW2hXmRKBt0qiFuOIcbDcbse6sMOBP4LbVsqy1m9ZIBYxtG6OeYDkOZmfmrkTlmyxYqHeTStB4MEePTvaHTvnmH0pxQflbLTYcLQ8/oqdAnaeg1cU9GYrbyxB9eeHfDcxWba0LIpLrIOlrn33NPUlK9hDYFvm8xMK3LlKG2H0MVQrCZOfYmUa94n/9HG0hsR+7LIg5kcd4pXKysfvfp9i1RptyMURGcUipAPmbgLvrQsSyDtew6kVYNhkgYmyvHlPVYTPPCJU1sDVXXhAAszJpkfGvJUGRKy/erDZGCwXtVbF7KHprcwJqG9n4+/UovUcChqDqzgTnyri7vaH7mFhHQ6w4ck8fTUIshTNvYRWjKsK5Sp7glIvh7+U9gxs5L9mlm0q4NYZUC/do+3SlbDbrg88JKJWxhLRSoVaRJsGdfn8nPueIrjX4H2usLnYMHTYd6yzgWe7FBzvveeL7Snn+GflS/IZcPX4nWzbur7usppyT3aAXnz8XPGNZl2eweUF2/x8TnAyAz3C6fl+cTlEHvtgT4G854h1vZtOUYQtf5S0QVRlq1UrJ17eoPsmU6mGibudIhiJB7zHDJQ5J4Eq3LrNp+CHZHzQY48FGlyiDjKqkKhjTSZriw7udHsHoa2a3a7KytlN056NsEsftQJm+GeDSXr3dsVgDpxolAS7R4s8mikYx0VLAl+GMiRUnwP/zZmY4Q4XtwfgjG9xiNXD6miWJTndEApBfS0gRBtlotgmY2990wGVdsOSoivOqnpHWqaSWAY8iAubsWdzLreUj37cxJw7B8lhqLANjnFFnjAscPUbff7wbgAR3XmLOkbPn771MRmdpT8uaxQt5ChFPmv1CQlZ3qmsV24/Qny9Z+t8q3uoFlyRCx54BOD1z+dthNQidU5NLLDy4LLJ5XY1n77a4m17jKlLy/hXLG/cbLI9h8uUu9U/+2RTEOaRpiVLwirU4E7k5dzD+sjOksytLSjYK+edtsKyOjS/wsU003YQCyyrKnQS8G/JfRXWiZdr8ahlw93OEpkdejOk4c7kdfaln8+7iw2kwqV6Y5EflDzkCC3ZtdEj11NabFY2Q9Fk7adN2GgzZguu40BOD4/ZoRInbMHskBKLcZAfynqNyUp5p2EASlnGDPeCUn5RINmj3N4W9Z0UP3WVTIpi2FS0oORnxKSeNugRx/8AYvKre5xvdy/CQjM8pIF9VO2v/Mc23KSJHYxgg1PHwjHU03GFbM/My3KSqQimaN3XrrekTJw==
+          properties :
+           x : 140
+           y : 263
+           width : 144
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabJourLivraisonCamion[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : Combo_SaisonLivraison
+          identifier : 0x2d975a3cca0e9a33
+          internal_properties : CQAAAAkAAABia56F90seq/eZMMyaa/BGMR9f/3mxuywEZt9vVEakzeymG5E78Sr/SdazxLZVb4JVU2RwotzHjBdDUXKNRX8lFMyDsJ6l6DRWXTmlZcbxOwi9BSL7Mw9ANWQ+D8FmG1cppi9YdDRxQ+jtxTFzqOm8EpLzph6sZXnTiKUHOTzOqH/BkHFOkldOuGDVKFfd2s2VMk7mIF1p7YehMauLfJLdDrEpFxOZO8+Dp+QxctHtpj5H5PlHOUEDP+sfhp9N2AbpWChMTStZT66x0QPOxcpzgoR5qzy/DIcZUpeg3gGxjScAtACbJM4xiZ9GQQckIQyzdOrn20/Igx7yhYTTazvXHPqCYZDLMVDQszSGQALUmXXinxrO0uY3WGQgc/QTDJ26tONI1sLRTzmklFgbmPNZe943tFq05X2or68nsC/oi64BVJNrJ4j6qko/7dE6lODz5NFhrb+9Zynm3Tq4KN0J5e76shGZrF9UmphYzXNsyBvYxyLbTVDhpF30NW9xs4xHQi1I4kDImvFa3dFA+Pld958m3Ef4q8wV9JyBttpoCu5unhfppW6wa6SwJwPGaOZ02fX/WeYqA/yT1vzdipHTpAky+9f87VMESbPA43An6nsz1JZ6zhA211xwiOj+M3cssy7uXDfJ1dzFzM+TzTQkEET2d1kMK5e6ACMFuxnudlHs17RtsuJgV2Lv+q4IlQcrmLvn/l0PuJpVsvkTjXgu4cTh2b+Qm3GoR/CFC/mwjcD0DFsA7LKhPxgvpLe53JYWNYAoqlucxI2Jw/2DpU5IddBSe21KazB3fnHBmZSsqak6pL6QmM/b2qi0Qb+xjBWr3raSfxb/6j3ZMkrKA6Y4aRkv6TI0+rwTgnO7bIHc3gX9HMfikxT5MpbW/BLy/Za/2Ntq8Nx3PbncDyg3DDcXfhO7Ow8it9fxWTV0Vf/oJlFh6tS8mqDy/GxaIgdYoboXuuRg9xRAJJp78OS4mrccBNZMfVtTk4t2vtBufkdOpvIPYOJ1JsG43ywWuapsKz7R6pIlJ+rDiiY8Ii+HUmiyyHQocphrA+5BaF/uJDRkI17KzS9pbJLkATiujeYRNJ5SoPOULQGfJbpZP1JfACDrgQnXNlyAqSQxw5bITXjTS3ucSW/L8J6Eo1AdMbBMI+zh4bylpwB6xe7KcaQCdS3tsaWqfVqQ33XCNYKRaV4mQP/dmh2QCTa4c6KeAKSZ3SlfWi1wJ04n0Cd1pJPcy7LI3wLFOIzC++9Do2kENCQ7lrO+luBAuX2JddrnY3/HZjWMVlY7Iw9xwGBkN51JYw8nPjfT5qHHeZBAJ4Z+HNWrpBA1S/GQAqE0CHSeqZXbcy7eEhZ86M5ef6FPJY0/siMVmBygvAkDDjIJC/CoTs2BoHQgXGfmfgXwhKY59QhhaCsjj2HzsdJe8lmrak37dbltSghCV8OtgTMR3ez9ozFwyF2fOGvaoBvfMhcnscm3CnZT5w==
+          properties :
+           x : 30
+           y : 30
+           width : 228
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAAAud6J1mpYz4LsVLNFUgdk5tmbgga73Kjqso9HYKH4aW7vDZRnLQ7BMNxRRJyAzWSUqLAXvMpWic7ObPnBECCI6ePq6q5j9r/JRpNtvSlCiar58e4xTE1Ww4SKJoaUFwECL3bKM4kqk6u/6vZlwADOlfllbcfFH/2vW8EYrwVy22NFI8f/fqdqevB8A+8tRIKlsCBMNzv1xhVp05ysfMtcY01DVJ0vJvRe8d6bqCxrmYnksbIuTIdUPprYxB05UsOsWhjn6uwv4NNucaUIAaK2i3UpsEQ0RxxTxBgNiicxy/c/HBzy1s8WFlg9AK0edUBBPw6v3PBJR3mdMB32cj8xa9lwiuAW7aHgAHLaDPtePN/onzhbyLcfyRSCYimU2P7EkX8sn9uhGvJaLT/6iL7IqsMe3opZ2IyMUoWFjMryBQJeE48jTnPrS9MLm0UExlZrAvv9tJNIMDlpYd7Y22hSiTwA1LYK0I4Pur0K1gpANcN/R37FK2u6Dh0d4LDgEQ5eqsMx/+RI7E9lUAW9v/qTRGVRlI6ap0Owm7i0MkSCuK8rzxu4ekd+X4sxT1mIw8JjwBnONJ2qqeJVql3NlcahbD/DjwESbQ8qYbLLr2sjpOgqxbjwKWhW2KM3jOrecONC0v1aIMy8JNGKL9qWzI1k=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              code : |1+
+               HLitRecherche(SaisonLivraison,IDSaisonLivraison,moimeme)
+               i est entier
+               POUR i = 1 À 7
+               	JoursLivraison[i] = faux
+               	JoursLivraison[i]..Etat  = actif
+               	{"Combo_camion"+i,indChamp}..visible = faux
+               fin
+               POUR i = 1 À 7
+               	SI SaisonLivraison.JoursLivraison & Puissance(2,i-1) = 0 ALORS
+               		JoursLivraison[i]..Etat  = Grisé
+               	SINON	
+               		
+               	FIN
+               FIN
+               
+               
+               
+               
+               si val(moimeme) > 0 alors
+               	lJoursLivraisonClient est un stJoursLivraison= TAjourlivraisonsaison[moimeme]
+               	
+               	
+               	POUR i = 1 À 7
+               		
+               		SI lJoursLivraisonClient.JoursLivraisonClientCompile & Puissance(2,i-1) <> 0 ALORS
+               			jourslivraison[i] = (JoursLivraison[i]..Etat  = actif)
+               		SINON	
+               			JoursLivraison[i]= faux
+               		FIN
+               		
+               		{"Combo_camion"+i,indChamp}..visible = JoursLivraison[i]
+               		{"Combo_camion"+i,indChamp} = lJoursLivraisonClient.tabJourLivraisonCamion[i]
+               		
+               		si {"Combo_camion"+i,indChamp}..Visible alors 
+               			{"Combo_camion"+i,indChamp}..etat = actif
+               		sinon
+               			{"Combo_camion"+i,indChamp}..valeur = -1
+               		fin
+               		{"saisequence"+i,indChamp}..visible = JoursLivraison[i]
+               		{"saisequence"+i,indChamp} = lJoursLivraisonClient.tabShippingSequence[i]
+               		si {"saisequence"+i,indChamp}..Visible alors
+               			{"saisequence"+i,indChamp}..etat = actif 
+               		sinon
+               			{"saisequence"+i,indChamp}..etat = AffichageSansSélection
+               			{"saisequence"+i,indChamp} = 0
+               		fin
+               	FIN
+               	si TAFrequence[moimeme] <> null alors
+               		SaiFrequence = TAFrequence[moimeme].frequence
+               		SaiDatereference = TAFrequence[moimeme].DateDeReference
+               	sinon
+               		_frequence est un stFrequence = allouer un stFrequence
+               		_frequence.Frequence = 1
+               		_frequence.DateDeReference = ""
+               		TAFrequence[moimeme] = _frequence
+               		SaiFrequence = TAFrequence[MoiMême].frequence
+               		SaiDatereference = TAFrequence[MoiMême].DateDeReference
+               	fin
+               	
+               	AfficherJourLivraisonPourUnMois()
+               fin
+              type : 33
+            -
+              type : 17
+              enabled : false
+        -
+          name : CalendrierLivraison
+          identifier : 0x2d975bc2cad08e3f
+          internal_properties : CQAAAAkAAADfV7LZrR8X7ENJN3a78bKIGA82zZn4os/pPR2hLvzhJWQ3IkWo3rklBi5xZzrKWXGdd3ZBrAA3RXAXJQHBuD5imGNbkVAUq6POBwd9Zo+qXWujpnF3kj9UGchfWjc7O7t0R1daGfpm2EjBHKpjOdgk9Q3VqKF4wYOhdo9lmHk2O5TgRIHQ7aRyENx6zMy/MitL5fABqIVo0tR8GxlrEPCb+73cPQckDk2fpr6Lmtkovia2UPP959jXE60RkDByQbcc5HGj4rxuytefw1aUfzGmZWaaGq4CUjycadjI07+rt84R/iWtTxGeJSJ1io7qDcFqstN2FX9h4J0t4+EGeaZOJWpWGmWsb+TWeUm5WjTCny88n45Zq7/mMuH64lJUKujzhjLeDZ63ANnpG0tjDx8vEBfDaB5lPsnpo2H5ipUgr2WnjaLXWf5EJKFxOQNktJURQMEePZj1IUfctu2Boi4/EZoUiY7WNFEaLcIZu187vVdVZa0qotfpAWAYTFNNs6/vVJ4RGHq+mteUUGUcnUXLuOMDBYGAVnt5cA8jQcC3+gZf6cUpPYw5+o9Gxh/4Jb2ZBd6sB05pl0hfUB8jgefKzqFqjWMWw8Wbz99X1S9p/fNOJx/7aiLDDXsipq3poE5mTAYjKrCQaaSIgU0Ny0owGmGIkKrebpXlpmUIENUDTZZsfDxIGG4Rar+I6ez3SqlyvxIzAnt7s0QwoxwWAV2uEHb1iB+FgbssUrLlZz09d/wQNuA1k2kSe2ukcNWfVtNAiEHbC5YC/JcZI8RBXUC92a73z5kqyEasavVTfER3YcpBaul2B13u+bFArVA3i6DkFhUUu3W0wQVJ76rDGBQDjV7CdH206un7e8L/oLB2y9DaEhGNdI0qOYQkxNWbeagb/YEFkQEqbX1FN20Nr4ElHyvc3MYSwR49qYlOZRaXSF4o+jjRDljSlXq8QRmPGh0Q3aVnnonerVHdeaxxkh2EsulCm9zCZLkhvPmRrWvc+HoomcU2o96a/BWr2YenMdCeRMTOpcWdkre3j9i013nNUwSNfXFLKChwqOsJXEWLfmTgmzRNLBzU5MaqShMr9zPnpDNMLttEJhIrclYSwINict3e86frLF9/GC+Z27SOkejWozeOs1dnvyphUvBa5LxesENdZxWXd8ACK1SzsEkahQjZFkmi20scUpE4h7k2YMvgKaw9CHjBOE+j7cOSgy/hc8N6MotJuClc4gQMyIoJgpjt17N4ooqdCzpvlmM8ExJOZzS0o/JSx2j6xovAhNaCvQs0nXBat4sk5Rnm2lbZiVroeP91us0csDcsQ/BSET138YeHz44U82+DFYo/+E7mIVnwymuNp5LTaNlbpTvFxYUR9qhNEeghYS+40E6LCwr7ioU5G8d+hjVNWOjlTUW/hwcQL4p7rkpo3FJJtUL3f9I8hlsTutx8vEH+pbe86ClyL/UlkxCerVnCCZIiEH/gnpD74bc+Un4J2hrewdg0pC9eFMzaZek+XxnjYCnq3f6RdEerK7FX/dM35G8iAaAc7sC2sNkWwnQz4Q+HbS/F+M5H9UZlWrQlyFIgkRhdTcLJ0JEyRAHG5t9TX3T8tEg/n/FN9KCilP+UrMVOUm6QU2vlHqwNpUXyhb4bS2o=
+          properties :
+           x : 390
+           y : 124
+           width : 257
+           height : 203
+          type : 47
+          code_elements :
+           type_code : 100
+           p_codes :
+            -
+              code : |1+
+               AfficherJourLivraisonPourUnMois()
+              type : 118
+            -
+              code : |1-
+               si pas JoursLivraison[DateVersJour(moimeme)]..Etat = Actif alors
+               	info("Jour non valide")
+               FIN
+              type : 120
+        -
+          name : SaiFrequence
+          identifier : 0x2da0631210282aa9
+          internal_properties : CQAAAAkAAABTQjZesNeh3yS6/Ai2+pV1A61SmGwl4zzeIoyxrr96tjUX7YV6czzjBxCQH0A+TLCEZSBTSGuaKM29aSktfv7mzzabn8/n4CYDjz37BQ27sjyiZ2hUljtT6oUQHqv+ynMpJfVLlaoyrcWWMnU8KVhNPzfTLjthww9CGChp1vwsgWEjEOf0CCyYd88/+NNOf99HNKUHSUx/idZBmqOgPGmHNmGb8R6yuFh32q+63SORxwfslx1A1dYu/GcR1ABq2qlz/0i63pOG0cpVd/78fruf3dp8nKWncmv98xIc7GtLpn1DYez56uMQbTRTZCwdOQaY4q1xtNCXQ07uelryoXxA87LJKV4oyVGHYMlaywXchiIxOeY3MMItuH4qM9sXzM5u0FvfbCCQJjestYenu+Ot2yTuHPAJWh9vtNPm97Hf/W6HPIOuZihq9pHs6PuxtwNG5evPSW9qquxvTZUtFCxbDUwm6v9mFyGEPjJMWqxVaU8S6GQbMyxuMvJ7eueSnLYNpJo6JOnIEWrvSesQ49QUrwC0APXyideSLJnPPZ36suHbIuS+C9AbftUSoMqXHkwZ4hRIGy5bfp45KJF++23TLIJWNL26W4bG17u5BbkNXkUYJlJuS5TLZvnM+sLaoBDHZSth6tocztAnQ1AZmZTHM8BuCsMDgAJLQzXP07XWxua3JIvBOpvTah+9EAj9pgh7AH3CWQuq5qQZNli/dcMoJbhDiYwNdZHT1R7TuHTdn3GY+5c7gNsMVnle3//ymt6L02RdxbRvStt5aggpqzwgGf4QaawtK2N+Qqlyq2ZdIQ5D+fQylvA9ORcMT1jGBpOvzd+SzlB+53W41VEf5k60zrl5N6o1
+          properties :
+           x : 30
+           y : 60
+           width : 142
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               si TAFrequence[Combo_SaisonLivraison] = null alors
+               	_frequence est un stFrequence = allouer un stFrequence
+               	_frequence.DateDeReference = ""
+                   TAFrequence[Combo_SaisonLivraison] = _frequence
+                   
+               FIN
+               TAFrequence[Combo_SaisonLivraison].frequence = moimeme
+               si moimeme > 1 alors
+                   saiDatereference = ouvre(FendateReference)
+                   TAFrequence[Combo_SaisonLivraison].DateDeReference = SaiDatereference
+               fin
+               AfficherJourLivraisonPourUnMois()
+              type : 17
+        -
+          name : BtnDateRef
+          identifier : 0x2da32a3352b42f83
+          internal_properties : CQAAAAkAAADozYtkOdONzSfmoD3zeOZolgFFkuHQZm1GaeAAAQDJXrQFfQ1t3fL6eV9yI/u+fcUbh0EXjiH+kT/lk7nSpudfjXzY66U/afRog3voD5j7a25UxgX5p/UWaFGZxU5m0HbM1kp1iyHuTpj+9BlLktHTLOcCbvpEbANPPR/dPwhyZsjBEBRpRmx2rQvK32U99ad08vHo801XZL0xgyMgWKDP+nHG8m8f19p0dtzHro1I873ApMj3utWkFwSBiB2NIYgPvj7Ii6UPGr3PM6xR9d5fAKUenVsBvmojsS+PtHyj48LYoYu3dKbVsw1FWQ3vbB5KSEty4K3HjFVkeJ+XXQurzPuO1nb2KEvYM3rFfLjvXUmedVKtg56tw7z+a5smO6cTsFmXoLAdx9jghUKkqs1hHVDGwMhEUdG2jqSSnVMLWyiqufdo1H+Ars/kMZUZb4cavvHH8TY3uBGCwlZNh0NyVvwbMzvE0eID+hDQN5FFIdZXAzY/qUi6WiyHaU1zHbWcWf/5DBHrgykcksGLGTySHOUgIyNXybrcr7B3R5dUh5ztcYGMrUFiMTjxyE+KanZbN5kCCKUt1I+A7JX2fEoY6xnzzlvKivBSkQ/S7kCx7M921MWAgareYaIsX5vyz0tX/iHXTHDJQ79aTcuRewCkloMl2OfVwQmPwZrrbHReXGQx1wppY2bohn7O1NgADyXVAO6AFN+S0OHvQC106+iPUBcUe5JnSZA5pXIi+gt5Atar4tCWpguXGPgplpFbPaf90BIoIk1vNWLAm6rsTbsEureTP/E8d3lRdEpysLWsiZGvSnigXWyaE5qBvGQt9Z3JYpqf2q6wk+OBD+6ZNELagGAW/Ol6E2MqKeQI6kDEb5kFCI6K/kd/W2DZ8WQrY4u8YWflb3h+p0ZiMcuntrGwvpn8eCv+faU2QyrXotbOO1QA/nhlFbiWbsC3QokkqA9oNwll2QeD5PjKLKc=
+          properties :
+           x : 186
+           y : 60
+           width : 20
+           height : 20
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              code : |1-
+               
+               SaiDatereference = Ouvre(FendateReference)
+               TAFrequence[Combo_SaisonLivraison].DateDeReference = SaiDatereference
+               AfficherJourLivraisonPourUnMois()
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : Combo_CamionDefault
+          identifier : 0x2db451530a43cd0f
+          internal_properties : CQAAAAkAAAD/qYG499Rdv5KtrpZ7ZC4KgbNgn5hvQUM1k1elEfYzVC3ONjChp5cbUPhQ5jp4LvWJR12isyRnGeuAflmYPhgifclDp+zn6Czpr1TTkOqlYyqhTNsRr0R6pB9ESHSFgyosyOuyQYOOfV5ZzL1+0LBXpoMjwgu0LuL541CQWN24Bci0Is64WPxBbymi8DkpBDYjgPNMsBPdCecq1WR1ryBOMz2GxQPlxVnv9bvBfsnTM1LShqnhSdpbw3l5j6RliokHpxLNrfFRQsfhP24YBvGOqCyi8Ai3gIoID0YkGcgAhdBM9Vdyxk2FSs1xFDiNLxLMotBVCisvWZI4P+KAtdaDj3FJ0VZlKPX3Of6hSsmoUEWbNZw5ngLPcTOhgNrGL0UaiWEkMEdAU5dh2pLKxZqbldnMM1zIKwXrKIcx77fEr50YJCAbmCf7Oclo0Md9z2ncm1RYKN8CNNEtBVQRQYPZYR/u8MLqiqV04e9wv0knhY938ICdfYXUM3VUqlYmuW3mTJO3CZxbixk0NgnKqIuNpmPzB15B88JkLgVe2n+dWAHcLqmy23ZJunRhJFAugxteWYCOall7UD4W31WZO01OPBSRHtjlw1dFqmdLt+CmU8pOf6pXiTIKD2XZ1oLeyFL4dvK30sf1yOcxS9tLQQSwXLm6rlO+vc5gLSl6WHeXhI6ijh0/uNbDsQp4DwZHVk3SYhRZRN1wgdHsTHKKuoBc1yERPXzws+rnTbKu1BYejplQAg6Rog8rnmrtnFV93NcD9scHp/U8inAAjJa+T2p8mSNvoZm5qS89qbzFurlEBWU5AvFE5HNVeMvnZ4/EM2/+DJ4Mw0uSffc7fgaJSupT3nR4aNoAsFn/EUz5zwwkyr+P2qxH4wNDTTGI62Tk6PQIY4hhGbJFj0R/lYTmE+b/GpeytPTHEU7ixvXVZObJk1+bX5xlcZ0JdQc6S3lLCbaUMj8O8xQkWjCcrrKQLzMrb5iEWufaHTs9/dHtI5XJgDK/UszrOWWu+VmoeWMfrwtHzsUztdfrk8vVYJZ/N4DHjCdLISuJBYeaKF1we0eVsGi6PPWl8wcQ3fBNSgenVZJe8rOD9+AGmi4aI8uFb8SR9FXgloDLJtG7gSBUHmK/MBcqUHTdnA+vbWkMlkog3PAF/qLrq8g/ypMZYWZAIZEUmta7nPOpHsouGPNfHz+3FDIonsAyl3s+CZ80B+LQ345xz1GrWsMYDLN4/BWMgop2GE1wTaJhrhI9rzDmNdwvz4frbfuQK2KXeWz5KkuEM+lU/e1mPk4x2tOvqRAHNfkmVYHKW7K+srHI361Dld6/A6ksdqcIMgizTLtGICoCjBxHzFin2EIDbwZIfWNTS6lzKWyXZINJXN8NyXsTHGv42NkMGWD+DfpnK2gIo7LBW2T0F0tSHa+DXRIYxQb4jdoOY0dn4c43mQoemalD2RDBtlH3lz9rPvNo65hjiUb9biAMWY1uqUswyb62aaAl6mRxCVEzYs/eovLghwzBQv3amIxYD+DNTtR8HzFF//K2hmSt21ENMkrkb3L2C6b0R/IVWyBXafiyhoEwcHh1LPF4QAjmawaMyav/ypZe
+          properties :
+           x : 30
+           y : 323
+           width : 254
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAABS4f3NQ1Of/VhGS5SEY5COS3L33rsnEKTD5o1vFC8W1MjBCA7jfYAW+j16ogtfEMeigwMlfGSoc/Jo7KQrnnN2gqd5DuJ91xhI+zVxaXWLag/5UWkkQfH+/T0ko6Vo+YOKxdkTKhoVGUXDM5hCADzywxM1CHeKDYPN0RZdupUSpViS8txQHVximr9ArwoqSrJm7uVWtJGNCQ2s464cBCRojOKSWM84nYqL6W3IWf5eQ3YPKCZZqAeEwyqice/Bl4jpRRmu0XN34XeZhrWTvtQ/rcwDu4XLt9mJHrQTEp/4vc1+jlQA2+DQl/Irzz64ou2LrSPKtOsBByOdKAknK1o7Kq8k0v8D9o/41e9TLbNj2gqkkk4addf/MQuzHrj86UzQbHFlUMr6A4LI/BgF4w6ziopbMqok0yqYxgZrE4Kx4SWZ71BTXL7/UPOHU+qdMUPohy+ByDSqpVzrikA//qhDH8EV8fKYQQaEOn2N0xIvo5+gD5VWanok3VBxgrWSh8KUCzC34YidYr0Rjkkq/x2BSpqAfT59D4n8vcRNoCXTxr1gOh/f7XZVjoXSeSjvM9DZ6vJ0FpkRYq5XqvihGtnzvrx49nnR6Lanm3fYOArv801EEvZ+cfRad8Y3h2zcF4RA8st4qzQ=
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              type : 17
+              enabled : false
+        -
+          name : SaiSequence1
+          identifier : 0x236aafa80d0f4805
+          internal_properties : CQAAAAkAAAC+i4e2ZP+9q4H6OyIKoxB7Y1+xLyXwCB2nj4WZxPpu5H+0UAT6K8LWU4b2uek6dwksc+Pc5skOhdaGqd+PUnykKt6iBKz0GcLiY6kWf8gsuex9g2ZY6Ns9avt7NKDJWFL+tY6I2o6wLSOdFKVZCLzs+4hYCsWh30hVqkj1j0zE/bdRKyJvSmGoF8Vd/QKbHB8C55WHEsFHVVHtgOnaCPahtb2vBPnrmINZrov6JywhRDalXJLn1Pzzm6qdMtbUYQX2OIO1zJwXPiyVAEzK8bWp1Dlxuf8dynAxgG4v+4wod6X/LRY1/CznnK1UFiT7Yod1Er9zufJ5ZY4ZLa7uCimcRfaA5Nj9M+/RQ2Xholml2t/yjEBTsNBSn5wuo6X+H2DTOaxB5Qc+d4G11x8ZnRPg9JbIlWIij80tK7jEDAATstH8n5DIBoRAilyr8ThIcDQ2HYWkB3l1W4qL05Xt0YTtONET4tY+usRliDFaRkqHOCUaV/tZIYGFWlYRojkhcykNKptmgTxk94dTj6R1F65bWNfWjJHHpD+m/XNkIwQJ9Y7SAwRcgb3zGe54meuxa5xt66pT1Y96Ki+MWBXBf33qQU2TNGnus39BfDsdcbjaIkO2XkS1sl15CBp2oa//oAV3WPfBw+RNu3Og32WjD90qZAPESMgmaiEAelv3bqGscj26M76P4QvMWj8YtLeh/m/FlUsAWLhc5Fo4L87CBPj+L26wkH1LKfk+xvHDoJz+FJKDtktHglIZSUyL9IvUty8URd+J3eIEPJoEchF6XzK4pZce+oJcBdfna6xRmc45l/+rJy2Bmu8Acb4gnZld5vLsHhMk
+          properties :
+           x : 309
+           y : 143
+           width : 23
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabShippingSequence[Droite(MoiMême..Nom,1)] = MoiMême
+               
+              type : 17
+        -
+          name : SaiSequence2
+          identifier : 0x236aafa90d114824
+          internal_properties : CQAAAAkAAABT/DKnFBDYYhJT77P/ibj61CHt9YIgglvj8hmS1anOahqU87csfQdQ5aj+qSpkG+0Ipk4ZWdG4iGMfjTitUQcipxgugmjXRmIeZaUBvBWCTVhsts7SJd1Dv3aP2y9GIfmMfqTZiZ6vC5UPhk/ZwfoFkQeDZvjkNNJknAVyRNC8eYyVnd9DJyK6lfrH64dR5lQUj2/eCp1O9PjbmpX0T7B5JdU1jzJxwcd2q40I+mpb3AMx8rPAsN9xuN4OFrWjKKDK+J3vB4L0yqt/R6+TiH0hfcHzieueL2iHn18Vj1O0xxToofqPDc3HR0JszVUohbaKpaDarqNHEK0p10uiJCyOwLIYQtbKaH7Snlai1ze8ZOfVfaPN4TkXJUaQv5aQQE93fXkdjsYciGcf6rX/1K5sTgwhE1BpIujTQ56WxPNAWV69i4kMq0uthpJWAYaJqccNQMUPgfT+Ptq9CmnDkA9G4ZYBk06lGzut8ujmctOs5/qjBQArsgqoDkCg6MVGwqYQmS99yaexpkeldEixePvSN6qMuzmeRXL0RZgmqRNoei/P5w2uEl62PUzLpfMyprWaNADgSc7ht5m8o5uPFIbVIjqtO0cpDsTbXHbRz9Elw2zjHnmjkUpQNi6PYRUInSz8oW30dQmAQEtuyqGN/iKB9xLwsVoVR1g4uKRRHpqdTX7HUc9X7hbthI9bIo92CzY+1mpKzYbHvUYrvsLw+V8JShXA8esYNC7cLnNI6Np81PvIfhb0OxDASsYSoo8l8NRRgyPuXte8dfq4qdS5rpz3st3hW/FnSETZH0lOE7zFCQjOuCNGavBVA0RzR8dtK7HTigGrrDc=
+          properties :
+           x : 309
+           y : 163
+           width : 23
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabShippingSequence[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 17
+        -
+          name : SaiSequence3
+          identifier : 0x236aafa90d134834
+          internal_properties : CQAAAAkAAAAP1HSFGUTsWlBrWoFpDrNmTDxs8oPlIzw8Ynw66SMHLa7zb9hswQZJh8vbpEkuSyvvSfm5x0ADBi8DtxOZ+DxAwwf3xuPZZ5FpM4DRDBUpyi3cHlVrH+1x3sBunk1Q0WzE+DLIek5wrVMtZKUZyFwsO7h4mjVRb5hVqmjF3zz0bcfRu8IPCuEop7UNfSI73F9i15VXQrFXJbGtYLkK2CaxhZ3/xJmr2EOJnjtap6xBhHZ1vGI35Czj28p9wgak8RWmeJNVLJwXvvxFkMxKMXVptCmxyU+t+iDxQC7faxz4pzV/nfY1HIxH7B0ktuR74se1Yt/jqaLJdY5Zzd7+unnMFbaQZFjdU4/hc/VhgvllWp/C7PAjgIDCn5xO8xVOL3DDufwBRQf+t7GFx//5/TMgNOaIxTIyv71ta2A8pJjL+pmUNxhQLpxYYpRTKRCgiDy+Fd0Mb6GNMwJDm83F6Xw14MlrKn6mMry9gNny3qIfQC2SL0Mhifm9ck75WvGZC1FVgrNuiYScr19rd5xNL4ajgO+u1BnvvBc+lZs82zzh3ZYq+6ykSXVrkYagkeOpY4R144K7XZdyYgekYA2Zl7WyiSXrfDFWK/fZ9EM1qXCSSmsOVox9GtXxIPJ+WUeX2M2/cO/pawyFM4v4h73bx9USzBv88PBOgjkYUkMvhnnkOuUyq8Y3KWPkcnfAzO+ZdpftoQQ1KyyfbFLFq+jesGRos0qQUKv96QFsCIhmqUBIBBdoZz69t2D0j012afAzki45XxCck8mkeQ/HjZ1AZk7J5VdSzNI80yWB2fgTHYoj/kwGikpm/UzfEB2PbqoskR+7beLV
+          properties :
+           x : 309
+           y : 183
+           width : 23
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabShippingSequence[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 17
+        -
+          name : SaiSequence4
+          identifier : 0x236aafa90d154843
+          internal_properties : CQAAAAkAAAD0nZXuL0mjhXM8AFJcKl2TLYoEHF1ZSRKob6YJ3q7PawvdKl5Hls4XLmGHGFsVjHK9M/W8TO5nR5zI3muSQkhzAME5kZtgcTVDGqJ8uRKPSlV5TfHxRnvtJy51qanes59zzjS5uY7vC1V/Zn+JAerlsSfj9rjEBMK0vPXyRGB8iVwFDd9zV4KaVUoHO5cxNhSUzw/OKp2+xIgbShVUv/ApVaXFj8LBYefWO604SsorvCNRUsOg8C9hiB4eNtWTiLB6CO0PlxIUKusvZ99DCI3BnaETmcveX3iXv+81jwPUd6TYsfrfHU1HpzKsncWIFdYKJeAqjmPXwF1pZ2uCtKye0GLIgoY6aL4SrrZSh5esRIf1fZPtIclHtYYA/zbAgJ9HLSm9vvYcCIcvasXvdP5MLqzhAxCJshhDI86+LJt40ebVk6HUsxPl/lr+aQ4x4f91GK0niVxmNtLlkhErWAd+yY4JizaNAzNFmhCOWttEv8Lbzdhz2hLABgio0E3O2v4YsbeVke85nn+tXPB5gJNqXwLU80HGrepM7WBOcVuAUhfH72U2WoZOtfRzzTv6vk0irIi4UfYJz5Fky6M3fH6NynJVM2/RttwzJN65dzndO5T7JnHLmTKoTnZ3qV3wVaSEOfUsHfFImOP20qk1Btp5P8o4iaI9T3Aw4AwZpuIVhcafOYe/Vp6FHFdjardeY84GDpJile0iBpXyVWt3QIQsbzLl3P4NLyvZK3BL66cpB4xZjwUb3L9xO/fD8d72oQtmmMhJ8UQv5mspGlsAd1UuS3YKorhYR0XeFL7RngF+QMEHYYrtgxd6ZOWUZiYOiAyMw8pSC5A=
+          properties :
+           x : 309
+           y : 203
+           width : 23
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabShippingSequence[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 17
+        -
+          name : SaiSequence5
+          identifier : 0x236aafa90d174853
+          internal_properties : CQAAAAkAAACUPXVODymDJVMcIPI8yv2zDWokvH15aXJIjwZp/o4vy6v9Cj6n9q63DkEnuDu1LBKdE5Xc7A4HpzxoPsuyIijToOEZ8XtA0dUjesIcGbKv6jXZ7ZERplvt52516Wles5+zTjT5uQ5vy9X/pv8JwaolseejdviEREL0fHWyhOB8CRwFjR9z1wLaVUrHu5fx9lQUj09O6t1+RMjbytUUv/ApFaXFz8JB4SfWO204SgrrfKMREsNgsO/hSF6e9hWTCLA6iG3Pl5KU6usvJ9/DSM0BneFTmQsen/hX/291TwNU9+TYsTrfHc0HJ7LsHcXIVZaK5aCqziOXQJ0pZyvCtCyekGLIQga66P4SrnZSB1fshIe1vRMtYQlH9UaAv/bAgJ+HrSn9PnacSAevKkXvtL6MLuyhg9DJchiD405eDLsYsUa1c4G003NFHvreie5RAV/V+A0HafzGlnIF8rGL+KfeKW5p65Yt45PluvAuuntkHyK7rTjT+nIgpqgIcK1uet74kRf18Y+Z/p9NvBBZoDPKP2I0U6HmjUrsDUBuUXsgsnenz0UW+mau1RTTbRsaXq2CDGgYsZZpLzEEq8OXHJ7tKtI1k09xFjxTxD7ZV1n9G3TbBlGruZII7pZXSb2Q9YTkmVWM/ZEoeIOWMsmVpvrZn6oY6QJdr1DQAGy5hgI15ab/GWefdn7lvHfDipd+Ay5m7nJCdQ2C5rUStYvX4CRMj9IFPJ6tz0s5y5Bry8cJZ2y5byX7PB/RW9cjUX5WwSsGOGgpEWRPhsvJuvvgl7WOK1Zqwpi4pyX+9J4xPmGeYOEnAWoNozcaxIU0hgYu6Ozsoyrya3A=
+          properties :
+           x : 309
+           y : 223
+           width : 23
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabShippingSequence[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 17
+        -
+          name : SaiSequence6
+          identifier : 0x236aafa90d194862
+          internal_properties : CQAAAAkAAADETUUef/kzdQFXQtjW1ssdyX68fHOVg5wkq2C7FOblsd8ZlsJdqphB1lk90rFd5sjhTy2cFpYZkTAcNIWIOhZR2KmFnXmsp8sLcnw2h/pJBKlt8WUL4jXrFz5nI1deSeEmonwRSeKLE1kzYr/xtVrpPdtLFgAY0PoQKMlCdIwcJagpFV/jy34ySU47A9+dJhCou19WktF6RIQ31rVc69hlkZn9ZwotFbcC92FIwmarMP99qpuY9NtJtAr67s1P6BzeJMXPp66A+j+TU1dDNIV98dWjyRNSaxBL0yM1F5/0A0CkUaL/eQl34/7o3RXsbQJeybiC3ocjoIkFg1OyUDSydN5oig7mnIY+GlraDytUgDvp3UOt1a3vocJkB55MeGMDaWl9DsLQsIMLFt1HIE6AAshp8wAt5qD3F2p4hl2KJyiHXU/m9X1feMTYS6iDs9Xf8nfds4ZAAOzPbGNd8ulUaxgDUUgftWWHFJo4pL1mZdytl/ZtBGSCwIrqWu8o7EQiu8nzQwFLMNk3VvLzAh3oeST2ySsIt2T+XwKwqx3ygLlB0SNwRGAoXybVF/U82CsctgIW07iLURPmnTUBbthzdJR3Ianz6A5t7qj7WVPHIS4NMAc9C4ySYBjJQ6+afxJmG9cCZ2vCAgWoFGPHsLxnQdQ6//S34XIyuobLeBx/azBxg4W5WHBXNvnFjCkY9RwIGCTgZ87vZT6Ttio4odeBIFMAGcOKYEoKHEFKbFjQ4HVS/l7IQdCANPCsRItb7Mgr5YMm0oWMRbTiI06R+PRHMGNlN2UNyLRbmbNMnzq5PaKwrPdOHOzBidLBReB+GJw8c3oiO6A=
+          properties :
+           x : 309
+           y : 243
+           width : 23
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabShippingSequence[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 17
+        -
+          name : SaiSequence7
+          identifier : 0x236aafa90d1b4872
+          internal_properties : CQAAAAkAAACOW/cGlM9t29HqK1J6M4DL8+8hv9VAOM23n5VplKp+VC9koPSKnBP/86ZEBRlOkzUc4y8qiMuIB1amzyMzLiSMRlKeksLKQ8TnW/4Ezboek07T1YrwfK3HsqPNlIQ2yn8A5KpkLjIAOR+hiImR9Pz8DwyAzhnVr6yBhqQ5ZyjUzZu9454jJlFc4ylJmXr/bL92w6177sV/qfW55GUyLAb52QHfoO3fEF/dKt8Wr7B5LELBVBazgESPh34hZr4wOSXyTGuZ2JjvEkjpzEhqXQWh0E0JXesp4hx1PCrTs8AQzyHzbWLhIDxrMBnYCixHEi8pZg/3ZaZx+eLNgXpOZvn0yfrI+CTRk0PlR5kd0l39IkvmXIxPpOB284jCb20ybzCf/VS9yRsuo/Xha8vZEYOwYAqoeVY2Z8EhF6bCDhYBnDteDRZyTLKmHHqx9/LG3paQv2v6cScTuTQBQXOPPxJPgot54PAkqGo//sfI0BDN4ne8xdl7d+dr7LR/yDMvWQPvxCHcO/oK1RFpnaIHpZy1CjlkokMF0i2AU1l6ZYKnN3DEwSp+N3Mp45Smh6U/yQ73NaC5f7WQOJkibjsr5RN8ewcJemucWaWbIonrQ9aQZIWo/Hpv6Js3amhstyFlLreBgr03BVrL+V02/QNtVZtEBo2CLsokUA8yKKmt0E96vO/8IaQxt9kS7B0GoqHPzLmPO/Jzmpgr9R+dpqVza63Rnt0/4+pWIK5T8DmAY6F9hWO0DxTKB+e0hEdUzVIdfkAJcjB6oCdZS1W/OyqacCKoNecuqhJM9YcXG9xh6Z7px487t50RCl/wYa4Q7SmtFqI87mNU
+          properties :
+           x : 309
+           y : 263
+           width : 23
+           height : 24
+          type : 2
+          code_elements :
+           type_code : 3
+           p_codes :
+            -
+              type : 276
+              enabled : false
+            -
+              type : 277
+              enabled : false
+            -
+              type : 278
+              enabled : false
+            -
+              type : 338
+              enabled : false
+            -
+              type : 339
+              enabled : false
+            -
+              code : |1+
+               TAjourlivraisonsaison[Combo_SaisonLivraison].tabShippingSequence[Droite(MoiMême..Nom,1)] = MoiMême
+              type : 17
+        -
+          name : Combo_typedelivraison
+          identifier : 0x250b53184cd08dbc
+          internal_properties : CQAAAAkAAADxo5FgAct8bGXEpiZvBCEOH3uS5d0gzJ0lHfn+UL+3VjCx6JHRZ70KEXwMJxgoyRdaL39CLk8Y6WdILZTWU3Eeu9Zb1aLQuo//mHkV2xhUK6y3ZUM+PeURQtOReluBr3Gc6LfwKBEq7sfVfM8gY7L6q05/SCaYH0WIv8DLyuepm7wB8Yvzk82eqSuA8JNUci8JtntHvkKHlsXDvAW1Z3JjuYMNPE+KPR+K0aDXsVaZILj6BhlBLlqabnZKAqIMeopNrKB4/A8ETc3l+GVilWXcay/TImSgm3mUWlY8bLySBy6ZkX27x1FWxDxKhjyjuxUC9iveghPzh6m2X4D7ISsoiKdKXtTllkzyCi34kgXuLwWLkr//Tweo4aMZ8/td5rnAK67F+FrCj3cTYsp59fEd5BGaJffPbp713wRejIkuvTQPCQga7DgDgawZLytN3BMF1paPulopYVo3xRJXiwr7jhTqljWi32JD3WfqR+4a2pzmgk+HYI0wKvxdEIcKJNXF51icL+lyEO04WO6ENDl0w4CknCbEvsJl1UH5+eTyBQsFtbxJQfGRiljMpTyTKAIDQkYvtkdKXCGiOYg+b3vjBGNUJBD5ET8K+H/Xauw0+lUeU5YTTo7JyK5NSWGdInnv+bLXMaYCwGIAyC0f/RQTHBM2+oxLSF/KktO1ioVNZ07yoR2vb9E0Rs5lHGiArDtNBriLUGUmmr5EHfqU41oRIfXO9y7hCLcMMNOTBSRcEFZJYQJGmvLwNYKOJtnrWt2Ce/6w6zJhKLAlxKd+Xt3GxZ6KSF61UcRQrYKyoInY6ojA99uiVRXl4DafjcNoDVjZ4yd3+NcY/ye9uR9JixUaCGa57Ismc79d6nk6/CfrEGU+jc9yePGicXWEU04v1lT6rSVUR6e5HuRN8FpdEfoc+TLMpoUynv+rh0qhnm42IrI6/e9zchV0aj1qWK0O7ttxT+fIe0PTwma/5RK7n7cZS8/vhblazKyjJbbN3RBX6eZU14BkqZCTyPbhV75rkaFrJ+ard5+byVXAmyztPno+DDEF1hMOCyiVJLQe6niYM+YG0HAe+wp7AiV1fxNutuMuDlYwpCTFo+02Z7SKG4wchzcmSPG5tvG+MdKY4kyeMqjejs11O2OpvE8gTcHOoC1TPBfsRPV7kl2YoVp082Ou6NzRpYUd32xD/ljZ3vmzsFqjyv43/UI6SpGpT/9WgZwisP78JIKm3WZ7Ehrny4K48g+dAKAWDw4Q7dX0aRoi3qcRc0+GRSeTDgeanxaMhUVMXc3vBmFMQ5Da3VM+Dc0jips+qrjcz3Tupo4x8OP7fb4kf9sqKUUJsS+QVcNxUXbyN+iN53wINoCw93x23coek33NkE4jTW3fNs81zURwpycyM6Gi9WckOWQubiJqQglicu0nPdgffKPfPurWjYE1cbTgNJqTBE2zcz7fRMeX/evo6jDqrm193pZXYXPhvgpFMPwNc2yKvAekYCaP0e7PyUIUqEj93sCHsOawKqKzqOVD9LHzQTwHiEW0pFJN2B8o0A1ZviebtVQxirv8VMcPZqV+TohDu3CTadlRppQIJATDXRWld/EhFw8=
+          properties :
+           x : 30
+           y : 350
+           width : 254
+           height : 24
+          dropdown :
+           internal_properties : CQAAAAkAAADN7m+EAM0pGsfeaNK+eduHL+LHn2CL7epASG1GI2hlEdD0ktFp9hp8JxdVCs8TviRYN3US3E3A+6dSJDUkZREnRCPm5eEk8TQeCrrESztrwyiLGc+IPu5NiifffGnUHH29LcnBfLRISKCvXYg7uxqaTtv3UdypzBxKRFRZu7T+5zDKFFyZkrzhQikhsJM/fn0eW2K0k64iC9tkE319ehRVIzNBQ+agUo+7jdDjuR9rkY85dPmo5o10Yykxq93Sf1i6JeQEhfxmlMornvoXSTcK1FUYdRV8NjiNBqkHfsmniKdhUW2V1u92KjxYZ+aqjWoiMjL2m6XK3aCXpkys5XYbiotTOmAN1lPTYsHANgkzPnSq8/5r2W9r7toPK+M24bgmblBTzVakyfcnOAXuRXQhsha0Ypv2n8orr7TssrKV4Y2NOrQ2xho/LV61Wje1V3G8X4Y5VZbU66NgtCXgzpxTgyGAfzlg3Q7ZcUnwZjINqRP4MDELbnrA/EWZve64AbRy1W+P5BIvoO50XIjTjHSyvbmCvw2H/RKVngBqQrqsAccjAxyKhDKMlaKj8A8bOb69SpskxSRrzmvdQ0F++goibQCJzaXohwMNpWnv17j6p5j9sInaM/L6bIAzctbCdi92Q+woHIx10MFOn3th/kvDhWPAtw==
+           type : 7
+          type : 14
+          code_elements :
+           type_code : 23
+           p_codes :
+            -
+              type : 17
+              enabled : false
+    type : 16
+    controls : []
+    code_elements :
+     type_code : 24
+     p_codes :
+      -
+        type : 292
+        enabled : false
+      -
+        type : 293
+        enabled : false
+  -
+    name : BtnSave
+    identifier : 0x2d975a3cca0a9a23
+    internal_properties : CQAAAAkAAAA7egJwuIpn+Z9nnErPb0nP6e9LF31z5ffFM2R1OrQgu6XTvpSQvwY2D6soMaB85MAoTBJMOYWkaCVrlb6/9fiebVccRTyCH5JZYEWuqzOTT6CAsuIoisTDofMdxDi2MoZ9cNjWDzB8ETeW6NXM6Pj8fSgrVc+Y6g5TUfEvqAt8s18g6T3XKWmQ7YlBmwx+4H9lvXhVlz5Knwzjrg3Q/wqRC9fWFDAc3wbBXbmsXhFfq9FC9E7wCBerPTi9OMn+lRUBV3SjENKvEWkhrM1i0vagiF1iL2DJtpHCDsP7SPeIQsHIHcYIRVKs/K5gc1moXbW9+SNFcXldmvyV/uYZEsDiUV0qmcgPMk5kljMEh18lYA/7jjCt/y3G1R6EtAi0nS6a7sBtShEjgbBKJpfC71hAg5Aw275Anp+G4OV2EhElRnukzjBFH4JbSBAFszT7eOimq8+PmYW0f/3VYfebyZflp1oeVNa3IpedL7qtP1uF93qlIBBgVq7LtHQ2Rhr0xSc62gEifNM65yyRRqPrKZOyrwMVxciyylP2IfSSoYBMHfX4WmFahVQxhPLfswkGqcTiBvIQf7s8kNLj+PyOXLgflSwAEpuOZL/jjyJ+Of7gUpuzKtPF+mUiUhp74Ihc+lFdBJaVVdhfHhzDjrGf71mbAJ3Ucj8rrGAR99NTgt7EkJ6yhdP1yggHRzbl8UTD02Zsuul6JbO95H661la1NtAI3UpTzGRijVCKW89ekcgJlbnIG0VLYLGQzN+L2AzFom0V+JdHz0Ct/NLqoQHe0IZjiXoTmVOHy1V8lx1ImpUxisnpsHK3GO+8N+yT6uleZBykL2Vo2ECrim4utUJE+7irBXhNX5HmkwBor5m1ILNZhpb3e3u7CLlFcHL+cV5Gh34+2z2pKw7/dgNREsPMMtn97UzmrxnU+zyrG1CkCJYs
+    properties :
+     x : 769
+     y : 75
+     width : 20
+     height : 20
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         jliv est un entier
+         POUR i = 1 A 7
+         	
+         	jliv += (JoursLivraison[i] ? 1 SINON 0) * Puissance(2,i-1)
+         	JourLivraisonClient.IDCamions[i] = {"Combo_Camion"+i}..valeur
+         FIN
+         
+         si minuscule(champencours()) = "btnsave" alors
+         	si hlitrecherche(JourLivraisonClient,IDClientIDSaisonLivraison,[client.IDClient,Combo_SaisonLivraison,ClientLivraison.IDClientLivraison]) alors
+         		JourLivraisonClient.JourLivraison = jliv
+         		POUR i = 1 A 7
+         			SI JoursLivraison[i] ALORS
+         				SI {"Combo_Camion"+i,indChamp}..Valeur <= 0 ALORS
+         					Erreur("Aucun camion associé à " + JoursLivraison[i]..Libellé)
+         					JoursLivraison[i]=Faux
+         				SINON
+         					JourLivraisonClient.IDCamions[i] = {"Combo_Camion"+i,indChamp}..Valeur
+         					
+         				FIN
+         			SINON
+         				JourLivraisonClient.IDCamions[i] = 0
+         				
+         			FIN
+         			
+         		FIN
+         		Hmodifie(JourLivraisonClient)
+         	sinon
+         		hraz(JourLivraisonClient)
+         		JourLivraisonClient.IDClient = client.IDClient
+         		JourLivraisonClient.IDSaisonLivraison = Combo_SaisonLivraison
+         		JourLivraisonClient.JourLivraison = jliv
+         		JourLivraisonClient.IdAdresseLivraison =ClientLivraison.IDClientLivraison
+         		POUR i = 1 A 7
+         			SI JoursLivraison[i] ALORS
+         				SI {"Combo_Camion"+i,indChamp}..Valeur <= 0 ALORS
+         					Erreur("Aucun camion associé à " + JoursLivraison[i]..Libellé)
+         					JoursLivraison[i]=Faux
+         				SINON
+         					JourLivraisonClient.IDCamions[i] = {"Combo_Camion"+i,indChamp}..Valeur
+         					
+         				FIN
+         			SINON
+         				JourLivraisonClient.IDCamions[i] = 0
+         				
+         			FIN
+         			
+         		FIN
+         		hajoute(JourLivraisonClient)
+         	FIN
+         
+         fin
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SaiDatereference
+    identifier : 0x2da0641f113145a0
+    internal_properties : CQAAAAkAAAAIutzTp4JJpoMnt0Bb9T2l4zz8nePTxObyRPS0/GL1KcQE3pyN6NV3QlVaRXAH+NGyvqW2o72fro/p6WKn5foiEv02MgZuzV7bUaKLzbyTScmdG5kCYUyxClauNv5TiT8FNFipfy28LwlFtWtlAUW+snkPmdpsK0BY9hiUaCISV+/sq1qjH02ZSwYU1hC+D0Glly5Qqm7qDwzQWSChBA1OtbQ3XLyfLlax/9Vcfg1Mza7GKMKWQXjPYORhH9URKZHJKjckrS7A+PEeTNp/XMCsVp1PoLjqWuFp4cVAS0HMADlZTnnW5jNRg7CPlLYKR/JZJC+R6dGX+jfX+KBNXubfmMQLSEy2zP7UGorLkgGJrSB+gtAeKzkNxXwa7akPXXH/gAPNhuzEiF/4c1gchzJtt1uhtM00JXdfY5s1SEg2MT/xAGrEh7KectSuQOF+vCbw2GRS7xi6XAbk36GVOz/YV+d1h3k5aUk45zC8MGkIHmX9dYvJIng0ArVrnJEjnc07JQXLuMamIYKO4ZksQjt1z4NB1zkrBRkWF3PHy0JX1XueMcGujLp7RnCc7J58zX2Xw+fJZRM9JlT4DB9yjpp2jqOptVsD7SaStpURV7zwk6cl5Vd2gNRtNNiwQOY7sbeBWgB46nHcSGgaT2ZR+n+UsdFzYW0s3ACXokt7Z4S7UTzc8zg9Ad8JZKin6AaGbMrUbiNY2jUJBZIeNla+RUmvLzUXd1rwCxkbrT/LWE9BMVUBjkSeQ70L2PHUGsqiVd+iiYST5TYXlGJRptLlnUbgKGmii6oryyxbLOpvHk8jcx7tmnUZ97vJcTMxeQAUrc8PFw==
+    properties :
+     x : 735
+     y : 116
+     width : 202
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x4756adea5e9bb50a
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAADcFMqZGb7cvVbHSzFFO29BHrq230qC09elNlRZDkHGpu3G7UwlAdmTaiQsvCX2HLFLZkrL81a+bX5rFke7W3RnUqSXQ3v+dR0nRv3hxa+KsXClj13KMFBlfO+AGw==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      procedure fAjoutAdresseLivraison(lnoclient="",ltype="A",lvideojet=faux)
+      
+      
+      
+      TAjourlivraisonsaison est un tableau associatif (*, *, wlEntier) de stJoursLivraison
+      TAFrequence est un tableau associatif (*, *, wlEntier) de stFrequence
+      jourlivraison est une stJoursLivraison
+      si lvideojet alors
+      	grpVideojet..visible = vrai
+      sinon
+      	grpVideojet..visible = faux
+      	
+      FIN
+      mafenetre..ValeurRenvoyée = 0
+      st_frequence est un stFrequence
+      
+      
+   -
+     code : |1-
+      
+      
+      selon ltype
+      	cas "A"
+      		raz()
+      		hraz(ClientLivraison)
+      
+      		
+              pour TOUT SaisonLivraison 
+                  jourlivraison = allouer un stJoursLivraison
+              	TAjourlivraisonsaison[SaisonLivraison.IDSaisonLivraison] = jourlivraison
+              	TAFrequence[SaisonLivraison.IDSaisonLivraison] = st_frequence
+              fin
+              listeselectplus(Combo_SaisonLivraison,1)	
+              	
+      	cas "M"
+      		FillObject(clientlivraison.IDClientLivraison)
+      		FichierVersEcran(fAjoutAdresseLivraison,ClientLivraison)	
+      		ExécuteTraitement(IntJourLivraison,trtModification)
+      FIN
+      si pas IntJourLivraison alors ExécuteTraitement(Combo_SaisonLivraison,trtSélection)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+      si ltype ="A" alors
+      	mafenetre..ValeurRenvoyée = ClientLivraison.IDClientLivraison
+      FIN
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : AfficherJourLivraisonPourUnMois
+     procedure_id : 2132274207164193851
+     type_code : 14
+     code : |1-
+      PROCEDURE AfficherJourLivraisonPourUnMois()
+      
+      UneDate est une date = CalendrierPosition(CalendrierLivraison)
+      
+      UneDate..Jour = 31
+      
+      LeNombreDeJour est un entier = UneDate..jour
+      
+      
+      
+      jliv est un entier = 21
+      
+      
+      i est entier
+      
+      //POUR i = 1 A 7
+      //	SI jliv & Puissance(2,i-1) > 0 ALORS
+      //		JoursLivraison[i] = Vrai
+      //	SINON
+      //		JoursLivraison[i] = Faux
+      //	FIN
+      //FIN
+      
+      UneDate..Jour = 1
+      
+      POUR i = 1 A LeNombreDeJour
+      	UneDate..Jour = i
+      	SI EstJourFerie(UneDate) ALORS
+      		CalendrierLivraison[UneDate]..CouleurFond = iRougeClair
+      		CalendrierLivraison[UneDate]..Couleur = iBlanc
+      		CONTINUER
+      	FIN	
+      	si pas JoursLivraison[DateVersJour(UneDate)] _et_ pas JoursLivraison[DateVersJour(UneDate)]..Etat = Actif alors
+      		CalendrierLivraison[UneDate]..CouleurFond = iGrisClair
+      		continuer
+      	FIN
+      	SI SaiFrequence > 1 ALORS
+      		SI modulo(DateDifférence(PremierJourDeLaSemaine(saiDateReference),PremierJourDeLaSemaine(UneDate)),SaiFrequence*7) <> 0
+      			
+      			//		si modulo(NoSemaine,Frequence) <> NoRefLocal alors
+      			CalendrierLivraison[UneDate]..CouleurFond = iTransparent
+      			CONTINUER
+      			
+      		FIN
+      	FIN
+      	
+      	
+      	SI JoursLivraison[DateVersJour(UneDate)] ALORS
+      		CalendrierLivraison[UneDate]..CouleurFond = VertClair
+      	SINON si JoursLivraison[DateVersJour(UneDate)]..etat = actif 
+      		CalendrierLivraison[UneDate]..CouleurFond = iTransparent
+      	sinon
+      		CalendrierLivraison[UneDate]..CouleurFond = iGrisClair
+      		
+      	FIN
+      	
+      	
+      	
+      	
+      FIN
+     type : 458752
+   -
+     name : SaveJourCamion
+     procedure_id : 2133123880342431003
+     type_code : 14
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SaveJourCamion (<_Type> est chaîne, <_IdClient> est entier, <_idclientlivraison> est entier)
+      //
+      // Paramètres :
+      //	_Type (chaîne ANSI) : <indiquez ici le rôle de _Type>
+      //	_IdClient (entier) : <indiquez ici le rôle de _IdClient>
+      //	_idclientlivraison (entier) : <indiquez ici le rôle de _idclientlivraison>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SaveJourCamion(_Type est une chaine,_IdClient est un entier,_idclientlivraison est un entier)
+      
+      _message est un booleen = faux
+      pour tout _jourLivraisonCamion,_idsaison de TAjourlivraisonsaison
+      	selon _Type
+      		cas "A"
+      			hraz(JourLivraisonClient)
+      			JourLivraisonClient.IDClient = _IdClient
+      			JourLivraisonClient.IdAdresseLivraison = _idclientlivraison
+      			JourLivraisonClient.JourLivraison = _jourLivraisonCamion.JoursLivraisonClientCompile
+      			JourLivraisonClient.IDSaisonLivraison = _idsaison
+      			pour i = 1 a 7
+      				SI _jourLivraisonCamion.JoursLivraisonClientCompile & Puissance(2,i-1) <> 0 _ET_ _jourLivraisonCamion.tabJourLivraisonCamion[i] <= 0  ALORS
+      //					_jourLivraisonCamion.tabJourLivraison[i] = Faux
+      //					JourLivraisonClient.JourLivraison -= ReCompileJoursLivraison(i)
+      					_message = Vrai
+      				SINON
+      					JourLivraisonClient.IDCamions[i] = _jourLivraisonCamion.tabJourLivraisonCamion[i]
+      					JourLivraisonClient.ShippingSequence[i] = _jourLivraisonCamion.tabShippingSequence[i]
+      					
+      				FIN
+      			fin
+      //			JourLivraisonClient.JourLivraison -= CompileCamion(_jourLivraisonCamion)
+      			hajoute(JourLivraisonClient)
+      		Cas "M"
+      			si hlitrecherche(JourLivraisonClient,IDClientIDSaisonLivraison,[_IdClient,_idsaison,_idclientlivraison]) ALORS
+      				
+      				JourLivraisonClient.JourLivraison = _jourLivraisonCamion.JoursLivraisonClientCompile
+      				POUR i = 1 a 7
+      					SI _jourLivraisonCamion.JoursLivraisonClientCompile & Puissance(2,i-1) <> 0 _ET_ _jourLivraisonCamion.tabJourLivraisonCamion[i] <= 0  ALORS
+      //						_jourLivraisonCamion.tabJourLivraison[i] = Faux
+      //						JourLivraisonClient.JourLivraison -= ReCompileJoursLivraison(i)
+      						_message = Vrai
+      					SINON
+      						JourLivraisonClient.IDCamions[i] = _jourLivraisonCamion.tabJourLivraisonCamion[i]
+      						JourLivraisonClient.ShippingSequence[i] = _jourLivraisonCamion.tabShippingSequence[i]
+      					FIN
+      				FIN
+      				hmodifie(JourLivraisonClient,hNumEnrEnCours)
+      			sinon
+      				HRAZ(JourLivraisonClient)
+      				JourLivraisonClient.IDClient = _IdClient
+      				JourLivraisonClient.IdAdresseLivraison = _idclientlivraison
+      				JourLivraisonClient.JourLivraison = _jourLivraisonCamion.JoursLivraisonClientCompile
+      				JourLivraisonClient.IDSaisonLivraison = _idsaison
+      				POUR i = 1 a 7
+      					SI _jourLivraisonCamion.JoursLivraisonClientCompile & Puissance(2,i-1) <> 0 _ET_ _jourLivraisonCamion.tabJourLivraisonCamion[i] <= 0  ALORS
+      //						_jourLivraisonCamion.tabJourLivraison[i] = Faux
+      //						JourLivraisonClient.JourLivraison -= ReCompileJoursLivraison(i)
+      						_message = Vrai
+      					SINON
+      						JourLivraisonClient.IDCamions[i] = _jourLivraisonCamion.tabJourLivraisonCamion[i]
+      						JourLivraisonClient.ShippingSequence[i] = _jourLivraisonCamion.tabShippingSequence[i]
+      					FIN
+      				FIN
+      	//						JourLivraisonClient.JourLivraison = CompileCamion(_jourLivraisonCamion)
+      				HAjoute(JourLivraisonClient)
+      				
+      			FIN
+      	fin
+      FIN
+      
+      si _message alors
+      	Erreur("Certains camions pour certaines journées n'étaient pas définies","Veuillez vérifier")
+      FIN
+     type : 458752
+   -
+     name : FillObject
+     procedure_id : 2133130494592164723
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //FillObject (<_IDClientLivraison>)
+      //
+      // Paramètres :
+      // 	_IDClientLivraison : <indiquez ici le rôle de _IDClientLivraison>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE FillObject(_IDClientLivraison)
+      TAjourlivraisonsaison.SupprimeTout()
+      TAFrequence.SupprimeTout()
+      _stjourlivraison est un stJoursLivraison
+      pour CHAQUE SaisonLivraison 
+      	_stjourlivraison = allouer un stJoursLivraison
+      	TAjourlivraisonsaison[SaisonLivraison.IDSaisonLivraison] = _stjourlivraison
+      	
+      FIN
+      hlitrecherchepremier(JourLivraisonClient,IdAdresseLivraison,_IDClientLivraison)
+      tantque JourLivraisonClient.IdAdresseLivraison = _IDClientLivraison _ET_ pas hendehors(JourLivraisonClient)
+      		_stjourlivraison = allouer un stLivraison
+      		_stjourlivraison.JoursLivraisonClientCompile = JourLivraisonClient.JourLivraison
+      		pour i = 1 a 7
+      			_stjourlivraison.tabJourLivraisonCamion[i] = JourLivraisonClient.IDCamions[i]
+      			_stjourlivraison.tabShippingSequence[i] = JourLivraisonClient.ShippingSequence[i]
+      			
+      		fin
+      		TAjourlivraisonsaison[JourLivraisonClient.IDSaisonLivraison] = _stjourlivraison
+      		hlitsuivant(JourLivraisonClient,IdAdresseLivraison)
+      fin
+      
+      hlitrecherche(ClientLivraisonFrequence,IDClientLivraison,_IDClientLivraison)
+      tantque ClientLivraisonFrequence.IDClientLivraison = _IDClientLivraison _et_ pas hendehors(ClientLivraisonFrequence)
+      	_frequence est un stFrequence = allouer un stfrequence
+      	_frequence.Frequence = ClientLivraisonFrequence.Frequence
+      	_frequence.DateDeReference = ClientLivraisonFrequence.DateDeReference
+      	TAFrequence[ClientLivraisonFrequence.IDSaisonLivraison] = _frequence
+      	hlitsuivant(ClientLivraisonFrequence)
+      FIN
+      
+      
+     type : 458752
+   -
+     name : ReCompileJoursLivraison
+     procedure_id : 2133144199910642450
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ReCompileJoursLivraison (<_JourARecompiler> est entier)
+      //
+      // Paramètres :
+      //	_JourARecompiler (entier) : <indiquez ici le rôle de _jourLivraisonCamion>
+      // Valeur de retour :
+      // 	réel : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	JourARecompiler (entier) : <indiquez ici le rôle de JourARecompiler>
+      PROCEDURE ReCompileJoursLivraison(_JourARecompiler est un entier)
+      renvoyer Puissance(2,_JourARecompiler-1)
+     type : 458752
+   -
+     name : SaveFrequence
+     procedure_id : 2134831649325828229
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SaveFrequence (<_IDClientLivraison>)
+      //
+      // Paramètres :
+      // 	_IDClientLivraison : <indiquez ici le rôle de _IDClientLivraison>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SaveFrequence(_IDClientLivraison)
+      
+      pour chaque _frequence,id de TAFrequence
+      	si hlitrecherche(ClientLivraisonFrequence,IDClientLivraisonIDSaisonLivraison,[_IDClientLivraison,id]) alors
+      		ClientLivraisonFrequence.Frequence = _frequence.Frequence
+      		ClientLivraisonFrequence.DateDeReference = _frequence.DateDeReference
+      		hmodifie(ClientLivraisonFrequence,hNumEnrEnCours)
+      	sinon
+      		hraz(ClientLivraisonFrequence)
+      		ClientLivraisonFrequence.IDClientLivraison = _IDClientLivraison
+      		ClientLivraisonFrequence.IDSaisonLivraison = id
+      		ClientLivraisonFrequence.Frequence = _frequence.Frequence
+      		ClientLivraisonFrequence.DateDeReference = _frequence.DateDeReference
+      		
+      		hajoute(ClientLivraisonFrequence)	
+      	FIN
+      FIN
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x4756adc820543134
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

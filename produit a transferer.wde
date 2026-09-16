@@ -1,0 +1,105 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : PRODUIT A TRANSFERER
+ major_version : 29
+ minor_version : 0
+ type : 3
+ description : ""
+ subtype : 0
+report :
+ identifier : 0x3e9d90ef4f85307a
+ internal_properties : CQAAAAkAAAB4Jk/HjEQflwSaFdilgcOSIP07PAQPaL8WX568SSLJPvTdemY/IesAJEvrqXQrAEVBgLdL7T+H18hiGcI0EOlimm8DB/xp+sKWF9mMRitcBhmqEdSQnSJRtANfwpHOYaMhWTuGGAwqhxnsHAIoBe/MNLQDwmSwZ1UPGjesd9gD97s4GG4oTsstAf9MK8RmjXmrlv/KTwjZEpmlUtLAGWjGUBBI76BraqEWfzra0RD+H/QzKMveFzTKjmCADPd97USmbsnpD3meeeb7gTB4alSFMExksLBqBJ07WFrFh/CGS7JEK3hX+uumhZdNSeZfYsok2wntWA0gDkTt3EMeHFGH6jSpZTcEozdNOd0ylg7QpFGICLIdqIpXQGsaNOiTlR9bwbhKDcxHuBCvsIoEl4z+n8qx4Z786eVHil5K/r983rfF+PkLAdId2x4zroXshdWU5OIwOA4nHGeG/2rGjWq96qmx/VJpgfEKylduFtn6wEnnBesG0Q40lzITEf8TmJGnPRRf7X3SMpAyBBCq258BusSE+c33XkId2adpQtGCcC7tWWQADsB6mafdR+B8DfnUHtbJs270GQ7IwrwyZEKpT5GzQ7RAJTnQ/AKc/HeF1MpqOfObfStf0FBdR9uVTEVA9bfnsovc77hT9LyNVyjixyjTAzO9IdVNPm3YN41CAHIOwJkOmpHITiyBX5rvmbPGJVs+WortN86LX3MfiQsrZ4tzt3uQ+OGcoMtW+KKjrAL8e+FW03gYm2qZFmymxsU0Mtr5jnTjuKRkdDJBPvpwpYe4FhOXx+8qxr7AFkgkEDsEZIBVuYvImnI=
+ languages :
+  - fr-FR
+ blocks :
+  -
+    name : BLOC_HAUT
+    identifier : 0x3e9d90ef704b3084
+    internal_properties : CQAAAAkAAADGfa1oNdLOeidZ9kPVbZrggyzHDhybMfnHJ1jBmyF/JVQclNd81J+Ych5ZXZxfFH4922er6QGHiqArmLxa7cJjLMpsajG9QW6NssFeZt70V/aYf/b/IELldAbQA5iV2hSJU24wYxY/qfGEYRXeCBjkY4FtBATpn2mg4+91pUP3WOtbGSvewjRei1trx0jt0tGzBFj53jAO76RoKS/YbYvimqkmGUPao3nY8f3YJy+0ebO2RshP54OjLwYqm9bOuot5hi267t82q3i0nefcoomK
+    controls :
+     -
+       name : LIBELLE1
+       identifier : 0x3e9d90ef0789308e
+       internal_properties : CQAAAAkAAABOs8a7t1ZVY+Qcf3yU/jk17fpmkRDoqcJlKKyuUecypnbl3hkCTJLlnQUkcx42d7kkgU4F12EanjHh+zp2rbaaqPNKpCAR6y6ptmVjQnBpOdEfi8iVV27Qfr3ypyA+MUE0iaOVu7z3ergOC4t4B5N19xgefb2/kD5fr3DImRhddexktxXuFSlet73vMTHI/0EZ4DCkQX/5K7hh4u9+Ogmdltd0X7nleGn5+vPhhz/87AQDg78yL+ZQi5rHq4ivLdG+cZzR1rkfZeE51hpGvwJOFRgy0e4aab3cJZWEiDGV3ebfJM1nFhuIeU28vewqy+gf8OOcQ13+7chNN19Mqgs02Yl378HgTvO1agWBOOJr+VRGfB6AsaIfiw0cr9NdVo/SQwl6hZ0oqi8bjVXT9iwNcJEqmtOsuILx7VqKEaMoAuELXFYFsSl6BC9Em4vweEgW6W9PbFwunk6tkThKrVN966akKNVGvsJmdjVDKeRNKx1GFBvE30rIZdLRSSmNpQyx7GfsWV24Wb8VsemlrcGWObQddw0Mjk9VdoP8gOXnwweXCEypIg==
+       properties :
+        x : 1.
+        y : 1.
+        width : 52.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+    properties :
+     width : 190.
+     height : 10.
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1+
+         
+         j est un entier
+         iCreePolice(1,10,iNormal,"Times New Roman",iNoir,0)
+         IIMPRIME()
+         IIMPRIME()
+         IIMPRIME()
+         
+         pour j = 1 a memoccurrence("produitatransferer")
+            iimprime(ipolice(1)+memrecupere("produitatransferer",j))
+         fin
+         
+        type : 327693
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BLOC_CORPS
+    identifier : 0x3e9d90ef6a13308e
+    internal_properties : CQAAAAkAAADCznefS/JLqs6FRtsU3O/slnm2UjSNMu90swUAsJRp83m4BMkX6U+x/qk9U8GrNnLhXM6AvxcvejLpgOVDw90eCPWWjscIHWVpfS2V5N0iOAm0x6ByUJaNrIBusSFHUCmq5JSicHgnZJmnfSYcUWvwq1DxFXEayY6h3bR7KNqLu0cEgQQj3yQou7RbYJdJ3JhaFqmH0Ghxphs+MjBTsH3GebCvIGF8POtdVrkoaXlRO5jSVd+CO+gmmjAb6TlLXFzZU8EyVFkMwwB3lz7rgKRXxg==
+    properties :
+     y : 10.
+     width : 190.
+     height : 11.
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BLOC_BAS
+    identifier : 0x3e9d90ef6d36308e
+    internal_properties : CQAAAAkAAACAGbGu3TOfbfHwp780T52gaKzCJ0nv+NHAyzXVxUBVdM23dO6RlK5ToopTLNwrpMOPzMHmkgub75fV37cjGZxM8wLpa5GkqonHLV5PjAvlAFCJLcOeDdDDhu75lJkFhxFuEIiVszFmHhvdR4yOmcc4UKfkwZ/AoGyBX3rooToUQ9BRBIhOizaBKdsR3oGAQuHt+BZxTKmt6MqFpWV9zg/KHTdFPhPdgPgjb050WEc1wizawMLx6Ebm8SEIqJuCXkAD95HYVmkXVft/rr8Zbdc=
+    properties :
+     y : 21.
+     width : 190.
+     height : 35.
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+ controls : []
+ code_elements :
+  type_code : 13
+  p_codes :
+   -
+     code : |1+
+      Procedure _PRODUIT_A_TRANSFERER(_pParam1="", _pParam2="", _pParam3="", _pParam4="")
+      
+      
+     type : 327680
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  integrate_compiled_code : true
+resources :
+ string_res :
+  identifier : 0x3e9d90ef4d48307a
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=

@@ -1,0 +1,656 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FdetailCompta
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FdetailCompta
+ identifier : 0x403df49b2a40fc65
+ internal_properties : CQAAAAkAAACn4qIC20ax+k2Wb0nLJ0vKjxjrNc9D0KadgcReuBVFKLt0naEBqPxSqm/+IqVG5LF/ohvsOe6I5SUA8yL7whljfN5wZwwqP/cqkFrDJMhFuyuTsGLymTrjuP7icjlkIZANywoYmQnmCRK+dFrFHV4f0vSeAtBUHkyGB/Nud4Z2NWXCRGXldBOpCqyKDcmvydSVH5n4j4gZYvGraspJgSu/iMm+mfhm/oe0NxyRDs6tJMu6a+4q2oWpgByJAqYlVWGju9+94du4+2VGhkeeWfMX5BmHqgFe5PIURa4Ugc6vlJvBO4X622okPXXnZDiuZl4BlL/smaRE26bcf39Ou4wFcAFzm5elCewWgea2xju3o8NmvTMEMrYE3VeF5B8hnFieNIHnI23JQQ3tLSsxQKaPx05FlqQgTPl5RMZ/oLAGym/j2Vp+zNfqBhcxHQnhebeQpB2ISK4y493nvITDiGqQJpo4I3jC1psUWgO3qRjMyuzOG7U/M6jBaQ8vc9mhJDN4XAES79cChBJo7J9K3vULh8H9hbfP/X95dEC7zgicuiXsc2DINxmddE01JrbaEE9u8DMcVFqnN9+KR0WKrgj80PFIbtJMNbFvJF7ruesBo9ivrQTctNkRk9lZZl5WYiL2YeFWUHbvgoG87su2ypIUJI+7mxW1WbWfryeem4sOMGViYUURS99toIghUC3Jj2AqNnGch+YHgO5cutL6EpesZ+wysWWlRFlddZ+EzvhUQBWkpTG3v1chOMkqw38MbvgjJQgDfeU+apt/FoZEuDPLn5XEv9der9GSbVw+z13R+C/Aq7W/dT6V4C3Gcl7dwzBap2ib0S6Zo/WGrXk1nLi+3JMZ14J0E9VA1mYxw/Y+UzQylmlxySreXEMNY6WD1vg8UozNpaGXBXSMFSS6iJxLlGu75wZQcQfVUd8ibJjXcD4wAwyc/nJXaeI83wKfqthmbkLv9VSQ4A7wDa1O0KAkGMf+f6Y4Re9JfAwoaLr+2QWrITao+Q3m9fD0H0JobLYfh5JV
+ properties :
+  width : 723
+  height : 454
+  widthClient : 721
+  heightClient : 422
+ controls :
+  -
+    name : Table_DetailCompta
+    identifier : 0x403df49b74aafc83
+    internal_properties : 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
+    properties :
+     x : 52
+     y : 111
+     width : 603
+     height : 285
+    columns :
+     -
+       name : NoGlivre
+       identifier : 0x403df49b78e9fc83
+       internal_properties : CQAAAAkAAACvxr0VoHr3ks1aOFExevFrd9cssMmIs/sV5fbS7W3q94rbUdpPymqO94hBiudbMHmvBFb7jhRMDTfcjIYk2bZXtMn5O5laUXQz4VR2AqbExKnlLO/+irXyJwszTAyQjTxK68ooqGV/5R+RIEOEUL6dvY2NKN4bctspszWigJQ4dGpZbUiji1XF16IaQ9293haAnK3P/VQSA1PBV00lBQALfY6KbPEx6Mc43z7LY1fJm2B6oj5ueCPMflR2Z1Ut3Tj1nB56e/Hx6lApN1w=
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAADaBOfOW+Z5/ySDw+5k9zJr9F20tygBlQ7Tz8i+0uVwKBQXPjj8BkynNc1JzlT2N8DAjKRbIkiKKT5kXWrW2qT/bRdCRYF1aeL3yXtOt17jd9wXzcdap16zEyMELeTSdmUDitXG9ymPqtg9VVsCiTYNxtw/glE2gAAkLXfZ/L8jIAwi5LmGRFYWfkenDWwOhGZuBCqtdlkCPKQn1kepX+AtaxqZ2P3L/NqHhuo6I1OKuEONnoRc31Yr40Ho7B7gKUqsURBQRMZWYjJRzoJzusRVpbENj/bLPAji+rwSJk6tY1LvBowKQh4O+BGdWa21zkLHxiXOpkI51r54tazuCmW7E6EiWgoIrRSEyeIUbQ2EGTk2H0497ON9UCgeTbrezUyZ+07T88hgop3TZ+RBDk0v1lE4S64X9sy39q/bNra55ssXc3BDSZb2fLay6DKhZn+4HCVMpAWBM1Nwc+U6JHMWFIPSGfQuPZdxEd1wbwG8pTsjprLRLfuEagQfemG3Wqbizn2+wPDgYQT/ZOsfs/S9AMewhHekauuNAidGoaNe5jXZZealNDQq38tCfUF1frPMGoegsGU4lnA=
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADaQRjRgh1PoQvbwqLYHNiC8rnYrViLr0h86pavGNjo1pifOnEHNDHSpzeI7EMvtR3IZ0tp9Pej6NR+oaTjq1cY6tJY
+        type_code : 3
+        p_codes :
+         -
+           code : |1+
+            SI table_DetailCompta.NoGlivre[Table_DetailCompta] <> "" ALORS
+            	chaineaverifier est une chaine = ACGL_FicheExiste(table_DetailCompta.NoGlivre[Table_DetailCompta])
+            	descglivre est une chaine = extraitchaine(chaineaverifier,2,","	)
+            	si Table_DetailCompta <> 1 alors
+            		si extraitchaine(chaineaverifier,1,","	) = "0" alors
+            			acso_message("Erreur","Compte de Grand Livre inexistant","Erreur")
+            
+            		sinon
+            			Table_DetailCompta.Desc[Table_DetailCompta]..couleur = inoir 
+            			Table_DetailCompta.Desc[Table_DetailCompta] = descglivre 
+            		FIN
+            	fin
+            SINON
+            	si hlitrecherche(RequeteDetailCompta,RequeteDetailCompta.noLigne,Table_DetailCompta.Noligne[Table_DetailCompta]) alors
+            		hsupprime(RequeteDetailCompta,hNumEnrEnCours)
+            	FIN
+            	TableSupprime(Table_DetailCompta,Table_DetailCompta)
+            FIN
+            
+           type : 16
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : Point
+       identifier : 0x428f6a025110e2e8
+       internal_properties : CQAAAAkAAACB2U6qJY1MWIsmUeiIoVRKFhCotm2qVzrIq02tcOVKcn5H8awCrwnLWZEUgklRzGv4Hm14u7H7qjAngwAYp1jW2FvwJ+s1SnOUHmAfQsYb8XqpZsIGb0UQ6ofLzhCbiL8gxkiGkgt5pJCIOlk09qJh0Vw/FWc3HWFdynAb5Z6WwpUmrpNwK+IcraQnKOf/a4mA93m1pmaSgtoIAA==
+       type : 14
+       content :
+        internal_properties : CQAAAAkAAABAB7jZJIZCJpjENUZXliE0bwiUwyCJ1jGRcnVmtxFcByxi7gKE/oCwdimWh/Mq4S70WevYduXH/l91kMkZ9CS7ufB906jYNJbbvOosUKA6xQ03vjljKoLD2LXLx5D5In8htdlxbJJHMQ4x1m41yE961FqcJTNjTnTChoy+07ylYAW5HnJvQsPUgJUMVfEvNpPSP5IL8EcitWk8Xt3MWGREtmG2T3IQmsu0XlhfQHoMuYK7ccMqS2NH7nly1wwMaEV4SuzXBedXWdaVGxMUe8oj5yt/Vny66HQl5jHfLXMyQOAFaFH9BkVmejXER8mjww+CX9wyp/dS4IYoF0W+VVPQEOrSwNyI/8kh9vDMVxVXSo4W2vZvMAOmDkIImSiL82gi77q/evss5RMAiLrl2HpogByeLcV/Vb0xSmmAJjy+XOTnP2rSmmHTxHG5MnsKGHAIBw5BAJXSnLgnwo/iPuF9w1tRtHTjDIalySwVBImjPByQyo9gy52sXABzx8OuZfLnmx8aLjsBOHkvga4Vzbf7bW76fq3I94It1hrfEDz7jU6y1Q4mDOh80knl6yFtdrm79wJzi/gH4ebSD6auYuiMv6NBI5CJovOf+Vz/KXw8fvtjFFDIbnPz9h3zrTmd6cPJehuGOkTpicjj1c/2X6Rv+TmdO9Rs1hIV3JJuTEpUGvcfPLp2QBhanfnBYynv3unBSDKSt9Wc6O06FZNorrfpGLCZEkp1Kg7oxIWLdQeVl0tmDFtVP8Uj8WH6NLnjhJkgW5lw52ftoLwqYiK4z9lEJjRe4wGBqFkNzQuWSvR8b/3XJ7gp4CiKHsYGuauHnlCE294IAA9wl/LyK0ZEsThWB14IiwYQgiYFIEWQ1okUyjda0Z61+AdVTJVapEiPihpmSMpQG3JeXGY9d76ZUUyxjshpLGvSNamDLSkxmVrGzFdcA1Kn3O6z4/nsrUZfbzlRiCwm+sHr0yxjK1EDvX0sWWgfdi80uNeG40imrtpI9V9C1HWGs+PZ6sPX5XUsQw//zotMqq1++iW6ENtl5FJd+v4U1gDdAlqtaDTYWo+UoB4OaqfxyMQnv9HK+mAoqTra6p6XMD0EkgdnjROGwvWh4EQy/r9yzXhGkTui3daN7LggYPU/EHXtYrSgOkg8H3kKzRRImshGUMd5/02wZE/M
+        properties : {}
+        dropdown :
+         internal_properties : CQAAAAkAAABv6Cat+w+ZT8wocl8VftXbhsU2DJ6GnAzqeWlRV2iYClOGEPTOyAHJWkP8ewkHP8S7n4VcRt4cl8SExVThmRtjnJAI4ptSRGdaXCR3gkis0Dki5zWNJftJIDMVxHVs0eyq/x2AOyKquQrBC8dj5l2EhODgP2m90Vj0vNC4pR8Qe75GultXgelIK5WyNOgR1JzJ7X5q1SgS3G7EsN3jttveVwf7OVwnt0lk2BAwStwInFo5/QkALjxGHAimxcW8AFZQD5FJZYQLZmpAgGIS7KacdylvFEV30xTuXAdatNpAxK3/Du93xCdTvc+yRDjE+nSBy5d2McNtDyi7D8WJlez1xv1IGqc5sBDvV/r5qqaDTKw1i/BoP40KWSXBpHtnJIAmcNYH6X6odaIghjqH77AISxYmC22qWDMTRyQ2+KlqiG4caLpbn3tINAmmdAda+FOs13yshnZbuSPchFaDTowVdRjEnNxHILgGdbE0R64D80xClmWmTlM/3jUWwlbfDWXb+k63kAs=
+         properties :
+          height : 152
+         type : 7
+        type : 14
+       code_elements :
+        internal_properties : CQAAAAkAAABBuq/fCu7spSyoJBaytc+GNzJr+DUG1ZPVYfRXWbtQjJzmvfRfvQrOZlmA2RR/FijMoXEoSKMkeKs07+zHZSLqCCqOYGIuaKk=
+        type_code : 23
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           type : 17
+           enabled : false
+     -
+       name : Desc
+       identifier : 0x403dfbf031ca9e95
+       internal_properties : CQAAAAkAAAA4u+ZlhG/Z6zBI+ZiZcgDnGVoVrM/Lpnqe1TuwZTDpRuCDoF8CygHYzWTEYaoecB79q47oh2/4b3XMz6yfhgSuSnhk9odiiacaUNLh65STC+cgh7SxD2qfWTQE8BICcKWiH8hpZN3r0cIki2p/xyneTn+qWlotWB5rkSAE9bsYi98cMNAfgB27l+vOgZrdJu5RRnE5W1EITA8nWzca0nkzRhHOFnGkbNZnAKQ/
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABRuGYbv6rK7TZZaLViWkA6HCD+/D1qF/DVpZwrocxO6ANalv5rRD+FTuVc1emCjTI7GPE+eilxFa7BRVeqieLks1v8jI2JCA5Cj/x9oncZdXdrwrPirJEif46FBatg/MtP+qX4pVpE3chkAfOyp7LFaYJrERij6I5FiHCVhD+eLmAcY3hFQIkEW8K5MXTL6Vm9vCYZLqix4NfhekSp4sLWpczcJ9169wNt7wOUcgyfjy+xKw9/XvN/QpjFCYTU4MC4MhfuzOidvSAxEiqfqmN87w73yZQuk3tBHA4cxAekgPa/9me8gKRDohBm8k0yGQmD4K+bBDZR/8a3/sOq6Zbkpc0+pViKJ/vkRDcr66TFeD3uP5NpLm2kBuf/mLqLTN+Rh7ryQ8rSOfcm2NPLS3hWVEGYAMrbjklT5zIC+rtsg9mVCREfnW7vuEudu7bMl8D8ynt3Ds/b/u2RWp4Ef8Tn7K0kNrq+2dZdKJ84f6YFJPs9Oi1O1d9KTDtv+H4TXNcLfcPkgeSQ6q7TEAGB6SY9hfF4yMYLf+yVgpKs70jlRMh9vD3lJEzNtn3Kz4h1osiu0TLKbg==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAAB2AZhCbDs1kIq38F7Kk6Qr6BO/qZf34wDvUa8WzKpNt5MEpfgn5y71m+ZlVNA9SVFp7SzfpDO7PyzHEieCKy4izfnkrXz3DTjurs0o++t6k4gXkL40Ajx0OKzN3ogki2vq
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : MontantGlivredt
+       identifier : 0x403df49b7664fc83
+       internal_properties : CQAAAAkAAAB97Gxpz5cYf9+ms+AZJY98lij0jPN0J2adN8LXkd0vRWDvWvNQnWSes2WoGkQeTDxioCTKNMTFd6iTpmpd12YjBzpQeW2i4Q6Oy0b6gVmS74ejznTCwh40wenZbOLbZ3HJvdOQHmnvEcsnoBfKnpv9j2CC5ftnjdHOSHxNxBunJdq7JO11nnQKWkjoMCyAKMAPXMb4a3eQVP9YwSwfGPSenAl5R+U6WhEZdBL5IW6/hA8k2bWVDXZGnY6boSrTKNA78hBbSlGjQaxNGNtNwKqCv2/9
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAACQLCLgQPkYEJr3SaUkQp4n1q9LuPZgBImTsDgHiiGLp3tfWSje5OIyzc4FFAxX6Y+3Xe7K3zR2UKy4dBFerQR1Xk1Je/UXCxLJZt4fjCVMwIbgxIgUq7lCBRpAKG3uaZYfoUMEZhaRKH4FwURAy7E76kWzCHMlCqn3g6XADOGbBFJDlWswqSgLGLYUC/rrfQJ1HY/q5oakmWoDKNtHc7VEfEz4xKwIF8yn3vhD99NWWW16z6loFZJOPgaQ6MhtaTDG43z4LQKczYkVnv/lA2dIEHMwWtl2+OtzeWIsYafqtlhz3eFxfi34EzR8S+S3bozY4otUkc0eLBd9XiwlStuLDqmkqke57PDdOgfUXBOgeWh8ty7woU43yeWHPRkIJXbS6xD9ND2jzB4Y0FR00Ml1CaFmOW0gddIMU0ClRyzZsLin2ZSyKOco3SPDyH39iOepEuWaG+TSp3YNzL2jFE2+MZ94/cGvPO9elEz3mTSQobrBjH7LHSF3hE6qpWlPLMcMk2snBmwz6gmoQ/wVIG2KVA/hpehHdlQR31l9cTD/YBP3aMY6juXSU+smq+6Li71/FruuPB1iz8DnHJS3zrdeH8QnxPyzJYobwdvpCQ==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADaQRjRgh1PoQvbwqLYHNiC8rnYrViLr0h86pavGNjo1pifOnEHNDHSpzeI7EMvtR3IZ0tp9Pej6NR+oaTjq1cY6tJY
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : MontantGlivreCT
+       identifier : 0x403dffab558332c9
+       internal_properties : CQAAAAkAAADI3B8xvVC55UFOmFN6go5bVtlPyRvJl/++m6+qz7Yb7j+Fgqh4WGZjQ8zcRr2FLPkkJ6Vo3rNJNsBn6seZvWhBevGU2TLitIdMmrF9Rk9TmUzhiY13B2Stcvs4lrPNOJuELEzZNJNP8Ah67MKJm+xueYDnLY5b8DhmmQ8Nzee2pjxLzAD7856Ue5lRXzQ4gJSxw6uuv78oasRpzVRP8yEuJ0AmKB6HKy5C5YHha/m9Qg==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAACQLCLgQPkYEJr3SaUkQp4n1q9LuPZgBImTsDgHiiGLp3tfWSje5OIyzc4FFAxX6Y+3Xe7K3zR2UKy4dBFerQR1Xk1Je/UXCxLJZt4fjCVMwIbgxIgUq7lCBRpAKG3uaZYfoUMEZhaRKH4FwURAy7E76kWzCHMlCqn3g6XADOGbBFJDlWswqSgLGLYUC/rrfQJ1HY/q5oakmWoDKNtHc7VEfEz4xKwIF8yn3vhD99NWWW16z6loFZJOPgaQ6MhtaTDG43z4LQKczYkVnv/lA2dIEHMwWtl2+OtzeWIsYafqtlhz3eFxfi34EzR8S+S3bozY4otUkc0eLBd9XiwlStuLDqmkqke57PDdOgfUXBOgeWh8ty7woU43yeWHPRkIJXbS6xD9ND2jzB4Y0FR00Ml1CaFmOW0gddIMU0ClRyzZsLin2ZSyKOco3SPDyH39iOepEuWaG+TSp3YNzL2jFE2+MZ94/cGvPO9elEz3mTSQobrBjH7LHSF3hE6qpWlPLMcMk2snBmwz6gmoQ/wVIG2KVA/hpehHdlQR31l9cTD/YBP3aMY6juXSU+smq+6Li71/FruuPB1iz8DnHJS3zrdeH8QnxPyzJYobwdvpCQ==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NoLigne
+       identifier : 0x40997f8c1ca002ae
+       internal_properties : CQAAAAkAAACk3LhydgAlpOmnUjIOZPxAG7UTvrK/SxL5nxN1T28Nw4t1VkI0sYBzWsWxkWlvsgKMu/Id5Y/aOuSeYN9CsUYqR9LCR65AIiDf29oHjqjd0BohPIpVP3KAmb5wnkhinBy5mWEeV2l33aNUkWcVjT8cEQsazt5TnI3cVw03+XOcxy1yueZjsPASVCzqCiSpcZw2MJPi+ayBxQtwNf3spvUvtNAlcqI/
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABSYq5QeTpcivL5w+yV2padFsZb6IAIF+q49oN9XWYRxYd5dDXOJtzoPO1SnKn6ZnLgGyNMb6anU/DOeXN3T/EDRsFj0hF+U7ARoZRD7/qFimxEL8Ct7eoEUHT5FMq79c7UtZsdrU5VkGsI0mESM9yfeOSteBzwIBIntUVYkOD0D2KNLegARIdPycFQXavRiRK2QPDiTt6DwYt1W0GFl6XvkHZJYSY9wZVVx+90ndxczQbcYzJqEdKVY4lTvaQ1gNEDxwBxSOS0Dl9t0GQ1I2rpPoYyc8L//VRzojCRTQiVjnfr/tE7AhNySbZG5xmmPtrGMZw1edrQNK+BuiL2X+uFMEZTAe0UunSxvntyAVQa546v/P9aIFpLjeFrPxoLa9TIxp34dPKpGPpoKDZ5mdFVEZ6Jfu39DfKs87CfbJWlsOD6AgkYyaOghavLcmpOhuPlOyA3I+EG705l3D+yh7cWoewP5NNkdm2IBpaHDKHmN5hERcc7ANUlVtaaywAeCN3iFFbaPiEjogGW6SyM+13iDOYUgOY69li19Y/pFLIYv+iTIdQrYnydOlUO+1B2bn/nIA7pDTJmrmlzggNovUXG3041tbQOSQ==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : GlNonTrouve
+       identifier : 0x403e024e50237eec
+       internal_properties : CQAAAAkAAAABScLzcolW0SXAYThF8tssPwVYzsCdHMbZlUUM0QjkK9DIsEAWhhiWiH/rgWNaa+L0Ct4kmIExlVF6g8QrnNRxDHNyZQAuHb4JCvLzt/uz10u3gCTW2MUGg6v8KPWZObcYu/8qmwV7+3S2mRLJronNbxsAMUyzAfVUAfxazcVmeeMMoDzQMs+ZMi1Yfz73N4Yp/nrORr/4hb/rnlYjF0HcWjSMew==
+       type : 5
+       content :
+        internal_properties : CQAAAAkAAAAH97AOHNjVn0T0gCb8dGSfs5HNjX0JP3UcUblA4tukxj5sQB2lwjMtppayEEGmhFyyiPU8tLLdAtwA8RkgiHa7TJgPilWmnlR0Vp2pE4kssxvR++p5VzsZ5oRW3QYyk4PSRvsxzM/cvwAKLsg8evX3HbiXa/d2iLR4DX4ZM7riQAAVcF4wqCKRoTBztfzj/86L2EJ1bjNH5s3RRFglc3p46DZUjSs9HVzh/YPcCsNPzX7GAoDXu81drnu09pCuuOsCYHvRZWy9KKcyqytPbTcyJvv39hP7DSoQ7p7pVmuvMLP/NI2I2Xm7yroeN6pL8b2HmA7PTDrDphoq/LFhuZ9dgz32SkyIr8Covw7t4Co+ZnZN+5BmC7vXzA1f9U/HjZ3EP5ZUjP2LWxQDy4kChLAD39d6IGb53SU9nZrWL5qTDjBdHuxSahL8J812MHUkvY/bxBH2+DixXAWIJk78GbTvPHv4O1M/RPBxWzhdtmuzsO3E3/4QaHCY5BbDd0nXT7M9hEHIwfSwnNr5YGCU
+        properties : {}
+        options :
+         -
+           internal_properties : CQAAAAkAAADZvWx7N04Ani6QsNIAD7/3Hg/t7SCF2bx2IaVjkjXz3Ke1ob84s1r5eL5hgzRFaLoEGE/s4cUC
+        type : 5
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 5
+        p_codes : []
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        code : |1-
+          
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1+
+         si Table_DetailCompta = 1 alors
+         	table_detailcompta.NoGlivre[1]..etat = inactif
+         	table_detailcompta.NoGlivre[1]..couleurfond = inoir
+         
+         sinon
+         	table_detailcompta.NoGlivre[1]..etat = actif
+         	table_detailcompta.NoGlivre[1]..couleurfond = idefaut
+         FIN
+         
+        type : 19
+      -
+        code : |1-
+         si GlNonTrouve[Table_DetailCompta] alors
+         	desc[Table_DetailCompta]..Couleur = irougeclair
+         FIN
+        type : 21
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 340
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : Btn_Sortie
+    identifier : 0x403dfc2c4e018757
+    internal_properties : CQAAAAkAAACnOYxEEP0FNPcG9fyzZcMCgGItxgvnkFQuQ2pqVhycqhXn5WmezNzuDeByXaCKBHCLQF1MMIyBKFGaTrsA3cRrPgp6QrNFa6DrdRwjN+MW4n0/emRx3HgbDQBwRfxIipf5bXkkWEKZh1JnjMIIppE2EP7Ez6iKTjOcez1HdaM49mxLzExecf6M4LdcqK7wZdhyjyGxpy9in/8H9TWFAI8fE1jkbrBN/6BXzbHQsZ8ZYj1XBxfEVoGqXIPgwWVpUb2RwVW3UghK7uVzu7YwvBbKSPPlQNHyRBbYZ9a8fBfSHtMYNBGfeps7B4uozQG7M1BD730ucnqKOBA++JvXK2bw1qw6M85numutjs1Lj9jaHqfJWTPWLvYy0/yGJB6ORrlw6m07nJbZKlSeTkzmCvk7rbIwgRKCiu7UGjUa/JASR0HCMKe6+1YTO5l5HduiBEclbscwC4+9akARbHOfN2EaHyh4H06R+4cm+55RmnZDjs/ltHGqz9L3IboPKzXXvSFFY7CS6pABnArrTTkg1Gv0osIy3ton5rzX9Ox4sa8w4N8VdZgvjRAQlGSUtHU2ZK/0grHWO6UIHDtAKgsRFOHowZiph/7BZT64kT0mB0GSlUUT+0J7dTGbIMUQGJLMLvcgnXygb8d5mL0/EpLoeo6k6UlElHqZthA34XLW11psGH7DkIUJseylTqhxlBdUvimgruFu1NYvj1jaAN4905wNuzjg6of5Og==
+    properties :
+     x : 10
+     y : 6
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé1
+    identifier : 0x403e03ca2d9d493f
+    internal_properties : CQAAAAkAAAAnYrdZFUwE0rFp4CdXieRoarRh+TuCziB1HxXWCDoa62U9fe5V8KG8UwFhBeUmvrCsY5bdpsC8lo8PgNKbb6pRim+rFFJLzMiikO+U+/VSogF+CjeebR3q+Lk4gB6eOHvkCf9WwxbnzSL2jSlSoxV3Kwe646RVg/GuzPhVq3Ec3VRVB22tHeT889Kne43Vfg4Ln6ENa7xDF1kyHe2x4Hjdlqk+BnLFKyldnPc60rIy07daIwnhEzqx4jbdoj5qEgiL9gUL/Z4b3j28sSHOyY5o/CbeXXuL00rDN4JfqmP50d2VQZ0XFIkrXCtGg21sILA3UwBlfuMsbG6yxT8xf1PpVNFALiS+73JGkD8rtSwSNbBiKGtUJxNqA40FRLA=
+    properties :
+     x : 86
+     y : 35
+     width : 549
+     height : 29
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Btn_Ok
+    identifier : 0x40997ecc69061304
+    internal_properties : CQAAAAkAAACOC2WAryA/jabHELt2RKD4qVkvGiOxAlISC3ks5J4nGH/tPq4k2GsUufavHrtfalvdGTSPfu1Apw51lkCcaeWihGgjUlI80xpqAVFAo8xS+yPJMfPmaRbG/dtquxZr4XDbP8HGHeoEbDLR+GNpuc8hw1mP8fDS1d79oyWc8p+7bW1bpVTgHrTMSjDzpNlZ3oB6sqndfuxLGP+M8LK7hYBs7XM+npcZ+EWSrd9LcoDDyPjJggHoMRntuRmZzLVJzqRJmnPPnSWqXLtx72AD8DPW4j6tRTmdan4N5wEn4Nc67pxXVrrIbZ45RysxEf+MvF3jLYcBrghrGc71pyz1eckIPCkRgCqZUo+sO9/LambKxwBpZcUjoy0erxP2795XOcNDGL1zhQtw2KZbnFmshaL3MHSgFWVtO5AK54szdsXNGVB4wPN7VKeRxSx73unFp2+szA/GJAhGJhwuwEDVGtJqrFSiF2dSxH3IcFI+JgmCBKqXJE0rNBEjPZf9Oi9m5lW2odTWuRNg0N5YS+pu7fDSqfhWTpVK48KZPTyj30LptpS7IWQ4FpsMMKOkoSlbB70NGBmkXrABPmkF5F8rPQIfflzZ8KcFgpC+4RZ91flcxrn42GSH6JZkd71CVJxW84vlnTTQqDTgNAsUBoh0/+dmDdClitVeV+7dIhylBthIHx3i/4bFK3XpknH7mPiE0XDC9bLPmMuLFBqGtyuvr40mOu5jVA==
+    properties :
+     x : 77
+     y : 9
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         i est un entier
+         SI PAS BALANCEFACTURE() ALORS
+         	acso_message("Erreur","Transaction hors balance","Erreur")
+         	RENVOYER VRAI
+         FIN
+         pour i = 1 a tableoccurrence(Table_DetailCompta)
+         
+         	si hlitrecherche(RequeteDetailCompta,RequeteDetailCompta.noLigne,Table_DetailCompta.NoLigne[i]) alors
+         		RequeteDetailCompta.NoGlivre = Table_DetailCompta.NoGlivre[i]
+         		selon typededoc 
+         			cas 1
+         				si i = 1 alors
+         					RequeteDetailCompta.MontantGlivre = Table_DetailCompta.MontantGlivredT[i] * -1
+         				sinon	
+         					RequeteDetailCompta.MontantGlivre = Table_DetailCompta.MontantGlivreCT[i]
+         				fin
+         
+         			cas 2
+         				si i = 1 alors
+         					RequeteDetailCompta.MontantGlivre = Table_DetailCompta.MontantGlivrecT[i] 
+         				sinon	
+         					RequeteDetailCompta.MontantGlivre = Table_DetailCompta.MontantGlivredT[i] * -1
+         				fin
+         
+         		FIN
+         		hmodifie(RequeteDetailCompta,hNumEnrEnCours)
+         	sinon
+         		//    	DetailCompta.
+         		DETAILCOMPTA.EstTaxe = FAUX
+         		DetailCompta.numeroBL = NOBL
+         		DETAILCOMPTA.NoGlivre = Table_DetailCompta.NoGlivre[i]
+         		selon typededoc
+         			cas 1
+         				DetailCompta.MontantGlivre = Table_DetailCompta.MontantGlivreCT[i]
+         			cas 2
+         				DetailCompta.MontantGlivre = Table_DetailCompta.MontantGlivreCT[i] * -1
+         		fin
+         		DetailCompta.noLigne = trouveDernierNoLigne()
+         		hajoute(detailcompta)
+         		//		info("ligne non trouvé")
+         	fin
+         fin
+         si csddate..Modifié alors
+         	si hlitrecherche(BonLivraison,Bfacture,saisie1) alors
+         		BonLivraison.BDateFacture = csddate
+         		HModifie(BonLivraison,hNumEnrEnCours)
+         		reimpression.Table_Facture.fdate[reimpression.Table_Facture] = csddate
+         	fin
+         FIN
+         
+         
+         
+         
+         si saisie1..Modifié alors
+         	si hlitrecherche(BonLivraison,Bfacture,saisie1) alors
+         		acso_message("Info","Ce numéro de facture existe déjà","Info")
+         		saisie1 = anciennumero
+         		reprisesaisie(saisie1)
+         	sinon
+         		si hlitrecherche(BonLivraison,Bfacture,anciennumero) alors
+         			si acso_message("Question","Changement du numéro de facture "+anciennumero+ " vers " + saisie1,"OuiNon") = Idyes alors
+         				BonLivraison.Bfacture = saisie1
+         				hmodifie(BonLivraison,hnumenrencours)
+         		FIN
+         	FIN
+         fin
+         
+         FIN
+         ferme(FdetailCompta)
+         //ExécuteTraitement(FdetailCompta,trtInit)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Saisie1
+    identifier : 0x41c09c43084df940
+    internal_properties : CQAAAAkAAABHUooIQ7uPUaWURRlvj5IoDvsy6yCJz1w6j899omIO/geBpQmZdPcZI+GbKp9c4cNeKHjsUWt2islqsnf0gn8D/MF7hix67j6HWSOx8SUd6w92j/VD15Vp+RWP7EuRl4gUwPOlVOeKWAN3K9f/84A1ayHX2ky22EiU7XfUjo/Rcz0ycHAj7I2kbbzaqPQlOwICvt0876oFUZdFbDt1jY5HaWi0vg60NdqT3NiSoyadjSsPurq7q4fSgNzKzw2zj+/Uy6/15X5trpzy5wl36PTv7SBAxPHPEBbRYilz9rNP6oW64+jfecuxyVMb10rrUd603n4saNASd3ZJZxxo9UQ3IVVnS7IfeqvJvgsSfwZ57B+RJr6F80ZvVp1S/Ub39zdBJnRbbYczsOuVVNMffhCiXdTrj2N/fmrxIYU30BiKxqdON3dzNWafl0DEvjyCgszz3t7PRqXcr2kuYHqAUnl7qVL1Gqtv5+p1tSlbEO8bo0gFpEA6AxuLi/wYe+YfITN2LYRj09D36luWIAN+vsYXzrr3bsxjgjbI/35bIfBDbcfsZmhl9EsYR5jM4SqgabLy8di1I2GvPDIoeuV5Np4/Z2Bz7hmtENaXDGlqeNZtIwh8bbtFQGc5xYLWdZwZhj4j13vUlpA1NjPQkanRfT+9b2r/XpQTCPARnk2SBgQNvrTK0YSwmPBLQvjQEVX3GRnRW6tEqQXj1Xo4n0v6Tk1NOtzDLKyKKLe1yjnQLA6AymsRVMWW26fscDcCOq/vDZLvA6gwoQ51BcOANgFJHWRGBaFIOw==
+    properties :
+     x : 497
+     y : 80
+     width : 150
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : BtnDoubleClic
+    identifier : 0x428f6e4b3ff0a1d1
+    internal_properties : CQAAAAkAAABHlb8JMs39WjLOz2HQKPg+OHvevpRFe2LYLrNdqbAKGr+rpSO5zrLL0/gJxFIYArFkWTvm8VwU4wiSO+Cd30xcgF1qXam52+hnq9RwEKHW3amXofxIGlJPYwM3q4OyhwyIqdPYMjPdndcksBzieHFP07d4yivbegkxR2chr9mJQBCMlWLMR+wJEn1NCLHEQ7iQPvNKrMMVHrStW/SirFTa+jp//4Tmf3gFy0zyCFMK5j4BnVlGneq3GCxxeP/0P9R4rhejDXq2CC4sUmlbuEER6dGZ0hmS5jhTEcV5TeDd50GYt0jWTE86GrVeuo74B9NmW91dAPSTr7PGp+yR8sOcBDXqvbskmM/klmXcWSPgqpjFcUc0MOeA25FYj+aNe90U9tACK9w2/CPVDVFrV9nTsSpVMMafL8gDjoG0Vpa/qrLIE1a2a3jWV/3Fl2ORck6TGp/eDZ3GY1Z2gsxcnUi3zpSp9ac1yXZwivGaO10fpdmiPNTXvK7xo/Lw2K4XoFy8g0Tj5vMLP89qljv1/5VJsQLKS0tpR4woNmd5y8SLDP1ck8S6tgMHMKKahOatbpLwMJtAf6M9fp7aXggnFiXohxAtzmEYkrMb8dl/UX9D7qmZ/d8JhMwEkrof8greuVvKLebdlp0upSg3aqwwdxBPSybHHD7zyvtAlMMYoMBhmLU3qrI4iCYxoc0KkI3e0kF4MUfSUGPJVvaMSlsaIpOymanmR+SgQPKrX1YkT3S+EMbeOYub9hdFSpvSmDw=
+    properties :
+     x : 774
+     y : 111
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         x est un entier
+         y est un entier
+         // sélection sur la table TABLE1
+         x = PoidsFaible(CurseurPos())
+         y = PoidsFort(CurseurPos())
+         info(TableInfoXY(Table_DetailCompta,tiNumColonne+tiOrigineEcran,x,y))
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : csddate
+    identifier : 0x49cbe2452dbdffd7
+    internal_properties : CQAAAAkAAAAFbYXcngW58VbtbbQ1nRuIVCqfrmLfe95I9xeEUWpGTJjlhbh3pgm4zh8KcDJ8vfbFZnV/2GfYQBIwiT0nKlVyu8vLJC7PC7kNz8UmaOp/83J5wQxNWXFjXrOGHkY+xzfWWLwnYlWSkIaZXJV2aH/dgc8ovBnReTNbLU55bdSMUYq50zopom+rpY3lL8aFM8e2VFpyU8HdP8WvCLmB/NL9HY04MJB/fikA2x+oDR/eVQ1+Xf4qPQhNHsmEJn8UTK8MMFFa2g5CwzYCmCY7LoI85gmrlIyJsu5wUKLPGEIxwDXRNQk40TXTX2KrX/VxTw7dqSJY28SfTJA2c86tZFlu8y8rCS92mc3/0TcOCZtFEBkuI9YHLXMTaYiJEmL09V1qFAVMFh1rFjDx18VPuq3l7/FU3XguGEB7YGV5YkR3myoLZjHi/rh+eJNkufHGIM3oNDolYoFEvQYQD0DGf0uaEv5ze9OA8OOYlbyKdW47kiDelh3ZT/7jsJ2fr2MbcxjuNsDuJ3eYHLkYuwNs41v7O7uhi19LetegKnSCFTYZSmutsPdacC084V0wROqHP4eO9RlOHX9SKR92zJBi4fuuDM/PTmpL79IFA2l5ZDFTcc1drgsKENURPGADNbrIE3TaBqdSnV4659sKEeCTzP1fIu1bKqb5qFLFZXJLphaKTntJoe7jwVZMOjg1rO7rrXHFHIdbx7vMl8QGcy8CLMLk/OfrHIdVnsqphC0n9cvdxgEmEP1EzP7AllQG1kfBqno2Sr95HLPQjuwHpFZ7aCHdDK2aUTzs8BQ0TfKsMPxcClHRdMIoSYqJdOHTNdVUkMdMlaR3BgGMQgCflzqIIkubkADZvaFfehzzJ6kxljHrLVf9jQWp+X4=
+    properties :
+     x : 497
+     y : 54
+     width : 150
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x403df49b4140fc83
+  internal_properties : CQAAAAkAAABMXkxEbzZR8ywuNMY26/HjMmoN8kdj2fbHzCz3GebxITncDL58I5eqWvKGjgdfMI535UULbY8Mc31KeWMShPgB7NOqerxvk8jSNrSdgsD0n366lrKtntDq7sGN8DHUooW/7x7T4Vl11tQGI5UG+q7QcczsaLch1IZbbjtFLyNHbefFH6727u2LKti/a9o9YBEyHvTZvfd5hKB5Gt4A7N7gaey9p4DFH5SstJlMgqjTih4llKvwS3rg9pf8PuF5xUFbqOdTyGooUVTyaOa2YdNUVYGqMIw8ZaQ=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAAgEGb1tUo4GfLrB30B56s9au7KA66e//OxqsBmqNzlHLc46ygvd4mr+GZcnjn6HajgS92SYBmdWpVa7XqQR0dq/jgjN1faWQHbirE1EXNO9TThs7luVHwRKFt8Zw==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      	fonction fdetailcompta(NoBl,NoFact,typededoc = 2,ldatefac="")
+      	anciennumero est un entier = nofact
+      	
+      
+      
+      
+      
+   -
+     code : |1+
+      
+      descglivre est une chaine
+      montantDT est un reel
+      montantCT est un reel
+      chaineaverifier est une chaine
+      glnontrouve est un booleen
+      IndiceCombo est un entier
+      tablesupprimetout(Table_DetailCompta)
+      listeajoute(Table_DetailCompta.Point,gimage("aide3-5.bmp"))
+      
+      selon typededoc
+      cas 1	
+      libelle1 = "Affectation comptable pour la facture "+NoFact
+      cas 2
+      	libelle1 = "Affectation comptable pour le crédit "+NoFact
+      fin
+      saisie1 = nofact	
+      csddate=ldatefac
+      
+      //hexecuterequete(RequeteDetailCompta,hRequêteDéfaut,nobl)
+      hexecuterequete(RequeteDetailCompta,hModifieFichier,nobl)
+      hlitpremier(requeteDétailcompta)
+      
+      tantque pas hendehors(requeteDétailcompta)
+          glnontrouve = faux
+      	si RequeteDetailCompta.noLigne = 1 alors
+      		descglivre = "Comptes à recevoir"
+      		IndiceCombo = 0
+      	sinon
+      		chaineaverifier = ACGL_FicheExiste(RequeteDetailCompta.NoGlivre)
+      		descglivre = extraitchaine(chaineaverifier,2,","	)
+      		IndiceCombo = 1
+      		si extraitchaine(chaineaverifier,1,","	) = "0" alors
+      			glnontrouve = vrai
+      		FIN
+      	FIN
+      	selon typededoc
+      		cas 1
+      			si RequeteDetailCompta.noLigne = 1 alors
+      				montantDT = RequeteDetailCompta.MontantGlivre * -1
+      				montantCT = 0
+      			sinon
+      				montantDT = 0
+      				montantCT = RequeteDetailCompta.MontantGlivre
+      			fin
+      
+      
+      			tableajouteligne(Table_DetailCompta,RequeteDetailCompta.NoGlivre,IndiceCombo,descglivre,montantDT,montantCT,...
+      			RequeteDetailCompta.noLigne,glnontrouve)
+      		
+      		
+      		cas 2		
+      			si RequeteDetailCompta.noLigne = 1 alors
+      				montantCT = RequeteDetailCompta.MontantGlivre 
+      				montantDT = 0
+      			sinon
+      				montantCT = 0
+      				montantDT = RequeteDetailCompta.MontantGlivre * -1
+      			fin
+      
+      			tableajouteligne(Table_DetailCompta,RequeteDetailCompta.NoGlivre,IndiceCombo,descglivre,montantDT,montantCT,...
+      			RequeteDetailCompta.noLigne,glnontrouve)
+      
+      	FIN
+      	hlitsuivant(RequeteDetailCompta)
+      fin
+      
+      tableaffiche(Table_DetailCompta)
+      reprisesaisie(Table_DetailCompta)
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : BalanceFacture
+     procedure_id : 4888890062849667904
+     type_code : 14
+     code : |1+
+      Procédure BalanceFacture()
+      
+      i est un entier
+      total est un reel = 0
+      pour i = 1 a tableoccurrence(Table_DetailCompta)
+      	total+=(Table_DetailCompta.MontantGlivreCT[i]-Table_DetailCompta.MontantGlivreDT[i])
+      
+      FIN
+      
+      SI total = 0 ALORS
+      	RENVOYER VRAI
+      SINON
+      	RENVOYER FAUX	
+      FIN
+     type : 458752
+   -
+     name : Trouvederniernoligne
+     procedure_id : 4888907930674524019
+     type_code : 14
+     code : |1+
+      Procédure Trouvederniernoligne()
+       hlitdernier(RequeteDetailCompta,RequeteDetailCompta.noLigne)
+       
+      renvoyer RequeteDetailCompta.noLigne+1
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x403df409261abf94
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

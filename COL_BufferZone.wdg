@@ -1,0 +1,519 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_BufferZone
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1988a22f4b31552b
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      stBackOrder est une Structure
+      	OrderNumber			est une chaîne
+      	ProductNumber		est une chaîne
+      	ProductDescription	est une chaîne
+      	QtybackOrder		est un entier
+      	BackOrderreason		est une chaîne	
+      FIN
+      
+      STMissingThermos est une structure
+      	nOrderNumber		est un entier
+      	nOrderLine			est un entier
+      	sCustomername		est une chaîne
+      	sDimension			est une chaîne
+      	sBatchNumber		est une chaîne
+      	sRackNumber			est une chaîne
+      	sSlotNumber			est une chaine
+      	nQuantityMissing	est un entier
+      	sProductNumber est une chaine
+      	sProductdescription est une chaine
+      	nTruckNumber est un entier
+      	bIsGrid est un booleen
+      	bIsForm est un booleen
+      	
+      FIN
+     type : 720896
+  procedures :
+   -
+     name : PrintBatchShippingBills
+     procedure_id : 1839900094639507125
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //PrintBatchShippingBills (<tabCustomerOrderToPrint> est tableau (cCustomerOrderToPrint) [, <nShippingNumber> est entier])
+      //
+      // Paramètres :
+      //	tabCustomerOrderToPrint (tableau (cCustomerOrderToPrint)) : <indiquez ici le rôle de clOrderToPrint>
+      //	nShippingNumber (entier - valeur par défaut=0) : <indiquez ici le rôle de nShippingNumber>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure PrintBatchShippingBills(tabCustomerOrderToPrint est un tableau de cCustomerordertoprint,nShippingNumber est un entier=0,nCurrentSeasonID est un entier= 0)
+      
+      taOrderToSendByMail		est un tableau associatif de cOrderToSendByMail
+      
+      
+      nLnocomm				est un entier
+      nLnoligne				est un entier
+      nLNoRec					est un entier
+      nShippingBillNumber		est un entier sur 8 octets
+      
+      sPrintFileName			est une chaîne
+      
+      sPrintFolder			est une chaine	= "c:\temp\ZoneTampon"
+      si pas fRépertoireExiste(sPrintFolder) alors
+      	fRepCrée(sPrintFolder)
+      FIN
+      sPrintFolder = ComplèteRep(sPrintFolder)
+      
+      pour chaque clCustomerOrderToPrint de tabCustomerOrderToPrint
+      	clCustomerOrderToPrint.GetCustomerInfo()
+      	clCustomerOrderToPrint.m_clShippingdetail.GetShippingInfo(clCustomerOrderToPrint.m_nShippingCustomerID,clCustomerOrderToPrint.m_clCustomerInfo.m_numero)
+      	//	clCustomerOrderToPrint.m_clCustomerInfo.m_bPrintGroupShippingBill = vrai
+      	
+      	si clCustomerOrderToPrint.m_clCustomerInfo.m_bPrintGroupShippingBill alors
+      		si nShippingNumber <> 0 alors
+      			nShippingBillNumber								= nShippingNumber
+      			clCustomerOrderToPrint.m_nShippingBillNumber	= nShippingBillNumber
+      		sinon	
+      			BOUCLE
+      				nShippingBillNumber								= GetNextShippingBillNumber()
+      				clCustomerOrderToPrint.m_nShippingBillNumber	= nShippingBillNumber
+      				SI nShippingBillNumber = 0 ALORS 
+      					SI ACSO_message("Question","Impossible d'assigner un numéro de Bon de livraison"+RC+"Essayer de nouveau","OuiNon")=IDNO ALORS 
+      						GOTO SortieSurErreur
+      					FIN
+      				SINON
+      					SORTIR
+      				FIN
+      			FIN
+      		FIN
+      		
+      		
+      		clCustomerOrderToPrint.UpdateOrder()
+      		
+      		HRAZ(BonLivraison)
+      		
+      		BonLivraison.Bclient			= clCustomerOrderToPrint.m_clCustomerInfo.m_numero
+      		BonLivraison.Bdate				= datesys()
+      		BonLivraison.Bnumero			= clCustomerOrderToPrint.m_nShippingBillNumber
+      		BonLivraison.BCommandeClient	= ""
+      		BonLivraison.BnoCommande		= 0
+      		BonLivraison.BStotal			= 0
+      		BonLivraison.BTVH				= clCustomerOrderToPrint.m_moTPS
+      		BonLivraison.bTauxTvh			= clCustomerOrderToPrint.m_moTPS
+      		BonLivraison.btauxtvq			= clCustomerOrderToPrint.m_moTVQ
+      		BonLivraison.bTauxTaxe1			= clCustomerOrderToPrint.m_moTPS
+      		BonLivraison.bTauxtaxe2			= clCustomerOrderToPrint.m_moTVQ
+      		BonLivraison.brien				= "1"
+      		BonLivraison.cvendeur			= clCustomerOrderToPrint.m_nSellerID
+      		HAjoute(BonLivraison)
+      		
+      		HExécuteRequête(ReqGroupShippingBill,hRequêteDéfaut,bonlivraison.bnumero)
+      		//		iapercu()
+      		//        EGroupShippingBill.NbCopie = gclConfig.m_nNbcopieBlivraison
+      		
+      		iConfigure(SansEspace(imprimantebon),Vrai)
+      		
+      		iParamètre("DEFAUT=NON")
+      		//			iParamètre("COPIES="+lnbcopieBlivraison)
+      		iParamètre("QUALITE=HAUTE")		//		sPrintFileName =sPrintFolder+nShippingBillNumber+".pdf"
+      		//		si fFichierExiste(sPrintFileName) alors
+      		//			fSupprime(sPrintFileName)	
+      		//		FIN
+      		//		iDestination(iPDFGénérique,sPrintFileName)
+      		pour i = 1 _a_ gclConfig.m_nNbcopieBlivraison
+      			iEnchaînementAjoute(EGroupShippingBill)
+      			//iimprimeetat(EGroupShippingBill)
+      		fin
+      		iEnchaînementImprime()
+      		si clCustomerOrderToPrint.m_clCustomerInfo.m_tabccourrielBonLivraison..occurrence > 0 alors
+      
+      			taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_tabEmailAddress = clCustomerOrderToPrint.m_clCustomerInfo.m_tabccourrielBonLivraison
+      			taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_tabShippingBillToSend.ajoute(clCustomerOrderToPrint.m_nShippingBillNumber)
+      			taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_nLanguage = clCustomerOrderToPrint.m_clCustomerInfo.m_CLangue
+      			taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_sCustomerNumber = clCustomerOrderToPrint.m_clCustomerInfo.m_numero
+      			
+      		FIN
+      		
+      		
+      		
+      		
+      		//		iImprimeEtat(EGroupShippingBillMultiple,gclConfig.m_nNbcopieBlivraison)
+      		// Imprime un bon de livraison regroupé
+      	SINON	
+      		// imprime bon de livraison individuel
+      		Pour chaque orderDetail de clCustomerOrderToPrint.m_tabOrder
+      			SI nShippingNumber <> 0 ALORS
+      				nShippingBillNumber								= nShippingNumber
+      				clCustomerOrderToPrint.m_nShippingBillNumber	= nShippingBillNumber
+      			SINON	
+      				BOUCLE
+      					nShippingBillNumber								= GetNextShippingBillNumber()
+      					clCustomerOrderToPrint.m_nShippingBillNumber	= nShippingBillNumber
+      					SI nShippingBillNumber = 0 ALORS 
+      						SI ACSO_message("Question","Impossible d'assigner un numéro de Bon de livraison"+RC+"Essayer de nouveau","OuiNon")=IDNO ALORS 
+      							GOTO SortieSurErreur
+      						FIN
+      					SINON
+      						SORTIR
+      					FIN
+      				FIN
+      			FIN
+      			
+      			
+      			clCustomerOrderToPrint.UpdateOrder(orderDetail)
+      			
+      			HRAZ(BonLivraison)
+      			
+      			BonLivraison.Bclient			= clCustomerOrderToPrint.m_clCustomerInfo.m_numero
+      			BonLivraison.Bdate				= DateSys()
+      			BonLivraison.Bnumero			= clCustomerOrderToPrint.m_nShippingBillNumber
+      			BonLivraison.BCommandeClient	= ""
+      			BonLivraison.BnoCommande		= 0
+      			BonLivraison.BStotal			= 0
+      			BonLivraison.BTVH				= clCustomerOrderToPrint.m_moTPS
+      			BonLivraison.bTauxTvh			= clCustomerOrderToPrint.m_moTPS
+      			BonLivraison.btauxtvq			= clCustomerOrderToPrint.m_moTVQ
+      			BonLivraison.bTauxTaxe1			= clCustomerOrderToPrint.m_moTPS
+      			BonLivraison.bTauxTaxe2			= clCustomerOrderToPrint.m_moTVQ
+      			BonLivraison.brien				= "1"
+      			BonLivraison.cvendeur			= clCustomerOrderToPrint.m_nSellerID
+      			HAjoute(BonLivraison)
+      			
+      			HExécuteRequête(ReqGroupShippingBill,hRequêteDéfaut,BonLivraison.Bnumero)
+      			//			iAperçu()
+      			//			EGroupShippingBill.NbCopie = gclConfig.m_nNbcopieBlivraison
+      			//			sPrintFileName =sPrintFolder+nShippingBillNumber+".pdf"
+      			//			SI fFichierExiste(sPrintFileName) ALORS
+      			//				fSupprime(sPrintFileName)	
+      			//			FIN
+      			//			iDestination(iPDFGénérique,sPrintFileName)
+      			iConfigure(SansEspace(imprimantebon),Vrai)
+      			iParamètre("DEFAUT=NON")
+      			//			iParamètre("COPIES="+lnbcopieBlivraison)
+      			iParamètre("QUALITE=HAUTE")
+      			
+      			pour i = 1 _a_ gclConfig.m_nNbcopieBlivraison
+      				iEnchaînementAjoute(EGroupShippingBill)
+      				
+      				//				iImprimeEtat(EGroupShippingBill)
+      			fin
+      			iEnchaînementImprime()		
+      			SI clCustomerOrderToPrint.m_clCustomerInfo.m_tabccourrielBonLivraison..Occurrence > 0 ALORS
+      				
+      				taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_tabEmailAddress = clCustomerOrderToPrint.m_clCustomerInfo.m_tabccourrielBonLivraison
+      				taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_tabShippingBillToSend.Ajoute(clCustomerOrderToPrint.m_nShippingBillNumber)
+      				taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_nLanguage		= clCustomerOrderToPrint.m_clCustomerInfo.m_CLangue
+      				taOrderToSendByMail[clCustomerOrderToPrint.m_clCustomerInfo.m_numero].m_sCustomerNumber	= clCustomerOrderToPrint.m_clCustomerInfo.m_numero
+      			FIN
+      		FIN
+      		
+      	FIN
+      	
+      	
+      FIN
+      
+      
+      
+      	tabListeFichier est un tableau de chaînes
+      	
+      pour chaque clShippingBill,sCle de taOrderToSendByMail
+      	tabListeFichier.SupprimeTout()
+          message("Préparation de fichier PDF pour envoi par courriel pour le client "+ clShippingBill.m_scustomernumber )
+      	pour chaque nShippingBillNumberToMail de clShippingBill.m_tabShippingBillToSend
+      		HExécuteRequête(ReqGroupShippingBill,hRequêteDéfaut,nShippingBillNumberToMail)
+      		iFenêtreAbandon(Faux)
+      		iDestination(iPDFGénérique,ComplèteRep(repdonnees)+"PDF\"+SansEspace(sCle)+"\BonLivraison\BdeL"+nShippingBillNumberToMail+".pdf")
+      		iImprimeEtat(EGroupShippingBill,1)
+      		tabListeFichier.ajoute(ComplèteRep(repdonnees)+"PDF\"+SansEspace(sCle)+"\BonLivraison\BdeL"+nShippingBillNumberToMail+".pdf" )
+      	FIN
+          sendmail(clShippingBill.m_tabEmailAddress,tabListeFichier,sansespace(gclconfig.m_sEmailBonLivraison),clShippingBill.m_nLanguage,clShippingBill.m_sCustomerNumber)
+          	
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      SortieSurErreur:
+      
+      
+      
+     type : 458752
+   -
+     name : SendMail
+     procedure_id : 1894087927136894563
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] SendMail (<tabRecipient> est tableau (chaîne), <tabFileList> est tableau (chaîne), <sSender> est chaîne [, <nLanguage> est entier [, <sCustomerNumber> est chaîne]])
+      //
+      // Paramètres :
+      //	tabRecipient (tableau (chaîne ANSI)) : <indiquez ici le rôle de tabRecipient>
+      //	tabFileList (tableau (chaîne ANSI)) : <indiquez ici le rôle de sFileList>
+      //	sSender (chaîne ANSI) : <indiquez ici le rôle de sSender>
+      //	nLanguage (entier - valeur par défaut=1) : <indiquez ici le rôle de sLanguage>
+      //	sCustomerNumber (chaîne ANSI - valeur par défaut="") : <indiquez ici le rôle de sCustomerNumber>
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure SendMail(tabRecipient est un tableau de chaine,tabFileList est un tableau de chaine,sSender est une chaine,nLanguage est une entier = 1,sCustomerNumber est une chaine="")
+      EmailAenvoyer		est un Email
+      EmailFichierAttache	est un emailAttache
+      sSubject est une chaîne
+      sMessage est une chaîne
+      
+      
+      
+      
+      
+      SI nLanguage = 1 ALORS
+      	sSubject		= SansEspace(gclConfig.m_tabSujetFrancais[2]) //+" "+bonlivraison.Bnumero
+      	sMessage	= gclConfig.m_tabTexteFrancais[2]
+      SINON
+      	sSubject		= SansEspace(gclConfig.m_tabSujetAnglais[2])//+" "+bonlivraison.Bnumero
+      	sMessage	= gclConfig.m_tabTexteAnglais[2]
+      FIN	
+      
+      SI  enModeTest() ALORS
+      	
+      
+      	MailSession est un EmailSessionSMTP
+      	MailSession..AdresseServeur	= "smtp.gmail.com"
+      	MailSession..Nom			= "jeanhamelin2007@gmail.com"
+      	//	MailSession..MotDePasse = "1511Caro"
+      	MailSession..MotDePasse		= "xioxrnrcizldmyuc"
+      	
+      	MailSession..Port			= 587
+      	//	MailSession..AdresseServeur = "smtp.videotron.ca"
+      	//	MailSession..Nom = "vlkhbnel"
+      	//	MailSession..MotDePasse = "pl4nisof"
+      	//	MailSession..Port = 465
+      	
+      	MailSession..Option			= emailOptionSécuriséTLS
+      	EmailChangeTimeOut(5)
+      	
+      	
+      	SI PAS EmailOuvreSession(MailSession) = Vrai ALORS
+      
+      		
+      		RENVOYER Faux
+      		
+      	SINON
+      		
+      		
+      		///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      		// Nouveau Code
+      		// ////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+      		
+      		POUR chaque sRecipient de tabRecipient
+      			Ajoute(EmailAenvoyer..Destinataire, sRecipient)
+      			//			EmailAenvoyer.Destinataire[i] = ExtraitChaîne(SAIS_DEST,i,";")
+      		FIN
+      
+      
+      		
+      		EmailAenvoyer.Sujet			= sSubject
+      		EmailAenvoyer.Message		= sMessage
+      		EmailAenvoyer.Expediteur	= sSender
+      		
+      		
+      		
+      		//	EmailAenvoyer.NbAttache = nbAttache
+      		POUR chaque FileToSend de tabFileList
+      			//		EmailAenvoyer.Attache[i] = ExtraitChaîne(lfichieraenvoyer,i,";")
+      			EmailFichierAttache..Nom			= fExtraitChemin(FileToSend, fFichier + fExtension)
+      			EmailFichierAttache..Contenu		= fChargeBuffer(FileToSend)
+      			EmailFichierAttache..ContentType	= "application/pdf"
+      			Ajoute(EmailAenvoyer..Attache,EmailFichierAttache)
+      		FIN
+      		
+      		
+      		
+      		//		ExécuteTraitement(Jauge1,trtInit)
+      
+      		SI  PAS EmailEnvoieMessage(MailSession,EmailAenvoyer)  ALORS
+      			SI Email.Erreur <> 0
+      				SI Email.Erreur > 26 ALORS
+      				//	toastaffiche("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+"Erreur inconnue","Erreur")
+      				SINON
+      			//		toastaffiche("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+lerreuremail[Email.Erreur],"Erreur")
+      				FIN
+      				//fo(erreurinfo(errMessage))
+      				RENVOYER Faux
+      			SINON
+      				SauveEmailInfo(sCustomerNumber,tabRecipient,tabFileList,3,sSubject,sMessage)
+      				MaFenêtre..ValeurRenvoyée = Vrai
+      				//			SauveEmail(lmodif)
+      				EmailFermeSession("InfoErreur")
+      				
+      				
+      			FIN
+      			
+      			
+      		SINON
+      			SauveEmailInfo(sCustomerNumber,tabRecipient,tabFileList,3,sSubject,sMessage)
+      			//			SauveEmail(lmodif)
+      			MaFenêtre..ValeurRenvoyée = Vrai
+      //			ACSO_message("Information","Envoi effectué avec succès","Info")
+      			EmailFermeSession("InfoErreur")
+      //			Ferme(FenEmail)
+      		FIN
+      		
+      	FIN	
+      	//////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+      	
+      SINON
+      	//	SI PAS EmailOuvreSessionSMTP("InfoErreur",SansEspace(config.ServeurSMTP)) ALORS
+      	SessionSmtp est un EmailSessionSMTP
+      	//	SessionSmtp.AdresseServeur = "mail.smtp2go.com"
+      	//	SessionSmtp.Nom = "support@cybersquadit.com"
+      	//	SessionSmtp.MotDePasse = "Cyb3r$MTP*"
+      	//	SessionSmtp.Port = 2525
+      	SessionSmtp.AdresseServeur	= SansEspace(ExtraitChaîne(gclConfig.m_sServeurSMTP,1,":"))
+      	SessionSmtp.Nom				= SansEspace(gclConfig.m_sUserSMTP)
+      	SessionSmtp.MotDePasse		= SansEspace(gclConfig.m_sMdpSMTP)
+      	SessionSmtp.Port			= Val(ExtraitChaîne(gclConfig.m_sServeurSMTP,2,":"))
+      	//   SessionSmtp..Option = emailOptionSécuriséTLS
+      	
+      	SI PAS EmailOuvreSession(SessionSmtp) ALORS
+      		//si pas EmailOuvreSessionSMTP("support@cybersquadit.com","Cyb3r$MTP*","mail.smtp2go.com",2525) alors
+      		ACSO_message("Erreur","Impossible de se connecter au serveur de courrier sortant","Erreur")
+      		
+      		// code pour ExchangeServer
+      		//	idsession =  EmailOuvreSession("OutLook") 
+      		//	si  idsession = 0 alors
+      		//si pas EmailOuvreSession("OutLook") alors
+      		//	acso_message("Erreur","Impossible de se connecter au serveur de courrier sortant","Erreur")
+      		
+      		RENVOYER Faux
+      		
+      	SINON
+      		
+      		///////////////////////////////////////////////////////////////////////////
+      		//
+      		// Nouveau code
+      		//
+      		///////////////////////////////////////////////////////////////////////////
+      		
+      		
+      		POUR CHAQUE sRecipient de tabRecipient
+      			Ajoute(EmailAenvoyer..Destinataire, sRecipient)
+      			//			EmailAenvoyer.Destinataire[i] = ExtraitChaîne(SAIS_DEST,i,";")
+      		FIN
+      		
+      		EmailAenvoyer.Sujet			= sSubject
+      		EmailAenvoyer.Message		= sMessage
+      		EmailAenvoyer.Expediteur	= sSender
+      		
+      		//	EmailAenvoyer.NbAttache = nbAttache
+      		POUR CHAQUE FileToSend de tabFileList
+      			//		EmailAenvoyer.Attache[i] = ExtraitChaîne(lfichieraenvoyer,i,";")
+      			EmailFichierAttache..Nom			= fExtraitChemin(FileToSend, fFichier + fExtension)
+      			EmailFichierAttache..Contenu		= fChargeBuffer(FileToSend)
+      			EmailFichierAttache..ContentType	= "application/pdf"
+      			//			EmailFichierAttache..ContentDescription = "Un document PDF"
+      			Ajoute(EmailAenvoyer..Attache,EmailFichierAttache)
+      		FIN
+      		
+      		
+      		
+      		
+      		//		ExécuteTraitement(Jauge1,trtInit)
+      //		EmailJauge(Jauge1,1000)
+      		SI  PAS EmailEnvoieMessage(SessionSmtp,EmailAenvoyer)  ALORS
+      			
+      			//			SI Email.Erreur <> 0
+      			SI Email.Erreur > 26 ALORS
+      //				ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+"Erreur inconnue","Erreur")
+      			SINON SI Email.Erreur <= 0 ALORS
+      //				ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+"Raison inconnue","Erreur")
+      			SINON
+      //				ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+lerreuremail[Email.Erreur],"Erreur")
+      			FIN
+      			//fo(erreurinfo(errMessage))
+      			RENVOYER Faux
+      	
+      			
+      			
+      		SINON
+      			SauveEmailInfo(sCustomerNumber,tabRecipient,tabFileList,3,sSubject,sMessage)
+      			MaFenêtre..ValeurRenvoyée = Vrai
+      			//			SauveEmail(lmodif)
+      //			ACSO_message("Information","Envoi effectué avec succès","Info")
+      			EmailFermeSession("InfoErreur")
+      			
+      		FIN
+      		
+      		
+      		
+      		
+      		
+      		///////////////////////////////////////////////////////////////////////////
+      		
+      		
+      		
+      		
+      		
+      FIN
+      
+      FIN
+      
+      
+      
+     type : 458752
+   -
+     name : SauveEmailInfo
+     procedure_id : 1894095202818496247
+     type_code : 15
+     code : |1+
+      Procédure SauveEmailInfo(CustomerNumber est une chaine,tabRecipient est un tableau de chaine,tabFileToSend est un tableau de chaine,nDocumentType est un entier,sSubject est une chaîne,sMessage une chaîne)
+      
+      
+      
+      
+      
+      ArchiveEmail.dateEmail = DateHeureSys()
+      ArchiveEmail.noClient = complete(CustomerNumber,10)
+      ArchiveEmail.lDestinataire = tableauverschaine(tabRecipient,":")
+      ArchiveEmail.lFichierAttaché = TableauVersChaîne(tabFileToSend,":")
+      
+      
+      ArchiveEmail.ltexte = SansEspace(sMessage)
+      ArchiveEmail.lSujet = SansEspace(sSubject)
+      ArchiveEmail.lTypeDocument = nDocumentType
+      
+      hajoute(ArchiveEmail)		
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1988a2144b2feab9
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

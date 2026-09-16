@@ -1,0 +1,196 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : TabPurchaseOrderBasco
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1a92e7b32b03fe9d
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      tabPurchaseOrderBasco est une Classe
+         _tabPurchaseorderBasco est un tableau de PurchaseOrderBasco
+         
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1914847552587759604
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1914847552587825140
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : Charge
+     procedure_id : 1914847870415413649
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // Charge ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE Charge()
+      
+      //FtpHost est une chaine unicode = "ftp://influencefx.ddns.net"
+      //FtpUsername est une chaine unicode = "trn"
+      //FtpPassword est une chaine unicode = "trn123"
+      //FtpFolderRoot est une chaine unicode = "/Sandbox/Suppliers/ThermosRiveNord/"
+      
+      //FtpHost est une chaîne UNICODE = "ftp://prod1.seigma.com"
+      //FtpUsername est une chaîne UNICODE = "basco-trn"
+      //FtpPassword est une chaîne UNICODE = "hJ6ef7p3ZLj3"
+      FtpHost		est une chaîne UNICODE	= gclConfig.m_sBascoFTPAddress
+      //FtpHost		est une chaine UNICODE		= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,1)
+      //nFtpPort		est un entier				= ExtraitChaîne(gclConfig.m_sBascoFTPAddress,2)
+      FtpUsername	est une chaîne UNICODE		= gclConfig.m_sBascoUser
+      FtpPassword	est une chaîne UNICODE	= gclConfig.m_sBascoPassword
+      
+      FtpFolderRoot est une chaîne UNICODE = "/"
+      _purchaseOrder est un PurchaseOrderBasco
+      cpt est un entier
+      po est un PurchaseOrderDto
+      
+      _tabTestPurchase est un "List<PurchaseorderDTo>"
+      _get est un PurchaseorderProcessor(FtpHost,FtpUsername,FtpPassword,FtpFolderRoot+"PurchaseOrder/") 
+      _tabTestPurchase.AddRange(_get.get())
+      cpt = _tabTestPurchase.get_count()
+      
+      //info(_tabTestPurchase.get_Count())
+      
+      PUOR est un PurchaseOrderDto 
+      PI est un PurchaseOrderItemDto
+      POUR i = 0 a cpt-1
+      	_purchaseOrder = allouer un PurchaseOrderBasco()
+      	PUOR <- _tabTestPurchase.get_Item(i)
+      	:transfertPo(_purchaseOrder,PUOR)
+      	
+      FIN
+      
+      
+      
+      
+     type : 458752
+   -
+     name : TransfertPO
+     procedure_id : 1914865973702652755
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //TransfertPO (<_Purchaseorder>, <_po>)
+      //
+      // Paramètres :
+      // 	_Purchaseorder : <indiquez ici le rôle de _Purchaseorder>
+      // 	_po : <indiquez ici le rôle de _po>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //TransfertPo (<_Purchaseorder>, <_po>)
+      //
+      // Paramètres :
+      // 	_Purchaseorder : <indiquez ici le rôle de _Purchaseorder>
+      // 	_po : <indiquez ici le rôle de _po>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE TransfertPo(_Purchaseorder,_po)
+      
+      _Purchaseorder.PurchaseOrderId   = _po.PurchaseOrderId
+      _Purchaseorder.EdiKey            = _po.EdiKey
+      _Purchaseorder.Display           = _po.Display
+      _Purchaseorder.BascoFranchise    = _po.BascoFranchise
+      _Purchaseorder.Customer          = _po.Customer
+      _Purchaseorder.label             = _po.Label
+      _Purchaseorder.OrderNumber       = _po.OrderNumber
+      _Purchaseorder.InvoiceNumber     = _po.InvoiceNumber
+      _Purchaseorder.DateSent          = _po.DateSent
+      _Purchaseorder.ShippingStreet    = _po.ShippingStreet
+      _Purchaseorder.ShippingCity      = _po.ShippingCity
+      _Purchaseorder.ShippingPostalCode= _po.ShippingPostalCode
+      _Purchaseorder.ShippingState     = _po.ShippingState
+      _Purchaseorder.ShippingCountry   = _po.ShippingCountry
+      _Purchaseorder.BillingStreet     = _po.BillingStreet
+      _Purchaseorder.BillingCity       = _po.BillingCity
+      _Purchaseorder.BillingPostalCode = _po.BillingPostalCode
+      _Purchaseorder.BillingState      = _po.BillingState
+      _Purchaseorder.BillingCountry    = _po.BillingCountry
+      
+      _purchaseorderitem est un PurchaseOrderItemBasco
+      POUR CHAQUE _item de _po.PurchaseOrderItems
+      	_purchaseorderitem = allouer une PurchaseOrderItemBasco
+      	
+      	_purchaseorderitem.PurchaseOrderId = _item.PurchaseOrderId
+      	_purchaseorderitem.PurchaseOrderItemId = _item.PurchaseOrderItemId
+      	_purchaseorderitem.VisibleIndex = _item.VisibleIndex
+      	//	_purchaseorderitem.TrnNumber = _item.TrnNumber
+      	_purchaseorderitem.Note = _item.Note
+      	_purchaseorderitem.Spacer = _item.Spacer
+      	_purchaseorderitem.Finish = _item.Finish
+      	_purchaseorderitem.Energetic = _item.Energetic
+      	_purchaseorderitem.Pane1 = _item.Pane1
+      	_purchaseorderitem.Pane2 = _item.Pane2
+      	_purchaseorderitem.Pane3 = _item.Pane3
+      	_purchaseorderitem.Grill = _item.Grill
+      	_purchaseorderitem.Tempered = _item.Tempered
+      	_purchaseorderitem.Quantity = _item.Quantity
+      	_purchaseorderitem.GrillBase = _item.GrillBase
+      	_purchaseorderitem.GrillHeight = _item.GrillHeight
+      	_purchaseorderitem.Height =  _item.Height
+      	_purchaseorderitem.Width = _item.Width
+      	
+      	
+      	
+      	
+      	
+      	
+      	
+      	Ajoute(_Purchaseorder.purchaseorderitems,_purchaseorderitem)
+      	
+      FIN
+      
+      //tableauajoute(:_tabPorchaseorderBasco,_purchaseOrder)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x1a92e7a32b00bf90
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

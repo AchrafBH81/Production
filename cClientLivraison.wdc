@@ -1,0 +1,139 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cClientLivraison
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x151c13960d522d02
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cClientLivraison est une Classe <mapping=ClientLivraison>
+      
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis le menu contextuel
+      	// du fichier dans l'explorateur de projet ou dans l'analyse "..Regénérer la classe modèle"
+      	<MAPPING>
+      	m_nIDClientLivraison	est un entier							<mapping=IDClientLivraison, clé unique>
+      	m_sLNom					est une chaîne							<mapping=lNom>
+      	m_sLRue					est une chaîne							<mapping=lRue>
+      	m_sLVille				est une chaîne							<mapping=lVille>
+      	m_sLprovince			est une chaîne							<mapping=lprovince>
+      	m_sLCodePostal			est une chaîne							<mapping=lCodePostal>
+      	m_sLContact				est une chaîne							<mapping=lContact>
+      	m_sIdclient				est une chaîne							<mapping=idclient>
+      	m_sLtelephone			est une chaîne							<mapping=ltelephone>
+      	m_bLDefaut				est un booléen							<mapping=lDefaut>
+      	m_sLNumeroVideojet		est une chaîne							<mapping=lNumeroVideojet>
+      	m_sIdentifiant			est une chaîne							<mapping=Identifiant>
+      	m_sNote					est une chaîne							<mapping=Note>
+      	m_bLJourCamionMaster	est un booléen							<mapping=lJourCamionMaster>
+      	m_nFrequences			est un entier sans signe sur 1 octet	<mapping=Frequences>
+      	m_dDateDeReference		est une date							<mapping=DateDeReference>
+      	m_bEstPickUp			est un booléen							<mapping=EstPickUp>
+      	m_nIdDefaultCamion		est un entier							<mapping=IdDefaultCamion>
+      	m_nIDLoadingType		est un entier sur 8 octets				<mapping=IDLoadingType>
+      	<FIN>
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1521112309333961986
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur(nIdShipping est un entier,sCustomerNumber est une chaine)
+      :GetShippingInfo(nIdShipping,sCustomerNumber)
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1521112309334027522
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+   -
+     name : GetShippingInfo
+     procedure_id : 1521112665816396137
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetShippingInfo (<nShippindID> est entier, <sCustomerNumber> est chaîne)
+      //
+      // Paramètres :
+      //	nShippindID (entier) : <indiquez ici le rôle de nShippindID>
+      //	sCustomerNumber (chaîne ANSI) : <indiquez ici le rôle de sCustomerNumber>
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetShippingInfo(nShippindID est un entier,sCustomerNumber est une chaine)
+      
+      si nShippindID = 0 _et_ sCustomerNumber = 0 alors renvoyer faux
+      
+      si hlitrecherche(ClientLivraison,IDClientLivraison,nShippindID) ALORS
+      		:m_nIDClientLivraison	= ClientLivraison.IDClientLivraison
+      	    :m_sLNom		= ClientLivraison.lNom
+      		:m_sLRue		= ClientLivraison.lRue
+      		:m_sLVille		= ClientLivraison.lVille
+      		:m_sLCodePostal	= ClientLivraison.lCodePostal
+      		:m_sNote		= ClientLivraison.Note
+      	
+      sinon
+      	SI HExécuteRequête(RequeteLivraisonDefaut,hRequêteDéfaut,SansEspace(sCustomerNumber)) ET HNbEnr(RequeteLivraisonDefaut) ALORS
+      		
+      		:m_nIDClientLivraison	= ClientLivraison.IDClientLivraison
+      		:m_sLNom		= ClientLivraison.lNom
+      		:m_sLRue		= ClientLivraison.lRue
+      		:m_sLVille		= ClientLivraison.lVille
+      		:m_sLCodePostal	= ClientLivraison.lCodePostal
+      		:m_sNote		= ClientLivraison.Note
+      	FIN
+      FIN
+      
+      
+      
+      //POUR CHAQUE SaisonLivraison 
+      //	_stjourlivraison											= allouer un stLivraison
+      //	TAjourlivraisonsaison[SaisonLivraison.IDSaisonLivraison]	= _stjourlivraison
+      //	HLitRecherche(JourLivraisonClient,IDClientIDSaisonLivraison,[_IDClient,SaisonLivraison.IDSaisonLivraison]) 
+      //	TANTQUE JourLivraisonClient.IDClient = _IDClient _ET_ JourLivraisonClient.IdAdresseLivraison = 0 _ET_ PAS HEnDehors(JourLivraisonClient)
+      //		
+      //		_stjourlivraison.JoursLivraisonClientCompile = JourLivraisonClient.JourLivraison
+      //		POUR i = 1 a 7
+      //			_stjourlivraison.tabJourLivraisonCamion[i]	= JourLivraisonClient.IDCamions[i]
+      //			_stjourlivraison.tabShippingSequence[i]		= JourLivraisonClient.ShippingSequence[i]
+      //		FIN
+      //		
+      //		TAjourlivraisonsaison[JourLivraisonClient.IDSaisonLivraison] = _stjourlivraison
+      //		HLitSuivant(JourLivraisonClient)
+      //FIN
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x151c13660d4b6f8e
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text : {}
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

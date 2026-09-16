@@ -1,0 +1,420 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : finispeciauxdetail
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Finispeciaux
+ subtype : 0
+window :
+ name : finispeciauxdetail
+ identifier : 0x514f4e5503f3dea3
+ internal_properties : CQAAAAkAAABpBeOO+xSf42bxbDhdsmjFUuWMAyq4SAxr907nlFrH3f91v/bQTELa1YxMf+wJMQU4ZGqycJlZyWcvreJQLwmSBke3b1+qzu+kaD2/vMyrri9yBqVwyZOWncbrhX9Lkjdh4/bCwyn/JLp9XEnexawH/ZU2zB/OTI3MYYksSOq28GJF9A8awpRiXM4H96NWX/6v5AJ1k6jcOLiUMOeHjSKaiNIXJwOX70IRS4NKgdnOvkA0JAJEDPPMBOMm6xP+/6+XXC9Vbe2t1DdTHyLbVNF+Fzm4MSqUIoUMBqyNgAr2MHDb4K4XRzVE5CSydsOTH51/kp3P3WviW5MUO70Pmh3daOn3GVzAN5rUzTD7/Aga4EzSiIfi3KQ+w23wwR0Xn4Z3OsXdx9qYw+V5qN678/SRekBCt1XCb5GyAtORkiGi//CW4yK6PV2Fk/hlCfxS1lX1j/3mSl4RJBDBC2oIjP3bVcfnOVepdZGBI+DHE3HlGTuoteqgSYB9xT8ys7uHRM56+8mTf/ludTXwvVCyPqP24mhYCqVtRjJu7E0t8mrNtl+aheXZX8DYQ7zBQkeP/QaSNb1C1lUKqcsHxFBqalLrtq89qoL2Wj6DKt5i8kGo1bqdOSn2zyZC3sUcQ6PPgq5iTkwmQgiIKoYv9PkQciy8MZLCfZYjOqq4i/Xeg0GF/vU+kDcymRwALmz9WQ9BmJHrIB5ekWARF9LoRI2WL82ul5IcasB2QkRCWr/uGDJM5FKBZ30/Kbo1bewwzPviSKT0JTyh7mzw0m7frO2lSl6AxC1zjpyxx+1eTqypbZtkuBTd888OLqsrkuq5cxN9k29amWH+1P7R2MM1YG8uyH2h6vWoP9s5LHCRXq0m
+ properties :
+  x : 120
+  y : 50
+  width : 402
+  height : 169
+  widthClient : 400
+  heightClient : 137
+ controls :
+  -
+    name : BTN_OK
+    identifier : 0x514f4e551d3ddead
+    internal_properties : CQAAAAkAAABbQr4sU1r7B/t1OjfN5SkFBeCqVKr6T8t5ezbhgJ2lpbx/oY8ZVzLqF7NE4LQXKWNNdMahYkmyitS6JF5ZqROcc3dSIZhNT1O5UcBQjb5bRyrWQx/dM8eO+viRr6RqNDiRCiZ+4gG+w85RP3zarWboUMcQH9RYEf1JEUgHqjI7xqfXU0uPStdk4+fZcyAob7LbiCKyfc1v6tpevUhBBW9NBXqAw+VnvO17MgnGykUIlNGwHkeREnbZdm4PixXULUVIeK9sei9bHxxK/ccaBu+k4wf34EH1jwC71UPcq0nEHHPicffNFDWkQIn1UwB19xj14FtjJ+YC3a7LQ+v2EvL2XkHWB8BHMkLvvZBnOVLx+KhDq/70LA1ChNEzeZz9w7IUgLKhngvi2FETp2hOy3a22Q27tVy7lSo3GRXurWzzYUndQFKOq00CltlYnvOewq12pl9jQTOhr8mcWOB6E7E6rpvU+E+hGrREI+GJ2VNpyBGZSQnT8DLw5PrcK3RYeHrTKPeR37i5O1tiFATGNZ3DxvBuMES5xdhZZkpALal1Z28FW5XDL4pKBJpTuTwndVpZRQbcHS021JsO8bHX8LRnnphAZQdHeHEeGJtwvaC0exLuKTUXZ1lFGAKIawARfVxqeXy/7Qjk/mpIrcuMaKND6hwpvNdPLh+jkMnv/5rq2pYMTz+7xfEx93QpR/uNnAVhV/WpCkFaUYofR897dqpxvRKl/h978ikHHYOHVa9e3KmEyuJqv9MibM/LQC2ZD5nxhJSOpNUQRAQjtDlJvL0Mk4X6mJYz+MrT7CqLxu0=
+    properties :
+     x : 331
+     y : 32
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         // Validation de la fiche
+         
+         EcranVersFichier				// Transfert champs vers rubriques
+         interclient.idclient = CL.idclient
+         interclient.iClient = cl.numero
+         
+         
+         // Enregistrement 
+         selon ModeAppel
+         	cas "Création"
+         		EcranVersFichier()
+         		InterClientDetail.Spacer1 = Comboespace1..ValeurAffichée
+         		InterClientDetail.Spacer2 = ComboEspace2..ValeurAffichée
+         		InterClientDetail.IdInterClient = _idinterclient
+         		InterClientDetail.idintercalairecouleurs = ComboInterCouleur[ComboInterCouleur]
+         		hajoute(InterClientDetail)
+         	cas "Modif"
+         		EcranVersFichier()
+         		InterClientDetail.Spacer1 = Comboespace1..ValeurAffichée
+         		InterClientDetail.Spacer2 = Comboespace2..ValeurAffichée
+         		
+         		hmodifie(InterClientDetail,hnumenrencours)
+         		
+         	autre cas
+         		Erreur("Mode incorrect: "+ModeAppel)
+         		retour
+         fin
+         si HErreurDoublon() alors
+         	Erreur("Erreur de doublon sur clé unique")
+         	Retour
+         fin
+         si HErreurIntegrite() alors
+         	Erreur(HErreurInfo())
+         	Retour
+         fin
+         
+         Ferme			// Ferme la fenêtre
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ANNULE
+    identifier : 0x514f4e551974dead
+    internal_properties : CQAAAAkAAADylSmbNJxBVcJCc47qrQl8us4nioAZH88FgLX/0GM3vqw8QN2gpGLteDj9tmx9wra18XPPKB3tBsjo6g5fbUWqsAmJseXkGvYnvOGjZabwp8v9QENatkTYKVrUZDputInWlvCFiZiJOgmo98tXL8Ld0aTIb9jUFpZdaQO0Uy6Z5WmOe7+O6M3v976fw4D/cC/sZ29GDhNaVJ5OELW4g/aScUVabRMLdjJSG0iEGI3N7lTFTk9+X+aBA+azyceP3fpMkGUcPxM/jpAhkI6fKV7hOLi37Spu9Tsnfga5VIFbFaNxexz7pTxtZwwXjdyQX9Nre6EOZyu7Rt1TzJDHXyE2lU1/LazocCBEzPv8v2FqU6my5WzilTwvkpXcDvPH1pLFI4X/nNKtf9SjBzfdemtuO0MGwwI6DGOpLck3+/uUYAbSZ2J6ahaNkJV2q8X1DcrRIdCbR+QoNK0GRM9ItPAr98S3VKfGZwO6P2UwvToENTo6iE+H/SMr8lomolqz/0NU+QLPF5uOBgXqHNnA8Laq7Q8n5BS4/JlPOqQRyUocuIqoiK9bBF+Z1j55WrTsJlmahlW21bTpQUUKZR5RXYNgXV+Rq6MAC4Ki9uEzi9mJjsOvrKF9PESu8s427rbEPlMlLCkpXcux1VCkGaJMx6SC/6FQwjuIQzIFuFFCW7VrCZVTYE0JnPR60z51fme+zlZ1mCSg+DmrpyO8L7R/ww6GEtVS3eJQDlctuEBMflwdffe8dHMachMo6246WNIlUbNV1wYDp+BYW+5vl6L0pIqD7iZJ5uuH0J2gGQvVv5fDoRQU54A=
+    properties :
+     x : 331
+     y : 79
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : ComboInterCouleur
+    identifier : 0x514f4ea265f90a7b
+    internal_properties : CQAAAAkAAABOTjlSpIsTFsi73GUKeKJ15C86+AGSKFlCGEhmiAk7H8E/daUJ4+R/BARyACnoGPyKM4g4R5udhYgx/29EB0tIvXOF2ye8iLBFmBolQJDohGX+zJBIorZKJBe4/qGgNJ/eDmUZm+UYWjBlRgJWyNuwUmyABt16uKTI/SFfxH1ar7JC5qNVaWxC42JywSDyJVrgtkd8VTrP9GXduLW8BZS2wMsPzH/nmIdXXstyQfoxXUt0RZz6M+7wlz3GA3mnEoWepSLTQtGyynztSeyuDZQ6A5d7vZerSZRF4VRk8j2D42ZAr5KV3zbitnLbEN1j0tU3yVuot7WFsgf16AF2d/pSvZsz9FFJqHzNU5JwZen3AzKryTPjZmkZRat8TNHwP1EvAFvo5Dd900Nu9GWz17bHtu4bCPrsjjK5Xspo8Wg6eHtBvK+9AJB0j20nBe0oDtsNSPIgv4bY9vehJ2GImI2NlkBQ5euCYdwgcocTDIsGgDgIZbTLpfCkFbIWC+2tdbsEWh0AQ8/g0XGFQKoVs2X6+wv0q1NRFJTzg+O/rhaPyabvG0WNAhkLWxxPDZFW9+62to+IEwZwuL/79kXiLIa7WiuC/NvtkiuHhouvrZgYFTSaEuzmMEF4k0FCMC7MKM6Po81QR7C1C/kW9KVYC7kiYoEOPWSr1JUAeDIt6PqfzSO/xVBd1VYBlZ+HRA7eMrbKzR9+JKe8wQdd1eYuurAo9AlZjcfAItMOuc8PcjIrpeKW8cowz53zjP+3DyzPaNdyTzYqAGUJu3bD1tY8sftGA1yiL76VurWu5T+zbF2b0f301m42JL7h2PX0Smi35Rm/IVrFD5PjMz7fwiVbnHqdc2Z3IoexbTI8P0bc8FVY3gDfz0eSlDaguE0J4iCTasngzZSNJqUcLBWyTnvCZr25jfP/IQOyXxesIS+BVSbpFpIPGl8Md23bn98EmTGBaK9yB1isNGwYQJ1NzTTF6aC6labqyoGMMIWzEGbjJkNiwso/KfnAdZCR4cOLX4yNVGoJ8QVDCmVzKwLuqoTQTATISCrzZ20voKoL2S24DuDykn5ob4nc/ijov321lYH3Mgd9B9ac6VzFL+OFMLuLptr6CGqUNNPsOJAeMG7IpyMIw+cnkoeeYhV7gWypbc56/k58NFaR6nXjjHY5rPloO6STfKjE/ObAmTpaZOKg/GQi4VpbbOjxZT20CAuUYxqHrqemDsY4Btz+0XlIUMtO4Td5Aizq3RWc7qaBwgROPOWCjaRgGTCfY9PobG0Mu2vqGiLsLv+Fo4StdjM4/qu1zPyEPJO2PXmrl7zseekIWLN5Gc5sm8i8IPc7lMACjxiGAJovFlFW7Hjd/T6bY/qlFD0N9myrhmfL1YE/z33oG4DWOkxb/sJ7ccwLpL2e8QouQAFHPtrSuXKIwoT/Cy2DRuH/jMm5PP0H1tjbvlRtC2qzi+/nMyQ=
+    properties :
+     x : 6
+     y : 32
+     width : 265
+     height : 24
+    dropdown :
+     internal_properties : CQAAAAkAAADuzkmSHIq4XOuWFegDO4wNae0f82TJKUKWV0PcEl8Lb+fx0EhTh5LJo5Xh3Gn6gtSRLBF1bDYSDcuO2ChRmkdYf51QO+7G3PyP2+qcfsGTJ9OSJk5rUHcGF89Eo5e0gSWSoPqsdh18zShbQ9cwId1OZ8EEc7ijqFGHIu6zSmtP762QdWOgVA8yYzt/08wKC1ow6cUc1/RpsUcEV5rTJJLkzta/yLSRAQ2EBnysqGqTZP4I83pBeplqm8LxOwxUvXPueotcSF7gAyMO5fNVXXHg0NLAnbLftWkhQixhI5R5he/+23DPfiKNyUpSLUIyYBHivfTMzv+uvWrCXHoOFPNv9kWqs21NfhHnwUiI+YZday8WZdzQ8xkel08tb1v4e3OeiKjeAyBDLZz70+NCQgHbgWmILXzh/leHDG1Dr7BHnudUU+AGKl/FY3W4IxkiXO/yhCqzLqjHL1H/Qum/rLH0ZpdwY5AGMuNlkJ8DcJG00xOmr2RlSbC9/hk8/mgMwWQjxD/eTCenHWTGb8m/TNtP0VMcguVEiLu8+H9x1Q==
+     properties :
+      height : 152
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1+
+         ListeSupprimeTout(Comboespace1)
+         ListeSupprimeTout(Comboespace2)
+         //
+         //hlitrecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleurs,moimeme..ValeurMémorisée)
+         //tantque pas hendehors(IntercalaireCouleurDimensions) et IntercalaireCouleurDimensions.IDIntercalaireCouleurs = moimeme..ValeurMémorisée
+         //	ListeAjoute(Comboespace1,IntercalaireCouleurDimensions.numero)
+         //	ListeAjoute(Comboespace2,IntercalaireCouleurDimensions.numero)
+         //	hlitsuivant(IntercalaireCouleurDimensions,IDIntercalaireCouleurs)
+         //FIN
+         //Comboespace1 = 1
+         //Comboespace2 = 1
+         
+         
+         remplirComboNumero(MoiMême..ValeurMémorisée,Comboespace1..ValeurAffichée,ComboEspace2..ValeurAffichée)
+         
+         //
+         //ListeTrie(Comboespace1,Vrai)
+         //ListeTrie(Comboespace2,Vrai)
+         
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : Espace1
+    identifier : 0x514f595d06cef4fd
+    internal_properties : CQAAAAkAAADI/5RJj6zxSY+k1ZoRAJFTziK8g7+x6TMUiI4ezgw1qlmMXKWBxITRSF5QwUGkLsUnRV+cYn7u9d+Z24zj+wuZxdBzZcI6ftF6TTrvdvNm90NUIAlVMSxUp640ozD4tUky/RkB3f7zsFkovobsxeK/Ayeuf4dUVMFDglfqDGMSZrpK/Xx87TQc/3+uoilusC+5izHMdbAvVfXx2BMHqUqtkVNt5paBbExsHqrhmdz8TVrUX9NPkbk0LCk8qIOl79jZjwk1AtzBBsenULWCHwCZ/usNMmRs6V2ICTPA55NC7BaC8Q2nfy3OrY0oxJgNBn0A/wFslXI6ZgKBgQ3wyR+LNIqiSTc0eHJ57kZjAYvGrIZva7kskYSeZV2d3BD73UHKkgxFlLn0et6wtEHG4r7TyQSF4dbI9SAhHIvTt/zMttmhncoF+wjCKyl1hP3TsHBvEr1Ncweud7rb93roZm9hr7UvkDmqYnQIahMG7kGwnv+8ugSNUefxktPJ4/NZtpQBEJqKpHZxJZ1hvyjIZ55WNsTCDvO9lyAsT1dHo39xgep8dQ3FmA0xZO7iIlRVwMSBrJOtnkLdBC8v118++vRa5ha7A/AACYMcEwT5zYdKseCwWM0k09Cv++170VkETcNSoo10dNx2ECdh+uIQ/2wxo6JeQqG8zLxMquwp7Cxyz+d3bqBymZDhzGAoRSrlRsipGeUNUkGe1hoLf2ET7N8oQ8dhAR8jbU6F216rhu1YnETMFDkMgim7AUznQreCLJ9Kw+sBiBGUUQzzod3AiTHK0GZXqlUgapPBDExBheAxoTAQFkDIU50N6gI=
+    properties :
+     x : 429
+     y : 32
+     width : 150
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : Espace2
+    identifier : 0x514f598038697f46
+    internal_properties : CQAAAAkAAAAts1IeJfTDlbZRXY6GbGNFTOa2lK2MDbgcMQ/2dP2T+z/Y+VVywU/A3i6s0wwxLmM/4SRC6ADw7DyE30oR1i492xSJWwyaagc2C3gWTGRvm7+rP77mbW6W7PEgVYCR3Db0/zXVR0YNTmqMPy5T0QJURCX4xppSDQvJSqhKicpGVL4u1jLdkcwWEBlhdt4Jc4WB+04HNAGqHSiedh2fCK0zlUmhXiVjI+i9w+ATFK7nYN5s0zU3h+3jX3Pq8w95RsYlbu7KSw20uZdhXrD3j4psplsldxdDJ/ip9wMl76z/OXibYey6WsMPM4Mo9P7Z4QMB4Vo0kQmuiNzFlCZwr2Ncp97BHACayVnO9+PAWpVMsQozuJNFj8PJCMEKvnNLQoITPhD3R3ztL9zSNXGLUs3E+I0r7kiNMkYWZV7l8X//2OEm7ZjUETOYito2CAtD6pPAM6ugmEMrkZPQYP/IIk2bKiR7qJT6eF6YkmzYJ5wN62Yoe/eysveFOYYJpkWGi0WEN8B95cURM4N5HR83q0ipzNNC+ghdzw/JngGLQNrmH0r1SPDwOQEtNPCMYifjLjZabIOuAcwZgXHLAqZySqfNQv/zvog7C62CftC2GZTQgQp+PeO8koplMVK1K+SvIdGMSWPPB0WGKEgCtgYfXoGcSeOpPDsKcP3qVpMRKRPLIQNVt37Vud+4XaTPg2rGfAYSR6uRsWoeZ8GFUTjv9KP+BfB+laVQlrE0n4i2tWkTyGDKyRMFefmfRwA6/M6PxWHGX+DLRW9imRPM5X8aVRf5vW3B9xmsl0zB3p8Q79wznt2hqM5+5aMH/Q==
+    properties :
+     x : 429
+     y : 57
+     width : 150
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : Comboespace1
+    identifier : 0x22d161234362e4b8
+    internal_properties : CQAAAAkAAAD4CpR7Nd5vY4u9ial+DR3iV9Oh/dtGkeWlZBMrlUd5pLl0XuV+inX/X1tNglx8XUPEQkQlohhxDrFWPgQ3natc9bfp8lO2LxLsuFmRzt1LADunwPCKSMo1kLC5RKGn7leJH0MAVZVjCCbqrtIYhIySobWz1cngVsWZh1zAZ5lZ6oBpGLK+C/wVDCIeCnony87L2XF1ItvRgak/hhC7qcrjOt0QlzgJIJNPUfNYgdrolllleKW9WkIlAoDOi/zsXhSPmzoOGpmgFNfDJW/Wg7+BH+tYo5zUWWJpJTMzGMCcYB0uw0c7HDvm69fmDdC7NeXQjj/gDkTI8Pbg/hQP3vEm10vo5MGylCkmIaBek+T2mdbJo+iDrFBXrIia2iJyYR6rQnjC81PgQ0smkxw1fRELZPXeft28sShtgOpG/3rr4sXg6N2UgGEzbnFxO+VuRvTCEr31wqYJTdR4qqOMm8+PWJ5CObScapGdtFtRN9dWLggtOEbW38KMrCAa5JQyQOuPo4F0Ox6jeRWGamj9K/FUxcxK8DZdLaDs3XZ7xWIr4hZQtA2En9xcRpC69FEvoOoUzJFY/YMzFStaNz2S+KmMH/DZ7Q632RDLUu3uOy6ap0sPtuuKZOJWmhq6gyUV/7kXZFmyeCPIF61VoHAinukaSEJh0ow1NFejoNnYrf0fDSGa79UgMqeMiIQk9770vv3fmyfrTUf02V5N4ad51j6KqoMfblH7e2cLJwb5hHOLkpm/QvZvGFn4z1nv8DlWfYhpkKs10TXByC+MS0VfOWH1SNZVMyxsUhVTsjxQL7Wx1MjSZRbfzOOEXylxHzETyasyOE4MY8O8LYgJS7xYlQcfZ5nFLRvU3qzwOWi5lRkimEwNU9HQkF9rCqdxnbcZjD3QE9MvRf2kqC0UxwH0GV354RvqPohTAgUDsFAtb0qOOyrRTBaLWTegdI9Yei48/DRCEj20x4kDJgdUimjV/C6i3qEkKjc7vTq25RmMiwFgnUfoKCEr9x5yEdJjHslUC2yKXp5nTdzwaXGsGIkj43MS4UZfDyFRyd9wW2alPMLOAk5OmX2Pz74zB3yoMnJf8y7LUtM0vE6GH+Vzlr0ApphkJVHpkdpGvfumcWrISCc9gN50MuBzQtchpBlXjAsuopmCsESZOAGAWHbJyUrReRwUlYVDHbM2h16RonAa3hbTQHgD+sLHBVcd76XLU6G57H3yU9PpOLG2diQ/uFa2tn/HjOrr1ofSmF/3Xp1GRp0z0Qtzaue4B6L8KMKSFyFc0WRZq0hKxFZfmcbgnGJP8eRImrL+9Ubtz6REbQI+kPtHQC7WoR14YmQJuijYhbv+7RBy1f2cBC7LGM1sscgRxsEa/Ogn3lNo0Sg2Nvvn4/jd8LCU7IERPPJrc/VYOPqoGRTaHepG3JPsjxCaHwUiQELqb2Qh5uyzh2iIKlFmgz1hBwR3m2G3OKw/pDw/h+M=
+    properties :
+     x : 6
+     y : 70
+     width : 162
+     height : 24
+    dropdown :
+     internal_properties : CQAAAAkAAADuzkmSHIq4XOuWFegDO4wNae0f82TJKUKWV0PcEl8Lb+fx0EhTh5LJo5Xh3Gn6gtSRLBF1bDYSDcuO2ChRmkdYf51QO+7G3PyP2+qcfsGTJ9OSJk5rUHcGF89Eo5e0gSWSoPqsdh18zShbQ9cwId1OZ8EEc7ijqFGHIu6zSmtP762QdWOgVA8yYzt/08wKC1ow6cUc1/RpsUcEV5rTJJLkzta/yLSRAQ2EBnysqGqTZP4I83pBeplqm8LxOwxUvXPueotcSF7gAyMO5fNVXXHg0NLAnbLftWkhQixhI5R5he/+23DPfiKNyUpSLUIyYBHivfTMzv+uvWrCXHoOFPNv9kWqs21NfhHnwUiI+YZday8WZdzQ8xkel08tb1v4e3OeiKjeAyBDLZz70+NCQgHbgWmILXzh/leHDG1Dr7BHnudUU+AGKl/FY3W4IxkiXO/yhCqzLqjHL1H/Qum/rLH0ZpdwY5AGMuNlkJ8DcJG00xOmr2RlSbC9/hk8/mgMwWQjxD/eTCenHWTGb8m/TNtP0VMcguVEiLu8+H9x1Q==
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 17
+        enabled : false
+  -
+    name : ComboEspace2
+    identifier : 0x22d166ef6fbd8c86
+    internal_properties : CQAAAAkAAACS41N9w2gUbfDR02GjVHUgZOnegSVus8wkgnIsgEGFTImIYCL1gKHsNknGOzoYdVmGRnRBLaTbdzlFkD/wrHxcbiXlOFswpWfKE8jk7Y7xj/c1LQOtdxnpUKJkNcUpJnn0MbabKC2NFpXrWvLj6PndxSU8pVElwlWBQ98PmzFm8i5GNfTcdjjdRh2XMg9Ryy4Ih5efN7f2P8grKsU+JBc7pOhRD7qi0HH4/0ItiFAmaaE9nf5OOvHwvOIoqDPoOx2jpbEzPy+btQkQzF/Pd4a6w7zCEl84ZKpTX+YTMtOcIob8WAthzWt7SHaLLFmONlgJ6LG+Tb10vv/Ear3DT/VesvhTeroyekBP0zkWAFHdzUTew2yiuSZL8wjgAIOjVfp9A78zv7gFJCimTJbrVf5RDtnxDmOYt0mOwcZqkghj2n9iN4LJdo2QouSnJE7vGCV2KtZlww7oV6aafXHheSVhH2a3zFPRq1SN0WRYrVVr7JVIFLW0T/Q75ewieY1eCZd5+1Bs+wAV8yoCCelDV5Ko5Ll+HItwt4v88M72sAcJpaunX9t10Xe/1hkVtI9BfbukVaEYBgMt2JY/lZrNTUIIzmqFh7M8j4yZxuHAWwSe6lfTgMolAeyRJwYpkRaMQZQDQJmWD0miEFvYMcGQNGCDQ8OSY2vYI/K5ZFMIooihxiRvsuwiEZF9pfHCTRzVHiLMOkdVukkEqVA/ZyjqmXmco1VwnIsJwxcPzBhUXkNX356fracV8iNIs2yN/X3KXUkyBBaQ43UdnoW5UbYNhUGUI1wiLsiGlLnjK/SrF/nRGVE+9DlJlo0OWbDpmukxz4yzpClPn5GCcVjyUVGgLwHWPn3myC/cyoZi3OYcURdAKVGHzMBsZPcLbn6f+BlxCO7V5TyccU8WDA3bCcSGLbUGciG74ZjXamHTfarkC6RI0h1vgQMXTz0cVIqozfgs6Af1iEKZkW3bcNkHWIslsoztOXkd5TlZ435e9i/3kz24WlXxADGCLBVZpNwQgOhxyGg4KcSZzid5XCiCE01soNiG69WBweTIbhprpfXPMeLKQ+umLpT//cxP15UI1459MYmaVo4LPEZqdaPWJC7wHjw7qL9ESMCi5QXYBsZZZPVDn10evz9jqFWJuNjz1wMwzGBFxpeSvsE8+LKatfGPxfxnLK8GdPeC15ATg4Bveo6HO+el7VODG12Z9xaJghU9RAD1caR4Fq22FGJWVIx/G8RrZpdHlEhF+d4yeF7YQdpIFx8ElHPJKI0JWRRnpQSdIgaJaKpoJ8+a1Jmm7dzSeimcyDMA7adqThdXFUUcocCkMKgrO81X16tOWyx3I541mPjwwOGEZWcmD1hc/rLKI86UpCuV4Pbrkv+lnHS7SFWWnlhXcKWiTRWG6ltMaEBmeA0DOUQc0ZOdRq9ZsvlrU7YGpmmyumY0kky0R38kFMvIfUCGSarJNyqclHOL
+    properties :
+     x : 6
+     y : 92
+     width : 162
+     height : 24
+    dropdown :
+     internal_properties : CQAAAAkAAADuzkmSHIq4XOuWFegDO4wNae0f82TJKUKWV0PcEl8Lb+fx0EhTh5LJo5Xh3Gn6gtSRLBF1bDYSDcuO2ChRmkdYf51QO+7G3PyP2+qcfsGTJ9OSJk5rUHcGF89Eo5e0gSWSoPqsdh18zShbQ9cwId1OZ8EEc7ijqFGHIu6zSmtP762QdWOgVA8yYzt/08wKC1ow6cUc1/RpsUcEV5rTJJLkzta/yLSRAQ2EBnysqGqTZP4I83pBeplqm8LxOwxUvXPueotcSF7gAyMO5fNVXXHg0NLAnbLftWkhQixhI5R5he/+23DPfiKNyUpSLUIyYBHivfTMzv+uvWrCXHoOFPNv9kWqs21NfhHnwUiI+YZday8WZdzQ8xkel08tb1v4e3OeiKjeAyBDLZz70+NCQgHbgWmILXzh/leHDG1Dr7BHnudUU+AGKl/FY3W4IxkiXO/yhCqzLqjHL1H/Qum/rLH0ZpdwY5AGMuNlkJ8DcJG00xOmr2RlSbC9/hk8/mgMwWQjxD/eTCenHWTGb8m/TNtP0VMcguVEiLu8+H9x1Q==
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 17
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x514f4e555282deb7
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAACshPpJyc6MTSYXOwG1y9/xriomD7ouHytp8hh6IKGCfFeYexhvF/nrKCZc/imKlSBIw6VaqNFFkl1i1aLYdI9ampT/0+OOZQ3Xtm1xVT96oUD1Xw0a4ACVrN/w6w==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      Procedure finispeciauxdetail(_idinterclient,ModeAppel = "Création")
+      MoiMême..Visible=Vrai
+      
+      Global
+      	NomFic			est une chaine		// Nom du fichier associé à la fenêtre
+      NomFic="interClient"
+      loriginal est une chaine
+      TypeThermos est une chaine = sansespace(interclient.icomposant3) <> ""  ? "T" sinon "D"
+      si typethermos = "D" alors
+      	 ComboEspace2..visible = faux
+      FIN
+      
+      selon ModeAppel
+      	cas "Création"
+      		remplirComboIntercalaireCouleur(_idinterclient)
+      		ExécuteTraitement(ComboInterCouleur,trtSélection)
+      		GR_Champ..Etat=Actif; GR_Champ..Visible=Vrai
+      		// Efface les rubriques
+      
+      		// Tapez ici le code d'initialisation des champs
+      
+      	cas "Modif"
+      		FichierVersEcran()
+      		si hlitrecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,InterClientDetail.idintercalairecouleurs) alors
+      			listeajoute(ComboInterCouleur,IntercalaireCouleurs.Description)
+      		fin
+      		listeselectplus(ComboInterCouleur,1)
+      	    ComboInterCouleur..etat = inactif
+      	    
+      	    remplirComboNumero(InterClientDetail.idintercalairecouleurs,InterClientDetail.Spacer1,InterClientDetail.Spacer2)
+      	autre cas
+      		Erreur("Mode d'appel de fenêtre incorrect: "+ModeAppel)
+      		Ferme
+      Fin
+      //NUMEROEVENEMENT[1] = EVENEMENT("DOUBLECLIC","BTN_PRODUIT",WM_LBUTTONDBLCLK)
+      //NUMEROEVENEMENT[2] = EVENEMENT("DOUBLECLIC","BTN_CATEGORIE",WM_LBUTTONDBLCLK)
+      
+      moimeme..ValeurRenvoyée = 0
+      _Identifiant est un tableau de 4 chaine
+      
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : remplirComboIntercalaireCouleur
+     procedure_id : 5858988387714536123
+     type_code : 14
+     code : |1+
+      Procédure remplirComboIntercalaireCouleur(_IDInterClient)
+      
+      RequeteInterClientDetail.pIdInterClient = _IDInterClient
+      HExécuteRequête(RequeteInterClientDetail)
+      
+      pour tout IntercalaireCouleurs 
+      	si pas hlitrecherche(RequeteInterClientDetail,"idintercalairecouleurs" ,IntercalaireCouleurs.IDIntercalaireCouleurs) alors
+      		listeajoute(ComboInterCouleur,IntercalaireCouleurs.Description+glien(numeriqueverschaine(IntercalaireCouleurs.IDIntercalaireCouleurs)))
+      	FIN
+      FIN
+      glienactive(ComboInterCouleur)
+      listeselectplus(ComboInterCouleur,1)
+      
+      
+     type : 458752
+   -
+     name : remplirComboNumero
+     procedure_id : 1355981334974948359
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //remplirComboNumero (<_IdIntercalaireCouleur> [, <_spacer1> [, <_spacer2>]])
+      //
+      // Paramètres :
+      //	_IdIntercalaireCouleur : <indiquez ici le rôle de _IdIntercalaireCouleur>
+      // 	_spacer1 (valeur par défaut=1) : < indiquez ici le rôle de _spacer1 >
+      // 	_spacer2 (valeur par défaut=1) : < indiquez ici le rôle de _spacer2 >
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE remplirComboNumero(_IdIntercalaireCouleur,_spacer1 ="",_spacer2="")
+      
+      _selectcomboespace1 est un entier
+      _selectcomboespace2 est un entier
+      
+      ListeSupprimeTout(Comboespace1)
+      ListeSupprimeTout(ComboEspace2)
+      
+      HLitRecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleurs,_IdIntercalaireCouleur)
+      tANTQUE PAS HEnDehors(IntercalaireCouleurDimensions) ET IntercalaireCouleurDimensions.IDIntercalaireCouleurs = _IdIntercalaireCouleur
+      	ListeAjoute(Comboespace1,glien(IntercalaireCouleurDimensions.numero)+IntercalaireCouleurDimensions.numero)
+      	SI SansEspace(IntercalaireCouleurDimensions.numero) = sansespace(_spacer1) ALORS
+      		_selectcomboespace1 = Comboespace1..Occurrence
+      	FIN
+      	si pas TypeThermos = "D" alors
+      		ListeAjoute(ComboEspace2,gLien(IntercalaireCouleurDimensions.numero)+IntercalaireCouleurDimensions.numero)
+      		SI SansEspace(IntercalaireCouleurDimensions.numero) = sansespace(_spacer2) ALORS 
+      			_selectcomboespace2 = Comboespace2..Occurrence
+      		FIN
+      	fin
+      	HLitSuivant(IntercalaireCouleurDimensions,IDIntercalaireCouleurs)
+      FIN
+      
+      gLienActive(Comboespace1)
+      gLienActive(Comboespace2)
+      
+      listetrie(Comboespace1,vrai)
+      listetrie(ComboEspace2,vrai)
+      si _spacer1 = "" alors
+      	listeselectplus(Comboespace1,1)
+      sinon
+      	Comboespace1 = _spacer1 
+      FIN
+      si pas TypeThermos = "D" alors
+      	SI _spacer2 = "" ALORS
+      		ListeSelectPlus(Comboespace2,1)
+      	SINON
+      		Comboespace2 = _spacer2 
+      	FIN
+      fin
+      //listeselectplus(Comboespace1,_selectcomboespace1)
+      //ListeSelectPlus(Comboespace2,_selectcomboespace2)
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x514f4e55761bdeb7
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

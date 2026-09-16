@@ -1,0 +1,676 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : GPWAssociationConfiguration
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Association des utilisateurs et des configurations groupware
+ subtype : 0
+window :
+ name : GPWAssociationConfiguration
+ identifier : 0x3be8ff3d3a2d8f5f
+ internal_properties : CQAAAAkAAACmE6oUCVvHe04veR3VbKlwx1l8BFWR0oqGLEk66Xmrmo4S84vWjQQmHTa/QCM5pzWeHXyLGTalv+vJ223gTHQ9afUzxNyt0FtXXUJb8idm6BTaQttbKTbdqIK+TqA0UWKih5BXkxLGhFvYD2UPuTDRloqx6AbvLc19J+emoWDQ1utaghP4oyngk65pz1UzuYjVEulaRe7Car5OTyCGq+zvTiyfnlkb2nHrips6yunXzSdZiqCefbTJCeWVvK3bgeRXOmacNSc0wAHwYSU4QooOgGEJU2I52VL3bfmhCEXRrn/qe6cUQXIJVTjbP3OSylzhjFbU79h+Peo4HtyePuqnCjImmjumptGNp0uVPPmmkiFTdLOL71LGc6XvX7m53Zw7MbZ9/TkTeCpfH73zwEIqOrMN2H+5DaGFcd8iLFooxGlNGs3rIQZVgm9BSRlTCxwl3D8PZc5HLVyeJBVv0GaizA/hVoLSib37VyahlDSILzfDHvTVtASMabyUxza2803wxPLcqPgrueX8IY5o2UlExaO95q85fLW2dzKihlAgAEdssTZwf/zeh5xFmop+CH/91C/WSiZmLvMJgGM5zwgyZA924Jb8pCLcPP1u8vX2+rjD5ViASAfg6g6EpZzT0ERZhW4E+OSMaxey/oPF2JyboCXbqf9NlPkqzpDYu4sT8YfxFhuoR4cGUr3yAgahNi1zuPnIORCZBQOyfA5R1jeogeuHe3BOlw77eFjh7LbV5dsLsC9EqC0E8OxK0mr/JHi39lVttyCWBCtkJmcq2MALKElDnewi9wnikdi/Ad9XyNVUTbj678AvXKXctGIS1Clp1gs8
+ properties :
+  width : 794
+  height : 397
+  widthClient : 792
+  heightClient : 365
+ controls :
+  -
+    name : LibConfig
+    identifier : 0x3be8ff3d42a78f5f
+    internal_properties : CQAAAAkAAABWmosVGliNzwNuJzMieWTPuISSn1GwHtKRiRSBzij+uGxYVkE65ZRig5Yv10HBHqszuj75lscouDtOg69zEgQaI8dKStfWX4t1Bk6mDidUPUCfIjXzbruc8o3zQmmy7oxdw3Bn7uDLE5a17zVo0TQZYzimGQk37VknDIl0OWo7+rUGrSUge1cMToUp26hsBnHCmZcFDyCe8muRXtQbxC1bwwG7O7N5wqnGSUfgzzjPxh2VJ03txToUKNB4A7MBo8k57j1Beohym2aF9mzqZOpvbG3IlyRSTN057LeGguLIBQ44lw1hfrHF/+pW+GLC/WUlwrdl1cAtYNvbgOIsQ0FMRLWg6lA60oeVtfiHuZjtaOMErKnZ+NmXvVtnDZoFQRwksoJy1ajGN4yEWEAtBEi3NmH2hOP5vW43+Ox8QiONs0EIAOYxX0M/yQLOhptKvcJX3vEHB7u9cEwF+es46UHS
+    properties :
+     x : 6
+     y : 10
+     width : 420
+     height : 17
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Nouvel_utilisateur1
+    identifier : 0x3be8ff3d29b98f5f
+    internal_properties : CQAAAAkAAABlTvheN1SbbJCOH3QJTs9pQkrAZYEpEFUBkUuGbClAejOeXnsg1sOADTjjr0zX5Yd6ssOg7VCxgA52mCa9niwqLaQU1Ka2iLHsOfjVvuos7SoKnDXy3F6IZsQPCVwgNJvNYpvK82pnZwGFm8hGSnSwlyhWRfGImQQYxsvWSuEUeCnyNAaCJtAnrvfzNSTr+7zUQyjmviPIsKBfUbWVZgnswT1J7XPKDxu/9yhauZo73SKRxNYqr7mzPtFwwt+tH8MgvBnJQy5wtLOEbtueiHK1S3QQpvdPYATw9NkyYNlL5mX6B9BUiQOhDEgWyFWapwybBjIheaCMpClzGFJBEZBvvDXANaEdxDhqgYtDlaGV8CQH3hlEBj0FOR02x9cLsmB4lnbe6uwkqRW9D9UHeY8t2W+W/QrHbDDmUk1OFUS+RyrFRHTqTrBBkIPpHl1aDYVdHoyIO6Ot6mHkld/wI3HKobAR9GuMOjh9TOxUwzc4ZzLJLX2B+DULskKuWIIYVVnuhk0I0xOBMnliNGEmj8pjMzhba4faJBvtbp0BTyFc9U2JFsw3Jy/+EXxVhty7CJ4DjeYw/hkT6hshPLVq7CfhFyHs9T9IT8DJlGUstocrzrDfBTEDss5N+dU4p3LX+TiGA9SJYRJcTp0IWZnQqzgZPK6ChrKbRAYFU73mgTow+EKpWE2ke8nIs/3mjNeYxAdsQpWCmWTpdC0amI931AR32I/Er97Gb96xUINmcm3Ht9IJimALF11Bvnb6lKAKGHrxyQkDESDebmPS1Uqk19C1ClDpuRriMTB8VsP2OsvAYFsA1NYi
+    properties :
+     x : 653
+     y : 37
+     width : 132
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // ouverture de la fenêtre de création d'un nouvel utilisateur
+         ouvre("GPWFicheUtilisateur")
+         // rafraichissement de la table
+         AfficheTable()
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Modif_droits
+    identifier : 0x3be8ff3d652f8f5f
+    internal_properties : CQAAAAkAAAB6qiNvM9I1tk0GERHXGKAptSOpMm0hJKpEMFyoObcF/6A6U7kkALWhygvAn0cs5e6KcuX1BSsEOIUlm9zp8pPfvPzTrJ++DniE/Im9s0b1vij0MQTz/Q6Mo7v8QGlWvhxa/aNQqkk6p8o8p6T2/ENXD6fBccDARICtKHZMC6usdtZSHb8DfmaXjXRWDOUcpJWCgiWSGnJTeXj6PSUwp09fs4fTjMiaRUiAbIOyjMZsY8i1GKxfoh9ym32m4a0/NqvUoXbJRK8QDvi/y03ZK66gUPwePgl2IHauYtMjiFylpngv8GoCtoxKFNoXCuKQom26icn0jz9oDg9aqhuKFPhs59tWFK08fb+fWtseEu6ofee7o47LFB9zXhaNlzJIaggib0wYSQdonOhsf872IhwajZjsBIqyAKO0yukvRcWRTl6osRFRd2rhQpCIiNyBnoaKbEESDdrxpTpp3VE9DhuMZRsazZElgXof2/rLfW/ES0tv0ALYsqKRg+wFxVs/eLB+bgTbWyOrJVKEJ1taJd+DW/VKYlO3p6r/hZRd0sN2mvxKICPf8MonyjiaGrMJhyYu2wonG5fGI/Qp8YX9myogTgYIkRh+ZdsicOCYzhylTYob0O8PIDAzG/PSGeYRmg0Bobrgli5j2Cz1KGmt7tWzGuEKIWMJkMajdX2Lgq6fgdl0S5Ou3k8karN/qZMx1cUExzrOwxpGxY3B9UDmOZ8XW0rx0mPbHQ7ZiKP8dI+EZtFxEqsci7114YU86WGZPD6nBBVQ2DC6DxJOJrIkWUIGCj81+/DxVKvQRCKWfqHPC6+q3zntnvLzXnpOJna4jPwvZYrMTbaBggt5my1Z
+    properties :
+     x : 653
+     y : 157
+     width : 132
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         // pas de gestion de droits sur le groupe superviseur
+         SI CONFIGURATION=gpwSuperviseur ALORS
+         	info(<§$0003§>)
+         	retour
+         FIN
+         
+         // pas de gestion de droits sur le groupe par défaut
+         SI CONFIGURATION=gpwdefaut ALORS
+         	info(<§$0004§>)
+         	retour
+         FIN
+         
+         // nom de la configuation
+         sConfiguration est une chaine
+         // si l'utilisateur n'est pas dans un groupe
+         si Configuration=gpwAucun alors
+         	// l'utiliateur a une configuration spécifique
+         	sConfiguration=Login
+         	
+         	// recherche de la configuration
+         	hlitrecherchepremier("GPWConfiguration","Application_Configuration",HConstruitValClé("GPWConfiguration","Application_Configuration",ProjetInfo(),Login))
+         	si pas htrouve("GPWConfiguration") ALORS
+         		// création de la configuration spécifique à l'utilisateur
+         		hraz("GPWConfiguration")
+         		GPWConfiguration.Application=ProjetInfo()
+         		GPWConfiguration.Configuration=sConfiguration
+         		GPWConfiguration.Groupe=Faux
+         		si pas hajoute("GPWConfiguration") alors
+         			erreur(<§$0002§>+rc+HErreurInfo())
+         			retour
+         		fin
+         	FIN
+         sinon
+         	sConfiguration=Configuration
+         FIN
+         
+         // ouvre la fenêtre de configuration des éléments
+         ouvre("GPWDetailConfiguration",sConfiguration)
+         	
+         // rafraichissement de la combo
+         listeaffiche(Configuration,taInit)
+         // rafraichissement de la table
+         AfficheTable()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Fermer
+    identifier : 0x3be8ff3d697d8f5f
+    internal_properties : CQAAAAkAAADxtj1D5rkhtdSvzk2D2aGDGBnivHAx+85xptDmnOFhJhT+kQujs+iu0YVhKzmzJZ+Cr94pcoZoggof4Qa0tnJgjZXLcTkwpjB7+6ufFbTQavOkMfjoHffCN4uMj0wHlsKOaTic81jkeqU6rQwccwlLJFGc8SsWJjNiCem7pKw/tmfFHa5tjL3sLMetVaubxi4rfw2eqgE9ILCNY1EN7uNDH7Pff7bLcKVeCV0RJH6oSPMjGWBuhAn9oQDnF0luwzEyDPH8g6qwdnxermEF6Ka0KITZqAnYvXdV/m7xFQbzpqk7e8V8S8MM9LFSJT/O7bQR1R/+Win0+CKBsLcTA7lIJAAc9aipUy7DMJyXiuhIWkduaa4YDcTFoYgtacbajxjHEP/Gi86l9vepOTnbN8THznD+EyEa9IMF0CBXSlmlTWbnsBo04gh6VCrBMaQ9tuNQTqgmO40XKzmy9DCMSd/YIPwibgGT27dwIEZeL4gFA5NSUTNpidtqHTutvzem7/+wsGNBguM77+XV3eraExeZcPaXH/b4geUm0nJhkWR5/y2cpAHgRFUnvogDIz8LLGkD3KAQb0d0Cz7AqBbAV8ZEkWf1R9hkWzO5R/mvw0FEpMcnZK7CtaBjaQ0HqSwNbNrWWrYu3uOK5Co9NACSY5v51FMk72tPV8jXv7L2jk5xpzMCaOQy6vTYu1akgNKbQeQUbDVMGKeEXuedu89x9mmf9sa955EcYfJfysw7hHcxdlRByeF2A1J0Mxs=
+    properties :
+     x : 654
+     y : 324
+     width : 132
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Supprimer_utilisateur
+    identifier : 0x3be8ff3d5e708f5f
+    internal_properties : CQAAAAkAAADHeGeq691ieIZAMdbMwuqvNPgh7Omoarotd1T+f8v7a/3OdfJCn4GLC29GQi8BeA0TGfzYrGyU/f6a3IZBa4wxxH2hSz+ZXPUzlTM6qD5/T5J9fExztlkarq127nVxctfgGooBIvohJR3PnqO4BkgaT36VvjrByc8sQ0Q3acchJqod0JY2OkY9eRIBRkc5r863xyk5vBVLHPmgmwpubvrWi2FVnCCajkrvTNAddogMjOlEJe1RqlUZr1mar6hEf5GGed5TqXdnaDgJsID5UuMktkM3FhcTVodogXDzDEHiVoHE+ZsNZfrCZK5x4jAmDOKKRILIEkHkU3cFoXetJFvAl47TlTaGFVt4F6Y83wbkUFOHAMov/xdhlHHakuyCqYy5QuOizTVQvdgJMDi0h5wCTnnJI6BIoMuKIjU39W99I114tB4LXLfyN5V1ULr+tyMdzcT1MfJ7oaPJNjdG3Z9EhrBTFNNBqWupSQwVsTWG6l+PRoYrO7Oyu8CrcI/lkH1e9eegAgGR0891eouCdRlI+XI/K9MMHIcXvUw2WUnOSk5/C9p9k/nihHyuY0ZIGmKpYhVq6Sh+juNzmAndCYhs/E0U4A6dIxt3vBWGraOwVBzMXxmElPKXwEA3PWdkR7/ga9iU1+W0tUbyLauZxwIApmM5cPeg5EJsKqqvYyY60N066TDw0aVSyiFlYJkeSgFXcU868nKsYJTcrI1Dc07qE5uuQFVwpkPBuIX0jq940Vl/qV5EqHZnH8yyPVYpe5BVSw377QSbM7DNoY7WUzwwvVFmbXHF9zgAQVT3KZTcoI4OfipdKN2atCpAOrCnfNJD
+    properties :
+     x : 653
+     y : 97
+     width : 132
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         si ouinon(<§$0001§>+Login+"' ?") alors
+         	// recherche du login dans le fichier de relation entre les login et les applications
+         	HLitRecherchePremier(GPWUtilisateurConfiguration,"Login",Login)
+         	tantque htrouve(GPWUtilisateurConfiguration)
+         		si pas hsupprime(GPWUtilisateurConfiguration) ALORS
+         			erreur(<§$0000§>,HErreurInfo())
+         		FIN
+         		HLitSuivant(GPWUtilisateurConfiguration,"Login")
+         	FIN
+         
+         	// recherche de l'utilisateur
+         	hlitrecherchepremier(GPWUtilisateur,"Login",login)
+         	si htrouve(GPWUtilisateur) alors
+         		si pas hsupprime("GPWUtilisateur") ALORS
+         			erreur(<§$0000§>,HErreurInfo())
+         		FIN
+         	FIN
+         
+         	// rafraichissement de la table
+         	AfficheTable()
+         FIN
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Configuration_Utilisateur
+    identifier : 0x3be8ff3d482f8f69
+    internal_properties : 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
+    properties :
+     x : 18
+     y : 44
+     width : 614
+     height : 299
+    columns :
+     -
+       name : Login
+       identifier : 0x3be8ff3d069f8f69
+       internal_properties : CQAAAAkAAAByo8y3tJaYVlRdC3JBxP/0pfubYnVhjaM7h1q5OS/C3CqFcnj4ZMp5X7G6so3aGQ3IJgJFaRgDlxZD5oslsqI1nzHaqdoKmYhZMFnlqKmixgVc0QilF0w6BGqH1z7YnfirWiML9qFCA6mympRyc7cf+VrhVM+CEVq2dfwoMdDFq1ezKyX2iqoqX71aSLuMibQgZO45dvwXtSjEzvFxxGX2
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAACJmNUNrB85aQJc6SGuHra8l5osPX045IeSgk8HKtCKZgHo+X4UJ370bJAVA7oqYUSseYED7ce5GwD+OAOaI5uPVgBcYWjh5QioKGPBPsPf7xCPUMzNLizv3BQj1jvwEy3lqtbyefAbVXGPM3FEhtJMy0GdYgVzicFuxTV9eLsKaiMAWz2MiJTBjSN100alqmHjEoEab3KKpmG23o5LOcS3qQkiT4lPUoAVrOVB2amPRhpzG2D6f4G3z/b+vs84av00hDZhIEn6ZMNHvGhmstSxr2y6H4frjzC3ltZBoWsAvGY4vomMZ1wKyprJX2GwjiKnwfsyZMFAVwUiRMeYKpKjdcVkz3finvON2C0ShhfDkgdEAm6KR/ZXlpA5evFnisztHPIYWaIK+eq/S+6y9MIIM19OJwW8P+q3QhKnfZMAnBr5hMND2lF43jeoXksJWc1qvmyaNmvPYZy7sskaXHjRO7cwlWmsRaMSZKLqJ1nt8ihPxMfEv3wcxeDO0kqkKM0c4fgMLQoxzNnNQbhKuzvV/IIdXRM1u9X+YYGoHPyVYfFP8HxQbq32gYmkHQQ0Drd/uMbxG7nyAFUuSMrMMKyysWmMaw==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : Configuration
+       identifier : 0x3be8ff3d17fb8f69
+       internal_properties : CQAAAAkAAAAAgMXOcDr9Q9HTXM1FGuVht9xccCionSCKAmXDTFRB2WRH5jbJNSJhBB3xYbKWS0wciDjNdxdJ3niW9BEdNTzhnmJ1zmg6juKdpMQuFOG0s1ovFTWXEtjm2Blb9wi4OPGPNY/xeYzR5uvpsEOpDiKAw5ZroxrfyrErI5le0czN+DCd/pZDncz2yJ3T/PNoOurAamMIeyWjKZv6rcDhQFozYx1DsAjNC0EmT83OKbEVzHawDVMtcXHVPME4JwP1qxAD
+       type : 14
+       content :
+        internal_properties : CQAAAAkAAADH9fUg6QCE7zzGr6UJpRSAtQGGFMERDw1ZOaCNRSJfbUfat1ZAYgPL0BITQsPRF7jSbExIKnesIOcxGctY2qWhStAt1+dUCNi21+W9n4W27Fdc4MEv6OV8jsATHtLAQXB7tKzifuA/I5NikoDWBdePe6Hnuz4f3yYru/Rl1G0lUUYuN+a+JmgjR7Ozr+mc0LdHbjzxDc6f+rDKr6Lnd5dBPsrIe9Da3ywsjNRYwT8ZPoe8B7GlQwe2QPbbkvOavEMBslcIqSTUf6UQRrHRbLzIglitpL55ImRDvjMqLp4YDlQdGQE6fk5OeB1ilzwgJzr5lhydmHP62PwAyxXfteY+uR+kcoMIphF/TTiVt0mfrO3LZri/ypLe05NnvnWEMfEyZEYVlQGhz/Urc+kunUjSnfFYFmjWUH6gunuv0EZItthW5r5B/mDJzN9BKeiZGbMrSiJ3vALNj2TVA310myQgTGE06YGAv8WV5gM/bmEBeQubpxw+K52O/1N56UoRQL5YLNRmGibZTu7DoSXiuitgRHXSN7m87xsI+FI8MCkEtViEksUrhYggiXBd5a/KiSDal0Z9BNR1ti49J19cjAizEwsX+Qhg5ALLASB3KOxpJqOu/v5DVUBa6kx5cx7xCoYbaAg5LRf/xaHRMNoyc7vuPvvP9zoRhFaoUwR/L88y1JLu4z8wSLtdpuVCCNc668i3x3tvg6LdZu0RAnOKTn5jzgDBXVRyf05L+cHKaoINvnwTWS1BeZp1TnbngbyX/OOrqIPKDVYel38R79kZPPCQomONf5MHDgDHD/clLerRz9MOtMusn4Z70AVzsAlfl5XdoPg0cVzC5uUAhc1VSD/ludnhfvIrI8cm2x/BWXVk7tz3dtqTBC1NToiOs+/qq95T6HN5fZQYGqJqXDxWKudnqHj8iBcuyfjYVNCph8jVG9o2hD/uCfXFaHG/fpWFQFQRsmohqzMJj9pqQD9h3OnyOnfXert8cmbZZHnsYKmw5/6P7kyoxf5DiM8nO9dsCSXZ1kA2qg0ZUjEQHOZi1HvmFmsEzD9kIC/nNVzBEqemWJ3hLsKPEsQcTvXySdqEbAjqoQm+SLRwYL/jkBhFt3R/qdEPeMvMMmNxtLGELARk+IrBnce+qCmy6dv6Zj8RAfqKRKi4PwthvMCt+4RJbW9Q7f7YeryD7i8=
+        properties : {}
+        dropdown :
+         internal_properties : CQAAAAkAAACfMXvMQqJtwbvP+nNIjQDus1JsBhCO57mhKN1JFx0KvbMIV2F38CpKGq+QXblYbJ94BfvCSwvr6IrNHaUHIO/Y+CjE7xbNReaf/j84gidZs3zCAlXy8gV/yt6REYyX2aK349poWStMULo3879J7KVpkSxlL0BwtcSv7dvZuMInPAkJX7M7yo81XCKzTs95BShTQHTET8kLkiehcGqvO6udqSp4JzBqRUZbIniHDZbp9YIRPmuKcKFTlm6RrOJ6x+bsaQ4TcKV4elmzJzZYwaHVdBA8s03zLDR2PQ3le4kO+dz9aULD5ZRj8kjusC0GPnBb8Cfkm1VnSYa8gpNgOdbAtN0B4eZMCLH/UXVKRwcpDjQEbtIJr0IzqDxcOK4Lv7SEE1HVsp8mtIf9w+cRHG+ILLuvA8lnACTw/ZTKEGbCWTsyIeq18GkbBLQkRUhv6r/CBzcGpcQ7uB1jGTqlVmtxQXkuQg9Uv2iHxKljgdov2XK0tf8EgLCzehhim+4drpxqwo0J6DqnUCMYJXf52TT9Wc6Lrcy6ZdWPvccs/eG8XgmjPRZVXKX/rLRViDIGOrlDAgfCf1MvhstZ2qVRHnjD5VTLAnYyGIn3owSTAN7Dec74WXsXQaEHP81ugQYUglWM8nvW4av8
+         properties :
+          height : 100
+         type : 7
+        type : 14
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 23
+        p_codes :
+         -
+           code : |1+
+            moimeme..filtre=hconstruitvalcle("GPWConfiguration","Groupe_Configuration",vrai)
+           type : 14
+         -
+           code : |1+
+            // recherche de l'utilisateur dans le fichier de relation
+            sValCle est une chaine=HConstruitValClé(GPWUtilisateurConfiguration,"Login_Application",Login,ProjetInfo())
+            // recherche du login dans le fichier de relation entre les login et les applications
+            HLitRecherchePremier(GPWUtilisateurConfiguration,"Login_Application",sValCle)
+            si pas htrouve(GPWUtilisateurConfiguration) ALORS
+            	sValCle=HConstruitValClé(GPWUtilisateurConfiguration,"Login_Application",Login,gpwDéfaut)
+            	// recherche du login dans le fichier de relation entre les login et les applications
+            	HLitRecherchePremier(GPWUtilisateurConfiguration,"Login_Application",sValCle)
+            FIN
+            
+            // trouvé
+            si htrouve(GPWUtilisateurConfiguration) ALORS
+            	// modification de son groupe
+            	GPWUtilisateurConfiguration.Configuration=moimeme
+            	
+            	// modification de l'utilisateur
+            	si pas HModifie(GPWUtilisateurConfiguration) ALORS
+            		erreur(<§$0005§>+RC+HErreurInfo())
+            		// rafraichissement de la table
+            		AfficheTable()
+            	FIN
+            FIN
+            
+            
+           type : 33
+         -
+           type : 17
+           enabled : false
+     -
+       name : Nom
+       identifier : 0x3be8ff3d7ed48f69
+       internal_properties : CQAAAAkAAADRB00O+YDAA1SBaVyubXUgFGp08ZjD8LT1yQxjN/5/QHnMqdwXH9OoGwbgnx9MXxMutRAVxtTFrW8rkt2BhAb+KP2ovCvyKczkOGUtc57+DqoVpaKUKzpFvccA0ka9pXMAA/mL05+aEvBl69fgEhF6jpu31FxqmUenytNkWKNQITkzxIZaKpMdoyVE7lNCJnN6iWEU8jSv+ncIPvpAYw==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABq9v2yXOglhe5epmUtTQtvpOyCKgRRBSz80SPgq+laJHH4dwvJvbPsqSoEfVdq7tA1TUu9ImnjodKMP3bz5zOAbMDaEd/bDcTGSIj4pP9orkMubuGSF5y2yQY9WY9nKKF58+n3yo04qxbebr/y9KCTcLy1iNE8AwdU39WB+9iNIlapwB2GWcVf2PmjnEOAbachJBfAq7K/TnxYlu4KcGwRGUz/UrsFG2znUTyCpha9cVAGobRKZ0NI6JrIUV4kB1sOPXEY9R7tj1oCAKghofssFQUody73jP3clC47NUPNt7e907Nop0mrbL+EbR04lIAi/WaqBAX7cvch/7+gBrrvFHNbZ8Xo6Trrg7wkyNGtJBhsNfoW59fAYM8kxJ2vWpBO8vMYMyzjhiKGPmRAUtaoRqNLV6Py2F/HNyfto2GiplllYxUFRFbBqkJDrD9BGfmHLJnOSkO6yLKM7z+A0pJDfmNBYbnoRvzOgWem533VnhtVBSV+EQeDAYmD1vgSLE0zjQO0fWYEU43qQCx2I10vBeqa/b+1+nQ0WAxYYS4wANagBA7yoUV7YVCkfrcBPW4vxeq5G2nIRHwqvmOiqkcZf/s=
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : Prenom
+       identifier : 0x3be8ff3d36ae8f69
+       internal_properties : CQAAAAkAAACbjcm+esz0PvmQs8+lSHqlISLGCqQvyhihhKY5zbD2smYI04bAlHn+pK9LrCjMCqYSPs7ykPCoR24Oq9j5Lf8jbmgW61jxEvuDBHjTu8a9Re+pKdJtUhCcEPe8hMWM+hPc9rTiFaS3Gmme9qDBT2Zg+9dWp3uT/ifvRc2WRJZYU7wpq9qYAdYn991MBlNYo2L28QtHVZlt67zRG78WLwrdsYAH2jMoEUp4b2z+XLK+Fh4Cz2ysXnYb8bJaFqnevIccIdN+YNwtHcvlML3fMqDFMpGB51crqhY6rAw29KM=
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABq9v2yXOglhe5epmUtTQtvpOyCKgRRBSz80SPgq+laJHH4dwvJvbPsqSoEfVdq7tA1TUu9ImnjodKMP3bz5zOAbMDaEd/bDcTGSIj4pP9orkMubuGSF5y2yQY9WY9nKKF58+n3yo04qxbebr/y9KCTcLy1iNE8AwdU39WB+9iNIlapwB2GWcVf2PmjnEOAbachJBfAq7K/TnxYlu4KcGwRGUz/UrsFG2znUTyCpha9cVAGobRKZ0NI6JrIUV4kB1sOPXEY9R7tj1oCAKghofssFQUody73jP3clC47NUPNt7e907Nop0mrbL+EbR04lIAi/WaqBAX7cvch/7+gBrrvFHNbZ8Xo6Trrg7wkyNGtJBhsNfoW59fAYM8kxJ2vWpBO8vMYMyzjhiKGPmRAUtaoRqNLV6Py2F/HNyfto2GiplllYxUFRFbBqkJDrD9BGfmHLJnOSkO6yLKM7z+A0pJDfmNBYbnoRvzOgWem533VnhtVBSV+EQeDAYmD1vgSLE0zjQO0fWYEU43qQCx2I10vBeqa/b+1+nQ0WAxYYS4wANagBA7yoUV7YVCkfrcBPW4vxeq5G2nIRHwqvmOiqkcZf/s=
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1-
+         
+        type : 20
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 340
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : Modif_utilisateur
+    identifier : 0x3be8ff3d525b8f69
+    internal_properties : CQAAAAkAAABO6oK1IhIZBFoiOlLVz6eA/jxW8jykoL6+VP2dFFmWvq1OpKiPj2jGm7CdZ+Rqn5yjPQXq+CchcVXiLXOMK4eL0xyaGxAjioluqs/qCMdxT2rbdkuccnBk8YK2Yoeq4AWah/hLkNZkDAVammWPa9vAgMW6SoaG/rY2rdHsV0OTeLKH/RzvSZlfDofPbN/BoGYOKG/YuDxShWoH/kwfiiTHWO++52ZtmGVNuQP9cRKm1Om/AfK9fWyUimeNqFYALuMcPQ1zHslaAm0cH0EtVEE6S5XEt1eDW5ZJLuNW3y75siVJ3NhcfdMSq1sJInl//fgfkteS92o8sfCy51a7LeB+ETbG/8yLmTNBIh4LTCS+nY/IwsZuISBH1omyv8olY/SQqtjGG0pwKidkhXsYjQTApsakkTYshzCRepa0db8kFPfKcG4CwZ1DofdC1GtvyXomi1A6uV5iXqxKKpGEJtdfVu1/LGV9iZCUuEfCqxh2eJsKyQcnJ7a5v4BtEIgjo0ZLiWlKy4jMuBoCkTPeeohahrn19w3DS+nkANi3abjevspgDjLR+A6EmJRyCBw0dinWFkY22OhUbAaPi1+YW5fu7PwIC0vNaoj+Bgaa5OQ97zmIGTn/i8USmIcFU962BhLiwW+2EEBjtxL8XqVP+o5SqSAuhiVPfopA0E8dngBNE+/7mdHA4OfMvL1LfpAEazQo8W+Z6cK2+rDr28oZeUIbHO9BXaWhuewfC9ZXKdjuYQDwgFzv/ibh9zD52wVubmLIwFQa+klx3XWP8BAH+oSdKRK6mc2P4/rDvCh0f6aDNVvf
+    properties :
+     x : 653
+     y : 67
+     width : 132
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // recherche du login dans le fichier de relation entre les login et les applications
+         HLitRecherchePremier(GPWUtilisateur,"Login",Login)
+         si htrouve(GPWUtilisateur) ALORS
+         	// ouverture de la fenêtre de modification de l'utilisateur
+         	ouvre(GPWFicheUtilisateur,faux)
+         	// rafraichissement de la table
+         	AfficheTable()
+         FIN
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Nouvelle
+    identifier : 0x3be918e3041ec05c
+    internal_properties : CQAAAAkAAACX8T+0MHnUEA6ewInaEs/+0gRq/EiNeCmTG0HqZit0ut9EAOLSHJlWrNd9Oc+3d8ZSCAopekOTZ2IPPMLOeQsNS+bCF8XiM3lClI3Xnh1tvRo7to1322HkCcSqG0k81Iu6s5pDvfsV9PEWtJa/e6E0LonE/9eAw+IAvyUZ3XMRTWRp4L0UGvpJuqFCCjLhmZWWbe9fVhqc+sn3IN8YfJ6G31JUmsXt+BSeKN6rlyU4HCjJCF1D3fqLy1b0gXEOQboFdHLat7VaHPAKrg26IQXv3FCzc71qkegoHb0kt/y96hpmGB0dD2F7OoJTyA/AL8IutxldhYojO+OCrHVS8VFIrOk7s+M8VlVHayZmfCU/FlSNoDMOuGneXyn68yuQjlrSHcWGl83FgzPigv1tatauGmDj0m/7KIEshLsgIdO6JgszkfJ2jWRSgBc5mtdDt4wCtPHW7SK9aYty+322VOvbkHzsgjNvCJd/wpLab+RyzNk/eo3VMf3Q7GikVE4t57KpXpZayYqbu+keqI9osILwXo5Acc8BvsQzyCfFN2p2vsSpvbJ91LOFiZgReDYqOq3wEdHQfFRZJWEDErNiMYdWSvFzT8cRiW8BWIl64NiPJdm95PsZ1dzsuUmw++j2CSMzv6pTzeuFHzK80aPslwOlyJPKI5Ow8Msoy+l5mXtmlpGeVB2G3p5sydzzwnrw62XwIkLubhOwkksPDNzUdFyP/6AWcIKjq1Fs5pj2ClTw/hqx/4sklKx+hVABbwl/A7UmGpeqh43UeX1wF/h0qhT3hUzg44IGnfKWcAvFp8QzOi5SD0k3IUGyb+pLUA==
+    properties :
+     x : 653
+     y : 127
+     width : 132
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // création d'une nouvelle configuration
+         ouvre("GPWFicheConfiguration")
+         
+         // rafraichissement de la table
+         listeaffiche(Configuration,taInit)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Image1
+    identifier : 0x21c313c43c14a6bf
+    internal_properties : CQAAAAkAAAC6xIJWO89Gpla2K79lUriHkruQUMtBeK9Vol8tGu1IF17fyZsYSRHlT2rVL8otJ09iS55F0J17Cm5OHpuGlK2jTvPQ08FFm6UZq5+YpV1l4V1o0jlvqowG6qKWIINHOnUwHm3uXXUwftP4tQzX8HMscrh00v/bG+mgCmwGCnNLOfbiFWSxGbm3Ufyy62G7OybQXkuDAnmhp2dSuNL0q9nHzxoIcTVeZRBlJLfmvGNJvOsiOIMp2tZLew9paeouR1wrySPr1kweABZ2Cjb57ACYHhn3cWE2G9SI3y2zdnt6wmhVteobcNoiQaJb2eGS++mO/HMMwx1Jk65wexI3XVHwWjNDqpc54VFxK2nrhlX/Mn7QQ+HX4/2WnXpb7w8j9Gvakk3/jdsk666hirllxwBV07hlLumQUF1Ttj3iOrK76upTFlh6rBB2EM2uQTV4vNrdx+7J4zGUtpPW0u03b8XSjsBTZt89A5VjYc96uvXA3twBH3aLQHPlxxYV1yOhiZJjpmPgoW0cxsBzQHq+/l0V7h52Hee5UmdvBqjfw4O944ZSNaM1hm8cwu2txm5pZfnCfd22za3y7yhEy5qAvlTkvyk/OA==
+    properties :
+     x : 6
+     y : 37
+     width : 638
+     height : 321
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_ImportLDAP
+    identifier : 0x269f23cf1253bdf9
+    internal_properties : CQAAAAkAAAC8uCsajmM7zo7t+nKGAavcJs7ynhLsRuhKhmCtz4cubtmAvACdFfLYujeiwIcl1SI7FtSsV4Lw3TzJxoaM61OR1M78n7lowB7n3Y/LCwMAr5I+vIxHT7JVKSTQS5ZHWnrwbZO9enaKnbsv7de+tuB2yYkg5o/z1Sy9oLlmY8AQ0MnG87CGmVWr4lLmJEII+UrfGZw3lqKccFN8ltaKHDrAxb5z13xYpupQ65tn45XppuZF2r33xHzbd8Yiug4k4D2vSholXYgi9N/9dEGSr/LR/T0ZuYD75pozQvuSXt4gjXwRce8V/lyYg17qUo39cBvkYTunOUexB0RG5h/F//ak79B6Zc4Ga0rIOfInRSqKGyTwmSTvkNMPaCTzrG3Q/cTp5oOZRG22YnAIP86CLZLKT1f1rUvjfz705RUec8OemColduiGvVErN13s7KNSGNuw88h0cIdoQwvLpZ4kIG0XKhDaqRdRICBlywzFsvl/jnZvpjqHTxyfyYZDpllFboKg+jX3L+JC0/QuUWobd0U7IUS2Smb1O/EllMPXpEKlplExD0X9KrjadB6L92fL0Y5k+EugZwNW/sqqnHRPy10wyxQGnLISJgw86K9hd5iXWftxeUZN70zH3Mhs8Vea7CydC6C4fKFLfSHgTuXSeKvQifVz0KpgjBwYUR9/kmzOm7JhZykkoqgMFO+J4Z/hOorp87n6BSgQ5CcNUpw+Rw8pvYX+Hi/vcZpo0ysNtq5+PNBCCmaYmf7NpIrTQjYts33tr2nlL1yeuAoeYe/654uO8AdBcpQHyXpYkz2vGURoI6mt
+    properties :
+     x : 653
+     y : 217
+     width : 132
+     height : 38
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //1 : &Importer
+         //2 : &Ne pas importer
+         SELON Dialogue(<§?169F613200D6893E§>)
+         	// &Importer
+         	CAS 1
+         		// affiche un sablier pendant l'importation
+         		Sablier()
+         		// importation
+         		gpwImportUtilisateursLDAP()
+         		// rafraichissement de la table
+         		AfficheTable()
+         	
+         	// &Ne pas importer
+         	CAS 2
+         		retour
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Historique_des_connexions
+    identifier : 0x26a5f2841a5e3660
+    internal_properties : CQAAAAkAAABzeA1MI2FKs29b+aK369AfyN8DFs6yHAvPWpSQl3bNBz5IrgZMIn9Epp/s+8ovRJbeiZHCFRnmmemzm9/0RKkeNBDjU89MlZwkn2E57yEK/s1cKnnKGYSdh4QwnUiaAhepXk+2zi4ydoaYrVSe+0/WFZjxelycF5ADFy/dpcDlEHVcuS6XPSEgqlikeoXG/VuKt/PGtoZJv2mRKZIOYiaKNes8GzsptZQj1+YhKtpVcwLp5rGXFiDIAAtzQ8UjaaqPVkLX9+oRiaQaSRv79hPMN6iJS1h8A0+k6na3LMdOE5ieL3Z7mjtAWsDtxLJ9X8Y9qv5OiJcI9UT7ArvR+IDKQoq1NOb+kkB86xMqzi/k1liyKxU7IxCQkI2/vhc26Inx+NioqPVp3zw6DWnO7BQ4Rtwod70r8Tjx9SJFbZ4NBq/+8uHUeVGIdpBIe4LfY139QQx57yWhGRivDDgnOqtIIC2CpDz/lpcxNEV+jbQte8p+VdRAVectuRizkWakafr76U5/tIMTjr6QY50xoR3mVPjz9TxkCW4KgRGzVWNIOTyHwtXAQbQPgh6a87PsqBwfet0aoFkU+xIyl66GdfCGQ5n8gAalOzmfovCFd+Uz/uwjz+gkG27JOhfVg3UBGFoYa/sFRBbioXM3h+VUsdDbE/4p8I541269kwVo/Dkj6xHku9Dk8BYDOIHY3ila/boPH0rcJJ+eJuCyHhLir5nWI6KUD+9NfGu+k6aWUep6RUn7Khr59SlI8pw8Fkf0hcNM844YnM9I
+    properties :
+     x : 653
+     y : 187
+     width : 132
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ouvre("GPWHistoriqueConnexion")
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3be8ff3d5c578f69
+  internal_properties : CQAAAAkAAAAbq1+mNDaDBZcqQvbWBaDZ5Jui4twharj2/575pBSh0PyCVcL5u3mR6TzbYv5DwC67T9xz88szSCE9fR3yA/H3pb0hXZTlh/z77BHbh1jQGPr8wxmM0dzQTBh6H86nTNUME//eTm3FVDUp/XiwW+2Eoy8dQ9uBYw5OLgmsY1W4CmmUUegh6Kl2n4wsAWw9o6GZKKTEEQtjhv40Ll7OfNeKO1qmikU99eiC3/N7/q99+iA3F9kT17f6Ztl9ytg6xGCakrySJ6M4XeNItP5DECFsBZTCPsV8s5lz
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAARiemoD9yA/YmgPP6oab1Y2uTSrs+kGEP8AT71X8YT/rz75zDy+ycQAkXEDQ6sdVuUQWAmKuwq/ar7m8Hi1vnfAbIl7hGSJiBp1J8umT59wXXFgLJHcKF4oN0PUYEk
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      //-----------------------------------------------
+      GPWUtilisateur est une source de données
+      GPWUtilisateurConfiguration est une source de données
+      GPWConfiguration est une source de données
+      GPWConfigurationElement est une source de données
+      GPWElement est une source de données
+      //-----------------------------------------------
+      
+   -
+     code : |1-
+      // affichage de la table
+      AfficheTable()
+      
+      // en mode LDAP le bouton d'importation doit être visible
+      si gpwEnModeLDAP() ALORS
+      	BTN_ImportLDAP..visible=vrai
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : AfficheTable
+     procedure_id : 4448710157701272704
+     type_code : 14
+     code : |1+
+      // Mise à jour de la table
+      Procédure AfficheTable()
+      
+      // récupération du login en cours
+      sLogin est une chaine
+      si Configuration_Utilisateur..Occurrence>0 ALORS
+      	sLogin=Configuration_Utilisateur.Login
+      FIN
+      
+      // vide la table
+      TableSupprimeTout(Configuration_Utilisateur)
+      
+      sValCle est une chaine // valeur de la clé composée
+      
+      // parcours du fichier des utilisateurs pour les configuratons par défaut
+      hlitpremier(GPWUtilisateur,"Login")
+      tantque pas HEnDehors(GPWUtilisateur)
+      	sValCle=HConstruitValClé(GPWUtilisateurConfiguration,"Login_Application",GPWUtilisateur.Login,gpwDéfaut)
+      	// recherche du login dans le fichier de relation entre les login et les applications
+      	HLitRecherchePremier(GPWUtilisateurConfiguration,"Login_Application",sValCle)
+      	si HTrouve(GPWUtilisateurConfiguration) alors
+      		// rempli la table
+      		TableAjouteligne(Configuration_Utilisateur,GPWUtilisateur.Login,GPWUtilisateurConfiguration.Configuration,GPWUtilisateur.Nom,GPWUtilisateur.Prenom)
+      	fin
+      	// utilisateur suivant
+      	hlitsuivant(GPWUtilisateur,"Login")
+      FIN
+      
+      // parcours du fichier des utilisateurs pour les configuration superviseur
+      hlitpremier(GPWUtilisateur,"Login")
+      tantque pas HEnDehors(GPWUtilisateur)
+      	sValCle=HConstruitValClé(GPWUtilisateurConfiguration,"Login_Application",GPWUtilisateur.Login,gpwSuperviseur)
+      	// recherche du login dans le fichier de relation entre les login et les applications
+      	HLitRecherchePremier(GPWUtilisateurConfiguration,"Login_Application",sValCle)
+      	si HTrouve(GPWUtilisateurConfiguration) alors
+      		// rempli la table
+      		TableAjouteligne(Configuration_Utilisateur,GPWUtilisateur.Login,GPWUtilisateurConfiguration.Configuration,GPWUtilisateur.Nom,GPWUtilisateur.Prenom)
+      	fin
+      	// utilisateur suivant
+      	hlitsuivant(GPWUtilisateur,"Login")
+      FIN
+      
+      // parcours du fichier des utilisateurs
+      hlitpremier(GPWUtilisateur,"Login")
+      tantque pas HEnDehors(GPWUtilisateur)
+      	// si le l'utilisateur n'est pas déjà dans la table
+      	si TableCherche(Configuration_Utilisateur.Login,GPWUtilisateur.Login)<1 ALORS
+      		// construction ed la clé composée
+      		sValCle=HConstruitValClé(GPWUtilisateurConfiguration,"Login_Application",GPWUtilisateur.Login,ProjetInfo())
+      		// recherche du login dans le fichier de relation entre les login et les applications
+      		HLitRecherchePremier(GPWUtilisateurConfiguration,"Login_Application",sValCle)
+      		
+      		// si l'utilisateur n'est pas associé à l'application
+      		si pas htrouve(GPWUtilisateurConfiguration) ALORS
+      			// association de la configuration par défaut à l'utilisateur
+      			HRAZ("GPWUtilisateurConfiguration")
+      			GPWUtilisateurConfiguration.Login=GPWUtilisateur.Login
+      			GPWUtilisateurConfiguration.Configuration=gpwAucun
+      			GPWUtilisateurConfiguration.Application=ProjetInfo()
+      	
+      			// ajout de l'enregistrement
+      			SI PAS HAjoute("GPWUtilisateurConfiguration") ALORS
+      				Erreur(<§$0006§>+RC+HErreurInfo())
+      				retour
+      			FIN
+      		FIN
+      	
+      		// ajoute la ligne dans la table
+      		TableAjouteligne(Configuration_Utilisateur,GPWUtilisateur.Login,GPWUtilisateurConfiguration.Configuration,GPWUtilisateur.Nom,GPWUtilisateur.Prenom)
+      	fin
+      
+      	// utilisateur suivant
+      	hlitsuivant(GPWUtilisateur,"Login")
+      FIN
+      
+      // repositionne le bandeau sur le login précédent
+      nIndice est un entier=TableCherche(Configuration_Utilisateur.Login,sLogin,faux)
+      si nIndice>0 alors
+      	TableSelectPlus(Configuration_Utilisateur,nIndice)
+      FIN
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x16a9a469006417a3
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Impossible de supprimer l'utilisateur.
+     index : 0
+   -
+     text :
+      fr-FR : Voulez-vous vraiment supprimer l'utilisateur '
+     index : 1
+   -
+     text :
+      fr-FR : Impossible de paramètrer les droits de l'utlisateur.
+     index : 2
+   -
+     text :
+      fr-FR : Le superviseur a tous les droits sur l'application.
+     index : 3
+   -
+     text :
+      fr-FR : Le groupe par défaut a tous les droits sur l'application.
+     index : 4
+   -
+     text :
+      fr-FR : Impossible de modifier le goupe de l'utilisateur.
+     index : 5
+   -
+     text :
+      fr-FR : Impossible de fixer la configuration par défaut à l'utilisateur.
+     index : 6
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,349 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Calculator
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1e4d34db1e0b5dab
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      Calculator est une classe
+      PRIVÉE
+      	_Variables est un tableau associatif de réels
+      	_StringVariables est un tableau associatif  de chaines
+      fin
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2183459510051167659
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2183459510051233195
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+   -
+     name : SetValue
+     procedure_id : 2183459776339267073
+     type_code : 12
+     code : |1-
+      PROCEDURE SetValue(variableName est une chaine, valeur est un réel)
+      _Variables[variableName]=valeur
+     type : 458752
+   -
+     name : SetValue
+     procedure_id : 2183459776339267073
+     type_code : 12
+     code : |1-
+      PROCEDURE SetValue(variableName est une chaine, expression est une chaine)
+      _Variables[variableName]=arrondi(compute(expression),3)
+     type : 458753
+   -
+     name : GetValue
+     procedure_id : 2183460532385414639
+     type_code : 12
+     code : |1-
+      PROCEDURE GetValue(variableName est une chaine)
+      renvoyer _Variables[variableName] ? _Variables[variableName] SINON 0
+     type : 458752
+   -
+     name : ResetVariables
+     procedure_id : 2183460811558354555
+     type_code : 12
+     code : |1-
+      PROCEDURE ResetVariables()
+      tableausupprimeTout(_Variables)
+     type : 458752
+   -
+     name : GetPrecedence
+     procedure_id : 2183491280062266097
+     type_code : 12
+     code : |1-
+      PROCEDURE privée GetPrecedence(operator est une chaine)
+      switch operator
+      	CAS "+", "-"
+      		RENVOYER 1	
+      	CAS "*", "/", "%"
+      		RENVOYER 2	
+      	CAS "^"
+      		RENVOYER 3
+      	autre cas
+      		renvoyer 4
+      END
+     type : 458752
+   -
+     name : IsDigit
+     procedure_id : 2183830092229503407
+     type_code : 12
+     code : |1+
+      PROCEDURE privée IsDigit(c est un caractère)
+      renvoyer c >= "0" _ET_ c <= "9"
+     type : 458752
+   -
+     name : IsAlpha
+     procedure_id : 2183830637690411526
+     type_code : 12
+     code : |1+
+      PROCEDURE privée IsAlpha(c est un caractère)
+      renvoyer (c >= "a" _ET_ c <= "z") _OU_ (c >= "A" _ET_ c <= "Z")
+     type : 458752
+   -
+     name : IsOperator
+     procedure_id : 2183831462324193682
+     type_code : 12
+     code : |1+
+      PROCEDURE privée IsOperator(c est un caractère)
+      renvoyer c = "+" _OU_ c = "-" _OU_ c = "/" _OU_ c = "*" _OU_ c = "^" _OU_ c="%"
+     type : 458752
+   -
+     name : IsFunction
+     procedure_id : 2183856227105686271
+     type_code : 12
+     code : |1+
+      PROCEDURE privée IsFunction(term est une chaine)
+      term=Majuscule(term)
+      renvoyer term="SQRT" _OU_ term="SIN" _OU_ term="COS" _OU_ term="TAN"
+      
+     type : 458752
+   -
+     name : Compute
+     internal_properties : CQAAAAkAAADOHQnw/DDAwA2Sgstp0iHSSBV/Y0v9kC8OE8I6vhlqV+I4sjPf5ROobTvWBZvyPjvs1ze4RSeiCjX3eWHFbMbJbWKSueDL/7/Rt/ulD6FEW2dTWCwlpbgr6dR0FrS0NEw1OS5fHCqXWT7naioXT1ABvCbnfdYcDJRoA+CUWtTiBI4wz6g=
+     procedure_id : 2183876795830884109
+     type_code : 12
+     code : |1-
+      //Convert the mathematical expression to posfix notation using a custom implementation of the shunting yard algorithm (postfix notation makes it easier to evaluate the expression while taking into account the priority of operators)
+      //and calculate the resulting expression "on the fly", pushing numbers on the output stack and applying operators to them as soon as necessary. Variables name in the mathematical expression are replaced by their values in the _Variables dictionnary
+      //with a default value of 0 for non-existing variables. All of this is done in a single pass.
+      //For more information see http://en.wikipedia.org/wiki/Reverse_Polish_Notation  (also called postfix notation)
+      //						   http://en.wikipedia.org/wiki/Shunting_yard_algorithm
+      //
+      //Supported operators are + - * / ^ %
+      //Supported functions are SQRT(x) SIN(x) COS(X) TAN(X)
+      //Variables are supported and any term starting with a letter that is not a function name is considered a variable name.
+      // Traitement automatique des erreurs :   exécuter le bloc de code CAS ERREUR
+      //
+      // Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      
+      PROCEDURE Compute(expression est une chaine)
+      operatorStack est une Pile de chaînes
+      operator est une chaîne
+      token est une chaîne //a token can be a number, a variable or a function name (ex: SQRT(number)).
+      
+      outputStack est une pile de réels
+      
+      c est un caractère
+      i est un entier=1
+      expressionLength est un entier= Taille(expression)
+      
+      TANTQUE i <= expressionLength
+      	c=expression[[i]]
+      	SI c <> " " ALORS
+      		SI c= "("
+      			Empile(operatorStack, c)
+      		SINON SI c="." _OU_ IsDigit(c) //If the token is a number
+      			token=c
+      			POUR i=i+1 A expressionLength
+      				SI PAS IsDigit(expression[[i]]) _ET_ expression[[i]]<>"." ALORS SORTIR
+      				SI IsDigit(expression[[i]]) _OU_ expression[[i]]="." ALORS token+=expression[[i]] SINON SORTIR
+      			FIN
+      			
+      			empile(outputStack, val(token))
+      			continue
+      		SINON SI IsAlpha(c) //If the token is a variable or function (which always start with a letter character)
+      			token=c
+      			POUR i=i+1 A expressionLength
+      				SI IsDigit(expression[[i]]) _OU_ IsAlpha(expression[[i]]) ALORS token+=expression[[i]] SINON SORTIR
+      			FIN
+      			
+      			SI IsFunction(token) ALORS Empile(operatorStack, token) SINON Empile(outputStack, GetValue(token)) //Functions are treated as operators by the algorithm (but instead applying the function to the 2 top numbers of the output stack as with operators, we only use the top element of the stack)
+      			continue
+      		SINON SI IsOperator(c) //If the token is a mathematical operator (+ - * etc)
+      			TANTQUE Dépile(operatorStack, operator)
+      				SI operator<>"(" _ET_ GetPrecedence(c) <=GetPrecedence(operator) ALORS
+      					ComputeOperator(operator, outputStack)
+      				SINON
+      					Empile(operatorStack, operator)
+      					BREAK
+      				FIN
+      			FIN
+      			
+      			Empile(operatorStack, c)
+      		SINON SI c= ")"
+      			startParenthesisFound est un booléen=Faux
+      			TANTQUE Dépile(operatorStack, operator)
+      				SI operator= "(" ALORS
+      					startParenthesisFound=Vrai
+      					Empile(operatorStack, operator)
+      					BREAK
+      				SINON
+      					ComputeOperator(operator, outputStack)
+      				FIN
+      			FIN
+      			
+      			SI PAS startParenthesisFound ALORS Erreur("Erreur sur les parenthèse de l'équation spécifiée")
+      			Dépile(operatorStack)
+      		SINON
+      			Erreur("Caractère non reconnu dans l'équation spécifiée"+rc+expression+rc+typecarr.tcdescription)
+      		FIN
+      	FIN
+      	
+      	i++
+      FIN
+      
+      TANTQUE Dépile(operatorStack, operator)
+      	SI operator="(" _OU_ operator=")" ALORS Erreur("Erreur sur les parenthèse de l'équation spécifiée")
+      	ComputeOperator(operator, outputStack)
+      FIN
+      
+      answer est un réel
+      depile(outputStack, answer)
+      RENVOYER answer
+      CAS ERREUR:
+      //	renvoyer 0
+      	
+      //	info(expression)
+      CAS EXCEPTION:
+      	
+      //	Info(expression)
+     type : 458752
+   -
+     name : ComputeOperator
+     procedure_id : 2183880815920290840
+     type_code : 12
+     code : |1+
+      PROCEDURE privée ComputeOperator(operator est une chaine, outputStack est une pile de réels)
+      term1 est un réel
+      term2 est un réel
+      
+      switch operator
+      	cas "+"
+      		depile(outputStack, term2)
+      		depile(outputStack, term1)
+      		empile(outputStack, term1 + term2)
+      	cas "-"
+      		Dépile(outputStack, term2)
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, term1 - term2)
+      	cas "*"
+      		Dépile(outputStack, term2)
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, term1 * term2)
+      	cas "/"
+      		Dépile(outputStack, term2)
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, term1 / term2)
+      	cas "^"
+      		Dépile(outputStack, term2)
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, term1 ^ term2)
+      	CAS "%"
+      		Dépile(outputStack, term2)
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, modulo(term1,term2))
+      	cas "SIN"
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, sin(term1))
+      	cas "COS"
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, cos(term1))
+      	cas "TAN"
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, Tang(term1))
+      	cas "SQRT"
+      		Dépile(outputStack, term1)
+      		Empile(outputStack, racine(term1,2))
+      END
+     type : 458752
+   -
+     name : SetValueInteger
+     procedure_id : 1712375981729807524
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SetValueInteger (<variableName> est chaîne, <valeur> est entier)
+      //
+      // Paramètres :
+      //	variableName (chaîne) : <indiquez ici le rôle de variableName>
+      //	valeur (entier) : <indiquez ici le rôle de valeur>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SetValueInteger(variableName est une chaine, valeur est un entier)
+      _Variables[variableName]=valeur
+      
+     type : 458752
+   -
+     name : SetValueString
+     procedure_id : 1712385306104274704
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SetValueString (<variableName> est chaîne, <expression> est chaîne)
+      //
+      // Paramètres :
+      //	variableName (chaîne) : <indiquez ici le rôle de variableName>
+      //	expression (chaîne) : <indiquez ici le rôle de expression>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SetValueString(variableName est une chaine, expression est une chaine)
+      _Variables[variableName]=Arrondi(Compute(expression),3)
+     type : 458752
+   -
+     name : SetValueNoCompute
+     procedure_id : 1924914538795358428
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SetValueNoCompute (<variableName> est chaîne, <expression> est chaîne)
+      //
+      // Paramètres :
+      //	variableName (chaîne ANSI) : <indiquez ici le rôle de variableName>
+      //	expression (chaîne ANSI) : <indiquez ici le rôle de expression>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SetValueNoCompute(variableName est une chaîne, expression est une chaîne)
+      _StringVariables[variableName]=expression
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x1e4d34db1e085d9b
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

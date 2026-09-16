@@ -1,0 +1,797 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cExternalOrderDetails
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x151c3dac16749321
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cExternalOrderDetails est une Classe <mapping=ExternalOrderDetails>
+      	
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis le menu contextuel
+      	// du fichier dans l'explorateur de projet ou dans l'analyse "..Regénérer la classe modèle"
+      	<MAPPING>
+      	m_nIDCotation											est un entier sur 8 octets				<mapping=IDCotation>
+      	m_nIDCotationDetails									est un entier sur 8 octets				<mapping=IDCotationDetails, clé unique>
+      	m_sThermosCode											est une chaîne							<mapping=ThermosCode>
+      	m_sTag													est une chaine							<mapping=tag>
+      	m_sThermosDescription									est une chaîne							<mapping=ThermosDescription>
+      	m_sSpacerType											est une chaîne							<mapping=SpacerType>
+      	m_sSpacerDimension										est une chaîne							<mapping=SpacerDimension>
+      	m_sFinish												est une chaîne							<mapping=Finish>
+      	m_sThermosHeight										est une chaîne							<mapping=ThermosHeight>
+      	m_sThermosHeight1										est une chaîne							<mapping=ThermosHeight1>
+      	m_sThermosWidth											est une chaîne							<mapping=ThermosWidth>
+      	m_sThermosHeightCalculate								est une chaîne ANSI						<mapping=ThermosHeightCalculate>
+      	m_sThermosWidthCalculate								est une chaîne ANSI						<mapping=ThermosWidthCalculate>
+      	m_sThermosHeight1Calculate								est une chaîne ANSI						<mapping=ThermosHeight1Calculate>
+      	m_sPane1												est une chaîne							<mapping=Pane1>
+      	m_sPane2												est une chaîne							<mapping=Pane2>
+      	m_sPane3												est une chaîne							<mapping=Pane3>
+      	m_sGridCode												est une chaîne							<mapping=GridCode>
+      	m_sGridDescription										est une chaîne							<mapping=GridDescription>
+      	m_nGridBase												est un entier sans signe sur 1 octet	<mapping=GridBase>
+      	m_nGridheight											est un entier sans signe sur 1 octet	<mapping=Gridheight>
+      	m_bGridHalfThermos										est un booléen							<mapping=GridHalfThermos>
+      	m_sDrawingType											est une chaîne							<mapping=DrawingType>
+      	m_bIsDeleted											est un booléen							<mapping=IsDeleted>
+      	m_nQuantity												est un entier sans signe sur 2 octets	<mapping=Quantity>
+      	m_sInteriorColorCode									est une chaîne							<mapping=InteriorColorCode>
+      	m_sInteriorColorDescription								est une chaîne							<mapping=InteriorColorDescription>
+      	m_sExteriorColorCode									est une chaîne							<mapping=exteriorColorCode>
+      	m_sExteriorColorDescription								est une chaîne							<mapping=ExteriorColorDescription>
+      	m_nNumberOfTiles										est un entier sans signe sur 1 octet	<mapping=NumberOfTiles>
+      	m_sShapeCode											est une chaîne							<mapping=ShapeCode>
+      	m_sShapeDescription										est une chaîne							<mapping=ShapeDescription>
+      	m_rSurface												est un réel								<mapping=Surface>
+      	m_moEnergySurcharge										est un monétaire						<mapping=EnergySurcharge>
+      	m_moPrice5X												est un monétaire						<mapping=Price5X>
+      	m_moPrice10X											est un monétaire						<mapping=Price10X>
+      	m_moPriceShape											est un monétaire						<mapping=PriceShape>
+      	m_moThermosUnitPrice									est un monétaire						<mapping=ThermosUnitPrice>
+      	m_moShapeUnitPrice										est un monétaire						<mapping=ShapeUnitPrice>
+      	m_moTotalThermosPrice									est un monétaire						<mapping=TotalThermosPrice>
+      	m_moGridTilePrice										est un monétaire						<mapping=GridTilePrice>
+      	m_moGridBaseprice										est un monétaire						<mapping=GridBaseprice>
+      	m_moGridUnitPrice										est un monétaire						<mapping=GridUnitPrice>
+      	m_moPaintUnitPrice										est un monétaire						<mapping=PaintUnitPrice>
+      	m_sPane1description										est une chaîne							<mapping=Pane1description>
+      	m_sPane2description										est une chaîne							<mapping=pane2description>
+      	m_moTotalShapeprice										est un monétaire						<mapping=TotalShapeprice>
+      	m_sPane3description										est une chaîne							<mapping=Pane3description>
+      	m_sCalculType											est une chaîne							<mapping=CalculType>
+      	m_rBilledSurface										est un réel								<mapping=BilledSurface>
+      	m_rRealSurface											est un réel								<mapping=RealSurface>
+      	m_moSquarefeetPrice										est un monétaire						<mapping=SquarefeetPrice>
+      	m_moTotalGridprice										est un monétaire						<mapping=TotalGridprice>
+      	m_nNumberOfTilesExt										est un entier							<mapping=NumberOfTilesExt>
+      	m_nNumberOfTilesInt										est un entier							<mapping=NumberOfTilesInt>
+      	m_moPaintUnitPriceExt									est un monétaire						<mapping=PaintUnitPriceExt>
+      	m_moPaintUnitpriceInt									est un monétaire						<mapping=PaintUnitpriceInt>
+      	m_moPaintTilePriceExt									est un monétaire						<mapping=PaintTilePriceExt>
+      	m_moPaintTilepriceInt									est un monétaire						<mapping=PaintTilepriceInt>
+      	m_moTotalPaintPrice										est un monétaire						<mapping=TotalPaintPrice>
+      	m_sGridType												est une chaîne							<mapping=GridType>
+      	m_moHalfGridPrice										est un monétaire						<mapping=HalfGridPrice>
+      	m_sWidth												est une chaîne							<mapping=Width>
+      	m_sWidth1												est une chaîne							<mapping=Width1>
+      	m_sWidth2												est une chaîne							<mapping=Width2>
+      	m_sHeight												est une chaîne							<mapping=Height>
+      	m_sHeight1												est une chaîne							<mapping=Height1>
+      	m_sHeight2												est une chaîne							<mapping=Height2>
+      	m_sDiameter												est une chaîne							<mapping=Diameter>
+      	m_sRadius												est une chaîne							<mapping=Radius>
+      	m_sRadius1												est une chaîne							<mapping=Radius1>
+      	m_sRadius2												est une chaîne							<mapping=Radius2>
+      	m_bFifteenYearsWarranty									est un booléen							<mapping=FifteenYearsWarranty>
+      	m_bExtraGazArgon										est un booléen							<mapping=ExtraGazArgon>
+      	m_moFifteenYearsWarrantyTotal							est un monétaire						<mapping=FifteenYearsWarrantyTotal>
+      	m_moExtraArgonGazTotal									est un monétaire						<mapping=ExtraArgonGazTotal>
+      	m_nDTH													est un entier sans signe sur 2 octets	<mapping=DTH>
+      	m_nBarrotinID											est un entier							<mapping=BarrotinID>
+      	m_sGrillNote											est une chaîne							<mapping=GrillNote>
+      	m_sBarrotinDescription									est une chaîne							<mapping=BarrotinDescription>
+      	m_moBarrotinPrice										est un monétaire						<mapping=BarrotinPrice>
+      	m_sBaseproduct											est une chaine							<mapping = baseproduct>
+      	m_sThermosGL											est une chaine							<mapping = ThermosGL>
+      	m_sGridGL												est une chaine							<mapping = GridGL>
+      	m_bTemplateToCome										est un booleen							<mapping=TemplateToCome>
+      	
+      	<FIN>
+      	m_nLigne			est un entier
+      	Variablex			est un réel
+      	variablex1			est un réel
+      	SpacerID			est un entier
+      	Intercalaire1		est une chaîne
+      	intercalaire2		est une chaîne
+      	m_sTypecarrelage	est une chaîne
+      	bMessage			est un booléen
+      	TexteMessage		est une chaîne
+      	m_nSortingType		est un entier
+      	m_sBaseComponent1	est une chaine
+      	m_sBaseComponent2	est une chaine
+      	m_sBaseComponent3	est une chaine
+      	m_rThickness		est un reel
+      	m_nGlassNumber		est un entier
+      	m_nTrnnumber		est un entier
+      	
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1521158583464858401
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1521158583464923937
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+   -
+     name : GetGrillType
+     procedure_id : 1521859432038355041
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // GetGrillType ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE GetGrillType()
+      
+      Typecalcul est une chaine
+      
+      
+      si :m_sGridCode <> "" alors 
+      	//	si hlitrecherche(RelationEDI,IdClientdescriptionEDIClient,["013",4,:Grill+" " +:GrillSeal]) alors
+      	//		:GrillNumberInternal = RelationEDI.IDCarrelage
+      	si hlitrecherche(invent,INUM,:m_sGridCode) alors
+      		SI PAS :m_bGridHalfThermos ALORS typecalcul = invent.itypecarr SINON typecalcul = invent.iTypecarrDemi
+      
+      		si hlitrecherche(typecarr,tcdescription,Typecalcul) alors
+      			:m_stypecarrelage = typecarr.tcdescription
+      		fin
+      		
+      	sinon
+      		:bMessage = vrai
+      		:TexteMessage+= "Un problème est survenu avec le carrelage " + :m_sGridCode  + rc 
+      	fin
+      
+      	
+      FIN
+      
+      
+     type : 458752
+   -
+     name : SortingThermos
+     procedure_id : 1521989441293595234
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // SortingThermos ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SortingThermos()
+      si :CheckIfTempered() alors
+      	SI SansEspace(:m_sShapeCode) <> "" ALORS
+      		//	:m_nSortingType = 6
+      		SELON Droite(SansEspace(:m_sBaseproduct),1)
+      			CAS "3"
+      				:m_nSortingType = 16
+      			CAS "4"
+      				:m_nSortingType = 17
+      			CAS "5"
+      				:m_nSortingType = 18
+      			CAS "6"
+      				:m_nSortingType = 19
+      				
+      			AUTRE CAS
+      				:m_nSortingType = 10
+      		FIN
+      		
+      	SINON	
+      		SELON Droite(SansEspace(:m_sBaseproduct),1)
+      			CAS "3"
+      				:m_nSortingType = 11
+      			CAS "4"
+      				:m_nSortingType = 12
+      			CAS "5"
+      				:m_nSortingType = 13
+      			CAS "6"
+      				:m_nSortingType = 14
+      				
+      			AUTRE CAS
+      				:m_nSortingType = 10
+      		FIN
+      	FIN
+      	
+      sinon
+      	
+      	si sansespace(:m_sShapeCode) <> "" alors
+      		//	:m_nSortingType = 6
+      		SELON Droite(SansEspace(:m_sBaseproduct),1)
+      			CAS "3"
+      				:m_nSortingType = 6
+      			CAS "4"
+      				:m_nSortingType = 7
+      			CAS "5"
+      				:m_nSortingType = 8
+      			CAS "6"
+      				:m_nSortingType = 9
+      				
+      			AUTRE CAS
+      				:m_nSortingType = 10
+      		FIN
+      		
+      	sinon	
+      		selon droite(sansespace(:m_sBaseproduct),1)
+      			cas "3"
+      				:m_nSortingType = 1
+      			CAS "4"
+      				:m_nSortingType = 2
+      			CAS "5"
+      				:m_nSortingType = 3
+      			CAS "6"
+      				:m_nSortingType = 4
+      				
+      			AUTRE CAS
+      				:m_nSortingType = 10
+      		FIN
+      	fin
+      FIN
+      
+      
+      
+     type : 458752
+   -
+     name : CheckIfTempered
+     procedure_id : 1521992039863053722
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CheckIfTempered ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure CheckIfTempered()
+      
+      si hlitrecherche(invent,iNum,:m_sPane1) alors
+      	si sansespace(invent.ipextrat) <> "" alors renvoyer vrai
+      FIN
+      si hlitrecherche(invent,iNum,:m_sPane2) alors
+      	si sansespace(invent.ipextrat) <> "" alors renvoyer vrai
+      FIN
+      si hlitrecherche(invent,iNum,:m_sPane3) alors
+      	si sansespace(invent.ipextrat) <> "" alors renvoyer vrai
+      FIN
+      renvoyer Faux
+      
+      
+     type : 458752
+   -
+     name : CalculSpacer
+     procedure_id : 1522220505321632422
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculSpacer (<nCustomerID> est entier)
+      //
+      // Paramètres :
+      //	nCustomerID (entier) : <indiquez ici le rôle de sCustomerNumber>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	_purchaseorder (PurchaseOrderBasco) : <indiquez ici le rôle de _purchaseorder>
+      PROCEDURE publique  CalculSpacer(nCustomerID est un entier) 
+                                                         // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // CalculSpacer ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      
+      
+      x est un entier
+      bDifferent est un booléen = Faux   // si dans le fichier kit pas de lien intercallaire = faux
+      continuerrecherche est un booléen = Vrai // si pas trouve avec le numero de produit aller voir le lien
+      bDoubleexiste est un booléen = Faux
+      lelien est une chaîne
+      lelien1 est une chaîne
+      lefini est un réel
+      lespace est un réel 
+      lespacetotale est un réel 
+      clederecherche est une chaîne
+      ldoublescellant est un réel =0
+      bLinexblanc est un booléen = Faux
+      bLinexnoir est un booléen = Faux
+      bLinexgris est un booléen = Faux
+      sLIndex est une chaîne
+      sLtolerance est une chaîne
+      sLtolerancemoins est une chaîne
+      lmultiplicateur est un entier = 1
+      sLFiniAlias est une chaîne
+      sLretourrechercheintercalaire est un chaîne
+      
+      txtreq est une chaîne = [
+      	select numero as NoIntercalaire, DimensionI+TolerancePlus as bornehaut,dimensioni-ToleranceMoins as bornebas from IntercalaireCouleurDimensions
+      	where IntercalaireCouleurDimensions.IDIntercalaireCouleurs = %1 and %2 between bornebas and bornehaut
+      ]
+      Reqsql est une Source de Données
+      
+      sTxtreqNonTrouve est une chaine = [
+      	select top 2 numero as NoIntercalaire, ABS(%2-DimensionI) Borne,%2-DimensionI as ecart from IntercalaireCouleurDimensions
+      	where IntercalaireCouleurDimensions.IDIntercalaireCouleurs = %1 order by borne asc
+      ]
+      
+      
+      RequeteDimensionAlias.pDimensionAlias= "<"+SansEspace(:m_sfinish)+">"
+      HExécuteRequête(RequeteDimensionAlias)
+      SI HNbEnr(RequeteDimensionAlias) >= 1 ALORS
+      	HLitPremier(RequeteDimensionAlias)
+      	:m_sFinish = SansEspace(RequeteDimensionAlias.DImensionMaitre)
+      FIN
+      
+      lelien = Complète(:m_spane1,10)+Complète(:m_spane2,10)+Complète(:m_spane3,10)
+      //lelien = DROITE(commandetrn.cdcomposant1,1)+DROITE(commandetrn.cdcomposant2,1)+DROITE(commandetrn.cdcomposant3,1)
+      lelien1 = Complète(:m_sbasecomponent1,10)+Complète(:m_sBaseComponent2,10)+Complète(:m_sBaseComponent3,10)
+      clederecherche = HConstruitValClé(inter,cleclientproduit,complete("139",10),...
+      Complète(:M_Spane1,10),Complète(:m_spane2,10),...
+      Complète(:m_spane3,10),Complète(:m_sfinish,10))
+      HLitRecherche("inter","cleclientproduit",clederecherche)
+      
+      
+      RequeteClientFiniIntercalaire.pIdClient = nCustomerID
+      RequeteClientFiniIntercalaire.pcomposant1 = Complète(:m_spane1,10)
+      RequeteClientFiniIntercalaire.pcomposant2 = Complète(:m_spane2,10)
+      RequeteClientFiniIntercalaire.pcomposant3 = Complète(:m_spane3,10)
+      RequeteClientFiniIntercalaire.pFini = Complète(:m_sfinish,15)
+      RequeteClientFiniIntercalaire.pIdIntercalaireCouleur = :SpacerID
+      HExécuteRequête(RequeteClientFiniIntercalaire)
+      
+      
+      
+      SI  config.cDoubleScellantTous ALORS
+      	ldoublescellant = Arrondi(RequeteClientFiniIntercalaire.dimdoublescellantM)
+      	
+      SINON
+      	POUR i = 1 A 3
+      		
+      		SI PAS SansEspace({":composantbase"+NumériqueVersChaîne(i)}) = "" ALORS
+      			
+      			SI  PAS Droite(SansEspace({":composantbase"+NumériqueVersChaîne(i)}),1) = "3" ALORS
+      				ldoublescellant = Arrondi(RequeteClientFiniIntercalaire.dimdoublescellantM)
+      				SORTIR
+      			FIN
+      		FIN
+      		
+      	FIN
+      FIN
+      
+      
+      
+      
+      //si pas HEnDehors() et HTrouve() alors
+      SI HNbEnr(RequeteClientFiniIntercalaire) = 1 ALORS
+      	HLitPremier(RequeteClientFiniIntercalaire)
+      	:Intercalaire1	= RequeteClientFiniIntercalaire.Spacer1
+      	:intercalaire2  = RequeteClientFiniIntercalaire.Spacer2
+      	//	commandetrn.cdespaceinex = intercal.idescinex
+      	continuerrecherche = Faux
+      	
+      SINON
+      	
+      	
+      	RequeteClientFiniIntercalaire.pIdClient = nCustomerID
+      	RequeteClientFiniIntercalaire.pcomposant1 = Complète(:m_sBaseComponent1,10)
+      	RequeteClientFiniIntercalaire.pcomposant2 = Complète(:m_sBaseComponent2,10)
+      	RequeteClientFiniIntercalaire.pcomposant3 = Complète(:m_sBaseComponent3,10)
+      	RequeteClientFiniIntercalaire.pFini = Complète(:m_sfinish,15)
+      	RequeteClientFiniIntercalaire.pIdIntercalaireCouleur = :SpacerID
+      	HExécuteRequête(RequeteClientFiniIntercalaire)
+      	
+      	//Code WinDev 5.5 remplacé par la migration :
+      	//    si pas h.endehors et h.trouve alors
+      	SI HNbEnr(RequeteClientFiniIntercalaire) = 1 ALORS
+      		HLitPremier(RequeteClientFiniIntercalaire)
+      		:intercalaire1	= RequeteClientFiniIntercalaire.Spacer1
+      		:intercalaire2  = RequeteClientFiniIntercalaire.Spacer2
+      		//	commandetrn.cdespaceinex = intercal.idescinex
+      		continuerrecherche = Faux
+      	FIN
+      FIN
+      
+      
+      //fin
+      
+      
+      SI  :SpacerID = 0  ALORS
+      	:Intercalaire1 = ""
+      	:intercalaire2=""
+      	:bMessage = vrai
+      	:TexteMessage+= "Aucun intercalaire n'a été trouvé"
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      SI continuerrecherche ALORS
+      	SI HLitRecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,:Spacerid) ALORS
+      		SI HLitRecherche(Intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) ALORS
+      			ldoublescellant = Intercalaires.dimdoublescellantM
+      		FIN
+      	FIN
+      	
+      	
+      	SI PAS Position(:m_sfinish,".") = 0 ALORS
+      		lefini = Arrondi(Val(:m_sFinish) * 25.4,3)
+      	SINON
+      		SI PAS Position(:m_sfinish,"/") = 0 ALORS
+      			lefini =NumériqueVersChaîne( ConvertAnglais(:m_sFinish,"fini") * 25.4,"6.3f")
+      			
+      		SINON
+      			SI Val(:m_sfinish) < 6 ALORS
+      				lefini =NumériqueVersChaîne( ConvertAnglais(:m_sfinish,"fini") * 25.4,"6.3f")
+      			SINON
+      				lefini = Arrondi(Val(:m_sfinish)/1000 * 25.4,3)
+      				
+      			FIN
+      		FIN
+      	FIN
+      	
+      	:m_rThickness+=ldoublescellant 
+      	
+      		
+      	
+      	
+      	
+      	SELON :m_nGlassNumber
+      	
+      		CAS 2
+      			lespace = Arrondi((lefini - :m_rThickness) ,3)
+      			lespacetotale = Arrondi((lefini - :m_nGlassNumber) ,3)
+      			lmultiplicateur = 1
+      		CAS 3
+      			:m_rThickness+=ldoublescellant
+      			lespace = Arrondi((lefini - :m_rThickness) / 2 ,3)
+      			lespacetotale = Arrondi((lefini - :m_nGlassNumber) ,3)
+      			lmultiplicateur = 2
+      			
+      	FIN	
+      	
+      	lespace = Arrondi(lespace/25.4,3)
+      	lespacetotale = Arrondi(lespacetotale/25.4,3)
+      	
+      	// Jean Hamelin 18-10-2014
+      	// décommenter pour calculer les spacers dans le cas d'un thermos triple
+      	// pour touver une combinaison le plus pres possible de l,espace disponible
+      	// il faut calculer avec l,espace totale et non l,espace divisée par 2
+      	
+      	SELON :m_nGlassNumber
+      		CAS 3
+      			
+      			 :remplirTableauIntercalaire(lespacetotale)
+      		CAS 2
+      			SI HExécuteRequêteSQL(Reqsql,hModifieFichier,ChaîneConstruit(txtreq,:SpacerID,lespace)) ET HNbEnr(Reqsql) > 0 ALORS
+      				HLitPremier(Reqsql)
+      				:intercalaire1 = Reqsql.nointercalaire
+      			SINON
+      //				SI HExécuteRequêteSQL(Reqsql,hModifieFichier,ChaîneConstruit(txtreqNonTrouve,:SpacerID,lespace)) ET HNbEnr(Reqsql) > 0 ALORS
+      //					HLitPremier(Reqsql)
+      //					:Intercalaire1 = Reqsql.nointercalaire
+      //					:bMessage = Vrai
+      //					:TexteMessage+= "Plusieurs intercalaire étaient disponible, "+ :intercalaire1 + " à été choisi"
+      //					
+      //				FIN
+      //				SI messageErreur ALORS
+      //					ACSO_message("Erreur","Aucun intercalaire ne correspond à votre demande"+RC+"SVP l'inscrire manuellement","Erreur")
+      //					RepriseSaisie(CDESPACE)
+      //				FIN
+      			FIN
+      	
+      
+      	FIN
+      
+      	
+      FIN
+      
+      
+      SI  :intercalaire1 = ""  ALORS
+      	:bMessage = Vrai
+      	:TexteMessage+= "Aucun intercalaire n'a été trouvé"
+      FIN
+      //
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : SetbaseComponent
+     procedure_id : 1522221806927975427
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // SetbaseComponent ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure SetbaseComponent()
+      :m_rThickness = 0
+      :m_nGlassNumber = 0
+      SI PAS SansEspace(:m_sPane1) = "" _ET_ HLitRecherche(invent,INUM,:m_sPane1) ALORS
+      	:m_sBaseComponent1 = invent.IPBASE
+      	:m_rThickness+= invent.IEpaisseur
+      	:m_nGlassNumber++
+      FIN
+      SI PAS SansEspace(:m_sPane2) = "" _ET_ HLitRecherche(invent,INUM,:m_sPane2) ALORS
+      	:m_sBaseComponent2 = invent.IPBASE
+      	:m_rThickness+= invent.iepaisseur
+      	:m_nGlassNumber++
+      FIN
+      SI PAS SansEspace(:m_sPane3) = "" _ET_ HLitRecherche(invent,INUM,:m_sPane3) ALORS
+      	:m_sBaseComponent3 = invent.IPBASE
+      	:m_rThickness+= invent.iepaisseur
+      	:m_nGlassNumber++
+      FIN
+      
+      
+     type : 458752
+   -
+     name : RemplirTableauIntercalaire
+     procedure_id : 1522227536789040680
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //RemplirTableauIntercalaire (<lespacetotale>)
+      //
+      // Paramètres :
+      //	lespacetotale :<indiquez ici le rôle de lespacetotale>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      
+      //
+      //	SpacerID :<indiquez ici le rôle de SpacerID>
+      PROCEDURE PRIVÉE RemplirTableauIntercalaire(lespacetotale)
+      
+      
+      
+      reqsql est un source de donnees
+      txtsql est une chaine = "select * from IntercalaireCouleurDimensions where IDIntercalaireCouleurs = %1 order by dimensioni"
+      txtsql = ChaîneConstruit(txtsql,:SpacerID)
+      tabDimensioncroise est un tableau de 0 par 5 chaines
+      tabdimension est un tableau de 0 par 4 chaine
+      tabdimensionChoix est un tableau de 0 par 2 chaine
+      Dimensionatrairer est une chaine = ""
+      lchaine est une chaine 
+      lmin est un reel
+      lmax est un reel
+      ldifferenceajoute est un reel = 0
+      ldebut est un booleen = vrai
+      
+      cpt est un entier = 1
+      cpt1 est un entier = 1
+      SI HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtsql) ALORS
+      	POUR TOUT reqsql 
+      		Dimension(tabdimension,cpt,4)
+      		tabdimension[cpt,1] = reqsql.numero
+      		tabdimension[cpt,2] = NumériqueVersChaîne(Arrondi(reqsql.dimensioni,3))
+      		tabdimension[cpt,3] = NumériqueVersChaîne(Arrondi(reqsql.toleranceplus,3))
+      		tabdimension[cpt,4] = NumériqueVersChaîne(Arrondi(reqsql.tolerancemoins,3))
+      		cpt++
+      	FIN
+      SINON
+      	Info(HErreurInfo(hErrComplet))
+      FIN
+      
+      
+      POUR cpt = 1 _A_ Dimension(tabdimension)/4
+      	POUR cpt1 = cpt _A_ Dimension(tabdimension)/4
+      		TableauAjouteLigne(tabDimensioncroise,tabdimension[cpt,1]+","+tabdimension[cpt1,1] , NumériqueVersChaîne(Val(tabdimension[cpt,2]) +   Val(tabdimension[cpt1,2])),...
+      		Min(tabdimension[cpt,3],tabdimension[cpt1,3]),Min(tabdimension[cpt,4],tabdimension[cpt1,4]),Abs(Val(lespacetotale)-(Val(tabdimension[cpt,2]) +   Val(tabdimension[cpt1,2]))))
+      		
+      		
+      		
+      		
+      		
+      	FIN
+      FIN
+      TableauTrie(tabDimensioncroise,ttCroissant,5)
+      POUR cpt = 1 _A_ Dimension(tabDimensioncroise)/5
+      	lmin = Val(tabDimensioncroise[cpt,2]) - Val(tabDimensioncroise[cpt,4])
+      	lmax = Val(tabDimensioncroise[cpt,2]) + Val(tabDimensioncroise[cpt,3])
+      	
+      	
+      	
+      	SI lmin < lespacetotale < lmax ALORS
+      		//		si Val(tabDimensioncroise[cpt,5]) = ldifferenceajoute ou ldebut alors
+      		TableauAjouteLigne(tabdimensionChoix,tabDimensioncroise[cpt,1],tabDimensioncroise[cpt,2])
+      		//		    ldifferenceajoute = Val(tabDimensioncroise[cpt,5])
+      		//            ldebut = faux
+      	SINON
+      		SORTIR
+      		//		fin
+      		
+      	FIN
+      	
+      FIN
+      
+      SI Dimension(tabdimensionChoix)/2 > 1 ALORS
+      	:Intercalaire1 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),1,",")
+      	:Intercalaire2 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),2,",")
+          :bMessage = vrai
+          :TexteMessage = "Plusieurs combinaison d'intercalaire étaient disponible "
+          pour i = 1 a Dimension(tabdimensionChoix)/2 
+          	:textemessage += "["+ExtraitChaîne(SansEspace(tabdimensionChoix[i,1]),1,",")+"-"+ExtraitChaîne(SansEspace(tabdimensionChoix[i,1]),2,",")+"],"
+          FIN
+          :textemessage = gauche(:textemessage,taille(:textemessage)-1)
+          :textemessage += " (le premier de la liste à été utilisé)"+rc
+      SINON SI Dimension(tabdimensionChoix) /2 = 1
+      	:Intercalaire1 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),1,",")
+      	:intercalaire2 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),2,",")
+      sinon
+      	:Intercalaire1 = ""
+      	:intercalaire2 = ""
+      	:bMessage = Vrai
+      	:TexteMessage = "Aucun intercalaire trouvé"
+      	
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+  properties :
+   -
+     name : Finish
+     identifier : 0x1521be500a294ff5
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         procédure publique Finish()
+         renvoyer "Fini:"+ :m_sFinish
+        type : 1966080
+     template_refs : []
+   -
+     name : Spacer1
+     identifier : 0x1521dd6b03fdd296
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         procédure publique Spacer1()
+         renvoyer sansespace(:Intercalaire1) <> "" ? "Intercalaire 1:"+sansespace(:Intercalaire1) sinon ""
+         
+        type : 1966080
+     template_refs : []
+   -
+     name : Spacer2
+     identifier : 0x1521ddd103fe6125
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         procédure publique Spacer2()
+         RENVOYER SansEspace(:Intercalaire2) <> "" ? "Intercalaire 2:"+SansEspace(:Intercalaire2) SINON ""
+        type : 1966080
+     template_refs : []
+   -
+     name : Barrotin
+     identifier : 0x1521e77a050b1e57
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         procédure publique Barrotin()
+         renvoyer sansespace(:m_sBarrotinDescription) = "" ou SansEspace(:m_sBarrotinDescription) = "Aucun" ? "" sinon "Barrotin : "+sansespace(:m_sBarrotinDescription) 
+         
+        type : 1966080
+     template_refs : []
+   -
+     name : DTH
+     identifier : 0x1521e7d5050d81df
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         procédure publique DTH()
+         
+         Renvoyer "DTH : "+:m_nDTH
+         
+        type : 1966080
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x151c3d86166dfe92
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text : {}
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

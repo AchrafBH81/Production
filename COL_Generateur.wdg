@@ -1,0 +1,550 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_Generateur
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x15658e45001acf69
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CQAAAAkAAABPOo5wfzL5PtlmH9g6pVlcqG1md+uM4GM8B/k/aVja5R6ZseBzxTGWZbo12UeE8bWym5Rl91AKrNq9wTYnFyamg2lAMw==
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      constant
+      	// Triplets de caractères présents dans un texte en français (utilisé pour générer des mots de passe "prononçables")
+      	BASE_TRIPLET = [
+      aba.abb.abe.abh.abi.abj.abl.abn.abo.abr.abs.abu.aby.aca.acc.ace.ach.aci.ack.acl.aco.acq.acr.acs.act.acu.acz.ada.add.ade.adh.adi.adj.adm.ado.adr.adu.adv.afa.afe.aff.afi.afo.afr.aga.age.agg.agi.agn.ago.agr.ags.agu.aha.ahc.ahi.ahl.aho.ahs.ahu.aib.aid.aie.aig.ail.aim.ain.air.ais.ait.aix.aja.aje.ajo.aju.ake.aki.akl.ako.ala.alb.alc.ald.ale.alf.alg.alh.ali.alk.all.alm.alo.alp.alq.als.alt.alu.alv.aly.alz.ama.amb.ame.ami.amm.amn.amo.amp.ams.amu.amy.ana.anc.and.ane.anf.ang.ani.anl.anm.ann.ano.anp.anq.ans.ant.anx.any.anz.aor.aos.apa.ape.aph.api.apl.apo.app.apr.aps.apt.apu.aqu.ara.arb.arc.ard.are.arf.arg.ari.ark.arl.arm.arn.aro.arp.arq.arr.ars.art.aru.arv.ary.asa.asc.ase.asi.ask.asm.aso.asp.asq.ass.ast.asu.ata.atc.ate.ath.ati.atl.atm.ato.atr.ats.att.atu.aub.auc.aud.auf.aug.auh.auj.auk.aul.aum.aun.aup.auq.aur.aus.aut.auv.aux.ava.ave.avi.avo.avr.avu.awa.awh.awi.awk.awn.axa.axt.aya.aye.ayi.ayk.ayl.ayn.ayo.ayr.ays.ayu.aza.aze.azo.azt.azu.bab.bac.bad.bag.bah.bai.bal.bam.ban.bar.bas.bat.bau.bav.bay.baz
+      .bba.bbe.bea.bec.bei.bel.bem.ben.ber.bes.bet.beu.bez.bho.bia.bib.bic.bid.bie.big.bij.bil.bin.bio.bir.bis.bit.biv.biz.bje.bju.bla.ble.bli.blo.blu.boc.boe.boh.boi.bol.bom.bon.bor.bos.bot.bou.bow.boy.boz.bra.bre.bri.bro.bru.bsc.bse.bsi.bso.bst.bsu.bte.bti.bua.bub.buc.bue.buf.bui.bul.bun.bur.bus.but.buv.byr.byt.cab.cac.cad.caf.cag.cai.caj.cal.cam.can.cap.car.cas.cat.cau.cav.cay.cca.ccc.cce.cci.ccl.cco.ccr.ccu.cea.ceb.cec.cei.cej.cel.cem.cen.cep.cer.ces.cet.ceu.cev.cez.cha.chc.che.chi.chk.cho.chp.chr.chs.cht.chu.cia.cib.cic.cid.cie.cif.cig.cih.cil.cim.cin.cio.cip.ciq.cir.cis.cit.ciu.civ.cke.cko.ckr.cla.cle.cli.clo.clu.clx.coa.cob.coc.coe.cog.coh.coi.col.com.con.coo.cop.coq.cor.cos.cot.cou.coy.cqu.cra.cre.cri.cro.cru.cta.cte.cti.cto.ctr.cts.ctu.cua.cub.cuc.cue.cuh.cui.cul.cum.cun.cup.cur.cus.cut.cuz.cyc.cyg.cze.dab.dac.dah.dai.dal.dam.dan.dap.dar.das.dat.dav.dcc.ddi.dea.deb.dec.ded.dee.deg.deh.del.dem.den.dep.der.des.det.deu.dev.dex.dez.dge.dia.dic.did.die.dif.dig.dil.dim.din.dio.dip.diq.di
+      r.dis.dit.div.dix.diz.dju.dme.dmi.dob.doc.dog.doi.dol.dom.don.dop.dor.dos.dot.dou.doy.dra.dre.dri.dro.dru.dry.dub.duc.due.dug.dui.dul.dum.dun.dup.duq.dur.dus.dut.duv.dve.dvi.dze.eai.eal.ean.ear.eas.eat.eau.eav.eba.ebe.ebi.ebl.ebo.ebr.ebu.eca.ece.ech.eci.eck.ecl.eco.ecr.ecs.ect.ecu.eda.ede.edi.edo.edr.eds.edz.eek.een.eer.ees.eet.efa.efe.eff.efi.efl.efo.efr.efs.efu.ega.egm.ego.egr.egu.egy.eha.ehd.ehe.ehn.eho.ehu.eig.eil.eim.ein.eir.eiz.eje.ejo.eka.eke.eki.ela.elc.ele.eli.ell.elo.elq.els.elu.ema.emb.eme.emi.emm.emo.emp.ems.emu.ena.enc.end.ene.enf.eng.enh.eni.enj.enl.enn.eno.enq.enr.ens.ent.enu.env.enw.enz.eoc.eoi.eol.eon.eot.epa.epe.eph.epi.epl.epo.epr.eps.ept.epu.equ.era.erb.erc.erd.ere.erf.erg.eri.erj.erl.erm.ern.ero.erp.erq.err.ers.ert.eru.erv.esa.esb.esc.ese.esi.esk.esn.eso.esp.esq.ess.est.esu.eta.etc.ete.eti.etl.eto.etr.ets.ett.etu.etz.eub.eud.eue.euf.eug.eui.eul.eum.eun.eup.eur.eus.eut.euv.eux.eva.eve.evi.evo.evr.evu.exa.exc.exe.exh.exi.exo.exp.exq.ext.eya.eye.ezc.ezi.ezq.fab.fac.f
+      ai.fal.fam.fan.far.fas.fat.fau.fav.fec.fei.fel.fem.fen.fer.fes.fet.feu.ffa.ffe.ffi.ffl.ffo.ffr.ffu.fia.fic.fid.fie.fig.fil.fin.fiq.fir.fis.fit.fix.fla.fle.fli.flo.flu.foi.fol.fon.for.fos.fou.foy.fra.fre.fri.fro.fru.fub.fue.fug.fui.ful.fum.fun.fur.fus.fut.fuy.gab.gac.gaf.gag.gai.gal.gam.gan.gar.gas.gat.gau.gay.gaz.gea.gel.gem.gen.geo.ger.ges.get.geu.gez.ggl.ggr.ghi.gia.gib.gid.gie.gig.gil.gin.gio.giq.gir.gis.git.giv.gla.gle.gli.glo.gly.gma.gme.gna.gne.gni.gno.gnu.gny.gob.goc.gog.goi.gol.gon.gor.gos.got.gou.goy.gra.gre.gri.gro.gru.gta.gte.gts.gua.gub.gue.gui.gul.gum.gur.gus.gut.gwa.gym.gyo.gza.hab.hac.had.haf.hag.hai.hal.ham.han.hao.hap.haq.har.has.hat.hau.hav.haw.hay.hch.hco.hde.hec.hef.heg.hei.hek.hel.hem.hen.hep.her.hes.het.heu.hev.hew.hez.hib.hic.hid.hie.hif.hig.hil.him.hin.hio.hip.hiq.hir.his.hit.hiu.hiv.hka.hlg.hme.hoc.hod.hog.hoi.hol.hom.hon.hop.hoq.hor.hos.hot.hou.hoz.hpa.hra.hri.hro.hsh.hsi.htl.htz.hua.huc.hue.hui.hul.hum.hun.hup.hur.hus.hut.hym.hyp.hys.hzo.iab.iac.iad.iaf.iag.
+      iai.ial.iam.ian.iar.ias.iat.iau.iaz.iba.ibe.ibi.ibl.ibo.ibr.ibu.ica.ice.ich.ici.ick.icl.ico.ict.icu.ida.ide.idg.idi.ido.ids.idu.ied.ieg.iei.iel.iem.ien.iep.ier.ies.iet.ieu.iez.ife.iff.ifi.ifl.ifo.ifs.iga.ige.igh.igi.igl.igm.ign.igo.igr.igt.igu.igw.igz.ihi.ihu.iii.ijo.ijt.ike.iko.ila.ilb.ile.ilh.ili.ilk.ill.ilm.ilo.ilq.ils.ima.imb.ime.imi.imm.imo.imp.ims.imu.ina.inc.ind.ine.inf.ing.inh.ini.inj.inn.ino.inq.inr.ins.int.inu.inv.inz.ioc.iod.iol.iom.ion.ior.ios.iot.iou.iow.ipa.ipe.ipi.ipl.ipo.ipp.ipr.ipt.ipu.iqu.ira.irc.ire.irg.iri.irl.irm.iro.irr.irs.iru.irv.isa.isc.ise.isf.isi.isk.isl.ism.iso.isp.isq.iss.ist.isu.ita.ite.ith.iti.itl.ito.itr.its.itt.itu.iua.iuh.ium.iur.iva.ive.ivi.ivo.ivr.ivu.ixa.ixe.ixi.iye.iza.ize.izo.izt.jac.jad.jag.jai.jal.jam.jan.jar.jas.jau.jav.jec.jed.jef.jer.jes.jet.jeu.jim.joh.joi.jol.jon.jor.jos.jou.joy.jti.jua.jud.jue.jug.jui.jul.jum.jur.jus.juv.kan.kar.kat.kaw.kea.keh.kek.kem.ken.kep.kes.key.kez.kil.kin.kiy.kle.kna.koc.kof.kon.kou.kry.kse.lab.lac.lad.laf.lag.lah
+      .lai.lak.lam.lan.lap.laq.lar.las.lat.lau.lav.law.lay.laz.lbu.lca.lch.lco.lcr.lcu.lda.lde.ldi.ldo.ldt.lea.leb.lec.lee.lef.leg.lei.lem.len.leo.lep.leq.ler.les.let.leu.lev.lex.ley.lez.lfa.lfo.lga.lgr.lgu.lhe.lho.lhu.lia.lib.lic.lid.lie.lif.lig.lij.lik.lil.lim.lin.lio.lip.liq.lir.lis.lit.liu.liv.lix.lke.lki.lko.lla.lle.lli.llo.lls.llu.lly.lma.lme.lmi.lnd.lob.loc.lod.lof.log.loi.lom.lon.lop.loq.lor.los.lot.lou.low.loy.lpa.lpe.lpi.lpt.lqu.lsa.lsh.lsi.lta.lte.lti.ltr.ltu.lua.lub.luc.lud.lue.lug.lui.lul.lum.lun.lup.lur.lus.lut.luv.lux.lva.lve.lvo.lyn.lyp.lys.lyt.lzi.lzo.mab.mac.mad.mag.mah.mai.maj.mal.mam.man.map.mar.mas.mat.mau.maw.max.may.maz.mba.mbe.mbi.mbl.mbo.mbr.mbu.mdc.mea.meb.mec.med.mei.mel.mem.men.mer.mes.met.meu.mex.mez.mia.mic.mid.mie.mif.mig.mih.mil.mim.min.miq.mir.mis.mit.mma.mme.mmi.mmo.mmu.mna.mne.mni.mno.mob.moc.mod.moe.moh.moi.mok.mol.mom.mon.moo.moq.mor.mos.mot.mou.moy.mpa.mpe.mph.mpi.mpl.mpo.mpr.mps.mpt.mpu.mso.mte.mua.muc.mud.mue.mug.mul.mun.mur.mus.mut.myo.myr.mys.nab.na
+      c.nad.nag.nah.nai.naj.nak.nal.nam.nan.nap.nar.nas.nat.nau.nav.nca.nce.nch.nci.nck.ncl.nco.ncr.ncs.nct.ncu.nda.nde.ndi.ndo.ndr.nds.ndu.nea.nec.ned.nee.nef.neg.neh.nei.nek.nel.nem.nen.ner.nes.net.neu.nex.ney.nez.nfa.nfe.nfi.nfl.nfo.nfr.nfu.nga.nge.ngi.ngl.ngo.ngr.ngs.ngt.ngu.nha.nhe.nhi.nho.nhu.nia.nib.nic.nid.nie.nif.nig.nih.nij.nil.nim.nin.nio.niq.nir.nis.nit.niv.nja.nje.njo.nju.nkn.nla.nle.nlo.nlu.nmo.nna.nne.nni.nno.nnu.nob.noc.noe.nof.noi.nok.nol.nom.non.nop.noq.nor.nos.not.nou.nov.noy.noz.npi.nqu.nra.nre.nri.nro.nry.nsa.nsc.nse.nsf.nsg.nsi.nsm.nso.nsp.nss.nst.nsu.nta.nte.nth.nti.ntl.nto.ntr.nts.ntu.ntz.nua.nue.nui.nul.num.nun.nuo.nup.nur.nus.nut.nva.nve.nvi.nvo.nvu.nwo.nxi.nym.nza.nze.nzi.nzo.oah.oak.oal.oas.oat.oba.obe.obi.obj.obl.obo.obr.obs.obt.obu.oca.occ.oce.och.oci.ock.ocl.oco.ocr.ocs.oct.ocu.oda.ode.odi.odo.odu.oei.oel.oeu.ofa.ofe.off.ofi.ofo.ofu.oga.oge.ogi.ogl.ogm.ogn.ogr.ogu.oha.ohe.ohn.ohu.oic.oid.oie.oif.oig.oil.oin.oiq.oir.ois.oit.oiv.oix.oje.oke.okk.oks.ola.olc.old.o
+      le.oli.olk.oll.olo.ols.olt.olu.olv.oly.oma.omb.ome.omi.omm.omn.omo.omp.oms.omt.ona.onc.ond.one.onf.ong.onh.oni.onj.onl.onn.ono.onq.onr.ons.ont.onu.onv.ony.onz.ooa.oon.oop.oos.opa.ope.oph.opi.opl.opo.opp.opr.opt.opu.oqu.ora.orb.orc.ord.ore.orf.org.ori.orj.orl.orm.orn.oro.orp.orr.ors.ort.oru.orz.osa.osc.ose.osi.oso.osp.osq.oss.ost.ota.ote.oth.oti.otk.otl.oto.otr.ots.ott.otz.oua.oub.ouc.oud.oue.ouf.oug.ouh.oui.ouj.oul.oum.oun.ouo.oup.ouq.our.ous.out.ouv.oux.ouz.ova.ove.ovi.ovo.owa.oxi.oxy.oya.oye.oyi.oyo.oza.ozo.paa.pab.pac.pad.pag.pai.paj.pal.pam.pan.pap.paq.par.pas.pat.pau.pav.paw.pay.paz.pea.pec.peh.pei.pek.pel.pem.pen.peo.pep.per.pes.pet.peu.pez.pha.phe.phi.pho.phr.phy.pia.pic.pid.pie.pig.pih.pik.pil.pim.pin.pio.pip.piq.pir.pis.pit.piu.piv.piz.pla.ple.pli.plo.plu.pob.poc.pog.poi.pol.pom.pon.pop.poq.por.pos.pot.pou.poz.ppa.ppe.ppi.ppl.ppo.ppr.ppu.pra.pre.pri.pro.pru.psi.pta.pte.pti.pto.ptr.pts.ptu.pub.pud.pue.pug.pui.pul.pun.pup.pur.pus.put.puy.pyg.qua.que.qui.quo.quy.rab.rac.rad.raf.
+      rag.rah.rai.raj.rak.ral.ram.ran.rao.rap.raq.rar.ras.rat.rau.rav.ray.raz.rba.rbe.rbi.rbl.rbo.rbr.rbu.rca.rce.rch.rci.rcl.rco.rcs.rcu.rda.rde.rdi.rdo.rdr.rds.rdu.rea.reb.rec.red.ree.ref.reg.reh.rei.rej.rel.rem.ren.rep.req.rer.res.ret.reu.rev.rex.rey.rez.rfa.rfe.rfi.rfo.rfr.rfs.rfu.rga.rge.rgi.rgn.rgo.rgu.rhe.rhi.rhu.ria.rib.ric.rid.rie.rif.rig.ril.rim.rin.rio.rip.riq.rir.ris.rit.riv.rix.riz.rja.rje.rka.rla.rle.rlo.rma.rme.rmi.rmo.rmu.rna.rne.rni.rno.rnu.rob.roc.rod.rof.rog.roi.roj.rol.rom.ron.rop.roq.ror.ros.rot.rou.rov.rox.roy.rpa.rpe.rph.rpi.rpl.rpo.rpr.rps.rqu.rra.rre.rrh.rri.rro.rru.rry.rsa.rse.rsh.rsi.rso.rsp.rsq.rst.rsu.rta.rte.rth.rti.rto.rtr.rts.rtu.rty.rtz.rua.rub.ruc.rud.rue.rug.ruh.rui.rul.rum.run.rup.rur.rus.rut.ruv.ruy.ruz.rva.rve.rvi.rvo.rvu.ryt.rze.sab.sac.sad.sag.sai.saj.sal.sam.san.sap.sar.sas.sat.sau.sav.say.sbu.sby.sca.sce.sci.scl.sco.scr.scu.sea.sec.sei.sel.sem.sen.seo.sep.ser.ses.set.seu.sev.sex.sey.sez.sfa.sfo.sfu.sgr.sha.she.sho.shu.sia.sib.sid.sie.sif.sig.sil.sim
+      .sin.sio.sip.siq.sir.sis.sit.siv.six.ska.ske.sky.sla.slo.sme.smi.sna.sob.soc.soe.sog.soi.sol.som.son.sop.sor.sos.sot.sou.soy.spa.spe.sph.spi.spl.spo.spr.spu.squ.ssa.sse.ssi.sso.ssu.sta.ste.sth.sti.sto.str.stu.sua.sub.suc.sud.sue.suf.sug.sui.suj.sul.sum.sun.sup.sur.sus.sut.suy.swe.syl.sym.syn.sys.tab.tac.tad.taf.tag.tah.tai.tal.tam.tan.tao.tap.taq.tar.tas.tat.tau.tav.taw.taz.tch.tea.tec.tef.teg.teh.tei.tel.tem.ten.teo.tep.ter.tes.tet.teu.tev.tex.tey.tez.tha.the.thi.thl.thm.tho.thr.ths.thu.tia.tib.tic.tid.tie.tif.tig.til.tim.tin.tio.tip.tiq.tir.tis.tit.tiu.tiv.tka.tla.tle.tli.tlo.tmo.tob.toc.tod.tof.toh.toi.tol.tom.ton.top.toq.tor.tos.tot.tou.toy.tra.tre.tri.tro.tru.tta.tte.tti.ttl.tto.ttr.ttu.tty.tua.tub.tuc.tud.tue.tui.tul.tum.tun.tuo.tup.tur.tus.tut.tuv.tuy.typ.tyr.tys.tza.tzi.tzo.uab.uac.uad.uag.uai.ual.uan.uar.uas.uat.uau.uav.uaw.uay.uba.ube.ubi.ubj.ubl.ubo.ubr.ubs.ubt.ubu.uca.ucc.uce.uch.uci.ucl.uco.uct.ucu.uda.ude.udi.udo.udr.uds.ueb.uec.ued.uef.uei.uel.uem.uen.uep.uer.ues.uet.ue
+      u.uey.uez.ufe.uff.ufi.ufl.ufr.ufs.uga.uge.ugg.ugh.ugi.ugl.ugm.ugn.ugo.ugr.ugu.uha.uhc.uhp.uht.uhz.uic.uid.uie.uif.uil.uin.uip.uir.uis.uit.uiv.uje.ujo.uka.uks.ula.ulb.ulc.ule.ulg.uli.ull.ulm.uln.ulo.ulp.ulq.uls.ult.ulu.ulv.ulx.ulz.uma.umb.ume.umi.umo.ump.ums.umu.una.unc.une.uni.unk.uno.uns.unt.uoi.uol.uon.uos.uot.upa.upe.upi.upl.upo.upp.upr.ups.upt.upu.uqu.ura.urb.urc.urd.ure.urf.urg.urh.uri.url.urm.urn.uro.urp.urq.urr.urs.urt.uru.urv.usa.usc.use.ush.usi.uso.usp.usq.uss.ust.usu.uta.ute.uth.uti.uto.utr.uts.utt.utu.uva.uve.uvi.uvo.uvr.uxe.uxi.uxq.uxu.uya.uye.uyo.uza.uze.uzo.vab.vac.vad.vag.vah.vai.vaj.val.vam.van.vap.vaq.var.vas.vat.vau.vea.vec.ved.veg.vei.vel.vem.ven.ver.ves.vet.veu.vex.vez.via.vib.vic.vid.vie.vif.vig.vii.vil.vin.vio.vip.vir.vis.vit.viv.voc.voe.vog.voi.vol.vom.von.voq.vor.vos.vot.vou.voy.vra.vre.vri.vro.vue.vul.vur.vus.wac.wag.wal.wam.war.was.wat.wee.wes.wet.wha.whi.wig.wil.wis.wks.wne.wni.won.wor.wou.xac.xai.xal.xam.xan.xas.xat.xau.xav.xay.xce.xci.xcl.xcu.xem.xer.xes.x
+      ha.xib.xic.xie.xig.xii.xil.xim.xio.xiq.xis.xit.xiv.xix.xor.xot.xpa.xpe.xpi.xpl.xpo.xpr.xqu.xta.xte.xtl.xtr.xue.xur.xvi.xxi.xxv.xxx.xys.yab.yac.yag.yai.yak.yal.yam.yan.yar.yas.yau.yav.ycl.yeg.yek.yem.yen.yer.yes.yeu.yez.ygm.ygn.yie.yki.yli.yll.ymb.yme.ymn.ymp.ync.ynt.yol.yon.yor.yos.yot.you.ype.yph.ypo.yra.yre.yri.ysa.ysb.yse.ysi.ysm.yst.yte.yth.yti.yum.yun.yup.zad.zag.zai.zal.zap.zar.zas.zat.zau.zcu.zeh.zel.zie.zig.zil.zin.zom.zon.zos.zot.zou.zqu.zta.ztl.zur
+      ]
+      	// Symboles utilisés dans les mots de passe générés
+      	BASE_SYMBOLES = "&#{([-|_\@)]+=}$£%*µ!/:;.,?<>"
+      FIN
+      
+      prive
+      gtabSymboles est un tableau de chaines		// Tableau des symboles
+      gnNbSymboles est un entier						// Nombre de symboles
+      
+      gtabTriplet est un tableau de chaines			// Tableau des triplets
+      gnNbTriplet est un entier						// Nombre de triplets
+      
+      // Initialisation des tableaux de triplets et de symboles
+      _InitialiseTableaux()
+     type : 720896
+  procedures :
+   -
+     name : _InitialiseTableaux
+     procedure_id : 1541798413502997236
+     type_code : 15
+     code : |1+
+      // Résumé : Construit les tableaux qui seront utilisés pour générer les mots de passe
+      // Syntaxe :
+      //_InitialiseTableaux ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE privee _InitialiseTableaux()
+      
+      ChaîneVersTableau(BASE_TRIPLET,gtabTriplet,".")
+      gnNbTriplet = gtabTriplet..Occurrence
+      
+      pour n=1 _a_ taille(BASE_SYMBOLES)
+      	ajoute(gtabSymboles,BASE_SYMBOLES[[n]])
+      FIN
+      gnNbSymboles = gtabSymboles..Occurrence
+     type : 458752
+   -
+     name : AutoPass_Extreme
+     internal_properties : CQAAAAkAAAD93mZQRoFZs3xrHw05RfdwIpcOTEXuFIBRLxQNuBOHXCvex+oTk+pWZRuWHnL9SpZ7ScJt/9HFga+lVajd1l7djYR7/rExNzMJVoyl1c8Is5K0H9A+QPr8lkIRBu6tznnLTdFuTdN8mIAqUR+7g7+wu2LTs5etv8uamPPWqF+g7jP8v0p5h7yqD+tJySALl45RMZGBnov2qFgtyLj1Nl7YaQ==
+     procedure_id : 1541846444122310362
+     type_code : 15
+     code : |1+
+      // Résumé : Génération d'un mot de passe selon l'algorithme "Extrême"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Extreme ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE AutoPass_Extreme() : chaine
+      
+      sMDP est une chaine
+      bufHashUser est un buffer = _CalculeHashBase()
+      nPtrDebut est un entier = 1
+      
+      bMaj est un booléen
+      bMin est un booléen
+      bChiffre est un booleen
+      bSymbole est un booleen
+      
+      POUR n=0 _a_ 6
+      	// Lit dans le buffer les 4 caractères suivants, les convertit en un entier et ramène la valeur dans les bornes du tableau des triplets
+      	nElem est un entier = (_BufferVersEntier(bufHashUser,nPtrDebut,4) modulo gnNbTriplet)+1
+      	nPtrDebut += 4
+      	
+      	// Lit dans le buffer un octet, sa valeur va déterminer si les éléments du triplet seront utilisés en majuscule, minuscule, chiffre, symboles ou espaces
+      	nCasse est un entier = _BufferVersEntier(bufHashUser,nPtrDebut,1)
+      	nPtrDebut++
+      	sFragment est une chaîne = gtabTriplet[nElem]	
+      	
+      	// Les deux premiers bits déterminent le type du premier caractère ajouté (0 : majuscule, 1-2 : minuscule, 3 : chiffre)
+      	nPremier est un entier = bitDécaleDroite(ETBinaire(nCasse,0xc0),6)		// 0b11000000
+      	// Si au cinquième tour, on n'a toujours pas de majuscule, force la majuscule
+      	SI n=5 _ET_ bMaj=Faux ALORS nPremier = 0
+      	SELON nPremier
+      		CAS 0
+      			sMDP += Majuscule(sFragment[[1]])
+      			bMaj = Vrai
+      		CAS 1,2
+      			sMDP += Minuscule(sFragment[[1]])
+      			bMin = Vrai
+      		CAS 3
+      			sMDP += Asc(Minuscule(sFragment[[1]])) modulo 10
+      			bChiffre = Vrai
+      	FIN
+      	
+      	// Les trois bits suivants déterminent le type du second caractère ajouté
+      	nSecond est un entier = bitDécaleDroite(ETBinaire(nCasse,0x38),3)		// 0b00111000
+      	// Si au troisième tour, on n'a toujours pas de minuscule, force la minuscule
+      	SI n=3 _ET_ bMin=Faux ALORS nPremier = 2
+      	// Si au quatrième tour, on n'a toujours pas de chiffre, force le chiffre
+      	SI n=4 _ET_ bChiffre=Faux ALORS nPremier = 4
+      	SELON nSecond
+      		CAS 0,1
+      			sMDP += Majuscule(sFragment[[2]])
+      			bMaj = Vrai
+      		CAS 2,3
+      			sMDP += Minuscule(sFragment[[2]])
+      			bMin = Vrai
+      		CAS 4,5
+      			sMDP += Asc(Minuscule(sFragment[[2]])) modulo 10
+      			bChiffre = Vrai
+      		CAS 6,7
+      			sMDP += gtabSymboles[(Asc(Minuscule(sFragment[[2]])) modulo gnNbSymboles)+1]
+      			bSymbole = Vrai
+      	FIN
+      	
+      	// Les trois derniers bits déterminent le type du troisième caractère ajouté
+      	nTroisième est un entier = ETBinaire(nCasse,0x07)	// 0b00000111
+      	// Si au deuxième tour, on n'a toujours pas de symbole, force le symbole
+      	SI n=2 _ET_ bSymbole=Faux ALORS nPremier = 4
+      	SELON nTroisième
+      		CAS 0,1
+      			sMDP += Majuscule(sFragment[[3]])
+      			bMaj = Vrai
+      		CAS 2,3
+      			sMDP += Minuscule(sFragment[[3]])
+      			bMin = Vrai
+      		CAS 4,5
+      			sMDP += Asc(Minuscule(sFragment[[3]])) modulo 10
+      			bChiffre = Vrai
+      		CAS 6,7
+      			sMDP += gtabSymboles[(Asc(Minuscule(sFragment[[3]])) modulo gnNbSymboles)+1]
+      			bSymbole = Vrai
+      	FIN
+      FIN
+      
+      renvoyer tronque(sMDP,20)
+     type : 458752
+   -
+     name : _CalculeHashBase
+     internal_properties : CQAAAAkAAACLxHRUT5VRRhydr2EZVcDhSOncU3NaZtB3zzixfp8Pcg2A3wS1E3ie1yPqYtABzphBj/bvkanzJa2ZrWRbSsKP+4oPLNdtASMjVmyJK2sctfNTzpc9kS1PIxG4DfUglbqE5Pi1DLxnj5HdzEqOWrahLLEi4m6mfq5X55p9ZxI3Rywz5qnQyDMtmI7sDJvjU+adhq/reHHsQAxYfwH5PFDOfw==
+     procedure_id : 1541846946633601338
+     type_code : 15
+     code : |1+
+      // Résumé : Calcule un hash basé sur les paramètres de génération, ce hash servira ensuite à construire le mot de passe
+      // Syntaxe :
+      //[ <Résultat> = ] _CalculeHashBase ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	buffer : hash
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE PRIVÉE _CalculeHashBase() : buffer
+      
+      renvoyer HashChaîne(HA_SHA_512,GénèreMotDePasse(64))
+     type : 458752
+   -
+     name : AutoPass_Long
+     procedure_id : 1541858027649642189
+     type_code : 15
+     code : |1+
+      // Résumé : Génération d'un mot de passe selon l'algorithme "Long"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Long ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE AutoPass_Long() : chaine
+      
+      RENVOYER AutoPass_Std(18)
+     type : 458752
+   -
+     name : AutoPass_Moyen
+     procedure_id : 1541858036239644333
+     type_code : 15
+     code : |1+
+      // Résumé : Génération d'un mot de passe selon l'algorithme "Moyen"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Moyen ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo : Paramètres de génération
+      PROCEDURE AutoPass_Moyen() : chaine
+      
+      renvoyer AutoPass_Std(12)
+      
+     type : 458752
+   -
+     name : AutoPass_Std
+     internal_properties : CQAAAAkAAAA5C9t8V49CbkMBgSFHKqrnO0qwoImmDM2GIKoZeU0SrEDkT3OyRcLQ6iLSOfGF1R+embBHz+y1uVSaoWNdu33AHTa8vkA8x4jMvYhyO3QFN2cYxRKgfakZgDn1DpIZLjYRDmfu+e5DbHv1YfW1nQHBrydPHQ1kngUxxxMezI127SW9bzYRnCj1rgq/XIB35yq3FDYmH5/gBsRSY2iEj/h/mtw6+EZOtG9X/LDhkgqQc7EGKg==
+     procedure_id : 1541863246035073300
+     type_code : 15
+     code : |1-
+      // Résumé : Procédure commune aux algorithmes "Long" et "Moyen"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Std (<nLongueur> est entier)
+      //
+      // Paramètres :
+      //	nLongueur (entier) : Longueur de mot de passe souhaitée
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE  AutoPass_Std( nLongueur est un entier ) : chaine
+      
+      sMDP est une chaine
+      bufHashUser est un buffer = _CalculeHashBase()
+      nPtrDebut est un entier = 1
+      
+      bChiffre est un booleen
+      
+      POUR n=0 _a_ (nLongueur/3)
+      	// Lit dans le buffer les 4 caractères suivants, les convertit en un entier et ramène la valeur dans les bornes du tableau des triplets
+      	nElem est un entier = (_BufferVersEntier(bufHashUser,nPtrDebut,4) modulo gnNbTriplet)+1
+      	nPtrDebut += 4
+      	
+      	// Lit dans le buffer un octet, sa valeur va déterminer si les éléments du triplet seront utilisés en majuscule, minuscule, chiffre, symboles ou espaces
+      	nCasse est un entier = _BufferVersEntier(bufHashUser,nPtrDebut,1)
+      	nPtrDebut++
+      	sFragment est une chaîne = gtabTriplet[nElem]
+      	
+      	// Si nCasse est pair, on ajoute le pattern Mmm (maj, min, min), sinon CCS (chiffre, chiffre, symbole)
+      	// sauf au troisième tour, si CCS n'est pas encore apparu, on le force
+      	bGenereChiffre est un booléen = EstImpair(nCasse) _et_ (bChiffre=faux)
+      	SI n=2 _ET_ bChiffre=Faux ALORS
+      		bGenereChiffre = Vrai
+      	FIN
+      	
+      	SI bGenereChiffre ALORS
+      		sMDP += (Asc(Minuscule(sFragment[[1]])) modulo 10)+""+(Asc(Minuscule(sFragment[[2]])) modulo 10)+gtabSymboles[(Asc(Minuscule(sFragment[[2]])) modulo gnNbSymboles)+1]
+      		bChiffre = Vrai
+      	SINON
+      		sMDP += Majuscule(sFragment[[1]])+Minuscule(sFragment[[2]])+Minuscule(sFragment[[3]])
+      	FIN
+      FIN
+      
+      RENVOYER Tronque(sMDP,nLongueur)
+     type : 458752
+   -
+     name : AutoPass_Basique
+     internal_properties : CQAAAAkAAAChUurkyvjzHw5Tew2DJWPKFAEOWltiVsg395jxFl83YnUw3zR9w8B+36OSWuB53gDBZy438aHzLV0hvcQDGpp/s4p//N+dCYNrNqQhi0N8vTcf8vPZ3clzH+X0eXm00W7oQFzR6Bij4z0hmAayvtJFcH32nrpiSnITOxZZOzZjK8BvOsX8JD8RRPJYmOceOjvuvBQEQeh9u7XEXzRpoupklQ==
+     procedure_id : 1541864229583140686
+     type_code : 15
+     code : |1-
+      // Résumé : Génération d'un mot de passe selon l'algorithme "Basique"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Basique ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE AutoPass_Basique() : chaine
+      
+      sMDP est une chaine
+      bufHashUser est un buffer = _CalculeHashBase()
+      nPtrDebut est un entier = 1
+      
+      POUR n=0 _a_ 3
+      	// Lit dans le buffer les 4 caractères suivants, les convertit en un entier et ramène la valeur dans les bornes du tableau des triplets
+      	nElem est un entier = (_BufferVersEntier(bufHashUser,nPtrDebut,4) modulo gnNbTriplet)+1
+      	nPtrDebut += 4
+      	
+      	// Lit dans le buffer un octet, sa valeur va déterminer si les éléments du triplet seront utilisés en majuscule, minuscule, chiffre, symboles ou espaces
+      	nCasse est un entier = _BufferVersEntier(bufHashUser,nPtrDebut,1)
+      	nPtrDebut++
+      	sFragment est une chaîne = gtabTriplet[nElem]	
+      	
+      	// Les deux premiers bits déterminent le type du premier caractère ajouté (0 : majuscule, 1-2 : minuscule, 3 : chiffre)
+      	nPremier est un entier = bitDécaleDroite(ETBinaire(nCasse,0xc0),6)		// 0b11000000
+      	SELON nPremier
+      		CAS 0
+      			sMDP += Majuscule(sFragment[[1]])
+      		CAS 1,2
+      			sMDP += Minuscule(sFragment[[1]])
+      		CAS 3
+      			sMDP += Asc(Minuscule(sFragment[[1]])) modulo 10
+      	FIN
+      	
+      	// Les trois bits suivants déterminent le type du second caractère ajouté
+      	nSecond est un entier = bitDécaleDroite(ETBinaire(nCasse,0x38),3)		// 0b00111000
+      	SELON nSecond
+      		CAS 0,1,2
+      			sMDP += Majuscule(sFragment[[2]])
+      		CAS 3,4,5
+      			sMDP += Minuscule(sFragment[[2]])
+      		CAS 6,7
+      			sMDP += Asc(Minuscule(sFragment[[2]])) modulo 10
+      	FIN
+      	
+      	// Les trois derniers bits déterminent le type du troisième caractère ajouté
+      	nTroisième est un entier = ETBinaire(nCasse,0x07)	// 0b00000111
+      	SELON nTroisième
+      		CAS 0,1,2
+      			sMDP += Majuscule(sFragment[[3]])
+      		CAS 3,4,5
+      			sMDP += Minuscule(sFragment[[3]])
+      		CAS 6,7
+      			sMDP += Asc(Minuscule(sFragment[[3]])) modulo 10
+      	FIN
+      FIN
+      
+      RENVOYER Tronque(sMDP,8)
+     type : 458752
+   -
+     name : AutoPass_Nom
+     internal_properties : CQAAAAkAAAAkBsU0IeagzljzDPbipG4DQjgH0Hnz0fJDDsJJPUEEoM4F+9KsJ6sh/T3jmrsyoKpXxBLl2U5FXcCg58AnrOy2VRk/FVKrNF/LzhGB6XzEtgY+Hf+UszH9ZOVqd/Tf1D6dqeF1twAFcdJJ7gLDYRHBO9yZBhFCzK4AmQohYusUaE4nfjjmScRuEKEtUSWi5haooJyxgQ==
+     procedure_id : 1541865226015654723
+     type_code : 15
+     code : |1-
+      // Résumé : Génération d'un mot de passe selon l'algorithme "Nom d'utilisateur"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Nom ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE AutoPass_Nom() : chaine
+      
+      sMDP est une chaine
+      bufHashUser est un buffer = _CalculeHashBase()
+      nPtrDebut est un entier = 1
+      
+      POUR n=0 _a_ 3
+      	// Lit dans le buffer les 4 caractères suivants, les convertit en un entier et ramène la valeur dans les bornes du tableau des triplets
+      	nElem est un entier = (_BufferVersEntier(bufHashUser,nPtrDebut,4) modulo gnNbTriplet)+1
+      	nPtrDebut += 4
+      	
+      	sMDP += gtabTriplet[nElem]	
+      FIN
+      
+      RENVOYER tronque(sMDP,9)
+     type : 458752
+   -
+     name : AutoPass_Court
+     internal_properties : CQAAAAkAAAD+0BXC1ORgqDqvwEDQULr3KOglUKNtFZQFYuZDW8XQvKiJ7T6mJSuvd5kz/NmWRBZlHHQZd/Cx25p0S84J/Kz+w4HlveApZK1lanw4WulRZ1kLomJJwLQQM6QRBm10eYdk9p4E8IkMeB3kUfnMZhI+tkkO4R4/30XrpCHgO9jhWXFAF4+XevMR96goXCqb71vMuH5f1w==
+     procedure_id : 1541865629742608808
+     type_code : 15
+     code : |1-
+      // Résumé : Génération d'un mot de passe selon l'algorithme "Court"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Court ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE AutoPass_Court() : chaine
+      
+      sMDP est une chaine
+      bufHashUser est un buffer = _CalculeHashBase()
+      nPtrDebut est un entier = 1
+      
+      // Lit dans le buffer les 4 caractères suivants, les convertit en un entier et ramène la valeur dans les bornes du tableau des triplets
+      nElem est un entier = (_BufferVersEntier(bufHashUser,nPtrDebut,4) modulo gnNbTriplet)+1
+      nPtrDebut += 4
+      sFragment est une chaîne = gtabTriplet[nElem]	
+      sMDP += Majuscule(sFragment[[1]])+Minuscule(sFragment[[2]])+ Minuscule(sFragment[[3]])
+      
+      nElem = (_BufferVersEntier(bufHashUser,nPtrDebut,1) modulo gnNbTriplet)+1
+      sFragment = gtabTriplet[nElem]	
+      sMDP += Asc(Minuscule(sFragment[[1]])) modulo 10
+      	
+      RENVOYER sMDP
+     type : 458752
+   -
+     name : AutoPass_PIN
+     internal_properties : CQAAAAkAAAD+0BXC1ORgqDqvwEDQULr3KOglUKNtFZQFYuZDW8XQvKiJ7T6mJSuvd5kz/NmWRBZlHHQZd/Cx25p0S84J/Kz+w4HlveApZK1lanw4WulRZ1kLomJJwLQQM6QRBm10eYdk9p4E8IkMeB3kUfnMZhI+tkkO4R4/30XrpCHgO9jhWXFAF4+XevMR96goXCqb71vMuH5f1w==
+     procedure_id : 1541866828038566472
+     type_code : 15
+     code : |1-
+      // Résumé : Génération d'un mot de passe selon l'algorithme "PIN"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_PIN ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe (PIN)
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE AutoPass_PIN() : chaine
+      
+      sMDP est une chaine
+      bufHashUser est un buffer = _CalculeHashBase()
+      nPtrDebut est un entier = 1
+      
+      // Lit dans le buffer les 4 caractères suivants, les convertit en un entier et ramène la valeur dans les bornes du tableau des triplets
+      nElem est un entier = (_BufferVersEntier(bufHashUser,nPtrDebut,4) modulo gnNbTriplet)+1
+      nPtrDebut += 4
+      sFragment est une chaîne = gtabTriplet[nElem]	
+      sMDP += (Asc(Minuscule(sFragment[[1]])) modulo 10) + "" + (Asc(Minuscule(sFragment[[2]])) modulo 10) + "" + (Asc(Minuscule(sFragment[[3]])) modulo 10)
+      
+      nElem = (_BufferVersEntier(bufHashUser,nPtrDebut,1) modulo gnNbTriplet)+1
+      sFragment = gtabTriplet[nElem]	
+      sMDP += Asc(Minuscule(sFragment[[1]])) modulo 10
+      	
+      RENVOYER sMDP
+     type : 458752
+   -
+     name : AutoPass_Phrase
+     internal_properties : CQAAAAkAAAAwddgpI3mcfMzrRNap5pJ27o7h0P5WAomPGpWR/Qs47PAonvrRhSK6ddoUCW4d4hg6mnuH6oTWXTC/YjrQvOpLZsT3tsFPOfWO3pwy2xKHDq/ShL67J+3UhrSwkKGn5x4Dd/KeZCg9dGYGdqNgI7SdjRhABeTkukdGDiSeoRu//QfQcuo2rt889S9c0e37JU6i4H/W7k98z2UatFtzb+RcxQE=
+     procedure_id : 1541875400793385447
+     type_code : 15
+     code : |1-
+      // Résumé : Génération d'un mot de passe selon l'algorithme "Phrase"
+      // Syntaxe :
+      //[ <Résultat> = ] AutoPass_Phrase ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Mot de passe
+      //
+      //	stInfo (STInfoLogin) : Paramètres de génération
+      PROCEDURE AutoPass_Phrase() : chaine
+      
+      sMDP est une chaine
+      bufHashUser est un buffer = _CalculeHashBase()
+      nPtrDebut est un entier = 1
+      nLgrMotEnCours est un entier
+      
+      POUR n=0 _a_ 6
+      	// Lit dans le buffer les 4 caractères suivants, les convertit en un entier et ramène la valeur dans les bornes du tableau des triplets
+      	nElem est un entier = (_BufferVersEntier(bufHashUser,nPtrDebut,4) modulo gnNbTriplet)+1
+      	nPtrDebut += 4
+      	
+      	// Lit dans le buffer un octet, sa valeur va déterminer si les éléments du triplet seront utilisés en majuscule, minuscule, chiffre, symboles ou espaces
+      	nCasse est un entier = _BufferVersEntier(bufHashUser,nPtrDebut,1)
+      	nPtrDebut++
+      	sFragment est une chaîne = gtabTriplet[nElem]	
+      	
+      	// Le premier caractère est toujours une lettre
+      	sMDP += Minuscule(sFragment[[1]])
+      	nLgrMotEnCours++
+      	
+      	// Les trois bits suivants déterminent le type du second caractère ajouté : 7 = espace, autre = lettre
+      	nSecond est un entier = bitDécaleDroite(ETBinaire(nCasse,0x38),3)		// 0b00111000
+      	si nSecond=7 _et_ nLgrMotEnCours>=2 _ET_ n<>6 alors
+      		sMDP += " "
+      		nLgrMotEnCours = 0
+      	sinon
+      		sMDP += Minuscule(sFragment[[2]])
+      		nLgrMotEnCours++
+      	FIN
+      	
+      	// Les trois derniers bits déterminent le type du troisième caractère ajouté : 7 = espace, autre = lettre
+      	nTroisième est un entier = ETBinaire(nCasse,0x07)	// 0b00000111
+      	SI nTroisième=7 _ET_ nLgrMotEnCours>=2 _et_ n<>6 ALORS
+      		sMDP += " "
+      		nLgrMotEnCours = 0
+      	SINON
+      		sMDP += Minuscule(sFragment[[3]])
+      		nLgrMotEnCours++
+      	FIN
+      FIN
+      
+      RENVOYER Tronque(sMDP,20)
+     type : 458752
+   -
+     name : _BufferVersEntier
+     internal_properties : CQAAAAkAAABSl3WGi+DJSGB7cOJpTlLusiwhxN7+mpl32m3R7QvADBjg9tJ5RQKCFaIk4cbl8oCKGks3SmwejVivmqqg3DJrjjxvPmnvGT0uNsz6c7qXVv82oAJXeymIwnisJO2b8xJvCx7iMNwpCNLasnc8R5DxiQwMWYAIZguSorDCHY/L8VOE/k7CIiswYcMYFSlvrY54whWw/LkSScO8wlDVTX3+Z6M=
+     procedure_id : 1554770451691185865
+     type_code : 15
+     code : |1+
+      // Résumé : Réécriture de la fonction BufferVersEntier (non disponible pour Android)
+      // Syntaxe :
+      //[ <Résultat> = ] _BufferVersEntier (<buf> est buffer, <nOffset> est entier [, <nTaille> est entier])
+      //
+      // Paramètres :
+      //	buf (buffer) : Buffer
+      //	nOffset (entier) : Offset de l'entier à extraire
+      //	nTaille (entier - valeur par défaut=4) : Taille de l'entier à extraire
+      // Valeur de retour :
+      // 	Type indéterminé : // 	Entier
+      //
+      PROCEDURE privee _BufferVersEntier( buf est un buffer, nOffset est un entier, nTaille est un entier = 4 )
+      
+      si pas nTaille dans (1, 2, 4, 8) ALORS
+      	ErreurDéclenche(1,"Taille de l'entier à extraire invalide")
+      	renvoyer 0	
+      FIN
+      
+      // Calcul de la valeur
+      nEntier est un entier sur 8 = 0
+      pour i=1 _a_ nTaille
+      	nEntier += asc(buf[[nOffset+i-1]]) * Puissance(2,i-1)
+      FIN
+      
+      renvoyer nEntier
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1148a8fb07bce3e9
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

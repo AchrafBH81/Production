@@ -1,0 +1,158 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FenQuestionIntercalaire
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FenQuestionIntercalaire
+ identifier : 0x299b8525c52efad4
+ internal_properties : CQAAAAkAAAAOLGPintI83BtHr2ojWxeArQo1LUCUbd4Wycx9zwTdzq6X9wvi0wZ113ZqvQG4LSdH/6r16lWaRwCqtS+K7eWC373u3Ws28Z4MKkItF8JX5vpAOiykuaY6laQF1wTfX5t7pTk4AwoBG+U14yFtfl+TbLlRZiJeOqhd8gU+/goDB8YaXND13ru+I4RWPq6+GhMQ4jySUtog6595qpodGbTK2ASOUeeJa3PmB1v/mc5S6o81HQKp/d0ZimpIgiu702LPc6zETOd+OPRQ9O0u4Kc7G7zxW659ZWzt3up+t8BcqBq2mbEd2aYVjGwltuYlJHb1OQSe24lShqrTO1VHnRDmjunD3BULhodlNJvvpUgMFSulbX0J+JNDwTkTFp5WK4E0lpPSgEwqrrr9q7ufKBFz0itNxzJqWC28RlnGoYH3TrwwUr/A48FJ/A+QqU52pMkZuOpCTRCf7mWwC5KwiJtht51/DfXFWWAw2NdWmLR0q/7VAXx7Jau6EY+FxN7XxLOp6G1pHmRSvU/+hBqo6U+GTbfDejJAZB/9obF83e/nonC1e8+/PGcPbX1QXkHVh74KWF6yZQTTTrLlSBVJJDjuKI2Bg6lwDToDEX//lDj3vyz1v6yXxzxdVbN5j0+ztxocn0kaJTOQkB8WOoaGLDu+MP6M0ApKWvoA15G04hzTVOi4FDDQWvfuCi0HZdu6qf29fH+HJH4hTwZ5qZgbl/0pQ1k5MRhK9bLDc7VM9sFTMnp9YgbxrpfJdQkXQcdk37rDbNDDlJsmeWMjsyZdzJInJ7duaBxcJVvq88WL0YRngIfr1jhIr2/433wzkIGzNW1De4bzrJRqTb7G4HTqB1RdhmjrEQXhPCQFqfvkPkrXaCP0YDf96rXtcKGDVYPy6zU5P4CHDt8X583aFahNvyHi
+ properties :
+  width : 702
+  height : 337
+  widthClient : 700
+  heightClient : 305
+ controls :
+  -
+    name : BtnIntercalaire
+    identifier : 0x299b8526c52ffb03
+    internal_properties : CQAAAAkAAAAeQlfGpUB5AE0jLD5V8zWbCSR08b7OtXWEQmdNOfBmqLtgUnKDwRGMS67F54suh7CSsS6Fu2zFWenp0YHkoSBs89t5NEnNoMEeF8wEkMd5kIC4RqFSfkUArIjtz7DD3W+VVYjfF5++dUxkPCgsmp8gq7KIxznZP65+iv8bWTtM0BjlzCFbOHKEk4SyLtlEOLcmYjHjdZlIrFwPoitWk3Un5owRI3Jf7wB2BGEl9l1Y6l0k4pS62sbkFyMB2+qlUh/MsaX6lK0Kjaa3IJ07it+gcHq0tF+1iycGixD8taFw8V5eLVKPmhwBwdBqbDObrmc7tR6SDyn5QqKvmIQONf2hO8q4NOrYn/OycnpzRS/HsbpX6rLd3eHmaPcgeee0RUGUSiQLHmXE85cgF7IFK8nnBG8E8dImIXrB4iOIx+1eyzKuXXr2rISrsp62sQaw32OA66jfTKsKPBM0EXdQHQP4OK+y4a0pB90ahGarDwJTUseo6rIOdmwtXDvzxVs+/CMASEACL18pwcKOMMnEaSJyoGK9WfpYdN1IMUEhSm0z9NR5kozc8cTO2zc6no/6I5n/APvgJZBziCXXNoHdJqBfWsZfnoFlEeet3Gt7u7p/RgpCoqtv/LMAkPW/QeHM6a+fDb9+uVJkI5Z4Vzbz8+wX06G/H33ALz2O2IsNigjNUT3rf3CXKnGo91GAFuwDw0my4g/m2PoFMwmGqp0/cgNbWhCtdPcjjeO1kbRC6f5Jnbwn+o1o6n/HB5DHSH5wWNXkChy9a8nYqOfrQ46KyWmd4rDDepUw3jEae6IRkVQS+MRIdSOZKQO/CushY4M=
+    properties :
+     x : 197
+     y : 107
+     width : 306
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         mafenetre..ValeurRenvoyée = 1
+         ferme(FenQuestionIntercalaire)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BtnFini
+    identifier : 0x299b8526c530fb03
+    internal_properties : CQAAAAkAAACMTs2Zkjs8fqrkYHXLQjcQGfJwGRiu4Zz1DHNRGmxMy9tPeryUEfHf5YtFX+drw9GOpKkSnOexlqlaKv5NJgEDLWT/Cd5J6JTb6ejYOIMm3uQBI3JPMjuqsgkTfAB4Y/WXSrdMvkPZ6ihKg8VXVrjiDOJ5XGrnNzt+sg5E0KudKnxJMgN93eQXj9W9zS7KjTxhCcO8mMn2LkJ2cvZoWnnsp4gIJVgNbeAhv/5VyBtkxXEClRWHDpd3E/tUMDlMY+2cP2BtSliz5BWfD8BNXYpY2Pc+W50KRd9AXQuUALiT07EbCxm1QZjJuORsSbfxH/U5Xt5jk54P3DxYV+b9T6K9br19b+AWqGBpVFSVRqAmWLy0uWl/Ouwnbf0oVqvvSWNyzAN4dtmu9k2rbQISq3sk2mIXp1cA5tFoWfK1WljlUqM/GiVTaUfs81XVVs2FgISrji/4MUxpjVDxBmpZ5jidhy7J3MLAkOYThS8mpD+MGzZ/6TOV08f4G/Ii0n75O+xLY7OfdNhgCGX5uwLTnvdP39Fbo6a2zl34Y0v3PLnvPJSZmnz+n7YyX4FExDtK08XLxDeEhbhb4kOLujX9Iizl2JRRrIO7qyH7ZDO/lX5DiIzcGKVjBvmabms9B28QneFZB/VIDZyq53oa2ejp7lv0dgwyEordQiyJQ06+3cX+FqjeVrGOK7iF8NoZtW+smJ7R4QrzVS4kut9sEeZdYHWqFKrisjeO26J5Z+djjxzaCvnlYyEb2kHhLsHAhXilopeeTfVMXFSs8YZS5LYDPCGhvABmWILpvZ/zDUvzFw==
+    properties :
+     x : 197
+     y : 153
+     width : 306
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         MaFenêtre..ValeurRenvoyée = 2
+         Ferme(FenQuestionIntercalaire)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BtnManuel
+    identifier : 0x299b8526c531fb03
+    internal_properties : CQAAAAkAAAD9QXEd/EZmg3ePjo3PcLQP7aY3Cha9VEpJ8zom59l3aD+DrT1Yo1LLxH0T9w8I9I/d05126SJBLCcaET9wvwXwpLrx9AfvcLxnwt4tfw7KiCgGhxf777INF8eqoQyz1IaXy+59LhIYBgi9lz3dBCvhCpkwPMSkhIoPdBIIAcaYfByTXKq9AksMDOO5q6Anshkij9I/UYUs6xU/TgMR5DfOmvHnZwNArhRwnSjzvbUs9AF7wACmJxY3PPC11d2iK3Rc7q+MGGujbEZCiW5s2A3eXy+jkQTPwYNvJSCiBWV6pg/5+eZB1Ib3w9aAZHG6OQBtL3rgqm1dM+ZRL60lzvOHrx+10YkGr+ihVykSnAT0d0aktvcoxPIZbd9MymWLtGUQ8rEgnP4vzSSTFhxKRNfW7vn3w82bFFi64ZA4m7SmDNKiTUzm8Rj8QwRD82JlIbZcG+RHyohe3XAKxqGwwnvn0HtqF434bzaj6BExr7GDjeMoOohGXaKImxUW362frOB2ogqEtyZJUgPClVVenBTlUvAmKCM0pT0oHNNQuUHmmptsSQmvmxfA6ZoOzwbmqL+iR4oztAZUUC28FIgygr3rJ998V9z3OkWvFU2kliqu5ovXBwwKovBKLtRV+Fzo1nsSpH5T0FAP6569RR8iXn4KT7lPgRPTnbZHpgrxQL2TOKW/W7ozTU+1UKF52LjY29AYtGlIpuBmlhKOJJs4moR5Y5L1dUt9t32jlWwtXZmBL5RP/jx9+NWytvjP1wXoCuyfQeDrkd7OOY67pv6yJugfnEDjisEnftxpkyu7r7Um7EdJIqDU/ZeP+eOU+YM6mn953FBn
+    properties :
+     x : 197
+     y : 199
+     width : 306
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         MaFenêtre..ValeurRenvoyée = 3
+         Ferme(FenQuestionIntercalaire)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé1
+    identifier : 0x299b85ddecbfc6c5
+    internal_properties : CQAAAAkAAACnVz9xVZG8/XFUdTinVFKR8qKp6rVDOF9pwWKMULdQd5u9omCodb1ipRRzrEdxyNoNjmOS+NBUI2fv7Xk7nMXrpCbz/upGm284PSS1ygsW79akfnkezWu/+mi+yqmdC2YC5KebqrQ6zreY+qDqNtZd/wOmKUzH15CCFrw5hHX1BJ368LbzII/qGY1Vafj2iNrMgnSlV9VQ+Qa6KBwfvslwBTvuFjVZQhwWaTLt2GiaU8Ih9G2neY6jIdWuy2x6yoeQxTuawEDllsT9TswpoxBSxvZgmKMLWTnhijhbDXwF9PuZKxR1YnvB+WJ46A4xauipkuE0OA+GPaoezLzQWxtgiuYOX9wa8irKkUSQfrsB3Igo1+K5FNAhh0XDIQvJj5nmFpWBoPfLkosKAhq87qIWNBzKXdtyQqZTbZrcewK9FMYejzoIvl86W73wiac80W6XZqwf+o2jWFlqXmLes7K7Tssujp+Ii3mstRKzjLPWZDVLtg2W9mhJAqvI0OIBvt+h2clawHOkC+ZuwMA0
+    properties :
+     x : 106
+     y : 24
+     width : 494
+     height : 40
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BtnThermos
+    identifier : 0x2fafd710051f0c45
+    internal_properties : CQAAAAkAAACewtdGJfEEB8iuAy9EbNZ0kouzIyDfUsd0uk6l3kgLthyLIG55/L4o2cxFscX1kCWEbSGrCfIYobGiKXsjXITyJAtYLItw+7BpZMw5JpkrgDWHg0lzl0/OpZL6oUplt1Ht42bVMeWYi3aCyko2yBna/WCeXUOnYTzoAB19I8n2CuJbWqfdnqxKdapgeAs28vGQME+Bzzcqsv6duCVYkY8Z0JL3oYTV8bZIWpffqKNaRGc62MpsWKByKQHHVcSrBHm2dyP4lmvEI0gEntAdfJkqwpV7X4KDC6eme5DMtaHw0b6uTTIfOoxRkZD6zINrvhdrVa4ij5n5QoKfOLRuVV1Be3o4tBq4z8PCUsrTFZ/XIcoXOuL9DaEmCEdAKQdUxQF0mmSr7sW0A+dAZ3K1Gxn3NA8UgTIWyVK5aosQv8V20/pGFVIOdEyDSmb+ed6Id+vI4+AXJHPSdGvcWZ9o9bsgwEfK2aURL5XyLE7TR9preu9AAkqGnpTF9IMb7bO2lEtogDiah8dR+Xr2mFFcwVo66Jr1MRKgPDPJE2KLjEvNEupSrUgU7bCu+xfaeo/mv8HHaEecXaxXkM2Plm1lqhTPIm6LSukh1T/lBDv3A05zvprCNgfnWF8AgH0nZfnYZeNTue9O1RosfyL847Zvs5y7dx3/R1HwJ7kKxD9FxujddcEHD+BTsvkkc8VkHsoFUeuUPBV8E+r7Csu84/G+caL2hxJ5W4s0y7yqLILsXiniH09W+Qn6EnrCBMuzpjAt4EaHNSOWogqQdz44OMr9mlsfeymIhy7VOtIjB6zRYbYwmGQIlW1texE/imuh4wM=
+    properties :
+     x : 197
+     y : 245
+     width : 306
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         MaFenêtre..ValeurRenvoyée = 4
+         Ferme(FenQuestionIntercalaire)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x299b8456ab9cd21d
+  internal_properties : CQAAAAkAAAD7S+2GOLjEeheq9Y6YZGIRPpLnwB8KUS2je4S4X5oxSGrv51WBBaVxxbk/BTEdUwW0fnnvlhQNIBAuQTAO0S9+S8FMTvDhqkS1JydqFJBfHlbZSFzBkZAjjJ5aIH/cuMnF4Pme57TAyYvjnlkzTJmN5UX9hu+BEl3AsIsso5gsz3oX/KHp1ai/xWZCb54MlUFXdWmT2EOpULKqea/LH9EOlTkaiWsV2aM2/FfXQjTSY3NhAR6zEzKHYKVJwiZULchG0D4LNvRbPifZJPDMmlF6ptz+Rg0QN6SXG5jU7HifIzmkonwDFnOJQw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAABWnnADnzBWB+hN/UN3jRnjeBzUIcBo9sfRYgzv9oipzu0+pXSNuaFzerSsTD3+qDXfal4/l+JCkap/woMPklRPiEYN7ZmY+6O5qF9HYwE44wI3GcNQqtbr9mkKkQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Fenêtre1
+resources :
+ string_res :
+  identifier : 0x199b84560bfdd21d
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

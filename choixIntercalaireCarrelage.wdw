@@ -1,0 +1,158 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : choixIntercalaireCarrelage
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : choixIntercalaireCarrelage
+ identifier : 0x4dcada835cde7946
+ internal_properties : CQAAAAkAAAD8uN/k63W3GJFOtUlyrtR5vszmAgj1xbF5lDSDEV4zXDYjHAt/WIROAemg4UI1rPsMxKVznHIqgyTvYmHHF8cZz4snRcEd2gNDsuGghlyxifEjQzYgTJIQqM9ZFFaiFgKESn0UmQlStzcsXu2P6/WCM+fq5EF9WgR8AVPf6Tsz0GSFfUZQCwJGTG2OrchEoZyDM0NL+zyZrsP9UIW183i0ikf9764jNmCeCRAMqHhN3AF0foCsq3qOFqCVqnTuMtNvmxsOuQNkmvv9vt8JrsM1IYCkdCn3e3MbOpp+LTFbxHgLajHoH+EYAJNgCZGH9eGAHTd8WELTC522VNn5FgpGGVNUxG0/MDwFmKhl8yX5+ynIT9yoSrlWctNZcapg+q7smvJBychpF1wKGKeQSvYq3aGciKiq82SC3HB9Uz/yAfh4SWssCznRzePdksiYS7bpYKj9fgPZhofn0K7B0qt6AMKyC9XT9kUWfcfaWQxRPIVEriLWDQPgU2kEv/KDgvKAGYBbkGX7F2SKtNhdE9vIUXb/MsN2aGMHEV8/lt/Mc6/A9Kk7Ws0Svau+M9JP2CrMq3DjrTn898okkfqRsM16hQ3XCwc1j2sj6IzF9H8B6n3wptzUB7kJOIGfmOS6dZCOusxkulepz+eOR5rBOCdjTta2VUS3e1Nknk52RSClu5FWjnOTpr5KU4xHRGX8/dbtaCHJeRsWqm0+HzvA3bcHXzeWLR7HIbGkv2ta8NqVylHfWlJPxiFtR7lR2cMtet/GI/lUd8WCqiDMFRkkQ2DQCBEEj0rUVluVYutW4wQyXx/6gC54AmMkIBqG9xGINbVY63c=
+ properties :
+  x : 120
+  y : 50
+  width : 565
+  height : 186
+  widthClient : 563
+  heightClient : 154
+ controls :
+  -
+    name : BtnChgIntercalaire
+    identifier : 0x4dcada832f507975
+    internal_properties : CQAAAAkAAAAr8QkHSJQxgUhKPyoRJ49y6xLu9xssMIl81YTNyCyxcjtdVZWRJ+cBuTc7xgMs45TAOOw8tIYFpsMfHZw3WkjvERch1P6UkuIgBrW1bkjwBM/FKdzq6qB8HtZet9v6TABxEmJX1GLCoHOt0D2HeVA0RQEmBW0W4zD17F8mqLczkJ2Slk88M3kqIjk89tFikY3eJkoiaxRQvPuMBHHfm0bI09nRfHoy9reTaPSjj0CxqZWkZT0KpwszGrRmX6gLITZ7wKPekby0mHIQwcEVLxta3u9u01bzm4lF5QewRZ1oAIVoD0IFzS2YAod4RC4q1cf2rl3qdwgkZYuoaNkBxeGF1j1JmKhq+kKBKXvPA1G4RCjEJDldB7ERNlaMJGZxDEmPhM8jXy5BbmAesZY9kWDVdZAgQkr+33gve1yx1oAQhvNHro/P1E7MveKc7gRD/Q5np3D11tBEGv4V9OGD7U5KYan34t4bbA7EMMfMRhSj25TscaKCldtGKiHS73TNsjcWDwOcWOAnuUAqG6AsvjUz08lJHtx0znZTAB3IDvO9swYT1ji2KkT1LcdBPZcTKcAvhOI2IX8VLm2GIXjzH/YeNCHTIWRX+PqFLum6lKvUl43ipMsTbyrzh4NDbTGL0hkEUI9Ii7jiQlruRf/0q31VZKjJ5z34uzC/Ngxal3aT4qkr+0bfbxQpKE0cCnCENgbJLfw0BmPFxRbUQglp6FspbQbhDIxFCD1Y4hcoN4XwSwfxx/iC3oZp4Urv5A==
+    properties :
+     x : 32
+     y : 106
+     width : 139
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         valeuraretourner = 1
+         
+         
+         ferme(choixIntercalaireCarrelage)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BtnChgCarrelage
+    identifier : 0x4dcada8352a37975
+    internal_properties : CQAAAAkAAAAxCVIsJPrCNSngUPwkvy9ZrddkfuEuWOmqS5bHHUhEuT0ZOYhktbJMrkCTdWmqEe+Gx7SqxhWx8myA5twi3ldH6RGeD59k5zWNNg1b3qiMj4jtnUltkdOo8UjGirhw4xotwAW1tD1v/FAw4qNtROv9XzZV4aV9Z90gVRCv3UY9LlwQYiHtPaZW8hmDyXJ7qKtUNyvGvnN3daIjluJ6Dy/tBW8fsbVsvqsDeSxrHj++QDspEpoXWt4kJ5dSaVJ0WgVOxmjCf6n9g+CGhWLUDnZwQFIWaY142K4HHFuJejogTPPg6f1Q2KkSkfqBj9kD7kYD3Sbzij33xFERuncwb2QrEfqIq6XZleCdhpq8IzCZPWPLGsEwT5v1Xp+Lm/40sHZBWA+M0HULHaeBy5vDhbwgM2j+jU9JX2mu9joQ/npQNaMdYD52vcAxBo/Gwe5HO7VDoQLiDblctfVImOB50ZrlIQ9V9y96GBunRzHBuGxr7gDS+6Wx9nulh9os2MDXcoacH7nvPQsxwJEnES/aPvXIHXFni5F32tWgEcPnFmWVFhahnGNh/47Aiqi9/BPFpzFdPCibPMQTT3g1R7s7jTZPWCf98h9UiK0AHeNB2L32PhPeGsrsBiBUShLLWk31NghmvNN9Fq1cDe+P7dyCdKOsxFKFxACFobvYg/gBwWrZcwMngZecKkIkLc7iZWCaTqtDj0UzGaY+xz4fKIahbtt0BVzj+wjUGSEqRkyYqHY9th488SOQa9gZ
+    properties :
+     x : 372
+     y : 106
+     width : 139
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         valeuraretourner = 2
+         ferme(choixIntercalaireCarrelage)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé1
+    identifier : 0x4dcadaf45538309a
+    internal_properties : CQAAAAkAAABoj4VcXDK5Oc5FuRewkqBOA49W5nKvRZFIEQCv0JHujU8lwXNKOuVjt/sUOoQBnlrUp15xGedIvR2Gwfhp0V1CLj9xSM67n7CnXCdj9KURGbJwE5kOu1z15kpfwAEx/mwldoDh+Oukt6atll2r9Bzti3qB96YA6pAw2t2nmY3XKWzy5bFDse8KLTPQ9h5gLveCHEt9mnGCUlh17FCAJVKR/W2s7b4AUPmCgTuuBD7MZv3NBXc4DA/2AEiV6u3DTScLwWvF5b1DSwhKH7gZVbtZjBdWggXvipGyrXtGeAdZE2vShXsPBuhtxvPVkiU0yt8Jrq/FVfBXi3hA6IIRXFLqg5UioAjtItw7EkBp8cJHa5rbqcLJnNjrgKGBlNOk6AgghOlvn/bxrwmrvZsavhz+fcyCQu0gtP6ZggF3mhHjBXijqCS9GGfbZ0K2wRKNHbU0vT1wjwQ=
+    properties :
+     x : 73
+     y : 37
+     width : 416
+     height : 36
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BtnChgIntercalaire1
+    identifier : 0x26ba6157527b33e8
+    internal_properties : CQAAAAkAAAD4nfm2+PFhIXV4yLFeuik3rt6rKbRhxovEybQf3IEM8Q5cKOGBPXu9WhPwCI2domjQRG/eoZXmXRBG/ywqb8GYjY3RFOhlK6XJDDfJquXpBFgxee+32eqZJ/MTtbZ3GvYkyIFr1xA1Vnkp6iqYhkTgJZgzh+G662RkgGiTW/yPiSmBM1MwanHQVqMRuJIRzUrfLM/VkPmx1vzjUpdXmcxuc9TTRxeugP691sJvP88xXzu9oK0P8dePQ8PaBaqU7FAyC+hx/WcwE1kWoriwqcLmjpdupDrFQpYZ6O8vxosw1oTPveT06YirU8oVbSuw6U/6d5xuXG1s8rJWvPdSGFSuyACO+ssYLKco0HMaYADFdWB8cN2omW1Ko3uaVWofdyqsaMv8ZLyX0fG3M2OIVYxiiWFTxCGTg4bomh6xYrkPWrziUon8FX3tL96cX8a1iC9Ce1OdhVnKkelJ+5AayBhRFALhPkE5Wrg7Tn2BCjV0vjHJNffyMbpXmVQAsnxiMeZe5QMx5c8PF+0tCbPISoOeW7t7nhH5xW9KM694AM5lLP18uCLs3ZPXZxdiUF+Z5Sw1KtoMJuaI/iZwW+nW2au5DNUCMklLzZtX3dfDQPS4Kn9ubmqmF0oG8GZ//wO51LuldPv2i7ORlhrOCk/0OumSrdX4/kieE7qqqEQskKX6DjqEHKM9u+CtLbQQGWqW4L8AMas3uSnhGKfpzzqYP61NiPOAOdmXLiCASkSgsbfSI9xkXrgEdV8CPkViD14s7XI=
+    properties :
+     x : 202
+     y : 106
+     width : 139
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         valeuraretourner = 3
+         
+         
+         ferme(choixIntercalaireCarrelage)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x4dcada83496d7975
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAABamkzve5zyo1TBST9DOVV/JLCIxWRyl98tflQDsmYjlm1GbQxF4RmzysSsvCV2bMFbFhrbQwaOXW675pf7wNQzmGaxjVkQH0cdTPPrz7WMt3ajjV+0DjJHEnUGnQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      procedure choixIntercalaireCarrelage()
+      // Pour compatibilité 5.5
+      MoiMême..Visible=Vrai
+      
+      global
+      valeuraretourner est un entier
+      
+      
+      
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      renvoyer valeuraretourner
+      
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x4dcada8376ba7975
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

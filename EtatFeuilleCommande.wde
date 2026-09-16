@@ -1,0 +1,78 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : EtatFeuilleCommande
+ major_version : 29
+ minor_version : 0
+ type : 3
+ description : ""
+ subtype : 0
+report :
+ identifier : 0x57360ec8034ea014
+ internal_properties : CQAAAAkAAAC0qKhqN30qbw3zmPKQZXlm0AJmyLQYLIYrSQCbYVGvAqG8YGI3bPkhbAEbDM47cUX0u0meyGRFMRssRfzSVmNO25hCI0C2B5uQmG104eul6TWX372BPcGnxgyiyS/fepT7KfkEONH0gZHPBnTZXa33rQTqSMO7moGLQ+3BHudhnnGAICbOY8COOM6Zo1qj2jMnGYoZx5NeioW2/W4fveJwBwWhBMp7w+9VHXcEzOeHLqVvNnvtFSFSFdHKZzWZicbJg9yPdg41aJrXO4Ivd9Z0SbI896F3oNTGRjpo0Gq+RxSDwZCFTIaVuuBhdno85kvkH6B91rZaXOOF2EPeDVtkfihK6RGfnWn7nCG3Kxf84mVeFW5roOiXgylI/BYrpcMWfnRcpUH59x4Xb66KY2T4asjCpIx5d4jYHlGVY7+lO0kwdd43ihDlYPGfF3kc6r4M1vXC5wtjgWLb7SDb2N2lOYGDgvGMGzgtIuqipzBYGtOsX75vRZpX6MtXXPXgTlQweMCzCZru7BMb72ma/tPflaKjcJGupBPAvXOYBu675RPhqrfm8mZT6ksFUEB6CSw69czvho769YJkJARLTuR/v6K2qorxE4LP/i7KLSCnnm7xckubv3WR3ph1DAja8sRcr4kuXqWbQv6QCr/8CD2f7NpHHuNi3IyoSeIXBWB1emyK/apGzn8BhqyLwPueIwo3NsacC4ZtrebauWKTcUpoLbYiiVLMsRQU1XWfeZFgNZAIgRQqIOUP1p59UBS+opdhAWllZEBt5uFW4rXDQYuZ7G9m5mSgvaQJXZU=
+ languages :
+  - fr-FR
+ blocks :
+  -
+    name : CORPS
+    identifier : 0x57360ec8034fa053
+    internal_properties : CQAAAAkAAAB/1kNkcKxOTNZt1tGdEegjBFbr54p+GdMz6UqI22oSPtGvUxR1eyXiGCPEuPaMMFTYFhFa0ttVXtHIekcbZtqUxfLlvgFxO7OZgHTKxDEecF4a6TBmx9vmhce1ndJYPcWhrQfx3fiYLPf8hZ8nz2Wkb3LM9pSF5eE0jSeJo8PitozYEeYUsfZN8uzdIUJ6TUB7wZxgUHGt93WUutAbeBf2G6qTAk9hyH70ssF9sCfWRBG1eoIOOECJnxuNpawL
+    properties :
+     width : 287.
+     height : 2.592
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1+
+         si imprimefeuille alors
+         		iHautBasPageImbriqué(Vrai)
+         	iImprimeEtat(EfeuilleTravail)
+            SI imprimecommande ALORS iterminepage()
+         FIN
+         iPageNum(1)
+         	iHautBasPageImbriqué(Vrai)
+         si imprimecommande alors iImprimeEtat(ConfirmationTRNmat)
+         
+         
+         
+         
+         
+         
+        type : 327692
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BAS_DE_PAGE
+    identifier : 0x57360ec80350a053
+    internal_properties : CQAAAAkAAADcCBbTpztpp9ztF+HIfmyvzMtLy84ElEo8eeBu6B7vrxhoW7Hs3tM430OmRJQlID50x9SFmq0c4XtO/ctheQfs/PyjqeW+yhR2pzunJjPHBEpYmj10X8vffRXZT4fyCRcv9GX5aZ46xhhN7pDlu0MaA1nf9dp6CVn3E7aIKG8Ou9dk5tIPqcae7k9eJDfgTkj188AEjsNmA+Te9t00hmsXcur97UI9dmCNLyjw+eyS7oV5GOcMuF4h9nGfe6FL8Ve3OKjSvmvBVRs1
+    properties :
+     y : 2.592
+     width : 287.
+     height : 1.271
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+ code_elements :
+  type_code : 13
+  p_codes :
+   -
+     code : |1+
+      procedure EtatFeuilleCommande(imprimefeuille,imprimecommande)
+      
+      
+     type : 327680
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  integrate_compiled_code : true
+  original_name : Etat1
+resources :
+ string_res :
+  identifier : 0x17360ec8053ea12d
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=

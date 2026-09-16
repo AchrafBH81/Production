@@ -1,0 +1,2745 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : TrsfVideojet
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : TrsfVideojet
+ identifier : 0x3f75a68179ac2204
+ internal_properties : CQAAAAkAAACjhyhg0tTDHodFaFDdEB08LNV+yNAodc0M/XDFMW75ec11ArFIkIrWu3Z1x4d8GJXf6d3R4gOaq+oYG8b4rCVIb/5hRtVc28W9wnIx3TNpFPUGjX4aznTwfZ7buZ9zVTdGoUhbYkWGkLP7aieduMaanb2kKYxaM9xq5Zw9vfMhcz+KZ4pByavaKQSuTfGcoebLIUJzr5GrGeKy9/EejGQkn+QIX/Wa8F9O3c3uhwToHDPpAkkZOgFbgbAtFct5al3JJ7I/vtM9uAxseRR9E14XkRO6WKwXP+nAX8oqKIfVXSeNJxPNrHdI2/9cSDhVhlNh3kN7CZciFTq7AgL9RzmP1m1HvAAAO8+XBt5LQZcixR+m9QjVJKaUlZNW32tcvFDLaiijeCgMGyxGEiiqBfIKMTlqY7bKiFMFHrs++vHHsGS5U44YDU1l0ti6H49Mc3aO7ZUtKdXLDUo/ufNJHqxAKCqj/uNPEdV2rt8AOq1iMHMSTbUUhy9+vdYxxvhhNIrIpgjb7l+rRI3tvucJsomvXV6hd3X3EbcMP1pf+2E4V1xS0qMmsdIpKE8wh+esJpI8jKAozcCKcz7UgtJl4kGNcLDH47pIMOeMkLO730R9w2PT6UcNdERUSNQvmOETIRA/k3SQhuf8hlu0emBmnXw2iDLi7g6zTdhiH8X++4bGRahcLZDIuORL4+qnxRD1RzIOumendIXt5so3DKn08EFjQtOalcoDyk2luaqi2/RhcvnpPAQPckF7NZj5WWVOn+SJe74pWri9SK34/tsv837X18VzyH8My4JyV0537RZoursp/AthQ0fG0oCsHgqQHmEpeYHK22IicIBZI4vVM97Dr9uBOId1c9eojeGPOLkQroxrGzIC
+ properties :
+  width : 496
+  height : 307
+  widthClient : 494
+  heightClient : 275
+ controls :
+  -
+    name : Libellé1
+    identifier : 0x3f75a6b31a6be4f2
+    internal_properties : CQAAAAkAAABHGq0k0EdTU2QcZinV6DtyHVqMCsHkSqnQpfH8lPnmLYCZaYDKf5GpWERERbBrQSAHxscoyFIQka50jH0BtbQQXIQHayFuRK1eKnQ5toXJyclRIeVDYlCLBA8P9WlITUDox426OR9pRyR5Jzx7xIymIv6gqQyLyj97S7mu2wBtORX142SXIyzagbJ9uEsT6fypee/iDzDg8fQ/8ljCZDOOsMUt9HMTK6bJvFhIesQ3SaGKvHL2ZyBY6RTzx+SVrn0OZJNYuSc7zhBqR6QUemQmmOEKlT2DAfqkeQUKW+DlXNe1p9pwP9fthBNdbtaaIFcwGoKWvLke1ZbNrZR8wvsZQnPZavLOhqDp4gh3GsgTpZ0j6Sa/fvJhwB9M2VoPugc8mE/LgaBlgi+Gknqtbg4rlAMY2mATn0elWqQ0yxGqsQ1JVZweUgkSx6xYLuTm5jcDIjGLiCy6RizYN/RiPmPlX0RswLCt+x/egfnBLup/8CvK2ffEDApmY/6kjASTpWDLT/YZTeI2xw==
+    properties :
+     x : 63
+     y : 12
+     width : 366
+     height : 79
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        type : 18
+  -
+    name : BTN_OK_1
+    identifier : 0x3f7f046f400ee58c
+    internal_properties : CQAAAAkAAACB/kzdfvZFDHWbGSDA0u0MR4u3EE8CEFK0odLxxOz2EGAEVAa0eMxLMDcA6oxJ0FgCCBgZk7SfqvdI9YMaRmXVmw2MsyxEPKsCxvQPi7+Z+n1vLJZhBO3JQoH9hED/FKfRuNIIfvRFVN5gEVLbxU4rUAZPGcFN6dwJFAwwSvUytJ0dmzJ5WB5vJrm8D5+JczKA/jrZoIyBO/LCmEsR4TE/P22AHJ7J3UAAqUmJOySpBLR9Ogh4Q6La6N7+j3UHfWPd6O9FgrfidMvpsYD6x1oW3wtWS4uziw43n5YiEwRO6dRDjfGXW+Egtjtha/Nlkq+Gyn4JSspUH0CYZbxAfMtNlB2+/prd/m1kSMcZa0+3QeSmghOOkIwdE/Q9yKv4g9+uO40oaYlEPBlfUqB+5saDTmYuo/y6lZBGL7MM3bZLhpKNly6TyrNLZjY/ZsCmiX1xwSoqgg6nMdOLySDzDKjd2/YCtvqKTNeXYyjPxlqeMqn8atZ+AK/g6mHWsKIx6DiaCtbvhjhMngzX7736dt4ZrvYR7qO7yurxyLhVrx+GJwV6uPaZdJOVTSVNFOQ8i72OWWH378ufclVESlcN/245si/VL8OT4JLeWugqLxEweYYtxejsAnb7G4fa7YV0bVJCzVrV9ahKQhs49mZBkCbLq2Gbtj6hhGyakqECoJHst8PSbK2L51uJIyG52Hpl40EHafhkLcswtrlIa7XkINGqUYADNu5nom7S9tpyUOh7YCfPNm3Y2qTBV7rsKsUYN0bHdI1UDo+FQSmJgMqB7XaF
+    properties :
+     x : 766
+     y : 56
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         memcree("enregistrement")
+         
+         hexecuterequete(RequetePrep)
+         //hfiltre("Facture","facture.fpreparation = 'T'")
+         si hnbenr(RequetePrep) = 0 alors
+         	acso_message("Erreur","Aucune commande à transférer au Vidéojet","Erreur")
+         	ferme
+         FIN
+         ouvresoeur(FenAttente,"Recherche des commandes à transférer en cours")
+         
+         hlitpremier(RequetePrep)
+         si HErreurBlocage() alors
+         	acso_message("Erreur","Information deja en utilisation sur un autre poste","Erreur")
+         FIN
+         tantque pas HEnDehors()
+         	hlitrecherche("fdetail","fdnocomm",requeteprep.fanumero)
+         	si HErreurBlocage() alors
+         		acso_message("Erreur","La commande numéro "+sansespace(NumériqueVersChaine(requeteprep.fanumero,"10d"))+ "  n'a pu être traitée","Erreur")
+         		hdesactivefiltre("Facture")
+         		renvoyer vrai
+         	FIN
+         	tantque pas HEnDehors() et fdetail.fdnocomm = requeteprep.fanumero
+         		memajoute("enregistrement",h.numenr,h.numenr)
+         		hlitsuivant("fdetail","fdnocomm")  	
+         		si HErreurBlocage() alors
+         			acso_message("Erreur","La commande numéro "+sansespace(NumériqueVersChaine(requeteprep.fanumero,"10d"))+ "  n'a pu être traitée","Erreur")
+         			hdesactivefiltre("Facture")
+         			renvoyer vrai
+         		FIN
+         	FIN
+         	hlitsuivant(requeteprep)
+         	si HErreurBlocage() alors
+         		acso_message("Erreur","Commande numéro "+requeteprep.fanumero+" deja en utilisation sur un autre poste","Erreur")
+         	FIN
+         
+         FIN
+         iconfigure(imprimanterapport,vrai)
+         hlitrecherche("Rapport","RAPNOM","Bulletin de commande")
+         si pas HEnDehors() et HTrouve() alors
+         	iParamètre("DEFAUT=NON")
+         	iParamètre("FORMATPAPIER=LEGAL")
+         	iparametre("ORIENTATION = PAYSAGE")
+         	iParamètre("QUALITE=HAUTE")
+         
+         fin
+         
+         ferme(fenattente)
+         
+         si pas memoccurrence("enregistrement") = 0 alors
+         	si destination = 2 alors
+         		iapercu(2,"Bulletin de commande")
+         	fin
+         	iimprimeetat("BULLETIN","enregistrement",rapport.raporientation)
+         fin
+         si pas memoccurrence("enregistrement") = 0 alors
+         	si acso_message("Question","Transfert au videojet ?","OuiNon") = idyes alors
+         		transférerVideojet()
+         		hlitpremier(requeteprep)
+         		tantque pas HEnDehors(requeteprep)
+         			si hlitrecherche(facture,fanumero,requeteprep.fanumero) alors	
+         				facture.FPREPARATION = "F"
+         				hmodifie("Facture")
+         			fin
+         
+         			hlitsuivant(requeteprep)
+         		FIN
+         
+         		supprimetempo()
+         		hlitpremier("infoprep","I1CLEUNIK",HBlocageEcriture)
+         		si HErreurBlocage() alors
+         			acso_message("Erreur","Information deja en utilisation sur un autre poste","Erreur")
+         		sinon
+         			infoprep.ipdate = ""
+         			hmodifie("infoprep")
+         		fin
+         	FIN
+         fin
+         HDESACTIVEFILTRE("Facture")
+         memsupprimetout("enregistrement")
+         ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : DESTINATION
+    identifier : 0x3f7f04a57ff4ba64
+    internal_properties : CQAAAAkAAAAv7hhdsAYxro6+QYp0gunBFrhO+zeh8RG0zAll2/KCIgSRL/Z8OFNaFxMBwy8BOQrobmZo40alZZ7fpKT8P+tzWFxLatZqcfJhQyOd8Y+Iza+QRWATt7vv+xfVgqCbywcUW/bSk/69vd0uvXYy00jj26hHQbRP5ow/sqvAxTzI89qa2u8s6ZPdCCbIN1+qO2EEgroluIksD1QmpPoyIRCh0+zkuu3TSJsH2aorasghT/OnJ6lwAHUueq8AQZo23z3AGehaUTQ8Z9rcjYUxyoSyWzfN58s55L2q+wa9XW8B8jHGhcqNwsw+ZKFRPNo+f2MK3abCvHUA295uww3AAwSWPsMnC3I4twX1818RqDdE1/hFip2dxX3lFimlu1/8k2vGMAv/2IyXERAgIe6bu26V4hJQzHDIfqXDDDCPj4hxHkbERuYx66+oKQY2e5HApyvBFPdH2IB7QpR0qFstHRXj5J8jlGv38hdbJjbnusJ0X71TirA0Fddw2pmz78H4MWtG0G5p09XjovCRvX889SLbTqdCnlFDkaBQTBQROk1nVL8l30oxteSC4GHBqDdXosSFgI0JyqbEVixPpijEG0qY2IG7nBzmiUdfyrCvI9wLoyIBKih9CmYVOXD+SEJC+9zBkjlNOWkLQCAocHwsQwgyYDRpeTGPgUeGTov/CagPM9riFnvh1NxxGC9msoqKl9Y1Z9ZRifEQ/I/84YWzXM3nCnXwLAW/4UBcCv7jX02r2KQbd/9fcvDqYOUYohr3W0QxX7TygVhlIpvLbNp96mdAckm4MYUsM7bYhEwOB9HAAw==
+    properties :
+     x : 165
+     y : 146
+     width : 86
+     height : 58
+    options :
+     -
+       internal_properties : CQAAAAkAAADc1QHFe4WxfwEGP3M/5Z+ZogK84kPeb4euVCoBcvF8/40lgvYIFjsiNYEv1duCra+L0PHPi6RAf1TYNpg7uYq/0RFebfnA/L3Z+FlSIE+EinTYlRhdqIj7u30dlEvy4m25yHyjjmutrJAXS49zodBV/lbrUzboh3WwmmAztw==
+     -
+       internal_properties : CQAAAAkAAAAjlb1XFSGQUmOXgFmS6fvUmAWtKLQIqinGCiLQ9fXkvk/Vglp7mcx1LjdnMVtUhCDOTt/6VtZDiXxvoG8oDqJDXbVEf/q4b1h0jc7bgs+9nRHYZ1BYwAlQPAhoY1Om8SiywEda2NWKQa/4wnZHC7OnGTdCHUX/OA==
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1+
+         moimeme=2
+        type : 14
+  -
+    name : BoutonNovy
+    identifier : 0x406b23a707c975f7
+    internal_properties : CQAAAAkAAAAFnLuLvoB/D6wc1jUznABTxWWKSBOCHGHwR06Lpy3R+u2JjNZ9uivQ7xWlAVE2fRbQUAYfH+WAAr8ZUMXzoP07b7IZq+axKBew3isc0zTa/i0YZtv3jimSNRq0MUpUWIFqrLFW7NlHAI+RwHmgFJTN+japZ7VN12ftaRgXJqNGKKXVbMKSbWP8fjknZo889B3OWP7ePzFKQs2KMzCiYuLvhDw6SKDO+dNMFbmUBx1fE2vtHRwOK2hWcWSHuy2lRoFZ8KPw8tv3CLzn206kx3oppAvhbvVLJ2rfWy3IWxaIOpRg/C8BrXJ+/Fnl3O7KvP7aJC/RVAHyCvZ04Uavzlv9kNXSW9NMEmXvLTMuVHYBlMDaSxbGPLudgeQ2vUD8ZQDQYEqEVdWPdUCWLYCoITtDf7QCchFKMHouvXkQXEO2hjAzIE7FQxrlPV6+58tymSbBi0pX438wMnlT1tySJ8VcVcN3bAhVY3gi7351ctjZcJhDgHXr452ypeKzIMfioylVEFx62smDzIyj2FyfdzSEtUR6dcZbmIlbmML2BLXI1LEfE0jXpYlbsnOQZTkyfnL2pGxJqGFp6BF82BlaCey5FZPVDdv4mtGvZp/88596ivJMPfCBVV7wPi6AL7yZ+WtJDjLM0vEi4IyAiq3kvYCAfeZlGaZ6n2a5dCncZALhoOihmI7o34i2tFvIy7xnbIYVbyXxoLp/1fXpT1Vw97QJz5cs8dK2SuKdlSOAEKr8mHMBq802rPlA2wYC
+    properties :
+     x : 529
+     y : 314
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         recordcourant est un entier
+         
+         hgererep(faux)
+         hsurerreur("*",hErrDoublon,"")
+         j est un entier
+         fichiertrsf est une chaine
+         fichiertrsf1 est une chaine
+         
+         numprep est un entier
+         variable est une chaine
+         clederecherche est une chaine
+         CREERFICHIER EST UN BOOLEEN = VRAI
+         hlitpremier(tempo,clecommandeligne)
+         chemintrsf est une chaine
+         
+         fichiertrsf = "VJ_"+numeriqueverschaine(tempo.tnumeroprep)
+         hcreation(impvideo)
+         
+         
+         si pas tempo.tnumeroprep = 0 alors
+         	si pas(frep(completerep(config.CheminTrsfVidéojet[1])+fichiertrsf+".fic")) ~= ""  alors
+         		si acso_message("Question","Le lot # "+fichiertrsf+" à déjà été transféré."+rc+" Voulez-vous le transférér à nouveau","OuiNon",2) = idno ALORS
+         			CREERFICHIER = FAUX
+         		sinon
+         			fsupprime(fichiertrsf)
+         			
+         		fin
+         	fin
+         fin
+         
+         FenEtat(FenAttentePetite,Dessus)
+         MultitacheRepeint(FenAttentePetite)
+         SI CREERFICHIER ALORS
+         	tantque pas hendehors(tempo)
+         		
+         		clederecherche = hconstruitvalcle(impvideo,clecommandelignefdetail,tempo.tnumeroprep,tempo.tcomm,...
+         		tempo.tlignedecommande,tempo.tnumligne)
+         		//	recordcourant = hsauveposition(impvideo)
+         		si pas hlitrecherche(impvideo,clecommandelignefdetail,clederecherche) alors
+         			// si pas tempo.tienergiverre alors  // ajouté pour ne pas doubler les ligne dans vidéojet
+         			si sansespace(tempo.tnoforme) = "" alors
+         				impvideo.vforme = faux
+         			sinon
+         				impvideo.vforme = vrai
+         			FIN
+         			impvideo.vimprime= 0
+         			impvideo.VMarqueTigerstop2 = 0
+         			impvideo.VmarqueTigerStop1 = 0
+         			impvideo.vnoligne = tempo.tligne
+         			impvideo.vnoprep= tempo.tnumeroprep
+         			impvideo.vcommande = tempo.tcomm
+         			impvideo.vnoetiq = tempo.tnumligne
+         			//	impvideo.vlignecommande"} = tempo.tligne
+         			impvideo.vlignecommande = tempo.tlignedecommande
+         			//	impvideo.vclientnom"}= gauche(tempo.tnomclient,config.vjclient)
+         			impvideo.vclientnom= gauche(tempo.tnomcourt,5)
+         			impvideo.vdate = tempo.tdate
+         			impvideo.vespace  = tempo.tespace
+         			impvideo.vcommandeclient = tempo.tcommclient
+         			impvideo.vcapgazlowe = tempo.tcapgaztube
+         			impvideo.vtraitementspecial = tempo.ttraitementspecial
+         			impvideo.vpbase = tempo.tbase
+         			impvideo.vlargeur = tempo.tlargeur
+         			impvideo.vhauteur = tempo.thauteur
+         			impvideo.vcode    = tempo.tproduit
+         			impvideo.vcarreauh    = tempo.tcarreauh
+         			impvideo.vcarreauv    = tempo.tcarreauv
+         			impvideo.vnumcarr    = tempo.tnumcarr
+         			impvideo.vespace2    = tempo.tespace2
+         			impvideo.vnote       = tempo.tnotes
+         			impvideo.vnote2      = tempo.tnote2 
+         			impvideo.VNoteSpeciale = tempo.tnoteSpeciale
+         			SI HLITRECHERCHE(typespac,tnumero,TEMPO.TtypeSpacer) ALORS
+         				//impvideo.vtypespacer"}    = tempo.TtypeSpacer
+         				impvideo.vtypespacer    = GAUCHE(typespac.tdesccourte,5)
+         			FIN
+         			
+         			si pas position(tempo.tcapgaztube,"C") = 0 alors
+         				impvideo.vcap = "Cap"
+         				CP = "CAP"
+         			SINON
+         				impvideo.vcap = ""
+         				CP = ""
+         			FIN
+         			
+         			SI PAS Position(Tempo.tcapgaztube,"Z") = 0 ALORS
+         				SI  HLitRecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,...
+         					HConstruitValClé(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,SansEspace(Tempo.TtypeSpacer),SansEspace(Tempo.tespace))) ALORS
+         					//
+         					
+         					//				si hlitrecherche(Intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) alors
+         					//					impvideo.VAenlever = Intercalaires.AenleverVideojetArgon
+         					impvideo.vAenlever = IntercalaireCouleurDimensions.AenleverVideojetArgon
+         				FIN
+         				
+         				
+         				impvideo.vargon = "ARG"
+         				Z  = SansEspace(config.vjz)
+         			SINON
+         				SI  HLitRecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,...
+         					HConstruitValClé(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,SansEspace(Tempo.TtypeSpacer),SansEspace(Tempo.tespace))) ALORS
+         					//				si hlitrecherche(Intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) alors
+         					//				impvideo.VAenlever = Intercalaires.AenleverVideojet
+         					impvideo.vAenlever = IntercalaireCouleurDimensions.AenleverVideojet
+         				FIN
+         				impvideo.vargon = ""
+         				Z  = ""
+         			FIN
+         			
+         	//		si pas position(tempo.tcapgaztube,"Z") = 0 alors
+         	//			impvideo.vargon = "ARG"
+         	//		Z  = sansespace(config.vjz)
+         	//		SINON
+         	//			impvideo.vargon = ""
+         	//			Z  = ""
+         	//		FIN
+         			
+         			si pas position(tempo.tcapgaztube,"I") = 0 alors
+         				impvideo.vesptype = "Inex"
+         			sinon
+         				impvideo.vesptype = "Alu."
+         			FIN
+         			Si tempo.tenergiverre alors
+         				impvideo.vlowe = "ENG"
+         				LW = sansespace(config.vjlw)
+         				FL = "V"
+         			sinon
+         				impvideo.vlowe = ""
+         				LW = ""
+         				FL = ""
+         			FIN
+         			
+         			impvideo.vqte= tempo.tqte
+         			impvideo.vdescription = gauche(tempo.tdescription,25)
+         			impvideo.vcarrelage = tempo.tcarrelage
+         			impvideo.vdoubletriple = tempo.tdoubletriple
+         			pour j = 1 a 10
+         				{"impvideo.vnbdimension"+j  } = {"tempo.Tnbdimension"+j}
+         				{"impvideo.vnbmorceau"+j  } = {"tempo.Tnbmorceau"+j}
+         				
+         			fin
+         			si hlitrecherche(invent,INUM,tempo.Tnumcarr) alors
+         				impvideo.vdesccarr = invent.idesc
+         				impvideo.VdescCourteCarr = invent.idesccourte
+         				//				si hlitrecherche(typecarr,tcdescription,invent.itypecarr) alors
+         				si hlitrecherche(typecarr,tcdescription,tempo.TtypeCalcul) alors
+         					impvideo.vHauteurContour = typecarr.variableutil1
+         					impvideo.vlargeurContour = typecarr.variableutil
+         					impvideo.vTypeDessin = typecarr.Typedessin
+         					impvideo.vCasehaut   = typecarr.TcInterrupteurHaut
+         					impvideo.vCasegauche   = typecarr.TcInterrupteurGauche
+         					impvideo.vCasedroite   = typecarr.TcInterrupteurDroit
+         					impvideo.vCaseBAS   = typecarr.TcInterrupteurBAS
+         					impvideo.vAjustementCarhauteur = typecarr.AjustNbCarHauteur
+         					impvideo.vAjustementCarLargeur = typecarr.AjustNbCarLargeur
+         					
+         				fin
+         			fin
+         			impvideo.vtypecalcul = tempo.ttypecalcul
+         			impvideo.vvariablex = tempo.tvx
+         			impvideo.vVariableX1 = tempo.tvx1
+         			impvideo.vmatch = tempo.tmatch
+         			impvideo.VordreXopt = tempo.TordreXopt
+         			CAlculCarrelage()
+         			
+         			DT  = sansespace(DATEVERSCHAINE(tempo.tdate,config.cformatdedate))
+         			CL = sansespace(gauche(tempo.tnomcourt,config.vjclient))
+         			VCO = sansespace(tempo.tcommclient)
+         			CT  = sansespace(numeriqueverschaine(tempo.tcomm))
+         			//Code WinDev 5.5 remplacé par la migration :
+         			//IN = sansespace(tempo.tespace)
+         			SPA = sansespace(tempo.tespace)
+         			CD = sansespace(tempo.tcomposant1)+sansespace(tempo.tcomposant2)+sansespace(tempo.tcomposant3)
+         			DI = sansespace(tempo.tlargeur)+"X"+sansespace(tempo.thauteur)
+         			LI = sansespace(NumériqueVersChaine(tempo.tnoetiq,"12d"))
+         			NU = sansespace(numeriqueverschaine(tempo.tcomm))+"-"+sansespace(numeriqueverschaine(tempo.tlignedecommande))
+         			BA = sansespace(TrsfVideojet.NUMEROOPT)
+         			
+         			
+         			//si pas sansespace(lignevideojet[table1]) = ""
+         			formule = "y est une chaine"+RC+"y="+lesformules[tempo.tnumeroformule]+RC+"renvoyer(y)"
+         			resultat = compile("reponse",formule)
+         			//info(reponse())
+         			
+         			impvideo.vligneaimprimer = reponse()  
+         			//fin
+         			
+         			
+         			//si sansespace(tempo.tnoforme) = "" alors
+         			hajoute(impvideo)
+         			
+         			si herreurdoublon() ALORS
+         			FIN
+         		fin
+         		//    HRetourPosition(recordcourant)
+         		hlitsuivant(tempo,clecommandeligne)
+         		
+         	fin
+         	
+         	halias(impvideo,fichiertrsf)
+         	//	HChangeRep({fichiertrsf},config.CheminTrsfVidéojet[1])
+         	HChangeRep({fichiertrsf},".\"+netadresseip())
+         	
+         	//si fFichierExiste(fichiertrsf) alors
+         	//FIN
+         	hcreation({fichiertrsf})
+         	hlitpremier(impvideo,IMCLEUNIK)
+         	tantque pas hendehors(impvideo)
+         		HCopieEnreg({fichiertrsf},impvideo,hvaldefaut)
+         		hajoute({fichiertrsf})
+         		si herreurdoublon() ALORS
+         			
+         		FIN
+         		hlitsuivant(impvideo,IMCLEUNIK)
+         	FIN
+         	chemintrsf = completerep(HGèreServeur(gConnexionHF,hCheminBaseDeDonnées))
+         	chemintrsf += completerep((gConnexionHF..BaseDeDonnées))
+         	chemintrsf+= netadresseip()+"\"
+         	
+         	POUR k = 1 A 10
+         		SI SansEspace(config.CheminTrsfVidéojet[k]) <> "" ALORS
+         			si pas HCopieFichier("",SansEspace(config.CheminTrsfVidéojet[k])+"\"+fichiertrsf+".fic",gConnexionHF,".\"+NetAdresseIP()+"\"+fichiertrsf+".fic",hCopieIndex) alors
+         				info(herreurinfo(hErrComplet))
+         			FIN
+         		fin
+         		
+         	FIN
+         	HAnnuleAlias(fichiertrsf)
+         fin
+         
+         hsurerreur("*",hErrDoublon)
+         
+         hgererep(vrai)
+         
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : ImageCarrelage
+    identifier : 0x42ca88e762674a56
+    internal_properties : CQAAAAkAAADAVhjIyVXXLSBgJbN74jSH93PoOm2VzqZxVf4qCrT6J2A1NV/ZBPadx3xwbiUo/RWr1MPTxk33TMlZqbLIPQnCvNfeMaIx9GFuzql4k08+Nd252zBw7U+SoNmf/g8RklnKz5BPWymi2MzHvOhlSOojRTjP8E1wETm+5AOjAjBRW3tNhMnp90ed2UESuMsEYv+bvqPnioTT+yGJaV0ziH9qT61l1TdAyD/lxKeygnpb1QfWOOmRFeR4XOEvHgIBqw3NDb+LLQ4vs87L5pqcIETgvJ5qe0pfC0mFCdB7Y1qP6n173hQBaI7F7Fv6GCCI1j1EeZzbWSZQ8bq8VHh7aZdNVyBbneLXnEBrtAONsq0coniBJWiUI7pj2qLtMg3omTaa2hVme4j7tpY5NSkv20kqzSha+WeihgbWPWeR3cZHw076/x0POf51u/IwQLV6wiTTA9v30Qpxi2m++Re/w9gju9qlE6+kYR/2GWP3VtIMXVt4uHdfBqPKLg4PtduGVP96DmhNCIuI11SrS0fXTIAaOA//H8fCiZ2AanERlqR4Vij9xNbUgoIxFrFN1jnpFagzECGdHGALx/2qJo5oTmtXyScWpZ6Q9YdtmF7BO2w=
+    properties :
+     x : 534
+     y : 12
+     width : 200
+     height : 200
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_OK_2
+    identifier : 0x461b929171118c17
+    internal_properties : CQAAAAkAAAB+l2hRMNjZVToU+yM45qP713pjfoOZoh0/HUpN1RE0qc7KTFcwdn3Dn/K50OlBad3eKzmNvhMAB0dUNgR0vsKTPrmlcyAHqDxeVadN50Y/Rm/xjLcp0PISSRiyyGs/LoaCRU0eBrm9Y2o2B76UqqL+1f4CflMnS8/tAOyjZ2c5qrnF+5npxlCSQ+0l6mfFndZJfmjeOj2iWKoAp3zg0++PXRyZwmu0huiSHU5Qq1KQ40PhtNokVANeBKqczn3JZ7ba65ANJJRPybLZw575JwqzQRgaa9S4LLuCwH9L9QEHatrRquJ/yJoQLIKjvGy/S6ztBXTMuI9TZSW4jNxSlOqg5R8rqvVEk4JWdFpNKehsdb1QhzhfbNnYdz6o7bUlQn/mscgIxTf2BGrfX35K14V2gj9Li0QrXyf60T5vEQY0LzqNHTgqMP55eJfd4Gf+FcEY8u0nkslWToP3OGr3c3HNeSA320I1/g0+HtVQkCVLpN/iD58NkXSfA/CmzbkYAr9xxhuLkWhUj2DIR1MQ0VMWNC94RHYTMOdnQCoARyFcFQqMW7NJYxonamGYDEEmqwGBKg/jrim4H9Dd6m/BOw1jiGhcofkiQuYd6BMJu2OEQYPYRSIN5pYc63Ky4v7y8BQpX7O95UbmZjBfnQXJqW7enIhrctNofZO12Zcn2oO4Qnkyj7DkJuxH93aFuGuW9quvMWxukC8Jhnoa8dCN+4z1nxUMuMQogukMqWBDEMr5snCrxle7ainmfMMYGb0GjcC3MN4URDUpJy9NV7OUxW/uX3bX1VE=
+    properties :
+     x : 301
+     y : 163
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         NoPrep est un entier
+         
+         si sansespace(NUMEROOPT) = "" et gTypeOptimisation = "optima" alors
+         	ACSO_message("Erreur","Numéro de lot obligatoire","Erreur")
+         	reprisesaisie(NUMEROOPT)
+         FIN
+         
+         //memcree("enregistrement")
+         
+         ouvresoeur(FenAttente,"Recherche des commandes à transférer en cours")
+         HExécuteRequête(RequeteCommandeEnPreparation)
+         
+         //hlitpremier(facture,fanumero)
+         si HErreurBlocage() alors
+         	acso_message("Erreur","Information deja en utilisation sur un autre poste","Erreur")
+         
+         FIN
+         //tantque pas HEnDehors()
+         //	si facture.FPREPARATION = "T" alors
+         //		memajoute("enregistrement",hnumenr(Facture),hnumenr(facture))
+         //	fin
+         //	hlitsuivant(facture,fanumero)
+         //	si HErreurBlocage() alors
+         //		acso_message("Erreur","Facture numéro"+ facture.fanumero+" déjà en utilisation sur un autre poste","Erreur")
+         //	FIN
+         //FIN
+         Ferme(FenAttente)
+         
+         
+         HLitPremier(Tempo,TECLEUNIK)
+         NoPrep = tempo.tnumeroprep
+         
+         iconfigure(imprimanterapport,vrai)
+         iParamètre("DEFAUT=NON")
+         iparametre("ORIENTATION = PAYSAGE")
+         
+         
+         
+         
+         
+         si pas  HNbEnr(RequeteCommandeEnPreparation) = 0 alors
+         	si destination = 2 alors
+         		iapercu(2,"Liste de transfert au vidéojet")
+         	fin
+         		iimprimeetat(TransfertVideojet,NoPrep)
+         fin
+         
+         si iImpressionAbandonnée() alors
+         	acso_message("Erreur","L'affichage ne s'est pas terminé normalement, le transfert est abandonné.","Erreur")
+         	ferme(TrsfVideojet)
+         FIN
+         
+         HExécuteRequête(requeteprep)
+         si pas HNbEnr(RequeteCommandeEnPreparation) = 0 alors
+         	si ACSO_message("Question","Transfert au videojet","OuiNon") = idyes alors
+         
+         		transférerVideojet()
+         		hlitpremier(requeteprep)
+         		tantque pas HEnDehors(requeteprep)
+         			si hlitrecherche(facture,fanumero,requeteprep.fanumero) alors	
+         				si pas intbl alors
+         					facture.FPREPARATION = "F"
+         				fin
+         				facture.nolot = tempo.tnumeroprep
+         				hmodifie("Facture")
+         				pour tout fcoutant avec "cNoCommande ="+ facture.fanumero
+         					fcoutant.nolot = facture.nolot
+         					hmodifie(Fcoutant)
+         				fin	
+         				pour tout fcoutantligne avec "cNoCommande ="+ facture.fanumero
+         					FcoutantLigne.nolot = facture.nolot
+         					hmodifie(FcoutantLigne)
+         				fin	
+         			fin
+         			hlitsuivant(requeteprep)
+         		FIN
+         
+         		supprimetempo()
+         		hlitpremier("infoprep","I1CLEUNIK",HBlocageEcriture)
+         		si HErreurBlocage() alors
+         			erreur("Information déja en utilisation sur un autre poste")
+         		sinon
+         			infoprep.ipdate = ""
+         			hmodifie("infoprep")
+         		fin
+         	FIN
+         fin
+         RemplirArchivePrep()
+         si pas FenEtat(FenAttentepetite) =  Inexistant alors
+         	ferme(fenattentepetite)
+         FIN
+         sablier(faux)
+         HDESACTIVEFILTRE("Facture")
+         //memsupprimetout("enregistrement")
+         ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : NUMEROOPT
+    identifier : 0x499f22b265bc59f4
+    internal_properties : CQAAAAkAAABgAsvxhqJ0rMr8bAJIgRWS4r9rWduwKp+OST25T0g5myLeW0iwmKfUTYimxlTbpBUJajttJtastodrlqHxKv6YPtLMupieXD3cAfhjg4rqeqJ/LQ2OUqSh+T0kW4KqbehG1lo4w6bzOW1DL+DlNmvQ1WD5mbJeeZXkR3p6z6liEiG3OZl0DDE7hJ2IDxCjw43MnBkU+NPwqyyMLJDhzBRtu29xEhP9Cs71DbcZRKcYHH+453en2/x1RIHXvW82FYuGU5NKj8NQ6yJq0Wv8Z5mnZAjT6kQkqMfmUE5viwa35VY3isHtqVCc4lCbc2uk42HDRBl0fuj1TkJ0X8OeMAIEAs1Te67cfvGc7CPfdPMYs58uQ1wPxBRwlPJmEfgmb9pog1N0Nq/bIxoBaSa/0M1S+JR6QxdDHGsMjcrlR999QY0FuSE80LyVgf0o77EI+pH3+1qsouTFdh2nVdIbB8elZLQ31Sb7rAcVwqYlsiWCSTHdECGIxTmMUd5eTaNJ2WVygjk3E1mHI1dnAv+Pb9q6NI7AtFwnDE5NnTBpzbDXeAyR2OCRQY+uQNb1KR7kTCaaq2hE3ToQbZbEqz4Dv6+zgitn7QG6eTw/gSVRRP3JiaV5Y8Ax/QTgKzRHuWIv+d5blxaPkIzsK8ftwQl+Gjwka+m/cJFIiAp9PGiynxAIBSIwqLyNbqqOzpok3MzsQb5sSL0+m3MUdachq6YT9CTsGErGuPyl10EI/Ga/XlR6D3uFD2mTRCOSoNN1WgM0GuJygys0LZSSfyB2NjAnxc7qovzMzr50ffNGWdtG+n3gfHedYzmWG0brjmhGQv7Ndw==
+    properties :
+     x : 26
+     y : 163
+     width : 127
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1+
+         //si pas frep(reppourxopt+"\"+sansespace(moimeme)+".asc",FRFichier) = "" alors
+         //   si acso_message("Question","Ce numéro d'optimisation existe, voulez vous l'écraser ?","OuiNon") = idno alors
+         //      moimeme = ""
+         //	  reprisesaisie	  
+         //   fin	
+         //FIN
+         si sansespace(moimeme) = "" alors
+         	ACSO_message("Erreur","Numéro de lot obligatoire","Erreur")
+         	reprisesaisie()
+         FIN
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : IntBL
+    identifier : 0x4dc9a8b91676fc16
+    internal_properties : CQAAAAkAAABw7pzGAnc22uRPV38WN6oc8Ga7PFXzBVUKOJoVyDmuBKlZo+/fUXchiAryCTv9BC/zMeTZoqigEY6hE6FQmdFmWhhOOWTkxleuNpWk1ifq3YcUI6WPzc5YkFy6COecWo/MvN6//pIpBhAb3HC7f/6OJU+D32EhsWL/Bj9tf5g4HS9BmZjxQKPUeY5glGE3baEG/XX9kezeP13ag2ATATXQYy14GdfyNf+JgvbYBv8JLunkW/g54HjdhitbD8pMQX0damrNqQ4mC3bXc2+RjzP7NajSAjvNORv+lj+6OtLF5RVkUOaQH8V64EZjM03HqcpsGavKN5tnCvfvHSEhj6UwP/pXdWzws317hk5+JZ+r/vnchwU7dG316Sw5gC49DJBpMx8XXvPNEH673+u2fDWfQTIKFooDrGQOzvlUrv7TnvbEAeUngxHW8NRkrlO2qcJHBG6VmKJFSMU+wXIYswTzibf+tcVqvin8YhKYYEPdicWGm9sqAIqpKU61iPSzbq77koLFCDNF5n1tfBDI7b7qMKuYs2EWeFGn0LGZSdnwLjzk32gUyST/tO4L4r5dUhs46eq8CBcq8VIydFnXX2NhLA0SYzMuMIjZPW569r94kX+PZ9Brh8lW1mND60swd4aENSRdhN2TeJOKy1mbOlEEivU2L/V4ibGRsTGUeolNzNgLPl+yOdLxlftyC2p9oTJTZcJdPBk1zopGeonWyA8TngZBH+35lr9upJojxGqBW3LBlZd2AF8/eTrD70s=
+    properties :
+     x : 528
+     y : 235
+     width : 219
+     height : 29
+    options :
+     -
+       internal_properties : CQAAAAkAAABY8B/E2+Lor7ZjVMvE1sjlX2j4RDYVG+/92gpNYVyHQ+62id45Nx8x0zw4w2xTnmIFHLIsSbd6J1lzYRCWMfuorYS03ZVKRSEC2dryd/BRNl+4l2R8mkRPYCR8hCaZYY0OuH7h/1vDXDfA/LIVekkkszDh+QWYAqjMVpAY/U2JeL40/g65yaNJm6bIQQQwWg0c
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes :
+      -
+        code : |1+
+         moimeme = faux
+        type : 14
+  -
+    name : BoutonTRN
+    identifier : 0x48724eae687aecae
+    internal_properties : CQAAAAkAAADazaFTxBqWnzGyq9fAmazRfZx9Th9zrDYrw0atV0eEbSMAagkK9GIND5oY2nf+MosVaw5GKxRE5wGVXDRQc2nqXn0sui0THLRRT4JSxNZL5ehYlIRvVhIZBHDv8DxG/0CmmAiVCtHVaT8qVcNogDqCWAcZY19w6MNgXwiXm11iVeBGsOfy1wme+115hGs9fvPw8Vr6y7Qq0aJCDrEs6Xs2kPOFaO5qfNMAmy1UhfrxWS1QecOuLx6S/Z1vDHCY34y6U4AgBkCvMG8sjLpitQQFP4jPYWZRjvQ3ilrZg78DpoIyo0CndRW6QN+VQiKrTk3PjfRmNo6qgji8WqC0ffAEgepvbDlRSO23CR0GgC5BIPIdNfIkMRGsIWeyD7KH1BzredWc4LCIFKeEyG20M9aTYYy7mG67SCUupO/bHvIKLXtsjcI06sG7TIeB+QuD8B69+Y9VdsBQhpLPPhM8e1DJ1GKns06f5+HTkvbNRuE2HalItB7GvfLwYb7Me9VRUspTIJWZVXgyw3+FjnmZQhajI+Yv3e/0L2agsXJZmVV0ZUi8sP3poD8PUjDaDBz7QKhXX3hNNplHY4lGVc77zE0GXsJVSLk2JV+AIp5IdX8YuxGFGvzlAbPZVqBS5+eSf6osnHurwyioFPAR8HNgrknCXThMpNUWDlGOUEFsixs7fF/xhNrTyv5dZGPzZIdN+0NoV0LrfB00NZqVmdC0fKvmE/nGFS50+OhxnqtGnQWrQzyP0Un9
+    properties :
+     x : 673
+     y : 297
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         nRecordcourant est un entier
+         lcpt est un entier = 0
+         hgererep(faux)
+         hsurerreur("*",hErrDoublon,"")
+         j est un entier
+         k est une entier
+         fichiertrsf est une chaine
+         fichiertrsfTiger est une chaine
+         nUmprep est un entier
+         sVariable est une chaine
+         clederecherche est une chaine
+         CREERFICHIER EST UN BOOLEEN = VRAI
+         nbFeuilleImprimee est une entier
+         
+         //hlitpremier(tempo,clecommandeligne)
+         chemintempo est une chaine = ".\"+NetAdresseIP()
+         //chemintempo est une chaine = completerep(sysrep(srAppDataLocal))+"temp"
+         
+         
+         SI CleUsb ALORS chemintempo = ComplèteRep(repencours)+"tempo\"
+         
+         
+         hlitpremier(tempo,tposition)
+         
+         fichiertrsf = "VJ_"+numeriqueverschaine(TrsfVideojet.NUMEROOPT+"-"+tempo.tnumeroprep)
+         fichiertrsfTiger = "TS_"+numeriqueverschaine(TrsfVideojet.NUMEROOPT+"-"+tempo.tnumeroprep)
+         hcreation(impvideo)
+         hcreation(tigercarrelage)
+         
+         pour k = 1 a 10
+         	si sansespace(gclconfig.m_tabCheminTransfertCarrelage[k]) <> "" alors
+         		si frep(completerep(gclConfig.m_tabCheminTransfertCarrelage[k])) = "" alors
+         			fRepCrée(completerep(gclConfig.m_tabCheminTransfertCarrelage[k]))
+         		FIN
+         	fin
+         	
+         	
+         	si sansespace(gclConfig.m_tabCheminTransfertVideojet[k]) <> "" alors
+         		
+         		si frep(completerep(gclConfig.m_tabCheminTransfertVideojet[k])) = "" alors
+         			fRepCrée(completerep(gclConfig.m_tabCheminTransfertVideojet[k]))
+         		FIN
+         	fin
+         	
+         fin
+         
+         
+         
+         si pas tempo.tnumeroprep = 0 alors
+         	si pas(frep(completerep(gclConfig.m_tabCheminTransfertVideojet[1])+fichiertrsf+".fic")) ~= ""  alors
+         		si acso_message("Question","Le lot # "+fichiertrsf+" à déjà été transféré."+rc+" Voulez-vous le transférér à nouveau","OuiNon",2) = idno ALORS
+         			CREERFICHIER = FAUX
+         		fin
+         	fin
+         fin
+         //HLitPremier(Tempo,tposition)
+         //TANTQUE PAS HEnDehors(Tempo)
+         //	HLit(Fdetail,Tempo.tnoRecFdetail)
+         //	Fdetail.TDeA = Tempo.TDeA
+         //	Fdetail.fNoLot = TrsfVideojet.NUMEROOPT
+         //	HModifie(Fdetail,hNumEnrEnCours)
+         //	hlitsuivant(Tempo,tposition)
+         //fin
+         
+         SI CREERFICHIER ALORS
+         	nbFeuilleImprimee=0
+         	OuvreSoeur(FenAttentePetite,"Préparation des feuilles de travail en cours")
+         	iConfigure(SansEspace(imprimanteconfirmation),Vrai)
+         	iParamètre("DEFAUT=NON")
+         	iParamètre("FORMATPAPIER=LETTRE")
+         	iParamètre("QUALITE=MOYENNE")
+         	iParamètre(iOrientation, iOrientation_Portrait)
+         	POUR TOUT Facture AVEC "FImprimeFeuille = "+Vrai
+         		//Multitâche(130) //il y avait un crash quand les feuilles de travail étaient imprimées trop vite...
+         		requeteDétailCommandeTous.pNoComm = Facture.fanumero
+         		requeteDétailCommandeTous.pFdType = 1
+         		requeteDétailCommandeTous.pNoLigne = Null
+         		requeteDétailCommandeTous.pQte = 0
+         		requeteDétailCommandeTous.pTypePeinture = 1
+         		HExécuteRequête(requeteDétailCommandeTous)
+         		FenAttentePetite.libelle1 = "Préparation des feuilles de travail en cours : (Commande : " + facture.fanumero+")"
+         		multitache(10)
+         		iEnchaînementAjoute(EfeuilleTravail,"TrsfVideojet",TrsfVideojet.NUMEROOPT)
+         		nbFeuilleImprimee++
+         
+         	FIN
+         	ferme(FenAttentePetite)
+         	SI nbFeuilleImprimee <> 0 ALORS
+         		iEnchaînementImprime()
+         	SINON
+         		Erreur("Il semble y avoir eu un problème lors de l'impression des feuilles de travail")
+         		RENVOYER Vrai
+         	FIN
+         	Multitâche(100)
+         	POUR TOUT Facture AVEC "FImprimeFeuille = "+Vrai
+         		Facture.FImprimeFeuille=Faux
+         		HModifie(Facture,hNumEnrEnCours)
+         	FIN
+         	
+         	
+         	//Ferme(FenAttentePetite)
+         	
+         	
+         	TrsfVideojet..etat = grise
+         	ouvresoeur(FenAttente,"Transfert en cours, Patientez..........")
+         	HLitPremier(Tempo,tposition)
+         	tantque pas hendehors(tempo)
+         		hlit(fdetail,tempo.tnoRecFdetail)
+         		fdetail.TDeA = tempo.tdea
+         		fdetail.fnolot = TrsfVideojet.NUMEROOPT
+         		hmodifie(fdetail,hNumEnrEnCours)
+         		lcpt++
+         		message(lcpt)
+         		FenAttente.Libellé1 = "Transfert de la commande # "+tempo.tcomm
+         		multitacherepeint(FenAttente)
+         		clederecherche = hconstruitvalcle(impvideo,clecommandelignefdetail,tempo.tnumeroprep,tempo.tcomm,...
+         		tempo.tlignedecommande,tempo.tnumligne)
+         		//	recordcourant = hsauveposition(impvideo)
+         		si pas hlitrecherche(impvideo,clecommandelignefdetail,clederecherche) alors
+         			hraz(impvideo)
+         			// si pas tempo.tienergiverre alors  // ajouté pour ne pas doubler les ligne dans vidéojet
+         			si sansespace(tempo.tnoforme) = "" alors
+         				impvideo.vforme = faux
+         			sinon
+         				impvideo.VNoForme = tempo.tnoforme
+         				impvideo.vforme = vrai
+         			FIN
+         			impvideo.vimprime= 0
+         			impvideo.VMarqueTigerstop2 = 0
+         			impvideo.VmarqueTigerStop1 = 0
+         			impvideo.vnoligne = tempo.tligne
+         			impvideo.vnoprep= tempo.tnumeroprep
+         			impvideo.vcommande = tempo.tcomm
+         			impvideo.vnoetiq = tempo.tnumligne
+         			//	impvideo.vlignecommande"} = tempo.tligne
+         			impvideo.vlignecommande = tempo.tlignedecommande
+         			//	impvideo.vclientnom"}= gauche(tempo.tnomclient,config.vjclient)
+         			//			impvideo.vclientnom= gauche(tempo.tnomcourt,5)
+         			impvideo.vclientnom= tempo.tnomcourt
+         			impvideo.vdate = tempo.tdate
+         			
+         			// Modification nécessaire pour TRN.
+         			// TRN fonctionne avec le numéro de lot de OPTIMA
+         			// c'est ce numéro de lot qui apparait à l'écran de videojet
+         			// ce numéro est sauvegardé dans le champ vespace du fichier impvideo
+         			// ce champ de sera jamais de plus de 2 caractere.
+         			
+         			
+         			
+         			impvideo.vespace  = sansespace(tempo.tespace)+"-"+sansespace(TrsfVideojet.NUMEROOPT)
+         			impvideo.vcommandeclient = tempo.tcommclient
+         			impvideo.vcapgazlowe = tempo.tcapgaztube
+         			impvideo.vtraitementspecial = tempo.ttraitementspecial
+         			impvideo.vpbase = tempo.tbase
+         			impvideo.vlargeur = tempo.tlargeur
+         			impvideo.vhauteur = tempo.thauteur
+         			impvideo.vcode    = tempo.tproduit
+         			impvideo.vcarreauh    = tempo.tcarreauh
+         			impvideo.vcarreauv    = tempo.tcarreauv
+         			impvideo.vnumcarr    = tempo.tnumcarr
+         			impvideo.vespace2    = tempo.tespace2
+         			impvideo.vnote       = tempo.tnotes
+         			impvideo.vnote2      = tempo.tnote2 
+         			impvideo.Vcouleurfond = tempo.tcouleurfond
+         			impvideo.Vcouleurtexte = tempo.tcouleurtexte
+         			impvideo.vgras = tempo.tgras
+         			impvideo.vitalique = tempo.Titalique
+         			
+         			//			SI HLITRECHERCHE(typespac,tnumero,TEMPO.TtypeSpacer) ALORS
+         			//				//impvideo.vtypespacer"}    = tempo.TtypeSpacer
+         			//				impvideo.vtypespacer    = GAUCHE(typespac.tdesccourte,5)
+         			//				impvideo.vesptype = typespac.tdesccourte
+         			//
+         			//			FIN
+         			IG = SansEspace(gclconfig.m_stexteigma)
+         			SI HLITRECHERCHE(IntercalaireCouleurs,IDIntercalaireCouleurs,TEMPO.TtypeSpacer) ALORS
+         				//impvideo.vtypespacer"}    = tempo.TtypeSpacer
+         				impvideo.vtypespacer    = GAUCHE(IntercalaireCouleurs.DescriptionCourte,5)
+         				impvideo.vesptype = IntercalaireCouleurs.DescriptionCourte
+         				si hlitrecherche(intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) alors
+         					si pas intercalaires.ImpressionIgmacVideojet alors IG = ""  
+         				FIN
+         			FIN
+         			
+         			si pas position(tempo.tcapgaztube,"C") = 0 alors
+         				impvideo.vcap = "Cap"
+         				CP = "CAP"
+         			SINON
+         				impvideo.vcap = ""
+         				CP = ""
+         			FIN
+         			
+         			si pas position(tempo.tcapgaztube,"Z") = 0 alors
+         				si  hlitrecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,...
+         					hconstruitvalcle(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,sansespace(tempo.ttypespacer),sansespace(tempo.tespace))) alors
+         					//
+         					
+         					//				si hlitrecherche(Intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) alors
+         					//					impvideo.VAenlever = Intercalaires.AenleverVideojetArgon
+         					impvideo.VAenlever = IntercalaireCouleurDimensions.AenleverVideojetArgon
+         				fin
+         				
+         				
+         				impvideo.vargon = "ARG"
+         				Z  = sansespace(gclconfig.m_svjz)
+         			SINON
+         				si  hlitrecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,...
+         					hconstruitvalcle(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,sansespace(tempo.ttypespacer),sansespace(tempo.tespace))) alors
+         					//				si hlitrecherche(Intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) alors
+         					//				impvideo.VAenlever = Intercalaires.AenleverVideojet
+         					impvideo.VAenlever = IntercalaireCouleurDimensions.AenleverVideojet
+         				fin
+         				impvideo.vargon = ""
+         				Z  = ""
+         			FIN
+         			
+         			
+         			Si tempo.tenergiverre alors
+         				impvideo.vlowe = "ENG"
+         				LW = sansespace(gclconfig.m_svjlw)
+         				FL = "V"
+         			sinon
+         				impvideo.vlowe = ""
+         				LW = ""
+         				FL = ""
+         			FIN
+         			
+         			impvideo.vqte= tempo.tqte
+         			impvideo.vdescription = gauche(tempo.tdescription,25)
+         			impvideo.vcarrelage = tempo.tcarrelage
+         			impvideo.vdoubletriple = tempo.tdoubletriple
+         			pour j = 1 a 10
+         				{"impvideo.vnbdimension"+j  } = {"tempo.Tnbdimension"+j}
+         				{"impvideo.vnbmorceau"+j  } = {"tempo.Tnbmorceau"+j}
+         				
+         			fin
+         			si pas sansespace(tempo.tnumcarr) = "" et hlitrecherche(invent,INUM,tempo.Tnumcarr) alors
+         				//			  si pas tempo.TDemiCarrelage alors
+         				majcarrelagetrn()
+         				//			 fin   
+         				
+         				impvideo.vdesccarr = invent.idesc
+         				impvideo.VdescCourteCarr = invent.idesccourte
+         				//				si hlitrecherche(typecarr,tcdescription,invent.itypecarr) alors
+         				si hlitrecherche(typecarr,tcdescription,tempo.TtypeCalcul) alors
+         					impvideo.vHauteurContour = typecarr.variableutil1
+         					impvideo.vlargeurContour = typecarr.variableutil
+         					impvideo.vTypeDessin = typecarr.Typedessin
+         					impvideo.vCasehaut   = typecarr.TcInterrupteurHaut
+         					impvideo.vCasegauche   = typecarr.TcInterrupteurGauche
+         					impvideo.vCasedroite   = typecarr.TcInterrupteurDroit
+         					impvideo.vCaseBAS   = typecarr.TcInterrupteurBAS
+         					impvideo.vAjustementCarhauteur = typecarr.AjustNbCarHauteur
+         					impvideo.vAjustementCarLargeur = typecarr.AjustNbCarLargeur
+         					
+         				fin
+         			fin
+         			si tempo.TDemiCarrelage alors
+         				impvideo.vTypeDessin = 3
+         			FIN
+         			impvideo.vtypecalcul = tempo.ttypecalcul
+         			impvideo.vvariablex = tempo.tvx
+         			impvideo.vVariableX1 = tempo.tvx1
+         			impvideo.vmatch = tempo.tmatch
+         			impvideo.VordreXopt = tempo.TordreXopt
+         			impvideo.vtypeintercalaire = tempo.ttypeintercalaire
+         			//			CAlculCarrelage()
+         			
+         			//			DT  = sansespace(DATEVERSCHAINE(tempo.tdate,config.cformatdedate))
+         			DT  = sansespace(DATEVERSCHAINE(datesys(),gclconfig.m_scformatdedate))
+         			CL = sansespace(gauche(tempo.tnomcourt,gclconfig.m_nvjclient))
+         			VCO = sansespace(tempo.tordre)
+         			CT  = sansespace(numeriqueverschaine(tempo.tcomm))
+         			//Code WinDev 5.5 remplacé par la migration :
+         			//IN = sansespace(tempo.tespace)
+         			SPA = sansespace(tempo.tespace)
+         			CD = sansespace(tempo.tcomposant1)+sansespace(tempo.tcomposant2)+sansespace(tempo.tcomposant3)
+         			DI = sansespace(tempo.tlargeur)+"X"+sansespace(tempo.thauteur)
+         			//			LI = sansespace(NumériqueVersChaine(tempo.tnoetiq,"12d"))
+         			LI = sansespace(NumériqueVersChaine(tempo.tlignedecommande,"12d"))
+         			NU = sansespace(numeriqueverschaine(tempo.tcomm))+"-"+sansespace(numeriqueverschaine(tempo.tlignedecommande))
+         			BA = sansespace(TrsfVideojet.NUMEROOPT)
+         			NJ = sansespace(tempo.tjob)
+         			formule = "y est une chaine"+RC+"y="+lesformules[tempo.tnumeroformule]+RC+"renvoyer(y)"
+         			_resultat est une chaine = compile("reponse",formule)
+         			
+         			si _resultat = "" alors
+         				impvideo.vligneaimprimer = reponse()  
+         			sinon
+         				impvideo.vligneaimprimer = ""
+         			fin
+         			
+         			hajoute(impvideo)
+         			
+         			si herreurdoublon() ALORS
+         			FIN
+         		fin
+         		
+         		hlitsuivant(tempo,tposition)
+         		
+         	fin
+         	
+         	
+         	halias(impvideo,fichiertrsf)
+         	
+         	HChangeRep({fichiertrsf},chemintempo)
+         	
+         	
+         	hcreation({fichiertrsf})
+         	hlitpremier(impvideo,IMCLEUNIK)
+         	tantque pas hendehors(impvideo)
+         		HCopieEnreg({fichiertrsf},impvideo,hvaldefaut)
+         		hajoute({fichiertrsf})
+         		si herreurdoublon() ALORS
+         			
+         		FIN
+         		hlitsuivant(impvideo,IMCLEUNIK)
+         	FIN
+         	
+         	POUR k = 1 A 10
+         		SI SansEspace(gclconfig.m_tabCheminTransfertVideojet[k]) <> "" ALORS
+         			si cleusb alors
+         				fCopieFichier(chemintempo+"\"+fichiertrsf+".fic",SansEspace(gclConfig.m_tabCheminTransfertVideojet[k])+"\"+fichiertrsf+".fic")
+         				fCopieFichier(chemintempo+"\"+fichiertrsf+".ndx",SansEspace(gclConfig.m_tabCheminTransfertVideojet[k])+"\"+fichiertrsf+".ndx")
+         				
+         			sinon	
+         				SI PAS HCopieFichier("",SansEspace(gclConfig.m_tabCheminTransfertVideojet[k])+"\"+fichiertrsf+".fic",gConnexionHF,".\"+NetAdresseIP()+"\"+fichiertrsf+".fic",hCopieIndex) ALORS
+         					
+         				FIN
+         			fin
+         		FIN
+         		
+         	FIN
+         	HAnnuleAlias(fichiertrsf)
+         	
+         	si pas hnbenr(TigerCarrelage) = 0 alors
+         		halias(tigercarrelage,fichiertrsfTiger)
+         		//	hchangerep({fichiertrsftiger},completerep(config.CheminTrsfCarrelage[1]))
+         		HChangeRep({fichiertrsfTiger},chemintempo)
+         		//			HChangeConnexion({fichiertrsfTiger},"ConnexionLocaleTemp")
+         		HCréation({fichiertrsfTiger})
+         		hlitpremier(tigercarrelage,IMCLEUNIK)
+         		tantque pas hendehors(TigerCarrelage)
+         			HCopieEnreg({fichiertrsfTiger},tigercarrelage,hvaldefaut)
+         			hajoute({fichiertrsfTiger})
+         			si herreurdoublon() ALORS
+         				
+         			FIN
+         			hlitsuivant(tigercarrelage,IMCLEUNIK)
+         		FIN
+         		POUR k = 1 A 10
+         			SI SansEspace(gclconfig.m_tabCheminTransfertCarrelage[k]) <> "" ALORS
+         				SI CleUsb ALORS
+         					fCopieFichier(chemintempo+"\"+fichiertrsf+".fic",SansEspace(gclConfig.m_tabCheminTransfertCarrelage[k])+"\"+fichiertrsf+".fic")
+         					fCopieFichier(chemintempo+"\"+fichiertrsf+".ndx",SansEspace(gclConfig.m_tabCheminTransfertCarrelage[k])+"\"+fichiertrsf+".ndx")
+         				sinon
+         					SI PAS HCopieFichier("",SansEspace(gclConfig.m_tabCheminTransfertCarrelage[k])+"\"+fichiertrsfTiger+".fic",gConnexionHF,".\"+NetAdresseIP()+"\"+fichiertrsfTiger+".fic",hCopieIndex) ALORS
+         						Info(HErreurInfo(hErrComplet))
+         					FIN
+         				fin
+         			FIN
+         			
+         		FIN
+         		
+         		hannulealias(fichiertrsfTiger)
+         	fin
+         	
+         	TrsfVideojet..etat = actif
+         	ferme(FenAttente)
+         fin
+         
+         hsurerreur("*",hErrDoublon)
+         
+         
+         hgererep(vrai)
+         
+         
+         si intBL alors
+         	ouvresoeur(FenAttentePetite,"Impression des bons de livraison en cours")
+         	i est un entier
+         	pour i = 1 a MemOccurrence("enregistrement")
+         		si hlit(facture,MemRécupère("enregistrement",i)) alors
+         			pour tout fdetail avec "fdnocomm = "+facture.fanuméro
+         				fdetail.fdqteafacturer = fdetail.fdqte-fdetail.fdqtedejafacture
+         				hmodifie(fdetail,hNumEnrEnCours)
+         			FIN
+         			
+         		FIN
+         		ImprimeBonLivraison(MemRécupère("enregistrement",i))
+         	FIN
+         	ferme(FenAttentePetite)
+         fin
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3f75a68164ae2222
+  internal_properties : CQAAAAkAAABMXkxEbzZR8ywuNMY26/HjMmoN8kdj2fbHzCz3GebxITncDL58I5eqWvKGjgdfMI535UULbY8Mc31KeWMShPgB7NOqerxvk8jSNrSdgsD0n366lrKtntDq7sGN8DHUooW/7x7T4Vl11tQGI5UG+q7QcczsaLch1IZbbjtFLyNHbefFH6727u2LKti/a9o9YBEyHvTZvfd5hKB5Gt4A7N7gaey9p4DFH5SstJlMgqjTih4llKvwS3rg9pf8PuF5xUFbqOdTyGooUVTyaOa2YdNUVYGqMIw8ZaQ=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAACwgJZl5RpoKcK7901x9xvteh46M56AhUWrQPKN6EIqFJcg44DHTxE7iAbsPqFyUWS8tzk+rN25Vmm2oZ5c+EJdbuxPD7v2yfHLumFFYQM+5QQxA+k+hKzBmMvs9w==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      resultat est un entier
+      //hlit(config,1)
+      //reponse est une chaine
+      TH est une chaine = sansespace(gclconfig.m_svjthermafix)
+      SN est une chaine = sansespace(gclconfig.m_svjstnazaire)
+      IG est une chaine = sansespace(gclconfig.m_stexteigma)
+      IC est une chaine = sansespace(gclconfig.m_svjindcover)
+      v1 est une chaine = sansespace(gclconfig.m_svjvariable1)
+      v2 est une chaine = sansespace(gclconfig.m_svjvariable2)
+      v3 est une chaine = sansespace(gclconfig.m_svjvariable3)
+      v4 est une chaine = sansespace(gclconfig.m_svjvariable4)
+      FL est une chaine = "V"
+      LW est une chaine 
+      Z est une chaine  
+      formule est une chaine = ""
+      LI est une chaine
+      VCO est une chaine 
+      CP est une chaine
+      //DT est une chaine = DATEVERSCHAINE(DATESYS(),config.cformatdedate)
+      DT est une chaine 
+      CT est une chaine 
+      //Code WinDev 5.5 remplacé par la migration :
+      //IN est une chaine 
+      SPA est une chaine 
+      CL est une chaine 
+      CD est une chaine
+      DI est une chaine
+      NU est une chaine
+      BA est une chaine
+      NJ est une chaine
+      
+      NBL est un entier
+      NBH est un entier
+      C est un reel
+      H1 est un reel
+      L1 est un  reel
+      ETH est un reel
+      ETL est un reel
+      VT1 est un reel
+      HT1 est un reel
+      LCC est un reel
+      HCC est un reel
+      HTE est un reel    // hauteur carrelage de tete
+      DDV est un entier  // différence de dimension Match
+      DDH est un entier  //     ""
+      DTH est un reel
+      ALUM est un entier = gclconfig.m_nValeurAlum
+      ICN est un entier = gclconfig.m_nvaleuricn
+      ARGON est un entier = gclconfig.m_nValeurArgon
+      
+      VARINTER1 est un reel
+      VARINTER2 est un reel
+      VARINTER3 est un reel
+      VARINTER4 est un reel
+      VARINTER5 est un reel
+      
+      
+      VX est un reel
+      VX1 est un reel
+      
+      K1 est un reel
+      K2 est un reel
+      K3 est un reel
+      K4 est un reel
+      K5 est un reel
+      K6 est un reel
+      K7 est un reel
+      K8 est un reel
+      K9 est un reel
+      K10 est un reel
+      K11 est un reel
+      K12 est un reel
+      K13 est un reel
+      K14 est un reel
+      K15 est un reel
+      K16 est un reel
+      K17 est un reel
+      K18 est un reel
+      K19 est un reel
+      K20 est un reel
+      
+      NM1 est un reel
+      NM2 est un reel
+      NM3 est un reel
+      NM4 est un reel
+      NM5 est un reel
+      NM6 est un reel
+      NM7 est un reel
+      NM8 est un reel
+      NM9 est un reel
+      NM10 est un reel
+      
+      DM1 est un reel
+      DM2 est un reel
+      DM3 est un reel
+      DM4 est un reel
+      DM5 est un reel
+      DM6 est un reel
+      DM7 est un reel
+      DM8 est un reel
+      DM9 est un reel
+      DM10 est un reel
+      
+      VM1 est un reel
+      VM2 est un reel
+      VM3 est un reel
+      VM4 est un reel
+      VM5 est un reel
+      VM6 est un reel
+      VM7 est un reel
+      VM8 est un reel
+      VM9 est un reel
+      VM10 est un reel
+      
+      VD1 est un reel
+      VD2 est un reel
+      VD3 est un reel
+      VD4 est un reel
+      VD5 est un reel
+      VD6 est un reel
+      VD7 est un reel
+      VD8 est un reel
+      VD9 est un reel
+      VD10 est un reel
+      
+      HM1 est un reel
+      HM2 est un reel
+      HM3 est un reel
+      HM4 est un reel
+      HM5 est un reel
+      HM6 est un reel
+      HM7 est un reel
+      HM8 est un reel
+      HM9 est un reel
+      HM10 est un reel
+      
+      HD1 est un reel
+      HD2 est un reel
+      HD3 est un reel
+      HD4 est un reel
+      HD5 est un reel
+      HD6 est un reel
+      HD7 est un reel
+      HD8 est un reel
+      HD9 est un reel
+      HD10 est un reel
+      
+      CL1 est un reel
+      CL2 est un reel
+      CL3 est un reel
+      CL4 est un reel
+      CL5 est un reel
+      CL6 est un reel
+      CL7 est un reel
+      CL8 est un reel
+      CL9 est un reel
+      CL10 est un reel
+      
+      CH1 est un reel
+      CH2 est un reel
+      CH3 est un reel
+      CH4 est un reel
+      CH5 est un reel
+      CH6 est un reel
+      CH7 est un reel
+      CH8 est un reel
+      CH9 est un reel
+      CH10 est un reel
+      
+      SL1 est un reel
+      SL2 est un reel
+      SL3 est un reel
+      SL4 est un reel
+      SL5 est un reel
+      SL6 est un reel
+      SL7 est un reel
+      SL8 est un reel
+      SL9 est un reel
+      SL10 est un reel
+      
+      SH1 est un reel
+      SH2 est un reel
+      SH3 est un reel
+      SH4 est un reel
+      SH5 est un reel
+      SH6 est un reel
+      SH7 est un reel
+      SH8 est un reel
+      SH9 est un reel
+      SH10 est un reel
+      
+      
+      
+      j est un entier
+      lesformules est un tableau de 20 chaine
+      hlitpremier("videojet","VICLEUNIK")
+      //Code WinDev 5.5 remplacé par la migration :
+      //tantque pas h.endehors
+      tantque pas HEnDehors()
+      	j = val(sansespace(videojet.videonumero))	
+      	lesformules[j] = sansespace(videojet.videodescription)	
+      
+      	hlitsuivant("videojet","VICLEUNIK")
+      FIN
+      // Fin des variables
+      si gTypeOptimisation = "optima" alors
+      	TrsfVideojet.NUMEROOPT..visible = vrai
+      	TrsfVideojet.IntBL..visible = vrai
+      FIN
+      
+      HDésactiveFiltre(fdetail)
+      hdesactivefiltre(facture)
+      hdesactivefiltre(bonlivraison)
+      
+      
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : transférerVideojet
+     procedure_id : 4575381860297034774
+     type_code : 14
+     code : |1+
+      Procédure transférerVideojet()
+      messageaafficher est une chaine
+      hlitpremier(tempo,cletrait_base_esp_comm_ligne)
+      si tempo.tnumeroprep <> 0 alors
+      	messageaafficher  = "Transfert du lot # " + tempo.tnumeroprep + " vers le Vidéojet"
+      fin
+      acso_message("Info",messageaafficher,"Info") 
+      //ouvresoeur(FenAttentePetite,"Transfert en cours..............")
+      //sablier(vrai)
+      selon gFormatFacture
+      	cas 1
+      		executetraitement(trsfvideojet.Boutonnovy,trtclic)
+      	cas 2
+      		executetraitement(trsfvideojet.Boutontrn,trtclic)
+      fin
+      
+     type : 458752
+   -
+     name : MajCarrelage
+     procedure_id : 4798045436042722156
+     type_code : 14
+     code : |1+
+      Procédure MajCarrelage()
+      //HRAZ(impvideo)
+      impvideo.vimprime = " "
+      impvideo.vnoligne = tempo.tlignedecommande
+      impvideo.vnoprep = tempo.tnumeroprep
+      impvideo.vcommande = tempo.tcomm
+      impvideo.vlignecommande = tempo.tnoetiq
+      impvideo.vclientnom = gauche(tempo.tnomclient,gclconfig.m_nvjclient)
+      impvideo.vdate = tempo.tdate
+      impvideo.vespace  = tempo.tespace
+      impvideo.vcommandeclient = tempo.tcommclient
+      impvideo.vcapgazlowe = tempo.tcapgaztube
+      impvideo.vtraitementspecial = tempo.ttraitementspecial
+      impvideo.vpbase = tempo.tbase
+      impvideo.vlargeur = tempo.tlargeur
+      impvideo.vhauteur = tempo.thauteur
+      impvideo.vcode   = tempo.TNumCarr
+      //impvideo.vNbCarreauH = tempo.TnbCarreauH
+      //impvideo.vNbCarreaul = tempo.TnbCarreaul
+      impvideo.vhauteurcontour = tempo.THauteurContour
+      impvideo.vlargeurcontour = tempo.TlargeurContour
+      impvideo.vhauteurtete = tempo.THauteurtete
+      										// barre du bas différente
+      
+      
+      si pas position(tempo.tcapgaztube,"I") = 0 alors
+      	impvideo.vesptype = "Inex"
+      sinon
+      	impvideo.vesptype = "Alu."
+      FIN
+      
+      impvideo.vqte = tempo.tqte
+      si hlitrecherche(invent,INUM,tempo.TNumCarr) alors
+      	impvideo.vdescCarr = invent.idesc
+      fin
+      
+      
+      impvideo.vcarrelage = tempo.tcarrelage
+      CAlculCarrelage()
+      hajoute(impvideo)
+      si herreurdoublon() alors
+      
+      FIN
+      //si tempo.tFlagBarreDifferente alors
+      //	Maz_Marquage("impvideo")
+      //	impvideo.vcode = tempo.TNumCarrBarre
+      //	si hlitrecherche(invent,INUM,tempo.TNumCarrbarre) alors
+      //		impvideo.vdescriptionCarr = invent.idesc
+      //	fin
+      //	impvideo.vNbCarreauH = 2
+      //	impvideo.vNbCarreaul = 1
+      //	impvideo.vNumCarrBarrepos = 2   // pour empecher les doublons quand carrelage de tete avec
+      //	// barre du bas différente
+      //
+      //
+      //    CAlculCarrelage(vrai)
+      //	hajoute(impvideo)
+      //	si herreurdoublon() alors
+      //
+      //	FIN
+      //FIN
+      
+     type : 458752
+   -
+     name : CAlculCarrelage
+     procedure_id : 4798062617228133136
+     type_code : 14
+     code : |1+
+      Procédure CAlculCarrelage(BarreDifferente = faux)
+      
+      i est un entier
+      formule est une chaine
+      nAEnlever est un entier = 0 
+      nAenlevertete est un entier = 0
+      sFvtcv est une chaine
+      sFvtch est une chaine
+      nPositionInvent est un entier
+      resultatcondition est un booleen = faux
+      clederecherche est une chaine
+      
+      si pas hlitrecherche(invent,INUM,tempo.TNumCarr) alors
+      	retour
+      FIN
+      
+      
+      //C    = invent.tccadre
+      NBH  = tempo.tcarreauh
+      NBL  = tempo.TCarreauv
+      H1   =  tempo.thauteur
+      L1   = tempo.tlargeur
+      //ETH  = invent.tctigehor
+      //ETL  = invent.tctigevert
+      //lcc = val(tempo.tLargeurcontour) * 25.4
+      //HCC = val(tempo.THauteurContour) * 25.4
+      //HTE = arrondi(val(tempo.THauteurTete) * 25.4)
+      lcc = tempo.tvx
+      HCC = tempo.Tvx1
+      HTE = tempo.Tvx
+      DDV = tempo.tddv
+      DDh = tempo.tddh
+      vx = tempo.tvx
+      vx1 = tempo.tvx1
+      DTH = tempo.tdt
+      //hlitrecherche(typecarr,tcdescription,invent.itypecarr)
+      hlitrecherche(typecarr,tcdescription,tempo.TtypeCalcul)
+      
+      //c = typecarr.EpaisseurCadre
+      etl = typecarr.EpaisseurTigeLargeur
+      eth = typecarr.EpaisseurTigeHauteur
+      si tempo.TDemiCarrelage alors
+      	TigerCarrelage.VTypeDessin = 3
+      sinon
+      
+      	TigerCarrelage.VTypeDessin = typecarr.Typedessin
+      FIN
+      //tigercarrelage.Vhauteurtete = typecarr.VariableUtil
+      tigercarrelage.vhauteurcontour = typecarr.VariableUtil1
+      tigercarrelage.vlargeurcontour = typecarr.VariableUtil
+      
+      //si hlitrecherche(typespac,tnumero,tempo.TtypeSpacer) alors
+      //	selon typespac.ttype
+      //		cas 1
+      //			c= typecarr.EpaisseurCadreAluminium
+      //		cas 2
+      //			c= typecarr.EpaisseurCadreinex
+      //		cas 3
+      //			c= typecarr.EpaisseurCadreGlassEdge
+      //		cas 4
+      //			c= typecarr.EpaisseurCadreSuperSpacer
+      //	fin	
+      //FIN
+      
+      
+      si  hlitrecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,...
+      	hconstruitvalcle(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,sansespace(tempo.ttypespacer),sansespace(tempo.tespace))) alors
+      //fin
+      
+      
+      //si hlitrecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,tempo.TtypeSpacer) alors
+      	si pas position(tempo.tcapgaztube,"Z") = 0 alors
+      		VarInter1=IntercalaireCouleurDimensions.VarInter1A
+      		VarInter2=IntercalaireCouleurDimensions.VarInter2A
+      		VarInter3=IntercalaireCouleurDimensions.VarInter3A
+      		VarInter4=IntercalaireCouleurDimensions.VarInter4A
+      		VarInter5=IntercalaireCouleurDimensions.VarInter5A
+      	sinon
+      		VarInter1=IntercalaireCouleurDimensions.VarInter1
+      		VarInter2=IntercalaireCouleurDimensions.VarInter2
+      		VarInter3=IntercalaireCouleurDimensions.VarInter3
+      		VarInter4=IntercalaireCouleurDimensions.VarInter4
+      		VarInter5=IntercalaireCouleurDimensions.VarInter5
+      	fin
+      	si hlitrecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,tempo.TtypeSpacer) alors
+      		si hlitrecherche(intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) alors
+      			c = intercalaires.EpaisseurCadre
+      		fin
+      	fin
+      FIN
+      
+      
+      
+      //si Position(tempo.tcapgaztube,"I") = 0 alors
+      //	alum = config.ValeurAlum
+      //sinon
+      //	alum = 0	
+      //FIN
+      si Position(tempo.tcapgaztube,"T") <> 0 alors
+      	ALUM = 0
+      	ICN = gclconfig.m_nvAleurICN
+      sinon si Position(tempo.tcapgaztube,"I") = 0 et Position(tempo.tcapgaztube,"T") = 0 alors
+      	alum = gclconfig.m_nValeurAlum
+      	ICN = 0
+      sinon
+      	alum = 0	
+      	ICN = 0
+      FIN
+      
+      pour i = 1 a 20
+      	{"K"+i} = typecarr.TConstantes[i]
+      FIN
+      pour i = 1 a 10
+      	{"NM"+i} = 0
+      	{"DM"+i} = 0
+      	{"VM"+i} = 0
+      	{"VD"+i} = 0
+      	{"HM"+i} = 0
+      	{"HD"+i} = 0
+      	{"CL"+i} = 0
+      	{"CH"+i} = 0
+      	{"SL"+i} = 0
+      	{"SH"+i} = 0
+      
+      FIN
+      
+      
+      res est une chaine
+      si tempo.tcap
+      	H1-=4
+      	L1-=4
+      FIN
+      
+      
+      pour i = 1 a 10
+      
+      	formule = sansespace(typecarr.nbmorceau[i])
+      	formule = RemplaceFormule(formule)
+      	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      	si res = "" alors
+      
+      		si pas valideformule(formule) alors
+      			{"NM"+i} = 0
+      		sinon
+      			{"NM"+i} = executetraitement("formule1",trtProcédure)
+      		fin
+      		si 	{"NM"+i} < 0 alors
+      			{"NM"+i} = 0
+      		FIN
+      
+      		si sansespace(typecarr.conditionsinm[i]) = "" alors
+      			impvideo.vnbmorceau[i] = {"NM"+i}
+      			TigerCarrelage.vNbMorceau[i] = {"NM"+i}
+      		sinon
+      			formule = sansespace(typecarr.conditionsinm[i])
+      			formule = RemplaceFormule(formule)
+      			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      			si res = "" alors
+      				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      
+      				si resultatcondition  alors
+      					formule = sansespace(typecarr.conditionalorsnm[i])
+      					formule = RemplaceFormule(formule)
+      					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      					si res = "" ALORS
+      						{"NM"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      
+      						impvideo.vnbmorceau[i] = {"NM"+i}
+      						TigerCarrelage.vNbMorceau[i] = {"NM"+i}
+      					sinon
+      						{"NM"+i} = 0
+      
+      					fin
+      
+      				sinon
+      					impvideo.vnbmorceau[i] = {"NM"+i}
+      					TigerCarrelage.vNbMorceau[i] = {"NM"+i}
+      
+      				fin
+      			sinon
+      				{"NM"+i} = 0
+      
+      			fin
+      
+      		fin
+      
+      	FIN
+      	impvideo.vnbmorceau[i] = {"NM"+i}
+      	TigerCarrelage.vNbMorceau[i] = {"NM"+i}
+      
+      
+      
+      
+      
+      	formule = sansespace(typecarr.nbdimension[i])
+      	formule = RemplaceFormule(formule)
+      	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      	si res = "" alors
+      		si pas valideformule(formule) alors
+      			{"DM"+i} = 0
+      		sinon
+      			{"DM"+i} = executetraitement("formule1",trtProcédure)
+      		fin
+      		si 	{"DM"+i} < 0 alors
+      			{"DM"+i} = 0
+      		FIN
+      
+      
+      
+      		si sansespace(typecarr.conditionsidm[i]) = "" alors
+      			impvideo.vdimensionmorceau[i] = {"DM"+i}
+      			TigerCarrelage.vDimesionMorceau[i] = {"DM"+i}
+      		sinon
+      			formule = sansespace(typecarr.conditionsidm[i])
+      			formule = RemplaceFormule(formule)
+      			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      			si res = "" alors
+      				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      
+      				si resultatcondition  alors
+      					formule = sansespace(typecarr.conditionalorsdm[i])
+      					formule = RemplaceFormule(formule)
+      					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      					si res = "" ALORS
+      						{"DM"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      
+      						impvideo.vdimensionmorceau[i] = {"DM"+i}
+      						TigerCarrelage.vDimesionMorceau[i] = {"DM"+i}
+      					sinon
+      						{"DM"+i} = 0
+      
+      					fin
+      
+      				sinon
+      					impvideo.vdimensionmorceau[i] = {"DM"+i}
+      					TigerCarrelage.vDimesionMorceau[i] = {"DM"+i}
+      				fin
+      			sinon
+      				{"DM"+i} = 0
+      
+      			fin
+      
+      		fin
+      
+      	FIN
+      	impvideo.vdimensionmorceau[i] = {"DM"+i}
+      	TigerCarrelage.vDimesionMorceau[i] = {"DM"+i}
+      
+      fin
+      
+      //pour i = 1 a nbh - 1 - aenlever
+      pour i = 1 a 10
+      	formule = sansespace({"typecarr.tcformuleCL"}[i])
+      	formule = RemplaceFormule(formule)
+      	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      	si res = "" alors
+      		si pas valideformule(formule) alors
+      			{"CL"+i} = 0
+      		sinon
+      			{"CL"+i} = executetraitement("formule1",trtProcédure)
+      		fin
+      		si 	{"CL"+i} < 0 alors
+      			{"CL"+i} = 0
+      		FIN
+      
+      
+      		si sansespace(typecarr.conditionsicl[i]) = "" alors
+      			impvideo.vMarquageLC[i] = {"CL"+i}
+      			TigerCarrelage.vMarquageL[i] = {"CL"+i}
+      		sinon
+      			formule = sansespace(typecarr.conditionsicl[i])
+      			formule = RemplaceFormule(formule)
+      			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      			si res = "" alors
+      				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      
+      				si resultatcondition  alors
+      					formule = sansespace(typecarr.conditionalorscl[i])
+      					formule = RemplaceFormule(formule)
+      					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      					si res = "" ALORS
+      						{"CL"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      
+      						impvideo.vMarquageLC[i] = {"CL"+i}
+      						TigerCarrelage.vMarquageL[i] = {"CL"+i}
+      					sinon
+      						{"CL"+i} = 0
+      
+      					fin
+      
+      				sinon
+      					impvideo.vMarquageLC[i] = {"CL"+i}
+      					TigerCarrelage.vMarquageL[i] = {"CL"+i}
+      				fin
+      			sinon
+      				{"CL"+i} = 0
+      
+      			fin
+      
+      		fin
+      
+      
+      
+      
+      
+      	FIN
+      
+      	impvideo.vMarquageLC[i] = {"CL"+i}
+      	TigerCarrelage.vMarquageL[i] = {"CL"+i}
+      fin
+      
+      
+      
+      
+      pour i =1 a 10
+      	//pour i =1 a nbl-1 -aenlever
+      	formule = sansespace({"typecarr.tcformuleCH"}[i])
+      	formule = RemplaceFormule(formule)
+      
+      	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      	si res = "" alors
+      		si pas valideformule(formule) alors
+      			{"CH"+i} = 0
+      		sinon
+      			{"CH"+i} = executetraitement("formule1",trtProcédure)
+      		fin
+      		si 	{"CH"+i} < 0 alors
+      			{"CH"+i} = 0
+      		FIN
+      
+      		si sansespace(typecarr.conditionsich[i]) = "" alors
+      			impvideo.vMarquagehC[i] = {"CH"+i}
+      			TigerCarrelage.vMarquageh[i] = {"CH"+i}
+      		sinon
+      			formule = sansespace(typecarr.conditionsich[i])
+      			formule = RemplaceFormule(formule)
+      			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      			si res = "" alors
+      				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      
+      				si resultatcondition  alors
+      					formule = sansespace(typecarr.conditionalorsch[i])
+      					formule = RemplaceFormule(formule)
+      					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      					si res = "" ALORS
+      						{"CH"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      
+      						impvideo.vMarquagehC[i] = {"CH"+i}
+      						TigerCarrelage.vMarquageh[i] = {"CH"+i}
+      					sinon
+      						{"CH"+i} = 0
+      
+      					fin
+      
+      				sinon
+      					impvideo.vMarquageHC[i] = {"CH"+i}
+      					TigerCarrelage.vMarquageh[i] = {"CH"+i}
+      				fin
+      			sinon
+      				{"CH"+i} = 0
+      
+      			fin
+      		FIN
+      
+      
+      	FIN
+      	impvideo.vMarquagehC[i] = {"CH"+i}
+      	TigerCarrelage.vMarquageh[i] = {"CH"+i}
+      fin
+      
+      
+      //pour i = 1 a nbh-1-aenlever- aenlevertete
+      pour i = 1 a 10
+      	formule = sansespace({"typecarr.tcformuleSL"}[i])
+      	formule = RemplaceFormule(formule)
+      
+      	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      	si res = "" alors
+      		si pas valideformule(formule) alors
+      			{"SL"+i} = 0
+      		sinon
+      			{"SL"+i} = executetraitement("formule1",trtProcédure)
+      		fin
+      		si 	{"SL"+i} < 0 alors
+      			{"SL"+i} = 0
+      		FIN
+      		//		impvideo.vMarquageLC[i] = numeriqueverschaine(formule1())
+      
+      		si sansespace(typecarr.conditionsisl[i]) = "" alors
+      			impvideo.vMarquagels[i] = {"SL"+i}
+      			TigerCarrelage.vMarquagelc[i] = {"SL"+i}
+      		sinon
+      			formule = sansespace(typecarr.conditionsisl[i])
+      			formule = RemplaceFormule(formule)
+      			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      			si res = "" alors
+      				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      
+      				si resultatcondition  alors
+      					formule = sansespace(typecarr.conditionalorssl[i])
+      					formule = RemplaceFormule(formule)
+      					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      					si res = "" ALORS
+      						{"SL"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      
+      						impvideo.vMarquagels[i] = {"SL"+i}
+      						TigerCarrelage.vMarquagelc[i] = {"SL"+i}
+      					sinon
+      						{"SL"+i} = 0
+      
+      					fin
+      
+      				sinon
+      					impvideo.vMarquageLS[i] = {"SL"+i}
+      					TigerCarrelage.vMarquagelc[i] = {"SL"+i}
+      				fin
+      			sinon
+      				{"SL"+i} = 0
+      
+      			fin
+      
+      		FIN
+      
+      	fin
+      	impvideo.vMarquageLS[i] = {"SL"+i}
+      	TigerCarrelage.vMarquagelc[i] = {"SL"+i}
+      fin
+      
+      
+      //pour i =1 a nbl-1-aenlever 
+      pour i =1 a 10
+      	formule = sansespace({"typecarr.tcformuleSH"}[i])
+      	formule = RemplaceFormule(formule)
+      
+      	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      	si res = "" alors
+      		si pas valideformule(formule) alors
+      			{"SH"+i} = 0
+      		sinon
+      			{"SH"+i} = executetraitement("formule1",trtProcédure)
+      		fin
+      		si 	{"SH"+i} < 0 alors
+      			{"SH"+i} = 0
+      		FIN
+      		//		impvideo.vMarquageLC[i] = numeriqueverschaine(formule1())
+      
+      		si sansespace(typecarr.conditionsish[i]) = "" alors
+      			impvideo.vMarquagehs[i] = {"SH"+i}
+      			TigerCarrelage.vMarquagehc[i] = {"SH"+i}
+      
+      		sinon
+      			formule = sansespace(typecarr.conditionsish[i])
+      			formule = RemplaceFormule(formule)
+      			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      			si res = "" alors
+      				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      
+      				si resultatcondition  alors
+      					formule = sansespace(typecarr.conditionalorssh[i])
+      					formule = RemplaceFormule(formule)
+      					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      					si res = "" ALORS
+      						{"SH"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      
+      						impvideo.vMarquagehs[i] = {"SH"+i}
+      						TigerCarrelage.vMarquagehc[i] = {"SH"+i}
+      					sinon
+      						{"SH"+i} = 0
+      
+      					fin
+      
+      				sinon
+      					impvideo.vMarquageHS[i] = {"SH"+i}
+      					TigerCarrelage.vMarquagehc[i] = {"SH"+i}
+      				fin
+      			sinon
+      				{"SH"+i} = 0
+      
+      			fin
+      
+      		FIN
+      
+      
+      	FIN
+      
+      	impvideo.vMarquagehs[i] = {"SH"+i}
+      	TigerCarrelage.vMarquagehc[i] = {"SH"+i}
+      fin
+      
+      clederecherche = hconstruitvalcle(fdetail,fdcle,tempo.tcomm,tempo.tlignedecommande)
+      si hlitrecherche(fdetail,fdcle,clederecherche) alors
+      	//	si fdetail.fdlien <> 0 alors
+      	//		hlitsuivant(fdetail,fdcle)
+      	//		si fdetail.fdlien = tempo.tligne alors
+      
+      	pour i = 1 a 10
+      		fdetail.vnbmorceau[i] = impvideo.vnbmorceau[i]
+      		fdetail.vDimensionMorceau[i] = impvideo.vDimensionMorceau[i]
+      		fdetail.vMarquageHC[i] = impvideo.vMarquageHC[i]
+      		fdetail.vMarquageHs[i] = impvideo.vMarquageHs[i]
+      		fdetail.vMarquageLC[i] = impvideo.vMarquagelC[i]
+      		fdetail.vMarquagels[i] = impvideo.vMarquagels[i]
+      
+      	FIN
+      	//	dessinecarrelage(fdetail.fdtypecalcul)
+      	//	fdetail.Imagecarrelage = imagecarrelage
+      	hmodifie(fdetail,hNumEnrEnCours)
+      	//		fin
+      	//	FIN
+      fin
+      
+      
+     type : 458752
+   -
+     name : DessineCarrelage
+     procedure_id : 4812808076092938197
+     type_code : 14
+     code : |1+
+      Procédure DessineCarrelage(TypeDeCalcul)
+      // Position du dessin du thermos
+      i est un entier
+      typedessin est une chaine
+      Normaltete est un booleen = faux        // pour aviser qu'on dessine la barre d'un carrelage de tete seulement
+      si fdetail.fdcarreauv = 0 ou fdetail.fdcarreauh= 0 ou val(fdetail.fdlargeura) = 0 ou val(fdetail.fdhauteura) = 0 alors
+      	retour
+      FIN
+      //si hlitrecherche(invent,INUM,noproduit) alors
+      	si HLitRecherche(typecarr,tcdescription,TypeDeCalcul) alors
+      		selon typecarr.Typedessin
+      			cas 1
+      				typedessin = "Normal"
+      			cas 2
+      				typedessin = "Contour"
+      			cas 3
+      				typedessin = "Tete"
+      				//			cas 4
+      				//				typedessin = "ContourTete"
+      
+      		FIN
+      
+      	sinon
+      		retour
+      	fin
+      
+      //sinon
+      //	retour
+      //
+      //FIN
+      
+      
+      
+      PositionX1 est un entier     
+      PositionY1 est un entier
+      PositionX2 est un entier
+      PositionY2 est un entier
+      PositionX3 est un entier   // position de départ apres le petit carreau largeur  
+      PositionY3 est un entier   // position de départ apres le petit carreau hauteur
+      positiony4 est un entier    // position de bas pour carrelage de tete
+      LargeurDessin est un entier
+      Hauteurdessin est un entier
+      Hauteurdessin1 est un entier  // hauteur du dessin pour carrelage de tete
+      
+      LargeurCarreau est un entier
+      HauteurCarreau est un entier
+      
+      // pour contour
+      
+      LargeurCarreauPetit est un entier = val(fdetail.fdvariablex )   //* 25.4
+      HauteurCarreauPetit est un entier   = val(fdetail.FDvariablex1)  //* 25.4
+      LargeurCarreauCentre est un entier 
+      hauteurCarreauCentre est un entier
+      
+      
+      // échelle de grandeur , pour ne pas dépasser l'image
+      
+      Echelle est un entier 
+      
+      // Nombre de carreau
+      
+      NbCarreauLargeur est un entier = fdetail.fdcarreauv + typecarr.AjustNbCarLargeur
+      NbCarreauHauteur est un entier = fdetail.fdcarreauh + typecarr.AjustNbCarHauteur
+      
+      // carrelage de tete avec barre inférieure différente.Pour le dessin de la barre seulement
+      // il faut changer ces parametres
+      
+      //si typedessin = "Normal" et fdetail.fdFlagBarreDifferente alors  
+      //	NbCarreauHauteur = 1
+      //	NbCarreauLargeur = 1
+      //	typedessin = "Tete" 
+      //    Normaltete = vrai
+      //FIN
+      //NbCarreauLargeur est un entier =  4
+      //NbCarreauHauteur est un entier = 4
+      
+      
+      LargeurCarrelage est un entier = fdetail.fdlargeura
+      Hauteurcarrelage est un entier = fdetail.fdhauteura
+      
+      hlitrecherche(Facture,fanumero,fdetail.fdnocomm)
+      si facture.facalcul = 1 alors
+      	LargeurCarrelage  = val(fdetail.fdlargeura) * 25.4
+      	Hauteurcarrelage  = val(fdetail.fdhauteura)  * 25.4
+      
+      sinon
+      	LargeurCarrelage  = val(fdetail.fdlargeura)
+      	Hauteurcarrelage  = val(fdetail.fdhauteura)
+      fin
+      
+      
+      //LargeurCarrelage = 800
+      //Hauteurcarrelage = 800
+      
+      EchelleLargeur est un entier = LargeurCarrelage / 200
+      EchelleHauteur est un entier = Hauteurcarrelage / 200
+      
+      Echelle = arrondi(max(EchelleHauteur,EchelleLargeur),0)+1
+      si Echelle < 1 alors
+      	Echelle = 1
+      FIN
+      
+      selon typedessin
+      	cas "Normal"
+      
+      		PositionX1 = (200 - (LargeurCarrelage / Echelle)) / 2
+      		PositionX2 = PositionX1 +( LargeurCarrelage / Echelle)
+      		PositionY1 = (200 - (Hauteurcarrelage / Echelle)) / 2
+      		PositionY2 = PositionY1 + ( Hauteurcarrelage / Echelle )
+      		LargeurDessin = PositionX2-PositionX1
+      		Hauteurdessin = PositionY2-PositionY1
+      
+      		// calcul de la grandeur des carreaux a dessiner
+      
+      		LargeurCarreau = arrondi(LargeurDessin / NbCarreauLargeur,0)
+      		HauteurCarreau = arrondi(Hauteurdessin / NbCarreauHauteur,0)
+      
+      		ddebutdessin(ImageCarrelage)
+      		dRectangle(PositionX1,PositionY1,PositionX2,PositionY2,iblanc,inoir)
+      
+      		// tracage des lignes pour dessiner les carreau
+      		pour i = 1 a NbCarreauLargeur-1
+      
+      			dligne(PositionX1+(LargeurCarreau*i),PositionY1,PositionX1+(LargeurCarreau*i),PositionY2,inoir)
+      
+      		FIN
+      
+      		pour i = 1 a NbCarreauHauteur-1
+      
+      			dligne(PositionX1,PositionY1+(HauteurCarreau*i),PositionX2,PositionY1+(HauteurCarreau*i),inoir)
+      
+      		FIN
+      
+      
+      		//		imprimecarrelage..plan = 2
+      		//		info("")
+      
+      		// CarrelageContour
+      
+      
+      	cas "Contour"
+      
+      		PositionX1 = (200 - (LargeurCarrelage / Echelle)) / 2
+      		PositionX2 = PositionX1 +( LargeurCarrelage / Echelle)
+      		PositionY1 = (200 - (Hauteurcarrelage / Echelle)) / 2
+      		PositionY2 = PositionY1 + ( Hauteurcarrelage / Echelle )
+      		LargeurDessin = PositionX2-PositionX1
+      		Hauteurdessin = PositionY2-PositionY1
+      		//		LargeurCarreauPetit = arrondi(75.2 / echelle,0)
+      		//		HauteurCarreauPetit = arrondi(101.6/echelle,0)
+      		LargeurCarreauPetit = arrondi(LargeurCarreauPetit / Echelle,0)
+      		HauteurCarreauPetit = arrondi(HauteurCarreauPetit/Echelle,0)
+      
+      
+      
+      
+      
+      		// calcul de la grandeur des carreaux a dessiner
+      
+      		si NbCarreauLargeur > 0 alors
+      			LargeurCarreau = arrondi(LargeurDessin / NbCarreauLargeur,0)
+      		sinon
+      			LargeurCarreau = 0
+      		fin
+      
+      		si NbCarreauHauteur > 0 alors
+      			HauteurCarreau = arrondi(Hauteurdessin / NbCarreauHauteur,0)
+      		sinon
+      			HauteurCarreau = 0
+      		fin
+      		PositionX3 = PositionX1+LargeurCarreauPetit
+      		PositionY3 = PositionY1+HauteurCarreauPetit
+      		si NbCarreauLargeur > 2 alors
+      			LargeurCarreauCentre = (LargeurDessin - (2 * LargeurCarreauPetit)) / (NbCarreauLargeur-2)
+      		sinon
+      			LargeurCarreauCentre = 0
+      		fin
+      
+      		si NbCarreauHauteur > 2 alors
+      
+      			hauteurCarreauCentre = (Hauteurdessin - (2 * HauteurCarreauPetit)) / (NbCarreauHauteur-2)
+      		sinon
+      			hauteurCarreauCentre = 0
+      		fin
+      
+      		ddebutdessin(ImageCarrelage)
+      		dRectangle(PositionX1,PositionY1,PositionX2,PositionY2,iblanc,inoir)
+      
+      		// tracage des lignes horizontale pour dessiner les  petits carreaux
+      
+      		si typecarr.TcInterrupteurHaut alors
+      			dligne(PositionX1,PositionY1+HauteurCarreauPetit,PositionX2,PositionY1+HauteurCarreauPetit,inoir)
+      		fin
+      		si typecarr.TcInterrupteurBas alors
+      			dligne(PositionX1,PositionY2-HauteurCarreauPetit,PositionX2,PositionY2-HauteurCarreauPetit,inoir)
+      		fin
+      
+      		// tracage des lignes Verticale pour dessiner les  petits carreaux
+      
+      		si typecarr.TcInterrupteurGauche alors
+      			dligne(PositionX1+LargeurCarreauPetit,PositionY1,PositionX1+LargeurCarreauPetit,PositionY2,inoir)
+      		FIN
+      		si typecarr.TcInterrupteurDroit alors
+      			dligne(PositionX2-LargeurCarreauPetit,PositionY1,PositionX2-LargeurCarreauPetit,PositionY2,inoir)
+      		FIN
+      
+      		// tracage des petite lignes sur la largeur
+      
+      		pour i = 1 a NbCarreauLargeur - 3
+      			si typecarr.TcInterrupteurHaut alors
+      				dligne(PositionX3+(LargeurCarreauCentre*i),PositionY1,PositionX3+(LargeurCarreauCentre*i),PositionY1+HauteurCarreauPetit,inoir)
+      		fin
+      		si typecarr.TcInterrupteurBas alors
+      			dligne(PositionX3+(LargeurCarreauCentre*i),PositionY2-HauteurCarreauPetit,PositionX3+(LargeurCarreauCentre*i),PositionY2,inoir)
+      		fin
+      fin
+      
+      // tracage des petite lignes sur la largeur
+      
+      pour i = 1 a NbCarreauHauteur - 3
+      	si typecarr.TcInterrupteurGauche alors
+      		dligne(PositionX1,PositionY3+(hauteurCarreauCentre*i),PositionX1+LargeurCarreauPetit,PositionY3+(hauteurCarreauCentre*i),inoir)
+      fin
+      si typecarr.TcInterrupteurDroit alors
+      
+      	dligne(PositionX2-LargeurCarreauPetit,PositionY3+(hauteurCarreauCentre*i),PositionX2,PositionY3+(hauteurCarreauCentre*i),inoir)
+      FIN
+      //			dligne(positionx3+(LargeurCarreaucentre*i),positiony2-HauteurCarreauPetit,positionx3+(LargeurCarreaucentre*i),PositionY2,inoir)
+      
+      fin
+      
+      
+      
+      
+      Cas "Tete"
+      	PositionX1 = (200 - (LargeurCarrelage / Echelle)) / 2
+      	PositionX2 = PositionX1 +( LargeurCarrelage / Echelle)
+      	PositionY1 = (200 - (Hauteurcarrelage / Echelle)) / 2
+      	PositionY2 = PositionY1 + ( Hauteurcarrelage / Echelle )
+      	LargeurDessin = PositionX2-PositionX1
+      	Hauteurdessin = (PositionY2-PositionY1)
+      	positiony4 = PositionY1 + (Hauteurdessin/3)
+      	// calcul de la grandeur des carreaux a dessiner
+      	Hauteurdessin1 = positiony4 - PositionY1
+      
+      	si NbCarreauLargeur > 0 alors
+      		LargeurCarreau = arrondi(LargeurDessin / NbCarreauLargeur,0)
+      	sinon
+      		LargeurCarreau = 0
+      fin
+      
+      
+      si NbCarreauHauteur > 0 alors
+      	HauteurCarreau = arrondi(Hauteurdessin1 / NbCarreauHauteur,0)
+      sinon
+      	HauteurCarreau = 0 
+      FIN
+      
+      
+      ddebutdessin(ImageCarrelage)
+      dRectangle(PositionX1,PositionY1,PositionX2,PositionY2,iblanc,inoir)
+      // tracage des lignes pour dessiner les carreau
+      pour i = 1 a NbCarreauLargeur-1
+      
+      	dligne(PositionX1+(LargeurCarreau*i),PositionY1,PositionX1+(LargeurCarreau*i),positiony4,inoir)
+      
+      FIN
+      
+      pour i = 1 a NbCarreauHauteur-1
+      
+      	dligne(PositionX1,PositionY1+(HauteurCarreau*i),PositionX2,PositionY1+(HauteurCarreau*i),inoir)
+      
+      FIN
+      //		si pas fdetail.fdFlagBarreDifferente  ou normaltete alors
+      si NbCarreauHauteur > 0 alors
+      	dligne(PositionX1,positiony4,PositionX2,positiony4,inoir)
+      fin
+      //		fin	
+      
+      
+      
+      // CarrelageContour
+      
+      cas "ContourTete"
+      
+      	PositionX1 = (200 - (LargeurCarrelage / Echelle)) / 2
+      	PositionX2 = PositionX1 +( LargeurCarrelage / Echelle)
+      	PositionY1 = (200 - (Hauteurcarrelage / Echelle)) / 2
+      	PositionY2 = PositionY1 + ( Hauteurcarrelage / Echelle )
+      	LargeurDessin = PositionX2-PositionX1
+      	Hauteurdessin = PositionY2-PositionY1
+      	LargeurCarreauPetit = arrondi(75.2 / Echelle,0)
+      	HauteurCarreauPetit = arrondi(101.6/Echelle,0)
+      
+      	positiony4 = PositionY1 + (Hauteurdessin/2)
+      	// calcul de la grandeur des carreaux a dessiner
+      	Hauteurdessin1 = positiony4 - PositionY1
+      
+      
+      
+      
+      
+      	// calcul de la grandeur des carreaux a dessiner
+      
+      	LargeurCarreau = arrondi(LargeurDessin / NbCarreauLargeur,0)
+      	HauteurCarreau = arrondi(Hauteurdessin / NbCarreauHauteur,0)
+      	PositionX3 = PositionX1+LargeurCarreauPetit
+      	PositionY3 = PositionY1+HauteurCarreauPetit
+      	LargeurCarreauCentre = (LargeurDessin - (2 * LargeurCarreauPetit)) / (NbCarreauLargeur-2)
+      	hauteurCarreauCentre = (Hauteurdessin1 - (2 * HauteurCarreauPetit)) / (NbCarreauHauteur-2)
+      
+      	ddebutdessin(ImageCarrelage)
+      	dRectangle(PositionX1,PositionY1,PositionX2,PositionY2,iblanc,inoir)
+      
+      	// tracage des lignes horizontale pour dessiner les  petits carreaux
+      
+      	dligne(PositionX1,PositionY1+HauteurCarreauPetit,PositionX2,PositionY1+HauteurCarreauPetit,inoir)
+      	dligne(PositionX1,positiony4-HauteurCarreauPetit,PositionX2,positiony4-HauteurCarreauPetit,inoir)
+      	dligne(PositionX1,positiony4,PositionX2,positiony4,inoir)
+      
+      	// tracage des lignes Verticale pour dessiner les  petits carreaux
+      
+      	dligne(PositionX1+LargeurCarreauPetit,PositionY1,PositionX1+LargeurCarreauPetit,positiony4,inoir)
+      	dligne(PositionX2-LargeurCarreauPetit,PositionY1,PositionX2-LargeurCarreauPetit,positiony4,inoir)
+      
+      	// tracage des petite lignes sur la largeur
+      
+      	pour i = 1 a NbCarreauLargeur - 3
+      		dligne(PositionX3+(LargeurCarreauCentre*i),PositionY1,PositionX3+(LargeurCarreauCentre*i),PositionY1+HauteurCarreauPetit,inoir)
+      		dligne(PositionX3+(LargeurCarreauCentre*i),positiony4-HauteurCarreauPetit,PositionX3+(LargeurCarreauCentre*i),positiony4,inoir)
+      
+      fin
+      
+      // tracage des petite lignes sur la largeur
+      
+      pour i = 1 a NbCarreauHauteur - 3
+      	dligne(PositionX1,PositionY3+(hauteurCarreauCentre*i),PositionX1+LargeurCarreauPetit,PositionY3+(hauteurCarreauCentre*i),inoir)
+      	dligne(PositionX2-LargeurCarreauPetit,PositionY3+(hauteurCarreauCentre*i),PositionX2,PositionY3+(hauteurCarreauCentre*i),inoir)
+      	//			dligne(positionx3+(LargeurCarreaucentre*i),positiony2-HauteurCarreauPetit,positionx3+(LargeurCarreaucentre*i),PositionY2,inoir)
+      
+      fin
+      
+      
+      
+      
+      
+      fin
+      
+      
+      //EcranVersFichier(imprimecarrelage,fdetail)
+      ////
+      //hmodifie(fdetail,hNumEnrEnCours)
+      
+      
+     type : 458752
+   -
+     name : valideformule
+     procedure_id : 4813212203397803544
+     type_code : 14
+     code : |1+
+      Procédure valideformule(Formulaverifier)
+      xposition est un entier = 0  // position du caractere /
+      xposition1 est un entier = 1 // position du caractere )
+      souschaine est une chaine
+      i est un entier = 1
+      formule1 est une chaine
+      res est une chaine
+      boucle
+      	xposition = position(Formulaverifier,"/",xposition+1)
+      	si xposition = 0 alors
+      		sortir
+      	FIN
+      	xposition1 = position(Formulaverifier,")",xposition)
+          si xposition1 = 0 alors
+             xposition1 = taille(Formulaverifier)
+          fin
+          	
+      	souschaine = milieu(Formulaverifier,xposition+1,xposition1-xposition)
+      	souschaine = remplace(souschaine,"(","")
+      	souschaine = remplace(souschaine,")","")
+      	formule1 = "y est un reel"+RC+"y="+souschaine+RC+"renvoyer y "
+      	res = compile("formule2",formule1)
+      	si ExécuteTraitement("formule2",trtProcédure) = 0 alors
+      		renvoyer faux
+      	FIN
+      FIN
+      
+      renvoyer vrai
+      
+      
+      
+     type : 458752
+   -
+     name : RemplirArchivePrep
+     procedure_id : 5068556070684600816
+     type_code : 14
+     code : |1+
+      Procédure RemplirArchivePrep()
+      
+      pour tout TQtePrep
+      	HCopieEnreg(ArchivePrep,TQtePrep)
+      	hajoute(ArchivePrep)
+      FIN
+      
+     type : 458752
+   -
+     name : MajCarrelageTRN
+     procedure_id : 5220328107089376012
+     type_code : 14
+     code : |1+
+      Procédure MajCarrelageTRN()
+      HRAZ(TigerCarrelage)
+      TigerCarrelage.vimprime = " "
+      TigerCarrelage.vnoligne = tempo.tlignedecommande
+      TigerCarrelage.vnoprep = tempo.tnumeroprep
+      TigerCarrelage.vcommande = tempo.tcomm
+      TigerCarrelage.vlignecommande = tempo.tnoetiq
+      TigerCarrelage.vclientnom = gauche(tempo.tnomclient,gclconfig.m_nvjclient)
+      TigerCarrelage.vdate = tempo.tdate
+      // Modification nécessaire pour TRN.
+      // TRN fonctionne avec le numéro de lot de OPTIMA
+      // c'est ce numéro de lot qui apparait à l'écran de Tigerstop 
+      // ce numéro est sauvegardé dans le champ vespace du fichier tiger
+      // ce champ de sera jamais de plus de 2 caractere.
+      TigerCarrelage.vespace  = sansespace(tempo.tespace)+"-"+sansespace(TrsfVideojet.NUMEROOPT)
+      TigerCarrelage.vcommandeclient = tempo.tcommclient
+      TigerCarrelage.vcapgazlowe = tempo.tcapgaztube
+      TigerCarrelage.vtraitementspecial = tempo.ttraitementspecial
+      TigerCarrelage.vpbase = tempo.tbase
+      TigerCarrelage.vlargeur = tempo.tlargeur
+      TigerCarrelage.vhauteur = tempo.thauteur
+      TigerCarrelage.vcode   = tempo.TNumCarr
+      tigercarrelage.vNbCarreauH = tempo.TCarreauH
+      tigercarrelage.vNbCarreaul = tempo.TCarreauv
+      tigercarrelage.vhauteurcontour = tempo.THauteurContour
+      tigercarrelage.vlargeurcontour = tempo.TlargeurContour
+      tigercarrelage.vhauteurtete = tempo.THauteurtete
+      TigerCarrelage.vNumCarrBarrepos = 1   // pour empecher les doublons quand carrelage de tete avec
+      										// barre du bas différente
+      
+      
+      //si pas position(tempo.tcapgaztube,"I") = 0 alors
+      //	TigerCarrelage.vesptype = "Inex"
+      //sinon
+      //	TigerCarrelage.vesptype = "Alu."
+      //FIN
+      //A FAIRE : Ajuster la ligne suivante
+      SI HLITRECHERCHE(typespac,tnumero,TEMPO.TtypeSpacer) ALORS
+      	//impvideo.vtypespacer"}    = tempo.TtypeSpacer
+      	TigerCarrelage.vesptype  = GAUCHE(typespac.tdesccourte,5)
+      FIN
+      
+      
+      TigerCarrelage.vqte = tempo.tqte
+      si hlitrecherche(invent,INUM,tempo.TNumCarr) alors
+      	TigerCarrelage.vdescriptionCarr = invent.idesc
+      fin
+      
+      
+      TigerCarrelage.vcarrelage = tempo.tcarrelage
+      
+      si sansespace(Tempo.tcouleurcarr) <> ""  ou sansespace(tempo.tcouleurcarr2) <> "" alors
+      	TigerCarrelage.vpeinture = vrai
+      sinon
+      	TigerCarrelage.vpeinture = faux
+      FIN
+      tigercarrelage.VNoForme = tempo.tnoforme
+      CAlculCarrelage()
+      hajoute(TigerCarrelage)
+      si herreurdoublon() alors
+      FIN
+      
+      
+     type : 458752
+   -
+     name : ImprimeBonLivraison
+     procedure_id : 5605172987089101648
+     type_code : 14
+     code : |1-
+      Procédure ImprimeBonLivraison(NoEnregistrement)
+      j est un entier
+      i est un entier
+      numerofacture est un entier 
+      lAdresseCourriel est une chaine
+      lNumeroClient est une chaine
+      ListeFichier est une chaine
+      ListeNoFacture est une chaine
+      lSujet est une chaine
+      lMessage est une chaine 
+      lCommandeTransferee est une chaine
+      lNbCopieBlivraison est un entier
+      lnomfichier est une chaine
+      
+      //hlit(config,1)
+      lNbCopieBlivraison = gclconfig.m_nnbcopieBlivraison
+      
+      OuvreSoeur(FenAttentePetite)
+      
+      
+      
+      
+      
+      numerofacture =TrouveProchainNumero()
+      
+      
+      si numerofacture = 0 alors goto SortieSurErreur
+      
+      hraz(BonLivraison)
+      epurefacturetrn(NoEnregistrement,numerofacture)
+      bonlivraison.Bclient = hfacture.faclient
+      bonlivraison.bdate =DateDuJour()
+      bonlivraison.Bnumero = numerofacture
+      bonlivraison.Bcommandeclient = hfacture.fanocommande
+      bonlivraison.Bnocommande = hfacture.fanumero
+      bonlivraison.bstotal = hfacture.fatotal
+      bonlivraison.btvh = hfacture.fatps
+      bonlivraison.bTauxTvh = gclconfig.m_rtauxtps
+      bonlivraison.bTauxTvq = gclconfig.m_rtauxtvq
+      bonlivraison.brien = numeriqueverschaine(hfacture.fatypedocument)
+              BonLivraison.cvendeur = hfacture.cvendeur
+      hajoute(BonLivraison)
+      
+      pour tout hfacture avec "bnumero = " + BonLivraison.Bnumero
+      	pour tout Fcoutant avec "cNoCommande = "+ hfacture.fanumero
+      		fcoutant.CdateLivraison = BonLivraison.bdate
+      		fcoutant.CNoBlivraison = bonlivraison.bnumero
+      		hmodifie(Fcoutant,hnumenrencours)
+      	FIN
+      	pour tout Fcoutantligne avec "cNoCommande = "+ hfacture.fanumero
+      		fcoutantligne.CdateLivraison = BonLivraison.bdate
+      		fcoutantligne.CNoBlivraison = bonlivraison.bnumero
+      		hmodifie(Fcoutantligne,hnumenrencours)
+      	FIN
+      fin	
+      
+      
+      si herreurdoublon() alors
+      FIN
+      hexecuterequete(RequeteBlEtat,hrequetedefaut,bonlivraison.bnumero)
+      
+      	iFenêtreAbandon(faux)
+      	FenAttentePetite.libelle1 = "Impression du Bon de livraison "+BonLivraison.bnumero
+      	multitache(50)
+      	iconfigure(sansespace(imprimantefacture),vrai)
+      	iParamètre("DEFAUT=NON")
+      //	iParamètre("COPIES="+lnbcopieBlivraison)
+      	iParamètre("QUALITE=HAUTE")
+      //	iimprimeetat(BonLivraisontrn)
+          iimprimeetat(BonLivraisonMultiple,lNbCopieBlivraison)
+      
+      
+      
+      
+      ferme(FenAttentePetite)
+      
+      goto SortieSansErreur
+      
+      // Se rend ici si on a pas été capable d,assigner un numéro de bon de livraison
+      // Incapable de Bloquer le fichier config
+      
+      SortieSurErreur:
+      
+      
+      SortieSansErreur:
+      
+      //info(lCommandeTransferee)
+     type : 458752
+   -
+     name : TrouveProchainNumero
+     procedure_id : 5605192121081241016
+     type_code : 14
+     code : |1+
+      Procédure TrouveProchainNumero()
+      valeurarerourner est un entier = 0
+      _continuer est un booleen
+      
+      
+      boucle
+      
+      	hlitpremier(config,COCLEUNIK,HBlocageEcriture)
+      
+      	si HErreurBlocage() alors
+      		si acso_message("Question","Impossible d'assigner un numéro de Bon de Livraison"+rc+"Le fichier de configuration est possiblement utilisé par un autre utilisateur"+rc+...
+      			"Il devrait être disponible dans quelques secondes."+rc+"Essayer de nouveau","OuiNon")=idno alors 
+      			_continuer = faux
+      			sortir
+      		fin
+      	sinon
+      		_continuer = vrai
+      		sortir
+      	fin
+      fin
+      //sinon
+      
+      si _continuer alors
+      	boucle
+      		valeurarerourner = config.numbl
+      		config.numbl++
+      		hmodifie(config,hNumEnrEnCours)
+              HForceEcriture(config)
+      		si pas hlitrecherche(BonLivraison,Bnumero,valeurarerourner) alors
+      			sortir
+      		fin
+      
+      	fin
+      
+      	hdebloquefichier(config)
+      
+      fin
+      
+      renvoyer valeurarerourner
+      
+     type : 458752
+   -
+     name : epurefactureTRN
+     procedure_id : 5605193477053575598
+     type_code : 14
+     code : |1+
+      Procédure epurefactureTRN(numeroenregistrement,lignedetable)
+      
+      majhistorique(numeroenregistrement,lignedetable)
+      toutelafacture = vrai
+      
+      hlit("Facture",numeroenregistrement)
+      
+      RequetefactureDetail.pNoComm = facture.fanumero
+      RequetefactureDetail.pNoLigne = null
+      
+      HExécuteRequête(requetefacturedetail,hModifieFichier)
+      
+      //hlitrecherche("fdetail","fdnocomm",facture.fanumero)
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //tantque fdetail.fdnocomm = facture.fanumero et pas h.endehors
+      //tantque fdetail.fdnocomm = facture.fanumero et pas HEnDehors()
+      Pour tout RequetefactureDetail
+      	RequetefactureDetail.fdqtedejafacture =  RequetefactureDetail.fdqtedejafacture +RequetefactureDetail.fdqteafacturer
+      	RequetefactureDetail.fdqteafacturer = RequetefactureDetail.fdqte -RequetefactureDetail.fdqtedejafacture
+      	RequetefactureDetail.SUrchargedejafacture = RequetefactureDetail.SUrchargedejafacture+RequetefactureDetail.SUrchargeafacturer
+      	RequetefactureDetail.SUrchargeafacturer = RequetefactureDetail.surchargeenergie- RequetefactureDetail.SUrchargedejafacture
+      	si RequetefactureDetail.fdqteafacturer <> 0 alors  // = fdetail.fdqte-fdetail.fdqtedejafacture alors  
+      		//     hcopieenreg("aliasfdet","fdetail")
+      		//	 hajoute("aliasfdet")
+      		//	 hsupprime("fdetail")
+      		//   sinon
+      		toutelafacture = faux
+      	fin
+      	hmodifie(RequetefactureDetail,hNumEnrEnCours)
+      	//     hcopieenreg("aliasfdet","fdetail")
+      	//	 hajoute("aliasfdet")
+      
+      //hlitsuivant("fdetail","fdnocomm")
+      
+      FIN
+      
+      //hcopieenreg("aliasfac","facture")
+      //hajoute("aliasfac")
+      
+      si toutelafacture alors
+      //    hsupprime(facture,hNumEnrEnCours)
+      	facture.FPREPARATION = "B"
+      	facture.livrepartiel = ""
+      	hmodifie(Facture,hNumEnrEnCours)
+      sinon
+          facture.livrepartiel = "P"
+      	facture.faimprimer = 0
+      	hmodifie(facture,hNumEnrEnCours)	
+      FIN
+      
+     type : 458752
+   -
+     name : majhistorique
+     procedure_id : 5605193537895507812
+     type_code : 14
+     code : |1-
+      Procédure majhistorique(numeroenregistrement,nocommande)
+      hgereintegrite(faux)
+      
+      multiplicateur est un entier
+      //hlit(config,1)
+      hlit("Facture",numeroenregistrement)
+      si facture.fatypedocument  = 2 alors
+      	multiplicateur = -1
+      sinon
+      	multiplicateur = 1	
+      FIN
+      hfacture.ftransfere      = faux
+      hfacture.fanumero        = facture.fanumero
+      hfacture.fadate          = facture.fdaterequise
+      hfacture.fadatecommande  = facture.fadate
+      hfacture.fatype          = facture.fatype
+      hfacture.faclient        = facture.faclient
+      hfacture.bnumero         = nocommande
+      hfacture.fanofacture     = nocommande
+      hfacture.fanojob         = facture.fanojob
+      hfacture.fanocommande    = facture.fanocommande
+      hfacture.fasecteur       = facture.fasecteur
+      hfacture.facalcul        = facture.facalcul
+      hfacture.fasurcharge     = facture.fasurcharge 
+      hfacture.fatotal         = facture.fatotal     
+      hfacture.fatps           = facture.fatps       
+      hfacture.fatvq           = facture.fatvq       
+      hfacture.fatypedocument  = Facture.fatypedocument
+      hfacture.fareference     = Facture.fareference
+      hfacture.fabonlivraison  = facture.fabonlivraison
+      hfacture.NoLot           = facture.nolot
+      hfacture.fafraistransport= Facture.fafraistransport * multiplicateur
+      hfacture.fsurchargepeinture = facture.fsurchargepeinture
+      hfacture.NoGlSurchargePeinture = facture.NoGlSurchargePeinture
+      hfacture.idlivraison        = facture.idLivraison
+      hfacture.SUrchargePeinture = facture.SUrchargePeinture
+      hfacture.fpeinture = facture.fpeinture
+      hfacture.idlivraison = facture.idLivraison
+      hfacture.nom 			 = facture.nom
+      hfacture.adresse 		 = facture.adresse
+      hfacture.Ville 			 = facture.ville
+      hfacture.CodePostal		 = facture.CodePostal
+      hfacture.noTelephone	 = facture.noTelephone
+      hfacture.ftypecredit     = facture.Ftypecredit
+      hfacture.cvendeur  		 = facture.cvendeur
+      hfacture.IDCamions    = Facture.IDCamions
+      
+      hajoute("hfacture")
+      //Code WinDev 5.5 remplacé par la migration :
+      //si hdoublon() alors
+      si HErreurDoublon() alors
+      	erreur("Impossible d'ajouter la facture "+numeriqueverschaine(facture.fanofacture,"10d"))
+      	renvoyer vrai
+      FIN
+      
+      
+      //hlitrecherche(requetefacturedetail,fdnocomm,facture.fanumero)
+      RequetefactureDetail.pNoComm = facture.fanumero
+      RequetefactureDetail.pNoLigne = null
+      HExécuteRequête(RequetefactureDetail)
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //tantque requetefacturedetail.fdnocomm = facture.fanumero et pas h.endehors
+      pour tout requetefacturedetail
+      	//tantque requetefacturedetail.fdnocomm = facture.fanumero et pas HEnDehors()
+      	si requetefacturedetail.fdqteafacturer <> 0 alors  
+      		hfdetail.fdnocomm       = facture.fanumero
+      		hfdetail.fdligne        = requetefacturedetail.fdligne
+      		hfdetail.fdnumprod      = requetefacturedetail.fdnumprod
+      		hfdetail.fddesc         = requetefacturedetail.fddesc
+      		hfdetail.fdqte          = requetefacturedetail.fdqte
+      		hfdetail.fdqteafacturer = requetefacturedetail.fdqteafacturer  * multiplicateur
+      		hfdetail.fdqtedejafacture = requetefacturedetail.fdqtedejafacture  * multiplicateur
+      
+      		hfdetail.fdespace       = requetefacturedetail.fdespace
+      		hfdetail.fdlargeur      = requetefacturedetail.fdlargeur
+      		hfdetail.fdhauteur      = requetefacturedetail.fdhauteur
+      		hfdetail.fdhauteur1     = requetefacturedetail.fdhauteur1
+      		hfdetail.fdlargeura     = requetefacturedetail.fdlargeura
+      		hfdetail.fdhauteura     = requetefacturedetail.fdhauteura
+      		hfdetail.fdhauteur1a    = requetefacturedetail.fdhauteur1a
+      		hfdetail.fdprixu        = requetefacturedetail.fdprixu
+      		hfdetail.fdcarrelage    = requetefacturedetail.fdcarrelage
+      		hfdetail.fdcarreauh     = requetefacturedetail.fdcarreauh
+      		hfdetail.fdcarreauv     = requetefacturedetail.fdcarreauv
+      		hfdetail.fdnumcarr      = requetefacturedetail.fdnumcarr
+      		hfdetail.ftype          = requetefacturedetail.ftype
+      		hfdetail.fdprixtotal    = requetefacturedetail.fdprixtotal
+      		hfdetail.fdcarrpruxuc   = requetefacturedetail.fdcarrpruxuc
+      		hfdetail.frcarrprixu    = requetefacturedetail.frcarrprixu * multiplicateur
+      		hfdetail.fdcarrprixtotal= requetefacturedetail.fdcarrprixtotal * multiplicateur
+      		hfdetail.fdprixupied    = requetefacturedetail.fdprixupied
+      		hfdetail.fdcodegl       = requetefacturedetail.fdcodegl
+      		hfdetail.fcapgaztube    = requetefacturedetail.fcapgaztube 
+      		hfdetail.fdverreunite   = requetefacturedetail.fdverreunite
+      		hfdetail.fdnofact       = nocommande
+      		hfdetail.FDJOBLIGNE      = requetefacturedetail.FDJOBLIGNE
+      		hfdetail.fdcomposant1    =requetefacturedetail.fdcomposant1
+      		hfdetail.fdcomposant2    =requetefacturedetail.fdcomposant2
+      		hfdetail.fdcomposant3    =requetefacturedetail.fdcomposant3
+      		hfdetail.fdcarrprixdebase=requetefacturedetail.fdcarrprixdebase * multiplicateur
+      		hfdetail.surchargeenergie=requetefacturedetail.surchargeenergie  * multiplicateur
+      		hfdetail.fdcommentaire   = requetefacturedetail.fdcommentaire
+      		hfdetail.fdlargeuru      = requetefacturedetail.fdlargeuru
+      		hfdetail.fdhauteuru      = requetefacturedetail.fdhauteuru
+      		hfdetail.fdforme         = requetefacturedetail.fdforme
+      		hfdetail.fdextraforme    = requetefacturedetail.fdextraforme //* MULTIPLICATEUR
+      		hfdetail.HFCLEUNIK       = hfacture.HFCLEUNIK
+      		hfdetail.ffini           = requetefacturedetail.ffini 
+      		hfdetail.fdhauteuranglais=RequetefactureDetail.fdhauteuranglais
+      		hfdetail.fdhauteuranglais1=RequetefactureDetail.fdhauteuranglais1
+      		
+      		hfdetail.fdlargeuranglais=requetefacturedetail.fdlargeuranglais
+      		hfdetail.fdpiedcarre     = requetefacturedetail.fdpiedcarre
+      		hfdetail.fdpiedcarrefacture=requetefacturedetail.fdpiedcarrefacture
+      		hfdetail.ftypespacer       = requetefacturedetail.ftypespacer
+      		hfdetail.FDespace2         = requetefacturedetail.FDespace2
+      		hfdetail.fdprixupiedfacture=requetefacturedetail.fdprixupiedfacture
+      		hfdetail.fdextracap       = requetefacturedetail.fdextracap //* MULTIPLICATEUR 
+      		hfdetail.fnotes           = requetefacturedetail.fnotes
+      		hfdetail.fnotes1           = requetefacturedetail.fnotes1
+      		hfdetail.fdvariablex       = requetefacturedetail.fdvariablex
+      		hfdetail.fdvariablex1       = requetefacturedetail.fdvariablex1
+      		hfdetail.fdtypecalcul     = requetefacturedetail.fdtypecalcul
+      		hfdetail.fdnbcarreau       = requetefacturedetail.fdnbcarreau
+      		hfdetail.fTypePeinture         = requetefacturedetail.fTypePeinture
+      		hfdetail.fNoPeintureExtTout     = requetefacturedetail.fNoPeintureExtTout
+      		hfdetail.FnopeintureInterieure     = requetefacturedetail.FnopeintureInterieure
+      		hfdetail.fdescpeintureExtTout    = requetefacturedetail.fdescpeintureExtTout
+      		hfdetail.fDescPeintureInterieure    = requetefacturedetail.fDescPeintureInterieure
+      		hfdetail.fTotalPeinture             = requetefacturedetail.fTotalPeinture
+      		hfdetail.fPrixCarreauPeinture      = requetefacturedetail.fPrixCarreauPeinture
+      		hfdetail.Ftotalcarreaupeinture     = requetefacturedetail.Ftotalcarreaupeinture
+      		hfdetail.fpeinture                  = requetefacturedetail.fpeinture
+      		hfdetail.libelleNbCarreauExtTlt     = requetefacturedetail.libelleNbCarreauExtTlt
+      		hfdetail.libelleNbcarreauinterieur     = requetefacturedetail.libelleNbcarreauinterieur
+      		hfdetail.FtotalbarrePeinture     = requetefacturedetail.FtotalbarrePeinture
+      		hfdetail.fnopeinture = requetefacturedetail.fnopeinture
+      		hfdetail.fdescpeinture = requetefacturedetail.fdescpeinture
+      		hfdetail.fextrapeinture = requetefacturedetail.fextrapeinture
+      		hfdetail.fdescpeinture1 = requetefacturedetail.fdescpeinture1
+      		hfdetail.fTypePeinture1     = requetefacturedetail.fTypePeinture1
+      		hfdetail.fnopeinture1 = requetefacturedetail.fnopeinture1
+      		hfdetail.FDnbcarreauPeinture1 = requetefacturedetail.FDnbcarreauPeinture1
+      		hfdetail.fdprixcarreaupeinture1 = requetefacturedetail.fdprixcarreaupeinture1
+      		hfdetail.fdfabrication = requetefacturedetail.FDfabrication
+      		hfdetail.SUrchargeafacturer = requetefacturedetail.SUrchargeafacturer
+      		hfdetail.surchargeenergie = requetefacturedetail.SUrchargeafacturer
+      		hfdetail.SUrchargedejafacture = requetefacturedetail.SUrchargedejafacture
+      		hfdetail.FDextra10X=requetefacturedetail.FDextra10x
+      		hfdetail.FDextra5X=requetefacturedetail.FDextra5x
+      		hfdetail.TDemiCarrelage = requetefacturedetail.TDemiCarrelage
+      		hfdetail.FDextraCarrelagedemi = requetefacturedetail.FDextraCarrelagedemi
+      		hfdetail.fdpiedcarrefacture = requetefacturedetail.fdpiedcarrefacture
+      		hfdetail.fdsurfacemodifie = requetefacturedetail.fdsurfacemodifie
+      		hfdetail.FDprixmodifie = requetefacturedetail.FDprixmodifie
+      		hfdetail.ExtraArgonPrice = Fdetail.ExtraArgonPrice
+      		hfdetail.CalculArgon = Fdetail.CalculArgon
+      		hfdetail.PietageArgon = Fdetail.PietageArgon
+      		hfdetail.fdbase = Fdetail.fdbase
+      		hfdetail.fnolot = fdetail.fnolot
+      		
+      
+      		hajoute("hfdetail")
+      
+      
+      
+      	fin
+      	//hlitsuivant("requetefacturedetail","fdnocomm")
+      
+      
+      FIN
+      
+      hgereintegrité(vrai)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3f75a66f2e3edd67
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : "\r\n"
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

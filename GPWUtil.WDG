@@ -1,0 +1,630 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : GPWUtil
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x151a82c5010d3721
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      //-----------------------------------------------
+      GPWUtilisateur est une source de données
+      GPWUtilisateurConfiguration est une source de données
+      GPWConfiguration est une source de données
+      GPWConfigurationElement est une source de données
+      GPWElement est une source de données
+      //-----------------------------------------------
+     type : 720896
+  procedures :
+   -
+     name : Initialise
+     procedure_id : 1520671606828840737
+     type_code : 15
+     code : |1-
+      PROCEDURE Initialise()
+      
+      // ouverture ou création des fichiers
+      HCréationSiInexistant(GPWConfiguration)
+      HCréationSiInexistant(GPWElement)
+      HCréationSiInexistant(GPWConfigurationElement)
+      HCréationSiInexistant(GPWUtilisateur)
+      HCréationSiInexistant(GPWUtilisateurConfiguration)
+      
+      // si le fichier des configurations est vide
+      SI HNbEnr(GPWConfiguration)=0 ALORS
+      	AjouteConfiguration(gpwAucun,gpwDéfaut)
+      	// ajout de la configuration par défaut
+      	AjouteConfiguration(gpwDéfaut,gpwDéfaut)
+      	// ajout de la configuration du superviseur
+      	AjouteConfiguration(gpwSuperviseur,gpwDéfaut)
+      FIN
+      
+      // si le fichier des utilisateur est vide
+      SI HNbEnr(GPWUtilisateur)=0 ALORS
+      	// il faut créer le superviseur par défaut
+      	HRAZ(GPWUtilisateur)
+      	GPWUtilisateur.Login=gpwSuperviseur
+      	GPWUtilisateur.MotPasse=gpwSuperviseur
+      	GPWUtilisateur.Superviseur=True;
+      	GPWUtilisateur.MotPasseASaisir=False;
+      
+      	// ajout de l'enregistement
+      	HAjoute(GPWUtilisateur)
+      	// association de la configuration par défaut à l'utilisateur
+      	HRAZ(GPWUtilisateurConfiguration);
+      	GPWUtilisateurConfiguration.Login=gpwSuperviseur
+      	GPWUtilisateurConfiguration.Configuration=gpwSuperviseur
+      	GPWUtilisateurConfiguration.Application=gpwDéfaut
+      
+      	// ajout de l'enregistrement
+      	HAjoute(GPWUtilisateurConfiguration)
+      FIN
+     type : 458752
+   -
+     name : AjouteConfiguration
+     procedure_id : 1520671606828906273
+     type_code : 15
+     code : |1-
+      PROCEDURE AjouteConfiguration(sConfigurationCourante est une chaine, sApplication est une chaine)
+      
+      // Création d'une configuration par défaut qui donne tous les droits
+      HRAZ(GPWConfiguration)
+      GPWConfiguration.Configuration = sConfigurationCourante
+      GPWConfiguration.Application = sApplication
+      GPWConfiguration.Groupe = True;
+      
+      // Ajout de l'enregistement
+      HAjoute(GPWConfiguration)
+     type : 458752
+   -
+     name : AjouteConfigurationElement
+     procedure_id : 1520671606828971809
+     type_code : 15
+     code : |1-
+      // Ajoute l'état d'un élément
+      // Entrée:	sElement	Nom logique de l'élément
+      //			nEtat		Nouvel état de l'élément
+      //			nType		Type de l'élément
+      Procédure AjouteConfigurationElement(sConfigurationCourante est une chaine, sElement est une chaine, nEtat est un entier, nType est un entier)
+      
+      // Si l'élément n'existe pas dans le fichier des éléments
+      HLitRecherchePremier(GPWElement, "Element", sElement)
+      si pas htrouve(GPWElement) alors
+      	// Ajoute cet élément
+      	hraz(GPWElement)
+      	GPWElement.Element = sElement
+      	GPWElement.Type = nType
+      	si pas hajoute(GPWElement) alors
+      		erreur(<§@3bd5849a2104e06c0001§>+rc+herreurinfo())
+      		// Terminé
+      		retour
+      	fin
+      FIN
+      
+      sValCleComp est une chaine = HConstruitValClé(GPWConfigurationElement, "Configuration_Element", sConfigurationCourante, sElement)
+      HLitRecherchePremier(GPWConfigurationElement, "Configuration_Element", sValCleComp)
+      si htrouve(GPWConfigurationElement) alors
+      	// Modification de l'état de l'élément
+      	GPWConfigurationElement.Etat = nEtat
+      	si pas hmodifie(GPWConfigurationElement) alors
+      		erreur(<§@3bd5849a2104e06c0002§>+rc+herreurinfo())
+      	FIN
+      sinon
+      	// Ajout de l'élément dans le fichier de configuration des éléments
+      	hraz(GPWConfigurationElement)
+      	GPWConfigurationElement.Configuration = sConfigurationCourante
+      	GPWConfigurationElement.Element=sElement
+      	GPWConfigurationElement.Etat=nEtat
+      	si pas hajoute(GPWConfigurationElement) alors
+      		erreur(<§@3bd5849a2104e06c0003§> + rc + herreurinfo())
+      	FIN
+      fin
+     type : 458752
+   -
+     name : bModifieConfigurationUtilisateur
+     procedure_id : 1520671606829037345
+     type_code : 15
+     code : |1-
+      // Supprime une configuration aux utilisateurs
+      // Entrée:	sConfigurationASupprimer		Nom de la configuration
+      // Retourne Faux en cas d'echec
+      Procédure bModifieConfigurationUtilisateur(sConfigurationASupprimer est une chaine)
+      
+      // Recherche les utilisateurs sui ont la configuration
+      sValRech est une chaine = HConstruitValClé(GPWUtilisateurConfiguration, "Application_Configuration", ProjetInfo(), sConfigurationASupprimer)
+      HLitRecherchePremier(GPWUtilisateurConfiguration, "Application_Configuration", sValRech)
+      tantque HTrouve(GPWUtilisateurConfiguration)
+      	// L'utilisateur ne doit plus avoir de configuration
+      	GPWUtilisateurConfiguration.Configuration=gpwAucun
+      	si pas HModifie(GPWUtilisateurConfiguration) ALORS
+      		erreur(<§@3bd5849a2104e06c0004§> + GPWUtilisateurConfiguration.Login + "." + rc + HErreurInfo())
+      		renvoyer Faux
+      	FIN
+      	
+      	// Utilisateur suivant
+      	HLitSuivant(GPWUtilisateurConfiguration, "Application_Configuration")
+      FIN
+      
+      // Ok
+      renvoyer vrai
+     type : 458752
+   -
+     name : bSupprimeConfigurationElement
+     procedure_id : 1520671606829102881
+     type_code : 15
+     code : |1-
+      // Suppression de la configuration d'un élément
+      // Entrée:	sElement	Nom logique de l'élément à supprimer
+      Procédure bSupprimeConfigurationElement(sConfigurationCourante est une chaine, sElement est une chaine)
+      
+      // Recherche de l'élément dans le fichier de configuration des éléments
+      sValCleComp est une chaine = HConstruitValClé(GPWConfigurationElement, "Configuration_Element", sConfigurationCourante, sElement)
+      HLitRecherchePremier(GPWConfigurationElement, "Configuration_Element", sValCleComp)
+      si htrouve(GPWConfigurationElement) alors
+      	// Suppression de l'élément dans la config
+      	si pas HSupprime(GPWConfigurationElement) ALORS
+      		erreur(<§@3bd5849a2104e06c0005§> + sElement + <§@3bd5849a2104e06c0006§>)
+      		renvoyer faux
+      	FIN
+      FIN
+      
+      // Si l'élément n'est plus dans aucune configuration on peut supprimer cet élément de la base
+      HLitRecherchePremier(GPWConfigurationElement, "Element", sElement)
+      hlitrecherchepremier(GPWElement, "Element", sElement)
+      si pas Htrouve(GPWConfigurationElement) et htrouve(GPWElement) ALORS
+      	// Suppression de l'élément
+      	si pas HSupprime(GPWElement) ALORS
+      		erreur(<§@3bd5849a2104e06c0005§> + sElement + <§@3bd5849a2104e06c0007§>)
+      		renvoyer faux
+      	FIN
+      FIN
+      
+      // Ok
+      renvoyer vrai
+     type : 458752
+   -
+     name : DissociationFils
+     procedure_id : 1520671606829168417
+     type_code : 15
+     code : |1-
+      // Dissociation d'un groupe
+      // Entrée:	sParent		Nom de l'élément parent
+      //		nType		Type du parent
+      Procédure DissociationFils(sConfigurationCourante est une chaine, sParent est une chaine, nType est un entier = -1)
+      
+      // état du groupe par défaut
+      nEtat est un entier = gpwetatDéfaut
+      
+      // si le groupe est déjà configuré
+      sValCleComp est une chaine = HConstruitValClé(GPWConfigurationElement, "Configuration_Element", sConfigurationCourante, sParent)
+      HLitRecherchePremier(GPWConfigurationElement, "Configuration_Element", sValCleComp)
+      si htrouve(GPWConfigurationElement) alors
+      	// Récupération de l'état en cours du groupe
+      	nEtat = GPWConfigurationElement.Etat
+      	// Suppression du groupe
+      	si pas bSupprimeConfigurationElement(sConfigurationCourante, sParent) retour
+      FIN
+      
+      // Si l'état du groupe est actif, ce n'est pas la peine de continuer
+      // car ACTIF est l'état par défaut
+      si nEtat = gpwetatDéfaut alors retour
+      
+      // Parcours des sous-éléments du groupe
+      sNomChamp est une chaîne = EnumèreSousElément(sParent, enumpremier)
+      TANTQUE sNomChamp <> ""
+      	// Nom complet
+      	sElement est une chaine
+      
+      	si nType <> typgrp ALORS
+      		// Nom complet
+      		sElement = sParent + "." + sNomChamp
+      	sinon
+      		// Il ne faut pas mettre le nom du groupe
+      		sElement = Gauche(sParent, position(sParent, ".", 0, depuisfin)) + sNomChamp
+      	FIN
+      	// Ajoute l'élément dans la configuration
+      	AjouteConfigurationElement(sConfigurationCourante, sElement, nEtat, {sElement, indgpw}..type)
+      
+      	// Champ suivant
+      	sNomChamp = EnumèreSousElément(sParent)
+      FIN
+     type : 458752
+   -
+     name : bSupprimeUtilisateur
+     procedure_id : 1520671606829233953
+     type_code : 15
+     code : |1-
+      // Suppression des utilisateur appartenant à une configuration
+      // Retourne Faux en cas d'echec
+      Procédure bSupprimeUtilisateur()
+      
+      // si la configuration n'est pas une configuration de groupe
+      si pas GPWConfiguration.Groupe ALORS
+      	// suppression de l'utilisateur
+      	hlitrecherchepremier(GPWUtilisateur, "Login", GPWConfiguration.Configuration)
+      	si htrouve(GPWUtilisateur) ALORS
+      		si pas hsupprime(GPWUtilisateur) alors
+      			erreur(<§@3bd5849a2104e06c0008§> + GPWConfiguration.Groupe + ".")
+      			renvoyer faux
+      		fin
+      	FIN
+      	
+      // Sinon c'est un groupe
+      sinon
+      	// parcours des utilisateurs associés à la configuration
+      	nValCle est une chaine = hconstruitvalcle(GPWUtilisateurConfiguration, "Application_Configuration", ProjetInfo(), GPWConfiguration.Configuration)
+      	hlitrecherchepremier(GPWUtilisateurConfiguration, "Application_Configuration", nValCle)
+      	tantque htrouve(GPWUtilisateurConfiguration)
+      		// Suppression de l'utilisateur
+      		hlitrecherchepremier(GPWUtilisateur, "Login", GPWUtilisateurConfiguration.Login)
+      		si htrouve(GPWUtilisateur) ALORS
+      			si pas hsupprime(GPWUtilisateur) alors
+      				erreur(<§@3bd5849a2104e06c0008§> + GPWConfiguration.Groupe + ".")
+      				renvoyer faux
+      			fin
+      		FIN
+      		
+      		// Recherche de l'utilisateur suivant
+      		hlitrecherchepremier(GPWUtilisateurConfiguration, "Application_Configuration", nValCle)
+      	FIN
+      FIN
+      
+      // Ok
+      renvoyer vrai
+     type : 458752
+   -
+     name : CopierConfiguration
+     procedure_id : 1520671606829299489
+     type_code : 15
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CopierConfiguration (<sConfigurationACopier> est chaîne, <sConfigurationCible> est chaîne)
+      //
+      // Paramètres :
+      //	sConfigurationACopier (chaîne) : Configuration qu'il faut copier
+      //	sConfigurationCible (chaîne) : <indiquez ici le rôle de cConfigurationCible>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      Procédure CopierConfiguration(sConfigurationACopier est une chaine, sConfigurationCible est une chaine)
+      
+      // Aucune configuration sélectionnée ou même configuration
+      SI sConfigurationACopier = "" OU sConfigurationACopier = sConfigurationCible ALORS RETOUR
+      
+      // Suppression de la config en cours
+      HFiltre(GPWConfigurationElement, "Configuration", sConfigurationCible)
+      HLitPremier(GPWConfigurationElement, "Configuration")
+      TANTQUE PAS HEnDehors(GPWConfigurationElement)
+      	// Suppression de la configuration de l'élément
+      	SI PAS bSupprimeConfigurationElement(sConfigurationCible, GPWConfigurationElement.Element) ALORS RETOUR
+      FIN
+      
+      // Filtre sur la configuration à copier
+      HFiltre(GPWConfigurationElement, "Configuration", sConfigurationACopier)
+      POUR TOUT GPWConfigurationElement sur "Configuration"
+      	// Copie de la configuration de l'élément
+      	GPWConfigurationElement.Configuration = sConfigurationCible
+      	SI PAS HAjoute(GPWConfigurationElement) ALORS
+      		Erreur(<§@3bd5849a2104e06c0009§> + rc + herreurinfo())
+      		SORTIR
+      	FIN
+      FIN
+     type : 458752
+   -
+     name : VerifDissociationParent
+     procedure_id : 1520671606829365025
+     type_code : 15
+     code : |1-
+      // Vérifie si l'élément n'est pas déjà dans un groupe dont l'état est spécifié dans la base.
+      // Si c'est le cas, il faut dissocier le groupe
+      // Entrée:	sElement	Nom de l'élément
+      //			nEtat		Nouvel état de l'élément
+      //			nType		Type de l'élément
+      Procédure VerifDissociationParent(sConfigurationCourante est une chaine, sElement est une chaine, nEtat est un entier, nType est un entier)
+      
+      nEtat=nEtat
+      
+      // Ne fait rien si l'élément est un groupe
+      si nType = typGrp alors retour
+      
+      sParent est une chaine	// parent
+      
+      // Extraction des sous chaines
+      i est un entier = 1
+      sSousElement est une chaine = ExtraitChaîne(sElement, i, ".")
+       tantque sSousElement <> eot
+      	// Pour le premier élément
+      	si i = 1 alors
+      		sParent=sSousElement
+      	// Pour les parents
+      	sinon
+      		// Construction du nom du parent
+      		sParent += "." + sSousElement
+      		
+      		// Dissociation des fils
+      		DissociationFils(sConfigurationCourante, sParent, nType)
+      	FIN
+      
+      	// Au suivant
+      	i++
+      	sSousElement = ExtraitChaîne(sElement, i, ".")
+      FIN
+     type : 458752
+   -
+     name : VerifDissociationGroupe
+     procedure_id : 1520671606829430561
+     type_code : 15
+     code : |1-
+      // Vérifie si l'élément n'est pas déjà dans un groupe dont l'état est spécifié dans la base.
+      // Si c'est le cas, il faut dissocier le groupe
+      // Entrée:	sElement		Nom de l'élément
+      //			nEtat			Nouvel état de l'élément
+      //			sListeGroupe	Liste des groupes de l'élément
+      //			nType			Type de l'élément
+      Procédure VerifDissociationGroupe(sConfigurationCourante est une chaîne, sFenPageCourante est une chaine, sElement est une chaîne, nEtat est un entier, sListeGroupe est une chaîne, nType est un entier)
+      
+      sElement=sElement
+      nEtat=nEtat
+      
+      // Ne fait rien si l'élément est un groupe
+      si nType = typGrp alors retour
+      
+      // Si pas de groupe
+      si sListeGroupe = "" alors retour
+      
+      // Extraction des groupes
+      i est un entier = 1
+      sGroupe est une chaine = Extraitchaine(sListeGroupe, i, ",")
+      tantque sGroupe <> EOT
+      	// Dissociation des champs
+      	DissociationFils(sConfigurationCourante, sFenPageCourante + "." + sGroupe, typGrp)
+      	
+      	// Groupe suivant
+      	i++
+      	sGroupe = Extraitchaine(sListeGroupe, i, ",")
+      FIN
+     type : 458752
+   -
+     name : VerifDissociation
+     procedure_id : 1520671606829496097
+     type_code : 15
+     code : |1-
+      // Vérifie si l'élément n'est pas déjà dans un groupe dont l'état est spécifié dans la base.
+      // Si c'est le cas, il faut dissocier le groupe
+      // Entrée:	sElement		Nom de l'élément
+      //			nEtat			Nouvel état de l'élément
+      //			sListeGroupe	Liste des groupes de l'élément
+      //			nType			Type de l'élément
+      Procédure VerifDissociation(sConfigurationCourante est une chaine, sFenPageCourante est une chaine, sElement est une chaine, nEtat est un entier, sListeGroupe est une chaine, nType est un entier)
+      
+      // dissociation des éléments fils des parents
+      VerifDissociationParent(sConfigurationCourante, sElement, nEtat, nType)
+      
+      // dissociation des éléments des groupes
+      VerifDissociationGroupe(sConfigurationCourante, sFenPageCourante, sElement,nEtat,sListeGroupe,nType)
+     type : 458752
+   -
+     name : SupprimeFils
+     procedure_id : 1520671606829561633
+     type_code : 15
+     code : |1-
+      // Suppression de tous les fils de l'élément
+      // Entrée:	sParent		Nom du parent
+      //			nType		Type du parent
+      Procédure SupprimeFils(sConfigurationCourante est une chaine, sParent est une chaine, nType est un entier)
+      
+      // Premier champ de la fenêtre/page
+      sNomChamp est une chaîne = EnumèreSousElément(sParent, enumpremier)
+      TANTQUE sNomChamp <> ""
+      	// Nom complet de l'émément
+      	sElement est une chaine
+      	
+      	// Si le parent n'est pas un groupe
+      	si nType <> typGrp ALORS
+      		// Construit le nom complet du groupe
+      		sElement = sParent + "." + sNomChamp
+      	
+      	// Sinon
+      	sinon
+      		// Il faut supprimer le nom du groupe
+      		sElement = gauche(sParent, position(sParent, ".", 0,DepuisFin)) + sNomChamp
+      	FIN
+      	
+      	// Supression des la configuration de l'élément
+      	si pas bSupprimeConfigurationElement(sConfigurationCourante, sElement) alors retour
+      	
+      	// Champ suivant
+      	sNomChamp = EnumèreSousElément(sParent)
+      FIN
+     type : 458752
+   -
+     name : nRecupEtatChamp
+     procedure_id : 1520682597641174646
+     type_code : 15
+     code : |1-
+      // Retourne l'état d'un élément
+      // Entrée:	sElement=nom logique de l'élément
+      Procédure nRecupEtatChamp(sConfigurationCourante est une chaine, sElement est une chaine)
+      
+      // Recherche de l'élément dans le fichier des éléments référencés
+      HLitRecherchePremier(GPWElement, "Element", sElement)
+      si htrouve(GPWElement) alors
+      	// Valeur de la clé composée
+      	sValCleComp est une chaine = HConstruitValClé(GPWConfigurationElement, "Configuration_Element", sConfigurationCourante, GPWElement.Element)
+      	// Recherche de l'élément dans le fichier de configuration des éléments
+      	HLitRecherchePremier(GPWConfigurationElement, "Configuration_Element", sValCleComp)
+      	si htrouve(GPWConfigurationElement) alors
+      		// Retourne l'état actuel du champ
+      		renvoyer GPWConfigurationElement.Etat
+      	fin
+      fin
+      
+      // Le champ n'est pas référencé, il est donc actif par défaut
+      renvoyer gpwetatDéfaut
+     type : 458752
+   -
+     name : nRecupEtatParent
+     procedure_id : 1520683125923127178
+     type_code : 15
+     code : |1-
+      // Retourne l'état du parent d'un élément
+      // Entrée:	sElement	Nom de l'élément
+      Procédure nRecupEtatParent(sConfigurationCourante est une chaine, sElement est une chaine)
+      
+      sParent est une chaine	// Parent
+      bDebut est un booléen = Vrai
+      
+      // Extraction des sous chaines
+      sSousElement est une chaine
+      POUR TOUTE CHAINE sSousElement DE sElement SEPAREE PAR "."
+      	SI bDebut ALORS
+      		bDebut = Faux	
+      		sParent = sSousElement
+      	SINON
+      		// Construction du nom du parent
+      		sParent += "." + sSousElement
+      	
+      		// Recupération de l'état du parent
+      		nEtatParent est un entier = nRecupEtatChamp(sConfigurationCourante, sParent)
+      	
+      		// L'état du parent n'est pas actif
+      		SI nEtatParent <> gpwEtatDéfaut ALORS RENVOYER nEtatParent
+      	FIN
+      FIN
+      
+      // Etat par défaut
+      renvoyer gpwetatDéfaut
+     type : 458752
+   -
+     name : nRecupEtat
+     procedure_id : 1520683229003414921
+     type_code : 15
+     code : |1-
+      // Retourne l'état du champs dans la configuration courante
+      // Entrée:	sElement			Nom de l'élément
+      //			nType				Type de l'élément (-1 pour les menus)
+      //			sListeGroupe		Liste des groupes de l'élément
+      Procédure nRecupEtat(sConfigurationCourante est une chaine, sFenPageCourante est une chaine, sElement est une chaine, nType est un entier, sListeGroupe est une chaine)
+      
+      // Récupération de l'état du parent
+      nEtatParent est un entier = nRecupEtatParent(sConfigurationCourante, sElement)
+      
+      // Retourne l'état du premier parent s'il est différent de ACTIF
+      si nEtatParent <> gpwetatDéfaut alors renvoyer nEtatParent
+      
+      // Si l'élément n'est pas un groupe
+      si nType<>typGrp alors
+      	// Si pas de groupe
+      	si sListeGroupe = "" alors
+      		renvoyer nRecupEtatChamp(sConfigurationCourante, sElement)
+      	FIN
+      	
+      	// Etat par défaut
+      	nEtat est un entier = gpwetatDéfaut
+      
+      	// Extraction des groupes pour pendre l'état le plus restrictif
+      	sGroupe est une chaine
+      	POUR TOUTE CHAINE sGroupe de sListeGroupe SEPAREE PAR ","
+      		// Récupération de l'état du groupe
+      		nEtatGroupe est un entier = nRecupEtatChamp(sConfigurationCourante, sFenPageCourante + "." + sGroupe)
+      		// On garde l'état le plus restrictif
+      		si nEtatGroupe > nEtat alors nEtat = nEtatGroupe
+      	FIN
+      
+      	// Retourne l'état du groupe
+      	renvoyer nEtat
+      FIN
+      
+      // Retourne l'état du champ
+      renvoyer nRecupEtatChamp(sConfigurationCourante, sElement)
+     type : 458752
+   -
+     name : sRecupNomAffiche
+     procedure_id : 1522902700617423568
+     type_code : 15
+     code : |1-
+      // Calcul de la chaine à afficher dans la table
+      // Entrée:	sElement	Nom de l'élément
+      //			nType		Type de l'élément (-1 pour les menus)
+      //			sLibelle	Libellé de l'option
+      //			nNiveau		Niveau d'indentation de l'élément
+      Procédure sRecupNomAffiche(sElement est un chaine, nType est un entier, sLibelle est une chaine, nNiveau est un entier = 0)
+      
+      sElementAffiche est une chaine
+      sElement=sElement
+      
+      // Ajout des indentations
+      sElementAffiche = Répète("    ", nNiveau - 1)
+      
+      // Si c'est une option de menu
+      si nType = typOptionMenu alors
+      	// On ne met que le libellé
+      	sElementAffiche += sLibelle
+      
+      // Pour les autres types
+      sinon
+      	// Affiche le libellé
+      	sElementAffiche = sLibelle
+      FIN
+      
+      renvoyer sElementAffiche
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3bd5849a2104e06c
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Impossible d'ajouter l'élément dans le fichier des éléments.
+     index : 1
+   -
+     text :
+      fr-FR : Impossible de modifier l'élément dans le fichier de configuration des éléments.
+     index : 2
+   -
+     text :
+      fr-FR : Impossible d'ajouter l'élément dans le fichier de configuration des éléments.
+     index : 3
+   -
+     text :
+      fr-FR : "Impossible de supprimer la configuration de l'utlisateur "
+     index : 4
+   -
+     text :
+      fr-FR : "Impossible de supprimer l'élément "
+     index : 5
+   -
+     text :
+      fr-FR : " du fichier de configuration des élements"
+     index : 6
+   -
+     text :
+      fr-FR : " du fichier des éléments."
+     index : 7
+   -
+     text :
+      fr-FR : "Impossible de supprimer l'utilisateur "
+     index : 8
+   -
+     text :
+      fr-FR : Problème lors de la copie de la configuration.
+     index : 9
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

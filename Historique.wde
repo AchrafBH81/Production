@@ -1,0 +1,126 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Historique
+ major_version : 29
+ minor_version : 0
+ type : 3
+ description : ""
+ subtype : 0
+report :
+ identifier : 0x4187a26a49982ae1
+ internal_properties : CQAAAAkAAADIdEs3oeZq35W71l+Pi3FWlZWzswU+EmhcgvmFZOtaUSbfmhYm6fIICVt9yGBJLa2LrdvolRijwAus7Ye98mDPe7TH/GQrFdJ6qM7yGg1Y0OQUST7VN3JhTVNx6CB4b90eKM6GT3ROIR6OokmzAiyvW+qLGWVUY96LIpLjNLgTPVV1pZ9iAcm5lPMHZb/tM8AnxTxKFxhQbf/ePjLnnw/wmjHJPZ2/7qJuI+KY++/oqoJRtzw0Srz14UxXVDaSaG3vekkoAgwbpjEznnsDTUc1M3U7v2Oamt7z/8BS4z/og8Ri/BRAcayzn9de2DIN3kqX61cmQGcC2p7AyitgWSPKWt59JkoXK4zABgmPkdRBw9tgFIW5EYQgj8STxcSteEv3pfCXmu7VUustXg5n0Xw8a+5stukpYeeleOuHKB1nFw43eCE3s1aRgsLM8oZgTGBoEkDEhKyB3wVBE60jE6n9+d88x2eptljIZXsKTiaOWI6HV9hmgYE3cHXdc3uAjdK6bFekiDpOi2WlQ0UOb1xWGsjmVZ8pKXVeSLJJVs07ZdqJd9FNa9g4pMyX/YoeIAOauLhCx8aBnS3dyT+LjYsJJ429Fn+EH4k4u5ljv8FPzzTg4rOJRMFW+SmqVy2jG5BpxO8B6Sc5vxjEhhYqTe0YS4DbhYkfciqcEzKhu6jVlH/36DXSuzzamDmUtDKQYybCLkKSvJs9m62GonW2TQJl4dbDAkjhTNj7JWAFrZb5/zFW3gYrsiKfOENGNibamLVLr73MgygUf3fZegaJ/5UzkmdcZN+GALubS0gXj91Qt91Z
+ languages :
+  - fr-FR
+ blocks :
+  -
+    name : CORPS
+    identifier : 0x4187a26a30662aeb
+    internal_properties : CQAAAAkAAAD50tKNv74C14MMUaoORlXCntVjPHlRtb/3SUkGlCQGOA0iNl4C2P0OklBuQxqYZNP5ObgovkhBw1RJ4mowNHaLaRsmbFm2DENPmepLZjA3BlKlumtsCLDeAftJP30i5HFhQcIQlby5WUwJ4+VCPiV+JHp6iltsEyBru/nA4sl6AQKXQwqIoCHsptSF1biY/RgUM3e/sxmAKlqx5DtzbWBbMzlto2bxpRf7t1e2WsFyvLggrbWjZ3QB8eiQWq3ESO3eZg==
+    properties :
+     width : 195.9
+     height : 1.265
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1-
+         
+        type : 327692
+      -
+        code : |1-
+         iHautBasPageImbriqué(vrai)
+         hexecuterequete(RequeteListeHistodetail,hRequêteDéfaut,lIdentifiant,1)
+         si hnbenr(RequeteListeHistoDetail) <> 0 alors
+         	iimprimeetat(ListeUniteClientHisto)
+         	iterminepage()
+         fin
+         
+         hexecuterequete(RequeteListeHistodetail,hRequêteDéfaut,lIdentifiant,2)
+         si hnbenr(RequeteListeHistoDetail) <> 0 alors
+         	iimprimeetat(ListeVerreUniteClientHisto)
+         	iterminepage()
+         fin
+         
+         hexecuterequete(RequeteListeHistodetail,hRequêteDéfaut,lIdentifiant,3)
+         si hnbenr(RequeteListeHistoDetail) <> 0 alors
+         	iimprimeetat(ListeCarrelageClientHisto)
+         	iterminepage()
+         fin
+         hexecuterequete(RequeteListeHistodetail,hRequêteDéfaut,lIdentifiant,4)
+         si hnbenr(RequeteListeHistoDetail) <> 0 alors
+         	iimprimeetat(ListeThermosPrixClientHisto)
+         	iterminepage()
+         fin
+         
+         hexecuterequete(RequeteListeHistodetail,hRequêteDéfaut,lIdentifiant,5)
+         si hnbenr(RequeteListeHistoDetail) <> 0 alors
+         	iimprimeetat(ListePeintureClientHisto)
+         	iterminepage()
+         fin
+         
+         hexecuterequete(RequeteListeHistodetail,hRequêteDéfaut,lIdentifiant,6)
+         
+         si hnbenr(RequeteListeHistoDetail) <> 0 alors
+         	iimprimeetat(ListeFormeClientHisto,client.numero)
+         	iterminepage()
+         fin
+         
+         hexecuterequete(RequeteListeHistodetail,hRequêteDéfaut,lIdentifiant,7)
+         si hnbenr(RequeteListeHistoDetail) <> 0 alors
+         	iimprimeetat(ListeExtraPrixClientHisto,client.numero)
+         	iterminepage()
+         fin
+        type : 327693
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BAS_DE_PAGE
+    identifier : 0x41ba246e006deb0d
+    internal_properties : CQAAAAkAAAAoRLJ/M7f1O3A5zMHsEsIdbk/PV3JwJFZWEWjm2M5Ryaao3zlAivuwYLbT4HgxZAqyqoUyrcTCqrzrxcu5yY9kNDxD2U2W8jw+37sfxnuXJDoQslU0/7sfrXWBLy/SoS9npKXZAUJe0hxhMtQht3/+j4U7Ic6uPQW7R1rcVEsqb8Ng0u5jDZr6UjPySBMMejxfA3oeeh40MKoWvhUcttvoFttAEsmGQ/94tIslADVLJdzS45TzsU8g/UqGTExwWnOzxDxOMv9d8edB
+    controls :
+     -
+       name : PREDEFINI1
+       identifier : 0x41ba24735df80091
+       internal_properties : CQAAAAkAAABvgvqwR0G2Njdp0eGAx4RWODIzaq6yJasMgGiIzWHaQWyelNR2JP8DPeqZ/aHh40Gz/mcrOq+B8u7VjAE6paWeleHZxPKQ3H46oCDkV+Xt8t0EUnnf7v+CjJ3v7tvAUW6v9R9Ac/wbe0mrB7z8eEoa8xJbZx7Lqr7/cpEc+Ejm8SqOR1r6Zl2qFbn1HlnKeNHGmeBf1TGNhrB55Ud3kuuJuSsymYRu5nt1ty3LDOJwj+WlceElXcBLQilvZD9JS5Kusx+1BTqlvQYOaf7PGGhJWZlATc3DjTFtGQS/8Pt2WmQ5lpSlpmj+OnL4aNq3l1reKjsHbh82afcNG0DImCZMql0WNWMH7g3OyxNtXZ/fD8f0osx8icpXQgp6uHZytfjAveGuTltyP48NiiIzAMOOi69LN5V5T+EQV5HRa/r2xdc098VrHVKIRjgkfeuBxwzTLSn/wlY6fwMy0io/x7JLHr3vSTHrMOQYxYOstYmDWrKPl+vRZTmEmL8BW8sMIDe7OtIlvc5onGrvu+E086GqRcOEwKKCBsc=
+       properties :
+        x : 145.84
+        y : 3.704
+        width : 46.247
+        height : 6.086
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+    properties :
+     y : 1.265
+     width : 195.9
+     height : 10.
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+ controls : []
+ code_elements :
+  type_code : 13
+  p_codes :
+   -
+     code : |1+
+      procedure historique(lidentifiant)
+      
+      
+     type : 327680
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  integrate_compiled_code : true
+resources :
+ string_res :
+  identifier : 0x4187a26a78ff2ae1
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=

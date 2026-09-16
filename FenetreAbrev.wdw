@@ -1,0 +1,1808 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FenetreAbrev
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FenetreAbrev
+ identifier : 0x419ff98d1d94e3c0
+ internal_properties : CQAAAAkAAACmR4RZNojx1xXVKTYToxSRphJctm0++8tHy68sm5bmNtYm/Zxnc3RUuKgaby88LXSU2d6Ta3petZnvW07/fLHnsXmmByu1uDiyo/Z3ykU9RqtffmAx/mdTQ8ZWrvWRHu6y9ssxQlDB//xOCMsstc33Yu/uE38AIom5rKvJxmQYgGeNFFidgemiGxCmhgGbh0Uwk8+aJLFC6ReR75BiVrS8+KQ2qOqHzbJZLfhLjmGxQ5Y6sY3tY1uhmiNAvwzgW151SmMmeFV2VTjOgrb5LUct+1fZ/MmdTsf1L4VJlN7VJFyeq7q5dm2qUh0Gjj6JpIFUGw6t36ot3XAwChJTHQ6cRdGW2pEn2iCYR3GJglOpdqIK8i3BKTwB/Fh6jiTXrTG31ur8vbuux7cZBAd9edqY4l91Bv8vm3Kk0SgZLhCa+VG731ByYp2ajQcPenNpe0Gvz+ae0xqPT4sP82pWz2q8xaN3bY6ltclxwbM3Zyd+oN4tQdQy4KDeVyXy0Yfd3ljXAplOBdjCNvkukNGQ2gVu1BkS0wP+7d3eU/DZMSDfJL1fjGJBZT2trq/iU64LONwzICdi4ios0OCvKuSHU3qykP5jqmDfo/Uw0CeqJOuFRQv/Tk8+hnbCTK23bpc3HCXLwYWVVl2TR8KshAZWcHoOyvx1o8DYLZ8Dgvc6aiS4yBLS3fqael/fuIN3X/g2JMaQiPZPG5OQbSWh6/I72G3Zt7dN/prjmve4tOeBgk6xI/5SWncZwY6vpDhy18QfhYTCZNRmcJcdSoAUX8lUfNBlFehtEBTWdNOg88J8IxoyCgLuHXdIF9GgJo0VDsHb6aNhxj1RhkfvMzZ8IFgo+qi2VpIb9JGiRi3P4L/dWTB+sK4yUVCPruGvsHNbx7p/UNJ3Pd1+Q9ecP9j6sP1QCX5SMqZZw4c7C7adjF4j+KaLgx5ITDb/F2+7Vp0TNyfVaSSGSjGjSmmfuDwzSNrbO2/PlnXO+ZrTAOZZTKC0cfHY+ijwHXqvP411nH6ocOKruION1S8BTE+fHO5gpv5UUQcs6eeVIxSgOrThqJRRqQbjfxdsgxXjB/ltNIEJ2sNdT2zkZ3yI1bSYp83ARXPAiMXn4bBbpexw+xYAT4c=
+ properties :
+  width : 794
+  height : 723
+  widthClient : 792
+  heightClient : 691
+ controls :
+  -
+    name : Bouton1
+    identifier : 0x41a007223625f0ec
+    internal_properties : CQAAAAkAAAChYKXHhDJqgjADT6f01h9xTK1rRejapcH+oaJYFAwl7TWZpWREXeb9Q+ytTU5m+5dZhnLQ15obeUXERe/M6/ot9dmcvbdg6W/KW8Gvj5C7yS+K/3tBqxiwKt/Y8fvXyR/8Uc+3ermhUZglSUbVIBA5I/IClOOvUcmO+Z753Z13iCkDp2YbIN0qMAsyHLgX1IF/L5PvaDlxNn7tyAyHngSklchcOnPhRZeGFayWlMknXwzHCKKtdEEZupLefxJhcQiec+7aXNwKIopu2ONkizT3JGTaTMNY31g3t9pEZLz1IOhb5Dlx5sC47uQMnY2D3onIN/SQX9Pd3PC6mDJFEBd9BCL/7Ta8c7WZVTSkYmyOPc6vV5DJrZMovaP4PwyTmHdAxf7higS857PRFY+3lT+Rjq2JR2hkwWzUcpbkKnTWuUbdM+CGbOUefTS3fhtHHYsDo0sZRNIOxCxgIZBFOwgz8gEPhRtN8pvNjk6hZJ5Q7Q0jlGwYdORfVQ/0eukAkEIFcBnV8uchOyJD9W7nOdSDOSpR4vWnL2BDTUCiHX8yinpOtQh2PQGgYANwTNyxwDmtTqC8AN4kKtjVWL7I3kJVgug1XCu470Rug6t0xO66ZVuOiFgsf9tAJFN1j8leW1fgkHacq++71XwZft7WcrR4GSXTOp3WXKS4cib8b2cNVzJ8vqVa9psJpZSCfeDg1hCuS7WrFhq+5seDwjbfiqa2dS+S8JgIkKE=
+    properties :
+     x : 6
+     y : 20
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé1
+    identifier : 0x41a0092c0da2e7ac
+    internal_properties : CQAAAAkAAAA8CKnGISN+nWLyS+vDMPWg8MFFaTsLlswZY2Wez4Dfa2Xz9gEK9NmMI8epyWAtHUjCUyWgRIGWLbW3uWjgxqPqNQSwGCB/CBdob4HVBW1a1ZXsNhDk4kOWaniV5IHS/Q+h09hbX6OCQ44gvsYqXTNlnp8SWOlnBSj5njd4DR/TgJfbSpeaSZ02KnxDWgiXymbLawyVlt4KXeIE/eZUUwjj1pwCqv5x9N8BxKv3LYzTmyvzy9nhJbaIX32DO70gA46lLS+waVBSxDiA0Eh8Gb2m50icVNnmi/dNXnPzR4OoHrmuJ8uORCqV8ck4xfZoU2OqsYGWbZzEkV1fFjqXlaxrXuwRm8/irpB1nmG56vzfs7wauIOzyA==
+    properties :
+     x : 61
+     y : 20
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton2
+    identifier : 0x41a00a2e5d73d679
+    internal_properties : CQAAAAkAAACHsR9H1tRynPuMvlZ9fZiVuayqB8Wx2xXmvw2X2aDlibWwVnOThKxl+C+PXxizg59OjqTf3tM738kROKUc6J/bspSW5KMvdWJM65RsaQtz8lS0VkhNDrtdiZvbeiGq5jXZT7bNJ3/Y3mapMzHE3aFECpueNPHd08FOSlRnV5vRNhqQruSxJoIfHuwrS6bngNRkkJPI+HocdTx5W3hc505oyDsEYYJypyU8IKozUeL7z8PCc4aKr+B9a/ugjten3qEn7MSepfI5b1sKWno4FzAU6v3QCQ7m1SOf7AUKQyyg35CbbKRJHAn8icrkkTVC40dprIhVnQhmdvtwTAmFeAWNuk9nBACf/CXoJbtovpnjrj4ou72XhCDpZIfrWbTKjkG3cdMRHmlyfWhbgsGeQC2OjKKMww3B5tHFKSpTVhyOSLUldrtx+uhZHDXr00P+NmQsVecMflF6JekJE65+//yWk1CKULgg/qRwBGz+mrED3BEiZ/Rzz0rXw5i741SN/mYqJFGflqFbA1F6197kiGsTJsWXWkMhokt5XleDrqnWLRJ0j8EfzFbk6sJfAlcuxXtK336CKNYaVyS2W9ez+e/e8XVZgcNyFAob3ltwojGcp5+M6IRvDUZjT8Is23pzgj/QpVMK4rN0W8s/e9wc3QfcQo0q94lsA5N4i9xJ9pWS6qCWmsTxuuM/016gtPZ7sJ8P0ohMvZCiH386W0A=
+    properties :
+     x : 6
+     y : 42
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé2
+    identifier : 0x41a00a2e1d70d683
+    internal_properties : CQAAAAkAAAB+7LDQl8kariuRckDYQ4dLs4LhXLpLVOejMms6vooGpJmMM1WChBnyjr8+n6F8SfxvBEP/9Onx47dKo3cthCBWsBz5niZ+NEAj2pDEAH9EiC6fGYJPHE8j5JKM/pBcFVQFSbTny7oGbd9v99BnBQt1YeT2Vb7cRyxU7d3pl2f3GVa51WdkheG54BSaz4ROagAMHq/WtLSR4/rFCTcPVo8zi8TTRtqu829QzUJHL17ll4llUj/hIVB1fzzdtrzc64VbMTFAgu30NVqZmWBOZ2tynv4AUwBre3eTr2pFLC9M1lpYSHqKveA4ZqkZF85bX3V5gmI6YNUxO3F8yTZQGrvbsQB19VALRFbfT5ox
+    properties :
+     x : 61
+     y : 42
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton3
+    identifier : 0x41a00a316073e4de
+    internal_properties : CQAAAAkAAAAUcABYT0iRYfHI9qNiFLKYZgtF1EPDloz4Gpe5DlI6j4ztGuNyw2HrJ99QE8VGyxH32VPx1R8xqC6Lg35vfm7E9OG9T+FzHlwsh1vQZJJtphNYYNJnPqA7rlOHPRSfsduA/eSpAS1H7DzFTH3qlMxOWXo4z0f6P0zIDmZufjkySITM4dSSiRTsmg61PSqc/MrKgagEsE16BT//PYgDMMs6QPUZqQ8XM+ps+TEbRhO9kjaVdr0g9s/fA4DUICneG3pFHLURbp+eik48DkGT2yDxDdj65uj0jxL4+28FdYgnrh8qki+ivQcoAu65p0mk88a0u0tQ0eNHqlTRl3E9pXg43DLLTURTyDQKPQ8gAKJ4Vhri8EogiDM//R9leJ/Kz+nDZ4iIlx8TQXlVniY3/qjsBo4BHMzXh4FY9RiAfaBffmd13RhinpVjJ5kBogoyOcruKe7PxUW5Q7ZnM4EfxWOimxancYeKk5YjpvC7l5tYzk8GiP1E9/EdTjzRkmFbaabe/pqEqc+gVYIqLY11ArQDwoPgxfrbS7P0YGe0nfHPhSY21lZ8nHkYC9rN1dpQ7vfa0cEtRYCLtwn6XQQ4/zA8ozGWmPrKpdzKhP+593ODK6dyxQ22b5HdKKZghIdjnGfnXiu5XruFy9cgr3N3YXnAxq/+05bC74axD3o9B7jBIkVIW1MDVszDKKE8yRVbdBEmj+KR9UDq1ss2Z2WN
+    properties :
+     x : 6
+     y : 64
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé3
+    identifier : 0x41a00a31265be4e8
+    internal_properties : CQAAAAkAAAC9+2eRdrXg0lXEkiWNoVZikTA2z4/a3IEh/teC4D/oj6VlVHR75yP6oqVbDbOiL7s1mhhZJX0lCCzFlU9IbjtzW2VcfDXMhFKZz7znZo0L/bsdvW0J4FC8ysBLBaTU93YEv+6pH8nHrvdL0yiXdYEbrY6pwagvPMEO/1iymRRLURRmK8RGkzBJnbpyQnMUY87eNsoNhdzqScnTEXqAYMhVsZxao6UWrBV/I05MPkTIZcsN4WT2RUOJtqQPFc/eLO/ZQbgBz8clU0tDzfVXBlVtB1BLXPUFhaCtgA2n/PpORb+SmLIB36t0ZWGr/bdtK/5Is4NqJDfw7f2G2bYmdJ2jY8IvMF5ygQoCHMjSFg==
+    properties :
+     x : 61
+     y : 64
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton4
+    identifier : 0x41a00a605c9b9a25
+    internal_properties : CQAAAAkAAACrmtf7MAvuWcRnH/k23mOTOyacXOdjIu/NACdrEZ6E0K8EQRkdk3xZ9W7O26vUlYNuZsVC0wndFmI7J5QBOgr9LLm9lGFWqR6zGCBwhei/w97yFQvmr2FhaU0+V3Ztp+PT+a/onroc/oP4/+tN6eIgqKRUxgmPcUU+e59jxj+HtoNtmoSL75IFDgWuWtUN8u/TnoROr57QXrAL2B0S4le6f7woETAxaV+wPj1RY+MHz4gHZA0i+z/fMgmMbRrL25ThqUyB7HFqYBKm4wqXP2l6+4QCLRJzTOOIDauWtU8yMCH0MlZUZ6mbPRKGH4gdELHk2a/YF/YfXn0lty/WXmB07L1BNESKJdNoEGBHxdnZ4dTIIIsh4fnkl6at5nSXsXrfn+4bwH6nBH1sDnxE57ivPCi9zVkOWYaczKAKBP1tvYkbmY+bG3vm6R6VcHEdHWlQ/xYSWCABnuCEpyP0eGllYXgXLhzdpzv1BcBZerIU35dScohjij8W6stJOPLeNzHm2rwrOBR6bEbDtQvwH/x2Cr92QpUaGczwMQfyGmxBxhiEWtXRtSN3e58Zfy8J3LC8z5n4yCG78rFvqf7pYD6TpXf+oZktdTHcyx+n4KQViqVMPSi9pCNSwl/T0UYc/yfzx4DEkigT3XYu7b6oohqPP3UogmieiI5ApP0r6ISmvqD40xHpmWvPN1bcrBuHiO9TPKXkYgohGMRiH2kglw==
+    properties :
+     x : 6
+     y : 86
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé4
+    identifier : 0x41a00a6019c69a2f
+    internal_properties : CQAAAAkAAADVJIzfmorFwSkb0/iofTUDotqnSnD9I01yzPSzin6wv3Xa8nUqGdrPYh5eUjkyn8g+GaEsEspOFCloBLhfg7i8EhcYda1cmZgIWdG0NXsXpXnKi5FThObzNg4kN/6mg7w5DYJTorc4HEftdEUI7DfBqY0LjBMMT8wyOVBm2mKBAVcwExqqc8aVg3Mba2SxCFySz6kdscutoyrhSexR6MKr1t7WIBOvVeIPesO2hWL/cxSvf4Omr/GS7nj2nCftK1HgbLskIjsmMCD8fJi7/Ko57sAfbwSWPAo8OzZ+XuGArsH6zaYsKx+nwRjRgjX3dD76j+qDZ2yK49mtHFzaVgFMa1o0mX/adb+uT6fnJkE=
+    properties :
+     x : 61
+     y : 86
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton6
+    identifier : 0x41a00b051c152135
+    internal_properties : CQAAAAkAAAAmWa7jlpbJbYtoaxPJK7GEOAlicf2E3E9fgN7048zOcnGMaaskUklBW7mlM4p59OjNQKtMqF9g/L9MNZZnYYPnvJ9/0GXG+GqXPSTJS7B7Jpb0S8B3xqaaMujRE4LkuyDenTF3/qO/OVxxYj6Xu2yq0UOPf0cu5Lyeb+HXYKJiQs6wuwShx+hD8u6nIO1zU21o6EPg4vmUrgOSy6TvDye9mTonwA5aQio9gGgvOu0EgIUW3g+Bu9EiU7fzPGQyuHkqJI7YXT+Gvxz28ltR9GAdCBgoIWT4bnJvGLNNlZB0vgH5ztmNjjnC/Bv8ECyZ71NYKqaCxTzAphs2QGOUplhmWnGI8MJOIWEQtETYozN2381dNq+mjcpgz/2CD+tBswUtzCeMdRgmT1GdV9pFq3YVIdy16jTXFKu5qhEQMWLBbGmHUqVpzFzi0aoolcyAAbFqqjWbjogP5tE1gEHrnCGJ0erxUHw3a4WfXgCdSOIJWxPJTXHxVf0Q7usUiWA9LYdrcCc1OdoJ05Ifz5t8SPqXW+D6/Fe1XNIC8hMsiAiu5bx8u3C7APwGYLSOLw2syZEV/ekQjg8sN2S3tyCNINN+10z/LCJ5ukJmtgN1ZulFyfxfYv248WFSja9LdHe5a6DeQqXbF+wtcYwcMSt0/PdWxZbbX73/Hg5EU0Os6ffXu57IrG1KFgb0WRDLIIj3k/WmolUJRdT0l1dTJbyzcdvswDZNPCu+c8eROIumaY1iHvGC1bWB
+    properties :
+     x : 6
+     y : 108
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé6
+    identifier : 0x41a00b055861213f
+    internal_properties : CQAAAAkAAAClEdA19YT0kzsCwwaJSSsLUXMnaIAy27xB54CsvbEEi11p6n375mtXWun/SIivEX71nVYQZTOTr2ogo9aFrbSnjCeiU1eBXL0Bp0ucmOaaDolXTJdL+QdnU7llzcSxSsre44keprygpWdGmMR3nBjVBSkIibk7Gk4ALBv1AJc4xkmLubscNW+AaidK+hWNe+wWcnijYrAvb3D8Wa/mcqmh1De7Rl7cbzoT0zkx9rAciSjgZM0V7HmgGGv+jQrtIlfmoz7qRZaiagyRHs12orvqhY6pEIKSoL6StozBKHGX2JNgHVBA0wyfFGyBrQqJxCVGRKHuavvsS54WqRLJtwACjb3fZ8ZtYadVwxugJS8DfLOCEWijbqlnDQ==
+    properties :
+     x : 61
+     y : 108
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton7
+    identifier : 0x41a00c060f720b3c
+    internal_properties : CQAAAAkAAAAFlWvAMQDs0ygaczB7z7+40BMUn5vbrhnPT/vYfohpRMTlkTNQoJgLHjrOa38sB4Ly7Yxyisjr2S+vDDyBGV1O1ExpIpBIFMncjElnd+7E024zcMTGYm3WUFNTkaqpzpGbgvAi0HJGteFfxDZ2F51lILaKh+t6Ve+A1Cd/DmP4z25v/gNmcesAZsEFkkl0G6EmaVp7Kq9ZyncA93T1eBDdPn8O4Aai9ltYHW8XPWr5TmtFWAoPJExyu/HN8U+Kljkc4rzAi73UnHbFi+gS8R71XrI/28mxbmZMK6+IzvDAkxDOEl4Jb6tOD3vtWUA0y5NbBQKArLklf9Om0bp+d7dJ03xe6f0YCtIFLeSa4LHzizw3ZHxk8BYz95/1RKMPkFODJO2TsuIqWa0T5bXQR+5ly7MYE8eOgaJM62RRlgGUC8pASdGZbfwz2VFSnWs4qxeUwCPmGSiMqjWM7waukF+JajV7o9s4V5v1qckEZH4fqJXzbQRPN4QWX46dxKVvyRXrmpSVW4aiGEWFh87wPIr17QA76QChxehRIbk6jb9oRT8Y9oFlJRy1MMxR7l7ofnXUh6jPxgtQP0hVPSvDppccvujy5M6xIsybSMPwjhUWMvHJ0JWI2t/K/22B94aSg7hC0zkEpL8Nu+o0NcnYZONPB38OFwjnaTOhAEJAq/OXypyfhj+CGUYBz7BDAbg/vCIMd3Ih8tI4F2TLfjpLN1Ep9599EPegL5Mf8R5ilg==
+    properties :
+     x : 6
+     y : 130
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé7
+    identifier : 0x41a00c0640b80b46
+    internal_properties : CQAAAAkAAABTy26Ty4qG6bGoMRyXj7Gd1+W1nlaANRovHZaaW1dyhRuLSFOZbC0VQBzUOFYmTTNyay10zC6KANR00/L9sVxrHHeeB48NpBXpg9uAkPIqakk3KHMrndffW+X1OXRFCu5W+40aXjiQtTfKKLiHiHBxTWlUnSl/2t4AwMOpyFsw0pGD5a9kqWewahtaNgfruSbURLJlrOZRVSZmM5H4YJ97MskdqOjKOQjRNRsTmH7S256ippc/OsNe3u3g/8Tj+AEkRViUn/TUMDJz8CdIcGmMKygzijRYQtTokFYjiq/F0gM/oeNaSaMgDI9W3f7nu5s8knf4fGl+nQy0twyDrUrI8xu9GRDb0xnbWaHaHyUVEil4H1q9FFORew==
+    properties :
+     x : 61
+     y : 130
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton8
+    identifier : 0x41a011b450903ce1
+    internal_properties : CQAAAAkAAACsgpu2TJFB4faFmSOLzcRqCkJsNg0GzcdY//rqJgAEdqklnl+Gx+gmD1Sc671EYqAdGINeoiA0KbPINx1NY+jzeC4dSdUcWKseXIO459uYRUMm2nsVPwLLuyVt+mxavL7q7vHuOD5Bc/XfRGSCtSmp+9ZQjU4glwxOxw4knYezwi331cp7xdJVk2suj+deBy1lWgAmRgu8qJPwdgQEe0jADrc9SGbvWL8SnASI/e7HZg/DmRe7xOSjyl8fej+ZtmSQ7ss9StARyH3obovMovAsLRunTvAwQJ3wSkjv0Kl1Yp987mZXbz1Mjpavg55UOfNjKGzmBOHs9Z5uqro4xett49I4zpK41k6sJbAQCki7pPmTCS6lewxCE7kIjbQGeHXuJeeZ0oF4yi1cztvIZDLhejZ7fYxeWlU9kOgGAcmPA0O14N/BxnqxowKjktNatnCXg3n0X5XN6wYUn7nATle9l2QAglYDe9pkVSNR2A8/Obsln8SNHGhebZsFUl3rx5FS1Rxn4ccC8Uca+dqh2lD7oJu1kZAecQ1gb7jInyaNi5UbpUAIHWfR4kPgUyn925DAUG1+y2S8UVdjh9z6Hpj6KO4dtxKRziYXPMR/HfeZxTseqlOFf770RPHq7Pyh74VLbnNn5E2BjQfnZ8xdbl4ytK4OxDIynfeBLaZ6hpqNCZJnSh/Qoc5kmDeeULLaYcV1W6lO
+    properties :
+     x : 6
+     y : 152
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé8
+    identifier : 0x41a011b513213fa8
+    internal_properties : CQAAAAkAAABb0yXF+6m1sFRWkiriHyk1deR7ZEPyXjxqhRMIrNy6EUGcaweu7T/qCg1OISYiJIcqFFpxyFAX2iE0JjzQxpYhoB7rirhEN9Ffi7hIn1+kq0lyKSPKfhzGYNZlwH+z8y9B7JTXYJ55m1iHMCjBNs7VAZdDs3ohn7h7llGUfRYDEEiY0yCkwldv2dWo7cFR7nLHemGcPvPfAdzfEiQgqPiJdUNQiUiBp2A3hibcynzL60E+s8ibDTUKlhR1HGLV//l7yV3RC6Fg5ng42z7QWMoq7wy4I4blboQjRwsK1TE2m9N338k/yAmDJxLCkAAfKwGl7ty2BCwgDIhDbJVR6QSQhAen1tdVni/ktH8U
+    properties :
+     x : 61
+     y : 152
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton9
+    identifier : 0x41a011b915ea4e72
+    internal_properties : CQAAAAkAAABHhq0G0MRmygIX/gqGsbIuTzPA1vdfCS0vxbp1wyJx3f56DVUV6gHAyt8T2GpHic+owtPZwKlXeE3zwikszdvoME3hUV52av0SVZBHIMVg+Xrahnaz7EGhrcYZhn65zW0Rj1tX0mFev3S/EcfL4SvgP27UHTulKzXlRiq6KdCkMFy+jzJgXW0nppHQ9ucPOvXEqNQf7Zp01k89ovzFAoMipI0p4/fpzsbznXpztC/LEJEF+kvx86QCSbrXjuX7mk7Q1hjxhw6dIJEcJGSC5Ca++rZfolGXA9JDQ5kcw9D8HSUVo1wkiugQoaO6jaX4J1e86Y+826uykUUqPoKpfA/Dz3t/hCQT4ZNQWz3GMLDXxwz+40OMoALTyUlm8ETgIjKfxtd8BwDahR2GwnwsmiK4Q8eL8KtbipifaIY9UxUzdGbYCqIEf1B0jywX1zUmRAVwTGtfHPwt8lZyM7iYUKOiIH0isZMqwek+ZfvMrP3LOuq0iXcKkw4Fj+sngVGBM4ql+GzEkiIsZFFqHw0v3rL6TwJ3gh0lp256W8xtrcLP0mI4EVNX4vXI8m3gmok3vWGBKZ89ZL/wjGnrZXug1li9aX9tBot8ppttaKA0C8vpDDSP/lIUhKxT+yb0cJdr6iwHaiJB4lpYy7y82IiqZ+eDrNeHjbEfe8y4Q5vLz7XKdGuP4YfrFrBrAnqT3r9en9Ba3RUPhvRIzQ==
+    properties :
+     x : 6
+     y : 174
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé9
+    identifier : 0x41a011b95e834e7c
+    internal_properties : CQAAAAkAAADplH83Gq0pr9rdSUbXUK1UjR2qqt8ItR3x5F9dRXVBIrTilZHFi+UlGBFyrkjZdNAmBhE70psyO3h6+tRXoCQAXl26xaHUOApQA+MhY84OR+vdq/4lrcylfZQ9QkzAVvJCvPGR+YjL7HyaZE9JhlTnFs2BpPlFe2tV9/A7pNA4ZKTwbcZFOsSk78lGdXb4PGV8PfkqbjSD0NDqc3xmu5xG5DAif4YSKSedNUc4PKVnmkrxnz45/v/39oX0sCzUOwyIqGE1d4pOl5ox2iD6hSRik1D/nK1p+vdPvrYCAIaAB8eynTK2ydlTIFW9AVe2aF9Pomzxhbvcgds9c8V948lPebLpSOztP8DIGB+/dy+bvCDqUHRZFgAlM+UPcuY=
+    properties :
+     x : 61
+     y : 174
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton10
+    identifier : 0x41a011bc72565ac4
+    internal_properties : CQAAAAkAAAAd+GfAinKAbKSBgJzwOzi4zb1y0AkFo0/JByR3BeT3n7xEz08HGCuyFEll00T5BRk2PPO55iv5SCEvxJ8yE1smnn/NNXyINKVmmR7JarcgP9isPvY5LuNVQVqTdHxPqZ9Docv/MLMAg6T/u2kVs1MmaZhsTWmPJR01PuxgN+Zkfipkl9pWx//LalXGgFkxmstOOmRP/2haave17FoDWBc0lrOV51EH9I4zDZztHnGjZl8Pjo+zUeqK+TJhRKuRjsjSyIhJpXCPfKksevbkLk7EtNjbRqMtOTJTG+NexVIE4xuzR+D+2K5suUvk35+S+9kmBxe8SV3UhdVK7ODHslP1BQ3b8Fqt+1Oo42u4J9UO3p9J0HZRM68QNBSje1/1uamujSirXCMPkkB5NwcnR4U7pprwC4Sqj+EWHyccMuaC69mDP+1FDtmp0u9suiBfr5jP6+TmEY/uN5WxhDefTbatz+w7uBi9Dv4t5GSbo7Y6ScVPvrJbcuNCiuYU3ASqIvmsx6UL28nhnZjR+LTGw1Vtwj2k1U7kSIOhgvU8HCcC/fFXIkJ8tebdocxJubjIFNgQsKgkGeJhAZxOMrbrl5sg3OrygQzzGwA4M/1fLlxA42dCG7WxJzlAdtERU8KM1R9ypTdM62G9gBvb+c/AMR21viFZu4cBGaqaZb0prRfoFo2pi21xiC7pjPQdVDXINWr0d7/VzK4OEw==
+    properties :
+     x : 6
+     y : 196
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé10
+    identifier : 0x41a011bc0d3e5ace
+    internal_properties : CQAAAAkAAABKNUwNuqN5op14vtWIVKAoZXHB5WDZbRnoKTBfTPVtFJmNp+gSm5kqMerxQnrJPyosnXqoCOvvCqq/+lBg/T2PLV0Cmi+/mwX1XPSOWnhygx50E32d7pGymlHNeK8yXR9Oq9soyaBOBBA9GAGr/rg4kUldZSNi4E7g6NKGa5P0TtngHAKdMtIrA+kc59mNUAE5djCeUFToZPU8lhe4b0Wo1aUdCUxy9MM4Q5a7goc+vMWYIB4Z1iYJ+1VbHxoa5v4/y9pJKd7FkSPf6TMed/34utMEsll7r0Xe8nMfXJSHSyT70q6A5akO6ypvSGipisjC6POXNQ1OK3kqflQgKDTfjiGY04NxKpRbEO5qI+4cmlKl1t63qHBubibVTsH2
+    properties :
+     x : 61
+     y : 196
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton11
+    identifier : 0x41a015342fd4e85d
+    internal_properties : CQAAAAkAAAAjI96iApXg2nq1+cCm/aS/hC3YVYC+HbYmfg1TB/rSTlERwLO6xU0blC5B/NJ4VNcLz/NfCLqLMaRs0cra96QRUa6cM54GmxyfFUNAXO3R2GPC0a4NRH362jz21cjw3IgYdBagkUEKSzTpaIKCnAZNa99Ag9n89bTf4Jcl+f31+6dBYabxW68O5IAN+oZ8khbOfZ2JxslyMipDSNxpRxkl2vYK3MmkHJvWEmWeDfMfbZiMIExcr2VBdc8RozUxbrEkhGJcTfXi/u7v345XL8KbsTU14mw9He+0/1XZ+hTcXqbBaSKu+qtbpdNIFT1yPJans6KSiH3KOqsuVoIcYqfQ6HIJT1RYzBwPqrz5fhMG/nB1JcR2zE/6G9oSIArPh+FV73sNDzJLRmkROsjCq9exzYqlkz37PcX92dDnZ4p+5w6RrjkKq4Fr6bPbv9tpOwbstf2SjgQu4dg3q8TSBbKxiAp0knNEsBhmHEtwHjj4z7BF5UAiac8Yy+S3LXvEMOWR94B11L7RVUvTU9WlX5kR4avvv3HjbptCpnYH1cGICbBhhRolmqhjIBygjm92RsjxYIt+DP0hZ0lKbRf2+ffm3z5vObVcwYqbk/r293xe5eBmgBV4CtUmB3PUtFW4wRP3syaS2kipkjJzuqJRC5spYyUEXYA2R3CFT3aknodYGLGjvNkvj4Fy2nj3kxxL6TCD3kTcw3+4
+    properties :
+     x : 6
+     y : 218
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé11
+    identifier : 0x41a0153427d6e886
+    internal_properties : CQAAAAkAAADhn5sd4ECSobj2I/Zk1hv/ZSW1CFn+aLwTFOV7SHgF7iwE1ReRPnPkbq1h9fS+5aJQoy2uFYHgW/Qxx5/cL7EhpbtStutPAZNvkyl5ifGMM2pPWX6jrHT9nq8gPt28arXfCI/nHkFweoL6WTls24rLzlPZT9CTAbbynZO4DWFzz6X0q20gDCB35Roi6Kc6Cz/U/yg3Z1FmtSIlAigS84h1vBKG5plzz8PyCgFyHIKM+h7Y8ZtAJ0WTlvoUm5gYJVJ1AgcsFqPQI2BJNqfNK1UMWNkc8VyaCcSRvlNhCLQ0y2LNd6s0qriTdPDajmDUxgOE1wvaqFTJOib3olWW5qObT07tv5GDkRRmsHRu6g==
+    properties :
+     x : 61
+     y : 218
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton12
+    identifier : 0x41a015c539a91c25
+    internal_properties : CQAAAAkAAAAd7ciUWF8yhMzv46IIAzYFbncKh77Ap0hQ6C0Ty4qCZhUVXPv+jY0jqBLBVBZ4VK+vo/ffnCIbSfioQYLeJ8yZbVLomxKWAzRLIaNA0GXBiP8+pWYxXE2i/tDmvcyQhICc2LK4nUGCu1C1aJouDLalz1NMm/WEncRr1N9dNTWNu4M1lZbtoxcmwMSVmpoEQn5KobnBAhES6v5/0Ew9l0FV1hL2xFX8VAuafhWO8eMfFeyQfIyY1w2RocuxAxmhjpH4qHakKVVa5lJjL/bzj+JLTXGxssB9TV9I8+WBhhRMzuol7eJqUluLuWcQZfmKzCbzzyb65K3SmqcqtrKo4tfAPF7dn0AAFHwr1pzDLCV4aMJTO754ljG4VZhQAkA5EStHtaHXWdzNLJP/0LIgzTlzD/ATLc+9n4M/hw7BJaRYeeBvnEssDcPRgxG5aYkjhejOezvUgE6wHxrFcU5AV+SjUkDCRNXeMr7YkjkylFI6qdJz+7pkc4FODaqFH3EWWo8zHb43zvhjw5WRURezwTNba7HV2WOl6BlMrHSBSxvKK2onw9zfZNo5eqJmgNUQIOKThrFAJu9z3fO4A4l8S8nQ4WQ1Y1+u02CteRBYLVYo76o01sfi5O/8udGKHuuS4805+fzMjJKDsAyZWBxnHZ07HWPaf7rQIa7HFbRmtJFWehMd3ifd2dfIbMpZcTIll2JVKB7yuUGG
+    properties :
+     x : 6
+     y : 240
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé12
+    identifier : 0x41a015c53a0d1c2f
+    internal_properties : CQAAAAkAAACXZ0Q/0Kn1Uqtagp1bpMIYdW3mAyivHSG09864lzNr+qL3d6CYz7rv6tA80lmSX4heKVF8MpbMPLWM+JjiI9IQ07HNvZUmB8kcoYZO5PCl2CeiIe+SwroUXOVw8I51PwUvwEqBB3uyNmOwiirO6iUfC8CxEkAUOSmAUX6pSBN10YEcamdR7Hbd3sA/RSXk+msxeEeZwTe/9aFvsyUeD28jbedBmqtv8FE5NMK7elzT/qE3ssGyd8ajRWZPgpQ0TMqqu8KEgCfTET0r4eJPwVGUuX51VTqEqn4Uk56GVgkIJmki1YCgVxNTMYjDqBv/jkTiryp/XhdbOn4imddRw14/tCVPIEYqg4wfEP6o5IM=
+    properties :
+     x : 61
+     y : 240
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton13
+    identifier : 0x41a015ff208a0143
+    internal_properties : CQAAAAkAAACvX1ouhhFsVuYxRUwqYSgjCFHrwaS4IyjEvv/D2RqkgjPjjLWo3bFz6FAHkAhsxl/ZbYtVEo7b3QQy28LU/44F+2j0qQCScwhPXzVY9k2XIHHAmQxHGCUuClpsqaa8WkjeCiKKfyHG31B/vupcVHzhzQHAacekOQSDJtlBj3F7VxEbUWw7d7926Frb8pA8dIpg/xnTNHHOFtYhfrBPayNxcNzOFo+U6O+iyGOaC3+doRpu/DY+ew150dUTw4+ZxBV6egZ+G6U+wnbFVVaRtzTPRxvtgJJV+QMgRYNp9ETucvibmRgYVos/uZ2u9We69nLJ9dJ4YtFC4kPMVELuIm2YUuzB5YpQwCAPFL44vVZHVysuHtX3D3alxiPrb71eEAq8NCBW0L2y0WQa8/cVXoR+IGOOIKpacBiAWlnO4mHDRCXWWw5PZjiiIECQQqI84Eur+lpL/8/dMGtoXHt5lM9WL7dZtzhPjztFOagTub9dTDdS6sGTPK6b3v1o3AJHqXYYrD3ONaXkSH6ETHwgavZWvJzoTE7yeWYZy+vKpKhNVneuaqeyWasm50GdWf7B1zGAFeCf5dhoznBfctrRsFifFoMk8vZjvEnKSG+pamMbwp8rzcbZpUyZmvRVK8xnsnSWeFNj2z90ob3MCyFomhxKCtJJDiml+odsZANXoQbZ5SQIPQ77+/XmTux7F5jPbbQHWshYR/M0
+    properties :
+     x : 6
+     y : 262
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé13
+    identifier : 0x41a015ff59be014d
+    internal_properties : CQAAAAkAAAB53M0ECotJLmkbG3UGD+27zxADHz2fjWk6gE+C4v81zuY1Z6z2KX5NNWro3FhtvyxCvG/LycuLdqvxj7ygKlRoDFamSAOA/pOMpBaMdnydMd3msnRzU59Suy7oMGeoMGxxM4C33VvNlTidE+Cb+b4cSUkxpPbs6Stx1IzOk14wof43bmXt1KDWFklZ/LDenPHyGOuX6Gr4IVJxeo3gbJBpFOV7JlBA6z9C+jXv9K0uDGzfdtvNStEZNMj+Gg75NViXzSi4V9RcZaIDlNDLZgDs2a+oAEAC1+HBsxy3vhUwf/mdMnRpKpTYPK8OEIFbUBw3O6cpCi3tQ/p8jnPtQzlJsFg+ymA/JKzMiKJOJbbv80c6yZN0m8SGC9vLXo7kfg==
+    properties :
+     x : 61
+     y : 262
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton5
+    identifier : 0x41a01b913cd2c448
+    internal_properties : CQAAAAkAAAAeBU0JLT4p34XFwz92BSCkgxSA13q/sld2svo+0tVb0XTDTM0x21c+nKQMpssc+Q1yOVnoahv7n+KqjcPKypHXDArCGTnk+XViofpq64+B2SLn/95D/68JxYhhvpYIiMr+qu5d1a+coTm/ChRYTol02M2EAuqJ6sboxn6IV1unn6gXxjV39s7b7G8SqK2nRYsyJCbfg3H7dS6RmKO+OjpMaGzxeXAxrEW4xlEZS/IRt9WXKJU1YbCOAAiksxVClyO69wF/xVbXsHYI1OYElgDpHo20O/zMqz6SFMXSzJee3c5dTYYDfJaX+92EJzQWEoOulv/ztOqX4rHgnSE+L5uWAx3majqkXEjLWbtDpSToJCKteVd0vYtw+XkfjvcSa5np4Tl8CSflzB9IH9AtvFGhmfzr/ucAOx0pgrfT0lViYez9jvCgvj9PIc5s82ocOVC6fVHvHFvUESTght7JGNL1YFx6T4NHalye1b7StdPsK1gBjYGc2m2Anwvsi/zbSDdX00AWGKOJ46FKXB+GVHVJrYGJBjvsgkcq27nvhCqWTXg/d3Mn8WC5HmkXfDi9DpQ5uomNAJCh3y2PsEFtPK1ST0yZ8AcxPzZbhlOyREeEdwYAJiXInQ4s6nSEvzO6rBapKzwjVhXfXxrpplwJiZljTA08OtRnWcYYTSAaC7RtnKhyzZl7MwQXg+u7bNaXAx66x1ltmQ==
+    properties :
+     x : 6
+     y : 284
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton14
+    identifier : 0x41a01b917b7cc452
+    internal_properties : CQAAAAkAAAAeBU0JLT4p34XFwz92BSCkgxTKyNkzjrsqlg66ZjnfTYCfqOmFT4MSsPgAYj+wrdleVfWE3m8X02Y+QW9+jrUjOOZONR2YNdmm5Z5GfxM1hV5Di3pXn69pRWjBXlZI6Oq+ag69FU/cwTmfqrSYDumUmI2kYiopaqZoJp7ol9tH/+hX5hU3Vo57LA9yiO0n5WvyZAb/A1G7Fe5xeAM+OtqsaGyRWTDRrCX4pnG5izJx15VXSHV1QXAuwOiEkxXCNwP6NyHfBXaXEDZoNMbE1mCJ3k2U2/ysax4S9GVyDBc+PU7d7WbDHJb3e30kh7RWcqPuVh9T9EpXQjHAfYH+rzv2Ax0GynoEXOgLOYvT1fRY9HJ9qecETRuAyanvXqeiG+m5MenMWTd1XO84L+AdjAFxKQxbzjcQSy05MgfjAuUSsbxNvoCwzs/fcT78g5qs6WCKzQG/bKsk4fTQlm55KMIFMKwqH9PX+uyuxU4i5WNcu+iRfdFsKj3Q73t8G2wr+Afn47DmaDMZczH6rK82ZGXZ/VG5Vgv8klc6S8m/tPpGHUgPp0P3wbAJrpnnjCiNPqQJijld0ODxrz0/AJFdDF0ir6Rp6M8Jh447xltC3McM/74wLpWYDY6cQnxUZ4OSHAbpczzrXk2Xl1p5/pxRidGrBL0E2hTHybZAZeCiu8yNHNuwzZl7MwQXg+u7bNaXAx66x1ltmQ==
+    properties :
+     x : 6
+     y : 306
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton15
+    identifier : 0x41a01b911884c452
+    internal_properties : CQAAAAkAAABWtoFftyma+NDR5Z4iZ4AtVH31TUeYdRYvi+MHpXyKXyx8wVXG01JKcDA0rETasstAuCdphMLuFgExSzkBx30BZQR6vRACo7j/L6WoJn1nMOEwSZzXGCUuClpsqaa8WkjeCiKKfyHG31B/vupcVHzhzQHAacekOQSDJtlBj3F7VxEbUWw7d7926Frb8pA8dIpg/xnTNHHOFtYhfrBPayNxcNzOFo+U6O+iyGOaC3+doRpu/DY+ew150dUTw4+ZxBV6egZ+G6U+wnbFVVaRtzTPRxvtgJJV+QMgRYNp9ETucvibmRgYVos/uZ2u9We69nLJ9dJ4YtFC4kPMVELuIm2YUuzB5YpQwCAPFL44vVZHVysuHtX3D3alxiPrb71eEAq8NCBW0L2y0WQa8/cVXoR+IGOOIKpacBiAWlnO4mHDRCXWWw5PZjiiIECQQqI84Eur+lpL/8/dMGtoXHt5lM9WL7dZtzhPjztFOagTub9dTDdS6sGTPK6b3v1o3AJHqXYYrD3ONaXkSH6ETHwgavZWvJzoTE7yeWYZy+vKpKhNVneuaqeyWasm50GdWf7B1zGAFeCf5dhoznBfctrRsFifFoPEUjYjXImKiO8J6oNbov9r7erfy+wNjb33wq9t7T699WA+HkGtKpC3EFxsTiiV+MPZLdQqVYAugTGk0SYL3EaNUnuQbkBRZf10bjcugk2+kfep8ApN
+    properties :
+     x : 6
+     y : 328
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton16
+    identifier : 0x41a01b915dc5c45c
+    internal_properties : CQAAAAkAAACwE8rTnw8lF93qP8vH8PNvgPAFi7qAsAayIFYQhkd0UP0lKADG/+HyREmLQSK/EUdACiuhWDHPUKXLikHkRaPAqA0ageAEmHm6PcIdXpNcOyR4uvK1bqOFmeprLEQnAWcrkcMnYAt4y6TXy8kFQyN2ybDsndEPZe1NHhTI3278dpJ075KWb5ezSr32EInh6juOgiTv19gq2v+FxAJ70N+MXrNd3yG/3HZTxUydroHjdq/33p87QZpaYQIJvMOJduAKmLCxZSjH9Fn0+sZ07u4UNHALxqv9+WKrq/tGvUo8G1NTH5h+AEY0edPU308SqylGH5cc8R0UxU3qVEiPemuNHd3jCMp1IxsYW0toY1EC+qNNXMp1n/sscND/H8txHRWC4QSvUM+rXnzVg/tzEylHun5cv9imy02Ci6OQvmKG982HSzGJ+sX1zvsI7nw7IwRzT9D6dUtqo+HNkBsrqcpJc9D3bOy5+topEBD/fzIelamz6vYPrs9e9oKwMABm9iVge1H/b9UtOaQ9VNgyn3k51oGA2cJQhL/tzkEwuLN2GdWrLoagYcJpPaiVbeTk6CQkVNRY3c4dTcgKfqpXcz+sUG7+5SjPL8T85xFD2rCUl7seD9EtDHyzG7Z0MEerCixH6pKBIsrYu2x8KNg5+HYON5IqCjayCHuLFu643NytTW5CvjqmU/Msw7tUHf4fXBMfGtrK2Vmztg==
+    properties :
+     x : 6
+     y : 350
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé5
+    identifier : 0x41a01b910f34c45c
+    internal_properties : CQAAAAkAAAAz+NLKocQefHyrKKjykLGRAxJLwNpL5kV4Z2us6T7kUT9Khl/Bi/9wLuMzW/r7fzBxbeBnjNriQsONn2oMLq0aLMNr4pETwO/zNbWmVtxvTrMMBNTaBOTVRlO/ycHeLe6L7GT0xIC40KbD7OEpDxlb8bDoTStWCeew2CLNHhTKE806VIdrrn2gabHKcFAJn14AwJrNMO2MWT4uZx9CAygzTKVNms7Pgohbw3WpArl/WVDQuDeD0QoSpiWMxa5kDwsOjXTCcR8DJsb9niFWrbjHj4zDyC45EzofFJ6z8oIQINgp80UofHf5NfVKXnBTN5KHrXMTXYieBYTV/1juyX5vD1pfFnlL8Tj1l6TeuyhoiJt0lLkPzyI9vm1k7o1hxOZ3
+    properties :
+     x : 61
+     y : 284
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé14
+    identifier : 0x41a01b9135c7c466
+    internal_properties : CQAAAAkAAACTJ6lC2EVatBN9zSe8id/1aQoFsVkDFbzWjZvowB2zYMDncTKjEkqhtdrsGCCpmwwKjL9PcQCr1AO4/beMTyzxvDiWUZgEvcl8SwFjuTQYg4C3HhWeWib5ByTm7C1bnZK9wSIKkLj6N+iPQ7OREAQiLPZLsabQ18cX77cyBppzhosB1pNtkpR5GHXajb0AiRRp970LdM5oU0PtmiqRbUGfa5gsGAL4eN5QnKLO6w1Mtx3RVdtRvjbkn9wfapcyWs/RgBuO9y47/GNuG7pTu3/nSjEgSOg84mMc+hKeTcY3LTlWLWDVJ3nfOU2cugPd4maRgWXb0D/frRD8LpPVf8k9BCgO2kh6V3peAjz0M+htbXH8C+kiNVqcHKoaifGO1A==
+    properties :
+     x : 61
+     y : 306
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé15
+    identifier : 0x41a01b9112bac466
+    internal_properties : CQAAAAkAAABnax3WVNGmEH8J6QMQ9SvhZfYBrV2XeRCqMf8c7NHn9DT7dUafHnadgcdiYJoJAeqSbpsVh4hHirliFYeuM3JzxCbu9+qsAVMe9SdPUyDqzTidKh+wmhrLBWpIEOfHJzg5z94kxvyCbQIxVUfjdHJMmBxDz+ggKzUVzSGKjCpxGD/DvoGXarDH9oNEPbPYNx0QNLquzwnH1sYeW/OiULZQiq1hs30bjzW7hYunvEy5QIRGgu6AyT2rlsF038RZf+jYjdBpHuX2l873pDcYigissZ7VQ6P/od6TX9dLMsmUpgCjIidS/DJgfpxbRZ4+ERG6pBgI3TPLmQz4Kp/Ze9XJsFw6LuTmu97ylkDoL+xhYUXIXwUGCTb4uDaWFUVagA==
+    properties :
+     x : 61
+     y : 328
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé16
+    identifier : 0x41a01b9105cac466
+    internal_properties : CQAAAAkAAAB9upwEM+h+BCxTcMwFVP3TSYhXhoodWs843aVeqdCW4Y+eYJMtuc+a6qEnsWoBhSiVeTofsNIonMmhCSDMrybBPA9mZp0BHl0gBk3E/qoVkPe9fFzS7Pz9Hls3MdnmRRZT1DycnIiw0KbD7OEpDxlb8bDoTStWCeew2CLNHhTKE806VIdrrn2gabHKcFAJn16AQBpNsG0M2b6u55/Cg6izzCXNGk5PAgjbQ/Upgjn/2dBQOLcDUYqSJqUMVQ6En+s+HRSygT+TNvZtziGGHVhwxKlQmU84erCKib2S1em60l4k7U7lyxCIREqZY32kdL2ydrRYEiM1vEkAolf9UNmIJFFWKZxYrPvi+gedGldb/XBnF0S1QcRf6EtKJPsTiig5
+    properties :
+     x : 61
+     y : 350
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton17
+    identifier : 0x41a01b914654c470
+    internal_properties : CQAAAAkAAAA+nVRVIYWniUdssU2BYmERtjr4lQa08MAM+tJsoot6EDUVQppWtxXETtMXzQ4zE2MkTm1LMLljknsRLnEcbVFgX8VRQbYGem3KdQjfaB24AQLq7p6THBGR9aax3uaRZSV5fzNPQum2l+Q3sSe7AXswX+Z0TWOFC4WddoJi8VhcqESOl0rQ1RVvRkmgFud/OlWU8CQP1co0BkctSpQ9Slv6/G1hu8fRZl6zJapzZH8r4MH9ygspEwTiQUq/Jv3TssboZgApxzbV2GE0RMSyxIaeOn6/gtm3s2IrI8GEO1gUBW2F+9QUgpAoYSua/aWo19e8cU/coysyYa0KFqoB1Ac7F/sn/HRrmTugkz2mfAxrQ7ASv3dQLN5/pQWSlKC8du4TanPQO+wGwXnSnuAY1tbkFwvHxF/31oQrZIIxX7EXYHrstkb4u4wwCygT2yEyyJHkwFcTYFhpjpKO39wUrFfexKGONZcGXWV6saegiPnf1i54pWueDyoRm/cztT0tB9aJ7Mh45k5oMG3mm5Fbiha2c2ZT9iEBY6qmh4jhue4zXlY8HUd7vuHUrqmcbhWjMc1lDSuBuAuMKPUXAS+M8jxJDWPZqt8oUjfJNOzopyf9GNgzuhZowEie0PvLWQgWQ4kcD6na2TNLzpXF03Vuo6M/6Iu913FXq454s30xZQueSm9DMbftDaliNS3G44SZ2o2ZnFRAV9sxNA==
+    properties :
+     x : 6
+     y : 372
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé17
+    identifier : 0x41a01b910e85c470
+    internal_properties : CQAAAAkAAADwPxGL4n/3n7Pmm6etgRbWTovcOzeQ3SYNcPRtWqFLIKCF8fQWSHI98zDClJ9i2mteQPswcSlnaUMebnUxOjF8UZoBgzKejTWWWrmslBr5zsG/kCLkYLq97A+rpWuajchJelTyluQW/JATSJkHx12xQ7rkNxXiN59a5H6V3DR2IdckvOk1UjsQm+nCfEK1z3CjrR9K/QjFsnEfaIi7gO3Kg/6my98ul52uVM5i+7ZwUKepgfDEAC8bue7dDuddLC7RivlP5sLAgw162177En3L736tLqTjO1llEo7RFDLLGTd9NvVExH8BenTzX1Hqtg9+uAb0fr/R3rWuEK8Vqge+/E9EIZSwFOWuyC3FUgkhw7At7dwi3Fnyf9LBrUyiBaW0
+    properties :
+     x : 61
+     y : 372
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton18
+    identifier : 0x41a01b911100c47a
+    internal_properties : CQAAAAkAAADKOgXDI7sKCLR99ca2vxD9oFCfQWs2QQHhU66+3ImFiaTU03D34pErHKznQBQMFleVKcct9n5jfUBOI5qIlyZE5TrwA2quS6wjScu4GH35sAdmra7pfI0CPtAG3SzwRACceDJYPWEC21D1CDqO7LblD7OMe9WkHaTr1P+9VdVN+0OV1XbNA9eGgAS1+vpkAn4KgTnhonFSiv7/cKxdd0FVlvL25HVclCvaPvVuEcNflazwPGz4dw2xYUtR4znBzhF4yLYECbUahlJjD9bTr2LLTZGx0uAdzT+Ic4WhJnTMjqoFrUJKMtureScwRdkqTOazr2ZaxM1SumcqFlLIQpfAvH5dv2Cg1FxrFnyTnPXIGNLDi26opmFIJaigkvAJ4VvXZTHHSSw9/CNPoIKQ3Qmjn2Dj3f9NTxMP156RlfSoqbDfbPtcHfPhk+HJOXkzldjeKwuEsB4g76pVQd7wZ/QTIrCS9AXuYk6oogkCxOJKmeIjy+oUQ3GeXXoVL2Fmqr8DDY7nfsjTkyXhIWfjkcPLO6HlSdN12Gkc/MSReysaWzqXk4wP9ArJynJ20AXgMNLjdkEwFr/jrQOIE9ks25kA8dSVgw8OQ9BNyaDYvSbYv9rUBhfC1D+PvKqbXWoRbJ6oXmldPTF2/19SgfvedD6UDELJACuX2klSkD+DvbCJl6mep3RxrHZrQ+9+BLGsCNssBWM9bJbR
+    properties :
+     x : 6
+     y : 394
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé18
+    identifier : 0x41a01b91149bc47a
+    internal_properties : CQAAAAkAAABTLpgIeQ6eVLxmSi5Nqyh5vUci5/Xjl0+KgneFEplobX4q9U3CIzUINCO8+S0k+7gJQX0/ExGt9CYzBNrtBhsVBvc3ERjq/M4HIXME84caJdfFegOmC7K3iucXhsbYZtDVoaUqBLy4ZrC94LNys9Wa0PAMuf7LgkXn1QykU7InHobTbLGx3/hdpKVYBuRvfVxgU27NssyiApVYlR481XEAXRnOGsAu1E9kExnWinfohsnw2xF3oCgvj82gPIBgGp4zw70QdazzG+kh/gAwlXdNQbe3+4fRsdthInHpjV2w5kmFdTnoTaRpoueWeX/WVjhux0EKmKxTJMyWrP5j1K8fg96e9ng8msxd1hCdH4BY2EuJ95H692wfLYog9UzmdOYUPV4toCs=
+    properties :
+     x : 61
+     y : 394
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton19
+    identifier : 0x41a01b912f28c47a
+    internal_properties : CQAAAAkAAAB0o+e3tPbjv9WnDRd+G8aS02YOkSQyQVfgB6zcr+PDYXZTGiQEfQCi+1/EU17fv3vAYZPuAeOXp3YwVCxHNH45o4VS9b0EJWVmwZ72b8OFveaXtypvZyOR4VAtmkqk7JbSovZZKVdI8dUXFhAkcs3QvO2kto559va0DkIkq+dr2/xvLum7pipzCM+GHKnTAcfeFFZrX3GXrTpJ3F/aJv4ITATJpTwB+HXUPmUlX7a1C4nPUJEZUVy+rPAQP3mW4182b+nLOU4LmCqwCAIQkvyNin00j2gc13YmLIl+SNuigTIFHcoXFGK/Pw0wQ0gyhucaVhfn0CID4o3AqdX6I0cCp3VO/hZMuMDPyVUJb04+ashLR1Wmh8EilwdRhOkkke+/x+/iY4nDJqVeGd4Pfl8vB2IZPHmyecefmEGhzE9o72pzDH4KcF0BV5T24WQG13ZwI/9N3j0y68Ju2KybKnijjgL4/R3hEJbc03BoL11aMV4Hmy/+RNNipeEGCR6dBh2NifY8Ek0/He8Ivv2gLhv3+1fvrH2mKPGAEXMtxvx8u5bVlVFBkx7zRG8h0mJn3MInsIebqsLvoSvNor+/7nMQnQr/dnnj3WCJ1AVg1ulapfTutFpKNc0xNjGcAdE4Nij2Ojk8Ky6Wh8PjiHenm+KIDMgbqyNOwoXK9e5PUGmBrUtLDMZKZiEkhBx8QY2usl1IVe/HMw==
+    properties :
+     x : 6
+     y : 416
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé19
+    identifier : 0x41a01b911f65c484
+    internal_properties : CQAAAAkAAACH8jgRXeOiVHinvSYtcsFA5JZrWyOMjkEX0R62jpwdrv2tzMZ2WB9BzcWpnXlZ5T1lwSQNxIbqhgiSs9/fgezhZLuUCJQOgIkT1o2Aj6qO0MTreL52jnP+xAKDN+whm85t6hbLE0PDbpmMOPl9+BUgMkOiAFgUPCi0tRmStThQpwZJb9xD8C3eW82kooGA2FjNTDGsAnftb8ynlqYCRlon4wUyk2jpO4SdhDjM5FKHH6Wqr9Z921kOEqiBKHw7AT+xz1nv78WQliAgz3KqfpBhFAi0xwDZrMRGMS+YdFSBQhLqLl6lI0J4x420Uj1QUGYc42v0zXwXqmKnt34+BWYDqKbq9ywYHkJX4B314FLuPfnZRucu47C/IJOhPg==
+    properties :
+     x : 61
+     y : 416
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton20
+    identifier : 0x41a01b910784c484
+    internal_properties : CQAAAAkAAACfkjGxNo9SZhK5xscDwR3SR63o+G08xbCWrK5Fb5q9iFv7HNjplQ8F4JLBbNhkRy1bfhOolWrrP2GV3rEiblLeimIdA8GVi2kMx19j6MyfhVC07cJKrXYYPZT+QIxmjxO9AwkRgmutHp24sDXVC9XWM6/m+GCaeTwlj9eYG60W3nig8S1RT0K0hCiWDN7/ahbAG8anMLh+w9bJIZEO3Q03JsBDW1m6HD39aVSnfMPoXwe9WOwTA0XMpy+3mRsWS+GCERcQhYOZKuDGdIiD1nLbBqBHKYB5Qhn3ryqDqxQnPkk9RnlFr5fsF0ppNrzdHp1AEX7Uut2N+GsL/bWS2hSqf+0xMaxIgXt4d2EM1vAGlgWeivmHVMjMjEWRItokz6kS+EA2jEpGkqbq5+r2wi2jELuiHEoVAneAnnlTBalAx9sczYxpmUhFei56262sK7CfTHixCdj732lK6nD0Jq7L1wVjPWIyg2C5tYjQDJ9KI93aRguxu8gEoONiLytBuM1AzPEijWZi12zKvhPJ9l3bcvxcTILxOdPl/SGv67aMca0c7KU8NDnZl32tuMOH9vBkpw5Rs3fWoaAJsIs8uAcwDAmuZNxSajw+BH+63TMubY+FW8Zdwhyh/X+ccyY6WuKfEZCgVLfxW/RvShGWUSLQAXP2ffwjOREH6XTlRZ1jhSZ9WHGyN6wCamfJ2h3c0ZvRi5LUnSduta8=
+    properties :
+     x : 6
+     y : 438
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé20
+    identifier : 0x41a01b9114f2c48e
+    internal_properties : CQAAAAkAAAAYlRGqhvX3UeRXEuc0GLHcrw+hefiY3+kYeBl3WeROrfuQuRNl/TLh6myhz731azUdyL29ZJHrTyNUBQ9xH8HJ4ylBIniHkGTccmbKMtqUv1L5rUiOV5a8GosNezu73C70etxLMGlQUxmT/xIbSuYg3C/spZL/28SYFtbPwDWuzxfTGbkq1mwn5PooS6M0dvhVtkc1rNszWDf6ev/PDSj4jXnokHDLn+c8OxSJb0v3Nrc2YXNDN8dxjYOphaMQybK7m1VQs5f63bdn47XF94jGnjqwaGpv27huPsgy6qsnBKuuTXSri4lpeafJG/xEtnsjxNRmKUL1grvSYuR5NschCdV88p2sU/q5sekOmSuzhacBvx1fiP+Df3hnCw2uN/Q=
+    properties :
+     x : 61
+     y : 438
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton21
+    identifier : 0x41a01b91473dc48e
+    internal_properties : CQAAAAkAAAB6WYBhbdkT5TP4LTndlsWFKp4Tceiy3rRAFmwefE1elscDxjY06c/gWqcR7/gli83CiKkv5sv1XqPJcH/y850+2atpSbgEYClC3QYF/huMN0CQ8hI1kldZ5c7T+PA7NedLLS8z5GdcB/jjmwXZv782YbwwyXWDmXmxynxsW4qYljJAY34yI8t/HhlWNMXl7juOhtD7g7Se/mMBXC4PRHv09le5O03ryHpnMUShekUHHs/7gqP3zWYODVZRaM+tOmDyPJR1+TzrUA3AcuLocupcPFyn4o8BXU7/f/NKyeYQsxNHo+TazEJwVe/s+/vun4FuY3u4bbmYQcFW5OzDvkf9FdmfNKbxp6+s7yMkiUe8FLlbXujrAWWqtpYh/dlvHx+I5x61RukN5PLblenB0VMRIBxWte5gTXvYIc32xEggAfOtnX8/DN+j3MmyRKrZDXYxTbqAiw0kMVdzwjFRf6SL0e4xglpDzODnXuJlBZiwHy85DNQtWHGELFiqBl6UoHeO4ctl/U+vtyK73pbgrYszzIfiBxiaxj2rDHP+bkk4Q5vxYPQ2y+Q3I17f2zqKQobCoha2C8gPs47ASJjF8UGmhtz4i/YZaeqyPftRmAaeqREsuQdjJS/lSWSiwtExjLLNcCh7JMjavWJiDjJT3gicpQCYnKAIYtXRrHQyVlI325xwbAzQaQ3GqdF6N9AtTgFt6Ch8Kw9t8A==
+    properties :
+     x : 6
+     y : 460
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé21
+    identifier : 0x41a01b91574cc48e
+    internal_properties : CQAAAAkAAAByN5AaX7Xi9+qD/T7VjPSfFFooo/4yXO62YbUgdxbcBHsLKRiaQM3CwyAQTBg56HY71k41450Z0lNszp7rUrjnQd/xLQ2kRhiV/anxikTtr3aMyR1KU0+wt1JzD/3KcC2oEHMGROGHAQO/hCGHf5QD97SAVNgkipx+SzCtDLU0jml0Y7IVrjOuYoKEiqMxjj2ye9wqfksHhv8TNjoeUw8DKdqBczstYdJrRv3EjD8NYVrC+Rc7+Rh8Yx57CgMmO5EOClg6Cu0ll3RONbKc5xj8/oq1tXd4fibNvGhtLav5a1VdJWP/PWYQC7fw1iwskM/Zp6UB8EZRD0TfL6hF+U5cMEoxK5TspEODt1S4qvaOoS7b1+lN
+    properties :
+     x : 61
+     y : 460
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton22
+    identifier : 0x41a01b91094ec498
+    internal_properties : CQAAAAkAAADnYwqA/r63j8m/6jaBUxJIrl2nqUFbQ9SEpSCd/flpIPUQ66JTpkhbCE27FOSaG0wSG0xc1ZdMvBSF50u+Xce/lZP+FQckecPN0Olgcg4T3cnj5AS4eylK6e0xuTldo4JQ+vprG39xvvQtsUija7TZXraLoNhX9x1QdSPTRPht9VBScspEWsOxml7laBoLmAeT8jt5nsSiDEt6k73ljUQf/TRaZC5r2yijxQ3Sr4Iey73KW2F/rWHkubBQNuFxiM85qFrefVLzGp2RAMeSD7N/2iE0dgttKk5UWbUcaUWRwWq4p3WzNsBw+0WXZv8ot6Xw4zrytYGW5650gxQlm+KmumEI8h2Vz1XHqth5yYBV85EdtpJN3ujMmOFpMZ0bTjJ4o0OfXqmj75j+21r1VxlJQ731hDKIWuJaMskTGstQUp8fVV7q+RUd9bpgEAQLKbJqT1TjZAqcw9DQV/pOGtCkirK6s9tuxeOhPTIBqVcE/C4JTWNH+70AGge8C6JeoC6ndb2/Lo2lym2ttd799W96BNssL0OdIRIsyVZmg8qzqd/UKFeJYOpi6mkCRav0TX2sY+JJkLtYiwFdJ/Qu1gVn8HtnczMzq2YalTlIDJbj15hK8J16R0Rb/ex/fm488nQo4j+aFtQXyGiZ7f4Tr8viWF6LeW3Fnjx3TU45hS1BiOKDnz/s2vk/FRvMGS9KtLr01sys3lO27MAez4ClIq0USnuoIpDE8FPGtgGe
+    properties :
+     x : 6
+     y : 482
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         moimeme..libelle = "V"+caract(175)+caract(175)
+        type : 14
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = "Racine("+Ouvre(fVariableAuCarre)+",2)"+" "
+         
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé22
+    identifier : 0x41a01b9146fdc498
+    internal_properties : CQAAAAkAAABDhXQQummPV+ixUiumwZAMQHd+p508cAqWKhjzyl7LdpxJsuyvpcjjm9E6ctoZj+GnevXMjOiYfogWWc2NrynULsufWimkeNtDV/iWnegzRhali9FTHnum4W6/qyw954u/SiZwZi54F6t3Z4N+Qewalxi3mV2kZro8iGFT+1qidgs5/AUZa0FwzvhRkaldS7LdOE1WSZlYBarr2MXgH1zAIOVg87wVqIeIsj+t4oM8CPdnyuN2UyErTrx/S6FO4MjTMYNk6b22EBmSa2+2sV1Ds72yUya6z7LlXpOTRJjtlfsqkNEuVCxgdDYhf2hoEi3nNzdJLmQSGaMHgW8QFSpuml5WMtGwlw9TOZwBhVLoKP4FKhU1vzg=
+    properties :
+     x : 61
+     y : 482
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton23
+    identifier : 0x41a01b920d30c4a2
+    internal_properties : CQAAAAkAAABNBIc3tA3M5JDfpGWhLwN0rYfcqqZSifZKPAZHi0yXULftsJSNBy+jWLJdMli6PSknbNdkmTyLFbVBAh+q7PSeaqhls+HT34sIy3sp0KrpXZxyaX7m32ZqeVzW/iSEJe85Oa3F3r2F4KGIREexZeMiwz1WOKDwBZ61V8ce65O0KoTKGa1tWQKqaIg+0gaNBM60UUKbJEIWvb7VDR+WS5sz5pp7C7GgcJPxbUgh+I2GM6dTrIjv5eW+98cnp5tscdU+w5uEpSH1TKxi6BpvKIi/DrLbRWwbatOv/wK5s1oxJtm/PsnxwW9mm5Jx+OCHQG3UH058EjvBwu9TmTtCqILmC7MxOSzOdXmop0G6/+c97eyP83YEWcs9e7IeU8sTEmCtRdUvhVOVV3k7yM+LzQyCc1ifLUsS3YybPyr4ouyzYk6Rsi3Kwkd6lfezkKJ3JrOC0bVySuVO8DTba+VZMeEminqojhN7Eqm09sntIboVTogfCxSaHJ+dL9BfMPTYE4j/zTI/Uts1bO8jh3iuMXB2mb3FYW9CkKyARnpkoHFnJNjpYTbNpejGRuqauYQmbUvLOJdGyOQ5BtvSCXAhU9qji6rP4VGnBRkZ7WiH6ual7BaepGvKp58aaCilGHsFOSl+OoE1wQwUMP/YM37zFMmjrEDDru00gB7W5nHmvjQmUG0+mc7W1xbsAM2vPL86czlPCRBWH6XgJ90=
+    properties :
+     x : 6
+     y : 504
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         moimeme..libelle= "Exp"+caract(178)
+        type : 14
+      -
+        code : |1+
+         
+         FenetreAbrev..ValeurRenvoyée = "Puissance("+Ouvre(fVariableAuCarre)+",2)"+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé23
+    identifier : 0x41a01b924ed2c4a2
+    internal_properties : CQAAAAkAAAAbXMwdZRU9Qg1euCS835VsHrcvjwM1Nd5gzpjGsf/dPDH+g/Kd0v3xFAWqdowO0h62Qusp88fn8n03GE9Pqc5zVnWeYMu79LUziZEZHW9sQfx+YuH3iGHFN4GY0B9l3/x0e+6zACZWOwqLqjLNOQ6OBW0+3kd3bBxlAhErQpWJX76RCkMjc+CL1XfHPyUNYgbBa5SUDC32ROODRShYMCo3vVTruUiJzosc4K8awoSNcTEtakYvceABM7buRHzLRwHZ6ibTyStZn6n6zOhS9qbwRzGBQ0j7zOgrMeiG7jovD4QGjCob9ESJjXK9O5x9t2B2pgzNx7Etyn0OIoT7rlaTMUHP0qKvf2ZJbyct0/H67gsJ
+    properties :
+     x : 61
+     y : 504
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton24
+    identifier : 0x41a01b9240b6c4ac
+    internal_properties : CQAAAAkAAABevbQ1wSbINtrfSNTAM1q4eU8FpzRwNgxITnS2hOU2nr+7zs78QTfo0g/JlzBN04XKMEG3XhPNVquhWBc6C/UG8TORYQAcCBG6Jf4tFsO0T4iYqtpt4kdphf7jKDALlUebDS/TZOfcx4gjO8WpX89mIcwAOSXT6anRumz8u7qYFsLgIz7yI8s/Tnm2dNXFXgsOlmBrc0ROzoOx7F4PVBs0xvdZe42rKFpX0SThCmU3Ti9r0pPHfRae7ebBeK+dmuACnDSV2dxrEP1gckJY8tpsXAw3Ml9Rzd5fL0M6yTYwk2Nno6Q6LGKQxY9Mu8vOjzEOE0tofWko8cFmlHzjrkfdRZn/9GYRJy987+OEEZ9kvMFjhiCjuS3iPv6ptSHnx2dwz4Yt3qHVPBoDvYHJqfuZCAT+DQZ4lfNASdXuTMAoCfu15bd3JMfbxBEanLLxdd5ZtcK4Q4Wsaf87CqkZd4yT2fbZetLbNJjvpqodLZDY5xchVAzlULl8FGCSXoYsqF+W6ZM9FYeXL0qDJg7I5VMbdG/KH/AyrhVz1FvWlqGAK4OZ6Ayuo8wvC+ZHc4IiSu4Kqh6uA8D3ixZIMLBtCUmujuTAs16xwYJalUNJUD7mcZl08V+bLUddUXxKGglJFNq1WOATnLACRdpqBjp7ZmBUnThgpKhguo15hFwKDmo/I2S4HtoNQbde159OG/wRaBk7PvQgd/tR1A==
+    properties :
+     x : 6
+     y : 526
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         moimeme..libelle= "Exp"+caract(179)
+        type : 14
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = "Puissance("+Ouvre(fVariableAuCarre)+",3)"+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé24
+    identifier : 0x41a01b925cdfc4ac
+    internal_properties : CQAAAAkAAABbHAxdJVX9As0eeGR8n1Ws3vfvT0P1dR6gDtiG8T8d/HG+wzJdEr2x1MVqxowusp42Yutps0e5sl1jsEdT5Xq/fkE2YN+H6O3rfdlhuQM4BcQCelGj/EXV952oCFuhO6CsF97jTIriS0K/QvIpDaICPakGtutL4Py9JgnLvpENGxaVsmuXv1QbLT0Z7S8D9ISTmabytrs4SmU5Fxaq7nRdV8K17wIPeAnmPqkYfBr3N6tjbEQRl8ovzRRoiraBge87qEDZy+nr9XsAzq5U5LCOKW9DgQIB1oa9h1oWHsof3/TW/LqLRATJzTL9+1y99yC2ZkwNh/Ftij1O4sQ7bhbT8YGPkuJvP6aJL2ftkzE6rkvJ
+    properties :
+     x : 61
+     y : 526
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé25
+    identifier : 0x41a01bad21362e23
+    internal_properties : CQAAAAkAAACyOAx8DiQQ+9lDR637WHRAkHkeJyol8UTrFp/Z3a1vzpLPEHaT5kNeTtHfOeEIGkkkJoTb0lelr7p0xSQaluqNuIbtm+PU8zG/q/hI31+kK0kyaWNqntwmwPYlAP/zs2/BrFRXwP6525hH0MhhVi414bejk7ph//h71rG0nfajcCg4swBkwqcfieW4vbFB/sJX6jGszmPvcUwv4jTQmIjZRfMgWZhxN9CnVnbsOuxbOxEug5irPUV6hiQF7BKFT0kL+e1hW5nsEdyKYfTKrmD+swW/7+MSKsCXG6OOuXXq2N6rk4VznMPNc+7WQjBPeROXHAyYaZcVAzOud7LW5HNB57JagwRgkyLrq2Zt
+    properties :
+     x : 61
+     y : 658
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé26
+    identifier : 0x41a01bad6cc32e2d
+    internal_properties : CQAAAAkAAACpwTdzFc9r5iqQMOiwBbcD27pNem2YBHfsE4js8nqa6e0Ad3mG6UZZQ97QbPpxHcwnI7NGXV7cNrvl0ourh+0Au4OYxjqDmslhwQy+l0e64ZdoV1fMEKAOgiRxwgsvnVlrRm63KoBN80ZZYKqtYpjvC8EtAzTvJzDBSPl6NUb5hl7OLaCemLIoiMS30K7EZ6HUQzi311o66suubVMRJ3XE3nQHRMEQOuUK6d1XT9doBkrbNlfQyMyTEfdEtwewpGQUSiSU1KB1mNe1HDEP6a9P4jTuMKxJ43vSxt5LfjCxIcmenop4l7jAZhGJl00iLECiJwedVuJaxvbhOvcTpzaGqv0tsOl7qDnyom1m
+    properties :
+     x : 61
+     y : 636
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé27
+    identifier : 0x41a01bad37e92e37
+    internal_properties : CQAAAAkAAADrA3W1a4GtKAxumlIKN4EN3bxDfFNivjm+YXI+vExMI7/yZWu8g1g7dXR1SvJ5F65BPf3CW/zghlE/rq1rTxM+aZGaooBNMpmXc0Dgz69UkxkKYRvyBiSG4PalYJdL2w/ZzOTnAD7ZU8DvyMDx9o5dka/r25JJd7hLFvHEdY67cCCIw8A0IvvzRcmUycVN6ibbbjWg0h8TxZjTTlA0hJTd6WcUTewtS4QTCvJYDojXr0WSZ6yPCan+ApgxiNZBC81/PZElb8WWS5iObZ5yFpZwJcdbodeuHCK3qzcwGeV4avBAOGCWsd7mWAP7ZRNsWnJ0cdlLpFzQvPjjPPUR2QTQFGeH1re17v+05C+k
+    properties :
+     x : 61
+     y : 614
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé28
+    identifier : 0x41a01bad072e2e37
+    internal_properties : CQAAAAkAAAC3Nwl5DyUR/NBKfsaeuxXh8divSD/OyiWKpQ5qCPgYb2v2eW+wh6w/aXA7BgYlZ+790Y2GKwhIek0DyvkHU5OmpR0KhtgporVzVxxUsyNEmxXeSf9iqrwSxDLJvFt3OydFaIzbYPoJzxQrrEy1wrZdRUvrTxK1D+SX6qWIaWpr+KwEWwyU3sXdc9+e28snhPxRoOd6WNnNb86RkKJa7ia7F+H2V+pnnUZR2JTK5FLxhWvkUa6tK8PouA5rapybvQOlx0P/hffgJaaEl3gQmHiO83Etex1gzmT1cTHKv3/SgKZENGSSveLqXAf/Gc+grsYorZ13iLAsGAT/2BF1RZBcgMtjigNhkiPoqGNo
+    properties :
+     x : 61
+     y : 592
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé29
+    identifier : 0x41a01bad35942e37
+    internal_properties : CQAAAAkAAAArQ7X1q0HtaEwu2hJKd0FNnXwDPBOifvl+oTJ+fAyM4/8ypav8Q5h7tTS1ijK51+4B/b2CGzygRhF/bu0rD1P+qdHa4sANshmX80Dgz69UExkKYZtyhiSGYPYl4BfLWw9ZTGTnAD5Z08BvyMDx9o7dka/rWxLJd7jLFnFE9Q47cKAIQ8A0IjuzhYnUiYUNqmYbLvVgEt9ThdiTjhD0RFQdKSfUDSzti0RTyjIYzkiX74VSJ2zPyem+QlhxSJYByw2//VHlr4VWi9hOrV4yVtYwZYeb4ZfuXOJ36/dwWaU4qjAAeKBW8R6mGEO7pVMsGrI0sZkL5ByQ/DijfLXRGUSQVCfHFnf1Lr90JO/k
+    properties :
+     x : 61
+     y : 570
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé30
+    identifier : 0x41a01bad5aa02e41
+    internal_properties : CQAAAAkAAAC5eUzN6C+9JDLpaI+bt4LVRGc+PDyagjvU0MI3UFOybAI+nIk1oM2Nwz5ChVPQzW/iUMY+e9eXC7//SD+AP9XCJitld9LU/xguVse/50jzo6KCiEVbbSbBQAa0CQn4Hbs/o3ytuhGRG+E8UqMPhcQGtkrMmyGPL4GkKlo3naLF/0eHnQ5bC0MagVmFmzUhMeswnEewW6vIp2cQ7vTPSP3ACPlqhelZPrKMjWA8LaqMDkRAUVR4y8a+BcHnuptP0iqQFdFhqOeNQDcx/xThxrGjlE1VvgSQJ1SFgz0+eQWXayOjvHPEr6m94MoUaS6IXk7/UUYaQeHI+V/aC3vNUInRSjVYBTZMnRrug29K1DU9RVj557S/fubweb23
+    properties :
+     x : 61
+     y : 548
+     width : 255
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Bouton25
+    identifier : 0x41a01bad71682e41
+    internal_properties : CQAAAAkAAAD10A8Y8mqIdLyJmOTowwDwFeUKuElF+8cxf1KcwovaoAWNMjqulwXUJkN/tSZLSwucHiVDwIGrauvp7lFcLVEg321BMf5Wyp0ydTDnQGWAGRo6ZtbT7EGhrcYZhn65zW0Rj1tX0mFev3S/EcfL4SvgP27UHTulKzXlRiq6KdCkMFy+jzJgXW0nppHQ9ucPOvXEqNQf7Zp01k89ovzFAoMipI0p4/fpzsbznXpztC/LEJEF+kvx86QCSbrXjuX7mk7Q1hjxhw6dIJEcJGSC5Ca++rZfolGXA9JDQ5kcw9D8HSUVo1wkiugQoaO6jaX4J1e86Y+826uykUUqPoKpfA/Dz3t/hCQT4ZNQWz3GsDBXR4x+Y8MMIIJTScnmcMRgorIfRlf8h4BaBZ0GQvysGqI4w0cLcCvbChgf6Aa905Wz9OZYiiKE/9D0D6yXV7WmxIXwzOvfnHytctbyszgY0CMioP2iMROqQWm+5XtMLH1Lumo0CfeKE46FD2unAdEBswoleOxEEqKs5NHqn42vXjJ6z4L3Ap2lJ+7620ztLUJPUuK4kdPXYnVIcu1gGgm3PeEBqR+95D9wDOlr5fsgVtg96f/thgs8pltt6CB0iwupTLRPPpJUBKwSZM8vRZyavw1IK80mdbfPkqkpt1GCh+/jNFdhQ43b/7K8R5Edub/AbiWBa9XZYAbBVAwlTC3APXL8f7ftpJb2ew==
+    properties :
+     x : 6
+     y : 548
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton26
+    identifier : 0x41a01bad51732e4b
+    internal_properties : CQAAAAkAAABFsnZeZGXkjC762lxnchntHEdHQe1g1uDoMmrKqSOTeVxzoGx+l2Rs2U/wy9DP52vuTRXGc6FbBagoIDalwIJVfX285auvB4Kc3yrscVdpUcAz+fapSVdPq1yp6GRQWDKwQpBFF2nUTzMPXkYewn0wUkWSbhgrwjwW2qIqlV+zO7qnPNl9jMrFPo/KSrs3qU+oiKAnPUMTw4QFZKX0kjZYjkDv1QLniI9eSgnrue6Bvw9f+u1ja7Bc4khQmacatzNc5+cjx1TzNqQ8bAjqVhBhSC12W7IGC2hMZJ1IbrMKoUDdUwIFZpYV+WH0OQr29i/w7qFLxmRPxCv4PXMkX1veqWEoQtTCKAoVaaRYWEuDs1NkYKR/iFClanoEa7JximQyqBDVkMYG7WSN0J3w+5DcUrcuP6ZPDGo6Y5icmbCJtKE0Rbm/nZA0kr9xjOlHTG9bGMwoI7K9Bum178uU7/0UMTd1vGZ6pxmb8mfPSAp/usn82HbHnaq9gOxlFEMuP6ooml9Lu4YGTMb/vXjdz/DIOgwM57qju3TPYP4s/2HRDEkGlqDCXNUad/JYuWtM8XsercSa68PeoCLkUWZIk4y92M8cuf4gEBd4k3xdcTfcLA2JBz91wDqSb6pNzuwfyS/fITDJfvHDSFRGv8r0DCtVG2VQHtjzfcA5DJ94TuWFqqJ9DBrAyh0yVm7yVetmOlNxfoC2Qg==
+    properties :
+     x : 6
+     y : 570
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton27
+    identifier : 0x41a01bad4f272e4b
+    internal_properties : CQAAAAkAAAAJdkISmMmYUDIuJpijviUpWIN7jTksoqwkDl7OvffHHUB3jMBSexgwLUP8Ryyb0zeqGdkCL+2XMVSUdKoZNJ554dGImX8je/awAzZoDaNFbeyfTUKFMYcH08R5AOSgSDr4miCN51nsX2NPNgbGCoVgcrUKHrCjQjReEvIiZT/DY0LvDIF97JIFjq+yCnP/gU/4aIj3pYtzeyyNZO3k8vaQlkhfzeJXcG++2kErQSa5D39vAn0bU0BUukBwUdeKd0s0f/e7JwSrFnT8pAgSbjhBOP3OW0p+e8A0/E0g3iOKKfhFQ6rVVl5VqYHMSZLOvh/w/ulL3jyPbFMg3Qsknwvm0enYikQi0Nr1CWA8fD+Pz3+AvNATfMwxvl4Q/wZFtpAutMzRlPpCuQjhrME0v1zYnnMKyxrTiOb+V4SAjdQlMC3AAWXjsZzAFlPN8H0LyEuHRLh0l2bZIj2Z+6+48/kgDQORuCqeQ0WPhpPjrK6LtpW4NGK74fYJFADB+GcC29YkJnuXryqS6LqjOSyxIyw0pvg4A16nxwCTFBpA06UdWBXS0uxWwMEWe3bkrW8w3WdqaWC2nzdaDAZ4Pfrcx9gptCOY7fostKsMF4BxrSvgoLE1S8vJtC6GEw4hMgjz/eMT3XR1wrWPlODSy8boOAex97k8IsTPURRNEJNMGik53nZJQFaEDlnuEqq+gd+SFq8tskx6jg==
+    properties :
+     x : 6
+     y : 592
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton28
+    identifier : 0x41a01bad491b2e55
+    internal_properties : CQAAAAkAAABtit62vG38dCYC0nQvKrFVdM8/yfV43viwarISAWvbMeTL6CS2XzyUkZcoAxhnP9PGda3Oe1kjvdAAiD696LqtBTUE/UPXv0o0Z6LkmY9hWdjb8b4RaUfP29wpuFTw+AKwUgC1pzl0PzP/Dia+Uu0wIkWSbjgLcjzG+uLaZb/zy3r3rIktvMpVvt8aylvHWS9YCCDHvcOjo3QFBJWksjaoTnCfxXIXSB/++jlrOT7xf98fGi3Da0A8MogwaZfat4N8t5dTdwSzBsSMPOjqBgDBeC1WWxLGm8icpH1YXjNKkYANo9JV1tYl+THEWUqmhg/gTqHrBsQ/xFs4/QN0/xtuiZHY0uQyKJoVucwQEIPL6xssyJxHALgdUiJswyoJslwaELituJ5uZey1mHXo89hUGv/2l24ndMKCy6AUEQgxLMlcbZEHFfiMegcZpMG/1GdDgLQAK+rlHjEdd8OMJwUsOT+9tG5yL7Fjuk/HoOInUhHE4C7vtbJVaBSNrNuGZ+LwYsfDIx4OZC6HxXDVp1hgQpRUf+J7g0zXSMZkN3k5BFEOnpjKVN0yXxoAMeOEefPGVcyS89uGOIrsWX5AK7T18GdEQUb4aO8AS4R1qQ/EdJURv/et6FKqd6K1poR3cVfnKcihlplr8AyOdxI81OON050YxiCrNXjhZGewht2NsqoFhJJYcsVajlbqXfNuMktJVujeKg==
+    properties :
+     x : 6
+     y : 614
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton29
+    identifier : 0x41a01bad50892e55
+    internal_properties : CQAAAAkAAABRTgpK8BGwuIqWfrBrVn2RsAuTNUGkKqQsBmb21T+PVYivVLgq45A4ZQu0HxRzK9/CYbHKd6VfCZxMPBLR/LaxSYlQsTcrU75IS67AtbvdleQnpepNEfdH4yRZkLQgKKpYypB9V8lsr+Pf5sbGmpXggvVK3rDDMrRu0vIS9b8jE0L/PLEN3JJVjv+CivOPkW9ICChXRQuD29xN5L3UEragtrhv3RLnkF8+StGLodYpD2/vgv378zDUiqDQIWeql9u072cLt/Tr5lQs1Cjy/gjhqF0OmypeK0DEHC2QbgMqOXjV07qFRt4lidFcyVLeDh8AvilL3nwfDKMAPbvUHwt28bko2rTSkOrV+Wg0dBe3Z8fIBOhblNQppkZ4V14dnsi2PPTpPNKKcbCJFHmMF4RwJvuSQ6KL0J5mHww4RazN6HWIyf1LaWR43tuVKFVDEMMPzABM3z5B+sVhI2dwK8H4dWu58FJ2qx2XzrvbpOYTbh3AHLpj2d4B3GhpcL/6o64srmNPl+JaICILYUTpG/Ts7sBA20afr3gb/GK4S32F0P06eqSeGIlO414s5Udo5V9SUShuJ6/ChI5A5ZK038Dh7Ntg1eJkbOM0rwjJ5YMIqJmdw0Oh/Ga+W8Zp6sArxSvbJcytmp13/BiaA46wQH8pTxGEaowHicw1CJtEEiHBZv7R2M4ctgEWSpKW6Uc67ocFipSiVg==
+    properties :
+     x : 6
+     y : 636
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton30
+    identifier : 0x41a01bad4ead2e55
+    internal_properties : CQAAAAkAAAAVAkYONNV0/F6KCoyXYmmdrBeXMb2QJhBYgtp6GVMjKezD8NxOB/TcSR+gu0C/9xv+XaX2A1Ertdi4kCaVsPJFTQ3Mlftf1zLMb9ocIUe5gRCDSaa5qRev6zwJSCRQ+JKwQnDll0lU77NvfmYeAl1QkoUyzlhLQlzWusIK1d9Tm7onHPn97Aolvu9qKjt3ie+oiECH/aNT4wRlBAV00pZ4jsDPdQIHiG+eaumLue6hn0+fms2jy3C8Yigweaca15Nc54cDB/Sz1qRcjGgqVjBBSC3WezKmy4gMhL1o7rOqgcBdc+JFhhZ1+cFU2cq21s+wLgHrRgQPZGtYndMkHzv+aSEI4tRi6CoVibRoiBuzw6O0EDQP2KB1+moUe+IBerSCeEBloJbWPbR94C2gC4DsoofeT7af3LqKU6isyUB5hLHENUlPLSBEIq+BnNnXPD/rKDz4cwKNVnml/9vEP20kAQeljLbKd2krYvefeFqvitmMyAZXLTrN0Fz15DO+r7o4Ks+bixaW3JYvDQhNXyCYCtw8NwozS4TfkM68r7HBHFkWhrDSbGWqxyIoSZsc4csuvbSq+5MucLKUoTY4Y/xNSL9MSa6wICeIo0yNoScs/H35t08lUKoCn5q9XnxveV/vMcC5juGzuMT275qEnJvF67UgziijLXDpfA/InrW1WvLN3MoQug0iRp6i5Xv2qsPBzlBmkg==
+    properties :
+     x : 6
+     y : 658
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BoutonK1
+    identifier : 0x41a01c597c48d031
+    internal_properties : CQAAAAkAAABAg5ocpztAvQ6U/V6YMovcWikw/sMnICBb8VACYslgI7yhVOqv+q5EYmAacKQ1uwZE5XN4D4zrRbFDrUBETvY7JJ4L/byreyPCfF+qV+P5NYvC2RDoqzCCdXO2s1sm+FJ/olKdCYffwQq1z26rNzWI2LoWqvzYIN1DU1pf2ecQXfd1ECqlYJC+O13fhYY8qis+CRFTEi1Ll6zJFGdlKseL021vgJToDILEr04/bmCFpTk3WttQI30XDynBhQwnW4kU6mIGjRw1BLQqJhVL9/zT4/ya2ylHcyLaOH/IZT+5QYZyXxgni1BbsaDl5rdtw3lzR9u4HfnFYkbP+WAz+AXC5QL2W3Win7jDCwGw1h5RH+bQ37dawfRpkHgRAaUXkUPYSfmsVUqgmp/NL4VtcbXffqKxOx9vPg2ulvBz7/XUz+VXp1XvdPcrSpe+ME1DO6uhV2PX+d86pCK+2pGRcx5ZYT2G3X9i1apAko5mcV/G1Xojj4D1WLhFD+v7R9YvE+IBmALvqk6e1BMEfDDRGRPI57ydHSkfUQYO9gutn2y4Z55BooLmgWuBu7KFhUIsWPj0U6nbGJ7IdDNlXaFKzNThfO37RY8qBDNwTn2LTh5/IdQ+Bc87uZVfpFjxNAdktGOR/B74+kPTE5C8iBg+PWfsYAL7SBgwfqSJlkIaXnKp813yfmIJD+olYAurEJkvS3odVumzSelDxg==
+    properties :
+     x : 344
+     y : 20
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé31
+    identifier : 0x41a01c595878d03b
+    internal_properties : CQAAAAkAAADiAWbrTthBsVt3oCxwQoDdnKwiz8pQQ7Pir31wRYq3+E54zBs2XnujweSfcp2fn9LM2KQLn3lWdEuj+7XkwDgZa62glxaqoiGw1FO/oYiSZDHr6ksN0zmeqo2YRZHrMXjeVz6sILsN0g2N58lgiiqXY/uU73GU4l8wy4Emg+FpSf+YF/zd+FIi8o2i+1ootqtT1dta6Smu4JHzQJaNi0pAe5RQMzMFZsOOXrSEAfVRNlORrXJiX75TgwaZKufQ7YKFInVxnPmL5KGqoplEHLjXpDFd1sNsmwsz2LA+e0+tJqXrIkGnirb6htUPontuIn1/r9TtNWKjRD4=
+    properties :
+     x : 399
+     y : 20
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK2
+    identifier : 0x41a01da72f80ea72
+    internal_properties : CQAAAAkAAAA4yKN+X9C3baqcfvLV/7/Iyxv2tp+/i8BlyUZ4HbvrPx8H7gpblPzYJBuWdAWq1ZsT4Xl9F2pT4SOAiHIaqAhTzckLkLwNDJ3cj7n3DYnswPmObK58v1Z7K8xcPm/yegx1DN4ZPHOXPwZuoDWrLS9XnR6w535hOXbdmy2oOCMgN2mhn2FonyvIae8aTfk9CwbEZGOnwh6oZhfqb9CACJNcwXjJhSRnhwfuNJn2aCxcbLjqpH83QezKibglD00kSIqP67F13BPMnZ3eZftOO74NWW2Lq8DF1VfgCu+s4GOmETF3dvOTa0mamX+Rk7XTsJdI3ELx6HE7cAXAJzHe1S0dIls5B9U9AlpPSZtj1Y6IA3n2vi2PFhU3HrwOecZrv01sCFJZcVdoXq/Wjddu0/vUCKJmSaL8ry4G06aAMCCMLfxj2AiN0G5mMlIqeMcr+7V3m5LRnSFtdCdzaJTf1jR1NL9tyZjdQTYL3hYdhUMh9LIKiek+Q6L5W3st/0BHL/xwg6Z/3qLhIw8Fw0s1p3YxQYvfTU2/MfvPmfgKmyD7ZqidnEfUxfAMSU1QEaf5jE9kWqyVjjTYAWxQK9sX+rB5DT1sn3rTJ9LjUC/X9DJHN5K0r3ZXEWz0xpHrI4hToKoBgS8VZXhXQaJibYA/v85+giNmKyYIhY0fyPNq77BRUlyqcRTL1uIDgxhFvHuUm1qliBj/3mSj
+    properties :
+     x : 344
+     y : 42
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé32
+    identifier : 0x41a01da77803ea7c
+    internal_properties : CQAAAAkAAADzLPILTQtHEEJi0rbs7R0b5X0xTyUIyb9A0VCMuxBnbvOusg+ezzFxxV7VLJXxIfj23tCMCU1nnXkFq6akA+/3d0MrETLwgJwTI9m+f7EAxxuxcPLJDGDzsnInpKEKkaPlqT0C/mJDi+ZkdbPsrtqdKd2BN45oL/2bxnmD4+Qy7yvSBwkntzgsePVKPHiNwknGqHViFYbYxUVJ0yQTt/dthS2vfWOj1AZOLSyJ5ni/flDaoo6dkpSasQ3sKf6BWYbBSygvTOHJKXOQ704KT1FA3dfH91jHpjEbORbRNG0jYcGKo2yl48JXhvRhM/d5A7iW/g1goZ7n
+    properties :
+     x : 399
+     y : 42
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK3
+    identifier : 0x41a01db341e3158e
+    internal_properties : CQAAAAkAAABomJMuD2DnfZqsTuLlz88Yu6vmpo+P+9BVWdUpKgh6gE4mj9eQczVjCzLJGZ7HjEQawE7KeGUozCaz3/fn5QOQ7DhKiV141ehz5swkyhq7gQSZRO40/6ZjS1Q0to8iuqwVjO6BvJtPH54u0MXjRddvVRZ4ZxYBWW5tA3VgWGNwF6mB74kIN7NoYU+afZE1Iw7szCvnej6obhfiNxhw+DO84ZhJ/SQv7xemtLkGICT0dGAirM8f0XxSqRA9h33kmMpPi/EN/LtU/dUupWsmg8bVwTVzu1i1JU8g8pcUQDN2QcGntguTQ4Fqwb/hc/1reC8AJBqhEJHLOKWIf+l+tR0N8lvpf7XlKrp3aWtfMVpsv30SUhHjsunLckCaZYLH41nQBFbNFTMMwsO6udNKb18AnE6KnXY44+JalzLcTCzQCcCfvKyR3NLqtsbW9EMn70Erd4blQV2BqGs3pNALMlhBeNthXTy5RZo/koJpcf/FsMaGXR0Cf6Y9H7/piyzzo3j0H+ozst6Fp4OJX/eBgzpdVaczcaEbpQ9THWTWh0zPcuxZ0Ks4YdQwXSG8nTNF0Ms4llD5IvCstcD0R9cD9qTFscnQsz4bkZ6/SiH1dgZdyx6+kardU5jefKmLs9xJUPDH6efvP+afJ/Qm4UQrLV6UuPOmVQhq2V8t2IOa36BhYkyaYSS7JjLTUyhVrGuEq2pVOEjPDjRz
+    properties :
+     x : 344
+     y : 64
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé33
+    identifier : 0x41a01db31894158e
+    internal_properties : CQAAAAkAAADK2/kAViDeXZ+dzflhEIAyvKSI1J6RMBDpyK5olWwRKhHkhq3IF4Xl5Tw/lHOp56C4YGAmN2kHfe2/7dI2l4ETkS2Dq6xIVIgL8R+WPbEe07WjSAxDvPRrQijNOAPuMy8bL6Ho1Ebby7LyB3vi1lDRi48hAdx8B8m3nFdU3BkFwgTVEvA+GMUBDVxh5f3qbfzTB9SB/IfdxipwsjUAUKqYVvjiMMZo3Q9XKF9eq6naeaVZIfU8MzE3EqB/Xrvi/NHKTiuu8/pOUqhHHk9H5Nhn4ka2GiM8D1bsXMlGjQSKyqjxGuU+Cut++WfUgARMNm0tFRRpqpXQ
+    properties :
+     x : 399
+     y : 64
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK4
+    identifier : 0x41a01db91bb82d07
+    internal_properties : CQAAAAkAAABaqoUYffJRj3S2YEy3nZEurY14wC1Rnfq3I74wMbtLTyvjSsoXHASIWH9WDGnyDUOfNbXtG3pLaY/kENr+yHjDtvUFaCiD9i8+d0G59ecoepEewHBGm26/YzbickUeXJTTkvIjQrtbs4rEgjW15ZWXX+AwDaiNgYbtsfsUXtfWj+Nrr/eGP88MqREsfRN10WYaCl+JiKbUCnskeeSutKW4mxLRE7KXG29ydr9mqqxu4P54wAnZHSxG2SLrA7vgJqr1waX/cgtotfUM3+Owa1Rhf6PvPTYVmeuMuK1Qdu+IEX+d5sHdx/FaoVXzj/u/Vt8e4vp3Qq2LvNmqqUUkaRMJdLUBLe+J2grjZ1HGPIGxBCCzg1bI2fz2qTWPSIFasEZ/oeumnmpngYL/pt5Bzvj5l+cDqmMzut1BnP/vryvdJjcEGTUCV1l1PVtjd7ayfPY22EciPuTsN3oEsaMGVZkak5yyjjWULIUqi4uAfFpilZXj0pKH9iGwgiAC8gdiFOFfcKvwRz2oKoayCN5ITtPOPAxY3n5qmCImLg3dVoc8BwNWNbRBRJsbyMrVlDrUrTCH6x2i4ysTfGtVOFaK1bnKvLLZpEcWgo2ubcQKfw1ozAElGBvQzD7i8HfZHW5dslSrH70HN+JxF2Sga3JlQWD41HEUfbiir3uZdjlchYp/fGa8A4JZQEjppfqnEpFuQfzHqjrd/AZB
+    properties :
+     x : 344
+     y : 86
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé34
+    identifier : 0x41a01db904962d07
+    internal_properties : CQAAAAkAAACdDgxlM22pKszkpCB2a7fJNy8LSSsCOwlyYxAML9hPXs8CJl9yz6GBMeKd1GlhEajCCkw8JQUXbS1Rw86Qy48Xq2c3GY6YKMxX9xGGQzlwf7f1xHJFjOBzNiY/pNVSKeOZffHawiozu3ronYMYxlKlveHtf9rAj2U/2oHtQYb0eR3IfYtxIdJqKjMA1j5X/CPgpnvU94iK01dfuU4RCXnvB6st/+3dhrQIm9p7vLL5MPoACJC3fGYoA9Pqa8RTA3gToebhXrvbH+U+BcCAeaMSD6UVIVrpoM/lRySjIh/xs7OEpWq7lXCF8G7rqW3zicKA4G+Od8AF
+    properties :
+     x : 399
+     y : 86
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK5
+    identifier : 0x41a01dc6788163a3
+    internal_properties : CQAAAAkAAADIODOO70DH3ToMLoKFL++42wvGRq8vG3C1WZuXlNLQ6hD4OU0e4cuBfcQ3twCpqhasAtgwViPmOigFnQWZF2E6t8Yfh782C5Zh/MoiUJyR+1KXCHbIF8bjT/jUPgOqmqSJcPL5mNtvf8o6cCU3ff8PKRosh7pRIcZZF1Vw/LMoN5XNA/HsPytoVdvqnTV9+3aoyC+nru4oBtOWp5C8MAuETUztTWDvNy9C0PkODAQcLITe2G8j2QRSpYxlnzGs0BKrJ+XtYCME5WlKtXvCW579jVGvI6wNrYdkJrd0lNvWIa1LiqMf+yn6PUOpa1HDMI9kWF6pjHkjqPH8/4la1X1ttj/F7zFlmkIrPVtFszh6TeOM1IeByJ8dAKp8yzwdcc+uZiBzswlClIHsU1k0HTVOgijcQ9TmgQQ4scTy/hru72Y5NqLnYiiclPhYqs2VBZ9B6UA75/MfwvGxFialCA7/viUrC2JfE8wdrKTfg8WbroTAF9NoHWxf7cHrOYYJga6CgURR0ITjwWmjIfVL0WBrW0EFF29Rc0ERVy7MQaJ9oHpTKkGeN4oC49PWO5VrFtH+AMp3qCbCbw62gR1dDPrj7wOKiawtXyyJtMPb1HDjdVB460ikJISOLAWf50QJdFBnjROzq3Yb3zzKBZhDZbpskEdymUSa5W+NfP/W/wCBAuw6gQTbxtJzM0h1TMskC8o1GKhvbpTT
+    properties :
+     x : 344
+     y : 108
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé35
+    identifier : 0x41a01dc7174563ad
+    internal_properties : CQAAAAkAAAD/KK7HkecjDG7OvlKQQaHf2TEFUyFsreOEhah0i5AHHgMeIncOl8kRnY5FPEXZKTBulsh84b3Xlfl9E57Eo3/Hp7M7QboAgDQDe7HGj8Fw92sh4PqptNjDmjJXlOkySQsNQeVCtkKzU/ZMXRsMDmp96c2hT54Qh22jthmP/2C2u98++41bc0zAfNmmaITpdmX61Bk2qdLcqfm9D4B/U6u5eSmTAcd/uEqS4Vh1ogQjOuQWZrJx/hh+VWG4FZrt/XIVB0zzkG2tzUfU0yLe4z2kucszA1Tr0t33RTrFCLlfHR1un2Cxn4ab2piF11Md55z6WtEs1aLj
+    properties :
+     x : 399
+     y : 108
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK6
+    identifier : 0x41a01dd66e089e82
+    internal_properties : CQAAAAkAAADVNTClgk/M1CEBI4eI0NRRcPBT3VLKsAOgaqq+4e2/MXPrBLoL5jJ23u92VuXYgblTKddV95zR75FQfIRSlvBtepk5LNwpMKksz6UrBY0YrBkuQKbw1xabv8B8RjOaWpTZEHIRKHP3HwLa8DWvxYfH4QK015KhsR7p7x3YzFO4h8WtU4kM19OIzWu6jT1lMx7wYGe3xj5IrmO+D1g8MJuEzbydVWAnT38KYKkudDwEBBwmoD9rKQSqRaS9h5HsgKKbBxXFIFvcNbFaxcsK48ZldZkHA4SdLV+Unq+85BuGsR1LigsPg+EKJeNZ2+mbGAfc0CZ5dMkjYPEkl/Gq5Y09hg/FZ6H9QiIzzVsJd+w2US8wEFO9nNs5nDaAn/BxvXMKOhyPT42eEI3I98048eHCHrxYT2B67bCEXQi2gh7q8yLtAt5TFvSo4LTMrsFZMWONbYxX4yeLbr3dmnoZLLrj2jnH574zzyiJKOgj50l3giB0Y4+UkbjLaV3Prfod3TIOJTD9XChvrYW/BQmfZdz/98WBIxtVr91t80JwNQaZ1Ha3lt1KO2b+bz9aH4k/0nUKFNZjpGpOO6oSZeEBQNbH+4cmVeihLRQx6oFltpjNdWh26UTnXY+3NRJsAgsyYY9s9uTqSotaAO0voivKhv/TcURnrE+LyEyuScwBLvGWFYFXpm9ua32caD16R84hFNE6Jb1acYnO
+    properties :
+     x : 344
+     y : 130
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé36
+    identifier : 0x41a01dd67a4f9e8c
+    internal_properties : CQAAAAkAAAAmx5XcmvwaeXvJ6eXFJET2cJjcGHr1FHQN/NbAtUzBinE0dpUoP/2lzVx/5CNhL/jwSEiWD6nX9T13lWqmx1HjAY2ja3SIxCDrmYd+vfFOwyUzOHQzBFybKqjtSCvmmwezx4lYvObLY7IKT8MiBjCBG98RecwkPynvDHdAqFW5vtixZpRSRBkVESB90dmG0TjXsyglgMPhih6UrmG8/C5kWgT2pIqE8WNrDEvq15X+dWl1xWkALxU7liS7ygc+AC1uat9i9wYC5qxLQuPLCMRbDppiVi/Qq/LYSP36ATDmpoTVdhkKRi/CPTs4ZCAg2pHxUdgV/nm8
+    properties :
+     x : 399
+     y : 130
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK7
+    identifier : 0x41a01dd805ffa99e
+    internal_properties : CQAAAAkAAADnZwKf6EnG3jsDLXmK1tZfcvJd91j8SgW6nOMFDFS4yHAYJyHi6+GTuwTTWdTPmkB4BsZE6vWUDFKhLcdd5fUQA3LHZ6c4GeDHqHogTJ49le7jfBhys2aHJ3Jy2pk+tFQXfgajVvMbq/7QejWx5QWHo+w8jRwVcVYphVtsgk8eL6efq29qV1985V0clS/lIQ7GBiN5fMb8Ip/QsaxybCVwP5bta/ZnC78W2g/+Jvw2KIKkLFGd5YR23Y7bcydAJmppNcFPNpuo3YmI56tcszTB00e7ZWrl6aMQRIWY6h+YkXN5GvHpP+FCnWljr4dnNv9yVpb3Vq2jxL22wf2oERsJsClFndOhAprnU0k4ugsz5hoZWQDqs5ZU+9Ntmo80UuCZr+kw2HSpX9yF9DiXEOLD2Q3J1AX1VBML0r2JfXU/oLkiHzcccXsTH3HBccQMjuBIlvV86OZGTczax8Ucr9ukxdpgWEeuVpNUkYGaoiwUB6dxsLRRYLPm9NZItM20Xru5Tumyof9S8EjwNkjOSP2gLgKWmNAsshi4tIMH5GHeob0Ea3aDDlVRggiTVsB2J8r54TsETXUFyiWbppAot1O8zuDvnpkERhMg7YSan+9o/pOl6MVfJXX7SRBqLGXeGzu43NL6Op90GPUhlDkkWqF3nToN/Oc7hpBiv7qDtPuMD5tpsFV0bXuaaj98RcwjCss0H6dgf7v8
+    properties :
+     x : 344
+     y : 152
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé37
+    identifier : 0x41a01dd82c93a99e
+    internal_properties : CQAAAAkAAACQEQdOCE6Ui+1bO88XylZEoqqG0rC3VjY3dt/zlGMmZTZZPdzrbHAqkgmkpu56tA3lDY0NmvyE4GA8MoeFIM5Aoh7cKrJwANxTY9k+f7GAB5vx8LKJzKBzMvJnZGHK0aMlqf2C/mLDSyYk9TPsLlpdKR2B906o732bxrnjQ4SSjwsy5ynHl1iMGFVqnFitIukmiFUCteb4pWUp8wTzV1cN5Q2PnYOD9GbujczpRpifnjC6ghQTZGDkz+3MCW5feUxHw5DJ1t8pr/UUm61NdFaPwqBo1r8UxZI46h9ot+qs6EYXMN8wGP0QTw0KSs6SaCNjw0qjbMsK
+    properties :
+     x : 399
+     y : 152
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK8
+    identifier : 0x41a01ddc1ae3b69b
+    internal_properties : CQAAAAkAAABj444rDGXieoevSeXeytoDhqYh+3Rgzok+kPf52PAEROz0E82Gpx1fdzDPdQgjvlRsGtpolumokLa1MfuZMTFsfw6iK28CF6pRBLYe4NDlN8IPVY70r4ZDW6QU9o/Susw1HG4RrJu/Lz4u4BXTRYcf5dboZxYxeS59c7XAOPMQ18kRL1lYl4N4Ye8qDQG1s558DJsnOg6obgfSF5jwCBO84QjJbfSv38emNAlWkASEZJACfA8/YfyymUBdR72UGApP+9F97LvEjRXOlRs2QxblcRWDe/hlhe9wAtc0IIO24SE31vsDY5GaQT8xQ60rCP9wxEoh8GHLeBXYH+m+xV0NEmvpD2UlWkoX6XunaZKUJwWq6olLWmGjijjCzfpfq0F4HE7FXZtkmpvyYRuCh2dIRAYi9f7gWxqyD3okJMRYUciXtCQZRCpCTj4e3Bt/N2mzj57daaUZgAOPDHgDysDJILNZ1eQhnbI3ikoRiTcNGG6+NTUKZ541N5fxk4SLC8C812JLGkadv5uBR/+5+0JlHf9L6YljfSeL1azeXwSXuhRxyKOgKYxolRmk5Ws9ONMgjkhxCvjETbjsT1+bzmxt2WEIi0YXYYor6kH1wup1/9LWqQoDecFHhdym6NlKt1dUcH5O1jsIrFnFyM2wrtUr0faxWJtPkpx+m4b/KHcIixftzEmAGS/OXiNQqWiHrm9YO0vMAz94
+    properties :
+     x : 344
+     y : 174
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé38
+    identifier : 0x41a01ddc6628b69b
+    internal_properties : CQAAAAkAAABysyG4ftj25fclZWG5qMgK9GxAnPZ5mOiRIAkFjmkwyxhzp1ZxhoqsFIsmJXiWgkUT+zXPzEQAAMCqdA/LMNhUcExUnAxYVIh7YV82HaEekxUzSBxTXAT7Ymh96BPuIz9LD/FIVDb7q+Iix5vCJnARy79hkWzcV1k3nGf8dBFt6uxNiohmYN05ZfSJjbUiVeR738yZRA8VXqLoOl0YqNJgntA66O4QVedvAGdmQ4GiQe2R+aeWpZ3hyBinpidofI/wVhO8iWiOUNozkrNLdlSJ3Lpy3KVuG2jCZJn2BbxSEhBZ8p120rNGsa+s6Ky0TgVFLTyxUi1o
+    properties :
+     x : 399
+     y : 174
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK9
+    identifier : 0x41a01ddf7c26c4a6
+    internal_properties : CQAAAAkAAAC1VVCF4q8sNEHhAycoMPRxENCzffLqUCOAqqi8qydVa1XdrmAxFFDUECHcJJcCr/uVW3EDPYrvNaMKEgLUYM5nPDMgCsolENGsNdOjU52SuF/cGXDGm27/I3ZicsUeXNRTUnJjgnubM4pEQvX1pVUXn2BwjaiNgUat8XsU3ldWz+OrL7dGfw+MqRHsPVO1EWbaCp+JCCbUyrtk+eQutKX4m9LR03LX2+9y9v8mamyu4L74gAlZHSyGGWJrA7vgJmp1ASW/skuoNfWMn6Nwq5Thv6OvPbYVmStMeC3Qdu+I0X/d5gEdh7HaodUzz7v/ll9e4jr3wi2LfJnqKcUk6ZNJdHWB7S9JGopjZ5Fm3GFRZMDTo7YoeVyWCdVv6CE6UCYfwYsG/gpHoWIfBn7hrphZtwcjikNTmn0hvN8Pz4t9BtekuRVi97kVHXvDl9YSnNZW+GeCHoTM11okkcOmNbn6s7xSbhW0jKUKq2ugHDoCdTUD8nLnlgFQYkBikidCNMH/kEvQJ10IymbS6P7oLvOu3Kz4Pl4KeEKGzm399udc5yN21ZSh5Ps7KGq1tNq0TZAnCz2Cw8tznEt1mHaqNdkqXFJ5hL+S+gmqleS6KwlIGLXlWNtTPVsnJT5QpgPSJY8susCOxgu2eAUz5k8SLmtbuXgj4EvbVDzePXidztG2NaF3Rs8Oi528SF0a565BdLEaBZ16Ueku
+    properties :
+     x : 344
+     y : 196
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé39
+    identifier : 0x41a01ddf7da1c4b0
+    internal_properties : CQAAAAkAAAAJmrjBl+kldniw8BxKv+sti0MvvRcWv61Wt1/hIPWCWw7Ro7xTlu50WMG4RbbeqLn1Hd1JSjBI3BiURlO1HGIM6lYs3u4IiEwnR1Hm42mwX5cFRMJ1bDCD1maPNAVS2XNJXQG6wjqz+6oYfYOYtpIl3bGND8rgn5XfmlFV2R5cwcWAlWN5CYqCAksovvZv5MtIflOMPxBCS6/3AXapgYHXL2NF19UlXozA04LjNIqhuGKY4E7dXlrieVu6m2yxi5b54ZY78MHrjYeSOcTAO2+c8eHZZyiTtIHbd9RDFosNTy94kX6X8dRplMK/nRkn3Zb0XNMq61SR
+    properties :
+     x : 399
+     y : 196
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK10
+    identifier : 0x41a01de21d8cd0e5
+    internal_properties : CQAAAAkAAACAQGvWp4iPFWLENnqN1+egIwOOHhcHc1jtoXfz8P68hiwEBVEi5T+tQfBjU9z1hgJ4PuS0Wjdq9uxBGTHlY02mM3KuWxvs7fx75PY8eLpJIVqvbdgyA+Yn94KSmlnu9NR3jiYzZjPL+75waqXB5bX3M+wsrdzlsfZZlfssAv++rwevax+a188MJT0sZR9FEb42prN5HHYc4q8AsYxSXOVw3ybtG8aHG4/2+j/uNvzG2FLkfJG99QQ2bZ5bU4cQhspJBUEfBjs4TekI11ss84TRgycrxUpVSWMgtIX4yk/Y8dOJeuH5/xESfWnzvzeHRg+itqZ3Vr3j5I3mAd1IwVtJUDll7cOB0oqns5mgEsP7zmLxURjSu64MswsVAgcsWsih56EI4DwhN3QdXABP6IoLgUXhzC29LGtDiuUxNU3niEGal08kOfPLVwmpufxk1kjQLs0UEI6+ZaTy723UZ4MM7XKYkA/2jmvM6SniWsT8D2/JyCw5CCu+DK6QvOWMZkMhpkFq6afq6EDIHtBGIIUI9tqu8Jh0ijAwDCvvXJkGaaWcg27L1g0pWiD7nviOD9LhWZM81f2dgp0TLpiA77vEtrjHtiF0xnPAfdzi/4foVrPVSO30nPwGRB1/N1zpDDCPJbuDkwbr74yKDaBj/RrEQAeyUQQiXYcV5F+25yjZ2sQS6awjvsprO0B9RMNcU5J94OCnJtwb
+    properties :
+     x : 344
+     y : 218
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé40
+    identifier : 0x41a01de2328fd0e5
+    internal_properties : CQAAAAkAAAAhwpDpr5EtDmDIuFSSR6PV0zv3dT8O17VOP5epWC0qM6b5O6TLHvZMABkA/Qa2YKH9ZSWxwqhw1PC87ss91NpUsj603u4IiEynR9Hm42kw3xcFREL17LAD1uaPtIXS2XNJ3YG6wjqz+yoY/YOYthKlXbGNj0pgHxXfGlGVGV6cgQXAVaM5ScpCQgto/javJIuIvhPM/1CCC++3QbbpwcGXb6MFF5VlnkwAk8IjdMrheKLYoI6tvspyWWsK2zxhW+bpQQZLENHrLfcSoZxYExeEmQnx32CbfAnTf6xrvnMlZ8eQuUbfqYyh3JqH1VEf5Z78ZOsCA3y5
+    properties :
+     x : 399
+     y : 218
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK11
+    identifier : 0x41a01de855d6e50a
+    internal_properties : CQAAAAkAAAA+ztl8yaalo9hqhKCjiZ0qqbkUnJGN+dZT/0ymQ50RaRVdjDCNShpWellE6gusi8X5/2fjoeg5//lOVkjIqtZ1YA9YXjLrinN2uadNX+uiQjMAFQ50r4YDG+QUdg9SOoy13O5R7Ft/rz6uoNUThUefpdaoZ5ax+W49M7VAOHMQF0lRLxkYV0P44W9qTcF18x48DFunuo4oLkcSlxjwCBP84cjJrbTvH8cmtEmWUETE5NACPA+/4fxy2YDdRz0UGErPO1E9rHuEjZXOVVv2g1blsRVDe3jlha8wwle0IIM2oaH3VjtDo1EaQb9xg23rSP8wRIoh8OFLuFWYn2k+RV1NkqvpT6XlGkqXabvHCXK0ByXKiukrekFD6tgi7Rq/y6GYPG6lPbvEOnsSQTui54co5CbCVd6AO7qSL1pExCT4Meg31IT5ZArirt7+/DvfV8lTLz49SUV5oGMvbBijKmApQFP5tcTBfVIXqqqxqRct+I7e1RVqB37VlzdRsyTrqyBcd4Ir+uZ9X/shpx9Z22LFPR9ryWkDXUdr9Qz+/2Q3GjSR6AMASWyIdTmEhQsd2DNArmhR6pgk7RiMr3+7rgzN+YEoa6Yzy7IDDGPLLBJrN6qg02rg+FbebMfRtQpRogi/V2Xvb6ZJk+BQm2JpRWCsUKH0HeBGd5/9BnEkEZ5jYEqYZy6tNETloeaTbjXK7SiT/oYB2GKl
+    properties :
+     x : 344
+     y : 240
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé41
+    identifier : 0x41a01de80148e514
+    internal_properties : CQAAAAkAAACGUCEkJ/q7ILN4NYy0F3xdVd5HR3gi+mRC3VVM9XbRxNINf6NyHegzgn5yJV6A8gOSUcTf0Gzqtc3dFfKED5niN+f+88CWMHR91QZCxzsnvCCBHcE3L7kkOdT568bSX9ZQ96Sa5M6Y5oNWX3j8krl0rkO5L58bWijF23ufNGd4vQVMHZ5rPLRmSsZdXH8WLscYZA1rPz2kO6M4EFQacHsV6Qm3xv8QRN7Cklc7qYtxcFb4nJGzSfxqrZzdJYuweVAHh1gSMsydBSPPLMqDgIsxAEiWxkLIqrydsobyYsGhHK9up5qnCbO9zCjF4E+ic1ak8mCVoQ==
+    properties :
+     x : 399
+     y : 240
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK12
+    identifier : 0x41a01deb709ef26b
+    internal_properties : CQAAAAkAAACxUVyB1ls44B0tz2NcZAi1VOR3MR4+FEfkzlOVEKygOAR8a5HuUwHzR3hbiSgPWsCEauLEbl0cnN7dZcfZJaVAH1beF9c2G/5RBPJakAwBm3JXkWawR5ZbLzC8JtMqutTZYNJB+BOnz0K6QMXfRbe3sSIk95KRcf6ZH904rGN4RyVdU9nc94NYbevK3a2Fo45AgPf3Bi7I7vOODzgcYFskrWz9pbDH/08K4JkeRNxUdCxGEL+LueTK1fQdBxF8ICIb1zW1MJusxXG61du6I7b1ZRm3Y2QtTR8Ebu8cBIsGUZ2b6psfg7HapcPp65l76JdMkLZ51DljYAFUt3Eqle3dxp9FV7Gd8tIzrUtBv7SOCWfYmNvV1MMhhF74Fxg5Vcui4qR3Z+XGWFUwbyWgORnaNoSgd7jylXgspcAu6gaiCxr1CkYLTjxQqNykpolByZuF1bS/ex8z9iVlEvKB1DJ7MqGvD1Zr11AR0ABbLzEPOjj8yxdMacCTUWUHpSLllUpmDdhF1IDXdc1HXQGnTdTXL+2Jq7PNF6U1OxpI/W7RrK5/3oViM64Gdyeyl9HHqg2inH5LPIJW4zJ6nRmpyG4fE6/OvYDJU8BtqM9XoAxXgRQkHxwBX3/JGzYABhug3QX6CpA01Pnm7g8PmqNqRGPx1yhzHiHFKA7sNWD1Yi3S0d0r8pNKV2GADJHOK+oFKOUuEZF2Ve0q
+    properties :
+     x : 344
+     y : 262
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé42
+    identifier : 0x41a01deb63e7f26b
+    internal_properties : CQAAAAkAAAA+722E0qRiMSMBcZ3NjPx+eJBk8DwlXBQh8HPn2Kdquerd0Qi3iGz+3k04asLumKH5YdGpNjhgBMwgZpu5FAKUFqJg/pJQwLwT47neH1FAxxsRcNKp7GCTMnKHBMFqEWMlSX0inoIDaybkldMMTtqdaX0Bl24ILx3bhhlz85Tiv9uit1l3Z0jcqKX6LEg9slm2+OXypTZodTV5g9Qj5yc9tb0fjXNT5Da+3Vy5NqjvzsDqUtxzvLi8lyX8KUZfAQxPK3jZbk9pr2W0U/U9vOYXcgD4zu/c3cpgwm/Y3/KY8PaLPsFSPic6pdNAHJjYotm5mZDtFmGk
+    properties :
+     x : 399
+     y : 262
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK13
+    identifier : 0x41a01dee1782fce7
+    internal_properties : CQAAAAkAAADcLAeS60Q7wT7w0pbx26tUd/dS0kPbp+xRpXosOQf3G1uTyvbPMFg0ECfSEKkO2Q+HtW1xI25HlUfUfKa2dDRfzjV8PGhJOOGIo20b4R2wtE1SrQ5cH9Ybqwy8nk8Seox1rB55nBPXn0bugBXLTe8X3X6whx4BedYdG02I2EMgNymB30FIP6toae867Zndy8YERGPHYr4oBtcqDzAg6FNcQRhJJcRHB2fudDlWCEzc7PjKZF8XIWyqSTgF7y1ESApPS3FVvLPMPZ0ehRvum36NWQ1LC6BllTcgCg+MwIOmkbGXttPzywm62T/xM9VzMBeIvALRSFH70AVAx5F+tW2dYrv55zVdAjrPCbszhV5Ys0lmzp1/ZoUHrgzeSbY7Tz08eCIJIecY7r+mneceYwvEGNJ2OZIMX74WozbQYDDc3QzTaHj9YB72guL6yDc7y+UHy6JBDfFdRHcDuGQPJkRlRK+9eUht8cabLiattZOxZMJ6WZnuU9KJK4s9D3AX/ywAM/YvDnLRc1/VE9ul90ZhUbvvPT2PocufqYhayzCL1njNrDfE1SCcWV1goddJ3H90ynxFPoRI0bzgu+sHykBp3e38j2rbT9rLSC/nHGKfl0rsV1YCnvB4SuX/x2R3hG4FnSMhOZxDjW6uecyTq/rKTidyH+JEaZFjvKduW6RlZnBGlXBvan6fbzRhWN8wB8YxHKRjeoDH
+    properties :
+     x : 344
+     y : 284
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé43
+    identifier : 0x41a01dee2494fcf1
+    internal_properties : CQAAAAkAAADsPaM6jMqA1xkXVztrHorINi4KVhxrqpprqkFFAukQ6xzfi059NpJMCJd+JXTOyrWnzwEXgHQAWIQmNOfnAEDUHDhY5PA4tIgf9df2CUnWM9F3dHy3VIyzvmQtCPce6+/nm2VYYF6b8waODxNWdiDBH5MdSaAEHzHbmLfmSqvvNJZzoOowYv8353IPt7ukzx795Tornpm35LT2ACd+MmwamDbwOqAaV82BDg3YGTtMy9f3V9lgl3+nAt79uC0SLvmSBLGWC+IopnxpYG05MHar5kiAzucgLbaMuleAi4YIRCJrnGO8lHGE82HevnrGvPdXP84v0K/2
+    properties :
+     x : 399
+     y : 284
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK14
+    identifier : 0x41a01df156840aa2
+    internal_properties : CQAAAAkAAAA21tEEYS6tu8BijJirsXXykVE8lPnlUT6L5/uvuIp4inSM1b3qCXOZ2fh3l2xRCu4g/sT4OlMmmuSRvbXtf2kyYzJ6v/s4oYB79HK4gA7l9cJXQaD+O94HIw6aWhWuXORDIvJ7MhPDg5LEUuV9LV0vF3hobQCdga59CXOMnmc2H5PLP+/m19fsccGcDbtt2T4yMmfJYLY0wpv8EcyO1OVoK9Kx+yIPk+9qBo92smSm2BZgCNmRreyO+QoD6ytQRtqFYWW3soOwdd28HzPYc0yZ1xtn3d7FyeMsQFWopu+o4a9Npqkt7xlqmVXDj7PHLsdmuqIHWn07NGny0c0U6TNJlIVBdb/hEqq7x+GqEMXdKNyH34KEzQiCVWHjbLWejOpL9ZcCSr7TzV4LSoLFYnStYyv/Fr/nhimdKAOjo38pSoPoZfGeq2VBSVcnG2r2mCryPBPeekioEwaQNeeK2RW+P7C+ejFIqKGmJ++0QA4u2VHHLk4Dep0sjixG9ks2wHULNPcsE0H0FqJuvMJM0m8SqIAUGlpedB4yClHhWrtY+98qcfBdOEeH5KZ5mB4IiQTzT4m+bw+/aIcBXEqO+ZV+CCa10Ft+AGnKcwJEXdl6yMVLFp+6ysKoOgepjSa/2l5VT02J4fTx2YqcF17dm+gCxnE0RwrYOyFzjsnMOca7OKJwTzaVDBw9yd6bZi3C9TCbhh750Gqt
+    properties :
+     x : 344
+     y : 306
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé44
+    identifier : 0x41a01df125060aac
+    internal_properties : CQAAAAkAAABTTBJrLWun8OJCMtYMzT27Bd0Rb8Woad+gsS+J9J0SKzLV5xy/VhbUZL0oRVr+2MEZ4UEhtqDYpISAZhsx3NpcnjpITroAgDQDe7HGj8Fw92sh4PqptNjDmjJXlOkySQsNQeVCtkKzU/ZMXRsMDmp96c2hT54Qh22jthkPf+A2O1++ew3b88xA/Fkm6ARp9uV6VJm2KVJcKXk9jwD/0ys5+akTgUf/OMoSYdj1IoSjumSW5jAX2LxgS2kINbL7xbjTt/xd4sv9o/no1yYurfHeew/f4Zq1dh81BWIdVM1DAWEqw0zFg2L3ZhQBU9eZYxh23m2Agf5H
+    properties :
+     x : 399
+     y : 306
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK15
+    identifier : 0x41a01df43fb1164a
+    internal_properties : CQAAAAkAAAD5CeS5HhNwqNVVh6uUvHCNDCyvefbmXD+MRhqOmVXHKUtjfOojVqLuDrf+jvVYAcnDiTfdF7QJ76lQPDTq/mj1YnHQPAAfeqsmB53FtePU/hHWtSiacyb/p1qqQvlO5ATnrhb7pqtTWyagGhUJzR1fGwRUzeRl0V7ZLbPEso/+Xzff64d6X1dsfX28lTdtieZeLgvJVFZMav8YyQTSXMWQfyYtI0aPIz++ek8+XtQugFp8xIFF9QTOPRZDu8dgNrrZNeGXhlPgnSEIpwvE+2xpey9TdWLFOYvwPA0Ayh840bNZ2vlpp2nixTmTn6/fPtfKDk7HLo3zfJ3eCXU4QStpsIk15cMJWuqvo+ksjl9fWpYddfzWl2Jg988RHnPIzqSFo/WsVOjFe4jxaHwLNB5HRXGlcKH5gB+3DmGtQVkrhJUGC0NYFRevy6011fjwmuREChHopCpiaajm2znQQ6fIIa5c1PPSUs8Q3RVu1hDQG1O1LEDN9D+yANL8KKEY2g+lUuU+7aP+HCQcqnwyXDlUakZyNFygzhSksPfriPWahYloNzLf4iE9LnR3umQ6wx5V1ScQeUkRFnFXOrQ8K48QeoQr6uXkGMdkr46goeMWCsfnqglbKWOLWeZI7gdeRYsgEohO7ifulHGzfnd2cpNvlUALcJOXvGCyTciNusW6OaVzSssCn6lIxNmGczLN4B3mSVk+naXi
+    properties :
+     x : 344
+     y : 328
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé45
+    identifier : 0x41a01df43f451654
+    internal_properties : CQAAAAkAAAAr9GrzxbNPKMr6Wi50FbUjjVVZp+1AgUe4mcdxDJWaQ4o9v8T3Hl6MzFUQXUoWsElhaanpbthAPNwojpO5VLJEZmIQzrqAgPRDOzHGD8Fwt+thYLpp9JhDmrIX1KlyiYvNwSVCtkKzE7aMXRuMjuq96Y0hD97QR22jNlkvn8DWG/9em227kyzg3HkGCCTJFsUa9DkWifI8SVld76Cfs8uZGUmz4SefGOpyAbgVQuTDGoQ2BpCHmEwQqzlYdcLLlYgDF2ztQpu9AwnoH94mpfkmY3e3mRL9/udN7RplXFU7eflC65SN+9pv7mzpq2/xi8CehoX4GWav
+    properties :
+     x : 399
+     y : 328
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK16
+    identifier : 0x41a01df7720121f3
+    internal_properties : CQAAAAkAAACbhNLtZPr6B9MwcZGoMU2QXnbYEnK+8A4pubqMdYYeXYpU9eGKr0iB/fr60i030j84K0ZAtbR46zKa7MXYQzmpA6Jdbx9ThN9dU5nF84sgiG1TtpQ5AR+Ol25+/CYCW5Z8Te6Xga+8Ldc+StRU0Ac3pUqpzCmmVVfrv8q+QA6YGuc/rPrGIaUWtCqRX2IIVJmk98IGO8vRB4TcycrROiBnD5uKEGfV5JXmLvI2zEuxJW876CHWoGCPnMoAe9TSEbDxHoHRCSqT3q5LUSsbnvpf+pjej34Ol5HIBwVl9uQJRS0ipI9lr8gTbEs6EDa3Tm5bNQUL46YtbjyfVQxwenMv+znSnM0gUSGJBhZwLRi1QNBno/nirOzET9repP4h0oDFca8FPPuzdVLMPSSwq9zz1QvzTY0ocg8TDYov8sI/+gfSEzoaVNnbg3SyQ71fmIC8fG+thF3SIcx54EnvRhdQdXxWA1m3CinqigQUmUfos/dVGGHB5++WiHlZFnRXTOdZ/FsfB7B0uvJ7I37dm6ukHvJyLVSzPr6+x+Al0/IQr1c28dcfZV2vyOtIbu9Nn6YB65lF+5ijsDsi+2a5oue4nqhjtyVdDg+ADO22zr5UJLXLgodOE/5emodQTiQE5212SbbB4dzmG0T7fuKikdR2fX17aKxXUlSFukWFsinduulW24MEIhqfS48Hg6/uoUDSRtroHA==
+    properties :
+     x : 344
+     y : 350
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé46
+    identifier : 0x41a01df723b521fd
+    internal_properties : CQAAAAkAAAD2N6Usaizq6Ys5GXW1VPRmQIhs6Eol5KRdzKmVpkG4w7CbXxaZNnrEZLPeLXjGQkWT60WXDAxIMAiqxD9j6BC8+DRMDJSYpED7qSd+PYFuo2WDmIRDpAyLCiid+DtGKxeD53l4fPbr4wLaD+NC9lDhW+8xaTwkzznPDGc4sF2xljD5zjyqnGGdmag1yYGOyRDPe1ANuJvJkmY8xhnE5Ma8coxeTIJ8GSszdCMCH73WLeF9jRtqkWGF3OzzktMkEAuEYhcwHZTC5K5Hvh83sujVcHa2AKlqXwxW+FXiEYAWVtSlRslaNh8yrauo9LCwSgFBIShFzqns
+    properties :
+     x : 399
+     y : 350
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK17
+    identifier : 0x41a01dfb077f30c6
+    internal_properties : CQAAAAkAAACCQm3QpYqJF2zeODQPVXkmpZVwyEXZpfI/e+7ggdvb/3ujGip3LIQIiM/2jOlCbcP/xZXdi5rb2a9EQIpO6OizJlVgsPh95N0A47k/cfnUyAXa2XbI56YDv4jU3qM6OkSpYJKJyHuf7yo6YNXHva/fGZqch7ohASapx/XwfMNod/X9A4F8X1tYNZv6baUdq8Y4KD9n7h6opkNm57DcIAsEzdyNPdCvxx/CcGl+nESs/LTeyE8DyYQSVfzlv9G88BKr96U9MMN0dclKxUsyWy6tfVGfoyw9recUlhd0lMtWwY37avOPG1mKHWO5ewGjIB/UWI6pDOmj6AGsX4ka5Z1N1i9lH+HlqnJrPYtd24CSJRs0HM/54OcliFLU40QFKeeGTggbK+Hq3KnUSzFcJS2GWvAki0weqczg+VzKRgKGZ/7hXoofehCEHEAQQrVd3ZeZcegDnyuHCpn57j4tkOaXFg1zs9rXm7QF1Bz3q62TRjyoH9tANXRndSlDEU5RGSZaaax5iDzrKbFruS3TuVgDs4ktf+fJ24lZHybEaWo1GPJb0ql2z/IKS1tuM51zDunWyBK/wD4KF/a+mTWlVDJbJ0tykWR9sfhFzuXpIuxxmQyijSAYtBYaqI/hhYa12lxT19V/3yrJD3y4c3p9WUhAnOms1UAqp5ORbiFk/YIHhG5Em3pRSFDxvcL/+rlWWZR/4uKlJN4Z
+    properties :
+     x : 344
+     y : 372
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé47
+    identifier : 0x41a01dfb585030d0
+    internal_properties : CQAAAAkAAADmB9UcWjzaubuJKaWF5AS2sFic2Lq1VDTN3HnFNtFI06DrTwaJBmrUVMMuIQy+2g0bU23/5IQwaAAyTNcLgGikINxULLR4ZOC7KYfeHeEuoyXjWOSjhEyryqj9WFvmqxdDx/mYnFarA4Iar8Ni1tChG8+xCdzED9lPzEeI4O0BxgAp3iwarJGt6XjFGXEeWYBfK+B9KKv5onYMFuk0dJbswvzuvPLMCXvDxPOSj01mnXEtHYvqAcGljCyzgjNkUOukkvfQjVRStM5XOo+nInhl4OYmkBn675wmCGWSwfCm5kQVNtlKBu8Cfft4JOBgGlExERhVvrn8
+    properties :
+     x : 399
+     y : 372
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK18
+    identifier : 0x41a01e002ea9445f
+    internal_properties : CQAAAAkAAABRQgTFEaRSRWlcjWdixam0bDIudvwQoGzTgWLhwx2EL0ZOWY7B7tYe0NlTmN4ZFems0j1p1iwGT/mBZVz+EF1D4+clCYaZlVrCNwYaRM5dqFoeWa2mCjyCYIQrDOhJOm1tS+EkJ2onSt6O9Oh7c7gR8ethx0O8mCLsHPbV0rvVgeLd/ZOIpgIq/EpP4FnKPib3PvTMIRUpHu2RwSPghhqiFgBt2pBZBND9XRWKLs6lsKEvimOR4VNDttRNsA8Nfnm4Zwaqssb7eZPgsv+jmuIc6SQTiKoX/f/GQilqSgSuF78zKXSH85K8YzqafQ8jS1+yDaw5VlRdAdJVTWeBGjZycJodsV5S8OcSY7Y8vvsQr46RETemRkKaNv4yN6yF3riUEuv2G2kzTIdBUD28pbY6AGUUST7JKje3RiHRfAgKrUDrFCaC9neHKehOCsOl3iV8VPDIFmhxBezA5Qyz8BNS+Ao3t6sk0SnLYhaK1qPkI2ALh8OemH07rQ4MEKnPSTFDJYyWg+80fHwn5MAkvE7YRZpPvM7t5HjU8iy1+xLn7FsnszEYY9l1mdyqyUdE0eVoQQkQovs+hyp3CJ7bmHB1AHW6DxQbRqUS8Dtrwfj5yckXIgCRiv9lhYLzy7FJ2FRXov8IaE/jKKnS/QMLBBEZjg4UD0E4oSmmS+p+qcywMV5FstTzGZMUNHhs4CJlaKOWjJCiVg==
+    properties :
+     x : 344
+     y : 394
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé48
+    identifier : 0x41a01e003d334469
+    internal_properties : CQAAAAkAAAD4+p9OUTSB+vUSP6JejbYn/T8v3SjOOKSijU7llyNZIG6ma1wqkpr68JVib29xlmviLW/0ZBYAMTyhGKPh2xSqjfMLNYP+DBlv7+0JvYipz/bPaX2UvX8KtkBP0Yk5a6FWMvVhd/AU/FJQzXTsRC5Oc8gwHRK8hdwGNI8y9JgmhhNOf29lEvncJFyaURhbhqHPpK6SwNM//uYtzZuRcxNwprTMRugXU26wie5ZB87aG010gnzod4yg/R7LdJKVEI0THt8wlQje2l4bxHfo3oODWa9PSuaMpkZjWOWr2UAYW0yJeg5pF8Vf2qb7kiHoqSiGXJrrXw==
+    properties :
+     x : 399
+     y : 394
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK19
+    identifier : 0x41a01e09731a6853
+    internal_properties : CQAAAAkAAABykp3AlZr5J1zuCCQfJcl2laUg+HVp1YIvS5y2q6XpMX31FGAl+qr+irHs0puMOyX5HxebQSCRD2GOBsiAwg59aBdYfjoruiumce/1j9viItOgfY7cb7a7G/xcHs9imswVnB7pLBOnDyYusAUbjX/HLd6gx35xORYNS82o+HOAlykRXzGYf3uYqQ/qHakdG3bU5PPnYu6oZoeab3Bg+FN8Aagp1VTH19culKkGGAxsvOgKNH83ESxKWYjlL63UyGovO3GFbDNcrR3+laueG87dyU27C4AVFXeQ2g/sIFNmcVEHdgMDq3nqeZ8Bw0UzwMcYHJKxCIH7ENUQR7Ee5Q094su5t2U9cmqPaetrzWawy6EuFsU3Hu3v1vQ2of7Dx5XU4IqRuR8glofulf9GawPc8BrewQqkJ0b+y64IiJgU9WS7sCAVeIYeagqSgL8Do51fEwppxcnlLP+LMJx3zjx9fHflQUBFGS4D1l6FHbupfDoigeGGK5oxsxN1x9g/N4T4e75X5qpZm6eda5Ntv345SSNXRdUnqROnsYCSc5gjDjAVFN88DSjkgQXY+b/xtDeMkkSNlnww+YQIU8MP0rghVfWk12Inh44/yJf/YMY36+Zkz1bU9ErSECsNQUb9FjSzoykTA8J9B+RURx7lQWSYtP24QRTSCzPBKi1QrXIXlB70y0qBGCDBTVIP6qlGaaRv0tK1FC5p
+    properties :
+     x : 344
+     y : 416
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé49
+    identifier : 0x41a01e093a5c685d
+    internal_properties : CQAAAAkAAAAQkYfOiM4UC23bu0+XStbEIioGUjA31ra3FiEV6oGYo5RnMw6VNnLkqA/WjaTeevXnL8Hf4MyYiFyWFMefyDjcxEBwtCjY1HAPXX8eebn2E5GnRHSnvIRTphQtiO82A0e/M91o6K5LWzbW92s25qChvxPdAfBsB0GjOGfCNqfzEMqfZK503pOr+0YbwydQo0qBMZ4/MlW7KHgK3EMaHgC2DKJkvkT2S+EVksnU1RcQN+uTix1U49ObJqI5pDlOEuXmQAXKv25cusAtjHlFbEq3qrR0Qhs8EVrgTvN8t2osaMaXsF+wmH2Qz42Kyk4S6KPjQ8oj7EuK
+    properties :
+     x : 399
+     y : 416
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BoutonK20
+    identifier : 0x41a01e0e79667b6a
+    internal_properties : CQAAAAkAAABVtbAlAs9MVKGBowcIUFTR8HDTXdJKMIMg6vNVSIQIEJyUc8GGQ5Gb11DD8bjvWgDkOnJ8LjUEvDY9daexPT1YFy6+Vw+muwbRjHoywEyhSwKHiXbIF8bjz/hUPgOqGiQJcPJ5GFvv/8q6cKW3/f8PKZqsh7pRIcbZF9Vw/LOotxXNA3Fsv6voVVvqHbX9+3aoSK+nru4oBlOWJ5C8MIsEzUztzeBvt69CUPmOjIQcLIReWG8j2QRSJYzlnzGsUJIrJ+Vt4KOEZWnKtftC2579jdEvI6wNrYfkJjd0lNtWoS1LiiOfe6l6PcOp69FDMI9k2N6pjHkjqHH8f4la1f3tNj/Fb7HlGsIrvVsFc/g6jaNMFEfBiF9dwOo8i/zdMQ9uJmAz88kC1EEsExn03fWOQugcAxSmQUT48YSyvtquLyb5dmInIujcVDgYao1Vxd8BqYD7J7PfArHx1uZlyM4/fuVry6If0wzd7GSfQ4Vb7kSAV5Oo3SyfrQGr+UbJQe5CQYQREESjASnj4bULkSCrGwFF168RM4HRl+6MAWI94DoTagHe90pCoxOW+1Ur1hG+wAo36OaCr872Qd0dzLojr8PKSeztf+zJdAP7FJDjFbC4i6hVK0MN33ocsjfsIYE+tjQYSEU6gmPTBh8mACede0R3gpWRDHIA6awRrnEWlQHXJu/u6/0c6L36x06hlFG6pT3a8QlO
+    properties :
+     x : 344
+     y : 438
+     width : 45
+     height : 22
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FenetreAbrev..ValeurRenvoyée = sansespace(moimeme..libelle)+" "
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Libellé50
+    identifier : 0x41a01e0e7ab27b74
+    internal_properties : CQAAAAkAAABPdxHOgqgL/Nj1/r22ZjVj2rmJDKENXQk5NlJsSLJRjzgl2No3F/3GMoMAykCK230B9mx7/IQt45FWjwA73HKKhJju2EklUhYuNCTqUGM3iYCNg6HdKYZbMuV3cU1wiyNKzQ4aa16DMLUhHEW7FRQ6P505ieWrWLhrXRa7aOZAFiFl9fa9NS8zkxWuyf9xee2uZfzd5N5xAxosFjivkGCpNWs/Okmn89ZWkHokTfjxf2f8Dme+eYwCmoj5zmGFQp+SIKBl9tYTmz0DpR/6VS1loAt0/nvBjGK4gIYIvA/nWo1ec0ZO50GtItXooctphE8NYKw=
+    properties :
+     x : 399
+     y : 438
+     width : 366
+     height : 22
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Libellé61
+    identifier : 0x4294a0fe1ba0389d
+    internal_properties : CQAAAAkAAAAyExY1OBuoZUm6eEqP2LQQxG39UOQFFvGhWvCt30TlBZ8VzSqyu5TNJp7wsRlwYBbRcolSXPAR0oU5VwmfT35DjZQD0YO6o0kKuY9egNHWrRLcamwVe3jE9OvT9s1+zTWPQY1E/9rqFeIyxpjHEYW9/Jp3d5WC2lwzI2eTc7f0TbWB4oIyrPIKUBAYPaeF2vygk8nnQ7rMbrDrRY00GKPs0jAQ+9G/r+vExlsZrT/8S9taANZtMtefG9CXvAybScV+Z9J5d+dOmWsFalXOJ9ovHC+CWaJdPN2ZpFATAFsqqyJnLyo1C3uDEe/er/SEIouydpEfWzU5V1DaBTPyK5WcgdzGE0pzcPuZiQzJJ9jL+66hAL2733yUo8uJnUlBbQXDyNp3P/1MKdhPfTIiN3+QjFCnRC8hPE42ro/MM0kTITQ=
+    properties :
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x419ff98d3930e3de
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAAWXjDDX3AWx6iNvYM3TVmjuFwUYQAIKSVDyJo1eLAShBfg4wBnL9GbaCYsviHyIbRMZ0nO/E3JBtlGcS7cQPxTtB7x4dFYO2N56B+Ho8H4I8J32YOQapYrNilKUQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      i est un entier
+      j est un entier
+   -
+     code : |1+
+      moimeme..ValeurRenvoyée = ""
+      hlit(Config,1)
+      
+      pour i = 31 a 50
+      	j = i-30
+      	si sansespace(Config.CFnomconstante[i-30]) <> "" alors
+      		{"BoutonK"+j}..visible = vrai
+      		{"BoutonK"+j}..libelle = "K"+j
+      		{"libelle"+i}..libelle = sansespace(Config.CFnomconstante[i-30])
+      		{"libelle"+i}..visible = vrai
+      
+      	sinon
+      		{"BoutonK"+j}..visible = faux
+      		{"libelle"+i}..visible = faux
+      
+      	fin
+      
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x419ff948341ad503
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

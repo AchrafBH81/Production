@@ -1,0 +1,2385 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ListeThermosPrixClient
+ major_version : 29
+ minor_version : 0
+ type : 3
+ description : ""
+ subtype : 0
+report :
+ identifier : 0x4935797c070d2114
+ internal_properties : CQAAAAkAAAA4c3oNOADTOdSX9o9eVWsqHRUwt6wKYW9vCRI5/eQ+BXbUsK9Cqq7pQm9fBAIGdPTckp0ddps6dOROm/j7bROoKRMtsnRAvbNSaAfHImkOCL+IuiBgPyck/HPXwdo5sRnGXY15G91GTDojFdCsa6N4vteSaseD63SGT4N6FaIhnFYaBbX6WCxcy0DE8Bw1rat0VU/JHxcSuf5JqpnbKyHyjYHmdhhoKYOrbalE0uS4baSJMWHIKa3StqFWKyQjo4aUO/Av5WoXwGqXboVy9Oy8c7vZOE3iOEjztC7NzdKD9ms41KySssVuPPzLQ32Ghg+vEO74KPyqTVsLUK36aiBwSXr8sANfF0n7x5onnjnIP+2xJxgHHUTFZy3cRdYH/ctPAscBecSDsGr1DT53iR5B5Y8s14k2Pxpt+c0tWGQ0Pzb9HtSy6/tT+ZNIzXBd4HGdBzN+C/TiN1T9dF8/jcQASRaNJknyUQ94m3aMqo5eQCEDSBRWtmGzoW5p2Qf0wCe6aabigDsDAh7MMzvyiu1aaFayCbcNL/WGtTImmeC7Mro+al0E9fsl6klBsR0PvfFJzFow7Lrnqj/FSW/xgV08YK1HsHuaAi0iy6jvWnbQwEfiZ1OcRn0DvOLqkbXgyEEBpt8fGvdV60yAaeylLrbFIjlT0zUPrDEI2ntnDU8rMxy3fW8Oq3auSmA0il6YJhgJrRhXKE+wffGXWOdUNuVR+Oc1a7CXnl0+8PAeCY7EiiWl3AIDn69/y+5+Lj+DZPCGrB4y9uDa36UD3UYpRtyJxrrCoLtN1PfY/06PzlgBLoEsZyl+EqcdEV2F0vtmu/6YVlKnU+aoRqqI1TfaaG6iqNwDgK87zAPa9Miwmi9NHEFT1QFE7P6Umd/CXzftLdTRmZailxZv4G7cjqjGyvmfrKQy8lBNs4jLCymEHunFERjhj7e2i5ffIAFFB65PEgnSQ3nJ4aNmcotR1o8bfmvnKFyx/nEe5ire4odkrtnRzRhoLjKLg7dQALoF4Fy0+GUyWBmcHVWefF+npmdCuyEohf7W51XmcKIuqTzqmwCBJrmL9rop5LWnvly0wBCFigMWqqcjnGDFVFWCLb/+4Ws+/NhWXn53dcK0u6HJ77kZ/KQKZOU9z8OiQF+nMAZ4turSu5hitg4cuxyqu6Q3KVt1uBwIbaa7FEveIzlm1jcZuCrRmOs01XNNsyoNlk0BP87yxe83lddrozR0Z7UpoPZYF3UTHdXU9YmK8TNVhSdPTimwF5kYxdjGwTwu4RlCzSVt+LlJ4+fGhTB4HyzdLfF9WL/L2VFr+BmmpazF1evCtiCQS6775czps4Jgfd0IcGnIK04a0pw344pgGhGMnICPUYi/t6verxUyAQG4hPMaj75aVnqcdUNJxRPvYfCZoeze5sVLXjhYZJ791L1HCITXLytjp9t7uequIMsVOXWWGnhRZG/QxctttPPo08HQZQXO7GV/qaPJJSLT/95qPMqVzM2kZiDLmtJmGlZotF9l17Hf0HFkGgMGCzf4M4P324SmmPvFOXXF3LjO3BcTvR5Aqjduj7D4KgqHVJxs45ZqT2xRGzvxTfjyL+h7bomLeruKabB+RnICFoaL0gDuXRoBAnZEMxOLlcq6teZTDK5A5grd3gCQ+i8IwQ3sUfAUPr3i3mVpO4et7arM/J0oqVmvDRaKuoTBf6O/rgye8GkKyIpdvH8xqFgtCVGifcj/lxo4ea3V4pXfAnc1qqUnMFlNgsQZa7BCo0CLauPJCRDpUalYxk/gc6RZ6ulm69PDswwZfNujUHEkR4JW+67At/xDFVkoakpDL14hzMXQ6sihO4k3HAhOgRPJrihS4QEA03YwxiEB5GsenZfkEGalQd6BVmsWf9XhHwX0cnLJJ+mAN4gzLqs8LcWZFh/+vf3ZiTnXZxgBYV4BfY2on+CriUEXmU4o3FG8Rjd+bnpahjNtogaaZ24ZnLHo3ApioJGT4ZRd9JpjeuE8Zqf+iuJHr+FOSuj08lQ1O9AlBMQ1gxV4aloWSAc1p9JACANVN4yZF+LvMbsQU1za5i4BdkW+QUSN/Dn8XPxC+CabKcUvqXDHYny7P7cVZpV8VlRl25JEZGEI5y7EMkFD3tRYunX793oULmcOpXCE42OlzJQK2EygGBVNHuMjr6clLQfgQmkvtPsU/X4lMl60yGFhYF+WafQKRMLuJ7NaL11uT/W+ugW3ZtEpryT8MlqsDXXofWZKlW7zU1tilLyTsLkj0DytYtDtVcyZxhswK/eNFiPpYSzD0XfyNDU+iGiY/gWGqy4OB/zdBqfLhsZ77FvA5tu9j3/SbhGVPjamAdthIuxvA3EbfLEBH3aLnMAnN5PQ9jBAVFHhaSFphuWmM5vsW6+/7BD4rPPK0OIts8YjLNrBRpOzZqIB7Uc/Dbzu775MP/Z9VClv6U01izSxyk7tvSUwOilbc/VckkYKdhLo+yems/fOxKTxaj/1BiPwMJKII3n2lJCQoWag3c0xxr5+UGyIakldg3Hvq58=
+ languages :
+  - fr-FR
+ blocks :
+  -
+    name : BLOC_HAUT
+    identifier : 0x4935797c63d62114
+    internal_properties : CQAAAAkAAADgR88KHyxkxB2zmFXnA4z6JY7h2E7tRzstifJjBfepd0YunvmWhk0LVLAv07Jx+Fgd8OJgUdZAmxxzIMi+0VjrSpgqwDklRfDpxumGnh6af+hSHfSP0G73vKqUa8hl0Ax3WXTGi6Z57aTPysyXd7triiiKZ7fS4H5PWrSoCk7ab+LShqbBL33PcjKwqu14Qbz+v4HYbQXTKI1JlrqlsP4dFawbHB5HKGYKoy/uPTmia4WAmGatQdl58Vj8yQSwWCWTmD+o/MkckRIed836hK+s
+    controls :
+     -
+       name : Lthermossuite
+       identifier : 0x4935797c4a5d2114
+       internal_properties : CQAAAAkAAABYoiPK/WOFTdZ63uj8X/qRM2x9j7gZYJe5Clx4L9eRfSOyhnmpPkUUvkh3gXIp4Q5i6Tw+O2KU8rN0Jz9cb9HG4AVmA92K4iZ6BOSafBFrskD2P6rWAsK96ubJooOgH46/ZXTdbTMHDdFhpcAiX2+VK2Kw7rGBgUQJE21yFyxKBobVKOqN9tWPY3HtTqJmjKVmgNky81NPFDl6RoiDbWYinO8J5XQeh2wZLd5vZX7Kn+4acXEU3M5XEVBild1CUayg9RUSb2RTEaILXITqmeem1zQKqesjinHk/+xbPRRd4e2QNorIzrljJvC0PJdvcQLkXU62yNAzdaHKckwISfMTLtibm6Z+pu4IUnrh9tyokUZi/Ptw5eJUF1zoVIBJGJdWcCowxgqfUnLqe+2ADFmutI839py4bjJxKdyqPo3cYWvLfAHA6SMsHKR0mRJa1Xbg4VC9hG209G+D7nM4Q/lmqiCJiqlm4V0igJ1/bP8vO5RIjx2MBwO8uBY97x2pVSGla4w8fgJB
+       properties :
+        x : 0.7
+        y : 57.3
+        width : 50.8
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lentete
+       identifier : 0x4935797c53652114
+       internal_properties : CQAAAAkAAAAdpJZu9ygsHfNG5qnOXLutNpA/U6JVgtOTV7NlJ1NzO/O4I235fU8d11t5gcF7Vv/IENGWb5CYv8DA8wWkWHU9iy+jI50F0lyPG43W04RSfAJI3SQIKnP6nyZVdpSusHp9RqDd6KKetKEbPOVB2oQqsSbi1bBjxsY0aYetSIzB3xvQW1pRB3ipOwcf2FSHVOJDHL11cv6kuCtKuOAb6Ssl70vR2OKGkhWFXX/eHQeG4yU4tMn78bBnPviha6Xd3lDI3UxqoFO7teD5YQyRXP8J0y2JF/k0cFMeWdOElK5gotw2aaGh/Y8ogtvp5EXoHBognLnmRocVwngE5Gg3FaGDIL9VXqcEfOeJP8hNWAGoIckZf8HUZ5wqPt7b9fMA58DiUMM8TS6oOC29gKAkNFpUHdW41hA48D0SADaRG23H8gCOvgVGPtn8xv38I4ShEtkxhmI0X9NdrIrNCZsb2VjlBXMpU416STjo89V8kJTkSzKjsR4xTZpzPfGxHnyYCTAoe4qzqiIDEZYNA30SVxIR
+       properties :
+        x : 0.5
+        y : 26.5
+        width : 195.
+        height : 6.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Rue
+       identifier : 0x4935797c58652123
+       internal_properties : CQAAAAkAAADtPuySMdJxjPB3yBguDhfCL4SbfVn1ROpmLFjvoQTL4dExqwgv8NmfoszYq7W93+I+TsvmebjgMhh7wbPOXo0pdQ6rEky1LmXQxdszMgNz+GyCt4KOTrpCukoefhk11R6SgFBuOuxXOL4qsUZoUzOl+IMID09DJ9280L596K9bgUuxS9oRX6fxxrkxCm8P30EzGJW2R9PK4g5eqTFaAoNQdUdkjwPyl8OmXnS35+tX6I3STw6JVyKudD4PGRkuJRSSrwybZwJPlO7bjZvY9L4WPb6YwKSGfnoXlF7+A8as4uQYyaI9mB87ahuboaav7FQbDplqMUYuhuhOFAj+apUoCVM9lObdZ0ArTJIK01RautosJcZzM6eMikTyKKHMQjW/3t0ivDlNKL9O74uEK0AW/ck0YXZ1tIcSnE0NXjk=
+       properties :
+        x : 2.8
+        y : 35.275
+        width : 114.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1-
+            HLitRecherche(client,numero,RequetePersoClient.IdClient)
+            moimeme = client.nom
+            ville = client.crue
+            CcOndPmt = client.ccondpaiement
+            province = sansespace(client.cville) + " " + client.ccodepostal
+            DateDerniereListe = listeprix.DateRemplacement
+            hg_date1 = listeprix.Dateeffective
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Ville
+       identifier : 0x4935797c27492123
+       internal_properties : CQAAAAkAAADgQKXz/QewO1YqKZy4g9vFJTXC8xRMEMgZOsvi8+LsiWC6QP8Hf4ImOWzJbObsUkyPnnFzGKXkzmYHJ3034HjNVaLr2gnmDztXoYUfZPi2AAGPoHwLNraJFs/JstC4xDirKy+KmYpCqCzfpxyLZGYaipdiaCkUVtXjYjE1hoYqwvqh890zJSV3l2v/5krI4pCTKQTp+wYcu3U5TEzD4A5STg6QG0NX76oAKI/HPvHQpZUR01c+1jG6q6HLOEuqFpfLVhKxEXpr4/ktW8AXTikoS0JE8tz2eCqoj2Rbjh9LfAcMpl/XJ1lZN7bz1Zs6N5ZmkqU2bTtihR4JL+kHwQa6Q3tjLLC/Ao21qLYzOkllJa5exMutUEGN+iSZb9dDLIL4PIEhxOW3zH+k48gvgzc4VhTckEEY9/dGjY9sGiowWGiPQw==
+       properties :
+        x : 2.8
+        y : 40.275
+        width : 114.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Province
+       identifier : 0x4935797c26652123
+       internal_properties : CQAAAAkAAACuyJZKG26NbXGNVU2GI9/1TxNkzOalLy2Rdr0ghvJYOzvp2z6vnGaQ72S0pT9C+75qCa57W3E6+oHJlZaE+xmxaK8TLlyOjUUf66IFIv1uThFnquTKPMVKFWC/z39tR81hS/YMGQRKKVVorZLRYEurXV5D5twCg06CGj/xSL28u+Gv0hBtHMLp43LZqXDhUezR0tGPlbBWXUvvuVuEkSGlwUcOhrUBY226pWfXdXdXW0naomKFLAXXKrKjoWOrOw+s7noh/SnrxtiAmbpOOU0tjoq264fjSfkmXZhs4Sb43Zf3FEX2uxHDBGukHJ482zXnm2vOWSauDBF8HHcXyYUkklQfISMqbx8AwyJR0XzBwQmMgUYBRN1vuVnaXKPXhpj4+HjIR5VUFxNdd9q99mNpoS3aOVFOarm+N/NaW/Zvv4VUc8cuY517c6Gt
+       properties :
+        x : 2.8
+        y : 45.475
+        width : 114.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : RUBRIQ2
+       identifier : 0x4935797c15692123
+       internal_properties : CQAAAAkAAAAucJIFUPGq9sh19Lq0tfxNzlGUBDLc8eef/Dapi8+05ZRh0O55xf1dJyXXZPhET1mWFff96Phh5lR68dCb5/EOMjukI1hxvXgn2pUuk72KXWEmUVKGJHcoJYTaA2XqdkZ357oYWle6ievlltVQbwBhZmacVkahqmSI/oJLBhnqsyrTKXjX3KjoVUoZlCKJw8fKnnsR1at2pZaioBbihdeN0TI4B42qiMfNeXTwZryjEgBu8TGgQYeKUMPoyoiTDQqrb0thPbacCvgH7Qe9s7s9QqS1YaQXrYlMkr1mK0ZlJD0W7vXf2hnZWXeI1EWhziKzlDvnPDJx9YHdMCqq01IZcPw0VQaEWMuvw38HT4vjyJP8aXRCNSyWF33E76GtDF3Y0KQpX//LGFeXB8N0S2asljK6QuUHCaJMw52LVqgKPl7PWMaENOWJCpBo58fMkOIPkptoUBjsmpZA4U/kLkCoMux2kk7bGlCIYW5KYqnZ66n9ow4RD/QMXXsqZj60gBU1PQ==
+       properties :
+        x : 3.8
+        y : 51.1
+        width : 25.6
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lthermos
+       identifier : 0x4935797c34472123
+       internal_properties : CQAAAAkAAACOLvAk9oQefs7230jKZXmHprbEmaM8niG39Uyi22A0zXpLNJ6vWgvvU+5q6+40cqn3p02aCedrNkZrPcjw5/KP1QiC2x6/tKFSqYLcZM2h5JN2GY2pmc8g9gSREa/5o54Mret5DVuvnigVmFfyi59oebqcZWnkwEj/VhGEs9dTpIZEvvT6iWtj/nc+b2ko9rm/NYQvYHvuLBeuwy+NT2eeSMTKPFCRAvw0dAYUZC2cn1AIMmRw7jVbMpQc0ANsi0sY8bxGhWI+oMSdWXnVfXMxFnR+gQhdol0ncnirbgFlAfDp7/Y5jljsumaM1AdXYk9jGKc8j8R/R4iUrkD81cWh6IfvBrPVcMBqkqGh68phbJn4nNdI5s1xu6SoWooWkfftpcWFnYnmIjNNODhe7WiS2vYjj6TSnATWsariR4ktSErkAYp1DcSnROjJ06guUAFCw4fTeHL1
+       properties :
+        x : 0.7
+        y : 57.3
+        width : 36.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lremplace
+       identifier : 0x4935797c41212133
+       internal_properties : CQAAAAkAAAB8tcfoDO8yGJyth/XhrRZvJlyCjXK/sePu6S6xYp0aurB0TQ88R2T21IzoggJXlgBRW/Gv7cPtRuUwQfd60O0j07RxO6dbGb6pJ6k3T13hp4xBs7JRMaF36VcbM60S0Iz75Eiejel9DVCXiRF3KLW8SceS55YouFiHdkpEM95XOovJrWhn0Thi7M8S6QWEXvXueattPJu6+ElmF7FCewU2FS5bn5XtUH3MrC0gElgfemSQSEuQBsWmpKMdz0aCuvJmvub6s1cZvZ/xU96eDTDIVr+SPsSJMTLvI97ie3eHfwiK/7IzFbrer4OikpEvyMqq/4EMxUFzdhNJqsraHsQpNtZjHvnLmVL8prkucgfJM1WzlNtPOtWWOa9AYMGruoPiaeraFOTcR6VCqzv0IEkyy6bZa7ObCRVVq6WiLRfN+6pOiBYP6JyBU5EGQCLKrWfb/y8hBcvUOMfAaaEfca8ZTrSo3oKYa+GxVHVK9ICzPjrW/FnrAUZI0cCy2D7qZTOkGN2clMadam1KtDio0gPheogm9qLy+1ceSHJMUdiAmjVfuR3ff+m7pMDhlhD+wW7FBQ1RngOv85aO
+       properties :
+        x : 125.344
+        y : 44.275
+        width : 41.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lvigueur
+       identifier : 0x4935797c16a82133
+       internal_properties : CQAAAAkAAADGLPC3uD2LYk+zGF4qt/pYRBYlS8wPUK6YM5Wfs8SgD2BSDfD2h6Yk0m/vZjhntTckw3qvsbHOk+p2HovwPpi2OHCclV+hifdZ7SgWjcwVfojKV4o+6PGRR5mOZoUqxRWWeNhrdmByFgFIu7EVJtzh9ggHenus3G3NIAgeHMTwLoxjI2vhXrKa9qFKJf3mnsaT/MwJri/FXsMlf6DCKItG+cxp6gYMmdPU18omrU3oYuqKdzsG9tz2SDz2VzkGkou3kp/gihCh1KHDrSet/v5XUmoLZd7I8ye5aiiDOVdXoXbJoDrlQDz5m+14zBFFvnFmD6ccYpTOcnQ31/+nBG1GLZxRJB82l+UtQPVfBeAywND+GiabNQtL23wB7+ohwdogCjbyrj8yiJ7qJDSiuDc2ncBiY353mgRpwH2/ADH56WPap8yvA69o6xisT/cLHdYzSs4TQl6VuLzF5GAQvxtd0SdF/594K1sbXLbjsdb5XGVWEmsKu1RS7Ps/Sem18/VRyh9ynmzr82qp0OYz/8QMEXLD6Teg
+       properties :
+        x : 125.344
+        y : 35.275
+        width : 41.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Facdescription
+       identifier : 0x4935797c38812133
+       internal_properties : CQAAAAkAAAD2pyf/zN3zLAVtAYc2MkLBLUIAB3SZhNVDMNvLUeUYIQi+q+floxrP9XFhv1w/+Rs0DLRLWH9YGXaGQ2qVaBkvh0+rcpqwMRJz+gkKx76pkcgDlvbNQMnDnHPvc5Yi2X9RIV/xHls2a4MkjIrraj/2R5EyUw71R+oja7mSZ9A4+wLN2fEGjw5yQcP6siN+ogQv2R/3x8LnvzvWMzrRo81XktAv1mJe0IcMAd5EPV871CYPPfzl9JuH5N1+5Ea0GKeVfvYKwpEnKtQ6fkawMNzKRLgfs0NZrzztx5xdovS8XDBbtrkOmTjYXYDvHlVmlCcfsD4pLW63wvgXCDy+8eF8lEpJyqxRGerhhlZaVPpeIxXBfosLNZEnBG2f/CVdqe0sFRq5lhmzhKwXmVF5VnXCP801HH6W+CO0cj70CYPLoNWPXc5uxU4nX1y0sbzxFzrfBPRibIwnkaZKOyO86kKCZ4L8XKp63OuFpNQ0cRG52dZTPSMlpgOYjbztZaa1P9q3FFutI1vndg==
+       properties :
+        x : 30.9
+        y : 66.059
+        width : 117.85
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lnumero
+       identifier : 0x4935797c679a2133
+       internal_properties : CQAAAAkAAAAYsaEcliixtXKLKF1dAzRGpi3YzWYUWAJRH77dQGZEIpdoc1FKn2oShRyBQujRv7w8z1FZC3NvW2sorTG9gO+/aAO4WjfSGXgqJx3DA94w5Q3aToSr1BqCClN6O+8bGjEF4y8HzO87Rn2iLjOuehT+3/YRRNc55qeClknKkvjGsqOsQKclvHQPBKOpEA4Nlwyp2vQKFrBRyUTM2xnQWi9TvG11SUyx3Jl6QJj7CyhuSQ+JRrEDo9xkwl6HMiP1OvPlEyMlPKhBckoeLcGZo79OrpSU77EgjYMWam/ObtxtbxEiijoOPodL+1/Xs7AzNUYe2+F9dkT8zQ0zyvRibEQ8YTwH26oe6g7GMV8Fr8qQPRJ0/KHSCe7GJQc8fwR38LPMWabNYN/jyQi6MrqT+8N0B3QqpTysOUxfFtS8Z/vpIhsRtmsjkGc4NPQqvqDOxMNZcL9joxzyLna1X4LL+V/Raz7ePk01ERA=
+       properties :
+        y : 66.059
+        width : 31.01
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lprix
+       identifier : 0x4935797c688f2133
+       internal_properties : CQAAAAkAAAC+MRz9pDlCLvZcLukhOakZ8qAD5paOoH7UX7VuSIRahykxupa6TeqZtxwmnEUMh9acX7lPDie02AbqPUKJ/qiud6DhGg3bXKAK1AELCSxLnrl+wE27uncJAivexD06fNWbGiywN5yoWVN5KZc8PPH97Ctqkkk/zvGsJ+G0qr9IWYRbI7EPP9gfDZ432tT7gxOMxLGT38PHJEY97pEY2Pxk+L27SRmFZemwjvU3ri+KvrGULnPgLBsA4h9pxLlHW/V7iO5Gc9Ihj2tXS9PrGIGUc1QhFTKvZ5rxH6AoHFQ3SulkL59S8cVU3j1yl3pOJb74PaxMOl9/43eS8319daMe/94ZuvQKReiR91MmiD27xs1XoNLzOvxRk22I6quZZAXKcmylQWWziuMT7g55ta/4myv5wAu98P2i1aFryWmCTf69RTtO7NeXRzwiJk6fPAHBTHTKy+cIKyHSrbvODpmq
+       properties :
+        x : 148.8
+        y : 61.3
+        width : 46.
+        height : 4.99999999999999
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Langlais
+       identifier : 0x4935797c165f2143
+       internal_properties : CQAAAAkAAAA6SJdxaifQga/DWqaHwVOXb2sTQuEogXW/5IkKgVTfZCCZsdQg2rgTtoNBbbYVgpQsgUMFRR4scwKFGNAg4CfmaPW+xUB+u08Upi0ow4QmAHw/sLQs6lqClBP0bPqKz8uIXuz3i1piNWgbhW92D2hxGJ1uT9bN3/S1j2vu0ECNualrDb7sKVVfEV6UFTC9EjO6EBnFeqtAKmuJeWT43dIAbyy8Y4d0476HKW8HDaA81LFYHnq+sxitcw7pJYmc6/g6V/E9jAKktuZbUVzxlS/YWGySpzfn6qkrNVylRw6bcwqSXk7q85QGx6r+6HKcUPiUSi/l8xTXk2cEHLqTmicCserFrulO2/m340dRkuX2us3Al3nnvFsfMuTtsmoS0m/FlTsWVORZGyTN/YcJb1KxYKQeofzzt2I+QTf773rSns/F8PayW5t3IYpiIlq9+9kMZm98sZyt1Yf+pnbrmuS42DMCh85uKLrKeMXZpww=
+       properties :
+        x : 148.8
+        y : 66.059
+        width : 22.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : HG_DATE1
+       identifier : 0x4935797c28902143
+       internal_properties : CQAAAAkAAAAUPzeOfgNIVUXH/pWJOJGRr1N+Vh5vBemqdlOQffZ0NOE5ZSEphA2k5vXtA+Du6tPObiwytnN6EOuCoo1W6q/yKR1g5lNm3K7bH2BYHb9mdK343XXIO7ZS9IqhVQl3q7RGjrFEzJyJtK5oPOlw7590RJkSbgKNBYxieoxeRKrKztDhm+ly+3j89o+oqCkzXOqiIEqNNRphu/81cIFNwmNwzlr3U4QhJ0rYHfVflvPI5KQdX2INi4GKb5PbWV5Xw+cf3Wfpcm19mVeCnTve7vyktPOGZWODyo044xenaAOB+U74djlyfNeHtbTA3pKWjvmpHWPfzsCS9W+PsM3PkAo+Xuxe8GUwEuaHw3oXic/hHqdlNM2UlPsi9NijLAYJcBv8ChQmP+mQaYi0nu+/X2G2R3HDr7K+n+broTAOfGMdB6rLhdECdTn4EfOU5GAW06Ylnp1ufVhj2KggU6eaweZZEnsModdVxNlFNJ9M7eTkZ+4WRZ9/vflTFG27VB8ILQEQ
+       properties :
+        x : 166.938
+        y : 35.275
+        width : 27.462
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : DateDerniereListe
+       identifier : 0x4935797c560b2143
+       internal_properties : CQAAAAkAAACjxfaeWAg+pQK8DrreNyibLlJs5xF8ObbZ5563ykdT6xWlSpX5yx+5+i2A2cofeZZR+H7kcFQ8wzrORaAKXFjK7dcedsumX1leE+2/NKAzNjTwJVFixBpb8CdnPA/O33iMZRBW+A0Dxcrcwr/9CeAYQpFS5GqBfks+QVg5PSnTs/KPLz242zhYGA2axkL9xstw8GemHQc2kMAguP6r6nKk9O+BnOmDWeFcwA+ktrSwJEYQwinyH5cKXoaU6oS4VJF47NG9ueR3FALuVkyxoM34bVcGMTzCi3e8oa2sQq8KV6gtsmyzBxAxOGJtOV/tEy5VCmlyXY3YZSB9L4TRZGIslIgg+ta084Y9dUVLnX8A6ChOFFfOEyCKcXxVzNB556fJ8bVketBwXrJgYPuaoUKSMrnRDbOLhhsPPYAEzQELX71LEmRi7hUn6ULZ9iV9Ux+bwDNMYEMyHvqby0DYGntEFMt/m6iXhJjFf6uDmxgfyxGWC10Q26ZzBZwNzphBAV9FtnbXZ2cIje0FnOwcrR3bK4RhcfYewS9vWxzXhfxX2yVOKo+jfl37Lx4fRA==
+       properties :
+        x : 166.938
+        y : 44.276
+        width : 27.462
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lmetrique
+       identifier : 0x4935797c3ca32143
+       internal_properties : CQAAAAkAAABl7UW4unnD41ANWqss+1Oz+9S16jl6I3qw9A3a+8eSLh5hRKj4eX2iLcWC7UhQJW4D1NsXqy2UvxKusQ9wHmH55djpZgjlwnI559FkAayIf3C+BkcTws69oANJQ2Eu0kFhPa4KuLjPtkC4L4vljRB0kqBQH9G6NJa8etNIyzHqr8tfGABX85Lc36LI2aI9PwycSPGscZ1uxWz4B+q+wFkQUgYMXB3K637ofLPCxK6dWCli1mMgDKxmFggzW+sQ3Tf5D4UEpV1Vbf4BSl1p62lsdP6YEikDICXTpvHLY3IMPsTsw41ByvIPklaZR4aSnXACfjC1N5gOhhBzGkE0ZkysSa0MQnI2NeeSUO9o13qlDvo6fDu6DqVxD34ya23QxAbtMO8nL/aCm5lsV3DcV9v5eH81kJsO8Tii5oO5oTVzYALJudT79Enb9zktzAY1pzNfys9wf81H2TpyTwhKmK8dVPVCL3fiEz99ohHRvvRCS/oW+wczBRUfxQ==
+       properties :
+        x : 170.8
+        y : 66.059
+        width : 24.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Ldate
+       identifier : 0x4935797c2a312143
+       internal_properties : CQAAAAkAAAAg+/NKKmMyumxRX1aIxl9K81zDfRDlGWhyVNoYIm2ZVEstYTN2aP2ZhTdDGm2wI3PP+7VlRSovzpnnd+PobK9dg+y6fngb2LdW/Y8GpSslWNdjEZOtAbGvB2eBGASD8PnhdM+65uYugASwLeLzl2+9JfoNdVAQzzjfjEe8DUIj9Q3dLCL999wws56+uYChFjXkWWPjlg8MlsER44wZL+PFvoVsk0VOsxuutAnWA4g95mlq3D7TYWS5qMDTQY/IOl7JvCBrVgNZTknSoMGs11fT5m6HHxnZfXzjIfQiNHR8j3SRW4l57IkT7Ku4f2JYc5ehd2hUYeBVOKGQjp3/wr/jGWVL/PAvY14HvsXsbr0Njj0OG1dBBe59SfOLTbFi5hidazz64PigHeuILCEHbmpYjiueYT61rjXAF6w0SjFz3lPPsz4ifj9Ebe58fJnj0iOf7nRzx40Lqp2ZGvqupfoXFo/Mht3kKhNmM6d5KUx02pAkj5g6MxHSJzI0Xz+AoW25rcSXmKKSmv532Zgpq0gNyaYXs4c=
+       properties :
+        x : 125.344
+        y : 35.275
+        width : 41.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : IMAGE1
+       identifier : 0x4935797c72352143
+       internal_properties : CQAAAAkAAAB56YQcjYBZW+FbJ2tBmSvElrtK9deAA8KCRcidwg+ZDot1MNIyaNHGc9gwdWAmepgl7lGcq34P3XdeQSyS7bT+nQ3M7HaXz+lfNI8bgXpHJki7F09mffXr/hS5GD7RJbdCzQru8lxdj7P93SX1vGUoUrk3WdZs+w9RnLDoakvzYKjAcw2II1FNTLIMNmmX8VWzu8170cbO05PcX2xFyd+TTxr7T/cUgCesSsCnkASwlUqBhDRTv3w2dbGzZ4jMISj4saUZRuCucqxGE+cGBUM4E6HgtNru8TJP4VMIFCuQU1qZOLu33lpuuzhpgpFZiJtTnu0E55fvAqejX9rPUnR5O3l8Lp56aEOxprMfiA5DqAer7qphak3nZyJ63jrjk4f5TPil8wh94xOsGHwChpJaap1ZP0GkOL8mFZouWg==
+       properties :
+        x : 0.143
+        width : 13.512
+        height : 17.778
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            AjusterLogo(moimeme..nom,monetat..nom)
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lcondpaiement
+       identifier : 0x4935797c4a0a2152
+       internal_properties : CQAAAAkAAABicvHTJvk0QkoSDQYASAyEsuecF2OnG0yjlmS5lSZL1qJ4i/nxgi8xq7YDf9p7lcp5NES0YsdQig/tZwwqBkx2adbY6Pyax6aIN1Yq2ifX6iXi59N2jRY0g5ihlxGCKF9DZBEd1ovmD+ZUAFzY0OYt1At3DTY/EBrQx3buUukvitYrzzN04ehuZuZFiT0xayLPr8CLLl74cpkv4MnC6JcQX2Mt+u3QwL8gTD+tcrtfVmrncuNbifc0pLMXzJZOg3nJycyRIlckP1u6azGiWpMN+RBMSnf5Ci5FAUGuGbgIOTGYoADSor4qNPKPnBfqv/rpWgoX7qWSiDvGqPO9C5FQpcMifum0mWuh23bu0zJrBW7+dWyUPel8gHBGcYQEXjAGiIV7+6eMMMz0bwZsN9bBcoQxeXhrmsoErIeRgqbAR5WeX7/62ld6lrrfZ7FmS8lfxPZxamNAR7eHJt/H5QBaOYHWGzaX9cG7ZTubOJjmJP0G8ww5Z89V0lUiTdQPdmdjjcROIfhMdGrr2I9ukDsKIwsV7C2uieGfRrXNo5fXAiLOmQI5l3wgyg==
+       properties :
+        x : 63.167
+        y : 61.3
+        width : 33.989
+        height : 4.99999999999999
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : CcOndPmt
+       identifier : 0x4935797c4d1a2152
+       internal_properties : CQAAAAkAAACwpsbtHdOVRCZbbsd/YwMvKQRz4TewEYNUF9GyzVZKFQairj7ZkAUHYYU+p0Bol5LwQT6Z69QGJa65eV5fw4RZ9v+3Q6203RBYpEw8pw6C8Kjg27fwZ7R/CoWj+Suyhr/KUPvsnlZlDHS+to3TOepj1gRx3+IF2zzDrPboOSpEfFNqkEkvSfOeTTmbQIIvY/gXGy7FMhTPL4s+PJFeKtuo6lVQhhaWzS6w9f73iJ1UXJFbEP7FxecLID1m2T96Zbq0e5E1If41JjZ4XCsgi0SfGoaqSPs0Kqcr+XqpE7VYnyu2B22NIxY8RM98dK+QVtrSnLGwU8ZLmcLDc110vMzP2SxDZDreYPqtKp7mFRE4cwE36lx07gv2rhKCJlZFCKjV3N17q5WinKG/9gRA2CqWW9toZR9R3jp+7c+IORn3brtiZcMYZW8aKG3vdqYWEY5ET4MT/vmFvmCXUOwOaGPz1a60/B/bHXYsVrF0fQFfnA==
+       properties :
+        x : 97.156
+        y : 61.301
+        width : 51.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleNom
+       identifier : 0x4935797c15b22152
+       internal_properties : CQAAAAkAAADd0V4SdSgIIj8gSsW4mqZM/T8/NPZCZhfiW3TehFR808+sMMhwoCTtMESiXKA+sVcYd9QqYXrK4bNTC9Te9CfWttlPuH5+R+sgqAugclAkWmat9gFNgOuP/mab2vBU6bl/GjtzDcE5aSdeOSuJPLiV88o4I9L7PomA2HBIqhrtQb9tPbLM0TpXQGasIFA1SOUQsBv46pGm3umBgwe9fqO/WHE7fv/12jZu21amjwlj9IyuIJP8b3f9TwzMWGHptRePCqs20Lm+Np95RhTDSElGudFP555p3ryZJBTMHNVrO06lO2fj91lId1Kf85YXYj/CSjGnRfD4gi3PVytdB8hsUT18UqOVukGEN9AITSUV117/Xcu96AAlGBZeZkYH3H45wRZjo2ahDKOCpGRje0J6daq/hQRSq5MlLc3ytMGKXjaeKY4kgzv14+Kr454lbLrn7Wp0VFnkdmE31kacWpNHCR8T3e4dzaFgb0QOoiRT9yfrwTaIjcA6REnXRIuiQ8LFiVQAG8swwTDt4npAcQI8L1NfrivdflF31L71gj9uPB5hP2VZhh0hGTU=
+       properties :
+        x : 13.655
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme = config.NomCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleRue
+       identifier : 0x4935797c32432152
+       internal_properties : CQAAAAkAAACqPquDK726+Hk1UAAg+UM5WZpCaf6DeseAsEpVENSdQo1Bfxt+HzhH5hG8f4fQlwXWMJCITtJAv2duhSFsTlq7PF6ahwMLav3SZVuTFqwmxlRO5zjpKSuY4Ooxv5eD+OnejhrXN5J0BjNjJeK3lpXA650tpvibLEeAlVYL6jYShHBQd2lAO3pXppFVOyNLzm8m4jIiOhBTa3sjyzG9/qqj25o9ghO1PA/ZXBWPNlEMnag6i3LAEJhRpyCBIMoICs0gk/PqKO7eEI8Bs7G0GfhkXDz4wGox418ZOUUBGIfvxswnFIl5e6AmIUI/t6Ey83OtAS/zhEtWeb4ls3TnLCyHe42Dnx8QDsU88u/Ligq46cNWX/WONHiEetzkZwX6Tg4x/x4Y3CF8XLD7G7wxO+/2XgV6sPsWkDBxPaqpzJdTqqd74aeKUv+cGaXxZCU5n37E1nlFwHgvSp1V6aR3NfPAmUFW0i/hOrOhNkWrmhhVVznbcBILU74fdXN5aN+3SfrTBbN9jzpF1dIpVpkNwWIAfhDqFuvO5YjSE6YRT3LZtOXnCWHSoKrj3HomZ+yd2w==
+       properties :
+        x : 13.655
+        y : 5.
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme = config.RueCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleVille
+       identifier : 0x4935797c76712152
+       internal_properties : CQAAAAkAAAArbbJTH/sMZthp6/dR+WnjWakCztOKwwKyR7dbyc24RnaaamPRsprpK/S1c1iF9bvNc1qregDhG/S2r5w1XRlcQcTZOijxQEElUB8qWUGBg7Eq05JByp3bZT1Zrrve+z6ESfBidv1SALcdEG89BmmSgRnrXGpGb0qpe9CO6n2Aex9rgpBDO49S+L5WXQk+T1nvl+6TVEOoUEi/w4c6jJUWC+oRoBrAC5tUg3AbRHpQ0waMncCKIVYTAMOBgyTJxxJIRkYdLdiMGzxGFH5iRxY2FXok3ZV54tl22sKK+IfDYrY4uVMFAtLhPGg3v764l6lrLmUINfVMfkDt3jkQ6abnzc1CM0osl2gU0xNU2ODAWQnlbNA++pkcfdRfqNeE9NcF4VM6wzMGgVGeJmGb9QhaGuCHEEwnnCuWqT9imQRn55C9sNbTQlokXcojMhNYBQqPezlK/mk3D+r56QieJIeZW9COXMsrE2pXALofqK95kmh5gZpKCpgNkZKZ8uWP2LxsTMiLarWzlg8IXJ85a1pX8Qer4qccpJGweFSJI2x/pYoYC3yv/uI4lovtahX29FBKzatUEg650z7CCg==
+       properties :
+        x : 13.655
+        y : 10.086
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme = config.VilleCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleProvince
+       identifier : 0x4935797c25772162
+       internal_properties : CQAAAAkAAAB1fGQXcGCEzSZNGhdnBG/pB66U/w2WaX5FhCKojh/TzaR/MaYSHKA3VzMMJiMUdZ0UexHWP3nwtQU5yuU1aKnws4uhRln3MMzY7z0DqPBye1F1udYYEtndHFjSmncASFWOhDIwvu1BtUeGkYbA4WtIHaA4Wa8rB7DxABqXbMw+zN3K35V89TYPQXt5IkeICGulQg5mp65spJavNMq9dOiOkc8mfEml4h/Mc1OnHPV4+B6fEGt88H9Yo5OTPz/zBk690sHD4MqU81dzugJO/Tp7MB+4E7zzDBwA47Pzbrs3uDuOhy9hrp4aGddjy1jAhzKMBsOEs9LvHv74i9okIR0i3OG3x7h3JjqdlpmFsrT1795LA1QSi9osTC41tebN+dN5EMaERUK7MSNXgG1SK7EknqaLy7l8uCcISvblWpj+0/LtYe9uco2S5c2NTy14cdEBYKCt5UQrgktcy/8xrfrXUGPJULNaNvgxVHgZ3KVJwBr986I8a9/jq/y9eIeL9dRSrJwqBWgM8J8otoM6vf57n2GF7KXwYOxcxubOVTQjDm+LIUpxsgJYtzOpvla0lXL6MOmsVOWE6PvkHe9eY/1QinT0
+       properties :
+        x : 13.655
+        y : 14.594
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme =config.CodePostalCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleTelFax
+       identifier : 0x4935797c0a2a2162
+       internal_properties : CQAAAAkAAABovvZdlRTUbQF+q/ZvVLIDjRzDATQ51UWgMVpRosmW3/sePmLqTsHF3ZDQqC/YcGs1puHFZZ4+WQwgJJqapu/7843ZuhvJBt1uGzryAoVrdanicxr7fiGp79rRLXoVOpEHtclkFM5T/fi9km93pm9c0QWL8zy0XQlrM4vmLd8+3Cx0m2N8gpi5UiwjLQMUUSoHByK4+2Nxenw0CZa/ZSQ2FR+IcI5r9JRZkCKoVbBrfcdopXJjmJKWPDIVUyIakd5mArLtWGadbWne/mDniOcoNDb4zEQXBDoF+ufFGzlFWrvfn99aTlz4+o2iySF5HnxeQRiQ3Hk/ym+EacTu1mpsRp1db+yqe/K6XwPqkJ+GvXv6i6r5xjU/cxIfByEL4eddQLSlX9COFfRU0BRDu7Lj3llYZSgEg2hO76/IRIJSsavzgTYjqWkDTSa9o4n8FYP2vjd7LP+FaERj3+e53TlhQ7VRjIyA7Dcd8GikGloZDs5pS9S+OOOS2SF/+5YG9HtCpbtpCzne1Td6SuKgkB98642S8vhG/5qC28+NHXp0t2aQqjyn6jHHM1o4XQVVpI8Ef8kuefeX9l4Q+QzN2QfE
+       properties :
+        x : 13.655
+        y : 19.5
+        width : 75.564
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme ="Tel:"+config.TelephoneCompagnie+" Fax:"+config.FaxCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+    properties :
+     width : 195.9
+     height : 71.059
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1-
+         
+         HLitRecherche(client,numero,RequeteClientProduit.IdClient)
+        type : 327692
+      -
+        code : |1+
+         
+         lthermos..visible = faux
+         lthermossuite..visible = vrai
+        type : 327693
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BLOC_CORPS
+    identifier : 0x4935797c19722162
+    internal_properties : CQAAAAkAAAD7BHrzg+Efj28W8AVHvsDFLHYN1AT+62oNwIa6ICFC18rMGvfEVfalEMSlB8txtLHzmcH40a61ri8kTPS3EcotSdTW5A0eSAqe1VlTEhMHQr4vbdZkoe+84whJyfD4ZFQt08yxGtP37EYEPoMNHyjyKP2ys0XDkbRiPHeAaXDQWUQB6s7XNkJGDvcipYCVXwClJYTLJh0xLjfuDf/BXq9O0fedd94g48Pm1iVdCGNf6mSEYhDLqBze4SNaMPN3RuT5UfuvyV9oQYSHLSySVuw=
+    controls :
+     -
+       name : RUBRIQ1
+       identifier : 0x4935797c3b662162
+       internal_properties : CQAAAAkAAAAeCNQLdYLdBPmE62DRGZcSMSWTNqxmEX3lTnP++CVoArJTYk/X7tzN5EpwxbdJQOd/iPaiieWw48a04an2048SlYj7h3xa24naI1HcJsFIqHA68t6rSIOH4fIymZk606sFcM/KkTCmiwPPPhc6N/Av2G1pgvsVTZyt+xj1NHU2WFWCM6J3em6WfskTKqLL7BOcFGSX4xeyTHLafw/UYZqz0PXGEkBvOptUw2RCaZik/xWz7zuh8y+B4+4MFwoURwvGMrCyh73Wu1DBfrmBvy2oGih0WXjdcXSNMEkVdHJ99NJw1ur0+vk8jRhMbgAZgHm5H2442ikwrtw2hh/dICEibC9tKR8oN8W+8g2gNYEmh7P9lFv6mdhabcraiRnlm1tRFrAA3Mv5knDS9eL+jvKthK33vrf8E+7maVQsoLFsk3XGVVl4k/4W0bcsSY7CcQuFcgwutrhqEr429YOz0MMv7eD/dN4gfFo0
+       properties :
+        x : 30.9
+        width : 117.85
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            si hlitrecherche(persoens,ennumero,RequetePersoClient.IdThermos) alors
+            	si client.CLangue=1 alors moimeme = persoens.endescription sinon moimeme = persoens.endescriptiona
+            sinon
+            	si client.CLangue=1 alors moimeme = "Thermos Inexistant" sinon moimeme = "Thermos not found"		
+            FIN
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : CALCUL1
+       identifier : 0x4935797c0e552162
+       internal_properties : CQAAAAkAAACX00835v9e6r2vSDnebpDX+2gpQFNce+iDxOivxOrVuYAvmgPIgzfpL5+eBndR5JbfXvExmg/lhnH+zXREMU+zPes5+yHs8ysMtKTpiXkYZxn7OS9NX6tLnE2xa7gI1PLg6UOZdZo+hB9CxPIjVDoEtrA1MtN/D4/Kt/UUUPvAcbJyb74bE/MiTz4hvDEqUYz5gvBzzkyPqGSnnWhlpWRN5SH7mllV6sN4dNQUSES8PzKSBZPaaxH71B9pjAf1nPamx3ZY6hZGSel04NtT+1vELjZ2TN+zvM4N0ksTW6Tq/eZyCy0PaijAdGhpngo+yTiK2J3aHKU4RM8AXegeg/ZaoyRNaBOJ5+WLDT9Lhs/WzwAxiFmobexA9ZM8OMJ7GR4UuazU4QgYJe+4KrHmdwGtSZc4g5sekY592goEuk5/6nsdCWwBXNQb/n3j1W94E4C6OphhVEZmsXBehs2xWS56+QYzBM/YuByXlNDrVrsb2juakg==
+       properties :
+        x : 148.8
+        width : 22.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            //calcul1 = calculprix(ENSEMBLE.encomposant1,ENSEMBLE.encomposant2,ENSEMBLE.encomposant3,"A",ENSEMBLE.epbase) //* (100 - spqteint.spqpourcentageescompte) / 100
+            si RequetePersoClient.prixSpecial alors
+            	calcul1 = RequetePersoClient.Tprixa
+            	calcul2 = RequetePersoClient.Tprixm
+            
+            sinon
+              si hlitrecherche(persoens,ennumero,RequetePersoClient.IdThermos) alors
+            	calcul1 = persoens.enprixa * (100-client.Cpourescompte) / 100
+            	calcul2 = Persoens.enprixm * (100-client.Cpourescompte) / 100
+            sinon
+            	calcul1 = 0
+            	calcul2 = 0
+            fin
+              		
+            FIN
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : CALCUL2
+       identifier : 0x4935797c32972162
+       internal_properties : CQAAAAkAAAAZqcW9fG0MAOsPfFvUrCZ9tfbXzhmy+ebJBu6ZCuAzn/odkGm2iT2nKaQbsFWPsqjB7pT1If4gR89BX+bA5TSxh0mDCncs5me0iTp5DCjPe4ncOYUY2PHhllERJ4q6vpfAatt+4u4wWZV0dj5qr4tF4K9hZTSd5ALbyXOm64CiB8rzS8baMfMZWLHqk1W385VhRviWtBAi+l7WcLo6GaKeFg+WfK2lpZ1I5JBmLGgM0coY+6Ugc/vT9LTwe3b078nrjE17NcHrXOQbIS455wG6WREqQ8C8csJQAnmbeLPbBfKdNO1bJXMM11LgeAK2JIdj1K9QNoImGvlSODK9uJDvWshlkyHgf7+dnwlqP5bMhHVzSuRnnHl3IkIJffXVOrVh3U5shPqzMKDq7st/PBpLA+FiKWqlQs3uvoIBtKOPcstrvwJ/3oqhV4+VM5WiuTLktLKnmigMV8JomPvvq0yc88BFUg0aTkIfMn4FqEmVULEQGA==
+       properties :
+        x : 170.8
+        width : 24.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            
+            //calcul2 = calculprix(ENSEMBLE.encomposant1,ENSEMBLE.encomposant2,ENSEMBLE.encomposant3,"M",ENSEMBLE.epbase) //* (100 - spqteint.spqpourcentageescompte) / 100
+            //calcul2 = calcul_prixu(ENSEMBLE.encomposant1,ENSEMBLE.encomposant2,ENSEMBLE.encomposant3,"M",ENSEMBLE.epbase) //* (100 - spqteint.spqpourcentageescompte) / 100
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : RUBRIQUE1
+       identifier : 0x4935797c58542171
+       internal_properties : CQAAAAkAAACVuYGGJUZH9t9xGH2pImtCKeied4SRKsp/ZmcXZc7zwF+ocRAzRg1BAMBNjx/5vdWvbvKdG6swpSscQN4K0on5ciZLR9a0B9MO1hLZX9laH7AneWlYH/8EZMmC8CT+2mccLoNum7nExCvzXO+OIuqCLgm6QaGDbZZEkIqhbQ2ihtuLHYeMwtjGhlALHVseufRonZ1LxmsAlqmDykindkLRen85wH34j9T9yahqfbW/jRp7KZRtczg0Bwj+AIukf/fTJktJaLg75VUnUOILRlRNFi9yYZw4mgpgcBVtRv9JXtjwtK/KBbcl3LLNGktL/MnGZNKMrqBnN5yklnDzBHi236v6w3hfbeO/+SQo9R7Zw3n9Y+u6tE4SbsG9AkWzQRMNbZQ4xerFr1jZfK80BzXXaGIXGCS/v3/PxGsYIl8Gp+siRId+zIV9UTF1KvaSKTlEXxHaQ+v+nJI49IdTl47U6dpBwlLXI6GNPiC1FkJgxsi6r+f/mNyeZjsvmfazU2YHbzzTPYIN3+qpJvmY6HDlVA3rgWBUCLBIZPuILmqWO3mg426N3bHXvQ==
+       properties :
+        width : 31.01
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+    properties :
+     y : 71.059
+     width : 195.9
+     height : 5.027
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1+
+         //Code WinDev 5.5 remplacé par la migration :
+         //bloc_haut..etat = actif
+         //clederecherche EST UNE CHAINE
+         bloc_haut..etat = actif; bloc_haut..Visible=Vrai
+         compteur est un entier = 1
+         //clederecherche = HConstruitValClé(ThermosClient,IdClientIdhermos,client.numero,RequeteThermos.ennumero)
+         //HLITRECHERCHE(ThermosClient,IdClientIdhermos,clederecherche)
+         
+        type : 327692
+      -
+        code : |1-
+         
+         si listeprix.nouvelleliste   alors
+         	ListeHistoDetail.IDListeHisto = ListeHisto.IDListeHisto
+         	ListeHistoDetail.iDescription = rubriq1
+         	ListeHistoDetail.INoProduit = RUBRIQUE1
+         	ListeHistoDetail.iPrixa = CALCUL1
+         	ListeHistoDetail.iPrixM = CALCUL2
+         	ListeHistoDetail.ITypeProduit = 4
+         	hajoute(ListeHistoDetail)
+         
+         FIN
+        type : 327693
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BLOC_BAS
+    identifier : 0x4935797c32822171
+    internal_properties : CQAAAAkAAADpMFiFOtJ+zNDn9oyFvOxRuV89qsJ6Y0xfctSqpokckari1/kyW6FGLUES9XXY46FF0H82NpyqmKjuBNISZEFHnu+WhDz9QyKMKk/G13qWszMeIozdUiHUL/d2A4hgzGgV7aW24sdu8yzUfk2XrHbFX7qPBmCHdb/Ubnlpeo2fxNNIszlbrn8EbAoQp2rz7dL8g2luHZia0+HIWLzeKWinSNo4m2i4cftmIvGJtRrYZ3OhH2NST69RbKyDNWjVjXHSxuAJJ1j4tBpejZgyRP4=
+    controls :
+     -
+       name : LIGNE1
+       identifier : 0x4935797c78fb2171
+       internal_properties : CQAAAAkAAAAdyEfv88y2e7xqegUmMvB7LFrm+VvT9FoCq3zSXF7w+SenNL1/rYz/BHNYBdWZZP6yh+FiMyETdveUXX4rrGGH/YB/zrs3ON6lcW40pLu7295AwELomHYp5CeJh5RWN52Wcx1JHXH5Mr7lKR4p+2cuEQYBhqVEnFd21RKVtTNUZcfb9QFCVw372/ClySb9wHhY3IEfTByQ0O0dIcJQyrlGUtOQ0GEf6QbNKaGivfJbtypkiQSK4N41+s9yD8aLAZgpsjxQGBMDdK7dVZHF8WwAbDSssgoGd6OqX0BnTA/nM8hNsYqQGeitO4TzX3xs11Dc0C1qGY8fPfUFfAiudKd4f5qBgGWfQ4wLBHVFpDc9kOjUJkJbWO7Wc+JfE8FEvhwAbvbroRCnV3YfpBhNUX+ZvlAT8sV2GMMkSqN5U9m0JMSafYyzhDb7Ru2xTdKz6x9pyUyIrY+JAd0GDGYW1cH4qN8Jv4LZ
+       properties :
+        y : 2.45
+        width : 257.399
+        height : 0.3
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : NOMCLIENT
+       identifier : 0x4935797c40f52171
+       internal_properties : CQAAAAkAAAD2SZ625riz9Sh1HTlQwLol5383VOlU89M4ed9zRqrt7GHH6bRhrQ8zIic37Cq1jECH40aPhXe8vh7Syxok1R2IjEf8xsqDdgyODhGEZF7shixALe3pmt19IKPa7YGojpbrfCO4SCIUBvuNHVDxZtIL19OkYnIxJoCd80h7f/IJ01BT9zIe0v6YQtFCpWJyt8LJfRAQ8zhnMbK5cpdb0tVIKl8PjHGCkTtbcrAySGuVOT/t5+htE/3lJDEo470qJLJNK7hPxTvj1uTv7spwUxKYiq3QsDQJSDcXnUQzJQjdxKmOwpQd7hs2f2zfJL54rYNlw01Q9T+pz2LN3vo11pfgHakVn7FZj1fB+xtCWzonjzMZ3mdjyo0Mfowxbup225dzAeQRHEYrhdiU4bPGvhjQkbL/UbG3MR5tWBbodoxLlwktyB+Btci9OizH7VbC66kF6tLSGSrr7JF7Q20FC21lLcKskMUMsOMsFA==
+       properties :
+        x : 0.7
+        y : 3.6
+        width : 96.5
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            hlitrecherche("client","numero",cl.numero)
+            //Code WinDev 5.5 remplacé par la migration :
+            //si pas h.endehors et h.trouve alors
+            si pas HEnDehors() et HTrouve() alors
+             nomclient = client.nom
+            fin 
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LIBELLE21
+       identifier : 0x4935797c078a2171
+       internal_properties : CQAAAAkAAABd7yTlxRuCSkvCCqjPI82Z4+wFp9iWshmoeNKD0EVkuWGgXwYhm9dVuL/ACA4lWqagl94A7FB7S6XGYYjiPhSnzpKwfsfKY54AOrChgfR0MJ0ZZQ+KimoQ8tMRncdeJ7PeutZPf1kZyt0Vq9oMfwGB/cJyZ3vuWPAiFkhqwIr0haKq5W8ZezckkHbw824hjaH+VrziWD+dSHRJTqrvT1LvE5s9ZeDZgHCh4+ILEXdRVFj0qn+I71LE1SL0RHqWDmASKCztFxQslHY3nWlHMS7MlInixSsOzEC1BJV+RM89xj94km+LPoVpuhYzYdlO/qVR06IITc6CHKDUfWRxC5ea4BQbl2f/78L6BGIQiMffYoQTM+njk1t0oB6r516NQ4ADzMrraGwbbNTu9mgHdT+rlQqCpDQ01pGVWPhi79+wKmodryoGSl8lTdFDKhkdi3kO4fEHoU8u9iTIDPyVfbunXaQeChXUgfHfhpt5zY94BEjM
+       properties :
+        x : 169.84
+        y : 3.6
+        width : 12.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : HD_PAGE1
+       identifier : 0x4935797c46332181
+       internal_properties : CQAAAAkAAABzkuORRcKMt1qxhC3kW2CGPp6+OJQ6jkiRzlbusGZAQODMEXlI6ALFvbIvUa0Y1Kbcbfejaj1vD9HmHBluNx7cLq+TEfZDdkVukrSgvMfFrX7JNYp0bL5mIl43S8o+jHqeuuzX0kGIPvDJyEFr1kpklbdyuzjMu5nVoj6keDy0v7fLCeUcE+w3SzTX7OuI0z4by7oru1mtMI9F49gfxBMlspBkIBYQ0qPDlcNkHYwX6VA7Rw2UJgbs419DeSrLG+ulytKTkLr7ST72+8NzIOzu/tm0Fnf/0IMhpGYw12zQYhONIv7mXY9a7JMYHYFx/Gzw1RNhjHJJzu8r6153AO5wvpbp0lYvl//FMh1BtjDCvPS/6++qRmEEo6SLyWbRzrdokCE3D1D8Km3fxdbPYLYr94rZ8S8WZDhg1nRztcPt0soXRR90dPzN9hQQhS5KXrmb+zwpmG6He7NS6g==
+       properties :
+        x : 181.7
+        y : 3.6
+        width : 12.4
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            {"HD_PAGE1"}=iNumPage()
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+    properties :
+     y : 76.086
+     width : 195.9
+     height : 10.
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BLOC_FIN
+    identifier : 0x4935797c49312181
+    internal_properties : CQAAAAkAAAC4QqGov6H0lOlRCy+OXsIRcGOXJ4uLUlMbXSM4/lcwDZ89YZaLm0X5ceaJf4d5i8LLXcBM6PnSkjzhcaYXjmbclJFNCJZdkyKYss40dutBIsuxIfIUr49CjJWANEbj64UrCGMj3/qh4vbgZgIBToYa1hSzI7rcPzjQeI6Jj1HsErMDEq39zmQowKFVx6PT2Ryyp6ETWQcto68tc51pqvdLRUNOHkJzUdBRUx4wUBCSl486txa1BANjdvbKWxOEJWT3iABgBmgL/3Abz+8b
+    properties :
+     y : 86.086
+     width : 195.9
+     height : 1.25
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BLOC_DETAIL
+    identifier : 0x4935797c60bc2181
+    internal_properties : CQAAAAkAAADL0vpnhvDeK7C34qjF6oYR2FvBhzmExazCdFHkQHtYkeaHSPEGu6fQdzPP/xQHLDBkvLIlS4euMc7zc8wCbkmvbXczxpnlH1OSzDp4sbjfwfXdMJ/fXMIa38e/wTBvAesM0KKswKsb8QNzvRTWckOLU6z5fA46AOIc1P8yswvjMnqlDipzvMCmrtl2WWPsYIYhq1qDMpOJSGrVZaKEp6Cd7jrAJObanxFwUL97suLQa0/pdwsDevcrJi60/Tidqk6Pebtg2mcXTviC93bQphw=
+    properties :
+     y : 87.336
+     width : 195.9
+     height : 1.25
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1+
+         compteur est un entier = 1
+         hlitrecherche("spqteint","spqclientproduitintervalle",numeroclient+complete(ENSEMBLE.encomposant1,10)+...
+                           complete(ENSEMBLE.encomposant2,10)+complete(ENSEMBLE.encomposant3,10)+caract(0))
+         
+         //Code WinDev 5.5 remplacé par la migration :
+         //tantque pas h.endehors et ...
+         tantque pas HEnDehors() et ...
+         	numeroclient+complete(ENSEMBLE.encomposant1,10)+...
+             complete(ENSEMBLE.encomposant2,10)+complete(ENSEMBLE.encomposant3,10) = ...
+         	spqteint.spqclient + spqteint.spqcomposant1 + spqteint.spqcomposant2 + spqteint.spqcomposant3	
+         compteur++
+         hlitsuivant("spqteint","spqclientproduitintervalle")
+         
+         fin
+         //Code WinDev 5.5 remplacé par la migration :
+         //si (compteur * 5) + _.debv > ihauteurpage() alors
+         si (compteur * 5) + iHauteurRestantePage() > ihauteurpage() alors
+         						  iterminepage()
+         fin						  
+         
+        type : 327692
+      -
+        code : |1+
+         borne est une chaine = numeroclient+complete(ENSEMBLE.encomposant1,10)+...
+                           complete(ENSEMBLE.encomposant2,10)+complete(ENSEMBLE.encomposant3,10)
+         
+         //Code WinDev 5.5 remplacé par la migration :
+         //iimprimeetat("LIGNEESCQTE",borne+caract(0),borne+caract(255))
+         iHautBasPageImbriqué(Vrai); iImprimeEtat("LIGNEESCQTE",borne+caract(0),borne+caract(255))
+         
+        type : 327693
+      -
+        type : 327697
+        enabled : false
+  -
+    name : EnteteComposante
+    identifier : 0x49b7c145721da77e
+    internal_properties : CQAAAAkAAAAPLbxvu4m2REF3cruimlYS2k59cFN0MOknO8qsnodPDde3wCmcQ2ro8NDI2ejvNSW2EJQvE0AFqATLVi/kddXtd4pRES4WTfuI/oLjjq4PAOgAM9XfPAt85YSLoaPanvDYlofW+zmKIpX2dr/ZAxzBm7uXmXYMqsKvHDxt4gedv9ZdyVstdFwGDZFhiHuAy/pUKKL6SqMuUUfEvBGZJ2P+cgKcOgZEGbuDu+z4xJ7XLyu0YV+S/jSxSekIV6bzgWO0e04S/Z78CgICF7w=
+    controls :
+     -
+       name : IMAGE2
+       identifier : 0x49b7c21b46e4ea65
+       internal_properties : CQAAAAkAAABYf/pe618+5zmvuH4WS15BGNWarD7OKFae6la0fdYDV+66JrMFnVQqPnk8nYWE/qP/c4+6IiM+GcH17qQwslZIlQvotnbHPeQmkhMEvlBfUGZzeONo6+VR2x6NJLRT3yhkAhfwdDrcL/Ql9OwIawq4P1QuFu1wIDYTXVizoTC7RKaA72KvpYrQcfwztTZw8dsGvrwY6sXDmsC7qcetojlow1LhRkIhRHI+b8y8mBaPO38a1Q3QBEL5GdrdZPZFI2nCt20C9wk+lTJvU3mJZs8ZDkhtqJA+erq0KRJDbhelp18+HS/ktPHVTAO1d53tQf97okQaQUR1bX/2wW0LUZSHJiAwt0Cvr0R1He81BjpPjJ56Nnh7glkdI7ahSw+50bR2wSMmImsELidIt6FmW8a8seYClCbn8q2Ok+8kq8w=
+       properties :
+        x : 0.543
+        width : 13.512
+        height : 17.778
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            AjusterLogo(moimeme..nom,monetat..nom)
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleNom1
+       identifier : 0x49b7c21b11cbea65
+       internal_properties : CQAAAAkAAADUte/NU8/mnznyOYK6Vuzj62jneBIV93Q4zuYxlKWMr9cfHEq7tHLAjgWF8wc08a/CTKRku9wGdX1ymYdMk7LAKhkNySYjpa5Yqc8WQ54LmVNmqLjccs9teAQDm9Z9vuTZ8AT+QfK/eVhlCX+Wjm9CL3j3pfXWAgSWCwPMGZi1LhX+k7RNYpNZEEXldYbCajLqatwI2JSywX0NFy+tQ6JkQGuVfNYorrVPqiIa1v59Yc/7E/YjxYcY/IG5nJqyLVp8O3356zpMoKxz/eWCLfXobvil1oncF7LrbUsCZAJcvgcwoGZ3AQxtl+UXCdQSk7Y/wmysEoeSCnZcPwleoghEZ7rEEKtMIqO1jL6l9sU/mCOZRkx6SnIHCJdEJlNj6jhtWoRNvHAudCZXJxU0KYbn5JNj/3YniZcYz++CixfHMXdCO3WJcflgYinouTQEpCr2ZZCSvmTgCXl2TAR2gd81ehFeTKrsjPub+9q4KQbSL3TtEI5ZGN+zU9TQKOItrtpzCt1eRC28/u6dI30+eT2xkg5pygAN/xGk8IRGAHN35qvh1LBIwA5car3QRkdg
+       properties :
+        x : 14.055
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme = config.NomCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleRue1
+       identifier : 0x49b7c21b579eea65
+       internal_properties : CQAAAAkAAABO0dboDDrx3ylTrXDr34PBTUf+/DYwtL5H+pHVgI1JdyF5ztCoDgmvcQ5oJ4NG5WrW4wI910lkDshk812FcWItbNk+wQdAF0Qw3CTaXrNssBuBFWFIEd9Cu1k1QWZQXxSavKwTsienvHZMLOlYkFwDttc7lx2vrqQMs7POUI4NvS+3ZQDkDdHzeBbergAx/5vhNr7Va0aMGz0l6pmB5KsiyffWKA7cSP1pS3vQlWUNVtAdY7Sf5GAErmA2kcVhIc98PKiZQ+pFJS+tZtTQ7idybp5M1tPO+6z5iXrzLzGi61qVFmSaFu/0orB8XlXkfYRr0i2ioZpjSow/mIZmZyx1Jf+8+ggt7SkZwGIPJ/Z1MRpWNXteMb9CzKFcAgTpZtf2rRCH6qS4u4f9CF68w19AkaJG2GKWFRtX4fs8FP6iu7M2x1T/PttQR1qHyWMXMnmGvw30FR2QSkvyhbZhZ4wB+3ab2cSr3FVJvJtakQ2Cqx08Ju5fM7R351xIkuic8BZWlay0r0mKtzc6TvZerWAbGGk/W1RyJs9BBAoU9IZPnv9d+rHK8KdcHN1IqOg+qbo=
+       properties :
+        x : 14.055
+        y : 5.
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme = config.RueCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleVille1
+       identifier : 0x49b7c21b05aeea74
+       internal_properties : CQAAAAkAAAA0icOosnzWaoQMIkZtxqyO/heDMjetz8l6rGpDeQqRMRmoxLg+IjZ4MTfNf5GDy6PUDCF8I/BXvX5JyCZSVk6aNXCxw31obTWodfOg9ZvvdNWBQxh4GsP7N35Wk+MNMkP0z/H5rQ3We5bXtvbZ6pW4DEbAzaaGM4BQUREqpntaBtVkNUHc40JeaNoDZepFfrDWrBkdxALKC2IzaXdflE91qfe6+DqubKICVQeFYNnQ0dzbmyfB071tYjApeSJoxvy1IW68E3g63pcEe+/k7IXWdPlQTkcyYxuZ9WsjNQHFhQhzq4Hn3mgFQsYq+hYz8wXlbeYp/VI84rSmxThHtNRhB8M61VYpilZMoGM/rZMEwZ8RiGINld5hUAeZqGsTQgjWi8XssGF8C2JiBabcro1j6SEaR4iLXH4NLzaLOB4rsBycs7ane96ypcUZvEE3W197FLdVhxHGZYcXrJxDsaPi0lIT59cTnO2613R1vCogrrcD6Mhgszis8auJEjFEUo2BudjkGz+aio/dmm+LQyseWrbcX27DC3a9iZDUU2h7IpbM421WEZJAzObzdOLTfeV9VmvH/JfqV5Lx0qgBsTs=
+       properties :
+        x : 14.055
+        y : 10.086
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme = config.VilleCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleProvince1
+       identifier : 0x49b7c21b67b6ea74
+       internal_properties : CQAAAAkAAADezLiRoYpuzrWxMVPWKhNtMBBfSCFppWoEF/wkwPxVm8IpEJcGKTeU49IbWudo/wc+o+nQZVrA245g/nGcgkt6XFx5L6aj0leCksF/gkjct0HEAL8LhwQoqiUYC/SgCGKuyyYQ0AfLHD45dop8pSs1hv6MZEEemFXr0XZ5J5ihCS5hyDDZrH1tMwHnz8if1u/ZVDcq68p6DnluoJdDbsLA4XooXMfCYm4ZWv6ICdMAKI8LqBsZI8pedgLas7Wi3yR6Nc3Rp1bIZOakiFhsqZQigNJW38SjZ5RtcTwaNuhPluO5eZ0h3ggldz4nWcGAPtk8o+NZ5OwR5sq76YlPW55qhvQ9JEyJ3RNXZU5sRU6VLsxNHmtyeZ7x/GQpYYbcYvOsvpTpVV+0p5d+zOL1zaWxet+7oStLjG8T2cFpkaolTkYXWPIsnvikxI8ASQh9rfqrUCyy3zUsiXGFrn/zBeTF5ReD5y//UCwkny63nssFqSxJqxUloOl4bzekfsVyrFmdMWkrGxFxFL2IR4kJLji1pi2RL9PVXc9oGZY8ocmpTKd4fDr4mrKox7JO6m03ibFqUbwgMNMzokbV3SQgrG8bmyoM93l40VQ=
+       properties :
+        x : 14.055
+        y : 14.594
+        width : 44.336
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme =config.CodePostalCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : LibelleTelFax1
+       identifier : 0x49b7c21b59baea74
+       internal_properties : CQAAAAkAAAC4O6DSfyHGApw5bNvK/shrMLMc34kOPFlWpLSQpo/3YhV35P5KQA7i3S9zVoEsrbFjDzCQw27+A71uulfHrQs1K3JbMFII+JXpxl/pjgzVgKX9vAxHpET7G+KKdIz4JvhpI5aFHaCLRmlMDzjcWkihfo2HGIpXYTP8Jr+kHHoJpApLVqBm8BS8OjW6rgcMxK1X9VRz1CFAzCygvDoQfwxXv0uPbTmia2N9B/NNaHJ3paHG5qW+QjIHVae6+JLf9JJ/poTp0cFQd9ax3r99bh6FzFtwOOAYF3FH+stR4/UXNWpgUCEDzNWz/O5U0aCqXmW8m04LXYrjOrD2ywIHDu+IILH+3Jc6q4PuctqAtUP+BI3QLNGRdogz+u16fYjRXT04Agaay8Zn0U42wkfGFUCQmN/ci03s+scn3sxJUtl8zWEHk4ZFrf2/Moz7GC5pZrwqDcmw8DGSqwKCQLLjEZRNkVWW05UnSdGmomJ+yZBt7tBLsfqPjlqkErxdDzu611JQ2ZPDrPoCd1rMIBX0obJv+6TeIOsXb6nssHD/qAU8+7WVovj/iGQCx7PMdg/PgNnrDOb9MCV7hWDjJu1c472ST7G5
+       properties :
+        x : 14.055
+        y : 19.5
+        width : 75.564
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            moimeme ="Tel:"+config.TelephoneCompagnie+" Fax:"+config.FaxCompagnie
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lentete1
+       identifier : 0x49b7c21b7df2ea74
+       internal_properties : CQAAAAkAAABgsnOfCCyQYPzU/hgBdLp4wG5z4wQwNQvcdhxcZjKiswnyjxiTF3f8Bo6dk72igYtY78AmMZmxe8h3gxM/9uA1fCimEkOiQFoBfsMc0Scf6QzzpdWMtY73muFUQ5RgORqfvDpicG4kYC0oeqkXW4HDxVEcSbNQ6XHWelK2V+lHiYIBIRRnldGg8ItwKan00EUZCG3de/dj7hjTW1LZN8Dlk3fMlrLcHT89hbaYxs8audFNtj68OtW+/2IU161OOHtlIuHK/1b6FkYXls21N0Vd9LrzFCLNG7cUpDV7QDdUi8Sg2OJi1MOuPo+OIvFF42ZNzeowAWqt7tw8QDU4q36V1JhaNM1iAjNj5WZlPnMGXbGwXUyT9Ap8j/7Rf7r0AmkHflWN9ipPymdKzz4Zzxu2XfKwvbrGviOTUwiY558YeNrTOH6J5QlsibXd+IvRQKZEjr71XKho2+nhbCkUEZ4htCdEGwggjfzW1kcwR2ZbcapIS0ijcasscs3CpiVZXvlSkDu6LUOC7N2yDbw1s9pv4g==
+       properties :
+        x : 0.9
+        y : 26.5
+        width : 195.
+        height : 6.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Rue1
+       identifier : 0x49b7c21b3f03ea74
+       internal_properties : CQAAAAkAAADgSgnFOc3ytSzIIlJoXYvrbQrAya3MGTI6ufJPQSTMas1lxF4O9oJ1Y4Sb3mx5knRqqpeAec5aBnX+pdRmwtPn27x4JogdLVhwDinZZx/GJH640ajP1ARDMUWMz22a+aLwUxZaLZaOcDZvzZejPyyw98RZPPXS6R8UCTdqp/IzAbcmPjJqDVMBpMHkVYmc5qQkQ4BUTH5jqkhsRor4LrgVKq0GXv1nriiM4JVg5kYtauQdDAeXlURFBmj+5Th5VB4bPX5C6zTQ7oE1c1AOUK3wgyiYHawsUmTJyq3C2bw6TY8muV6KZcu7CRj1moyzQvC+ZymUPbiQs1ZuBt0InOZA/GQ9A1RXc33blbxv3u9PhkvBzkO5lsOBrf+IsHvW3XlFarxDgFlrc6tbnSq2Lv+aEp+19f5X6JbW5WtcSu70olKPQw==
+       properties :
+        x : 3.2
+        y : 35.275
+        width : 114.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            HLitRecherche(client,numero,RequetePersoClient.IdClient)
+            moimeme = client.nom
+            ville1 = client.crue
+            CcOndPmt1 = client.ccondpaiement
+            province1 = sansespace(client.cville) + " " + client.ccodepostal
+            DateDerniereListe1 = listeprix.DateRemplacement
+            hg_date2 = listeprix.Dateeffective
+            
+            
+            
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Ville1
+       identifier : 0x49b7c21b6915ea74
+       internal_properties : CQAAAAkAAABQuzkiiuh9bXPe/sMPLRgcG73SJ3mFTZzuarK5rmiRkPNVJaCrp1tNVR2rINHhCs4wdlSFX+1TRaPQwbY7xrUXWmKox6Z8soXMJ28g8HnECY2Ako6q68B3Q9aUDoYOXMGP7IVbHzN0NH/aYr3AIHG7eyJTHe49Kyaj/yjn5gLTVPTRoKU7ihNLPMWL3s/Udm/af8ZqB/l5L8FGJvD1mK7swJNnZOWG1AfRPgIp3mcW7TkOhfwWdTehJM8wt38WVm9N4+Rs5+TFDJxLSJtthP8+hU28epIS4MPK8GCzZViioQ/E87hzRNCTtxOzTX4/xIf9UshaSQmQDn2T9Fihvk5gQWx5FzhVaTIoqeozTRGpWOQnaKg99MEe4dcpP0K+bxuHvAKVKxDAZBWl3ZQOjiaJtSqh67UG6nKG5WMUQ2sA7/MoR8N3
+       properties :
+        x : 3.2
+        y : 40.275
+        width : 114.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lremplace1
+       identifier : 0x49b7c21b388aea74
+       internal_properties : CQAAAAkAAAAHnlSNQyTlYecYQUq2Y8h+EH8YptghRTxjl1eHxOtzvLKFtBXWbtiMBY2wq5ijCz6wXYB4L6SNJbJ3O6Tgj1zzw8fUbKLYSfVxq148FjPzoEbKKSn+VERpreRKI1QGaqozZyKpEavSloCpZXrNG4gct+IWfXBU1WmwyiWC9HKIvOMkm5JYI5me46/cxAtj/HM4nnZAylY25I2Pd1tgNXZ11ZFm1ePH/yKy+fOfCE72gcFC9cankNw+zj0kzJYcQX7I6zc0hX1vJ5q9hQ6MwEMFUjtP/1LHW5W2whA/z9OdYUhTf3lteq7pqpbHtuhPqKX4Q1i7pcghfANTCwwG4LhNmZXFqL1VfCGtV83Z3mXkd1nHy/9nejHlf9eeWawadHSyA68iTR5LK7Z90svbZOY1Hc3wyV4H0mdv+S8hEQqsiLYm0IHtEXhCHseW38KO77cHW6x7iHuix0ZMCzyNRJ5Es08zBEcOIGN5n/x3ZN8WUSj6nnalnqT57JC6CaA/GulLW5biiaigdrtBuwa+Uc4gIAvRXzSxIlp/giQFphW7TYIQcpGwvn1LiXZEnRIaiBTHmvCP3eu8VNcu5g==
+       properties :
+        x : 125.744
+        y : 44.275
+        width : 41.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lvigueur1
+       identifier : 0x49b7c21b7356ea74
+       internal_properties : CQAAAAkAAACuHzewhYmh4gp0pt+rj/JYTXIpE3MJIHT+ubpmBk4mtxTN3VKlqcgLa6NI3bpNuD+uRU2GhDPg79/AWE3qiRtrdM7Wv0DMAHDJiJCtw+k/fzNMc4MgM5dUcSwNB1UTWV+BNdWpZ19nrRVoxeKNxGdzYUdVpuCmtLpymAsTYUyuV0li4iCknc4PTL0GSju+PI9ucKV4Nh7M2lzYIpXgXrdbbQ4hBP2zh/xV1h8zsqNav5I1ZWavUC0NxWlHRsdIs9BPOBJ5n0fWEZX5sOe8cCC2rLteBLc2s7sKH6HIOMSqcADgmIixQDFYkC9Ti2BBFwkMhCF3dZYY4TimmugeButbQtQ5FV5CRcIJcvlX8ggY16ZFEZ/Z5HyJzAi5i/ywAXa5qOQWiUSlxxGv9fEhkSupZjd3v03tu8qSVzv0d583dU07OPIq9WWF/liJWJ42h/VK1DZII7S/hv/1EXtU3Cn+e0GF11d2JQOOMquHoYMTjGfrfZygQIpQPIzra+/iUem4fvjki+smWPYWe70uT3XcOQQlg2cp2+FsxA==
+       properties :
+        x : 125.744
+        y : 35.275
+        width : 41.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Ldate1
+       identifier : 0x49b7c21b0a56ea74
+       internal_properties : CQAAAAkAAAAjhPDn/V5x/+1OzvSBBUIlrxXElvn+moc58TKVZlY42HjiWvFXxjxaNoin9IeP5KOzbFMfiwr5g/ZjSUszIbJUwGzMFrY6NKonkaE9VILgRZrwmaGi4JKLYxzqTVsat5y0tDd7ZmwBp6C419rK7LhcfrQ8Us9OKphf1ugaMEjP9EPxWqnCYlW2H5F/KpEv3E5D4vjuUaZsD1AMk4WzcHiQo0ERsKsBYFYwfvBCyivtRh8l1WfnOza+SrICqTGQuMm8yD0umiZsUdKjD+vOENw7ttBjm46ShO8ouvQkQJ3/QXmd1Rni/IiU6liH0KWfte2niYMfjzTH0brhn5TKr5NHyQPhWlCauMekOx7bMz6KGXZPdPayPh7dIPr6QEITHgTGnO33FcNlTFqWcmVbkECCRmGs397Vxi/OlUKg/s3nGgdTZ0LCIH+MbYLhfBASGyv2tvd9iTDWK3gfy8YMnbpF+loT09WTst8gPgpvnXpK1+X4885MUoCrE5RRjNyjzBrGsvF22kI6xKwGJHXCzu9arKEasIQ=
+       properties :
+        x : 125.744
+        y : 35.275
+        width : 41.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Province1
+       identifier : 0x49b7c21b6a12ea74
+       internal_properties : CQAAAAkAAAD8qDPqrf2b5/p0MsZf3X2Z/3ZMe1zJk+eX3qvZsD98N2i+Msy1fqmyCjlNOGnVl+mowQevJgsyITQNVe0w0N2i1NsWG0xvfoCkQTS30fMRYx+PUDlHF66N8AeMYA0CFimssvmeXAocJrT9sZbrhLU7L2vwh6ylsvWWjn55kuCBGT0MKBDqMWrOZfoJv65TeEFPtygW1Qjw6oYKH42EnmvXTYZD3CXuQqHYkh/EXvCm8MAaIpySNUrFmWfdxZbL6uX+dU/uhbYr5ajOeE3QZHJEtQ6UiZRzCFVkXJVjoyUs42ee925mEhWi4ZpJkw14Rjb0V4vg+g+diq5xwWv8egKKQioPNuoqLI4ZoBAi+yxskmqyiRR8BLofUAt7sP6LwDafGEXlY87ARSdQon0Fy4UjB3E3d7wjZLpphIkdw2Xktz36BuuV7Zet+PMYsw==
+       properties :
+        x : 3.2
+        y : 45.475
+        width : 114.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : RUBRIQ3
+       identifier : 0x49b7c21b1ec7ea74
+       internal_properties : CQAAAAkAAAAUPzIBvqP56Xq6mBVBgZWVo+d1VemkMoDahjzjZBF21b9w0LdeKKWFRykDKlbmyAw6Na1tUNi1wsI56H2bM5QAPC675ECEHnfadyxu6JEz9JQ0wSppBZDoROVm9IaI+2/AbR/hFlaFutdYbwQ03gzd2ksC4lkCVXsOKblxYWe7TKs4eFyUzXS5P8qwUfU4dWRISG+wzyshyhe1gHdkJj2n80P4WlkaVQH0BJb3/HYaGT4Igb5OPyKE6XUc0f61EAKOfiHYWU6232mK89g/dlFtj73ngiSrs85nUy1LRfE5rpyHgqKNWLmqKGR+a2PQbNuDwLYpV5u+SZHc7l4ruG+M3+bBIIQCBCyQiHM3hYXJFqfaZlEFs0J14yqgfhMpGEgtVD81kYr5EEu+kYgRWH8CfYZQBZnn7xld+wKZmjUFNQg3C19+0L+kgP1mboK82ctX5u21ijpIrQEF/cQmAb4MvxVe3N/6NuuvUj14SYrCDTAAt/JksOwhkYjf3o0FLQEQ
+       properties :
+        x : 4.2
+        y : 51.1
+        width : 25.6
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lthermossuite1
+       identifier : 0x49b7c21b4dbeea84
+       internal_properties : CQAAAAkAAAAE9AmXdyW7vIP6Q42NkoJ5mnHIEH4SOpw81uXjE6BZkNs5k2OWjU0teOkU+r1vhlM5zlsEQKmBxhVxfRjn+N5M5y+HINhrgRbsZdDCmX3QYREoUMzt3ZdnBsWZ/tXbY7KLOHYHLDGtqBD5A+io1OnrCTUil2Bo5OGDSPZLcuGN5UE+KUedaSil7uOb0yhbvpvu2X6zn0fz5R+dQ2VwVWROXB2H8vfnqKwKnpGVjS8eqKRaec7aSolIPmC4chNKHanmW0YpI6VEbvTB6u2zqUqrfwTfNB0VJzv89t1KnqGhu9E8p2j6ydtERozv/RyUH17ZSzp6oElfQBfvB9Yv1Cg8uPUusMOq89XXMy1nSTrzqpkODkEdgwf3z7CilhigyLqoivf3uFvS4Myucz3Y3VJT66wAXL2GmBHA6H1bpmM0fcRPKfUrLODZaPB59piKy4dw6yI61h+6d9a4CIbfbKFLd5OSi6CXPyK7tJ/jzT7+N45n2LbQ7HNK+kdKhA7vWlM1XkAn9+uL4bXoXWOX
+       properties :
+        x : 1.1
+        y : 57.3
+        width : 50.8
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lthermos1
+       identifier : 0x49b7c21b5628ea84
+       internal_properties : CQAAAAkAAAB8mjXyhLZxLo8AGQ17y6BSu67x7QPmT4mWy05vZFT2mtRrb6yPhHVHBnxUR/CmlYFs0NHpMdUvbfZl93p5dK5MKMJrPwsAj9dgHXcdnhXPcsrad7F8l1EP1TQtrITosLh5/XGtYLouoRFi49v9EvmF1c4gGOquqiVVr0p5xqzkry82nBZltTg48juaTdDFVkILg8epddSfWEHaVACQxUUFjKUEfo/oC/PwvnVN/atlIT0EM8v6lBG0PNLp99HLhpjYZ28W3sOZs3uBOJcyUJwkMs3vsiwMdC5qz0h+CBzjJg6gdJ1DLd6Cg7jhMPfmPALAcF2MbuUvk+DciUs3nfKm1crUhYr7YNveezthPv2CpjvlgwvJBxvh9+oab3vCk8Pv0nTyl33YaJSeQ3a2Iy14MF7ObGu6L/myk3K1xiol3c1is6wYMA/JIYitvrrmuACu08azc57K8fzVQBs=
+       properties :
+        x : 1.1
+        y : 57.3
+        width : 36.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : HG_DATE2
+       identifier : 0x49b7c21b3e1fea84
+       internal_properties : CQAAAAkAAABuocGIeAVCoy8dsM/TEl8raY1YAEg55x9cJO1CD0BalrsjfysjTscSgDNfvfKQgF16U7DxEBUWl3R5jWRby4glvryNA2S5w30klmcv0sSDG4KXthbFAvERrdkY7LZ0IDN7/Z45pf8sViO94TqldrW/KRDfu+dEnO9bYWN9kfOrVw1wTBqDAjfrc0pnA6ZEcfWLDwWZzUYBw991UD3ddhMUpmYjr+S9h+KwVUXrxgdg6CRZQzaVT0mMb7Mbmd43o8cvzdd54p0NiWeY+xH0eCqCRinMqyHdNF8qGcV9Bu0PN0i+TN/Qvim5h7oONMh4VMuNX037qsxy12PtXkVXmjC0cpB65ntKMCo9r14lz4+pOqGZ27q5X8x1J+j7NgiJsK/WpigUhePuPaaA4k39i60KSV2nXdhA9TLZ/Zz0Kt/pfxBzvRv0q7eQmyMc+Hx0fdwvgI9sM7KJfgLKjW2gy9xTbN3uTyUHcge3pgEiuzYKCTDQj8VF9z8ZLne1Uh0KI3vq
+       properties :
+        x : 167.338
+        y : 35.275
+        width : 27.462
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : DateDerniereListe1
+       identifier : 0x49b7c21b7483ea84
+       internal_properties : CQAAAAkAAAA7FFQN9KfuoqQNLKz0DRa+4rYT6OeY762RDYFai/7PzxZQLwTaEFnPLwjuRsgKCRaNY8ivvKg2L4nLJ4h4/0MXQ+xwzmDf1CzRRjhEbJZVUTGu6ScxGv0nZgJVSw3VUBLKiElSxLEJUWNw8lBhkUwTIhwYWs+GXrdC4ieu56bd8sMkWTNnJ5z9hfq5PoBuc+2kRakfZi6PIHmc7vz5K0K4FLTn4+dtcYFSWweryPYiH3A0ptPCKGEdgUNC5hGijSJsIir8uKO3k86FwKX19L+8GDymQk1FXzb50uHJMpi5qej9tkcLGtEkM1FJZPEKXmeb/pAKIQoPMid+CCrSFOTWC2xkdiuxmKZbpI8Qk3ZSJTSokOb+3ZJ08vWTi1BmBUpVs4l9UrLTSBanSQc2IeDITQJdxJRjvrfnU/Mn74Ebu5kLXd3hlTfKDsMjRxMcqvbDMmuPWnq9mgg8+91FdLTt4pSZ0NtI89k8bjifWLbnrtRNzU6f/+MFtwWa7LMK62GW9TAMzDnC6o/+XERfgJ2R2N7J8I5ZaApc+T/7C5a65lf8PMQieODTMFWpb6gP
+       properties :
+        x : 167.338
+        y : 44.276
+        width : 27.462
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lprix1
+       identifier : 0x49b7c21b76bdea84
+       internal_properties : CQAAAAkAAADY7rKRRtJm6KNSNxW99E6iDHYSjEPbbH57ae2/tr54PhJcI08vn5EXM11gbnC42zt4jOUZstcDZ2/fJeyzFwdBy3iFzi5yR6zBFXYP4bHW1y+aYxOaAt1NkLivhaRvfv4yfm/JBbRS+0W7CyExWTAquXCituvxXNCx2FKpIbVSwl2AktcUVOCg9n2rf6ejhy24euXVjDI9q3PmXKDlkc2jUuPT7dstqFdGJBQtvkK45JSw0FMz71l4v02GZhBAVahlRpbXgL53/eVJoArVr/tmvhLWEauy2QlZXzqwcJevB1mOPgTmR9u9aLFajuE59IJ04PgdMOD0HB9XGrWdFBiBLsrpLhp+dplAHEqkdD6ZTvLeDQnK3Y8aAVovL7U7tT1Lfwo+Hvy+AYjqzpt+F6abVuK04j7IvSqle7v6QjwufvxT0zeo91VK5WLwmIKHwe6DNIFGmJTTcnkXgMrIfCjt3TnToA==
+       properties :
+        x : 149.2
+        y : 61.3
+        width : 46.
+        height : 4.99999999999999
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lcondpaiement1
+       identifier : 0x49b7c21b21b9ea84
+       internal_properties : CQAAAAkAAABPT8WQF34iTtsueIfdlAOOdzqYT0M8i9IDVZRQndzm4adaSCV5oR987Ws3EYxZ3m16qJ3hUonK31rQ8Wa3YwebEJ3pCuy+aJoG/YRrYvmzWBts/G24NIL7FBpEiarCr23mYrwjo0b18+I9eQOu0Jm3vF8drG3mhrl7j81KriKxgpXVsPAZLgdf5U4zVWm1jKeKAWmdQ3WENtEinjkS8mD1n1HBpOA90r/mzZIuoYEpaKcTt2kdAPMZIbScT2U74xRt3BlI4T6VsCJYsWyDUoYlbZrVUTWT+YxTiPcELgZg1A339QaZbZwBfQwBKSinHSVqag4eKeMxk2k3uV16Tu7bw9bRxAJPDIXAXWRSQueZ8PDWQ0uAl0MNK1QFPQV3ROCWbpDdY/00wxeR7w2YV5XfaJORM0fnnjrwGWWK8rVDQZze+tIEAr71baVEuF1OaeD6ijHp5h8v87wnInx7G00aTqD+ocGOqnrxM6kgWiy4/NpyZk8J06l1lAx/5XOx0MKho0Bsbancfwr51pbKypNBNN0pYMC8KcaaET1PMGhvh8HqiOzC/Zybh6M=
+       properties :
+        x : 63.567
+        y : 61.3
+        width : 33.989
+        height : 4.99999999999999
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : CcOndPmt1
+       identifier : 0x49b7c21b6f95ea84
+       internal_properties : CQAAAAkAAAD/ihjWdCf2Upb9Sv3o2N+8QHKu+tgxID5z5dRi/LFtjdV+gIWFm0PqFuzkv8BFhXkv/Co9wgIE941kaFjXWE38GkbZqK0UEA9btEufh2loRw8EyFu0QRIj/WXwgEHyQdnrhLBtpbqJZfI2GGcUZvYb2hgREMCriI+IBOhtpapVrVc0A+5Om2i+UBt7p+VofxZLykYnur5tGrFrQ1xrlnTzdOfvJnExjKf6Xe3gXMT0g2IDGYpS+ksZw3GELcVdSZegs4MybcbCBV44Ik2z3MvugXxYC7KwfvMtooosIPdP4PN7Gupk/+kGljZzncsvSkjBmFHPCFZMy+MBWLm3LjF/V+2hGr7FnLEIAJYM0hzkWcNbNxbAT/fOc6d1RwK1QgvGKi1TkCdzCk37z1BMflaRs73GhpkGkd0oHgyMZuzndvdP8BMgZhn8QgDWbqVozbRIsaR7zP9fJ6R1C6edA8jv2getaSUyzhgr1A36qSQA1BDyeg==
+       properties :
+        x : 97.556
+        y : 61.301
+        width : 51.594
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Facdescription1
+       identifier : 0x49b7c21b2fd1ea84
+       internal_properties : CQAAAAkAAAAZVgzeZehO25zsamwiVZmS+p+jMldYozj8qQxsCtxz4r07nopIRtVJRXT3C+FyioezH1Jt6KY9qysHvPIHYGM4g4XhahDKZwdAXNdCe25Jpwdmas9QYCAt6uJOZfRvbRuxQp7XCosZFOB/4OW9LXrMwbLv0hXoedr9zL2voLaXPOiMBk3uFwnKoP/J1UPExGp2dXgWz15U+wnb63Co5moXqvOygguhJ6JG5uk8rwo9csH/KjZ6REI5aAxzD6N0rf2v6lhw1wfp67zXlWdSWlAdhhY0rnG7ROqE4Bfmg1Sa4/QNFga1yvuQYSKHywzc7g0WrnTsjswbROaciVW+ogiJnJkRcvEAAOzh3kRZW3rc/MulmONzNUlyNqXFszDYc4hXqlgtE5vVQsHPM7eYkpIZ3CGCccU3Pp5yLHCCz3U5egmT5bYMV4RhRnFLIh107AHasU/kwk8ioIhcBcMfTsgXRZgEVKQIsgMnNmhQhTUbtQxBTXPruF0Uy/ohKgtcvl/Y/cysOnr4CQ==
+       properties :
+        x : 51.4
+        y : 65.855
+        width : 97.767
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lnumero1
+       identifier : 0x49b7c21b760eea84
+       internal_properties : CQAAAAkAAAAQtrYXfksk9X87mASklo+T7XvKJjGGuU8OnsNOUjNUOFOTe70eqayJpMuBJbeHJqr7gZjeecwQsK4k/QkziFEQbgByPd0+fMUbIau6M6D2aqu7E4gEGeas2M/jE4jLGbh1YpQ3FIt4t8LDg93+mS6/VoRy69wF71DBywqUwsoHI4s1z6h6sxPZM/hOIwInZOXU0pvfsBX+hIUzk/Dq8zv19xSEc1oGRa59owFDeb0dmZ5wob+f8NafSVSXG5pvGAWxKNdtOxXmOP5z+ZQ5XdoUGKwM3e0J6Gf1b4YT9VD5zeT02OSgZeKUseQ4VuDuptLOzIkUoKEcjhRhYxs55H1UJ2rl8vt0xZPMw5d5ji6gwHJbdwCmYSxw4mRZIz8u0BXPF/O4l463AE/n2xlUWleUdXqp3Xt4aSuMgprJRqz4fju6HQk/njSMCkHqx7y/trYL4e95TyAHq7Oq7j/8uRmT2Go9xIFJ+4+di+r7gSI=
+       properties :
+        x : 0.4
+        y : 65.855
+        width : 51.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Langlais1
+       identifier : 0x49b7c21b1b91ea84
+       internal_properties : CQAAAAkAAADKmIcBGj1WMJkVWkCGLDXx6cUl9B0KF1fJVr8WLUIJSvJLH7pINHLJmJ2NYMTNLU62RimMhrWWkx4sOJR0IE7VUR+T5eHhXsK+K1S67gq47oP4UOTlnRaVm0HrGUcJBF4yNli3yV55W0SZM0mroJbYJDpeS6/O43rOjlnzXRPVBg3C3zrjm28YSlNXneuicWga5aDmwd8/9A6UZ/R4RwJINi+NuB2UM5Qapc/bOMc/jeSjSfMhoy6fOS8T3wiwaO4jXPNZILSaphK+ovPup18NrAUaWnR9FxDBdkb/WjnWMQJlgRTlShWpN/jM/BWkolZwXe1pmAb9dsPuY2PXjBB39Octaq0M7rkrcubkuer2rMdVCxdCQW95xTg/RF8kwMWzSj4xQv9J0rK7+n48PEqqf/tFBnhZFWjCFR883Dud24B20dH3dKgCCqPxUxfe8uIpu+SlOBdkSorJ/20y9QGLJMZzdovPrDa6iNXJV3w=
+       properties :
+        x : 149.2
+        y : 65.855
+        width : 22.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Lmetrique1
+       identifier : 0x49b7c21b522eea93
+       internal_properties : CQAAAAkAAACSgsnWyVf+QQo9vSJytGZsnMd/gnzYskfF8fkYesCDRWeCOKUd1dKQfU27FEAGULmRj6wmRiMqGGnuU3VB2XXzBhrma7MnsgVjIYQqoA5BgzAFLjzbOAebrhRCLfwaBXfudl9jrob8T1Y/ASre6vhMbFUvGdnA+0trP/BfRmQiQ6TybXRPCqSzKrvoG4Md3EC3vUCLFpCTlacrZvHRdqKjvhXeH0L4wRPSEVvvIWtlGqLiatKXMAtBVFFLtGf7ugQnP9/U6OiFUdBgA0Rt1FEn24BFrHw4O/J6wC1f/11+QNHje1deG1vIuF5295D0QTre7fkUf1ypCogKHNjGA2ynFaiO8S0ROXVQYeju0GOy9iqdr9InKXGira1n/HPYIYffD/ONIH0cqVbtTUy10xKDQ9nSDO+rokxIivct1igu0KYb0zfpx7xMLCXmewq23LTac2It6x+z0qaRSiuSMGAft2p23QQEdCh4oLELcR96N4SPt8l6klWplu1OVQ==
+       properties :
+        x : 171.2
+        y : 65.855
+        width : 24.
+        height : 5.
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+    properties :
+     y : 88.586
+     width : 195.9
+     height : 70.855
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+  -
+    name : DetailComposante
+    identifier : 0x49b7c2547cb7ca64
+    internal_properties : CQAAAAkAAADD2vJv+oxossaVYHmflG6roWRb3mIFUte1vW+yf6iXBFRa/XwmigG4tcfJbL4HIOIjorDmG9c4PXJSaqBsGR5Uk8rFoC1UPspJipGT/KP35Fe7LOYeoVt9JKn4BziaiMpPQhXA45nMrl4GUXiCYoU/SZypLM7wv79haRQlTqAtOv0kjevcqd9LC+oppJ6skRArqAJZSOSCOPoV2z4BjUcWmin1g8XwKg97xbR8Oz2egcWl42Dr6kXv6ug+tf8o/sbhL1nxS1TY9FJe737YrhQ=
+    controls :
+     -
+       name : Ccomp1
+       identifier : 0x49b7c47c68f634fe
+       internal_properties : CQAAAAkAAACkwQpM8NS0/QyTqldHQCZ6iKBakyRJj/Z98LrFRyQJUbL/i9RMOz/p1jq8A9Fi8eTe0jCB6j4M2pKkPGjWS7j/nLbLEb0C1MufYesIqNKuNWZqV5cVN5O+GEujQuAWDLohptRWfarXC6EqzFLG0DH2c+ItmkUhDbCFU100hZ9vevDU37RNaBqJw8fw95nk+n+maHXi/bF1HBtY7NIjIkrdniJCkD2P8jcDgxJ9zc+1CXOr+PR2QswFQvYzBIuCrwAwvoGR16WD8ZmlZkLtogXgw0/ArY7jZMY8fMU1qSpD7KhaUCFPEnJHJSlpVd/rAr4zYHqSLxp3+/Jf3BGnQ39cOiwyhDSjCcDjRr57BEZlXsrtKRKsdtlzg8ALH94eOiMj7JIQHGd289DRzSJDutHjZ2uHXzjfm1q8HVdnwtLj25vg5u+8Es3IDvljSBko23SA3HNkg2VgSmaFnQ==
+       properties :
+        x : 0.4
+        width : 17.
+        height : 4.736
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Ccomp2
+       identifier : 0x49b7c4be7d8a36de
+       internal_properties : CQAAAAkAAADqL889q3Iv6GcWN+DcJN5oewb3zXA9ezyYQgA0zwOQsh0IS9zvdvXD2TUCUq4h5luDWS8yD1ODV4WNdeyVuzN+nLSwVXcZYH2qlsNu70QRDLMfeG1MJPmha52qfn5jdwIbp2eOZfTmQx0CxqoAXvICSyjBj6JX6PYOP3Jh71Eg31v9XVO9KRJqkKTDbndgNgw3J1riuZ94alSSCMVXGJsIVZ5YjaZVvUsaxY7voa6MZqhpEJJR7DM/Ax2RWiTaegmx+Ocn0okOIWHZoK9stPNJDMZllIriNA0n+92hBQHkTN3SYMZvoxDvyoZZFxT+0ISDireyhuf4ieTiHxogKqEKknuDd3IfR5xg1ldMuTzeZ5Xnn51+BbgRpo/z2OCpc2eNCvb+p1/Rn2SmZ2BxGO4DdyGuxiK42nkf00oJo959SwubrJqVSwEa/D/VbryOh/S/WA/4jpNPA9V01o0=
+       properties :
+        x : 17.4
+        width : 17.
+        height : 4.736
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : Ccomp3
+       identifier : 0x49b7c4c243ae4759
+       internal_properties : CQAAAAkAAABBFBa0Enk272wPPOfdJd1vegf2zHsEcgORqwEryAwCBayBokV6nb52MDzHl2uexbvriW9RSKA2jsBgXq3GPLQHdS9t4DBWs6B1VYCjlBlaffiCuejlucxZ1tCRK7GWSJOszqw3HpGDzRSJe8edm8tz0GcW2ve6Y/ldmkcmxO6BuPxUapLi8tE9x9cQV0gpD6gLe0/ko8WQIoL0gB/LLIkW01QCRVTX2SfwL+6dvSrxiS2q113CqwYQrmBc6Q1R/8wimYaaQxgh4oopeIcEDBmzVtRxhrZ+TieLj2nz9THCpscYIJzfg+jHmNQbp+Y8DEBP3oF6zRBfbpFXjOVLnyqZk6ykvtbDUd6kQs8qPTjgZRNln5tmFTaPru+falDZuWEXrHIQi3N76bxen2g5MMSVeScKcBaMiKfzj86f+1WETAqak6OeQvoV+z7Ub72NhvW+Xwbxh5pIelzLveY=
+       properties :
+        x : 34.4
+        width : 17.
+        height : 4.736
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : RUBRIQ4
+       identifier : 0x49b7c53a2bef1a92
+       internal_properties : CQAAAAkAAADy9MhDDju0of9Ze6QWh4UMb/IhvKOtKsrYLxYn8kJaWto3gR82yzEbd2kgOQgZrUtXbXaob17doVvIur21DYxglm8JReHt2Owu1+c/jCaM5QrcAT9ZJXbPlAheVA5fG2ahCBGWk9aeJXWU6H7KKlL9sL4/l3RTNo8IFcYDTbWB0FOqDf5g1CkplOuRdMskUA+D1w9nd+WG2ASSn0kzIt0bWxuXnDkE82lUJ4VXoWatWgMJIXuf9uoFlqFDD7mADW3hJBRkJDYNkceYZI/Ja9vi9ICs9Xx6GryvhTpe2JAt2Ypyf6gFkpGWu3KZmOcZpsXBLEPohg2rss9gwUS6P9usT5GKzukcbhmp6/Jkw7cMb9B7Jvcxla8Q2xoofBeMxsvsPVNdbsiVp7ZeIJL12lS8DjbjTnl4J59grtkji/PDGopBYqbOI1snL4ODjxTNuOX5ZEyds4UaXlVuzMtnPgMSIMNSA1hcLEdY2zmN6Q==
+       properties :
+        x : 51.4
+        width : 97.767
+        height : 4.736
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            si hlitrecherche(persoens,ennumero,RequetePersoClient.IdThermos) alors
+            	si client.CLangue=1 alors moimeme = persoens.endescription sinon moimeme = persoens.endescriptiona
+            sinon
+            	si client.CLangue=1 alors moimeme = "Thermos Inexistant" sinon moimeme = "Thermos not found"		
+            FIN
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : CALCUL3
+       identifier : 0x49b7c5472fc04f8d
+       internal_properties : CQAAAAkAAADilZTZjD8QkF/0wqI7yr/A8jZHNnpEePzwDMjw8u8HOCTlHaBKAs11Ujtuvks9tARjVcmyjxZFXqPXaAYJG0M1MyYMnOUXbIdK/T52r/GQnfjloslJX36AvPb+HCFHXfbowzfWa+cl+K/QsmgoY39BOypjakiOEh5A2Fd7whKhhETd8+CCW3bIm1Tov1MnkOgRMZd+yZMjfAbXziC/N/DygGJ6B72rBzp6CTnHemzp3V2UhQ7ymJU8yNHEXVkGPFHYOwcdrplc63+V8xZ4q4huwhg+g0n0S/kdSnHLRSUIW4FGqHFMG7zjlLLifr8sl6mCgXMWS/Q/ydamKC5Yw3yW2rq28HMRCU21kJgle5vuT1cLf3LccP9WE0BJF9Cvww+auPiYBQRm0XtCdnVcCCMPXIjkn0/9RZpRhrTLL4vUqk9Zs+VZvSjSzkVVBIPu1EgNZMb5xdeihO0mATSSuPRZnnc4gX2qGWiOzwxUsNxNfHJE15A=
+       properties :
+        x : 149.2
+        width : 22.
+        height : 4.736
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            //calcul1 = calculprix(ENSEMBLE.encomposant1,ENSEMBLE.encomposant2,ENSEMBLE.encomposant3,"A",ENSEMBLE.epbase) //* (100 - spqteint.spqpourcentageescompte) / 100
+            si RequetePersoClient.prixSpecial alors
+            	calcul3 = RequetePersoClient.Tprixa
+            	calcul4 = RequetePersoClient.Tprixm
+            
+            sinon
+              si hlitrecherche(persoens,ennumero,RequetePersoClient.IdThermos) alors
+            	calcul3 = persoens.enprixa * (100-client.Cpourescompte) / 100
+            	calcul4 = Persoens.enprixm * (100-client.Cpourescompte) / 100
+            sinon
+            	calcul3 = 0
+            	calcul4 = 0
+            fin
+              		
+            FIN
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+     -
+       name : CALCUL4
+       identifier : 0x49b7c5475c2e4f8d
+       internal_properties : CQAAAAkAAAAeWdClyPtsXIs4FgavXiNkVpIrmo7IjNCUKMTMjpsDNAC5SXyWvqlB+ltGzoMFpGaLR218HdTTLHdTBm6NFx/RKw4sKr/J8u3CBQBaJ20MgcilXtPDoWwyKAKw2NmfEVJ7Wycm2wUjOK8QcqioY78Be2rjaojOERh4YCUL8mZBxJhR5/KAaTgyNwBKL5NLKHA13T80twmJUtanuLy32+xufFZmkaNptbQa4VdmCgj5LYnIvYrOzKV4JH3OT29Q3vd2KQEvhHM2PSCS3klVxh2hEed10v6vFjqi/7iiPuS5uuDVy0wtyntYedOhpSgLFCQJEGq9kF+iapcHDwU5Ixw2+ppWkBMxKa2V8HgFW8Hub3dLRwlJc+JzTAHghmnG+NJdi+f3wschCoBnDbwFR+C6kwcrBpSw8H8KD8/2RCax5eZBofs1adwOGunhqG8SKBxhMBoVuduukPkyHdB2pIDlCtuUJdkWjdwyI9CI7JARQLYAG9w=
+       properties :
+        x : 171.2
+        width : 24.
+        height : 4.736
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           code : |1+
+            
+            //calcul2 = calculprix(ENSEMBLE.encomposant1,ENSEMBLE.encomposant2,ENSEMBLE.encomposant3,"M",ENSEMBLE.epbase) //* (100 - spqteint.spqpourcentageescompte) / 100
+            //calcul2 = calcul_prixu(ENSEMBLE.encomposant1,ENSEMBLE.encomposant2,ENSEMBLE.encomposant3,"M",ENSEMBLE.epbase) //* (100 - spqteint.spqpourcentageescompte) / 100
+            
+           type : 327692
+         -
+           type : 327699
+           enabled : false
+    properties :
+     y : 159.441
+     width : 195.9
+     height : 4.73599999999999
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1+
+         //bloc_haut..etat = actif; bloc_haut..Visible=Vrai
+         compteur est un entier = 1
+         
+         si hlitrecherche(persoens,ennumero,RequetePersoClient.IdThermos) alors
+         	ccomp1 = persoens.encomposant1
+         	ccomp2 = persoens.encomposant2
+         	ccomp3 = persoens.encomposant3
+         sinon
+         	ccomp1 = ""
+         	ccomp2 = ""
+         	ccomp3 = ""
+         
+         FIN
+        type : 327692
+      -
+        code : |1+
+         si listeprix.nouvelleliste   alors
+         	ListeHistoDetail.IDListeHisto = ListeHisto.IDListeHisto
+         	ListeHistoDetail.iDescription = rubriq1
+         	ListeHistoDetail.INoProduit = RUBRIQUE1
+         	ListeHistoDetail.iPrixa = CALCUL3
+         	ListeHistoDetail.iPrixM = CALCUL4
+         	ListeHistoDetail.ITypeProduit = 4
+         	hajoute(ListeHistoDetail)
+         FIN
+         
+        type : 327693
+      -
+        type : 327697
+        enabled : false
+ controls : []
+ code_elements :
+  type_code : 13
+  p_codes :
+   -
+     code : |1-
+      Procedure _LISTE_THERMOS_CLIENT(_pParam1="", _pParam2="", _pParam3="", _pParam4="")
+      
+      GLOBAL
+      	NUMEROCLIENT EST UNE CHAINE = _PPARAM2
+      	clederecherche est une chaine
+      	// Ne sauvegarde pas les paramètres spécifiés
+      si pas listeprix.NouvelleListe alors
+      	GrpDateRempl..visible = faux
+      	lvigueur..visible = faux
+      	ldate..visible = vrai
+      sinon
+      	GrpDateRempl..visible = vrai
+      
+      FIN
+      si pas gImprimeCondPMT alors
+      	GrpCondPmt..visible=faux
+      sinon
+      	iSubstBloc(BLOC_HAUT,EnteteComposante)
+      	iSubstBloc(BLOC_CORPS,DetailComposante)
+      FIN
+      
+      
+      assigneLibelle()
+     type : 327680
+   -
+     code : |1-
+      
+     type : 327695
+   -
+     code : |1+
+      // Vérification de la condition
+      si pas RequetePersoClient.ListeDePrix alors renvoyer faux
+      si hlitrecherche(persoens,ennumero,RequetePersoClient.IdThermos)  alors
+      	si pas persoens.enactif alors
+      		renvoyer faux
+      	FIN
+      FIN
+      
+      RENVOYER VRAI		// Enregistrement accepté
+      
+      
+     type : 327696
+   -
+     code : |1+
+      lNombreenrImprime = MOIMEME..NbEnrImprimé
+     type : 327682
+  procedures :
+   -
+     name : calcul_prixuf
+     procedure_id : 5275256112770064660
+     type_code : 14
+     code : |1+
+      Procédure calcul_prixuf(no_produit1,no_produit2,no_produit3,udemesure = "A",produitdebase="")
+      
+      
+      indice est un entier = 0
+      EXTRARECHERCHE EST UNE CHAINE
+      EXTRATRECHERCHE EST UNE CHAINE
+      resultat est un reel
+      pextrat est un tableau de 3 reel 
+      pextra est un tableau de 3 reel
+      escompte est un tableau de 3 reel
+      escomptet est un tableau de 3 reel
+      net est un tableau de 3 reel
+      nett est un tableau de 3 reel
+      netpbase est un reel
+      escpbase est un reel
+      prixdebase est un reel
+      epaisseur est un entier = 0
+      nbverre est une chaine
+      daterequise est une chaine = ""
+      si pas sansespace(no_produit1) = "" alors
+      	indice = indice  + 1
+      	hlitrecherche("invent","INUM",no_produit1)
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si pas h.endehors alors
+      	si pas HEnDehors() alors
+      		
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si h.trouve  alors
+      		si HTrouve()  alors
+      			//pdebase = invent.ipbase
+      			epaisseur += invent.iepaisseur
+      			
+      			si pas invent.ibase alors
+      				
+      				EXTRARECHERCHE = invent.ipextra
+      				EXTRATRECHERCHE = invent.ipextrat
+      				hlitrecherche("invent","INUM",EXTRARECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors alors
+      				si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si h.trouve alors
+      					si HTrouve() alors
+      						escompte[1] = trouve_escompte(client.numero+invent.inum,...
+      						client.numero+repete(" ",10)+invent.icategorie)
+      						si sansespace(invent.idateprixfutur) = "" alors
+      							si udemesure = "A" alors
+      								pextra[1] = invent.iprixa
+      							sinon
+      								pextra[1] = invent.iprixm
+      							fin
+      							
+      						sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      									 
+      							si udemesure = "A" alors
+      								pextra[1] = invent.iprixfutur
+      							sinon
+      								pextra[1] = invent.iprixfuturm
+      							fin
+      						fin
+      					fin
+      				fin		  
+      				hlitrecherche("invent","INUM",EXTRATRECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors alors
+      				si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si h.trouve alors
+      					si HTrouve() alors
+      						escomptet[1] = trouve_escompte(client.numero+invent.inum,...
+      						client.numero+repete(" ",10)+invent.icategorie)
+      						si sansespace(invent.idateprixfutur) = "" alors
+      							si udemesure = "A" alors
+      								pextrat[1] = invent.iprixa
+      							sinon
+      								pextrat[1] = invent.iprixm
+      							fin
+      							
+      						sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      							si udemesure = "A" alors
+      								pextrat[1] = invent.iprixfutur
+      							sinon
+      								pextrat[1] = invent.iprixfuturm
+      							fin
+      						fin
+      					fin
+      				fin		  
+      			fin
+      		FIN
+      		
+      	sinon
+      		pextra[1] = ""
+      		pextrat[1] = ""
+      		net[1] = 0
+      		nett[1] = 0
+      		escompte[1] = 0
+      		escomptet[1] = 0
+      		
+      	fin
+      	si pas pextra[1]= "" alors
+      		net[1] = pextra[1] * (100 - escompte[1]) / 100
+      	FIN
+      	si pas pextrat[1] = "" alors
+      		nett[1] = pextrat[1] * (100 - escomptet[1]) / 100
+      	FIN
+      fin
+      
+      
+      
+      
+      si pas sansespace(no_produit2) = "" alors
+      	indice = indice  + 1
+      	hlitrecherche("invent","INUM",no_produit2)
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si pas h.endehors alors
+      	si pas HEnDehors() alors
+      		
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si h.trouve  alors
+      		si HTrouve()  alors
+      			//	pdebase = invent.ipbase
+      			epaisseur += invent.iepaisseur
+      			
+      			si pas invent.ibase alors
+      				EXTRARECHERCHE = invent.ipextra
+      				EXTRATRECHERCHE = invent.ipextrat
+      				hlitrecherche("invent","INUM",EXTRARECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors alors
+      				si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si h.trouve alors
+      					si HTrouve() alors
+      						escompte[2] = trouve_escompte(client.numero+invent.inum,...
+      						client.numero+repete(" ",10)+invent.icategorie)
+      						si sansespace(invent.idateprixfutur) = "" alors
+      							si udemesure = "A" alors
+      								pextra[2] = invent.iprixa
+      							sinon
+      								pextra[2] = invent.iprixm
+      							fin
+      							
+      						sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      							si udemesure = "A" alors
+      								pextra[2] = invent.iprixfutur
+      							sinon
+      								pextra[2] = invent.iprixfuturm
+      							fin
+      						fin
+      						
+      					fin
+      				fin		  
+      				hlitrecherche("invent","INUM",EXTRATRECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors alors
+      				si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si h.trouve alors
+      					si HTrouve() alors
+      						escomptet[2] = trouve_escompte(client.numero+invent.inum,...
+      						client.numero+repete(" ",10)+invent.icategorie)
+      						si sansespace(invent.idateprixfutur) = "" alors
+      							si udemesure = "A" alors
+      								pextrat[2] = invent.iprixa
+      							sinon
+      								pextrat[2] = invent.iprixm
+      							fin
+      							
+      						sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      							si udemesure = "A" alors
+      								pextrat[2] = invent.iprixfutur
+      							sinon
+      								pextrat[2] = invent.iprixfuturm
+      							fin
+      						fin
+      					fin
+      				fin		  
+      			fin
+      		FIN
+      		
+      	sinon
+      		pextra[2] = ""
+      		pextrat[2] = ""
+      		net[2] = 0
+      		nett[2] = 0
+      		escompte[2] = 0
+      		escomptet[2] = 0
+      		
+      	fin
+      	si pas pextra[2]= "" alors
+      		net[2] = pextra[2] * (100 - escompte[2]) / 100
+      	FIN
+      	si pas pextrat[2] = "" alors
+      		nett[2] = pextrat[2] * (100 - escomptet[2]) / 100
+      	FIN
+      fin
+      
+      
+      si pas sansespace(no_produit3) = "" alors
+      	
+      	indice = indice + 1
+      	hlitrecherche("invent","INUM",no_produit3)
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si pas h.endehors alors
+      	si pas HEnDehors() alors
+      		
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si h.trouve  alors
+      		si HTrouve()  alors
+      			//	pdebase = invent.ipbase
+      			epaisseur += invent.iepaisseur
+      			si pas invent.ibase alors
+      				EXTRARECHERCHE = invent.ipextra
+      				EXTRATRECHERCHE = invent.ipextrat
+      				hlitrecherche("invent","INUM",EXTRARECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors alors
+      				si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si h.trouve alors
+      					si HTrouve() alors
+      						escompte[3] = trouve_escompte(client.numero+invent.inum,...
+      						client.numero+repete(" ",10)+invent.icategorie)
+      						si sansespace(invent.idateprixfutur) = "" alors
+      							si udemesure = "A" alors
+      								pextra[3] = invent.iprixa
+      							sinon
+      								pextra[3] = invent.iprixm
+      							fin
+      							
+      						sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      							si udemesure = "A" alors
+      								pextra[3] = invent.iprixfutur
+      							sinon
+      								pextra[3] = invent.iprixfuturm
+      							fin
+      						fin
+      					fin
+      				fin		  
+      				hlitrecherche("invent","INUM",EXTRATRECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors alors
+      				si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si h.trouve alors
+      					si HTrouve() alors
+      						escomptet[3] = trouve_escompte(client.numero+invent.inum,...
+      						client.numero+repete(" ",10)+invent.icategorie)
+      						si sansespace(invent.idateprixfutur) = "" alors
+      							si udemesure = "A" alors
+      								pextra[3] = invent.iprixa
+      							sinon
+      								pextra[3] = invent.iprixm
+      							fin
+      							
+      						sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      							si udemesure = "A" alors
+      								pextra[3] = invent.iprixfutur
+      							sinon
+      								pextra[3] = invent.iprixfuturm
+      							fin
+      						fin
+      					fin
+      				fin		  
+      			fin
+      		FIN
+      		
+      	sinon
+      		pextra[3] = ""
+      		pextrat[3] = ""
+      		net[3] = 0
+      		nett[3] = 0
+      		escompte[3] = 0
+      		escomptet[3] = 0
+      		
+      	fin
+      	si pas pextra[3]= "" alors
+      		net[3] = pextra[3] * (100 - escompte[3]) / 100
+      	FIN
+      	si pas pextrat[1] = "" alors
+      		nett[3] = pextrat[3] * (100 - escomptet[3]) / 100
+      	FIN
+      fin
+      
+      
+      
+      si pas indice = 0 alors
+      	
+      	hlitrecherche("invent","INUM",produitdebase)
+      	
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si pas h.endehors alors
+      	si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si h.trouve alors
+      		si HTrouve() alors
+      //			daterequise = invent.idateprixfutur
+      			escpbase = trouve_escompte(client.numero+invent.inum,...
+      			client.numero+repete(" ",10)+invent.icategorie,indice,"base")
+      			selon indice
+      			cas 1
+      				nbverre = "simple"
+      				si sansespace(invent.idateprixfutur) = "" alors
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixa 
+      					sinon
+      						prixdebase = invent.iprixm 
+      					fin	
+      				sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixfutur 
+      					sinon
+      						prixdebase = invent.iprixfuturm 
+      					fin	
+      				fin
+      			cas 2   
+      				nbverre = "double"
+      				si sansespace(invent.idateprixfutur) = "" alors
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixdouble
+      					sinon
+      						prixdebase = invent.iprixdoublem
+      					fin	
+      				sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixfuturdouble
+      					sinon
+      						prixdebase = invent.iprixfuturdoublem
+      					fin	
+      				fin	
+      				// Options
+      				
+      				
+      			cas 3
+      				nbverre = "triple"
+                      si sansespace(invent.idateprixfutur) = "" alors
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixtriple
+      					sinon
+      					    
+      						prixdebase = invent.iprixtriplem
+      					fin	
+      					
+      				sinon
+      							si daterequise > invent.idateprixfutur ou sansespace(daterequise) = "" alors
+      								daterequise = invent.idateprixfutur
+      						    fin
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixfuturtriple
+      					sinon
+      					    
+      						prixdebase = invent.iprixfuturtriplem
+      					fin	
+      					
+      				fin
+      				// Options
+      				
+      			fin
+      		fin
+      	FIN
+      	netpbase = prixdebase * (100 - escpbase) /100
+      	
+      fin
+      resultat = net[1]+ ...
+      net[2]+...
+      net[3]+...
+      nett[1]+...
+      nett[2]+...
+      nett[3]+...
+      netpbase 
+      
+      renvoyer resultat
+      
+     type : 458752
+   -
+     name : calcul_prixu
+     procedure_id : 5275256112830750996
+     type_code : 14
+     code : |1+
+      
+      Procédure calcul_prixu(no_produit1,no_produit2,no_produit3,udemesure = "A",produitdebase="")
+      
+      
+      indice est un entier = 0
+      EXTRARECHERCHE EST UNE CHAINE
+      EXTRATRECHERCHE EST UNE CHAINE
+      resultat est un reel
+      pextrat est un tableau de 3 reel 
+      pextra est un tableau de 3 reel
+      escompte est un tableau de 3 reel
+      escomptet est un tableau de 3 reel
+      net est un tableau de 3 reel
+      nett est un tableau de 3 reel
+      netpbase est un reel
+      escpbase est un reel
+      prixdebase est un reel
+      epaisseur est un entier = 0
+      nbverre est une chaine
+      	
+      	si pas sansespace(no_produit1) = "" alors
+      		indice = indice  + 1
+      		hlitrecherche("invent","INUM",no_produit1)
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si pas h.endehors alors
+      		si pas HEnDehors() alors
+      			
+      //Code WinDev 5.5 remplacé par la migration :
+      //			si h.trouve  alors
+      			si HTrouve()  alors
+      				//pdebase = invent.ipbase
+      				epaisseur += invent.iepaisseur
+      				
+      				si pas invent.ibase alors
+      					
+      					EXTRARECHERCHE = invent.ipextra
+      					EXTRATRECHERCHE = invent.ipextrat
+      					hlitrecherche("invent","INUM",EXTRARECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si pas h.endehors alors
+      					si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //						si h.trouve alors
+      						si HTrouve() alors
+      							escompte[1] = trouve_escompte(client.numero+invent.inum,...
+      							client.numero+repete(" ",10)+invent.icategorie)
+      							si udemesure = "A" alors
+      								pextra[1] = invent.iprixa
+      							sinon
+      								pextra[1] = invent.iprixm
+      							fin
+      						fin
+      					fin		  
+      					hlitrecherche("invent","INUM",EXTRATRECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si pas h.endehors alors
+      					si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //						si h.trouve alors
+      						si HTrouve() alors
+      							escomptet[1] = trouve_escompte(client.numero+invent.inum,...
+      							client.numero+repete(" ",10)+invent.icategorie)
+      							si udemesure = "A" alors
+      								pextrat[1] = invent.iprixa
+      							sinon
+      								pextrat[1] = invent.iprixm
+      							fin
+      						fin
+      					fin		  
+      				fin
+      			FIN
+      			
+      		sinon
+      			pextra[1] = ""
+      			pextrat[1] = ""
+      			net[1] = 0
+      			nett[1] = 0
+      			escompte[1] = 0
+      			escomptet[1] = 0
+      			
+      		fin
+      		si pas pextra[1]= "" alors
+      			net[1] = pextra[1] * (100 - escompte[1]) / 100
+      		FIN
+      		si pas pextrat[1] = "" alors
+      			nett[1] = pextrat[1] * (100 - escomptet[1]) / 100
+      		FIN
+      	fin
+      	
+      	
+      	
+      	
+      	si pas sansespace(no_produit2) = "" alors
+      		indice = indice  + 1
+      		hlitrecherche("invent","INUM",no_produit2)
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si pas h.endehors alors
+      		si pas HEnDehors() alors
+      			
+      //Code WinDev 5.5 remplacé par la migration :
+      //			si h.trouve  alors
+      			si HTrouve()  alors
+      				//	pdebase = invent.ipbase
+      				epaisseur += invent.iepaisseur
+      				
+      				si pas invent.ibase alors
+      					EXTRARECHERCHE = invent.ipextra
+      					EXTRATRECHERCHE = invent.ipextrat
+      					hlitrecherche("invent","INUM",EXTRARECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si pas h.endehors alors
+      					si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //						si h.trouve alors
+      						si HTrouve() alors
+      							escompte[2] = trouve_escompte(client.numero+invent.inum,...
+      							client.numero+repete(" ",10)+invent.icategorie)
+      							si udemesure = "A" alors
+      								pextra[2] = invent.iprixa
+      							sinon
+      								pextra[2] = invent.iprixm
+      							fin
+      							
+      						fin
+      					fin		  
+      					hlitrecherche("invent","INUM",EXTRATRECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si pas h.endehors alors
+      					si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //						si h.trouve alors
+      						si HTrouve() alors
+      							escomptet[2] = trouve_escompte(client.numero+invent.inum,...
+      							client.numero+repete(" ",10)+invent.icategorie)
+      							si udemesure = "A" alors
+      								pextrat[2] = invent.iprixa
+      							sinon
+      								pextrat[2] = invent.iprixm
+      							fin
+      						fin
+      					fin		  
+      				fin
+      			FIN
+      			
+      		sinon
+      			pextra[2] = ""
+      			pextrat[2] = ""
+      			net[2] = 0
+      			nett[2] = 0
+      			escompte[2] = 0
+      			escomptet[2] = 0
+      			
+      		fin
+      		si pas pextra[2]= "" alors
+      			net[2] = pextra[2] * (100 - escompte[2]) / 100
+      		FIN
+      		si pas pextrat[2] = "" alors
+      			nett[2] = pextrat[2] * (100 - escomptet[2]) / 100
+      		FIN
+      	fin
+      	
+      	
+      	si pas sansespace(no_produit3) = "" alors
+      		
+      		indice = indice + 1
+      		hlitrecherche("invent","INUM",no_produit3)
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si pas h.endehors alors
+      		si pas HEnDehors() alors
+      			
+      //Code WinDev 5.5 remplacé par la migration :
+      //			si h.trouve  alors
+      			si HTrouve()  alors
+      				//	pdebase = invent.ipbase
+      				epaisseur += invent.iepaisseur
+      				si pas invent.ibase alors
+      					EXTRARECHERCHE = invent.ipextra
+      					EXTRATRECHERCHE = invent.ipextrat
+      					hlitrecherche("invent","INUM",EXTRARECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si pas h.endehors alors
+      					si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //						si h.trouve alors
+      						si HTrouve() alors
+      							escompte[3] = trouve_escompte(client.numero+invent.inum,...
+      							client.numero+repete(" ",10)+invent.icategorie)
+      							si udemesure = "A" alors
+      								pextra[3] = invent.iprixa
+      							sinon
+      								pextra[3] = invent.iprixm
+      							fin
+      						fin
+      					fin		  
+      					hlitrecherche("invent","INUM",EXTRATRECHERCHE)
+      //Code WinDev 5.5 remplacé par la migration :
+      //					si pas h.endehors alors
+      					si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //						si h.trouve alors
+      						si HTrouve() alors
+      							escomptet[3] = trouve_escompte(client.numero+invent.inum,...
+      							client.numero+repete(" ",10)+invent.icategorie)
+      							si udemesure = "A" alors
+      								pextrat[3] = invent.iprixa
+      							sinon
+      								pextrat[3] = invent.iprixm
+      							fin
+      						fin
+      					fin		  
+      				fin
+      			FIN
+      			
+      		sinon
+      			pextra[3] = ""
+      			pextrat[3] = ""
+      			net[3] = 0
+      			nett[3] = 0
+      			escompte[3] = 0
+      			escomptet[3] = 0
+      			
+      		fin
+      		si pas pextra[3]= "" alors
+      			net[3] = pextra[3] * (100 - escompte[3]) / 100
+      		FIN
+      		si pas pextrat[1] = "" alors
+      			nett[3] = pextrat[3] * (100 - escomptet[3]) / 100
+      		FIN
+      	fin
+      	
+      	
+      	
+      	si pas indice = 0 alors
+              
+      		hlitrecherche("invent","INUM",produitdebase)
+      		
+      //Code WinDev 5.5 remplacé par la migration :
+      //		si pas h.endehors alors
+      		si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //			si h.trouve alors
+      			si HTrouve() alors
+      				escpbase = trouve_escompte(client.numero+invent.inum,...
+      				client.numero+repete(" ",10)+invent.icategorie,indice,"base")
+      				selon indice
+      				cas 1
+      					nbverre = "simple"
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixa 
+      					sinon
+      						prixdebase = invent.iprixm 
+      					fin	
+      				cas 2   
+      					nbverre = "double"
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixdouble
+      					sinon
+      						prixdebase = invent.iprixdoublem
+      					fin	
+      					
+      				    // Options
+      					
+      					
+      				cas 3
+      					nbverre = "triple"
+      					si udemesure = "A" alors
+      						prixdebase = invent.iprixtriple
+      					sinon
+      					    
+      						prixdebase = invent.iprixtriplem
+      					fin	
+      					
+      					// Options
+      					
+      				fin
+      			fin
+      		FIN
+      		netpbase = prixdebase * (100 - escpbase) /100
+      		
+      	fin
+      	resultat = net[1]+ ...
+      	net[2]+...
+      	net[3]+...
+      	nett[1]+...
+      	nett[2]+...
+      	nett[3]+...
+      	netpbase 
+      	
+      	renvoyer resultat
+      
+     type : 458752
+   -
+     name : calculprix
+     procedure_id : 5275256112958939412
+     type_code : 14
+     code : |1+
+      Procédure calculprix(no_produit1,no_produit2,no_produit3,udemesure = "A",produitdebase="")
+      montant est un reel  = 0
+      nombredeverre est un entier = 0
+      totalextra est un reel = 0
+      hpos est un entier
+      
+      j est un entier
+      
+      si pas sansespace(no_produit1) = ""
+          hlitrecherche("invent","INUM",no_produit1)
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si pas h.endehors et h.trouve alors
+      	si pas HEnDehors() et HTrouve() alors
+             si pas sansespace(invent.ipextra) = ""
+      			si invent.ipextra <> invent.inum alors
+      				hpos = hsauveposition("invent")
+                      hlitrecherche("invent","INUM",invent.ipextra)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors et h.trouve alors
+      				si pas HEnDehors() et HTrouve() alors
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				FIN
+      			    hretourposition(hpos)
+      		    sinon
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				
+      		    FIN
+      		FIN
+      	   fin
+             si pas sansespace(invent.ipextrat) = ""
+      			si invent.ipextrat <> invent.inum alors
+      				hpos = hsauveposition("invent")
+                      hlitrecherche("invent","INUM",invent.ipextrat)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors et h.trouve alors
+      				si pas HEnDehors() et HTrouve() alors
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				FIN
+      			    hretourposition(hpos)
+      			 
+      		    sinon
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				
+      		    FIN
+      	   fin
+      		nombredeverre++
+      FIN
+      si pas sansespace(no_produit2) = ""
+            hlitrecherche("invent","INUM",no_produit2)
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si pas h.endehors et h.trouve alors
+      	si pas HEnDehors() et HTrouve() alors
+             si pas sansespace(invent.ipextra) = ""
+      			si invent.ipextra <> invent.inum alors
+      				hpos = hsauveposition("invent")
+                      hlitrecherche("invent","INUM",invent.ipextra)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors et h.trouve alors
+      				si pas HEnDehors() et HTrouve() alors
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				FIN
+      			    hretourposition(hpos)
+      		    sinon
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				
+      		    FIN
+      		FIN
+      	   fin
+             si pas sansespace(invent.ipextrat) = ""
+      			si invent.ipextrat <> invent.inum alors
+      				hpos = hsauveposition("invent")
+                      hlitrecherche("invent","INUM",invent.ipextrat)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors et h.trouve alors
+      				si pas HEnDehors() et HTrouve() alors
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				FIN
+      			    hretourposition(hpos)
+      			 
+      		    sinon
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				
+      		    FIN
+      	   fin
+      
+      		nombredeverre++
+      FIN
+      si pas sansespace(no_produit3) = ""
+              hlitrecherche("invent","INUM",no_produit3)
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si pas h.endehors et h.trouve alors
+      	si pas HEnDehors() et HTrouve() alors
+             si pas sansespace(invent.ipextra) = ""
+      			si invent.ipextra <> invent.inum alors
+      				hpos = hsauveposition("invent")
+                      hlitrecherche("invent","INUM",invent.ipextra)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors et h.trouve alors
+      				si pas HEnDehors() et HTrouve() alors
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				FIN
+      			    hretourposition(hpos)
+      		    sinon
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				
+      		    FIN
+      		FIN
+      	   fin
+             si pas sansespace(invent.ipextrat) = ""
+      			si invent.ipextrat <> invent.inum alors
+      				hpos = hsauveposition("invent")
+                      hlitrecherche("invent","INUM",invent.ipextrat)
+      //Code WinDev 5.5 remplacé par la migration :
+      //				si pas h.endehors et h.trouve alors
+      				si pas HEnDehors() et HTrouve() alors
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				FIN
+      			    hretourposition(hpos)
+      			 
+      		    sinon
+      					selon udemesure
+      					 cas "A"
+      						totalextra += invent.IPRIXA
+                           cas "M"
+      						totalextra += invent.iprixm
+      				     FIN
+      				
+      		    FIN
+      	   fin
+      
+      		nombredeverre++
+      FIN
+      	
+      //hlitrecherche("ENSEMBLE","clecomposant",spqteint.spqcomposant1+spqteint.spqcomposant2+spqteint.spqcomposant3)
+      //si pas h.endehors et h.trouve alors
+          hpos = hsauveposition("invent")
+      	hlitrecherche("invent","INUM",produitdebase)
+      //Code WinDev 5.5 remplacé par la migration :
+      //    si pas h.endehors et h.trouve alors
+          si pas HEnDehors() et HTrouve() alors
+      	selon nombredeverre
+      	cas 2
+      		selon udemesure
+      		cas "A"
+      		   montant = invent.iprixdouble
+      		cas "M"
+      		   montant = invent.iprixdoublem
+      	
+               FIN
+      	cas 3
+      		selon udemesure
+      		cas "A"
+      		   montant = invent.iprixtriple
+      		cas "M"
+      		   montant = invent.iprixtriplem
+      		fin   
+      	FIN
+          
+      //fin
+      FIN
+      
+      renvoyer montant + totalextra
+      
+     type : 458752
+   -
+     name : assigneLibelle
+     procedure_id : 5275256113437810964
+     type_code : 14
+     code : |1+
+      Procédure assigneLibelle()
+      i est un entier
+      
+      lTableauLibelle est un tableau de 24 chaines
+      lTableauLibelle[1]  = "lentete,lentete"
+      lTableauLibelle[2]  = "lentete,lEntete1"
+      lTableauLibelle[3]  = "lvigueur,LVigueur"
+      lTableauLibelle[4]  = "lvigueur,LVigueur1"
+      lTableauLibelle[5]  = "facdate,LDate"
+      lTableauLibelle[6]  = "facdate,LDate1"
+      lTableauLibelle[7]  = "lremplace,lremplace"
+      lTableauLibelle[8]  = "lremplace,lremplace1"
+      lTableauLibelle[9]  = "lthermos,lthermos"
+      lTableauLibelle[10]  = "lthermos,lthermos1"
+      lTableauLibelle[11]  = "lthermossuite,lthermossuite"
+      lTableauLibelle[12]  = "lthermossuite,lthermossuite1"
+      lTableauLibelle[13]  = "lnumero,lnumero"
+      lTableauLibelle[14]  = "lnumero,lnumero1"
+      lTableauLibelle[15]  = "facdescription,facdescription"
+      lTableauLibelle[16]  = "facdescription,facdescription1"
+      lTableauLibelle[17]  = "langlais,langlais"
+      lTableauLibelle[18]  = "langlais,langlais1"
+      lTableauLibelle[19]  = "lmetrique,lmetrique"
+      lTableauLibelle[20]  = "lmetrique,lmetrique1"
+      lTableauLibelle[21]  = "lprix,lprix"
+      lTableauLibelle[22]  = "lprix,lprix1"
+      lTableauLibelle[23]  = "lcondpaiement,LCondpaiement"
+      lTableauLibelle[24]  = "lcondpaiement,LCondpaiement1"
+      
+      selon client.CLangue
+      	cas 1
+      		pour i = 1 a 24
+      			si hlitrecherche(Traduction,TRecherche,extraitchaine(lTableauLibelle[i],1,",")) alors
+      				{"ListeThermosPrixClient."+ExtraitChaîne(lTableauLibelle[i],2,",")} = traduction.dFrancais
+      			fin
+      		FIN
+      	cas 2
+      		pour i = 1 a 24
+      			si hlitrecherche(Traduction,TRecherche,extraitchaine(lTableauLibelle[i],1,",")) alors
+      				{"ListeThermosPrixClient."+ExtraitChaîne(lTableauLibelle[i],2,",")} = traduction.danglais
+      			fin
+      		FIN
+      fin
+      
+      
+      //i est un entier
+      //
+      //lTableauLibelle est un tableau de  11 chaines
+      //lTableauLibelle[1]  = "lentete,lentete"
+      //lTableauLibelle[2]  = "lvigueur,lvigueur"
+      //lTableauLibelle[3]  = "lremplace,lremplace"
+      //lTableauLibelle[4]  = "lthermos,lthermos"
+      //lTableauLibelle[5]  = "lthermossuite,lthermossuite"
+      //lTableauLibelle[6]  = "lnumero,lnumero"
+      //lTableauLibelle[7]  = "facdescription,facdescription"
+      //lTableauLibelle[8]  = "lprix,lprix"
+      //lTableauLibelle[9]  = "lagnlais,langlais"
+      //lTableauLibelle[10]  = "lmetrique,lmetrique"
+      //lTableauLibelle[11]  = "facdate,ldate"
+      //
+      //selon client.CLangue
+      //	cas 1
+      //		pour i = 1 a 11
+      //			si hlitrecherche(Traduction,TRecherche,extraitchaine(lTableauLibelle[i],1,",")) alors
+      //				{"ListeThermosPrixClient."+ExtraitChaîne(lTableauLibelle[i],2,",")} = traduction.dFrancais
+      //			fin
+      //		FIN
+      //
+      //
+      //	cas 2
+      //		pour i = 1 a 11		
+      //			si hlitrecherche(Traduction,TRecherche,extraitchaine(lTableauLibelle[i],1,",")) alors
+      //				{"ListeThermosPrixClient."+ExtraitChaîne(lTableauLibelle[i],2,",")} = traduction.danglais
+      //			fin
+      //		FIN
+      //fin
+      
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  integrate_compiled_code : true
+resources :
+ string_res :
+  identifier : 0x4935797d585e2191
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=

@@ -1,0 +1,623 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ConnecteurHF
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : ConnecteurHF
+ identifier : 0x22daad799af1825e
+ internal_properties : CQAAAAkAAACptNiAiyHmzwkZNtsVS8ox29PaEfi3x6u1CwYM4idtTLvJXVefz7T3rG3P7t7sj1D5cIRJzN7yDK4ZXOGnHkziicJTGLQa47xBLWRvJyuFGbTo0qfCAk5ry9oFtWu3w7BmiMisIItXQ14EIbUj21HrY35S1oBnVeFzi0FzQOwIapJqU2jgj6UR9yRfYEF1w38r62scPKExcQD79d5GlzbIWaxllM2noz7f8DlTbH/hqoZrwWXfoIyQZeJdjrtP/l9YJO5NblA0yQqQhdFslEO/rdNm4hKv2bnL1Ki7bR84LrmcmCAaflKCpoICF6eTii+Fb68OxRhRiXUMFr6U/Tpjc75fYaFcEFgXzNSHpxFXwM3R9I5eJC5BhWkzfbuYW5w8wCfbpZOT9phOy1ZlRv6T88MQ2dFeqOvFLNmPYqln2BhO9yrmspKFsswvdIfkN/NkVmnA3EPguXJCnelBBBuBpTW4RHM622Rzpq+MJNmauDXgGWy9h540Kt9S7v7ZrB6i86b/LwDcolc17tBKSHGAMKLfduBTA9x/GqOe/tt7tvwsc0MvDSX4UsMXIbDSd2mT7DbHnr5rkwzeriFfrDMn0SgmOFwNGOdHjfoUrIkaPKPqC9BeYo1aie/hQbyaG+YRln6oVffsYX/Tps+CGq8Y6Vc3/1G6CVYrP+9XjNlK+qJ0Y4zZckdSRYA4vYk2kDR066ODfGljtqv4NRgBu1XawQoB3yYOsBt4FsHGDiQD4h3nFspr+GG/wywi351UdX6vLPkIdjrJjAkInsKiBUifcyDWBIr3KcRph09/S66lGxEoXEdw8BA5Iy1x0DA=
+ properties :
+  x : 120
+  y : 50
+  width : 565
+  height : 351
+  widthClient : 563
+  heightClient : 319
+ controls :
+  -
+    name : BTN_SORTIE
+    identifier : 0x22daad799af8828d
+    internal_properties : CQAAAAkAAABJNGipK9/DFZYId8etvFZObHyDcV9gnPbG6OGFPOuDaRVj+fJgTRBHMkSa/4R+tYF3GwgEUXGcmRNWP629XfT9e/nJgEBreM44VXlVK4Thd9juH9Y3oRsvEqmcv0ZGYdds1+WMcb1E2/wWk0FzVShHw1DipjHqv9g6Ao43ONssV58Fgnq8l/hPy2oAw4SMq/7SmcrHtS/QwB082/nToDHzZPWylCPI90Q6KWjFYUvVoGL/5znDw+RqCdJ9dWtd5z2ihILqlDROC1DXCfLJZW92H+JE6lz9zKgnXP4Slky5vsHuJCAfyG2av3JuKBlK9uV6p5JMeM0IqN7+OqQWikcGJNQ1Ipmrg1/KTT3T6MjXqyKVXnaWHdeUMsrc4gtAIptvqLS5ZXNGdF/ZjF1KqTNaSs/o84XC+VHcQWA6R6XYQ8bzBMuj4zjETdrzg+LVNhyETW5uCTLGClbzeFHppOng9ob9yVR6Seorm+bgGFVXnf1NGHvqbemgeWZmR+QFnkn3qTBV2QLS0JDmBPiL0BWcFmh8jWP4hognf/Sqe/69iHGtLxFhP7hfm/fmjMiKN2/Xmmi4HzI4LNmKnYBuXsc8QzMYUJIWdAWP4mY1cf0hV93T58CHtmp+4VsiGuyafFEWFwXVvQiWuK49C1lNyPPyNJSMBzYI6oxT369rrjCSgUeu4WXt/EWr/yZtT8nHF2OLpcCB5w3x0OMqBK/PuXVa3Oz4Phc6DiFQZ0I/LQruG8vqITxEgRMIEFFg24Ohfik6bLzUbA==
+    properties :
+     x : 9
+     y : 4
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         SI ACSO_message("Question","Voulez-vous quitter l'application","OuiNon") = 6 alors
+           valeuraretourner = 2
+           ferme()
+         
+         fin	  
+         
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : TiroirServeur
+    identifier : 0x22daad799afd828d
+    internal_properties : CQAAAAkAAADj6oBGvMRen9lFn/G1EYiI83sk1fE8o1Jo7PcVyZNWawHdEsF20PoPKDbLzPpzOnzsdUUR0XeVbBTsq/gJS7E+ziQG6AC0spfTRid0+UDYcr0XG9oc0fXnrl6CyuS73pIOk0YF2WlddQLku80RQRcWxwMsOrt+Vtc+fCvwIaX9G5WD9mYuPquG+gm/7usHb6Jx3Lx+MTGMvUJ9NohN5+V3sBv55E5lpViu4GdEYxim8CMlg6SXS7hFARt/90DkU+YDquM1kL2xwpbz4AWu+lO7ndCTJugsS10uD3XyAJyhsmmrt6H0xWPvTSm4uwk8hUEK+eB3rpM/Tq+Uufar7BAIw1wjyyCBh55K
+    properties :
+     x : 6
+     y : 45
+     width : 551
+     height : 251
+    controls :
+     -
+       name : Bouton2
+       identifier : 0x22daad799afe828d
+       internal_properties : CQAAAAkAAADJ5H939ICtDOlKnMi5eyMrfpb7kuk8aha8gYBf0XkahvBlCDA1f/BXN4s3MdhxA5fXQQpHmCda6i5BVFTBlybmntPOtqxdzPV76ZNbxjczG+D6BuoXn3GqHz1E0jBMobX5vSeSS6bKuCIShAO2xw5UTECqFpsDWlTFPMKYeE6A/FC57w7Twdr3r6BK4FhfSAMnNOifEzCC77MECtrYWdRLOwLzTNESd5zVymkqINYc2IDsvVR6lPh/PlsoMN5eG4pERKMOeJZnCH2JigH0lxbQBKB74sexsWzO4gLRKGdwyyoKq6brvT2KFSh520kYX5ssP4uYxJKxcWlsykq7lBjqs6vaQ66JuJArtMiEZX+cO1/o5rkIvL3EGbvAfZ6yPugXCe/JRxfye479YO3YEhqRcbWvC9yqtqy00/ip0kxaMDZfRt+XlM1bEiq8rHoSJ8JrwxXZp79WmOMINhy4PXx5cHGYEcchX48s+yynJunGnsKV0gBY22D3g3CtNchpORezZ284AEbV604T7j8e7PGK92A/aVVNkwpBoa7T4MDyQ8GHjQcDGJ+5sxBjRLtj6eVv3mJELQQ9RX6704KzT1mWNhVYV7WXHKlRBT93WVJbdZHs0JI1auo87aytdP2tmuzfAcC/eH6mJWb3Z+krLwhhp9mvDmPEtFUjjjdFriIblJTnj5cbmDfVaSXWYZnV/aUWb6EBlJ1pjcLFtBYYaY55xCgVVMn4+pF+PbBKL4EYDdZ4iHIDI76vAi6qa7vgByHWe+32yohr/H4wmpaa4eF1mvLFOSpr/L09ZzJ+OOXnyi64H7BipIITwXSGtxkg5vSId19XQ9U0+ZkRnFMskMn5ya43LrbZvyjJGmt3X4XNOzPtfFTs
+       properties :
+        x : 7
+        y : 21
+        width : 162
+        height : 24
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            TiroirServeur=PAS TiroirServeur
+            //si pas tiroir1 alors mafenetre..hauteur = mafenetre..HauteurInitiale sinon mafenetre..hauteur = mafenetre..hauteur+tiroir1..hauteur +5
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : Libellé3
+       identifier : 0x22daad799aff828d
+       internal_properties : CQAAAAkAAABbvZIucsQ1sbJNOYnycN+lHI0OphW9V7d5Cwb0imELsch/Ot1vqTIYfxjA9dUai6YzL1j8U5duNo5QtOVBs/V2V/xYF1XY2FK3Tf9b9xYbH3NmLCUttRbFVzpbUrEVGxDyxzAQEyw+t/u+2Cb9S6muweY59STimJNicZcIraeLHn8+4BgA++qaz0dM3AfwdZQ6esC+sH1GLJW77f9IFVtIV+1hX366uOAedQd+gIhbnjYD7kQZqbQrL8pQQYj/heRdjpB4ggJ6LIZg1OLMST049Whe3lTfmGG4+sGBUGr6szOcpd5SBWGzeoyjbhlhshLO2L6zMZihGSMTaIUihcm8trGd5EN/IPOiecwCaMFhAAIyxpuaLFB3X3mZdATT3d7u4cLlIs4w0UqoNJTU28Vkj/yVnqamjnzTMsAr+zbWvBqEfrReDBJnJDrWv/sQAtJuqg==
+       properties :
+        x : 30
+        y : 135
+        width : 405
+        height : 107
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+     -
+       name : nomServeur
+       identifier : 0x22daad799b00828d
+       internal_properties : CQAAAAkAAAAF1Sb1QQlTNVVw4i6MRtGIA4pD2doKKWnDKP4pGKK62RVd/JENpkspudEVttHjdhMzAOHqkSO4CBTo3rTKzPA0LzLzcMzvjzHVpC7Z6jIwFBSqmiYxr3Wj0MLid7IqZmifJ0P6wkI7DlWlYCfFD5QIjeZ4DmDSFlHui7wDFn9qtvre00GIU7jset6pUpjj/UPMq4IvSFlfE0sk5RZXl0LpziYWZnAfQBanBmH0jxGfarrRSXuekgXfDZPLVfI0XcjOb8GyAqCXoYDhsoBqZfA57LnUinoYR0DnRUArBDQlKzVF7LpdwFPK+PS9fHIFSYybm65ShCVTClw37p5+5VHV9IWvO5V7oISa5916JR9FGivuQe2uNc7AI2w04koIVfHCYkOzhhFHFMPxkhBmDZt0wEmodGn26XMM4Bcjw+kVxFLoK2xuseHAQOSGQ+mOfTqUnw+9GSRaaoFZRIFtRvvD/sC067A9NnleWeZqnpnCwoxF8nw0FMy2/JpoT2GpDlFXpm+UnUEXOnbGsCXhIq3CdOUT3oSRmHDN4SLpShtuqBIiK4ep9MGIIVDziC/MQr1zIC64iOXNlFIERQ5eokFPDI2TeEwPCnVLJuOmJ4fJZRqxd0Pt+90TEUjC+jZmI2DevD35+daMAirIMLG/98jN3BH6Z/Dm8YcSwuNFG8hnKDAGUmQ/yYoE2wqVMo20/RSFa2BJgIpS5nPusvogvI7+8wE1/VxOG9fZxs5x1WslMrV9Tk8pUrT3adaW2n4=
+       properties :
+        x : 40
+        y : 137
+        width : 186
+        height : 24
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : noPort
+       identifier : 0x22daad799b01828d
+       internal_properties : CQAAAAkAAABu6ruEkhOD+cXORTPqH2Ry97mjPQXiBOCoUyJ/sYUrQl7zb6+1osNGTLDPufSQIQ7L32Ly52QwfkJAEqGwejbiIOjDZEPVGRZVsTvgTATSOmQsGynSCKnf3zPNA8CplCYWu7HKIGzvOf2b0R0OWH4NMcNUtVtiu9Cn74msLwmLgoQC0rWbK5up+HTqLtzCdK3P/TMpx1IVuCJ4/PqBkC20Sj1puoVEC4HNDarsk3Hmf3t6TR3Hx/eq3rq178we4/WGLEEIsAvoB43JNFCO0o7C4grg/DuCNXxryliNvVKBDGVHYvuh4depKY24JMoKgQNL8es80xxR2h0FV6wEVph9nQuo+KffdgwO/zaldWpwJrHnFQbbMZB5H8/ShHQUlVgEx5FvVmmWKG1V2Km7VkuBSh9tkzGxA7fkyQuOQl2uz9jZP1kbOw8RGwEBvpBN5Fwh6J6tYKxk/IVGqAJgk/130VAU5LOBW/Uo2zPgIs6dnAeeULvyCjXH59JJRvqqdLuIFrphU1fOOdO89MWGwdPEQjum1s6GGMw95mfL7u5aNVgy67KamX7kIRMmt21knHi4BebpXToxvZ5n2uZjpF4RgnOLHATpWKhHbs+uHoYLyIlnbcnjezAifKbBjtR9azmg2yIj+PxXr7AGvomXy6bocyEPlYFFBZ/FFp4sRdw3DXjaVReaWqUwmKgVT6hhYlzqlh7qowxZQkyhqT5Afu/Lp0vD9A==
+       properties :
+        x : 40
+        y : 161
+        width : 126
+        height : 24
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : nomUsr
+       identifier : 0x22daad799b02828d
+       internal_properties : CQAAAAkAAACvJp82jrJlJ9wKPSeMvBUzDaLHxYiD/HKOb4GG/K/c1qOpZ8G4qyIxHo2DIAM8SLTL878CmQRXnkqPfsR3gJDr03tj9XLFHXTeMZFkmUuN+564Y5V4u5mZiZ34NrTkpjcHNwpyFFu3Vy4fBfdXlXAMVdGrBdMw05DE1x/aykU73AB3Eedv5IQ7fWN+WIHCrKVMK8lyPAUZViHHQe/xkK7QG5hj/jwTiFxvPM53Lro7uDKRdnsmH1Ohn9zYztq3gV+CIlI8CnYP+AW1+i7CtR5wyFJmSBo8I8PSBUAvpqvmUvW3kiBPBhxKuzfe9F0ASepPl7+WWILf601hlhL63T7Mz08h9G+fGgKxXEbqPw48TA7jjfgqjG8pA0GdGTklYIRbWn0k+p0az6ryd7jNs+LFp9VGSa0MTOzxDbgl5LkUEWUWu8ke1bCzC68FYbiWFn3lbQcIgXBjc/LGda1KVhiUTfY0Vm5b/RYvghveG+tRX0crnoM6yMHHKfOtm4iBp/DYwIO9E9dczQHR71WQmnhb84kFT1rhpy36KHWzP0kfI/s4Dx7nsDbvTJvSEJiQEZBI7Ij7Jvt2gau3tPQZtBr6tUWpJ34fi7q4o+wGKp8w9qGPMzztR7aazDVTlvXYtj0RCDs+wyZxj1MLgiWq5vZlKKrJRV05l9Oismesr1/5QzsuJrS22+BRTWbv6Pu4w30lf+GxCO9J3NEgEC2sKSfYcVaofeZZ6WnNnramZ5Tt0ymd4GL/z41OtQolBzSi2A==
+       properties :
+        x : 40
+        y : 184
+        width : 160
+        height : 24
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : pass
+       identifier : 0x22daad799b03828d
+       internal_properties : CQAAAAkAAAASSb/4N74Xn3lowMeCNFbuO115DBLNHu7oy76rvd0oIrifxOIAjGqoVspfPsZfapiO/sB+J74Cu8d6HkgLrtd+sIz3uXtiWma6ZoB33enPEQelbOi6YsHR5YEoVVmz7Wxk1EpFiEJzS3+iP7m+iYr2mibWcs2WGPB4DJoQl5PmNNA7Yz3wEK6DiyjEMqJnC4/jojvQnRElYf3Zj5ds7SlmHx/Nicwqfd+ZskpIiZxbLwTsOEGgstoTHPDDerZoTFeH7RBjUHMK6dUj6H1WgB4rr23bDu2y6KW6AtjcfhwyhAVTIDSjrk3rCNhEtqLASVQltKqKIGeiC1iYFPIiuxHaIHNtdN0iLor8Tf4qoy7MebNnXNzz/1UCKHB1n/X4tiMhwReSZG3WtNAn/JZEK7709yCiGa2kwMsLjultrfVWXiHPG9XyFdKekdZM3UNc4Do/YlUetxzhbhaFxDF9VD4xaxWyjODjRZUJ1a7iEAmRrFeY7JlQeFm0a+K8nyXLx2vGVUnDJZX+NNmAfj+pcgpwm6wfIXQpC9L8d7QDhhvd9o3lVWy9VLRooHDHPNMISyH8ifTzZo340Bl6l8TCDPAfS0wHtej1jQmsLjdq39vCO2Nq94SVB7LXqjh2BtbASp7x70tad1rjWP9yTReZFrIuEN/d8U64X53zrm0AEaDHwG3uRLLnjfiQXyXXsdcgidVyEtofSUKozdrDmWhcuQ7o7s9qocZ6Bav+6Z9BrJWcKcAx1VEn0yh+ArmLt9tfvbv64w5G5e4=
+       properties :
+        x : 40
+        y : 208
+        width : 160
+        height : 24
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : BtnConnecter
+       identifier : 0x22daad799b04828d
+       internal_properties : CQAAAAkAAACBrdh2Us/zRIAMCD2DmZKG4txYcrnDVM9XBHKQzGovQcNE4WNffDXj1aIharJ4ZVUWd+9MW5DuzK+bLYE5INOoiE9YEuj7FDfNXXZ5rrbZ/zbcVoX+5vauVDlKmTv5k/iSvtseG3yRxGXwlIKOt9MN/I56S/q2veKVp3wx7zB4rfeAspATuuA5Va11+cOcqKAcgBk+gSzJJ2AA7rNAKQm4QSo5MYxHm4VWclgAOMEm0e/0ihBasLo5bLh+Eyzdq2QPqhISqdsWxeD73xuZo3yRahtPDWL1sWiVPcREkQDpPY39fXOOk0SaM6s16aOJYAx7nBvMLM6aI+0r6Jas8euI6e6vRGdRTW/fdXdYdf5yWSXWHqzPyjyiGN8xnu/0fe/Rjr7XYbcdhrjx9Lwx524YE/ZnofoKOCwWc5+lBNJQ9yMBZpze3fg8RN49V+vnrPvKC1/YBxNNcshaInuUshFXuahphCP5A+I7nPq1L5KJry2bpZD2l7yUwdU8LZhn7C9nvisi6LTEmZS+a5fQGP4Tu9Z5Ak0imutK1wbsT2/xrgkO2q78jiXknBtV6nePWL9pG9nTI080NWq5czDvT+5zfZdRox07zWhF3jTvwacSLvlgCCMJVYOs7dEyUKWzyiWdVbpjpP1KIbKff3Ysh9U3jo7YFrZvvaUrOoqJjIDpeIRt0weSLiDYGDpFMefiY9TLjVbEZKCzW2eiQPnbuNpGG5u2vVG3QTNfgd0OZSlrJyTiNP9oZK1rulEolrZa2LatUDxYHlnldW/3lE68qbl4g/G1tVvzaxu1YWfDPWoLllRBsFxSUC/aEB5AOf1Qez8mPdbUfYeSN1F0v11O3hU/lKg1rXH3LMH+0Luyu/FW7zb7JV6qrXboFyj8c5lbNgqzUgV4Kim4ZNdLWRXvGARrogJw5hp/iPO43oz4GA==
+       properties :
+        x : 311
+        y : 195
+        width : 113
+        height : 36
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            lConnexion..Provider		= hAccèsHFClientServeur
+            lConnexion..Utilisateur		= nomUsr
+            lConnexion..MotDePasse		= pass
+            lConnexion..Serveur			= nomServeur + ":" + noPort
+            lConnexion..BaseDeDonnées	= ""
+            lConnexion..Cryptage		= hCryptageNon
+            
+            si HOuvreConnexion(lConnexion) alors
+            	ListeSupprimeTout(cboBases)
+            	res		est une chaine	= HListeBaseDeDonnées(lconnexion)
+            	nomBd	est une chaine	= ExtraitChaîne(res,1,TAB)
+            	ct		est une entier	= 1
+            	TANTQUE nomBd <>"" ET nomBd <> EOT
+            		ct++
+            		ListeAjoute(cboBases,nomBd)
+            		nomBd= ExtraitChaîne(res,ct,TAB)
+            		
+            	FIN
+            	
+            FIN
+            HFermeConnexion(lConnexion)
+            
+            si enmodetest() alors
+            	si nomServeur = "192.168.20.9" alors
+            		gcnxConnexionHFExternal.Serveur					= nomServeur + ":" + noPort
+            		gcnxConnexionHFExternal..Utilisateur			= "admin"
+            		gcnxConnexionHFExternal..MotDePasse				= ""
+            		gcnxConnexionHFExternal..BaseDeDonnées			= "ThermosrnWebTest"
+            		gcnxConnexionHFExternal..Cryptage				= hCryptageNon
+            		gcnxConnexionHFExternal..Provider				= hAccèsHFClientServeur
+            		
+            	sinon
+            		
+            		gcnxConnexionHFExternal.serveur					= "127.0.0.1"
+            		gcnxConnexionHFExternal..Utilisateur			= "admin"
+            		gcnxConnexionHFExternal..MotDePasse				= ""
+            		gcnxConnexionHFExternal..BaseDeDonnées			= "ThermosrnWeb"
+            		gcnxConnexionHFExternal..Cryptage				= hCryptageNon
+            		gcnxConnexionHFExternal..Provider				= hAccèsHFClientServeur
+            	FIN
+            	
+            sinon
+            	SI nomServeur = "192.168.20.9" ALORS
+            		gcnxConnexionHFExternal.Serveur					= "192.168.20.9:4900"
+            		gcnxConnexionHFExternal..Utilisateur			= "admin"
+            		gcnxConnexionHFExternal..MotDePasse				= ""
+            		gcnxConnexionHFExternal..BaseDeDonnées			= "ThermosrnWebTest"
+            		gcnxConnexionHFExternal..Cryptage				= hCryptageNon
+            		gcnxConnexionHFExternal..Provider				= hAccèsHFClientServeur
+            	sinon	
+            		gcnxConnexionHFExternal.Serveur					= "192.168.20.9:4900"
+            		gcnxConnexionHFExternal..Utilisateur			= "admin"
+            		gcnxConnexionHFExternal..MotDePasse				= ""
+            		gcnxConnexionHFExternal..BaseDeDonnées			= "ThermosrnWeb"
+            		gcnxConnexionHFExternal..Cryptage				= hCryptageNon
+            		gcnxConnexionHFExternal..Provider				= hAccèsHFClientServeur
+            	Fin
+            	
+            FIN
+            
+            ////listeselectplus(cboBases,1)
+            
+            //SI HOuvreConnexion(gcnxConnexionHFExternal) ALORS
+            //	HChangeConnexion(ExternalOrder,gcnxConnexionHFExternal)
+            //	HChangeConnexion(ExternalOrderDetails,gcnxConnexionHFExternal)
+            //	HChangeConnexion(WebConfig,gcnxConnexionHFExternal)
+            //	
+            //SINON
+            //	Info(HErreurInfo(hErrComplet))
+            //FIN
+            
+            
+            
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : cboBases
+       identifier : 0x22daad799b05828d
+       internal_properties : CQAAAAkAAAA5ctRIY6wJ08H33I2r4FgvHq4UdVBVTQ25Q4nt7OEXhUnLkPax2mZ7BPOg/6aF2FLPsfanIcKzLUvFtbVL13VW5g6dmqboHvaomRi2ekyO/MWVt+GfyhyNM9dSi41saR3FxyExmCISgFulkdaq9VEY6Pn9+5qQPBUaGn6sSvkvjnB6rOwX3KdbRyZ748iWWLWr07RvK0RPv19as4ysGSpI6OCLFy7/HU6v/4llAYz4pep4GLL8WXwchfDHw7p3iNH6EbKlQyW8W3lQZNu++aVdoRbjGoyWDYMFt3Rsh/URS/cJrFaLo4r7vSqxM0TH/yOUVEfXUto6Ki0KYVHaePNGYnyTF4AQrK3DY8cw0ACMXiKLe2nl/i62riYMCnxiKdh/e40NnnwXd/Wbm6mF2wJYSC2fEZ/t7WManIg+4cC5Ll4PUwhQx4cGEY1kLLfLttLZ/HNk3Gpik4Lc9EtGP1/X+/8G1b8h+T+zRTMvEBZAxarwcU4kcDtQg7O8L9L6scbve4LIqag2fuMu0CfgU4lOGJwkmJnH8wq8t7x6R8ODapXsHd33GRZSEKABImd3KHFz3y1Iski0SpFQPslldxeiqHpIPZ+iW6XSepcqjnEt7GmEQzLrZ6V1PYFnkJJ996TJ1b2PKTKURTwG7CCBxgcphuxqZRZD8wQqFz2+msbqrv3PS8+oC2EGXt8o0NRtatX9hcPAEWD9UFzoVGbA2SJDgTpLsde6v1eZA2sDm6XSE4Ih/AIBzu0qInCSKfHNkJTJtu3vp+1MHYwiFVh+btMaSwX2ylFrZNZJn+uaQ3tF0cIa5f/6Yl2WPj6gSYr5Fqx4EdcdBVMSApNXi60MEwWSAYa1k1sSqsYVvymKqlKJMSKhkC9b6xGKDc6rHwjHrrwTq/qHWPA1Ovot4S/e0ZIXypxo7xC9q2Xmza51xtqIMqCOc2eyrlqZledUy/XOvdVURnvZvAcFseS1P63jWmVvTGpgiEudQhuAXrpAYAycqUSOtVzDmOhJynu89HdZnFjFj0nAh1jigDGxFkgonDlf4QbZIDrwPMjCOEyy4JHFsj8/kdNtMUEMtZP8Cq48+RmNi7r6uFq0Jwbgg607XUO4xok/D9RnbLdfndEeLY5kYBf30ZSlRMsNXYbUvfaDJsWZvxUsCYOPq2nsgsNkr1mgdOCUfGgu2XGL77Ay4LNyRNiMW8IpADS4sNWcQ6D2gn6W/hkiQu731OoKj7a5TR2fAopSmYQlJbTIKIx32ymGHYLFuaFQL1i+SKspTg+eAhL1UAs09vovn4dii/crdXitUOBFbbafmwukET83wOpWW0A+XwcPR55JPTCP06yfI4KGoXajjhXl4sFXpfJt5WV5oCmXEU3j8iGsa6IV/3bLfuH/0YXG3Q==
+       properties :
+        x : 165
+        y : 21
+        width : 307
+        height : 24
+       dropdown :
+        internal_properties : CQAAAAkAAAAp07x8PDN1qt63SvfdHwr7VE4nissIAmTkV3UTkk1oRwDYoVonbiIG/5MVrFJ0GGCyxiRzw5g4Iw7AjJZ/e5RCD4IOjMXnpsoyK2DZJj7F6wjE2VchvLuslOqXI71CUr901gGVGDqXKUd18onoEK+SYf5qZLgMIJWwck0D+Bqwo5abofe94jdD6vp8ORAdxtawEqXEeC7ObFb8ymyCjaf6rChv/G/c+Lq9Z6dwYKCsRn1iQpE0oRkw/MHF26NM2U/NqE0OpMxIm34rJoPgHPCogM2Jmkun7x0+hBRFT5BnuT1qnmqaAlfoIwSui1j24ZfHvf7EqmYQ2WZcrRpAlr485biJpJzMp5mDjRAViNy/sl4HC+ZYNMH6FOWCgB7lwPaH+Gy2T46OHIz5lSnorMtdL2+qAqPVrBOGeVA3dHvHTj8rFm8cdcgW58sr7aWZ++ereyoOWSi9fCPkV38cRzk7omDtqc9EzpRjx40JmMe+BVdo2xsnFSKNSZXjzj0gMkOXVxGhAK6DpY4fwHTkD9NAZscobfddqg==
+        type : 7
+       type : 14
+       code_elements :
+        type_code : 23
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           code : |1+
+            //lConnexion..BaseDeDonnées = MoiMême..ValeurAffichée
+            //lConnexiongpw..BaseDeDonnées = MoiMême..ValeurAffichée
+            //
+            //gpwOuvreConnexion(lConnexionGPW)
+            //HChangeConnexion("*",lconnexion) 
+            //
+            //gpwouvre()
+            //
+            //
+            //cbousers..RubriqueParcourue = "Login"
+            //cboUsers..RubriqueAffichée = "Login"
+            //cboUsers..RubriqueMémorisée = "Login"
+            //cboUsers..FichierParcouru = "GPWUtilisateur"
+            //
+            //// intilisation de la combo auto alimentée
+            //listeaffiche(cboUsers,taInit)
+            ////fin
+            
+            //HDécritConnexion("Lt3_",nomUsr,pass,nomServeur+":"+noPort,MoiMême..ValeurAffichée,hAccèsHFClientServeur)
+            
+            //SI HOuvreConnexion("Lt3_") ALORS
+            //  info("connexion effectuée")
+            //   HFermeConnexion("Lt3_")
+            //FIN
+            // Ouvrir la nouvelle connexion
+            
+            
+            
+            
+            
+            
+            
+            
+            
+           type : 33
+         -
+           type : 17
+           enabled : false
+     -
+       name : BTN_OK
+       identifier : 0x22daaea0b26d0566
+       internal_properties : CQAAAAkAAADGMRWpeb+gjb1JkSPmS/Nu5Lhm08MT+lW6SRqsaF0oK9qBqdzgG2W7FkDebi+Oji5OTmUUp2X0dgkptd5ISmf7fo28woRl1IzHV8uxUukyJJTAcm1+CpVa6Vc4gEbmcIMj+AcBy8GXtOckCe0NtZm3nvE/+GGqipCHMwu8T0xsn9uM2A74CPPd3cLDxndkxFEXnTd13ktuZPwdR3eZnMzcI0RFw4DYANz0hhrxZBJoXgdwEisfhO7NQ66FFG2zupIOtxPogSDZYBk/Tn6DXHxz/Tc9HCaBj/5Z+6Y2NiivPl8PDszdV6r6uxOlUaRlDj+Z8V5oR3GtKgQUhfsqmqKg5p+wQ+j27WluGY7u5acMQNZlqprGIzY6m5u3jk3DUOteJhfWWMa1c1s6AVhtkghc+ndGgyGUL82eRCdNrkqyTwqFlINdFoiHDitx92fYNfmATqByjfeDW4S/ZLkZlhz18ffKWxEaXlJw/yM2zpIHv5i3Mxf8pMkrjOQrCaVncuuihRLAS3rxE4+GO4/r3oGglIXK8DFouMx5lqnRqLYEnUWPXksA+AU03MCNIKgqMCiHoO2d56vlzm82v61Gf9CSHv/jTq90+Lv/3ytgpS1AZDMPEoiv/11r4XuPHtiDGQzacdJLHCySOzlA+DnbjZQdvywqOB49aO/Ar9r7TJ1ak0Ae+9/0Pi6vo4dFuvijaH5ug/01wQ==
+       properties :
+        x : 492
+        y : 14
+        width : 35
+        height : 35
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           internal_properties : CQAAAAkAAAAMKk0bUnppf9n/DdIx+pD12FdjGBpDdPouTXmKpwRX8VSK7s3EyvfwpbA1UoOIDFhQRWUvEtPmaHQL3DqP9EYkvNp92ZaY8pL88p/fEQhlXNEtBTP55g==
+           code : |1-
+            
+            
+            
+            lConnexionhf..Serveur = nomserveur+":"+noport
+            lconnexionhf..MotDePasse = pass
+            lconnexionhf..provider = hAccèsHFClientServeur
+            lConnexionhf..Utilisateur = nomusr
+            lConnexionhf..BaseDeDonnées = cbobases..ValeurAffichée
+            
+            //HDécritConnexion("HF",nomUsr,pass,nomServeur+":"+noPort,motdepasse.cboBases..ValeurAffichée,hAccèsHFClientServeur)
+            gsuser = sai_User
+            gspassword = sai_passWord
+            //si gsPassword = "" alors 
+            //	erreur("Le mot de passe ne doit pas être vide !!!")
+            //	reprisesaisie(gsPassword)
+            //FIN
+            //HClient.Machine = NetNomMachine("127.0.0.1")
+            //hclient.Application = "Production.exe"
+            //HDéconnecteClient(gConnexionHF,"fermeture",0)
+            
+            SI pas HOuvreConnexion(lconnexionhf) ALORS
+               	valeuraretourner = 3 
+            sinon
+                si lConnexionhf..BaseDeDonnées = "" alors
+            		valeuraretourner = 3 
+                fin
+                	
+            FIN
+            
+            
+            
+            valeuraretourner = 1
+            
+            ferme
+            
+            
+            
+            CAS EXCEPTION:
+            	info("Erreur de connexion"+exceptioninfo(hErrComplet))
+            	
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : sai_User
+       identifier : 0x20db2d3aa80e0dbd
+       internal_properties : CQAAAAkAAAD22YMfvRSwCIv+JUvsA6ISJCNbrRMeIHOpccs3w4AGZpdhbNPG8HVWDky6TaeIrlvpSP8noqYwqJ4/izr1d9NeWMgj/DtXZVoM21QmTKBhaj6it1bMVf3Nx0vj2NbkbYljsq+8oH3ZeskBSCSx5qyDU3VG6boj85tnH/9hoBnfvh5guR7vxKWt0m81L0t+CTIeIZSX9ElBpI241XFPelv1gi+fpJ4PI7vUhuSg2sW6a5wd7aizDjaLdoV/tZlILQcR41Fw/LKV0RZmoys3lg2AYS+yqeWBk21hrx8Y3TKJ3J4/bazbwth4CguIAjeQVuXpRFGP5DIuvXd/wHCoe8XqDaAGToMqVkNTJgK0WzBhlD2H602bbwdOudbhnYEmzdiBx/ML09ckcUxq4belS2awhl9pWzcbJExjxNGNI/MpRJKyymWoMSfj23dPdFYcqT3MEjXl0clHnUZ8poJt+khTa5sfED5VIcwFJ/G/pJOaK4yGd2jlggKTD3BQv8Z0ztV/56KDuKc6rzi1Xk2AveDBflKQj4f2knHzjOb/J/OCLtaxXK7Jx2S3mbIxohoXHKAZAM0ug6e91LweLPhdEpmFa5N36g2hzEWxUmj5USIo58eRJ0wjPftgAQA1Fuj+7gb5Bz3RaP4CsocUKJwJ3bVKVrYAo9dlMU3qq9PYBuugeeLRnHNqM004tR4pT0/V3Lm3yhreENrWMzdLwq625m/YAk5OzfEaoRbZYZcCom0tpzjaZsrEwLVmc5LgmWcMHWFtgtLqYbTaMt4Cr2QdE7NPJNaEImOhxYYGBtrIdObpaOcGqTNbvl0EumxLdT00nyUrWWrn1RMiDH7/dw==
+       properties :
+        x : 165
+        y : 51
+        width : 307
+        height : 24
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           code : |1+
+            //si hlitrecherche(Usager,NomUsager,moimeme) alors
+            //	si pas usager.IsActive alors 
+            //		erreur("Utilisateur inactif!!")
+            //		reprisesaisie(sai_user)
+            //	FIN
+            //	si usager.IsNew alors
+            //		ouvre(FEN_CreatePassword)
+            //	FIN
+            //sinon
+            //	Erreur("Utilisateur inexistant!!")
+            //	
+            //FIN
+           type : 16
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : sai_passWord
+       identifier : 0x20db2d82a81427f7
+       internal_properties : CQAAAAkAAABt4eoSewRdQ5cgfCL5IKlqUe6IZU4S6bSj5BRoDpcs5KQJEhgu++JDh8f8RLVLL9w+tNz+EQDRYgMelB4WS96RsRxAH+YPkcgoiPUQp+UAG3qDjWyTctDhg1ctFvfyEqmUEJ1jkWD045hcMBohwy84AWQhinA2S/iib2ZBwe4edTPi0CLy41X/X68ue+zEW/M3ZNg6LwUSGtykaPnapTJWzGhLilKURtKuSgcck17hftzFdi01T3vyZM0jnJug8Kd4v8oJb52mCl5i/W6bAz6OUvMuY4aUOr3BrzDDZ+DiIx116wKkxDcgbV8Q5IYTY23hrzjra/1W5IWfimgLLkVCAfE+o+7Jv6dL1y9wH8RNce0whqiwsYygtmyEmq11pW1ofY1O5dawJ2hCyR5pfKFfdhEPy/BFLaubQdAGbVxqNDBtIk+pUfJZvPhuP9nhOeIQ1wjjI7nTo5NmrKshZX72sVwC83VQ1UUkelyafp1JbjekPzCEUJw2w9sW0hpeI0JI4Q7v+ckzzcUciAeBT4VmIx6kvDmhZPyR9G10RZXHDXVMJ7FHLBKQPVxM4Zd9wd+YXsV4iH5CHnP7lo8/4flJXNOvHFLt70M6TXecG5fLeJCZ9fAaIaTGSgfZXN03msSJcmoOXpUupTOof9lVruugXl36pwKrThbAx+jbSfM5TG3UywgWZLtzIVT0nvXwvJzuYNyUH7fK6DFTjVFwe/FaYHfbm6FB6B/lyg244W2DeTwZXMRf9iREN+RBfC8Tq+/h6+vBBXGGak2t54i6hSIyKWN9SNF85132EtWaQTytOIEfmI/HuA6rvZLyumtNleZKa3mLw/vz53ZUryg=
+       properties :
+        x : 165
+        y : 81
+        width : 378
+        height : 24
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+    type : 34
+    code_elements :
+     type_code : 86
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x3e9c36017676cff6
+  internal_properties : CQAAAAkAAABMXkxEbzZR8ywuNMY26/HjMmoN8kdj2fbHzCz3GebxITncDL58I5eqWvKGjgdfMI535UULbY8Mc31KeWMShPgB7NOqerxvk8jSNrSdgsD0n366lrKtntDq7sGN8DHUooW/7x7T4Vl11tQGI5UG+q7QcczsaLch1IZbbjtFLyNHbefFH6727u2LKti/a9o9YBEyHvTZvfd5hKB5Gt4A7N7gaey9p4DFH5SstJlMgqjTih4llKvwS3rg9pf8PuF5xUFbqOdTyGooUVTyaOa2YdNUVYGqMIw8ZaQ=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAACN55t6+hNxItWyVi5QluTOm8Gb1LO5/+8fPMDYu9rDpDPEy7THaxkHjLJYguV2x5Z+1bdUxvvvPIOorzRer61znW9gCJKfcBYsW4JkQCQfxGWS/OA1jbPGncDRyg==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      //Description des paramètres d'entrée/sortie de 'motdepasse' :
+      //
+      //Syntaxe :
+      //motdepasse ([<av_usager>[,<av_password>[,<av_compagnie>[,<av_souvenir>]]]])
+      //
+      //Paramètres :
+      //	av_usager : <indiquez ici le rôle de av_usager>
+      //	av_password : <indiquez ici le rôle de av_password>
+      //	av_compagnie : <indiquez ici le rôle de av_compagnie>
+      //	av_souvenir : <indiquez ici le rôle de av_souvenir>
+      //Valeur de retour :
+      //	Aucune
+      //
+      //Notes :
+      //détaillez ici le fonctionnement
+      //précisez les cas particuliers et les limites.
+      //
+      //Exemple :
+      //indiquez ici un exemple d'utilisation.
+      //
+      //Aucune documentation n'a été saisie par le concepteur du composant ()
+      procedure ConnecteurHF(lConnexionhf= "",aco_sortie = vrai)
+      // Pour compatibilité 5.5
+      
+      MoiMême..Visible=Vrai
+      moimeme..etat = actifdevant
+      
+      valeuraretourner est un entier = 2 
+      
+      
+      
+      
+      lConnexion est une connexion
+      
+      
+      
+      nomini est une chaine
+      
+      
+      
+      nomini = ComplèteRep(frepencours())+"production.ini"
+      
+      nomServeur = INILit("Serveur","Nom","ServeurG6",nomini)
+      noPort = Val(INILit("Serveur","Port","4900",nomini))
+      nomUsr = INILit("Serveur","User","Admin",nomini)
+      pass = INILit("Serveur","Pass","",nomini)
+      
+      lConnexion..Provider = hAccèsHFClientServeur
+      lConnexion..Utilisateur = nomUsr
+      lConnexion..MotDePasse = pass
+      lConnexion..Serveur = nomServeur + ":" + noPort
+      lConnexion..BaseDeDonnées = ""
+      lConnexion..Cryptage = hCryptageNon
+      
+      
+       
+      //ecranpremier("MUSAGER")
+      //disconnecte_login = vrai
+      //motdepasse.musager = inilit("USAGER","USAGER","",repencours+"therma.INI")
+      //motdepasse.souvenir = inilit("USAGER","SOUVENIR","",repencours+"therma.INI")
+      //motdepasse.motdepasse = inilit("USAGER","MOTDEPASSE","",repencours+"therma.INI")
+      ExécuteTraitement(BtnConnecter,trtClic)
+      
+   -
+     code : |1-
+      si pas aco_sortie alors
+      	ConnecteurHF.BTN_SORTIE..visible = faux
+      sinon
+      	ConnecteurHF.BTN_SORTIE..visible = vrai
+      
+      FIN
+      TiroirServeur = Faux
+      
+      
+      
+      
+      
+      
+      //ExécuteTraitement(motdepasse.MUSAGER,trtClic)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      connecteurhf..valeurrenvoyée = valeuraretourner
+      INIecrit("Serveur","Nom",nomserveur,nomini)
+      INIEcrit("Serveur","Port",numeriqueverschaine(noport),nomini)
+      INIecrit("Serveur","User",nomusr,nomini)
+      INIecrit("Serveur","Pass",pass,nomini)
+      
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+   -
+     type : 66054
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : motdepasse
+resources :
+ string_res :
+  identifier : 0x3e9c360154dfd000
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

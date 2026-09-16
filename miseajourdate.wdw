@@ -1,0 +1,890 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : miseajourdate
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Mise a jour date de modification de prix
+ subtype : 0
+window :
+ name : miseajourdate
+ identifier : 0x41f184772d2ddfa6
+ internal_properties : CQAAAAkAAAAYmbdoKzQF7CmGq6cZFtJcNKiiyIRNk5Iw+1o1WkmmOFmj90djbtDVHsGdqxxTnce6sJCgwf/ZGJc1VNAnEFnaz6U74RHd1dob5yKyoOyZGZ1F8zLpjLfqbfkSMjbO64hb8cxChrgX8At9Eshc6ItQFiS3v6FjSV7CUbPiYgb94xu6UzFBghaU6eRhZgDWV0br5NQ7gFx/JyPOowoSqpS/YylG6ZIK423PQfu5hvRUXQQzw4ao+zqEK27Ns8PF4I17DV8Uz9aXDIX6q8aCSbyUnDjVGJ42PMLPOdhYxB2sb9iAYck/u1kflAx/+xBtzwOVXTZ4LeBk+Lr40SAdt8KnDkzKHsuIcsQD0ghRku/3jrBw0a4pdtZYtmZUaU3W1NKWL8vqnvYTSSGlN3BSSgY4YSVN00O7RsbUs2WrNI07AZVSs6WTROUTpCuPh2bsHthI8vmIuoDHQ27xXJtPVe+0k/pxzFOHGCCmGm48gBYZAX5N17i2+VARKr4Ziz0X9KjjAEKhX1PGIG2yGlOlZaj8VYP7HYi4ONfqBpDLkGFkastbVxiziO/FAFJwnTfDn2BFwZQJ51G8QM0zOU9Z47z8x3bnaZzNfrCU10pR26lHBm5VAh0THm55xSqQPVEgd8jry8ixJWr9FWadH9VWpbM1fVj82oqlpgar6NkPayX8LOWQm8i/fqdmutYWJXXKEO4vuIrkdKxB2AEkhI+8ghOK5Hj1wg==
+ properties :
+  x : 120
+  y : 50
+  width : 394
+  height : 127
+  widthClient : 392
+  heightClient : 95
+ controls :
+  -
+    name : BTN_SORTIE
+    identifier : 0x41f184775165dfb0
+    internal_properties : CQAAAAkAAAAfCGyoZlLNorhkBAvo9sBOoI+Gx8AnoTVpYaP5k8OmjvEDwe7ABr+8cIYMxtBkP7s2KFFYfjOmxezXflMAE8Yo8bCZg7pM+lB0lL3PKFaSNILZIS+/iUcYI9/PE4wwB0VcI1rH/E33woQiCJuKKj8/Q1arnODWAp8+VYQ+v419gd4uW+ZlQ2f3Mya27noZ+LjEd6gZVm/vkJ+VTJ1bBFMO5P1BCWmi4FCIvNcEBzHcxjYwP24VEeUJ4EJlrfVQ62nXdLRDKI9z1GKN8EViXzJvge79FRnPbwQuq2KxGdKwICYavWhwxPaDq3dB4Q359pYae5hFnajQb10xcW/0PlHnu7GtTubPUML+w0AiDcXp92N+WbTUg1lCZRZzgP2iEwXBXpFngnsPXCYIAnzyyXoYH1t2rmC3vVL4XPirhxmRmEgx9/Mz/6KJtqMKzWUzka65nomnpBdUAlxQUvGq1RMPBWs01ONQFCSP3pDW31xcI7IfkLs5YrAGlCwhM7Rd15lMQzT3kl2Y0nCkJAcIUpimjJ9+4ZX2mTUtgKE/zPueGZJ9RmiNkubuIW10lD2qwro+qLqy7eU756J0rzEU8sacrv84DL4mif3IK/zW/5MGzyL5QVK7vAU8WHIGReaYl98D+w1zW3Rzqr+EytnIaFyQ1Sxj4+v6M+RAY8h96631RG+5b/yKG2kKIJ3FXusSYRk6XHRUdLxh+lIYPvCoTIR7pAH7aoDx2LHx2YE31Zkt65SQwKRCwYDQS77ACUJmbNhcYSL+4Y/Tz7gicMuMKw==
+    properties :
+     x : 523
+     y : -24
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_OK
+    identifier : 0x41f184771794dfb0
+    internal_properties : CQAAAAkAAABkMdObwzBnu3LoiZvL/IMSrP5KWomsc18TbZndOv7h1Anz0Ugpq2xuXTIyVKnnYil4BLeoguxTpU/TsflmOhrKZKl97Xzs0mcDtTu7neFynGC+06ggMTCgCKZyQO+PQ8CxT3CoIEr8EZnil+0PQnfaJBoBI7xqK3nmCTHD2uVTtYXs2X773o0KEa8+1sig/E58q4iTDffJaNW+MF4JrRo/KfExhjC7uFK1U0Ykyk0YG47tuX2rjj6QxLtuV5oriVEt+i3CoRS0u2HqCkPuLoqyqz98pdfLGh1TDOI9PbVv4hOo3GRuz+eRdzKnTrXhZaT7M/xe3F88g/orpC2Ca2CJ3yDxws5cYWPrdplOoLZme90kKmnHJS7P6qvBDqnur3wAzk1AsfdiVSpvt5s2DgDoMcS8RvRwkBfs37N8p6yJ9pY8aznTnHc0VnItPluc9/qzyzWtIjY7++4BVwioVls5dVQwXt3JF5nJJ7tXiV+ESYCavlcr4VnJhv0mKoYw/z9OhibTQAYxhUZb/UpoW2jsGkYIMX8ZYOpr217egnhyI9Z0enrN72vd5VD9J++tylRqgWaIf4K69PQJw50NKuUHFmfvta7qTaUJi9BP6T/k2i3YwNuq2+bIsa0164UKzTmd709RmecQ577Me7UpFKeJS27y/rrViqfEUknYBPw5rLpGDgaPtU0nYn7l7hIDqffUt6GHmeYOr4Zu
+    properties :
+     x : 500
+     y : 60
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         hlitpremier("invent","INUM")
+         tantque pas HEnDehors()
+         	saisie1 = invent.inum
+         
+         	multitache(1)
+         	selon invent.itype
+         
+         		// Verre produit de base et additionnel
+         
+         		cas 1 
+         			si invent.ibase alors		
+         				invent.iprixa = invent.iprixfutur 
+         				invent.iprixm = invent.iprixfuturm 
+         				invent.iprixdouble = invent.iprixfuturdouble 
+         				invent.iprixdoublem = invent.iprixfuturdoublem 
+         				invent.iprixtriple = invent.iprixfuturtriple 
+         				invent.iprixtriplem = invent.iprixfuturtriplem 
+         				// mise a zéro des prix  futur et date 
+         				invent.iprixfutur = 0
+         				invent.iprixfuturm = 0
+         				invent.iprixfuturdouble = 0 
+         				invent.iprixfuturdoublem = 0
+         				invent.iprixfuturtriple  = 0
+         				invent.iprixfuturtriplem = 0
+         				invent.idateprixfutur = ""
+         
+         			sinon
+         				invent.iprixa = invent.iprixfutur
+         				invent.iprixm = invent.iprixfuturm
+         
+         				// mise a zéro des prix futur et date
+         
+         				invent.iprixfutur = 0
+         				invent.iprixfuturm = 0
+         				invent.idateprixfutur = ""
+         
+         
+         			fin
+         			// verre a l'unite et produit a l'inité
+         		cas 2 
+         			selon invent.iunitetype
+         
+         				cas 2   // verre a l'unite
+         
+         					invent.iprixunitaire = invent.iprixfuturunite 
+         					invent.iprixunitem = invent.iprixfuturunitem 
+         
+         					// mise a zéro des prix futur et date
+         
+         					invent.iprixfuturunite = 0
+         					invent.iprixfuturunitem = 0
+         					invent.idateprixfutur = ""
+         
+         				cas 3
+         
+         					invent.iprixuniterouleau = invent.iprixfuturuniterouleau
+         					invent.iprixunite = invent.iprixfuturu
+         					// mise a zéro des prix futur et date
+         
+         					invent.iprixfuturuniterouleau = 0
+         					invent.iprixfuturu = 0
+         					invent.idateprixfutur = ""
+         
+         				autres cas
+         
+         					invent.iprixunite = invent.iprixfuturu
+         					invent.iprixfuturu = 0
+         					invent.idateprixfutur = ""
+         
+         			FIN
+         		cas 4   // carrelage
+         
+         			si invent.iprixfuturbasecarrelage <> 0.00  alors
+         				invent.iprixbasecarrelage =  invent.iprixfuturbasecarrelage
+         				invent.iprixfuturbasecarrelage = 	 0
+         			FIN
+         			si invent.iprixfuturcarreau <> 0.00  alors
+         				invent.iprixcarreau = invent.iprixfuturcarreau
+         				invent.iprixfuturcarreau = 	 0
+         				invent.idateprixfutur = ""
+         			fin
+         		cas 5   // carrelage
+         
+         			si invent.iprixFuturPeinture <> 0.00  alors
+         				invent.iprixPeinture =  invent.iprixFuturPeinture
+         				invent.iprixFuturPeinture = 0
+         			FIN
+         			si invent.iprixFuturPeinturem <> 0.00  alors
+         				invent.iprixPeinturem =  invent.iprixFuturPeinturem
+         				invent.iprixFuturPeinturem = 0
+         			FIN
+         	fin
+         
+         	hmodifie("invent")
+         	hlitsuivant("invent","INUM")
+         
+         fin	
+         hlitpremier(persoens,ennumero)
+         tantque pas HEnDehors(persoens)
+         	saisie1 = persoens.ennumero
+         	multitache(1)
+         	si persoens.enprixfutura <> 0 alors
+         		persoens.enprixa = persoens.enprixfutura
+         		persoens.enprixfutura = 0
+         		gModifCommande = vrai
+         	fin
+         	si persoens.enprixfuturm <> 0 alors
+         		persoens.enprixm = persoens.enprixfuturm
+         		persoens.enprixfuturm = 0
+         		gModifCommande = vrai
+         	fin
+         	HModifie(persoens,hNumEnrEnCours)
+         	HLitSuivant(persoens,ennumero)
+         fin
+         //si gModifCommande alors
+         //	si acso_message("Question","Voulez-vous appliquer les changements de prix de thermos aux commandes et bons de livraison ?","OuiNon") = idyes ALORS
+         //			ModifierCommande()
+         //	fin	
+         //fin
+         //ModifierCommandePeinture()
+         ferme(miseajourdate)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Saisie1
+    identifier : 0x483f09d041682458
+    internal_properties : CQAAAAkAAACfwHF+3h0l1ipjb/WDRzXnsdiKyF/qETgucwu9ISXPm09x4e6WIaJL97fPZj39v2gcF/XyYBaPRgoyST351ueMN+qJO2v38+QvB9IoPzbhKISzKdFzWhCI6EQUmUe/ev8a4f7SzgGS+OpyTohRqtETGCyXGaHMwyc5tMab+hUtO0hR2e/VPXs8RNSH7dTR07Onx3sFR7HB7i3Xfu0DVclWf2RgYLXTIFWN7iHUVs4jbX77qjmNbuP7z2S5BtV7Vi5hVhgLHzYVdPT7zNq6OFJOBbDHxZ9pKA6sbHvdM62gMfnmcPgFICYBH84wxw3y2Fb8kk/3f+9wG9eacpdJ0D2btzrWI7RnV4bWKOmddPJ5GxiM6aHXiUtlfMxwZbN2qDj5KrxWSaFUvU07fABaYQaifvuoALHPG7xoZSL2DdhL5O0TGcFGioWhTHBgZNoRi+FFiaqHLE1QsGrGOgeQwzsDS8caRTxuzO3rcA6vn3p77+dOxm6pRs8AbtOOPOGNJ4k4stS5iHXSVtfDpphTHxgFJZmfdVNhcalTneVHjSuJ4mip9yZjXjrQrd7hA+bXFPm6DZ5BlNeTNnAyXFvFLLA6QB8wjfyrAbKNp0Ioqawyh1pVGG4Pg+7pTX0C/HnNL9DrBAcu/zcJKowqFZIb/b1CzV1w8XCNl1HkT/VTgLOCpj/MwUQyqsVeAYPW5L+P1CW0oYKGRlvD/stMgKmGoew+GNO6+gIUo2Fp5rpvn1HwoLcHA+2f4KeeXcEjbN2YkFOFGoxAPGPk
+    properties :
+     x : 62
+     y : 32
+     width : 250
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x41f18477483adfa6
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAADuxjjbR3gOz6CVVRu/xcHbQNTsyXjUhWk3NE5tRTlRlkFyJbh9DUEn7pCwYLnygtvVrJhxpSQU43jVXEUtnOkPBMaxudGgI0sRcJcPK0lwm1qP4YuYYo4jPiGyKQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      fonction miseajourdate(DateDemarcation=datesys(),Modification=faux)
+      
+      gModifCommande est un booleen = faux
+      gModifPeinture est un booleen = faux
+      
+      
+      
+      si pas modification alors
+      	si acso_message("Question","Voulez-vous transférer la case prix futur dans la case prix de vente"+rc+rc+"*********** Attention cette procédure est définitive *************","OuiNon") = idno alors
+      		ferme()
+      	FIN
+      	MoiMême..Visible=Vrai
+      	ExécuteTraitement(BTN_OK,trtClic)
+      sinon
+      	MoiMême..Visible=Vrai
+      	ModifierCommandeSeulement(DateDemarcation)
+      fin
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : ModifierCommande
+     procedure_id : 5216218931475081426
+     type_code : 14
+     code : |1+
+      Procédure ModifierCommande()
+      lexception5 est un booleen = faux
+      lexception10 est un booleen = faux
+      saisie1..Libellé = "Facture en cours ..."
+      HLitpremier(facture,fanumero)
+      
+      tantque pas HEnDehors(Facture)
+      	saisie1 = facture.fanumero
+      	MultitacheRepeint(miseajourdate)
+      	multitache(1)
+      	hlitrecherche(client,numero,facture.faclient)
+      	//	si facture.fanumero >= 50124 alors
+      	hlitrecherche(fdetail,fdnocomm,facture.fanumero)
+      	tantque pas hendehors(fdetail) et fdetail.fdnocomm = facture.fanumero
+      		si fdetail.ftype = 1 alors
+      			lexception10 = faux
+      			lexception5 = faux
+      			si pas hlitrecherche(thermosClient,IdClientIdhermos,HConstruitValClé(thermosclient,IdClientidhermos,sansespace(client.numero),sansespace(fdetail.fdnumprod))) alors
+      				si hlitrecherche(persoens,ennumero,fdetail.fdnumprod)
+      					selon facture.facalcul 
+      						cas 1
+      							fdetail.fdprixupied= persoens.enprixa
+      							//							fdetail.surchargeenergie = calculsurcharge(fdetail.fdprixtotal,fdetail.ftype)
+      							//							fdetail.SUrchargeafacturer = fdetail.surchargeenergie * fdetail.fdqteafacturer / fdetail.fdqte
+      							//							fdetail.SUrchargedejafacture = fdetail.surchargeenergie - fdetail.SUrchargeafacturer
+      
+      						cas 2
+      							fdetail.fdprixupied= persoens.enprixm
+      					FIN
+      					selon client.CImpressionAngMet
+      						cas 1
+      							fdetail.fdprixu = fdetail.fdpiedcarrefacture * persoens.enprixa
+      							fdetail.fdprixtotal = fdetail.fdqte * fdetail.fdprixu
+      							fdetail.fdprixupiedfacture = persoens.enprixa
+      						cas 2
+      							fdetail.fdprixu = fdetail.fdpiedcarrefacture * persoens.enprixm
+      							fdetail.fdprixtotal = fdetail.fdqte * fdetail.fdprixu
+      							fdetail.fdprixupiedfacture = persoens.enprixm
+      
+      					FIN
+      					si val(fdetail.fdhauteur) <> 0 et val(fdetail.fdlargeur) <> 0 alors
+      						si val(fdetail.fDLARGEUR) > val(fdetail.fDHAUTEUR) alors
+      							si partieentiere(val(fdetail.fDLARGEUR)/val(fdetail.fdhauteur)) >= 10 alors
+      								lexception10 = vrai
+      							sinon si partieentiere(val(fdetail.fDLARGEUR)/val(fdetail.fdhauteur)) >= 5 alors
+      								lexception5= vrai
+      							fin
+      						sinon
+      							si partieentiere(val(fdetail.fDhauteur)/val(fdetail.fdlargeur)) >= 10 alors
+      								lexception10 = vrai
+      							sinon si partieentiere(val(fdetail.fDhauteur)/val(fdetail.fdlargeur)) >= 5 alors
+      								lexception5= vrai
+      							fin
+      
+      					FIN
+      				fin
+      
+      
+      				si lexception5 alors
+      					fdetail.FDextra5x = fdetail.fdprixu * config.Exception5 / 100
+      				sinon
+      					fdetail.FDextra5x = 0					
+      				FIN
+      				si lexception10 <> 0 alors
+      					fdetail.FDextra10x = fdetail.fdprixu * config.Exception10 / 100
+      				sinon
+      					fdetail.FDextra10x = 0					
+      				FIN
+      //				fdetail.surchargeenergie = calculsurcharge(fdetail.fdprixtotal+(fdetail.fdqte * (fdetail.FDextra10X+fdetail.FDextra5x)),fdetail.ftype)
+      				fdetail.surchargeenergie = calculsurcharge(fdetail.fdprixtotal+(fdetail.fdqte * (fdetail.FDextra10X+fdetail.FDextra5x)),...
+      				fdetail.fdcarrprixtotal,fdetail.fdextraforme*fdetail.fdqte,fdetail.ftype)
+      
+      				fdetail.SUrchargeafacturer = fdetail.surchargeenergie * fdetail.fdqteafacturer / fdetail.fdqte
+      				fdetail.SUrchargedejafacture = fdetail.surchargeenergie - fdetail.SUrchargeafacturer
+      				fdetail.fdprixtotal += fdetail.fdqte * fdetail.fdextraforme
+      				HModifie(fdetail,hNumEnrEnCours)
+      
+      				hlitrecherche(BonLivraison,BnoCommande,fdetail.fdnocomm)
+      				tantque pas hendehors(BonLivraison) et BonLivraison.BnoCommande = fdetail.fdnocomm
+      					//		si hlitrecherche(BonLivraison,BnoCommande,fdetail.fdnocomm) alors
+      					si BonLivraison.bfacture = 0 alors
+      						si hlitrecherche(hfacture,Bnumero,BonLivraison.bnumero) alors
+      							hlitrecherche(hfdetail,HFCLEUNIK,hfacture.HFCLEUNIK)
+      							tantque pas hendehors(hfdetail) et hfdetail.HFCLEUNIK = hfacture.HFCLEUNIK
+      								si hfdetail.ftype = 1 et hfdetail.fdligne= fdetail.fdligne alors
+      									hfdetail.fdprixupied= fdetail.fdprixupied
+      									hfdetail.fdprixu = fdetail.fdpiedcarrefacture * fdetail.fdprixupied
+      									hfdetail.fdprixtotal = hfdetail.fdqteafacturer * hfdetail.fdprixu
+      									hfdetail.fdprixupiedfacture = fdetail.fdprixupied
+      									hfdetail.FDextra10X = fdetail.FDextra10X
+      									hfdetail.FDextra5X = fdetail.FDextra5X
+      									hfdetail.SUrchargeafacturer = fdetail.surchargeenergie * hfdetail.fdqteafacturer / fdetail.fdqte
+      									hfdetail.surchargeenergie = fdetail.surchargeenergie * hfdetail.fdqteafacturer / fdetail.fdqte
+      									hfdetail.fdprixtotal += hfdetail.fdqteafacturer * hfdetail.fdextraforme
+      									HModifie(hfdetail,hnumenrencours)
+      								FIN
+      								hlitsuivant(hfdetail,HFCLEUNIK)
+      							FIN
+      					FIN
+      					HLitSuivant(BonLivraison,BnoCommande)
+      				fin
+      
+      			fin
+      		fin
+      	fin
+      fin
+      
+      hlitsuivant(fdetail,fdnocomm)
+      FIN
+      //fin
+      HLitSuivant(Facture,fanumero)
+      FIN
+      
+      multitache(100)
+      
+      
+     type : 458752
+   -
+     name : ModifierCommandeSeulement
+     procedure_id : 5218112758969274106
+     type_code : 14
+     code : |1+
+      Procédure ModifierCommandeSeulement(Ladate = datesys())
+      lexception5 est un booleen = faux
+      lexception10 est un booleen = faux
+      saisie1..Libellé = "Facture en cours ..."
+      resultatcalcul est une chaine
+      _prixa est un reel
+      _prixm est un reel
+      pdebase est une chaine
+      
+      HLitpremier(facture,fanumero)
+      
+      tantque pas HEnDehors(Facture)
+      
+      	saisie1 = facture.fanumero
+      
+      	si facture.fadate >= Ladate alors
+      		HLitSuivant(facture,fanumero)
+      		continuer
+      	FIN
+      	MultitacheRepeint(miseajourdate)
+      	multitache(1)
+      	hlitrecherche(client,numero,facture.faclient)
+      	//si facture.fanumero = 48932 alors
+      
+      	hlitrecherche(fdetail,fdnocomm,facture.fanumero)
+      	tantque pas hendehors(fdetail) et fdetail.fdnocomm = facture.fanumero
+      		si pas hlitrecherche(persoens,ennumero,fdetail.fdnumprod) alors goto sortiepasdenothermos
+      		si sansespace(fdetail.fdbase) = "" alors pdebase = sansespace(persoens.epbase) sinon pdebase = sansespace(fdetail.fdbase)
+      
+      		si fdetail.ftype = 1 et pas fdetail.FDprixmodifie alors
+      			lexception10 = faux
+      			lexception5 = faux
+      			resultatcalcul = CalculPrixThermos(fdetail.fdnumprod,client.IDClient,fdetail.fdcomposant1,fdetail.fdcomposant2,fdetail.fdcomposant3,pdebase)
+      			_prixa = val(extraitchaine(resultatcalcul,1,","))
+      			_prixm = val(extraitchaine(resultatcalcul,2,","))
+      			selon facture.facalcul 
+      				cas 1
+      					fdetail.fdprixupied= _prixa
+      					//							fdetail.surchargeenergie = calculsurcharge(fdetail.fdprixtotal,fdetail.ftype)
+      					//							fdetail.SUrchargeafacturer = fdetail.surchargeenergie * fdetail.fdqteafacturer / fdetail.fdqte
+      					//							fdetail.SUrchargedejafacture = fdetail.surchargeenergie - fdetail.SUrchargeafacturer
+      
+      				cas 2
+      					fdetail.fdprixupied= _prixm
+      			FIN
+      			selon client.CImpressionAngMet
+      				cas 1
+      					fdetail.fdprixu = fdetail.fdpiedcarrefacture * _prixa
+      					fdetail.fdprixtotal = fdetail.fdqte * fdetail.fdprixu
+      					fdetail.fdprixupiedfacture =_prixa
+      				cas 2
+      					fdetail.fdprixu = fdetail.fdpiedcarrefacture * _prixm
+      					fdetail.fdprixtotal = fdetail.fdqte * fdetail.fdprixu
+      					fdetail.fdprixupiedfacture = _prixm
+      
+      			FIN
+      			si val(fdetail.fdhauteur) <> 0 et val(fdetail.fdlargeur) <> 0 alors
+      				si val(fdetail.fDLARGEUR) > val(fdetail.fDHAUTEUR) alors
+      					si partieentiere(val(fdetail.fDLARGEUR)/val(fdetail.fdhauteur)) >= 10 alors
+      						lexception10 = vrai
+      					sinon si partieentiere(val(fdetail.fDLARGEUR)/val(fdetail.fdhauteur)) >= 5 alors
+      						lexception5= vrai
+      					fin
+      				sinon
+      					si partieentiere(val(fdetail.fDhauteur)/val(fdetail.fdlargeur)) >= 10 alors
+      						lexception10 = vrai
+      					sinon si partieentiere(val(fdetail.fDhauteur)/val(fdetail.fdlargeur)) >= 5 alors
+      						lexception5= vrai
+      					fin
+      
+      			FIN
+      		fin
+      
+      
+      		si lexception5 alors
+      			fdetail.FDextra5x = fdetail.fdprixu * config.Exception5 / 100
+      		sinon
+      			fdetail.FDextra5x = 0
+      		FIN
+      		si lexception10 <> 0 alors
+      			fdetail.FDextra10x = fdetail.fdprixu * config.Exception10 / 100
+      		sinon
+      			fdetail.FDextra10x  = 0
+      		FIN
+      		si facture.FSURCHARGEENERGIE alors
+      			fdetail.surchargeenergie = calculsurcharge(fdetail.fdprixtotal+(fdetail.fdqte * (fdetail.FDextra10X+fdetail.FDextra5x)),fdetail.ftype)
+      			fdetail.SUrchargeafacturer = fdetail.surchargeenergie * fdetail.fdqteafacturer / fdetail.fdqte
+      			fdetail.SUrchargedejafacture = fdetail.surchargeenergie - fdetail.SUrchargeafacturer
+      		sinon
+      			fdetail.surchargeenergie = 0
+      			fdetail.SUrchargeafacturer = 0
+      			fdetail.SUrchargedejafacture = 0
+      		fin
+      		fdetail.fdprixtotal += fdetail.fdqte * fdetail.fdextraforme
+      		HModifie(fdetail,hNumEnrEnCours)
+      
+      		hlitrecherche(BonLivraison,BnoCommande,fdetail.fdnocomm)
+      		tantque pas hendehors(BonLivraison) et BonLivraison.BnoCommande = fdetail.fdnocomm
+      			//		si hlitrecherche(BonLivraison,BnoCommande,fdetail.fdnocomm) alors
+      			si BonLivraison.bfacture = 0 alors
+      				si hlitrecherche(hfacture,Bnumero,BonLivraison.bnumero) alors
+      					hlitrecherche(hfdetail,HFCLEUNIK,hfacture.HFCLEUNIK)
+      					tantque pas hendehors(hfdetail) et hfdetail.HFCLEUNIK = hfacture.HFCLEUNIK
+      						si hfdetail.ftype = 1 et hfdetail.fdligne= fdetail.fdligne alors
+      							hfdetail.fdprixupied= fdetail.fdprixupiedfacturé
+      							hfdetail.fdprixu = fdetail.fdpiedcarrefacture * fdetail.fdprixupied
+      							hfdetail.fdprixtotal = hfdetail.fdqteafacturer * hfdetail.fdprixu
+      							hfdetail.fdprixupiedfacture = fdetail.fdprixupiedfacture
+      							hfdetail.FDextra10X = fdetail.FDextra10X
+      							hfdetail.FDextra5X = fdetail.FDextra5X
+      							hfdetail.SUrchargeafacturer = fdetail.surchargeenergie * hfdetail.fdqteafacturer / fdetail.fdqte
+      							hfdetail.surchargeenergie = fdetail.surchargeenergie * hfdetail.fdqteafacturer / fdetail.fdqte
+      							hfdetail.fdprixtotal += hfdetail.fdqteafacturer * hfdetail.fdextraforme
+      							HModifie(hfdetail,hnumenrencours)
+      						FIN
+      						hlitsuivant(hfdetail,HFCLEUNIK)
+      					FIN
+      			FIN
+      		fin
+      		HLitSuivant(BonLivraison,BnoCommande)
+      	fin
+      fin
+      
+      SortiePasDeNoThermos:
+      hlitsuivant(fdetail,fdnocomm)
+      FIN
+      //fin
+      HLitSuivant(Facture,fanumero)
+      FIN
+      
+      multitache(100)
+      ferme(miseajourdate)
+      
+     type : 458752
+   -
+     name : ModifierCommandePeinture
+     procedure_id : 5272967454603169475
+     type_code : 14
+     code : |1+
+      Procédure ModifierCommandePeinture()
+      lexception5 est un booleen = faux
+      lexception10 est un booleen = faux
+      lPrixCarreau est un reel
+      saisie1..Libellé = "Facture en cours ..."
+      fsurchargepeinture est un reel
+      fminpeinture est un reel
+      
+      HLitpremier(facture,fanumero)
+      
+      tantque pas HEnDehors(Facture)
+      	saisie1 = facture.fanumero
+      	MultitacheRepeint(miseajourdate)
+      	multitache(1)
+      	hlitrecherche(client,numero,facture.faclient)
+      
+      	si client.cminimumPeinture <> 0 alors
+      		fminpeinture = client.cminimumPeinture
+      	sinon
+      		fminpeinture = config.prixMinimumPeinture	
+      	FIN
+      
+      
+      	//	si facture.fanumero >= 50124 alors
+      	si facture.fpeinture <> 0 et facture.fatypedocument = 1 alors
+      		hlitrecherche(fdetail,fdnocomm,facture.fanumero)
+      		tantque pas hendehors(fdetail) et fdetail.fdnocomm = facture.fanumero 
+      			si fdetail.ftype = 1 ou fdetail.ftype = 4 alors
+      				si TrouvePrixPeinture() alors
+      					hmodifie(Fdetail,hNumEnrEnCours)
+      				fin
+      			sinon si fdetail.ftype = 5
+      
+      				si CalculPrixPeinture() alors
+      					fsurchargepeinture += arrondi(fdetail.fdprixtotal,2)				
+      					hmodifie(fdetail,hnumenrencours)
+      				fin
+      			fin	
+      
+      			hlitrecherche(BonLivraison,BnoCommande,fdetail.fdnocomm)
+      			tantque pas hendehors(BonLivraison) et BonLivraison.BnoCommande = fdetail.fdnocomm
+      				//		si hlitrecherche(BonLivraison,BnoCommande,fdetail.fdnocomm) alors
+      				si BonLivraison.bfacture = 0 alors
+      					si hlitrecherche(hfacture,Bnumero,BonLivraison.bnumero) alors
+      						hlitrecherche(hfdetail,HFCLEUNIK,hfacture.HFCLEUNIK)
+      						tantque pas hendehors(hfdetail) et hfdetail.HFCLEUNIK = hfacture.HFCLEUNIK
+      							si hfdetail.fdligne= fdetail.fdligne alors
+      								si hfdetail.ftype = 1 ou hfdetail.ftype = 4  alors
+      									hfdetail.fPrixCarreauPeinture = fdetail.fPrixCarreauPeinture
+      									hfdetail.fTotalPeinture = fdetail.fTotalPeinture
+      									hmodifie(hfdetail,hNumEnrEnCours)
+      								sinon si hfdetail.ftype = 5
+      									hfdetail.fdprixu = fdetail.fdprixu
+      									hfdetail.fdprixupied = fdetail.fdprixupied
+      									hfdetail.fdprixtotal = fdetail.fdprixtotal
+      									hmodifie(hfdetail,hNumEnrEnCours)
+      								fin
+      							fin
+      							hlitsuivant(hfdetail,HFCLEUNIK)
+      						fin
+      					fin
+      				fin
+      				HLitSuivant(BonLivraison,BnoCommande)
+      			fin
+      			hlitsuivant(fdetail,fdnocomm)
+      		FIN
+      
+      	fin
+      	si facture.fpeinture = 1 alors
+      		si fsurchargepeinture < fminpeinture alors
+      			facture.fSUrchargePeinture = fminpeinture-fsurchargepeinture
+      			hmodifie(facture,hNumEnrEnCours)
+      		FIN
+      	FIN
+      	HLitSuivant(Facture,fanumero)
+      FIN
+      
+      
+      multitache(100)
+      
+      
+     type : 458752
+   -
+     name : CalculPrixPeinture
+     procedure_id : 5273030383858082302
+     type_code : 14
+     code : |1+
+      Procédure CalculPrixPeinture()
+      resultat est un reel
+      lasurfaceanglais est un reel
+      lasurfacemetrique est un reel
+      CdSurfaceFacture est un reel
+      ladimension est un reel
+      valeuraretourner est un booleen = vrai
+      clederecherche est une chaine = HConstruitValClé(ProduitClient,IdClientIdproruit,sansespace(facture.faclient),sansespace(fdetail.fdnumprod))
+      
+      si hlitrecherche(ProduitClient,IdClientIdproruit,clederecherche) ALORS
+      	renvoyer faux
+      FIN
+      
+      
+      
+      si  hlitrecherche(invent,INUM,fdetail.fdnumprod)  alors
+      
+      	ladimension =  calcul_dimension(facture.facalcul,lasurfaceanglais,lasurfacemetrique,invent.iUniteMesure) 
+      		si invent.iUniteMesure = 1 alors
+      			resultat = arrondi(invent.iprixpeinture,2) * (100 - client.Cpourescompte) / 100
+      		sinon
+      			si facture.facalcul = 1 alors
+      				resultat = arrondi(invent.iprixPeinture,2)* (100 - client.Cpourescompte) / 100
+      			sinon
+      				resultat = arrondi(invent.iprixpeintureM,2)* (100 - client.Cpourescompte) / 100
+      			FIN
+      		fin
+      
+      
+      
+      
+      
+      	//////////////////////////////////////
+      	// vérifie couleur
+      	//////////////////////////////////////
+      	si sansespace(fdetail.fNoPeinture) <> "" et sansespace(fdetail.fNoPeinture1) <> "" alors
+      		resultat = arrondi(resultat * 2,2)
+      	FIN
+      
+      
+      	// iunitemesure 1=unité 2 =Pied linéaire
+      
+      	si invent.iUniteMesure = 1 alors
+      
+      	
+      
+      		si hlitrecherche(FCouleur,noCouleur,fdetail.fnopeinture) ALORS
+      			resultat+= arrondi(Fcouleur.cextraunite,2)
+      		fin
+      
+      
+      		// recherche extra sur couleur 2
+      
+      		si hlitrecherche(FCouleur,noCouleur,fdetail.fnopeinture1) ALORS
+      			resultat+= arrondi(Fcouleur.cextraunite,2)
+      		fin
+      
+      
+      
+      		// pied linéaire
+      
+      	sinon
+      
+      		// recherche si extra sur couleur 1
+      
+      		si pas invent.iCalculSimplePeinture
+      			si hlitrecherche(fcouleur,noCouleur,fdetail.fnopeinture) ALORS
+      				si facture.facalcul = 1 alors
+      					si pas FCouleur.cExtralineaire = 0 alors
+      						resultat+= arrondi(FCouleur.cExtralineaire,2)
+      					fin
+      				sinon
+      					si pas FCouleur.cextralineaireM = 0 alors
+      						resultat+=arrondi(FCouleur.cextralineaireM,2)
+      					fin
+      				FIN
+      
+      			fin
+      
+      
+      			// recherche si extra sur couleur 2
+      
+      			si hlitrecherche(fcouleur,noCouleur,fdetail.fnopeinture1) ALORS
+      				si facture.facalcul = 1 alors
+      					si pas FCouleur.cExtralineaire = 0 alors
+      						resultat+= arrondi(FCouleur.cExtralineaire,2)
+      					fin
+      				sinon
+      					si pas FCouleur.cextralineaireM = 0 alors
+      						resultat+=arrondi(FCouleur.cextralineaireM,2)
+      					fin
+      				FIN
+      
+      	
+      			fin
+      
+      		fin
+      
+      
+      
+      
+      	fin
+      
+      
+      
+      	si fdetail.fTypePeinture1 = 2  et pas invent.iCalculSimplePeinture alors
+      		resultat = resultat * 2
+      	FIN
+      
+      //	si lSurfaceSeulement alors
+      //		resultat = commandetrn.cdprixupied 
+      //	FIN
+      
+      	
+      	SELON client.CImpressionAngMet
+      		CAS 0
+      			SI facture.FACALCUL = 1 ALORS
+      				fdetail.fdprixu = arrondi(resultat,2) * arrondi(ladimension,2) 
+      				fdetail.fdprixtotal = arrondi(fdetail.fdprixu,2)  * fdetail.fdqte
+      			SINON
+      
+      				fdetail.fdprixu = ARRONDI(resultat  / CONFIG.CONVERSIONAM,2) * arrondi(ladimension,2)
+      				fdetail.fdprixtotal = arrondi(fdetail.fdprixu,2)  * fdetail.fdqte
+      			FIN
+      		CAS 1
+      			SI facture.FACALCUL = 1 ALORS
+      				fdetail.fdprixu = arrondi(resultat,2) * arrondi(ladimension,2) 
+      				fdetail.fdprixtotal = arrondi(fdetail.fdprixu,2)  * fdetail.fdqte
+      			SINON
+      
+      				fdetail.fdprixu = ARRONDI(resultat  / CONFIG.CONVERSIONAM,2) * arrondi(ladimension,2)
+      				fdetail.fdprixtotal = arrondi(fdetail.fdprixu,2)  * fdetail.fdqte
+      			FIN
+      
+      		CAS 2
+      			SI facture.FACALCUL = 2 ALORS
+      				fdetail.fdprixu = arrondi(resultat,2) * arrondi(ladimension,2)  
+      				fdetail.fdprixtotal = arrondi(fdetail.fdprixu,2)  * fdetail.fdqte
+      			SINON
+      				fdetail.fdprixu = arrondi(resultat  * CONFIG.CONVERSIONAM,2) * arrondi(ladimension,2)
+      				fdetail.fdprixtotal = arrondi(fdetail.fdprixu,2)  * fdetail.fdqte
+      			FIN
+      	FIN
+      
+      
+      
+      	selon invent.iUniteMesure
+      		cas 1
+      			fdetail.fdprixu = resultat 
+      			fdetail.fdprixupied = resultat
+      			CdSurfaceFacture = ladimension
+      			//		trdetail.fdpiedcarrefacture = ladimension
+      
+      		cas 2	
+      			fdetail.fdprixupied = resultat //+ extraintercallaire 
+      			fdetail.fdprixu = resultat * ladimension
+      			CdSurfaceFacture = ladimension
+      			//		trdetail.fdpiedcarrefacture = ladimension
+      			//		si lPrixMinimumPeinture <> 0 alors
+      			//			si commandetrn.CdPRIXU < lPrixMinimumPeinture alors
+      			//				commandetrn.cdprixu = lPrixMinimumPeinture
+      			//			FIN
+      			//		FIN
+      		cas 3	
+      			fdetail.fdprixupied = resultat //+ extraintercallaire 
+      			fdetail.fdprixu = resultat * ladimension
+      			CdSurfaceFacture = ladimension
+      			//		trdetail.fdpiedcarrefacture = ladimension
+      		cas 4	
+      			fdetail.fdprixupied = resultat //+ extraintercallaire 
+      			fdetail.fdprixu = resultat * ladimension
+      			CdSurfaceFacture = ladimension
+      			//		trdetail.fdpiedcarrefacture = ladimension
+      	FIN
+      
+      
+      	fdetail.fdprixtotal = fdetail.fdprixu  * fdetail.fdqte
+      
+      fin
+      
+      renvoyer valeuraretourner
+     type : 458752
+   -
+     name : TrouvePrixPeinture
+     procedure_id : 5273371240903231890
+     type_code : 14
+     code : |1+
+      Procédure TrouvePrixPeinture()
+      valeuraretourner est un booleen = vrai
+      ftotalpeinture1 est un reel
+      ftotalpeinture2 est un reel
+      fPrixCarreauPeintureoriginal est un reel = 0 
+      fPrixCarreauPeintureoriginal1 est un reel = 0 
+      fPrixCarreauPeinture est un reel
+      fPrixCarreauPeinture1 est un reel
+      
+      si client.CPrixSpecialPeintureCarrelage <> 0 alors
+          renvoyer faux
+      	fPrixCarreauPeintureoriginal = client.CPrixSpecialPeintureCarrelage
+      sinon
+      	si hlitrecherche(invent,INUM,fdetail.fnopeinture) alors
+      		fPrixCarreauPeintureoriginal = invent.iprixcarreauPeinture
+      	fin
+      	si hlitrecherche(invent,INUM,fdetail.fnopeinture1) alors
+      		fPrixCarreauPeintureoriginal1 = invent.iprixcarreauPeinture
+      	fin
+      FIN
+      
+      fPrixCarreauPeinture = fPrixCarreauPeintureoriginal+trouveExtraPeinture(facture.faclient,fdetail.fnopeinture)
+      fPrixCarreauPeinture1 = fPrixCarreauPeintureoriginal1+trouveExtraPeinture(facture.faclient,fdetail.fnopeinture1)
+      
+      
+      
+      selon fdetail.fTypePeinture
+      	cas 1
+      		ftotalpeinture1 = fdetail.Ftotalcarreaupeinture * fPrixCarreauPeinture
+      		si pas sansespace(FDETAIL.FnopeintureInterieure) = "" alors
+      			ftotalpeinture2 = fdetail.FDnbcarreauPeinture1 * fPrixCarreauPeinture1
+      		fin
+      
+      
+      	cas 2
+      		ftotalpeinture1 = fdetail.Ftotalcarreaupeinture * fPrixCarreauPeinture
+      		ftotalpeinture2 = 0
+      		fPrixCarreauPeinture1 = 0
+      FIN
+      
+      //sinon
+      //	Ftotalcarreaupeinture=0
+      //	//	si pas sansespace(fNoPeintureIntérieur) = "" alors
+      //	//		Ftotalcarreaupeinture=NOMBRE_DE_CARREAU
+      //	//	FIN
+      //	fTotalPeinture1 = 0
+      //	fdescpeintureExtTout = ""
+      //	libelleNbCarreauExtTlt = ""
+      //FIN
+      FDETAIL.fPrixCarreauPeinture = fPrixCarreauPeinture
+      FDETAIL.fdPrixCarreauPeinture1 = fPrixCarreauPeinture1
+      FDETAIL.ftotalpeinture = ftotalpeinture1+ftotalpeinture2
+      
+      renvoyer valeuraretourner
+      
+      
+     type : 458752
+   -
+     name : TrouveExtraPeinture
+     procedure_id : 5273371305483339169
+     type_code : 14
+     code : |1+
+      Procédure TrouveExtraPeinture(lNoClient,lNoPeinture)
+      valeuraretourner est un reel = 0 
+      si hlitrecherche(FCouleurClient,noClientNoCouleur,HConstruitValClé(FCouleurClient,noClientNoCouleur,lNoClient,lNoPeinture)) alors
+        si FCouleurClient.fcextraCarreau <> 0 alors
+           valeuraretourner = FCouleurClient.fcextraCarreau
+        fin
+      sinon 
+      	si hlitrecherche(fcouleur,noCouleur,lNoPeinture) alors
+      		valeuraretourner = FCouleur.cExtracarreau
+      	FIN
+        	
+        		
+      	
+      FIN
+      
+      renvoyer valeuraretourner
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x41f184772e57dfa6
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

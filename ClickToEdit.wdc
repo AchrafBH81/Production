@@ -1,0 +1,125 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ClickToEdit
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x188f64c82fc07ac9
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      ClickToEdit est une Classe
+      	GLOBAL
+      	isActive est un boolean
+      		
+      	private
+      	groupeActifInactif est un chaine = ""
+      	ButtonToActivate est une chaine = ""
+      	initialized est un boolean = false
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1769743989537340105
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1769743989537405641
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : OnFocus
+     procedure_id : 1769744543588249867
+     type_code : 12
+     code : |1+
+      PROCEDURE GLOBAL PROTÉGÉE OnFocus()
+      SI Pas ::isActive Alors Retour 
+      
+      
+      SI Contient({_EVE.nom}..Groupe,::groupeActifInactif, SansCasse) ALORS
+        {::ButtonToActivate}..Etat = actif
+      	
+      	
+      	
+      fin
+      
+     type : 458752
+   -
+     name : Activate
+     procedure_id : 1769753918767874225
+     type_code : 12
+     code : |1+
+      // Cette fonction permet le click 
+      //
+      //	pgroupeActifInactif : Groupe de champs qui sert à activer/desactiver les champs de la page 
+      //
+      PROCEDURE GLOBAL Activate(pgroupeActifInactif est un chaine =  "GR_ACTIF_INACTIF")
+      if (pas ::initialized) THEN
+      	WM_LBUTTONDOWN est un entier = 513
+      	
+      	Evénement(::OnFocus,".*",513)
+      END
+      ::groupeActifInactif = pgroupeActifInactif
+      
+      ::isActive = true
+      
+      
+     type : 458752
+   -
+     name : Deactivate
+     procedure_id : 1769765755697811291
+     type_code : 12
+     code : |1-
+      PROCEDURE GLOBAL Deactivate()
+      ::groupeActifInactif = null
+      ::isActive = False
+     type : 458752
+   -
+     name : SetButtonToActivate
+     procedure_id : 2009571286245579132
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SetButtonToActivate (<sButtonToActivate> est chaîne)
+      //
+      // Paramètres :
+      //	sButtonToActivate (chaîne ANSI) : <indiquez ici le rôle de sButtonToActivate>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE globale SetButtonToActivate(sButtonToActivate est une chaine)
+      
+      
+      ::ButtonToActivate = sButtonToActivate
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe2
+resources :
+ string_res :
+  identifier : 0x188f64b62fbd32c4
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

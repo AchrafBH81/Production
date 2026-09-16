@@ -1,0 +1,141 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : GPWMenuSuperviseur
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : GPWMenuSuperviseur
+ identifier : 0x3bd8130242be099f
+ internal_properties : CQAAAAkAAABfus+4BR+mUT+3YdgrpI4O0dLzwyu/r99Gzq6xnWpcM5H2zlHA03dbEpvteTTiU3SeqtJ/+9riJujev38+C7hS+3Ik6/R+Le7ZaMXRGiMMVnLP2jfp169xtve5gxJcBLEYynUzb22WX4br2/5IKGlYFeZfu+wI1LDFilfUex6wsxEk2bNDs2Pa4Q2O6ywgAXI3UPLlyNhz9Q5PwSWLg5rAS43hrLOg9SJ6k6FdrQLrs6WLgoO5tiVYCymL/S7Da0Ea4i+DIKOjrS0vunuXBldigxXDewcNaAE5jRTOTBpgkLgpXO53OJhRgKw9VQlZQgxDp6JmjFvVKUvo7H1ZZwt+hB+sPoY8kevzoCNpQpy8jPARh8pIw+7tZtEDnx/cGYhF69L/X3DKFMxcG1NJhAm8F4qHKWNCzBoNHVrpxsffGhVkmxhbDqbOWI4kguar1IeiaG/yqhlzt2aKeJue3s3Mz4Q5eucHufmT/NlSGWnzONapPv+4s3ekft/TnPcI828+tCu5Mkvt8/EehWPw5kdOR8lpMXGCkzSWLvz06s+ScUKGNUKTFtxWTrw6ay+D3g5b0FM8FBeAquoi9wSXE97LdSlgkxl+WiYHoxsQh4w9KU6WTnuB0ByIprmp9vACV9iPQ7D+u2Ebcg7l17c1Hxr6SFI+heWcamF9PYlcHSI1w2/IWTAQTDTESoBFpOBYCFIV19v0zCicBBZRONmoiqnfDmBtz+Wdo1iksXAbEJurLXZ4VFa2YAoesWGmTAtgB+3YNsEyNRN5hxqIogHvnHqUYSDPmq4T+Bv1
+ properties :
+  width : 163
+  height : 128
+  widthClient : 161
+  heightClient : 96
+  widthMin : -4
+  heightMin : 5
+ controls :
+  -
+    name : Lancer_l_application
+    identifier : 0x3bd813027389099f
+    internal_properties : CQAAAAkAAACtYiak7DuRvrXbrlv22vOXqt3h1atwXppvuLD24VXeWzEyl9OPzDZImPnU6seEqBfeitnMokZ8NeHrsgJS+VBmXXxaO9S/w/7nvPxSK8/NY547jzv1ydtCDBb2fnhahdAt0KJwkR2aXb86BlDL+Yt9MdEAu8nrH46zNwEoGI4sh5ejxiTUxjjAcpqXZ3PfcjpOfvJX0uh8EraiuSg/rR5/s0pvzCRdL39sjVKs3aWgNG5R9OLQXGzauGz/JSV68aHUC0EIOL+5XdY5+FeZWGBEkPxopZeDmOtw+LxqigMRisfW6kzaTaR82HjchmZP9F/JU3ZoiXrtwTcffhi+rZjwg/pbeKMqepJXUO49WhyiHvIjwFZl0yeGRoSVT9KERwCJigpL53UE3BNRQ4mVRJdOwTHXNU+nvlb57qDG+TnBIFXJRD9Cp8zJMqnSoDleKa/Df2HjrPA18uxcE4T/ocxRvkXmYZ1eulGXww6Tg3XlyAzZ0UrqpxzngPd49YcdDD8aYeleYYfwqWoXAvXQVCajZstd/DEjQOsOCROyGZAUfYq/DbnwJinno0L1YobY436N4XZB1Pane5yg5BBIps7ZA+EVX4FB3GFLR6H/Ey6S7CbmO9v75MNExDL9226Xl/c66uXKpcVJw5OzZtbWsTNUgd2vg8UVJD4Or1sNtpbxp9S/J7Uvy0K1U1veGLyI1C4z2ArynlvUdD8u/w48QF7XkmW0dUg2x9vPEozAQbERwMnJWWHP1BeMt/hH0UX3mJ8=
+    properties :
+     x : 6
+     y : 6
+     width : 149
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // il faut lancer l'application
+         mafenêtre..ValeurRenvoyée=gpwok
+         // fermeture de la fenêtre
+         ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Configurer_le_groupware
+    identifier : 0x3bd81302388a099f
+    internal_properties : CQAAAAkAAACnJKdA5hY7WI8BTYVbhMjq29j6ftqlChvO1Qyk1oEXaBKekmUFH012dcjKOmDEaj3yORIHr4j5e+1eGQV7T1GhzFpLoz53T9R+zzQFI4Wdp5TR2TIm3EvJH+jvOtLAJQEd3kam4V2QhxaXuVSs/v9pBx/WCF0OZYSzLIAPaZtqiRGugPN3TeP7R2EAeiK7bAjNUwwJRv0SlkAm30T17Ps13x8fy9Q+vL/XFGAbRWyjGrUkfX8OIAhAv+T/tL3PPKW3CchOOj6dEuXzCbufN2zCz83ZjLlVh9vXzVBTjnhjTyAJz1NeePetc8QLrKHwshjQ4ev0CSva6xGvK3MMTb34cEiNl4CxsoK2i+7hPimKA5BPX/z6P8kv7z8YbbeJAtjr/gIipQU8OwkZLXLweamtys5Vzj2H6t9ZSBrTsji//YbGuKiijXTeVi9Qr745ya5SqjfACPpl3wCSfZXeEoYcfWjkuO2kIpydUwBK8q7JXU8wsT98h7rQvA1gcpRIvOq9uH1HkR1epmRn0EifHYbOnS4bMwE9LnCiDxXDuHEg3qEqk3x0ALXgkeKvBZc/D1s+3l7cFvZLMNZQOH3D40zkIPLHslWnDP4ZVx3+NIU8XYsGzHAF91t3B9ymSugzuPPRJjQsvdnUCi+LWaz/Ruo+gE1vUBb8dpkMTbHoHsTe4UHkBZY3KX9hWrQ0TevRLHakWQ7mcrlHM1kFKyB95PK6NxRUNLHV5r9A3wG4TcNyStjcvKtp23T5ipIoHKy/SJEUvapd
+    properties :
+     x : 6
+     y : 36
+     width : 149
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         // ouverture de la fenêtre de configuration des utilisateurs de l'application
+         ouvre("GPWAssociationConfiguration")
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Fermer
+    identifier : 0x3bd816112cd5fc46
+    internal_properties : CQAAAAkAAAAGeVIIlvaKjlX4cVl0YR1cZEf3AcPyYlZOUsWY05nzCoI9yAaT63qEaHEwicW0SSzvGwqpvTYjFJ9xHH2+nCSTnzS9bSAaFFmjqt/SJeNbuIkYdVmFYw5CTOD0UdW0TyxHFptfsIRYhieAHvFuZrkZXRFD6zsuCQtOWRE/AlCkDT0juBtJtdtj2cOTyMEnBTnxW0UVpr9TIVog9QHawgAaEcgVAixKoBGM0rJgLpdObYIRwxv/ylP8poLlM5OKghgV4gC28M5gcGSQsSXjJzozaJ/urrir16Cua4RCzqe1gG0n2h1dOdcQDeWoQbe35OWVJg0ZJ9wH/Uv0LyWeB+9LAAdsBywi3zCk3lJqWGhVp+qmnhE6ZFyDWZYaFkeEFgD0AQtKBTLMMvZESslcI6LexomInwbnDGQqxgmAh16cxVhpuNiA1rhJ6Lud+nHUS8kx6vAs6fEPTI/yF93yJXfcY+gZ+GforpidfLAi61cQO3aXe/NPdkcZhIRMIlzY1VugPl1gdVNJdr0GWIUihRyTw9Aza4v4xk0r/M8vXxuaVd0hZgDtCX1M4z5bMODfZI4zP0he5rGbBrfdEHk0Nt0oI+NycfHV+xaa6B2X4gKp1MYS4Puwm5AeOQP/ssh1K5ktmZYNsMzYRTy7aHQVun7+5EwmlUOEDEMqwG1CiBf6Me08t3OAqfbVjag19j0Df0ZHi2qSHuJuFzqbSudPZs4jjYVB4hHEaX+IhwxHeL91PY6e9ZWh
+    properties :
+     x : 6
+     y : 66
+     width : 149
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // il faut lancer fermer l'application
+         mafenêtre..ValeurRenvoyée=gpwAnnulation
+         // fermeture de la fenêtre
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3bd813020d9f099f
+  internal_properties : CQAAAAkAAAAbq1+mNDaDBZcqQvbWBaDZ5Jui4twharj2/575pBSh0PyCVcL5u3mR6TzbYv5DwC67T9xz88szSCE9fR3yA/H3pb0hXZTlh/z77BHbh1jQGPr8wxmM0dzQTBh6H86nTNUME//eTm3FVDUp/XiwW+2Eoy8dQ9uBYw5OLgmsY1W4CmmUUegh6Kl2n4wsAWw9o6GZKKTEEQtjhv40Ll7OfNeKO1qmikU99eiC3/N7/q99+iA3F9kT17f6Ztl9ytg6xGCakrySJ6M4XeNItP5DECFsBZTCPsV8s5lz
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAByagpLfA3xzrqxz41beugTG6UT8RxPWgE2E+IxIJmna4bLP/ha8wc4CrXE/R4E7Q8o5byCNpCeuZbnj90O9J6AUw0Yi3h1HRn6JWBt2P8ydIbWkaFWYZBpUQ4wcODF
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      //-----------------------------------------------
+      GPWUtilisateur est une source de données
+      GPWUtilisateurConfiguration est une source de données
+      GPWConfiguration est une source de données
+      GPWConfigurationElement est une source de données
+      GPWElement est une source de données
+      //-----------------------------------------------
+      
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3bd81add55d5b9eb
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text : {}
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

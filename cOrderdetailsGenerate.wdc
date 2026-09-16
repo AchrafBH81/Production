@@ -1,0 +1,2295 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cOrderdetailsGenerate
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1ffb25c201b10ab3
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cOrderdetailsGenerate est une Classe
+      	PurchaseOrderId est une chaîne
+      	PurchaseOrderItemId est une chaîne
+      	VisibleIndex est un entier
+      	TrnNumber est une chaîne
+      	Note est une chaîne
+      	Spacer est une chaîne
+      	Finish est une chaîne
+      	Energetic est une chaîne
+      	Pane1 est une chaîne
+      	Pane2 est une chaîne
+      	Pane3 est une chaîne
+      	GlassDescription est une chaîne
+      	Grill est une chaîne
+      	GrillDescription est une chaîne
+      	GrillInteriorColor est une chaîne
+      	GrillExteriorColor est une chaîne
+      	GrillHalfThermos est une chaîne
+      	GrillSeal est une chaîne
+      	Tempered est une chaîne
+      	Quantity est un numérique
+      	GrillBase est un entier
+      	GrillHeight est un entier
+      	Height est une chaîne
+      	Width est une chaîne
+      	Shape est une chaîne
+      	ShapeDescription est une chaîne
+      	Option1 est une chaîne
+      	Option2 est une chaîne
+      	Option3 est une chaîne
+      	
+      	GrillNumberInternal est une chaîne  // numéro de carrelage interne
+      	
+      	SpacerID est un entier
+      	Intercalaire1 est une chaîne
+      	intercalaire2 est une chaîne
+      	ComposantBase1 est une chaîne
+      	ComposantBase2 est une chaîne
+      	ComposantBase3 est une chaîne
+      	DescriptionThermos est une chaîne
+      	epaisseur est un réel
+      	energiverre est un booléen
+      	nbverre est un entier
+      	ThermosID est un entier
+      	ThermosNumber est une chaîne
+      	ProduitDeBase est une chaîne
+      	PrixUnitaire est un réel
+      	PrixUnitaireM est un réel
+      	PrixPied est un réel
+      	PrixPiedM est un réel
+      	Special est un booléen               // vrai si on a trouvé un prix spécial pour ce client/produit.
+      	unitedemesure est un entier
+      	
+      	
+      	CalculException10X5X est un booléen
+      	
+      	
+      	PrixException10X est un réel
+      	PrixException5X est un réel
+      	HauteurCachee est une chaîne  // dimension cachée lors de la saisie d'une commande.Ca correspond a la valeur entrée avant qu'elle soit
+      	LargeurCachee est une chaîne  // transformée en anglais avec décimale ou en métrique avec un point.
+      	SurchargeEnergie est un réel
+      	
+      	SurfaceAnglais est un réel
+      	SurfaceMetrique est un réel
+      	SurfaceAnglaisReel est un réel
+      	SurfaceMetriqueReel est un réel
+      	
+      	bMessage est un booléen
+      	TexteMessage est une chaîne
+      	bLigne est un entier
+      	
+      	typecarrelage est une chaîne// type de carrelage
+      	NbCarreau est un entier
+      	Variablex est un réel
+      	variablex1 est un réel
+      	CodeGlCarrelage est une chaîne
+      	CodeGLThermos est une chaîne
+      	DescriptionCarrelage est une chaîne
+      	PrixUnitaireCarrelage est un réel
+      	PrixDeBaseCarreau est un réel
+      	
+      	Option1PrixUnitaire est un réel
+      	Option2PrixUnitaire est un réel
+      	Option3PrixUnitaire est un réel
+      	
+      	istempered est un booléen
+      	
+      	ExceptionForcee est un booléen
+      	ExceptionForceeTexte est une chaîne
+      	extraShape est un réel
+      	oCarrelage est un Calculator
+      	
+      	SortingType est un entier  
+      	
+      	// 1 = 3mm
+      	// 2 = 4mm
+      	// 3 = 5mm et 6mm
+      	// 5 = 3mm avec carrelage
+      	// 6 = 4 mm avec carrelage
+      	// 7 = 5 et 6mm avec carrelage
+      	// 9 verre trempé
+      	
+      	
+      	
+      	
+      	
+         
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2304477149512469171
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2304477149512534707
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : TransferOrderItem
+     procedure_id : 1153869537352781128
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //TransferOrderItem (<_OrderItem> est cExternalOrderDetails, <_Order> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_OrderItem (cExternalOrderDetails) : <indiquez ici le rôle de _OrderItem>
+      //	_Order (cOrderGenerate) : <indiquez ici le rôle de _Order>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE TransferOrderItem(_OrderItem est un cExternalOrderDetails,_Order est un cOrderGenerate)
+      
+      :nbverre = 0
+      
+      //:Note = _orderItem.m_sPane1
+      SI HLitRecherche(IntercalaireCouleurs,Description,SansEspace(_OrderItem.m_sSpacerType)) ALORS
+      	:Spacer = IntercalaireCouleurs.Description
+      	:SpacerID = IntercalaireCouleurs.IDIntercalaireCouleurs
+      SINON
+      	:Spacer = _Order.DefaultSpacer
+      	:SpacerID = _Order.DefaultSpacerID
+      	:bMessage = Vrai
+      	:TexteMessage += "Aucun type spacer de spécifié pour cette ligne de commande, défaut utilisé"+RC
+      FIN
+      :Finish = Remplace(_OrderItem.m_sFinish,[""""," "],"")
+      :Finish = Remplace(:Finish,",",".")
+      
+      :Finish = NumériqueVersChaîne(Arrondi(Val(:Finish),3),"5.3f")
+      SI Gauche(:Finish,1) = "0" ALORS 
+      	:Finish[[1]] = ""
+      FIN
+      
+      
+      
+      :ThermosNumber = sansespace(_OrderItem.m_sThermosCode)
+      
+      si hlitrecherche(persoens,ennumero,:ThermosNumber) alors
+      	:Pane1 = persoens.encomposant1
+      	:Pane2 = persoens.encomposant2
+      	:Pane3 = persoens.encomposant3
+      	
+      FIN
+      
+      :IsThermosTempered()
+      
+      :GlassDescription = SansEspace(_OrderItem.m_sThermosDescription)
+      :Grill = _OrderItem.m_sGridCode
+      
+      
+      :GrillDescription = SansEspace(_OrderItem.m_sGridDescription)
+      //:Tempered = _item.Tempered
+      :Quantity = _OrderItem.m_nQuantity
+      :GrillBase = _OrderItem.m_nGridBase
+      :GrillHeight = _OrderItem.m_nGridheight
+      
+      
+      :HauteurCachee = SansEspace(Remplace(_OrderItem.m_sThermosHeight,",","."))
+      :LargeurCachee = SansEspace(Remplace(_OrderItem.m_sThermosWidth,",","."))
+      SI Position(:HauteurCachee,".") <> 0 ALORS
+      	:HauteurCachee = InchToInchFraction(Val(:HauteurCachee))
+      FIN
+      SI Position(:LargeurCachee,".") <> 0 ALORS
+      	:LargeurCachee = InchToInchFraction(Val(:LargeurCachee))
+      FIN
+      :GrillInteriorColor = _OrderItem.m_sInteriorColorCode
+      :GrillExteriorColor = _OrderItem.m_sEXteriorColorCode
+      
+      :Height =  Val(convertirDimension(Remplace(_OrderItem.m_sThermosHeight,",","."),_Order.unitedemesure))
+      :Width = Val(convertirDimension(Remplace(_OrderItem.m_sThermosWidth,",","."),_Order.unitedemesure))
+      :Shape = _OrderItem.m_sShapecode
+      
+      //SI Val(:Height) < 200 ALORS :unitedemesure = 1 SINON :unitedemesure = 2
+     type : 458752
+   -
+     name : convertirDimension
+     internal_properties : CQAAAAkAAAC4QdWiZiGDrOAqnEGszTafvdCzWCFKssS4bZ3yYDURiXuLakmT9PW7smP6HFftu2SDYTkug3FHMEC7tw==
+     procedure_id : 1156743514500299748
+     type_code : 12
+     code : |1+
+      Procédure convertirDimension(ValueToConvert,nUniteDeMesure est un entier)
+      
+      selon nUniteDeMesure
+      	cas 1
+      		renvoyer InchFractionToInch(ValueToConvert)
+      	cas 2
+      		renvoyer TextToMillimeter(ValueToConvert)
+      	AUTRE CAS
+      		
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      longueur est un entier = taille(ValueToConvert)
+      position_espace est un entier = position(ValueToConvert," ")
+      position_point est un entier = Position(ValueToConvert,".")
+      //position_espace1 est un entier = position(variable," ",position_espace+1)
+      resultat_gauche est une chaine  
+      resultat_droit est une chaine        
+      valeuraretourner est un reel
+      variableAnglais est une chaine
+      
+      si position_point <> 0 alors
+      	//info("salut")
+      FIN
+      si position_espace = 0 alors
+      	si position(ValueToConvert,"/") = 0 alors
+      		resultat_gauche = ""
+      	sinon
+      		resultat_gauche = "0"
+      	fin	
+      sinon	
+      
+      	resultat_gauche = gauche(ValueToConvert,position_espace-1)
+          variableAnglais+= resultat_gauche+" "
+      FIN
+      
+      si position_espace = 0 alors
+      
+      	resultat_droit = ValueToConvert
+      
+      sinon	
+          tantque ValueToConvert[[position_espace+1]] = " "
+             position_espace++
+          fin
+          	
+      	resultat_droit = milieu(ValueToConvert,position_espace +1, longueur - position_espace)
+      
+      FIN
+      
+      resultat_droit = remplace(resultat_droit," ","")
+      renvoyer(resultat_droit)
+      
+      si pas position(resultat_droit,"/") = 0 alors
+      	resultat_droit = memrecherche("tableau_metrique",resultat_droit)
+      FIN
+      
+      
+      
+      
+      
+      //si provenance = "fini" alors
+      	valeuraretourner = resultat_gauche+resultat_droit
+      //
+      //sinon
+      //	moimeme = resultat_gauche+resultat_droit
+      //	selon majuscule(moimeme..Nom)
+      //		CAS "CDLARGEUR"
+      //			commandeTRN.fdlargeura = variableAnglais
+      //		CAS "CDHAUTEUR"
+      //			commandeTRN.fdhauteura = variableAnglais
+      //			
+      //		AUTRE CAS
+      //			
+      //	FIN
+      //	valeuraretourner = vrai
+      //
+      //FIN
+      
+      //
+      //si val(moimeme) > config.dimensionmaxanglais et pas moimeme = "" alors
+      //	erreur("Donnée incorrecte")
+      //	valeuraretourner = faux
+      //FIN
+      //SI ChaîneOccurrence(MoiMême,".") > 1 ALORS
+      //	Erreur("Donnée incorrecte")
+      //	valeuraretourner = Faux
+      //FIN
+      //si ChaîneOccurrence(moimeme,"/") > 1 alors
+      //	erreur("Donnée incorrecte")
+      //	valeuraretourner = faux
+      //FIN
+      //si ChaîneOccurrence(moimeme,",") > 0 alors
+      //	erreur("Donnée incorrecte")
+      //	valeuraretourner = faux
+      //FIN
+       
+      
+      renvoyer valeuraretourner
+      
+     type : 458752
+   -
+     name : GenererDetail
+     procedure_id : 1156759341548124412
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //GenererDetail (<_purchaseOrder> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_purchaseOrder (cOrderGenerate) : <indiquez ici le rôle de _purchaseOrder>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	_purchaseOrderItem (PurchaseOrderItemBasco) : <indiquez ici le rôle de _purchaseOrderItem>
+      PROCEDURE GenererDetail(_purchaseOrder est un cordergenerate)
+      
+      
+      SI PAS SansEspace(:Pane1) = "" _ET_ HLitRecherche(invent,INUM,:Pane1) ALORS
+      	:nbverre++
+      	:ComposantBase1 = invent.IPBASE
+      	:epaisseur+= invent.iepaisseur
+      	SI PAS :energiverre ALORS :energiverre = (invent.ienergieverre OU invent.ienergieverreESC)
+      	
+      FIN
+      
+      
+      SI PAS SansEspace(:Pane2) = "" _ET_ HLitRecherche(invent,INUM,:Pane2) ALORS
+      	:nbverre++
+      	:ComposantBase2 = invent.IPBASE
+      	:epaisseur+= invent.iepaisseur
+      	SI PAS :energiverre ALORS :energiverre = (invent.ienergieverre OU invent.ienergieverreESC)
+      	
+      FIN
+      
+      SI PAS SansEspace(:Pane3) = "" _ET_ HLitRecherche(invent,INUM,:Pane3) ALORS
+      	:nbverre++
+      	:ComposantBase3 = invent.IPBASE
+      	:epaisseur+= invent.iepaisseur
+      	SI PAS :energiverre ALORS :energiverre = (invent.ienergieverre OU invent.ienergieverreESC)
+      	
+      FIN
+      
+      
+      :GetThermosType()
+      
+      si :ExceptionForcee alors
+      	:bMessage = Vrai
+      	:TexteMessage += :ExceptionForceeTexte + RC
+      FIN
+      :CalculSpacer(_purchaseOrder)
+      
+      
+      :CalculPrixThermos(_purchaseOrder)
+      
+      :SortingThermos()
+      
+      si :shape <> "" alors :CalculPrixForme()
+      
+      :CalculSurface(_purchaseOrder)
+      
+      :PrixUnitaire = :SurfaceAnglais * :PrixPied
+      :PrixUnitaireM = :SurfaceMetrique * :PrixPiedM
+      
+      :CalculException10X5X1()
+      
+      :CalculSurfaceReelle()
+      
+      :CalculEnergie(_purchaseOrder)
+      
+      :GetGrillType()
+      
+      
+      si :grill <> "" alors
+      	:CalculNbCarreau(_purchaseOrder)
+      	
+      	:CalculPrixCarrelage(_purchaseOrder)
+      	SI :GrillHeight = 0 OR :GrillBase = 0 ALORS 
+      	sinon
+      		:oCarrelage = :calculcarrelage()
+      	fin
+      fin
+      
+      //:CalculOption()
+      
+     type : 458752
+   -
+     name : GetThermosType
+     internal_properties : CQAAAAkAAADOHQnw/DDAwA2Sgstp0iHSSBV/Y0v9kC8OE8I6vhlqV+I4sjPf5ROobTvWBZvyPjvs1ze4RSeiCjX3eWHFbMbJbWKSueDL/7/Rt/ulD6FEW2dTWCwlpbgr6dR0FrS0NEw1OS5fHCqXWT7naioXT1ABvCbnfdYcDJRoA+CUWtTiBI4wz6g=
+     procedure_id : 1156765113984466566
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //GetThermosType ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      
+      
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetThermosType (<comp1>, <comp2>, <comp3>)
+      //
+      // Paramètres :
+      //	comp1 : <indiquez ici le rôle de comp1>
+      //	comp2 : <indiquez ici le rôle de comp2>
+      //	comp3 : <indiquez ici le rôle de comp3>
+      // Valeur de retour :
+      // 	entier : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	comp1 :<indiquez ici le rôle de comp1>
+      //	comp2 :<indiquez ici le rôle de comp2>
+      //	comp3 :<indiquez ici le rôle de comp3>// Traitement automatique des erreurs :   exécuter le bloc de code CAS ERREUR
+      //
+      // Traitement automatique des exceptions :   exécuter le bloc de code CAS EXCEPTION:
+      //
+      
+      PROCEDURE PRIVÉE GetThermosType()
+      
+      si hlitrecherche(persoens,ennumero,:ThermosNumber) alors
+      	
+      	:ThermosID = persoens.PECLEUNIK
+      	:ProduitDeBase = persoens.epbase
+      	:DescriptionThermos = persoens.endescription
+      	:CalculException10X5X = persoens.enpas5X10X
+      	:CodeGLThermos = persoens.encodegl
+      	
+      sinon
+      	:bMessage = Vrai
+      	:TexteMessage += "Aucun Thermos trouvé"
+      	:ThermosID = 0
+      	:ThermosNumber = ""
+      	:ProduitDeBase = ""
+      	:DescriptionThermos = ""
+      	:CalculException10X5X = Faux
+      	
+      	
+      fin
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      CAS ERREUR:
+      erreur(erreurinfo(errComplet))
+      CAS EXCEPTION:
+      erreur(ExceptionInfo(errComplet))
+     type : 458752
+   -
+     name : CalculSpacer
+     procedure_id : 1156772415428996340
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculSpacer (<_purchaseorder> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_purchaseorder (cOrderGenerate) : <indiquez ici le rôle de _purchaseorder>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE PRIVÉE CalculSpacer(_purchaseorder est un cOrderGenerate)                                                    // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // CalculSpacer ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      
+      
+      x est un entier
+      different est un booléen = Faux   // si dans le fichier kit pas de lien intercallaire = faux
+      continuerrecherche est un booléen = Vrai // si pas trouve avec le numero de produit aller voir le lien
+      doubleexiste est un booléen = Faux
+      lelien est une chaîne
+      lelien1 est une chaîne
+      lefini est un réel
+      lespace est un réel 
+      lespacetotale est un réel 
+      clederecherche est une chaîne
+      ldoublescellant est un réel =0
+      linexblanc est un booléen = Faux
+      linexnoir est un booléen = Faux
+      linexgris est un booléen = Faux
+      lIndex est une chaîne
+      ltolerance est une chaîne
+      ltolerancemoins est une chaîne
+      lmultiplicateur est un entier = 1
+      lFiniAlias est une chaîne
+      lretourrechercheintercalaire est un chaîne
+      
+      txtreq est une chaîne = [
+      	select numero as NoIntercalaire, DimensionI+TolerancePlus as bornehaut,dimensioni-ToleranceMoins as bornebas from IntercalaireCouleurDimensions
+      	where IntercalaireCouleurDimensions.IDIntercalaireCouleurs = %1 and %2 between bornebas and bornehaut
+      ]
+      Reqsql est une Source de Données
+      
+      
+      
+      
+      RequeteDimensionAlias.pDimensionAlias= "<"+SansEspace(:finish)+">"
+      HExécuteRequête(RequeteDimensionAlias)
+      SI HNbEnr(RequeteDimensionAlias) >= 1 ALORS
+      	HLitPremier(RequeteDimensionAlias)
+      	:finish = SansEspace(RequeteDimensionAlias.DImensionMaitre)
+      FIN
+      
+      lelien = Complète(:pane1,10)+Complète(:pane2,10)+Complète(:pane3,10)
+      //lelien = DROITE(commandetrn.cdcomposant1,1)+DROITE(commandetrn.cdcomposant2,1)+DROITE(commandetrn.cdcomposant3,1)
+      lelien1 = Complète(:composantBase1,10)+Complète(:ComposantBase2,10)+Complète(:ComposantBase3,10)
+      clederecherche = HConstruitValClé(inter,cleclientproduit,complete("139",10),...
+      Complète(:pane1,10),Complète(:pane2,10),...
+      Complète(:pane3,10),Complète(:finish,10))
+      HLitRecherche("inter","cleclientproduit",clederecherche)
+      
+      
+      RequeteClientFiniIntercalaire.pIdClient =_purchaseorder.ClientID
+      RequeteClientFiniIntercalaire.pcomposant1 = Complète(:pane1,10)
+      RequeteClientFiniIntercalaire.pcomposant2 = Complète(:pane2,10)
+      RequeteClientFiniIntercalaire.pcomposant3 = Complète(:pane3,10)
+      RequeteClientFiniIntercalaire.pFini = Complète(:finish,15)
+      RequeteClientFiniIntercalaire.pIdIntercalaireCouleur = :SpacerID
+      HExécuteRequête(RequeteClientFiniIntercalaire)
+      
+      
+      
+      SI  config.cDoubleScellantTous ALORS
+      	ldoublescellant = Arrondi(RequeteClientFiniIntercalaire.dimdoublescellantM)
+      	
+      SINON
+      	POUR i = 1 A 3
+      		
+      		SI PAS SansEspace({":composantbase"+NumériqueVersChaîne(i)}) = "" ALORS
+      			
+      			SI  PAS Droite(SansEspace({":composantbase"+NumériqueVersChaîne(i)}),1) = "3" ALORS
+      				ldoublescellant = Arrondi(RequeteClientFiniIntercalaire.dimdoublescellantM)
+      				SORTIR
+      			FIN
+      		FIN
+      		
+      	FIN
+      FIN
+      
+      
+      
+      
+      //si pas HEnDehors() et HTrouve() alors
+      SI HNbEnr(RequeteClientFiniIntercalaire) = 1 ALORS
+      	HLitPremier(RequeteClientFiniIntercalaire)
+      	:Intercalaire1	= RequeteClientFiniIntercalaire.Spacer1
+      	:intercalaire2  = RequeteClientFiniIntercalaire.Spacer2
+      	//	commandetrn.cdespaceinex = intercal.idescinex
+      	continuerrecherche = Faux
+      	
+      SINON
+      	
+      	
+      	RequeteClientFiniIntercalaire.pIdClient = Client.IDClient
+      	RequeteClientFiniIntercalaire.pcomposant1 = Complète(:composantbase1,10)
+      	RequeteClientFiniIntercalaire.pcomposant2 = Complète(:ComposantBase2,10)
+      	RequeteClientFiniIntercalaire.pcomposant3 = Complète(:ComposantBase3,10)
+      	RequeteClientFiniIntercalaire.pFini = Complète(:finish,15)
+      	RequeteClientFiniIntercalaire.pIdIntercalaireCouleur = :SpacerID
+      	HExécuteRequête(RequeteClientFiniIntercalaire)
+      	
+      	//Code WinDev 5.5 remplacé par la migration :
+      	//    si pas h.endehors et h.trouve alors
+      	SI HNbEnr(RequeteClientFiniIntercalaire) = 1 ALORS
+      		HLitPremier(RequeteClientFiniIntercalaire)
+      		:intercalaire1	= RequeteClientFiniIntercalaire.Spacer1
+      		:intercalaire2  = RequeteClientFiniIntercalaire.Spacer2
+      		//	commandetrn.cdespaceinex = intercal.idescinex
+      		continuerrecherche = Faux
+      	FIN
+      FIN
+      
+      
+      //fin
+      
+      
+      SI  :SpacerID = 0  ALORS
+      	:Intercalaire1 = ""
+      	:intercalaire2=""
+      	:bMessage = vrai
+      	:TexteMessage+= "Aucun intercalaire n'a été trouvé"
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      SI continuerrecherche ALORS
+      	SI HLitRecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,:Spacerid) ALORS
+      		SI HLitRecherche(Intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) ALORS
+      			ldoublescellant = Intercalaires.dimdoublescellantM
+      		FIN
+      	FIN
+      	
+      	
+      	SI PAS Position(:finish,".") = 0 ALORS
+      		lefini = Arrondi(Val(:Finish) * 25.4,3)
+      	SINON
+      		SI PAS Position(:finish,"/") = 0 ALORS
+      			lefini =NumériqueVersChaîne( ConvertAnglais(:Finish,"fini") * 25.4,"6.3f")
+      			
+      		SINON
+      			SI Val(:finish) < 6 ALORS
+      				lefini =NumériqueVersChaîne( ConvertAnglais(:finish,"fini") * 25.4,"6.3f")
+      			SINON
+      				lefini = Arrondi(Val(:finish)/1000 * 25.4,3)
+      				
+      			FIN
+      		FIN
+      	FIN
+      	
+      	:épaisseur+=ldoublescellant 
+      	
+      		
+      	
+      	
+      	
+      	SELON :nbVerre
+      	
+      		CAS 2
+      			lespace = Arrondi((lefini - :épaisseur) ,3)
+      			lespacetotale = Arrondi((lefini - :épaisseur) ,3)
+      			lmultiplicateur = 1
+      		CAS 3
+      			épaisseur+=ldoublescellant
+      			lespace = Arrondi((lefini - :épaisseur) / 2 ,3)
+      			lespacetotale = Arrondi((lefini - :épaisseur) ,3)
+      			lmultiplicateur = 2
+      			
+      	FIN	
+      	
+      	lespace = Arrondi(lespace/25.4,3)
+      	lespacetotale = Arrondi(lespacetotale/25.4,3)
+      	
+      	// Jean Hamelin 18-10-2014
+      	// décommenter pour calculer les spacers dans le cas d'un thermos triple
+      	// pour touver une combinaison le plus pres possible de l,espace disponible
+      	// il faut calculer avec l,espace totale et non l,espace divisée par 2
+      	
+      	SELON :nbVerre
+      		CAS 3
+      			
+      			 :remplirTableauIntercalaire(lespacetotale)
+      		CAS 2
+      			SI HExécuteRequêteSQL(Reqsql,hModifieFichier,ChaîneConstruit(txtreq,:SpacerID,lespace)) ET HNbEnr(Reqsql) > 0 ALORS
+      				HLitPremier(Reqsql)
+      				:intercalaire1 = Reqsql.nointercalaire
+      			SINON
+      
+      //				SI messageErreur ALORS
+      //					ACSO_message("Erreur","Aucun intercalaire ne correspond à votre demande"+RC+"SVP l'inscrire manuellement","Erreur")
+      //					RepriseSaisie(CDESPACE)
+      //				FIN
+      			FIN
+      	
+      
+      	FIN
+      
+      	
+      FIN
+      
+      
+      SI  :intercalaire1 = ""  ALORS
+      	:bMessage = Vrai
+      	:TexteMessage+= "Aucun intercalaire n'a été trouvé"
+      FIN
+      //
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : CalculPrixThermos
+     procedure_id : 1156772965184872661
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculPrixThermos (<_purchaseorder> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_purchaseorder (cOrderGenerate) : <indiquez ici le rôle de _purchaseorder>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculPrixThermos(_purchaseorder est un cOrderGenerate)
+      
+      resultat est un réel = 0
+      NbThermos est un entier = 0
+      Extra est une chaîne
+      ExtraT est une chaîne
+      PrixTotal est un réel = 0
+      PrixTotalM est un réel = 0
+      PrixTotalFutur est un réel = 0
+      PrixTotalFuturM est un réel = 0
+      special est un booléen = Faux
+      description est une chaine
+      
+      
+      SI  HLitRecherche(persoens,ennumero,Complète(:ThermosNumber,20),hIdentique) //ET  persoens.enfabrication
+      	//si pas sansespace(NoThermos)="" et hlitrecherche(persoens,ennumero,nothermos) ALORS
+      	//	si cdfabrication 
+      	SI HLitRecherche(ThermosClient,IdClientIdhermos,HConstruitValClé(ThermosClient,IdClientIdhermos,Complète(Client.numero,10),Complète(ThermosNumber,20))) ET ThermosClient.prixSpecial ALORS
+      		PrixTotal+=ThermosClient.Tprixa
+      		PrixTotalM+=ThermosClient.Tprixm
+      		special=Vrai
+      	SINON
+      		PrixTotal+=persoens.enprixa
+      		PrixTotalM+=persoens.enprixm
+      		special=Faux
+      	FIN
+      SINON
+      	
+      	
+      	SI SansEspace(:pane1) <> "" ALORS
+      		NbThermos++
+      		
+      		SI HLitRecherche(invent,INUM,:pane1)  ALORS
+      			:ProduitDeBase = invent.IPBASE
+      			SI PAS invent.ibase ALORS
+      				description+= sansespace(invent.idesccourte)+ " "
+      				Extra = invent.ipextra
+      				ExtraT = invent.ipextrat
+      				SI HLitRecherche(fClientExtra,IdClientNoProduit,HConstruitValClé(fClientExtra,IdClientNoProduit,_purchaseorder.ClientID,SansEspace(Extra))) ET fClientExtra.prixSpecial ALORS
+      					PrixTotal+=fClientExtra.PrixAnglais
+      					PrixTotalM+=fClientExtra.PrixMetrique
+      					special=Vrai
+      				SINON
+      					SI HLitRecherche(invent,INUM,Extra) ALORS
+      						PrixTotal+= Arrondi(invent.IPRIXA,2)
+      						PrixTotalM+= Arrondi(invent.IPRIXM,2)
+      						PrixTotalFutur+= Arrondi(invent.iprixfutur,2)
+      						PrixTotalFuturM+= Arrondi(invent.iprixfuturm,2)
+      					FIN
+      				FIN	
+      				SI HLitRecherche(fClientExtra,IdClientNoProduit,HConstruitValClé(fClientExtra,IdClientNoProduit,_purchaseorder.ClientID,SansEspace(ExtraT)))  ET fClientExtra.prixSpecial ALORS
+      					PrixTotal+=fClientExtra.PrixAnglais
+      					PrixTotalM+=fClientExtra.PrixMetrique
+      					special=Vrai
+      				SINON
+      					SI HLitRecherche(invent,INUM,ExtraT) ALORS
+      						PrixTotal+= Arrondi(invent.IPRIXA,2)
+      						PrixTotalM+= Arrondi(invent.IPRIXM,2)
+      						PrixTotalFutur+= Arrondi(invent.iprixfutur,2)
+      						PrixTotalFuturM+= Arrondi(invent.iprixfuturm,2)
+      					FIN
+      				FIN
+      			FIN
+      			
+      			
+      		FIN
+      		
+      	FIN
+      	
+      	SI SansEspace(:pane2) <> "" ALORS
+      		NbThermos++
+      		
+      		SI HLitRecherche(invent,INUM,:pane2)  ALORS
+      			:ProduitDeBase = val(droite(invent.IPBASE,1)) > Val(Droite(:ProduitDeBase,1)) ? invent.ipbase sinon :ProduitDeBase
+      			SI PAS invent.ibase ALORS
+      				description+= sansespace(invent.idesccourte)+ " "
+      				Extra = invent.ipextra
+      				ExtraT = invent.ipextrat
+      				SI HLitRecherche(fClientExtra,IdClientNoProduit,HConstruitValClé(fClientExtra,IdClientNoProduit,_purchaseorder.ClientID,SansEspace(Extra))) ET fClientExtra.prixSpecial ALORS
+      					PrixTotal+=fClientExtra.PrixAnglais
+      					PrixTotalM+=fClientExtra.PrixMetrique
+      					special=Vrai
+      				SINON
+      					SI HLitRecherche(invent,INUM,Extra) ALORS
+      						PrixTotal+= Arrondi(invent.IPRIXA,2)
+      						PrixTotalM+=Arrondi(invent.IPRIXM,2)
+      						PrixTotalFutur+= Arrondi(invent.iprixfutur,2)
+      						PrixTotalFuturM+= Arrondi(invent.iprixfuturm,2)
+      					FIN
+      				FIN
+      				SI HLitRecherche(fClientExtra,IdClientNoProduit,HConstruitValClé(fClientExtra,IdClientNoProduit,_purchaseorder.ClientID,SansEspace(ExtraT))) ET fClientExtra.prixSpecial ALORS
+      					PrixTotal+=fClientExtra.PrixAnglais
+      					PrixTotalM+=fClientExtra.PrixMetrique
+      					special=Vrai
+      				SINON
+      					
+      					SI HLitRecherche(invent,INUM,ExtraT) ALORS
+      						PrixTotal+= Arrondi(invent.IPRIXA,2)
+      						PrixTotalM+= Arrondi(invent.IPRIXM,2)
+      						PrixTotalFutur+= Arrondi(invent.iprixfutur,2)
+      						PrixTotalFuturM+= Arrondi(invent.iprixfuturm,2)
+      					FIN
+      				FIN
+      			FIN
+      			
+      		FIN
+      		
+      	FIN
+      	
+      	
+      	SI SansEspace(:pane3) <> "" ALORS
+      		NbThermos++
+      		
+      		SI HLitRecherche(invent,INUM,:pane3)  ALORS
+      	:ProduitDeBase = Val(Droite(invent.IPBASE,1)) > Val(Droite(:ProduitDeBase,1)) ? invent.IPBASE SINON :ProduitDeBase
+      			SI PAS invent.ibase ALORS
+      				description+= sansespace(invent.idesccourte)+ " "
+      				Extra = invent.ipextra
+      				ExtraT = invent.ipextrat
+      				SI HLitRecherche(fClientExtra,IdClientNoProduit,HConstruitValClé(fClientExtra,IdClientNoProduit,_purchaseorder.ClientID,SansEspace(Extra))) ET fClientExtra.prixSpecial ALORS
+      					PrixTotal+=fClientExtra.PrixAnglais
+      					PrixTotalM+=fClientExtra.PrixMetrique
+      					special=Vrai
+      				SINON
+      					SI HLitRecherche(invent,INUM,Extra) ALORS
+      						PrixTotal+= Arrondi(invent.IPRIXA,2)
+      						PrixTotalM+= Arrondi(invent.IPRIXM,2)
+      						PrixTotalFutur+= Arrondi(invent.iprixfutur,2)
+      						PrixTotalFuturM+= Arrondi(invent.iprixfuturm,2)
+      					FIN
+      				FIN
+      				SI HLitRecherche(fClientExtra,IdClientNoProduit,HConstruitValClé(fClientExtra,IdClientNoProduit,_purchaseorder.ClientID,SansEspace(ExtraT))) ET fClientExtra.prixSpecial ALORS
+      					PrixTotal+=fClientExtra.PrixAnglais
+      					PrixTotalM+=fClientExtra.PrixMetrique
+      					special=Vrai
+      				SINON
+      					
+      					SI HLitRecherche(invent,INUM,ExtraT) ALORS
+      						PrixTotal+= Arrondi(invent.IPRIXA,2)
+      						PrixTotalM+= Arrondi(invent.IPRIXM,2)
+      						PrixTotalFutur+= Arrondi(invent.iprixfutur,2)
+      						PrixTotalFuturM+= Arrondi(invent.iprixfuturm,2)
+      					FIN
+      				FIN
+      			FIN
+      			
+      			
+      		FIN
+      		
+      	FIN
+      	
+      	//si hlitrecherche(FclientExtra,IdClientNoProduit,HConstruitValClé(FclientExtra,IdClientNoProduit,_IdClient,sansespace(persoens.epbase))) et fclientextra.prixSpecial ALORS
+      	SI HLitRecherche(fClientExtra,IdClientNoProduit,HConstruitValClé(fClientExtra,IdClientNoProduit,_purchaseOrder.ClientID,SansEspace(:ProduitDeBase))) ET fClientExtra.prixSpecial ALORS
+      		special=Vrai
+      		SI NbThermos = 2 ALORS
+      			PrixTotal+= Arrondi(fClientExtra.PrixAnglaisD,2)
+      			PrixTotalM+= Arrondi(fClientExtra.PrixMetriqueD,2)
+      			:DescriptionThermos = "Th. Double " + description
+      		SINON SI NbThermos = 3
+      			PrixTotal+= Arrondi(fClientExtra.PrixAnglaisT,2)
+      			PrixTotalM+= Arrondi(fClientExtra.PrixMetriqueT,2)
+      			:DescriptionThermos = "Th. Triple" + description
+      		FIN
+      	SINON
+      		//	si hlitrecherche(invent,INUM,persoens.epbase) alors
+      		SI HLitRecherche(invent,INUM,:ProduitDeBase) ALORS
+      			SI  NbThermos = 2  ALORS
+      				PrixTotal+= Arrondi(invent.IPRIXDOUBLE,2)
+      				PrixTotalM+= Arrondi(invent.iprixdoublem,2)
+      				PrixTotalFutur+= Arrondi(invent.iprixfuturdouble,2)
+      				PrixTotalFuturM+= Arrondi(invent.iprixfuturdoublem,2)
+      			SINON SI  NbThermos = 3 
+      				PrixTotal+= Arrondi(invent.iprixtriple,2)
+      				PrixTotalM+= Arrondi(invent.iprixtriplem,2)
+      				PrixTotalFutur+= Arrondi(invent.iprixfuturtriple,2)
+      				PrixTotalFuturM+= Arrondi(invent.iprixfuturtriplem,2)
+      				
+      			FIN
+      		FIN
+      	FIN
+      FIN
+      
+      
+      :PrixPied = PrixTotal
+      :PrixPiedM = PrixTotalM
+      :Special = special
+      si :PrixPied = 0 et :PrixPiedM = 0 alors
+      	:TexteMessage += "Aucun prix trouvé pour ce thermos" + RC
+      	:bmessage = vrai
+      FIN
+      //RENVOYER NumériqueVersChaîne(PrixTotal)+","+NumériqueVersChaîne(PrixTotalM) + "," + special + ","+ NumériqueVersChaîne(PrixTotalFutur)+","+NumériqueVersChaîne(PrixTotalFuturM)
+      
+     type : 458752
+   -
+     name : SortingThermos
+     procedure_id : 1156773424746415453
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // SortingThermos ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SortingThermos()
+      
+      si :istempered alors
+      	:SortingType = 5
+      sinon	
+      	selon droite(sansespace(:ProduitDeBase),1)
+      		cas "3"
+      			si :Grill = "" alors
+      				:SortingType = 1
+      			sinon	
+      				:SortingType = 1
+      			FIN
+      			
+      		CAS "4"
+      			SI :Grill = "" ALORS
+      				:SortingType = 2
+      			SINON	
+      				:SortingType = 2
+      			FIN
+      		CAS "5"
+      			SI :Grill = "" ALORS
+      				:SortingType = 3
+      			SINON	
+      				:SortingType = 3
+      			FIN
+      		CAS "6"
+      			SI :Grill = "" ALORS
+      				:SortingType = 4
+      			SINON	
+      				:SortingType = 4
+      			FIN
+      			
+      		AUTRE CAS
+      			
+      	FIN
+      fin
+      
+     type : 458752
+   -
+     name : IsThermosTempered
+     procedure_id : 1156812328816310419
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] IsThermosTempered ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE IsThermosTempered()
+      :istempered = faux
+      si hlitrecherche(invent,INUM,:pane1) _and_ sansespace(invent.icategorie) = "VTR"  ALORS
+      	:istempered = vrai
+          Renvoyer vrai
+      FIN
+      SI HLitRecherche(invent,INUM,:Pane2) _AND_ sansespace(invent.icategorie) = "VTR"  ALORS
+      	:istempered = Vrai
+      	RENVOYER Vrai
+      FIN
+      SI HLitRecherche(invent,INUM,:Pane3) AND sansespace(invent.icategorie) = "VTR"  ALORS
+      	:istempered = Vrai
+      	RENVOYER Vrai
+      FIN
+     type : 458752
+   -
+     name : CalculPrixForme
+     procedure_id : 1156814540724524560
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // CalculPrixForme ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculPrixForme()
+      
+      
+      SI HLitRecherche(FormeClient,IdClientNoForme,HConstruitValClé(FormeClient,IdClientNoForme,...
+      	"139",:shape)) ALORS
+      	SI :nbverre = 2 ALORS :extraShape = FormeClient.fPrixdouble SINON :extraShape  = FormeClient.FpRixtriple
+      SINON	
+      	si hlitrecherche(forme,fnumero,:shape) alors
+      		SI :nbverre = 2 ALORS :extrashape  = forme.extradouble SINON :extrashape  = forme.extratriple
+      	fin
+      FIN
+      :bMessage = Vrai
+      :TexteMessage += "Il y a une forme sur cette ligne de commande" +RC
+      si :extrashape = 0 alors
+      	:bmessage = vrai
+      	:textemessage += "Aucun prix trouvé pour l'extra forme" +rc
+      FIN
+     type : 458752
+   -
+     name : CalculSurface
+     procedure_id : 1156814678163575568
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculSurface (<_purchaseOrder> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_purchaseOrder (cOrderGenerate) : <indiquez ici le rôle de _purchase0rder>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE PRIVÉE CalculSurface(_purchaseOrder est un cOrderGenerate)
+      
+      surface_entier_largeur est un reel
+      surface_fraction_largeur est un reel
+      surface_entier_hauteur est un reel
+      surface_fraction_hauteur est un reel
+      largeur_calcul est un reel 
+      hauteur_calcul est un reel 
+      largeur_calculm est un entier
+      hauteur_calculm est un entier 
+      
+      SELON _purchaseOrder.unitedemesure
+      	CAS 1 
+      		SI PAS _purchaseOrder.ClientCalculeSurfaceReelle ALORS
+      			surface_entier_largeur = PartieEntière(Val(:Width))
+      			surface_fraction_largeur = PartieDécimale(Val(:Width))
+      			surface_entier_hauteur = PartieEntière(Val(:Height))
+      			surface_fraction_hauteur = PartieDécimale(Val(:Height))
+      			
+      			SI modulo(surface_entier_largeur,2) = 0 ALORS
+      				SI PAS surface_fraction_largeur = 0  ALORS
+      					largeur_calcul = surface_entier_largeur + 2
+      				SINON
+      					largeur_calcul = surface_entier_largeur 
+      				FIN	
+      			SINON
+      				largeur_calcul = surface_entier_largeur + 1
+      			FIN	
+      			
+      			SI modulo(surface_entier_hauteur,2) = 0 ALORS
+      				SI PAS surface_fraction_hauteur = 0  ALORS
+      					hauteur_calcul = surface_entier_hauteur + 2
+      				SINON
+      					hauteur_calcul = surface_entier_hauteur 
+      				FIN	
+      			SINON
+      				hauteur_calcul = surface_entier_hauteur + 1
+      			FIN	
+      		SINON
+      			largeur_calcul  =Val(:Width)
+      			hauteur_calcul  =Val(:Height)
+      		FIN
+      		:surfaceanglais = max(Arrondi(hauteur_calcul * largeur_calcul / 144,2),_purchaseOrder.minimuma)
+      		
+      		largeur_calculm = Val(:Width)*25.4 
+      		hauteur_calculm = Val(:Height)*25.4
+      		largeurtempom est un réel
+      		hauteurtempoM est un reel
+      		
+      		SI PAS _purchaseOrder.ClientCalculeSurfaceReelle ALORS
+      			SI PAS modulo(largeur_calculm,20) = 0 ALORS
+      				largeur_calculm = largeur_calculm + (20 - modulo(largeur_calculm,20))
+      			FIN
+      			largeurtempom = largeur_calculm / 1000
+      			
+      			SI PAS modulo(hauteur_calculm,20) = 0 ALORS
+      				hauteur_calculm = hauteur_calculm + (20 - modulo(hauteur_calculm,20))
+      			FIN
+      			
+      			hauteurtempoM = hauteur_calculm / 1000
+      		SINON
+      			largeurtempom = largeur_calculm / 1000
+      			hauteurtempoM = hauteur_calculm / 1000
+      		FIN
+      		:SurfaceMetrique =max(Arrondi(hauteurtempoM * largeurtempom ,4),_purchaseOrder.minimumm)
+      		
+      		
+      	CAS 2
+      		largeur_calculm = Val(:Width) * 1000
+      		hauteur_calculm = Val(:Height) * 1000
+      		SI PAS Client.Calculsurfacereelle ALORS
+      			SI PAS modulo(largeur_calculm,20) = 0 ALORS
+      				largeur_calculm = largeur_calculm + (20 - modulo(largeur_calculm,20))
+      			FIN
+      			largeur_calculm = largeur_calculm / 1000
+      			
+      			SI PAS modulo(hauteur_calculm,20) = 0 ALORS
+      				hauteur_calculm = hauteur_calculm + (20 - modulo(hauteur_calculm,20))
+      			FIN
+      			
+      			hauteur_calculm = hauteur_calculm / 1000
+      		SINON
+      			largeur_calculm = largeur_calculm / 1000
+      			hauteur_calculm = hauteur_calculm / 1000
+      		FIN
+      		
+      		:surfacemetrique =max(Arrondi(hauteur_calculm * largeur_calculm ,4),_purchaseOrder.minimuma)
+      		
+      		LargeurTempo est un reel = Val(:width) * 1000 / 25.4
+      		HauteurTempo est un reel = Val(:Height) * 1000 / 25.4
+      		
+      		SI PAS _purchaseOrder.ClientCalculeSurfaceReelle ALORS
+      			surface_entier_largeur = PartieEntière(LargeurTempo)
+      			surface_fraction_largeur = PartieDécimale(LargeurTempo)
+      			surface_entier_hauteur = PartieEntière(HauteurTempo)
+      			surface_fraction_hauteur = PartieDécimale(HauteurTempo)
+      			
+      			SI modulo(surface_entier_largeur,2) = 0 ALORS
+      				SI PAS surface_fraction_largeur = 0  ALORS
+      					largeur_calcul = surface_entier_largeur + 2
+      				SINON
+      					largeur_calcul = surface_entier_largeur 
+      				FIN	
+      			SINON
+      				largeur_calcul = surface_entier_largeur + 1
+      			FIN	
+      			
+      			SI modulo(surface_entier_hauteur,2) = 0 ALORS
+      				SI PAS surface_fraction_hauteur = 0  ALORS
+      					hauteur_calcul = surface_entier_hauteur + 2
+      				SINON
+      					hauteur_calcul = surface_entier_hauteur 
+      				FIN	
+      			SINON
+      				hauteur_calcul = surface_entier_hauteur + 1
+      			FIN	
+      		SINON
+      			largeur_calcul  =LargeurTempo
+      			hauteur_calcul  =HauteurTempo
+      		FIN
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		
+      		:SurfaceAnglais =  Max(Arrondi(hauteur_calcul * largeur_calcul/144,2),_purchaseOrder.minimuma)
+      FIN	
+      
+      
+      
+      
+     type : 458752
+   -
+     name : CalculException10X5X1
+     procedure_id : 1156818822807195089
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CalculException10X5X1 ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculException10X5X1()
+      
+      si :CalculException10X5X  alors renvoyer Vrai
+      hlit(config,1)
+      
+      SI val(:height) and val(:width) <> 0 ALORS
+      	SI val(:width) > val(:height) ALORS
+      		SI PartieEntière(val(:width)/val(:Height)) >= 10 ALORS
+      			:PrixException10X = Arrondi(:PrixUnitaire * config.Exception10 / 100,2)
+      		SINON SI PartieEntière(Val(:Width)/Val(:Height)) >= 5 ALORS
+      			:PrixException5X = Arrondi(:PrixUnitaire * config.Exception5 / 100,2)
+      		FIN
+      	SINON
+      		SI PartieEntière(Val(:height)/Val(:width)) >= 10 ALORS
+      			:PrixException10X = Arrondi(:PrixUnitaire * config.Exception10 / 100,2)
+      		SINON SI PartieEntière(Val(:Height)/Val(:Width)) >= 5 ALORS
+      			:PrixException5X = Arrondi(:PrixUnitaire * config.Exception5 / 100,2)
+      		FIN
+      		
+      	FIN
+      FIN
+      
+      //
+      //SI lexception10 ALORS
+      //	commandeTRN.FDextra10X = Arrondi(commandeTRN.CdPRIXU * config.Exception10 / 100,2)
+      //	commandeTRN.FDextra5x = 0
+      //FIN
+      //SI lexception5 ALORS
+      //	commandeTRN.FDextra5x = Arrondi(commandeTRN.CdPRIXU * config.Exception5 / 100,2)
+      //	commandeTRN.FDextra10X = 0
+      //FIN
+     type : 458752
+   -
+     name : CalculSurfaceReelle
+     procedure_id : 1156818925886499260
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculSurfaceReelle ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE PRIVÉE CalculSurfaceReelle()
+      
+      largeur_calcul est un reel
+      hauteur_calcul est un reel
+      largeur_calculm est un entier
+      hauteur_calculm est un entier
+      largeurTempoM est un reel
+      hauteurTempoM est un reel
+      
+      
+      
+      SELON :unitedemesure
+      
+      	CAS 1 
+      		
+      		
+      		largeur_calcul = Val(:Width)
+      		hauteur_calcul = Val(:Height) 
+      		
+      		:SurfaceAnglaisReel = Arrondi(hauteur_calcul * largeur_calcul / 144,2)
+      		
+      		largeur_calculm =  Val(:Width) * 25.4
+      		
+      		largeurTempoM = largeur_calculm / 1000
+      		
+      		hauteur_calculm = Val(:Height) * 25.4
+      		
+      		hauteurTempoM = hauteur_calculm / 1000
+      		
+      	
+      		:SurfaceMetriquereel = Arrondi(hauteurTempoM * largeurTempoM,4)
+      		
+      		
+      		
+      	CAS 2
+      		
+      		//largeur_calcul = val(commandetrn.cdlargeur) * 1000
+      		largeur_calcul = Val(:width) * 1000
+      		
+      		largeur_calcul = largeur_calcul / 1000
+      		
+      		hauteur_calcul = Val(:Height) * 1000
+      		
+      		hauteur_calcul = hauteur_calcul / 1000
+      		
+      		
+      		
+      		:surfacemetriquereel = Arrondi(hauteur_calcul * largeur_calcul,4)
+      		
+      		
+      		largeur_calcul = Val(:Width) * 1000/ 25.4
+      		hauteur_calcul = Val(:Height) * 1000/ 25.4 
+      		
+      		:SurfaceAnglaisReel = Arrondi(hauteur_calcul * largeur_calcul / 144,2)
+      		
+      		
+      FIN	
+      
+      
+      
+     type : 458752
+   -
+     name : CalculEnergie
+     procedure_id : 1156819028965738958
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculEnergie (<_purchaseorder> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_purchaseorder (cOrderGenerate) : <indiquez ici le rôle de _purchaseorder>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculEnergie(_purchaseorder est un cOrderGenerate)
+      
+      
+      :surchargeenergie=0
+      selon :unitedemesure
+      	cas 1
+      		:surchargeenergie += Arrondi((:PrixUnitaire+:PrixException5X+:PrixException10X) * :Quantity,2) * _purchaseorder.SurchargeEnergieBase/ 100 //+ ...
+      		//			commandeTRN.surchargeenergie += Arrondi(commandeTRN.CDCARRPRIXTOTAL,2)  * commandeTRN.surchargecarrelage / 100//
+      	//			commandeTRN.surchargeenergie += Arrondi(commandeTRN.fdextraforme * commandeTRN.cdqte,2)  * commandeTRN.surchargeforme / 100
+      	cas 2
+      		:SurchargeEnergie += Arrondi((:PrixUnitaireM+:PrixException5X+:PrixException10X) * :Quantity,2) * _purchaseorder.SurchargeEnergieBase/ 100 //+ ...
+      fin
+      
+      
+     type : 458752
+   -
+     name : GetGrillType
+     procedure_id : 1156821910888875187
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // GetGrillType ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE GetGrillType()
+      
+      si :grill <> "" alors 
+      	//	si hlitrecherche(RelationEDI,IdClientdescriptionEDIClient,["013",4,:Grill+" " +:GrillSeal]) alors
+      	//		:GrillNumberInternal = RelationEDI.IDCarrelage
+      	si hlitrecherche(invent,INUM,majuscule(complete(:Grill,10))) alors
+      		si hlitrecherche(typecarr,tcdescription,invent.itypecarr) alors
+      			:typecarrelage = typecarr.tcdescription
+      		fin
+      		
+      	sinon
+      		:bMessage = vrai
+      		:TexteMessage+= "Un problème est survenu avec le carrelage " + :Grill  + rc 
+      	fin
+      
+      	
+      FIN
+      
+     type : 458752
+   -
+     name : CalculNbCarreau
+     procedure_id : 1156823040465340912
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculNbCarreau (<_purchaseOrder> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_purchaseOrder (cOrderGenerate) : < indiquez ici le rôle de methode >
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculNbCarreau(_purchaseOrder est un cOrderGenerate)
+      
+      // méthode  1 = normal
+      //          2 = contour
+      //          3 = semi-contour 
+      hlit(config,1)
+      methode est une entier
+      LOCAL
+      	NbCarreau est un entier
+      	met1 est une chaine = config.formulecontour
+      	met2 est une chaine = config.formulesemicontour
+      	formule1 est une chaine 
+      	formule2 est une chaine = "y est un reel"+RC+"y="+met2+RC+"renvoyer(y)"
+      	res est une chaine
+      	
+      SI _purchaseOrder.clientcalculCarrelageSpecialContour ALORS
+      	
+      	SI hlitrecherche(typecarr,tcdescription,:typecarrelage) _et_ SansEspace(typecarr.TcalculQteContour) <> "" ALORS
+      		nbl est un entier = :GrillBase
+      		nbh est un entier = :GrillHeight
+      		formule1 = sansespace(typecarr.TcalculQteContour)
+      		
+      		methode = 2
+      	FIN	
+      SINON
+      	methode = 1
+      FIN
+      
+      
+      SELON methode
+      	CAS 1
+      		:NbCarreau = :grillbase * :GrillHeight
+      		si :grillbase = 0 or :grillheight = 0 alors
+      			:bMessage = vrai
+      			:TexteMessage += "Le nombre de carrelage en hauteur ou en largeur ne peut pas être 0"+rc
+      		FIN
+      	CAS 2
+      //		res = Compile("formulec1",formule1)
+      //		SI res = "" ALORS
+      //			NbCarreau = ExécuteTraitement("formulec1",trtProcédure) 
+      //		FIN
+      		
+      		oCalculator est un calculator()
+      		oCalculator.SetValueInteger("NBL",:grillbase)
+      		oCalculator.SetValueInteger("NBH",:GrillHeight)
+      		:NbCarreau = oCalculator.Compute(formule1)
+      
+      		SI :nbcarreau = 0 ALORS
+      			:bMessage = Vrai
+      			:TexteMessage += "Le nombre de carrelage en hauteur ou en largeur ne peut pas être 0"+RC
+      		FIN
+      		
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : CalculPrixCarrelage
+     procedure_id : 1156823375472867687
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CalculPrixCarrelage (<_purchaseOrder> est cOrderGenerate)
+      //
+      // Paramètres :
+      //	_purchaseOrder (cOrderGenerate) : <indiquez ici le rôle de NbCarreau>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculPrixCarrelage(_purchaseOrder est un cOrderGenerate)
+      
+      // Carrelage
+      MemCrée("Tableau_millimetre")
+      MemCrée("Tableau_anglais")
+      MemCrée("Tableau_metrique")
+      remplittableauAnglaisMetrique()
+      
+      
+      HLit(Config,1)
+      
+      
+      
+      SI PAS :NbCarreau = 0  ALORS
+      	
+      	
+      	SI HLitRecherche(Invent,INUM,:Grill) ALORS
+      		
+      		
+      		
+      		:CodeGlCarrelage = Invent.ICODEGL
+      		:DescriptionCarrelage = Invent.IDESC
+      		clederecherche est une chaine = HConstruitValClé(ProduitClient,IdClientIdproruit,_purchaseOrder.NoClient,:Grill)
+      		SI HLitRecherche(ProduitClient,IdClientIdproruit,clederecherche,hIdentique) _et_ ProduitClient.IPprixSpecial ALORS
+      //			SI ProduitClient.IPprixSpecial ALORS
+      				:PrixUnitaireCarrelage = ProduitClient.IPrixa
+      				:PrixDeBAseCArreau  = ProduitClient.iprixm
+      //			FIN
+      		sinon
+      			SI 	HLitRecherche(invent,INUM,:Grill) alors
+      				:PrixUnitaireCarrelage = invent.iprixcarreau
+      				:PrixDeBaseCarreau  = invent.iprixbasecarrelage
+      			fin
+      			
+      		FIN
+      		
+      		
+      	FIN
+      	si :PrixUnitaireCarrelage = 0 et :PrixDeBaseCarreau = 0  alors
+      		:Bmessage = vrai
+      		:TexteMessage += "Aucun prix trouvé pour le carrelage" + rc
+      		
+      		
+      	FIN
+      SINON
+      	
+      	
+      FIN
+      
+      
+      
+      
+     type : 458752
+   -
+     name : CAlculCarrelage
+     internal_properties : CQAAAAkAAAB599lXEl1/jm/yrhbbXgQhy7vhEdC/vpVlr/eqPAKxpIpdCUQb3q9ltJx4X+2TARmge+DbSyXBswAPlC5a
+     procedure_id : 1156823521501789189
+     type_code : 12
+     code : |1+
+      Procédure CAlculCarrelage(BarreDifferente est un booleen = faux)
+      
+      i est un entier
+      formule est une chaine
+      aEnlever est un reel = 0 
+      aenlevertete est un entier = 0
+      fvtcv est une chaine
+      fvtch est une chaine
+      positionInvent est un entier
+      resultatcondition est un booleen = faux
+      clederecherche est une chaine
+      lTotalCarrLineaire est un entier
+      EstArgon est un booleen = (position(fdetail.fcapgaztube,"Z") <> 0) 
+      oCalculator est un calculator = allouer un calculator()
+      oCalculator.ResetVariables()
+      
+      
+      //si sansespace(fdetail.fdnumcarr) = "" ou pas hlitrecherche(invent,INUM,fdetail.fdNumCarr) alors
+      //	dFinDessin(ImageCarrelage)
+      //	fdetail.Imagecarrelage = ImageCarrelage
+      //	//	HModifie(fdetail,hNumEnrEnCours)
+      //	pour i = 1 a 10
+      //		fdetail.vMarquageHC[i]=0
+      //		fdetail.vMarquagelC[i]=0
+      //		fdetail.vMarquageHs[i]=0
+      //		fdetail.vMarquagels[i]=0
+      //
+      //	FIN
+      //	retour
+      //FIN
+      
+      oCalculator.SetValueInteger("NBH",:GrillHeight)
+      oCalculator.SetValueInteger("NBL",:Grillbase)
+      selon :unitedemesure
+      	cas 1
+      		oCalculator.SetValue("L1",InchFractionToMillimeter(:LargeurCachee))
+      		oCalculator.SetValue("H1",InchFractionToMillimeter(:HauteurCachee))
+      	CAS 2
+      		oCalculator.SetValue("L1",LargeurCachee)
+      		oCalculator.SetValue("H1",HauteurCachee)
+      		
+      	AUTRE CAS
+      		
+      FIN
+      
+      HLitRecherche(typecarr,tcdescription,:typecarrelage)
+      Value est un reel = typecarr.VariableUtil
+      oCalculator.SetValue("LCC",Value)
+      oCalculator.SetValue("HCC",Value)
+      oCalculator.SetValue("HTE",Value)
+      oCalculator.SetValue("vx",Value)
+      :Variablex = Value
+      Value  = typecarr.VariableUtil1
+      oCalculator.SetValue("vx1",Value)
+      :variablex1 = Value
+      Value  = typecarr.EpaisseurTigeLargeur
+      oCalculator.SetValue("ETL",Value)
+      Value  = typecarr.EpaisseurTigeHauteur
+      oCalculator.SetValue("ETH",Value)
+      oCalculator.setvalue("DDH",0)
+      oCalculator.SetValue("DDV",0)
+      
+      
+      
+      //lcc = fdetail.fdvariablex
+      //HCC = fdetail.fdvariablex
+      //HTE = fdetail.fdvariablex
+      //DDV = fdetail.fdddv
+      //DDh = fdetail.fdDDH
+      //dth=fdetail.fdt
+      //vx = fdetail.fdvariablex
+      //vx1 = fdetail.fdvariablex1
+      
+      //si Position(fdetail.fcapgaztube,"T") <> 0 alors
+      //	ALUM = 0
+      ////	ICN = config.vAleurICN
+      //sinon si Position(fdetail.fcapgaztube,"I") = 0 et Position(fdetail.fcapgaztube,"T") = 0 alors
+      ////	alum = config.ValeurAlum
+      //	ICN = 0
+      //sinon
+      //	alum = 0	
+      //	ICN = 0
+      //FIN
+      //
+      //ARGON = config.ValeurArgon
+      
+      //hlitrecherche(typecarr,tcdescription,invent.itypecarr)
+      
+      //c = typecarr.EpaisseurCadre
+      //etl = typecarr.EpaisseurTigeLargeur
+      //eth = typecarr.EpaisseurTigeHauteur
+      
+      si  hlitrecherche(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,...
+      	hconstruitvalcle(IntercalaireCouleurDimensions,IDIntercalaireCouleursnumero,:SpacerID,:intercalaire1)) alors
+      	//	info(IntercalaireCouleurDimensions.Description)
+      	//fin
+      	
+      	//si hlitrecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,fdetail.ftypespacer) alors
+      	si :energiverre alors
+      		Value = IntercalaireCouleurDimensions.Varinter1A
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire1),Value)
+      		Value = IntercalaireCouleurDimensions.Varinter2A
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire2),Value)
+      		Value = IntercalaireCouleurDimensions.Varinter3A
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire3),Value)
+      		Value = IntercalaireCouleurDimensions.Varinter4A
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire4),Value)
+      		Value = IntercalaireCouleurDimensions.Varinter5A
+      		oCalculator.SetValue(SansEspace(config.VariableIntercalaire5),Value)
+      		
+      		//		VarInter1=IntercalaireCouleurDimensions.VarInter1A
+      		//		VarInter2=IntercalaireCouleurDimensions.VarInter2A
+      		//		VarInter3=IntercalaireCouleurDimensions.VarInter3A
+      		//		VarInter4=IntercalaireCouleurDimensions.VarInter4A
+      		//		VarInter5=IntercalaireCouleurDimensions.VarInter5A
+      	sinon
+      		Value = IntercalaireCouleurDimensions.Varinter1
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire1),Value)
+      		Value = IntercalaireCouleurDimensions.varinter2
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire2),Value)
+      		Value = IntercalaireCouleurDimensions.varinter3
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire3),Value)
+      		Value = IntercalaireCouleurDimensions.varinter4
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire4),Value)
+      		Value = IntercalaireCouleurDimensions.varinter5
+      		oCalculator.SetValue(sansespace(config.VariableIntercalaire5),Value)
+      		//		VarInter1=IntercalaireCouleurDimensions.VarInter1
+      		//		VarInter2=IntercalaireCouleurDimensions.VarInter2
+      		//		VarInter3=IntercalaireCouleurDimensions.VarInter3
+      		//		VarInter4=IntercalaireCouleurDimensions.VarInter4
+      		//		VarInter5=IntercalaireCouleurDimensions.VarInter5
+      		
+      	fin
+      	si hlitrecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,:SpacerID) alors
+      		si hlitrecherche(intercalaires,IDIntercalaires,IntercalaireCouleurs.idIntercalaires) alors
+      			Value = Intercalaires.EpaisseurCadre
+      			oCalculator.SetValue("c",Value)
+      			//			c = intercalaires.EpaisseurCadre
+      		fin
+      	fin
+      FIN
+      
+      pour i = 1 a 20
+      	Value = typecarr.TConstantes[i]
+      	oCalculator.SetValue("K"+i,Value)
+      	//	{"K"+i} = typecarr.TConstantes[i]
+      FIN
+      //pour i = 1 a 10
+      //	{"NM"+i} = 0
+      //	{"DM"+i} = 0
+      //	{"VM"+i} = 0
+      //	{"VD"+i} = 0
+      //	{"HM"+i} = 0
+      //	{"HD"+i} = 0
+      //	{"CL"+i} = 0
+      //	{"CH"+i} = 0
+      //	{"SL"+i} = 0
+      //	{"SH"+i} = 0
+      //
+      //FIN
+      
+      
+      
+      
+      pour i = 1 a 10
+      	SI validecondition(typecarr.ConditionSiNM[i],oCalculator)  ALORS
+      		formule = SansEspace(typecarr.ConditionAlorsNM[i])
+      		oCalculator.SetValue("NM"+i,oCalculator.Compute(formule))
+      	sinon		
+      		formule = sansespace(typecarr.nbmorceau[i])
+      		oCalculator.SetValue("NM"+i,oCalculator.compute(formule))
+      	fin
+      	oCalculator.SetValueNoCompute("DE"+i,typecarr.tdescription[i])	
+      	SI ValideCondition(typecarr.ConditionSiDM[i],oCalculator)  ALORS
+      		formule = SansEspace(typecarr.ConditionalorsDM[i])
+      		oCalculator.SetValue("DM"+i,oCalculator.Compute(formule))
+      	SINON		
+      		formule = SansEspace(typecarr.nbdimension[i])
+      		oCalculator.SetValue("DM"+i,oCalculator.Compute(formule))
+      	FIN
+      	
+      	SI ValideCondition(typecarr.ConditionSiCL[i],oCalculator)  ALORS
+      		formule = SansEspace(typecarr.ConditionalorsCL[i])
+      		oCalculator.SetValue("CL"+i,oCalculator.Compute(formule))
+      	SINON		
+      		formule = SansEspace(typecarr.TcFormuleCL[i])
+      		oCalculator.SetValue("CL"+i,oCalculator.Compute(formule))
+      	FIN
+      	
+      	SI ValideCondition(typecarr.ConditionSiCH[i],oCalculator)  ALORS
+      		formule = SansEspace(typecarr.ConditionalorsCH[i])
+      		oCalculator.SetValue("CH"+i,oCalculator.Compute(formule))
+      	SINON		
+      		formule = SansEspace(typecarr.TcFormuleCH[i])
+      		oCalculator.SetValue("CH"+i,oCalculator.Compute(formule))
+      	FIN
+      	
+      	SI ValideCondition(typecarr.ConditionSiSL[i],oCalculator)  ALORS
+      		formule = SansEspace(typecarr.ConditionalorsSL[i])
+      		oCalculator.SetValue("SL"+i,oCalculator.Compute(formule))
+      	SINON		
+      		formule = SansEspace(typecarr.TcFormuleSL[i])
+      		oCalculator.SetValue("SL"+i,oCalculator.Compute(formule))
+      	FIN
+      	
+      	SI ValideCondition(typecarr.ConditionSiSH[i],oCalculator)  ALORS
+      		formule = SansEspace(typecarr.ConditionalorsSH[i])
+      		oCalculator.SetValue("SH"+i,oCalculator.Compute(formule))
+      	SINON		
+      		formule = SansEspace(typecarr.TcFormuleSH[i])
+      		oCalculator.SetValue("SH"+i,oCalculator.Compute(formule))
+      	FIN
+      fin
+      
+      
+      renvoyer oCalculator
+      
+      //	formule = RemplaceFormule(formule)
+      //	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      //	si res = "" alors
+      //		
+      //		//		si pas valideformule(formule) alors
+      //		//			{"NM"+i} = 0
+      //		//		sinon
+      //		//			{"NM"+i} = executetraitement("formule1",trtProcédure)
+      //		//		fin
+      //		si 	{"NM"+i} < 0 alors
+      //			{"NM"+i} = 0
+      //		FIN
+      //		
+      //		si sansespace(typecarr.conditionsinm[i]) = "" alors
+      //			//			impvideo.vnbmorceau[i] = oCalculator.GetValue("NM"+i)
+      //		sinon
+      //			//			formule = sansespace(typecarr.conditionsinm[i])
+      //			//			formule = RemplaceFormule(formule)
+      //			formule = SansEspace(typecarr.ConditionSiNM[i])
+      //			oCalculator.SetValue("NM"+i,oCalculator.Compute(formule))
+      //			//			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //			//			si res = "" alors
+      //			//				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      //			//				
+      //			//				si resultatcondition  alors
+      //			//					formule = sansespace(typecarr.conditionalorsnm[i])
+      //			//					formule = RemplaceFormule(formule)
+      //			//					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //			//					si res = "" ALORS
+      //			//						{"NM"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      //			//						
+      //			//						impvideo.vnbmorceau[i] = {"NM"+i}
+      //			//					sinon
+      //			//						{"NM"+i} = 0
+      //			//						
+      //			//					fin
+      //			//					
+      //			//				sinon
+      //			//					impvideo.vnbmorceau[i] = {"NM"+i}
+      //			//					
+      //			//				fin
+      //			//			sinon
+      //			//				{"NM"+i} = 0
+      //			//				
+      //			//			fin
+      //			
+      //		fin
+      ////		impvideo.Vdescriptionmorceau[i] = typecarr.tdescription[i]
+      //	FIN
+      ////	impvideo.vnbmorceau[i] = {"NM"+i}
+      //	
+      
+      
+      
+      
+      //	formule = sansespace(typecarr.nbdimension[i])
+      //	formule = RemplaceFormule(formule)
+      //	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      //	si res = "" alors
+      //		//		si pas valideformule(formule) alors
+      //		//			{"DM"+i} = 0
+      //		//		sinon
+      //		//			{"DM"+i} = executetraitement("formule1",trtProcédure)
+      //		//		fin
+      //		si 	{"DM"+i} < 0 alors
+      //			{"DM"+i} = 0
+      //		FIN
+      //		
+      //		
+      //		
+      //		si sansespace(typecarr.conditionsidm[i]) = "" alors
+      //			impvideo.vdimensionmorceau[i] = {"DM"+i}
+      //		sinon
+      //			formule = sansespace(typecarr.conditionsidm[i])
+      //			formule = RemplaceFormule(formule)
+      //			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //			si res = "" alors
+      //				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      //				
+      //				si resultatcondition  alors
+      //					formule = sansespace(typecarr.conditionalorsdm[i])
+      //					formule = RemplaceFormule(formule)
+      //					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //					si res = "" ALORS
+      //						{"DM"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      //						
+      //						impvideo.vdimensionmorceau[i] = {"DM"+i}
+      //					sinon
+      //						{"DM"+i} = 0
+      //						
+      //					fin
+      //					
+      //				sinon
+      //					impvideo.vdimensionmorceau[i] = {"DM"+i}
+      //				fin
+      //			sinon
+      //				{"DM"+i} = 0
+      //				
+      //			fin
+      //			
+      //		fin
+      //		
+      //	FIN
+      //	impvideo.vdimensionmorceau[i] = {"DM"+i}
+      //	
+      //fin
+      //
+      ////pour i = 1 a nbh - 1 - aenlever
+      //pour i = 1 a 10
+      //	formule = sansespace({"typecarr.tcformuleCL"}[i])
+      //	formule = RemplaceFormule(formule)
+      //	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      //	si res = "" alors
+      //		//		si pas valideformule(formule) alors
+      //		//			{"CL"+i} = 0
+      //		//		sinon
+      //		//			{"CL"+i} = executetraitement("formule1",trtProcédure)
+      //		//		fin
+      //		si 	{"CL"+i} < 0 alors
+      //			{"CL"+i} = 0
+      //		FIN
+      //		
+      //		
+      //		si sansespace(typecarr.conditionsicl[i]) = "" alors
+      //			impvideo.vMarquageLC[i] = {"CL"+i}
+      //		sinon
+      //			formule = sansespace(typecarr.conditionsicl[i])
+      //			formule = RemplaceFormule(formule)
+      //			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //			si res = "" alors
+      //				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      //				
+      //				si resultatcondition  alors
+      //					formule = sansespace(typecarr.conditionalorscl[i])
+      //					formule = RemplaceFormule(formule)
+      //					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //					si res = "" ALORS
+      //						{"CL"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      //						
+      //						impvideo.vMarquageLC[i] = {"CL"+i}
+      //					sinon
+      //						{"CL"+i} = 0
+      //						
+      //					fin
+      //					
+      //				sinon
+      //					impvideo.vMarquageLC[i] = {"CL"+i}
+      //				fin
+      //			sinon
+      //				{"CL"+i} = 0
+      //				
+      //			fin
+      //			
+      //		fin
+      //		
+      //		
+      //		
+      //		
+      //		
+      //	FIN
+      //	
+      //	impvideo.vMarquageLC[i] = {"CL"+i}
+      //fin
+      //
+      //
+      //
+      //
+      //pour i =1 a 10
+      //	//pour i =1 a nbl-1 -aenlever
+      //	formule = sansespace({"typecarr.tcformuleCH"}[i])
+      //	formule = RemplaceFormule(formule)
+      //	
+      //	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      //	si res = "" alors
+      //		//		si pas valideformule(formule) alors
+      //		//			{"CH"+i} = 0
+      //		//		sinon
+      //		//			{"CH"+i} = executetraitement("formule1",trtProcédure)
+      //		//		fin
+      //		si 	{"CH"+i} < 0 alors
+      //			{"CH"+i} = 0
+      //		FIN
+      //		
+      //		si sansespace(typecarr.conditionsich[i]) = "" alors
+      //			impvideo.vMarquagehC[i] = {"CH"+i}
+      //		sinon
+      //			formule = sansespace(typecarr.conditionsich[i])
+      //			formule = RemplaceFormule(formule)
+      //			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //			si res = "" alors
+      //				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      //				
+      //				si resultatcondition  alors
+      //					formule = sansespace(typecarr.conditionalorsch[i])
+      //					formule = RemplaceFormule(formule)
+      //					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //					si res = "" ALORS
+      //						{"CH"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      //						
+      //						impvideo.vMarquagehC[i] = {"CH"+i}
+      //					sinon
+      //						{"CH"+i} = 0
+      //						
+      //					fin
+      //					
+      //				sinon
+      //					impvideo.vMarquageHC[i] = {"CH"+i}
+      //				fin
+      //			sinon
+      //				{"CH"+i} = 0
+      //				
+      //			fin
+      //		FIN
+      //		
+      //		
+      //	FIN
+      //	impvideo.vMarquagehC[i] = {"CH"+i}
+      //fin
+      //
+      //
+      ////pour i = 1 a nbh-1-aenlever- aenlevertete
+      //pour i = 1 a 10
+      //	formule = sansespace({"typecarr.tcformuleSL"}[i])
+      //	formule = RemplaceFormule(formule)
+      //	
+      //	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      //	si res = "" alors
+      //		//		si pas valideformule(formule) alors
+      //		//			{"SL"+i} = 0
+      //		//		sinon
+      //		//			{"SL"+i} = executetraitement("formule1",trtProcédure)
+      //		//		fin
+      //		si 	{"SL"+i} < 0 alors
+      //			{"SL"+i} = 0
+      //		FIN
+      //		//		impvideo.vMarquageLC[i] = numeriqueverschaine(formule1())
+      //		
+      //		si sansespace(typecarr.conditionsisl[i]) = "" alors
+      //			impvideo.vMarquagels[i] = {"SH"+i}
+      //		sinon
+      //			formule = sansespace(typecarr.conditionsisl[i])
+      //			formule = RemplaceFormule(formule)
+      //			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //			si res = "" alors
+      //				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      //				
+      //				si resultatcondition  alors
+      //					formule = sansespace(typecarr.conditionalorssl[i])
+      //					formule = RemplaceFormule(formule)
+      //					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //					si res = "" ALORS
+      //						{"SL"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      //						
+      //						impvideo.vMarquagels[i] = {"SL"+i}
+      //					sinon
+      //						{"SL"+i} = 0
+      //						
+      //					fin
+      //					
+      //				sinon
+      //					impvideo.vMarquageLS[i] = {"SL"+i}
+      //				fin
+      //			sinon
+      //				{"SL"+i} = 0
+      //				
+      //			fin
+      //			
+      //		FIN
+      //		
+      //	fin
+      //	impvideo.vMarquageLS[i] = {"SL"+i}
+      //fin
+      //
+      //
+      ////pour i =1 a nbl-1-aenlever 
+      //pour i =1 a 10
+      //	formule = sansespace({"typecarr.tcformuleSH"}[i])
+      //	formule = RemplaceFormule(formule)
+      //	
+      //	res = compile("formule1","y est un reel"+rc+"y="+formule+rc+"renvoyer y") 
+      //	si res = "" alors
+      //		//		si pas valideformule(formule) alors
+      //		//			{"SH"+i} = 0
+      //		//		sinon
+      //		//			{"SH"+i} = executetraitement("formule1",trtProcédure)
+      //		//		fin
+      //		si 	{"SH"+i} < 0 alors
+      //			{"SH"+i} = 0
+      //		FIN
+      //		//		impvideo.vMarquageLC[i] = numeriqueverschaine(formule1())
+      //		
+      //		si sansespace(typecarr.conditionsish[i]) = "" alors
+      //			impvideo.vMarquagehs[i] = {"SH"+i}
+      //		sinon
+      //			formule = sansespace(typecarr.conditionsish[i])
+      //			formule = RemplaceFormule(formule)
+      //			res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //			si res = "" alors
+      //				resultatcondition = ExécuteTraitement("formule2",trtProcédure)
+      //				
+      //				si resultatcondition  alors
+      //					formule = sansespace(typecarr.conditionalorssh[i])
+      //					formule = RemplaceFormule(formule)
+      //					res = compile("formule2","y est un reel"+RC+"y="+formule+RC+"renvoyer y ")
+      //					si res = "" ALORS
+      //						{"SH"+i} = (ExécuteTraitement("formule2",trtProcédure))
+      //						
+      //						impvideo.vMarquagehs[i] = {"SH"+i}
+      //					sinon
+      //						{"SH"+i} = 0
+      //						
+      //					fin
+      //					
+      //				sinon
+      //					impvideo.vMarquageHS[i] = {"SH"+i}
+      //				fin
+      //			sinon
+      //				{"SH"+i} = 0
+      //				
+      //			fin
+      //			
+      //		FIN
+      //		
+      //		
+      //	FIN
+      //	
+      //	impvideo.vMarquagehs[i] = {"SH"+i}
+      //fin
+      //
+      ////clederecherche = hconstruitvalcle(fdetail,fdcle,tempo.tcomm,tempo.tlignedecommande)
+      ////si hlitrecherche(fdetail,fdcle,clederecherche) alors
+      ////	si fdetail.fdlien <> 0 alors
+      ////		hlitsuivant(fdetail,fdcle)
+      ////		si fdetail.fdlien = tempo.tligne alors
+      //
+      //pour i = 1 a 10
+      //	lTotalCarrLineaire+= impvideo.vnbmorceau[i]*impvideo.vDimensionMorceau[i]
+      //	fdetail.vnbmorceau[i] = impvideo.vnbmorceau[i]
+      //	fdetail.FDdescriptionmorceau[i] = impvideo.Vdescriptionmorceau[i]
+      //	fdetail.vDimensionMorceau[i] = impvideo.vDimensionMorceau[i]
+      //	fdetail.vMarquageHC[i] = impvideo.vMarquageHC[i]
+      //	fdetail.vMarquageHs[i] = impvideo.vMarquageHs[i]
+      //	fdetail.vMarquageLC[i] = impvideo.vMarquagelC[i]
+      //	fdetail.vMarquagels[i] = impvideo.vMarquagels[i]
+      //	
+      //FIN
+      //fdetail.FtotalbarrePeinture = lTotalCarrLineaire/1000*tauxconversionamlineaire
+      //dessinecarrelage1(fdetail.fdtypecalcul)
+      //fdetail.Imagecarrelage = imagecarrelage
+      ////hmodifie(fdetail,hNumEnrEnCours)
+      ////		fin
+      ////	FIN
+      ////fin
+      //
+      //
+      //
+     type : 458752
+   -
+     name : RemplirTableauIntercalaire
+     procedure_id : 1156840641249874321
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //RemplirTableauIntercalaire (<lespacetotale>)
+      //
+      // Paramètres :
+      //	lespacetotale : <indiquez ici le rôle de lespacetotale>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      
+      //
+      //	SpacerID :<indiquez ici le rôle de SpacerID>
+      PROCEDURE PRIVÉE RemplirTableauIntercalaire(lespacetotale)
+      
+      
+      
+      reqsql est un source de donnees
+      txtsql est une chaine = "select * from IntercalaireCouleurDimensions where IDIntercalaireCouleurs = %1 order by dimensioni"
+      txtsql = ChaîneConstruit(txtsql,:SpacerID)
+      tabDimensioncroise est un tableau de 0 par 5 chaines
+      tabdimension est un tableau de 0 par 4 chaine
+      tabdimensionChoix est un tableau de 0 par 2 chaine
+      Dimensionatrairer est une chaine = ""
+      lchaine est une chaine 
+      lmin est un reel
+      lmax est un reel
+      ldifferenceajoute est un reel = 0
+      ldebut est un booleen = vrai
+      
+      cpt est un entier = 1
+      cpt1 est un entier = 1
+      SI HExécuteRequêteSQL(reqsql,hRequêteDéfaut,txtsql) ALORS
+      	POUR TOUT reqsql 
+      		Dimension(tabdimension,cpt,4)
+      		tabdimension[cpt,1] = reqsql.numero
+      		tabdimension[cpt,2] = NumériqueVersChaîne(Arrondi(reqsql.dimensioni,3))
+      		tabdimension[cpt,3] = NumériqueVersChaîne(Arrondi(reqsql.toleranceplus,3))
+      		tabdimension[cpt,4] = NumériqueVersChaîne(Arrondi(reqsql.tolerancemoins,3))
+      		cpt++
+      	FIN
+      SINON
+      	Info(HErreurInfo(hErrComplet))
+      FIN
+      
+      
+      POUR cpt = 1 _A_ Dimension(tabdimension)/4
+      	POUR cpt1 = cpt _A_ Dimension(tabdimension)/4
+      		TableauAjouteLigne(tabDimensioncroise,tabdimension[cpt,1]+","+tabdimension[cpt1,1] , NumériqueVersChaîne(Val(tabdimension[cpt,2]) +   Val(tabdimension[cpt1,2])),...
+      		Min(tabdimension[cpt,3],tabdimension[cpt1,3]),Min(tabdimension[cpt,4],tabdimension[cpt1,4]),Abs(Val(lespacetotale)-(Val(tabdimension[cpt,2]) +   Val(tabdimension[cpt1,2]))))
+      		
+      		
+      		
+      		
+      		
+      	FIN
+      FIN
+      TableauTrie(tabDimensioncroise,ttCroissant,5)
+      POUR cpt = 1 _A_ Dimension(tabDimensioncroise)/5
+      	lmin = Val(tabDimensioncroise[cpt,2]) - Val(tabDimensioncroise[cpt,4])
+      	lmax = Val(tabDimensioncroise[cpt,2]) + Val(tabDimensioncroise[cpt,3])
+      	
+      	
+      	
+      	SI lmin < lespacetotale < lmax ALORS
+      		//		si Val(tabDimensioncroise[cpt,5]) = ldifferenceajoute ou ldebut alors
+      		TableauAjouteLigne(tabdimensionChoix,tabDimensioncroise[cpt,1],tabDimensioncroise[cpt,2])
+      		//		    ldifferenceajoute = Val(tabDimensioncroise[cpt,5])
+      		//            ldebut = faux
+      	SINON
+      		SORTIR
+      		//		fin
+      		
+      	FIN
+      	
+      FIN
+      
+      SI Dimension(tabdimensionChoix)/2 > 1 ALORS
+      	:Intercalaire1 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),1,",")
+      	:Intercalaire2 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),2,",")
+          :bMessage = vrai
+          :TexteMessage = "Plusieurs combinaison d'intercalaire étaient disponible "
+          pour i = 1 a Dimension(tabdimensionChoix)/2 
+          	:textemessage += "["+ExtraitChaîne(SansEspace(tabdimensionChoix[i,1]),1,",")+"-"+ExtraitChaîne(SansEspace(tabdimensionChoix[i,1]),2,",")+"],"
+          FIN
+          :textemessage = gauche(:textemessage,taille(:textemessage)-1)
+          :textemessage += " (le premier de la liste à été utilisé)"+rc
+      SINON SI Dimension(tabdimensionChoix) /2 = 1
+      	:Intercalaire1 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),1,",")
+      	:intercalaire2 = ExtraitChaîne(SansEspace(tabdimensionChoix[1,1]),2,",")
+      sinon
+      	:Intercalaire1 = ""
+      	:intercalaire2 = ""
+      	:bMessage = Vrai
+      	:TexteMessage = "Aucun intercalaire trouvé"
+      	
+      FIN
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1ffb25b901aee7f8
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

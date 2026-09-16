@@ -1,0 +1,368 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cCustomerOrderToPrint
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1988a46b4b3a0cfb
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cCustomerOrderToPrint est une Classe
+      	m_nCustomerID			est un entier
+      	m_nShippingCustomerID	est un entier
+      	m_nSellerID est un entier
+      	m_clCustomerInfo					est un MClient
+      	m_clShippingdetail					est un cClientLivraison
+      	m_nShippingBillNumber est un entier sur 8 octets
+      	m_moTotal est un monetaire
+      	m_moTPS est un monetaire
+      	m_moTVQ est un monetaire
+      	m_bCombinetax est un booleen
+      	m_sTruckNumber est une chaîne
+      	m_nShippingSequence est un entier
+      	m_tabOrder est un tableau de cOrderToPrint
+      	m_tabDetailToPtrint est un tableau de cOrderDetailToPrint
+      	m_tabGroupDetailToPtrint est un tableau de cOrderDetailToPrint
+      	
+      fin
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1839901228511464699
+     type_code : 27
+     code : |1+
+      procédure Constructeur()
+      constructeur :m_clShippingdetail(0,0)
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1839901228511530235
+     type_code : 28
+     code : |1+
+      procédure Destructeur()
+      
+     type : 655360
+   -
+     name : GetCustomerInfo
+     procedure_id : 1839910115670662790
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // GetCustomerInfo ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetCustomerInfo()
+      
+      si HLitRecherchePremier(Client,IDClient,:m_nCustomerID) alors
+      	FichierVersMémoire(:m_clCustomerInfo,client)
+      	pour i = 1 a 4
+      		si sansespace(client.ccourrielBonLivraison[i]) <> "" alors :m_clCustomerInfo.m_tabccourrielBonLivraison.ajoute(sansespace(client.ccourrielBonLivraison[i]))
+      	FIN
+      FIN
+      
+      
+     type : 458752
+   -
+     name : UpdateOrder
+     procedure_id : 1841455138565895753
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //UpdateOrder ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      //	nShippingBillNumber (entier sur 8 octets) : <indiquez ici le rôle de nShippingBillNumber>
+      procédure UpdateOrder()
+      nTotalToProduced est un entier = 0
+      
+      
+      Pour chaque clOrder de :m_tabOrder
+      	CheckDimensionException(clOrder.m_nOrderNumber)
+      	:UpdateQty(clOrder)
+      	
+      	clOrder.UpdateHistory(:m_nShippingBillNumber)
+      	:m_tabDetailToPtrint.ajoute(clOrder.m_tabDetailToPtrint)
+      	:m_moTotal += clOrder:m_moTotal
+      	:m_motps = clOrder:m_moTps
+      	:m_moTvq = clOrder:m_moTvq
+      	:m_nSellerID = clOrder.m_nSellerID
+        	
+      	AllInvoice est un booleen = Vrai
+      	
+      	
+      	HLitRecherche(Facture,fanumero,clOrder.m_nOrderNumber)
+      	HLitRecherche(Fdetail,fdnocomm,Facture.fanumero)
+      	
+      	TANTQUE Fdetail.fdnocomm = Facture.fanumero ET PAS HEnDehors()
+      		Fdetail.fdqtedejafacture		=  Fdetail.fdqtedejafacture + Fdetail.fdqteafacturer
+      		Fdetail.fdqteafacturer			= Fdetail.fdqte - Fdetail.fdqtedejafacture
+      		Fdetail.SUrchargedejafacture	= Fdetail.SUrchargedejafacture+Fdetail.SUrchargeafacturer
+      		Fdetail.SUrchargeafacturer		= Fdetail.surchargeenergie- Fdetail.SUrchargedejafacture
+      		Fdetail.Fdqte_Produced	= 0
+      		Fdetail.Fdqte_BackOrder	= 0
+      		fdetail.Fdqte_BackOrderreason = ""
+      		SI Fdetail.ftype = 1 ALORS  nTotalToProduced += Fdetail.fdqteafacturer	
+      		SI Fdetail.ftype = 1 _et_ Fdetail.fdqteafacturer <> 0 ALORS
+      			AllInvoice = Faux
+      		FIN
+      		
+      		HModifie(Fdetail)
+      		HLitSuivant(Fdetail,fdnocomm)
+      	FIN
+      	:m_bCombinetax = Facture.fCombineTaxe
+      	SI AllInvoice ALORS
+      		Facture.FPREPARATION	= "B"
+      		Facture.livrepartiel	= ""
+      		Facture.NumberOfThermosProduced = 0
+      		HModifie(Facture,hNumEnrEnCours)
+      	SINON
+      		Facture.livrepartiel	= "P"
+      		Facture.FAIMPRIMER		= 0
+      		Facture.NumberOfThermosToProduce	= nTotalToProduced
+      		Facture.NumberOfThermosProduced		= 0
+      		Facture.Started						= 0
+      		Facture.Completed					= 0
+      		Facture.NumberOfThermosBackOrdered	= 0
+      		HModifie(Facture,hNumEnrEnCours)	
+      	FIN
+      FIN
+     type : 458752
+   -
+     name : UpdateOrder
+     procedure_id : 1841455138565895753
+     type_code : 12
+     code : |1+
+      procédure UpdateOrder(clOrder est un cordertoprint)
+      nTotalToProduced est un entier = 0
+      CheckDimensionException(clOrder.m_nOrderNumber)
+      :UpdateQty(clOrder)
+      
+      clOrder.UpdateHistory(:m_nShippingBillNumber)
+      :m_tabDetailToPtrint.Ajoute(clOrder.m_tabDetailToPtrint)
+      :m_moTotal += clOrder:m_moTotal
+      :m_moTPS = clOrder:m_moTPS
+      :m_moTVQ = clOrder:m_moTVQ
+      :m_nSellerID = clOrder.m_nSellerID
+      
+      AllInvoice est un booleen = Vrai
+      
+      
+      HLitRecherche(Facture,fanumero,clOrder.m_nOrderNumber)
+      HLitRecherche(Fdetail,fdnocomm,Facture.fanumero)
+      
+      TANTQUE Fdetail.fdnocomm = Facture.fanumero ET PAS HEnDehors()
+      	Fdetail.fdqtedejafacture		=  Fdetail.fdqtedejafacture + Fdetail.fdqteafacturer
+      	Fdetail.fdqteafacturer			= Fdetail.fdqte - Fdetail.fdqtedejafacture
+      	Fdetail.SUrchargedejafacture	= Fdetail.SUrchargedejafacture+Fdetail.SUrchargeafacturer
+      	Fdetail.SUrchargeafacturer		= Fdetail.surchargeenergie- Fdetail.SUrchargedejafacture
+      	fdetail.Fdqte_Produced			= 0
+      	fdetail.Fdqte_BackOrder			= 0
+      	Fdetail.Fdqte_BackOrderreason	= ""
+      	
+      	si fdetail.ftype = 1 alors  nTotalToProduced += Fdetail.fdqteafacturer	
+      	SI fdetail.ftype = 1 _ET_ Fdetail.fdqteafacturer <> 0 ALORS
+      		AllInvoice = Faux
+      	FIN
+      	HModifie(Fdetail)
+      	HLitSuivant(Fdetail,fdnocomm)
+      FIN
+      :m_bCombinetax = Facture.fCombineTaxe
+      SI AllInvoice ALORS
+      	Facture.FPREPARATION			= "B"
+      	Facture.livrepartiel			= ""
+      	Facture.NumberOfThermosProduced	= 0
+      	HModifie(Facture,hNumEnrEnCours)
+      SINON
+      	Facture.livrepartiel				= "P"
+      	Facture.FAIMPRIMER					= 0
+      	facture.NumberOfThermosToProduce	= nTotalToProduced
+      	facture.NumberOfThermosProduced		= 0
+      	facture.Started						= 0
+      	facture.Completed					= 0
+      	facture.NumberOfThermosBackOrdered	= 0
+      	HModifie(Facture,hNumEnrEnCours)	
+      FIN
+      
+     type : 458753
+   -
+     name : UpdateQty
+     internal_properties : CQAAAAkAAAAPmjo3Cwbow3PBobCzogtEEGXInRoTa+/XFJ9MrNa2bBy0AyDKvbyAd7hPxzoKpFOQdsaRLo5axdUADA==
+     procedure_id : 1841822809037162680
+     type_code : 12
+     code : |1+
+      Procédure UpdateQty(clOrder est un cordertoprint)
+      
+      
+      
+      pour chaque clOrderLine de clOrder.m_tabOrderDetail
+      	si hlitrecherche(fdetail,fdnocommfdligne,[clOrder.m_nOrderNumber,clOrderLine.m_nLineNumber]) alors
+      		Fdetail.fdqteafacturer= clOrderLine.m_nQtyProduced
+      		SI Fdetail.fdqteafacturer <> Fdetail.fdqte-Fdetail.fdqtedejafacture ALORS
+      			Fdetail.SUrchargeafacturer = Arrondi(Fdetail.surchargeenergie * (Fdetail.fdqteafacturer/Fdetail.fdqte),2)
+      		SINON
+      			Fdetail.SUrchargeafacturer = Fdetail.surchargeenergie - Fdetail.SUrchargedejafacture
+      		FIN
+      		HModifie(Fdetail,hNumEnrEnCours)
+      		
+      		
+      		pour tout fdetail avec "fdnocomm = "+clOrder.m_nOrderNumber+ "et fdlien= "+clOrderLine.m_nLineNumber
+      			Fdetail.fdqteafacturer= clOrderLine.m_nQtyProduced
+      			SI Fdetail.fdqteafacturer <> Fdetail.fdqte-Fdetail.fdqtedejafacture ALORS
+      				Fdetail.SUrchargeafacturer = Arrondi(Fdetail.surchargeenergie * (Fdetail.fdqteafacturer/Fdetail.fdqte),2)
+      			SINON
+      				Fdetail.SUrchargeafacturer = Fdetail.surchargeenergie - Fdetail.SUrchargedejafacture
+      			FIN
+      			
+      			HModifie(Fdetail,hNumEnrEnCours)
+      		FIN
+      		
+      		
+      	FIN
+      	
+      	//		fdetail.fdqteafacturer		= Fdetail.fdqte-Fdetail.fdqtedejafacture
+      	//		fdetail.SUrchargeafacturer	= fdetail.surchargeenergie - fdetail.SUrchargedejafacture
+      	//		hmodifie(fdetail,hNumEnrEnCours)
+      fin
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : CompileGroupOrder
+     procedure_id : 1842487635198292421
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // CompileGroupOrder ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure CompileGroupOrder()
+      nOldLineNumber		est un entier
+      clGroupLineDetail	est un cOrderDetailToPrint
+      tabGroupline est un tableau de cOrderDetailToPrint
+      
+      
+      
+      POUR CHAQUE clOrder de :m_tabOrder
+      	clOrder.m_tabDetailToPtrint.trie(ttmembre,"+m_nLineNumber")
+      	
+      	pour chaque LineDetail de clOrder.m_tabDetailToPtrint
+      		si LineDetail.m_nMasterLineNumber = 0 alors   // Ligne de commande seule 
+      			
+      			clGroupLineDetail	= allouer un cOrderDetailToPrint()
+      			clGroupLineDetail	= LineDetail
+      			si LineDetail.m_nLineType = 1			
+      				clGroupLineDetail.m_sProductDescription+= rc+ LineDetail.m_sImperialWidth + " X " + LineDetail.m_sImperialHeight
+      				clGroupLineDetail.m_sProductDescription+= RC + "Fini:"+LineDetail.m_sFinish + " Spacer:" + LineDetail.m_sSpacer1 + " " + LineDetail.m_sSpacer2 
+      			FIN
+      			
+      			:m_tabGroupDetailToPtrint.ajoute(clGroupLineDetail)  
+      		SINON
+      			si LineDetail.m_nMasterLineNumber = LineDetail.m_nLineNumber alors
+      				nOldLineNumber = LineDetail.m_nMasterLineNumber
+      				          
+      				
+      			SINON	SI LineDetail.m_nMasterLineNumber = nOldLineNumber
+      				
+      			FIN
+      			
+      		FIN		
+      	FIN
+      	
+      	
+      FIN
+      
+     type : 458752
+   -
+     name : GetSequence
+     procedure_id : 1864849773409820116
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //GetSequence (<CustomerID>, <CurrentSeasonID>, <ShippingID>, <nCurrentDay> est entier)
+      //
+      // Paramètres :
+      //	CustomerID : <indiquez ici le rôle de CustomerID>
+      //	CurrentSeasonID : <indiquez ici le rôle de CurrentSeasonID>
+      //	ShippingID : <indiquez ici le rôle de ShippingID>
+      //	nCurrentDay (entier) : <indiquez ici le rôle de nCurrentDay>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetSequence(CustomerID,CurrentSeasonID,ShippingID,nCurrentDay est un entier)
+      
+      
+      
+      si hlitrecherche(ClientLivraison,IDClientLivraison,ShippingID) alors
+      	
+      	SI ClientLivraison.lJourCamionMaster ALORS
+      		SI HLitRecherche(JourLivraisonClient,IDClientIDSaisonLivraison,[CustomerID,CurrentSeasonID,0]) ALORS
+      			
+      			:m_nShippingSequence = jourlivraisonClient.ShippingSequence[nCurrentDay]
+      			
+      		FIN	
+      		
+      	SINON
+      		SI HLitRecherche(JourLivraisonClient,IDClientIDSaisonLivraison,[CustomerID,CurrentSeasonID,ShippingID]) ALORS
+      			
+      			:m_nShippingSequence = JourLivraisonClient.ShippingSequence[nCurrentDay]
+      			
+      		FIN	
+      		
+      		
+      	FIN
+      	
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1988a4434b3471d4
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

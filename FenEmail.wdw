@@ -1,0 +1,1030 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FenEmail
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Nouveau message
+ subtype : 0
+window :
+ name : FenEmail
+ identifier : 0x461196e9129a2d30
+ internal_properties : CQAAAAkAAADrYVr8jT/7GcGG3AcQgTqyGE7sm/SDk2DywFmp3dr09qeiHiu0dQ7WxaBl4lVpb0pb3xUPsUHLFKOGOW93yRg0c6idLCI5UnJKd8Ac1xRiOL9QjkHrtJ2AkmLVQJvryHMVqKWUhfu9U8FPg52M50GJjrz8aGsZgfpZGuRnU00cSE20QmjQtdeMviIHNbo+KSyEBMIBGHZnG/nfLeO33UMJ9AcvDFLAVVLVfk0Y5AQsAG5ofDD1X/GVi2UslMAInsirG+EP2Rm1K4ScgkasV1eteKWDgiVsWUapzOYylrJTWD7Y1FO+Qn4vwNnhLdO1Hjj9QzxvySIOavEWHoPepW63DixazjjAKGVQx3vkL5rOpEenb7PnS855d+HSbqiwjXN+hlhjIfWS0mv3R+RINbDGirX7OZmyQr1YohC71vQtiILLUipNYvuJWNC+Eoxzik206g2uGCfFjnMtr2Dv8GXR/1Ay/6Gy+y2wIxprsr1fqgAlkdulhzMRc4iv91yBd+7+NN5BGfIOxGRcmLmvoUGnXsPHTOh1F2okJfFTsFAiDyHEExZ4cCHX5oWCcKcK5QZ9m3MmvmUXe5LLdWS7pBIFHuPr3IW6eq+JOQ4nRq/EC/sQIv8LFr4qYhLahfFcMFUBg/qbVe8f8dyXK+BZxmTuJTO6M8V8FPmiLPvI64lxozIyYY5HRmVNUBL5UEW9sy5uVWNxqGymG1b9LEsVbnLAFg+OgI/k8MgiZvHjUt5UKFcKBbs6Ue5q0BiboIgUw+yf66RwGZExy6dO9/LVKal4t+Ro
+ properties :
+  width : 634
+  height : 588
+  widthClient : 632
+  heightClient : 556
+  widthMin : -6
+  heightMin : -2
+ controls :
+  -
+    name : SAIS_DEST
+    identifier : 0x461196e96f202d30
+    internal_properties : CQAAAAkAAACvAMSwsNgPgfi5HbsLyDP5Ck5bAVfXUlDPT9JFAWiweiRDA8oRXLS/bW+7FtkmlS767wlpRJDphKZFGaXfUjzvXYzwOfVJaWtjkuMSj9SRPz3bROigflTYpqa7798GyEjAhioEiEJJbDdv5YpwPziMmQgR4AaLSElomnuEQPY6bG2Z6YazKj/VIBefspZ0rPEaDW36JRZFXHyGvq+myDbdGPe/0qLBSfxLPFbFCJWswrKMIzc0BBnvPVXQmUraCd2WCqPvEYw0ly9wLwOmMvZH0X1fdDgLKxxFcVWJNSF6PVoxjohEOE/a2FnqLBysoYBVnTfXZEnKsAVQ/uSol3DpsverKpeCNfJUFYhbx81afP5QjOx3anID+IFIpo6GqHsNCZ4ljpZEH/uKmWrH04p5z1BrFoVuWCH0QZ5clW7wCZROud45ITQhvgoHZ4qhzZgQR53Zs+GqhBdUe9wYfAskRp/epLZ4ChW0VGNebdWawih4W9Y5g6sEhHQHlaDZY5ikwV5IIl8Ql/LBCcTMMisMdvqSrVwexed8NnPcJW7tLdXSMiVyjbedY12se+dlrTQDycgqrO0rPQTixmQfZgrlyOEl274mcxuAmsedAbEyz+PxcPffjhndsZlf9Fq5AZLYO8UBTtM1/QQDX0q7Bxt90e+xnbz1XJVsuJSa+HiWQDvCXbubvq7DfxcqgHsdfAUhwhcg5WxtqUXcmwKEkswYiBlNO5ofLlO2LmR/O4mHdXGiIc9SYPpZCPJs6c1XZMwqyjaC4e68oyJt9t7kqNY=
+    properties :
+     x : 66
+     y : 92
+     width : 534
+     height : 46
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : SAIS_SUJET
+    identifier : 0x461196e95d142d30
+    internal_properties : CQAAAAkAAADeBX7KqKLbY7lE5L5WTuf2LY+uIuAsfhM7eHMkN3plCs84ubRRnl4R6jcT8Y0HqFVchgZEWDccScRsd8KENY8Egw2CFo0RIo3cLWEQtx+aS5fhrWVrMr6LJNOkWaqS88C+2hPTWqBZeb/dCxOSMjYkuTZGReAS+SH9+FFUPlJ+NxrVeDEFnFDo9NE2LZx+Os/njG9Oe1pn+XEWZQ05BxbjdmEqvHuPUamatFXNXvUOxLcJCV3mVzb6K+ofMIc3nK07WTZ6KfvC5JE/iLTKJmofLVFqSQX68VvnO3g6U7LjiFjqeLm86XXHm/E7HRtATo2byNvF1gBwFY7sFjTFV7s6A268C2L8nwMQapgQG2iFG+QK8ylzeKRz9cJkZcjDBq39/QMI127yMjnBgEpXShoxgmo0gVecs4jC0G8+oB7sTtz9yYuM/0WGr5tAXjRdpbNTatsy9UAXJT22Cp59WDqHpWYG2Rfm8/t0r7NnQaRRLCeKxKEwb7ULOlMGNbnzSxMCPCLyseKTCMr906tp/JwKA57W2nIb4kGJ0tFcSV9DKICj8rGfzroifCsqrO8q+LCLb9vrmeoCwZmJExrOQyQMkalmBoCw+dw+CLTfEVDE6IGi2CPzRLteF07khllju+V/qYxc5/ZBbqyx5pnpEY9ayDSImNVXEEw+IY93CCXwjJVVEU36NJtsgx6Ame0+ywXRD2ghS+2YLNcejYwY8EkstZcEsmSLRFehCR00fJBE67cStFGD8yjXraxbhxPrKTdWZu0iGbI=
+    properties :
+     x : 66
+     y : 144
+     width : 534
+     height : 46
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : SAIS_MESSAGE
+    identifier : 0x461196e958022d30
+    internal_properties : CQAAAAkAAAAnOjtOTxhHkG5skV+5ojYfDwd7sqUXOFZfnaB7kDK2cxj94ik2BHyzsYDKZWgxnUpc4la7WyjWQq3ku842hfRq+xvvFIpNfk8Vz5pt1L4Sw6iEXS37tWja0sL9UYzYYZix1B2b3BGHKM1RYi9GDZ0fiG0SKBgg2Zs5MU+yOGScXTtem0uPDSd8qZ0B6XH/dJ4hTNlzJXMxwF258M4NyCD6VHQ7Q5BTxCu5aDjxaI6pHQmzcoLUgiLNH3dhNXRfLMkG4XH9LO+iin/LmfutVlWU7VnVHIs3iTexql676Aj0ZB5JM2nwu1om1+H46Ak5Jkzbuq30J8fwtpiuYPbu/JHynu9V/fKMfQfq3wxt/AOe1MO+aGUXfy1Hly9Zx6kci0sHy+FcUV2BFNSjCvEAg89MRDKb9dpNzpTev6CpKQAv2fRN6i/xDnL1L8ZZDBjv6koLQzh4PmbnFKrt/F38mwn3b/YtZ/UZKQ4f1sariQR0MGQNejkuGWTb5Z85+i3UuruxsTeZMFqKR8x7NqWrE/aG0u4tbUF8v+lkQaf3LVGll0wUj831iadjHCegb5JLnoQo/aPbCwyQYRsdwi3SzntI9dOvq/SIP1KrmA9SREPtXf9p7SrLYxlBcC8GXP+s+YwQtm2fLbDp/Bqn4xM5uQLVGAAlTfFbATh3fl/J4Ln5K/Hi/Q232d9Q2mCoQkkrvNOLG33VQMkda1tosYGTxqp6d4W5hqfjMd7DHU+Vwv/5OU8XdNAJ5Y1CmA+ek6XQvVOEwcrGfg==
+    properties :
+     x : 66
+     y : 196
+     width : 534
+     height : 158
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : SAIS_FICAT
+    identifier : 0x461196e904c82d30
+    internal_properties : CQAAAAkAAABlttuBLhkd62y0RK2bDlJyfhBlJOaacmqIH3hEzGYOpI5nlHqdpSpHvgvoQoWS7beCjG1jTxuY8PJHFml5LQdl1iA6RxJTMWl0MiwfZnj2S2TCsdTug8A7tDmY0g1JHb0VpUAnWBnyZ1mKkbthoybr62eckW4B3S+/Gsb2ZwlL/jWjnUUDcZC56Qa5mw2rq1ss0pu4dnVWax7SvjP3v3uXHplIYm6iXAMtbJ88bLH7TMSjPWuBeIUsRRvU5gQuVuoNdvqpBP0FptG4+guwwird6Er3g+cGXoXt736BMsvB2WQolpB26I7ofbDDLXDcQPub4s3PbojJOIbnqPfzXFkkkH9ylTXGFHZOgXvW0qWnhG9fPhestId/fhnWCcza2vSEtmBVe1X1A1U9q7/dn6pGqUGDwQN4pmANACvWk/zjT51/yyaz1R99isP5PRFMkro031c7AdpDVzVEi1eswRCI4b9VmvsWeibJjM7RBhRrZ1aQ/v9o3tCyai4V1bnHdTwKAcAZ45uHFk4AJ1GciSEVDYCOPjko4BNUAVcl66q4shegi8IIbNnE7x+vOiUSNDSPe9k9ImGWMKIzCKH8xD6bNVbiiDsbAGqf49bcSGMnK/5tzOQPrO/SqsmbPxtThKWeRRiDcK/1akgPMoY4umr3N46B+SYs6b3brqradnklHgX2IuLqo51TWjzrHioUIuryKaZufMnGMwoTXqB5jLg5LbhoTxZLs/W1Gvascoi1WlQmkf6fSQAcXvdZXdDVnEmpAgN8zOBDua3/C4+Tbta0jBnWSbrh
+    properties :
+     x : 42
+     y : 371
+     width : 558
+     height : 112
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+      -
+        code : |1-
+         
+        type : 17
+  -
+    name : BTN_ENVOIE
+    identifier : 0x461196e921f42d30
+    internal_properties : CQAAAAkAAABMK6EWqGt1I82FbI1FP6Z0D7dqpQ30yFWxM8KuUbvYiU1q+j4L9frnOxyg5/hk1ZNTlm5LbAHj4dJ04v5Ap12kmzOPSrpyUqmPswMd8b8DAfNxnobHAW+d6gdYd6NA/0+uZ6Zrtww8ZJV9zM/rUgvTKLxhjZmTUL8TSfyeTM9p4LA5JBnGXQaDiQPph633CVGGP0l5UHDpbmjj6yEDMZyA8ntg1oGs0jpaefORvxDXZHWdG6zdcc66TQPmPKlQgjvbw5yqMHolpqHwTp0nu/mLHirQ4wYklCtyjGeKTDMnw4yy8dSlxmdy+0dQ0yX2clJkcCkfsZclVVnqSNXgdGWs1TuwAXEak2wvzawNrXUyI+NbldYTBEbUgTsY8Gdb9EFYla99siyx/9I/Qa4VjEQ8ldEkx92VrMMOzlydOgBkREq0ntN1gm3RBMkRqdIo4k0RzsNEdVXI/leOOsyk1+DZDr3EUsCREyBme0ITxgmHA4scprsQZKk5fm/r/BIGnN5fOj9vqivbkrAstWjmrtOZ4GcEH/hcwmCZT5BNSgIKdpBjRK/OLuK9L4VBsGEUOJzpexH5qnUPeyVWF/BS7gQsahwiOVKjAJokgFHyF0BvhtOQGafvPxWk0Lw6zoO63/H4Y81eqZYBIygXJSQ4Yuyh+ob7iQ502gUU5Z9dSGTUa0ooj/apGFHprY9Q+RWZ5kg8bkku
+    properties :
+     x : 438
+     y : 504
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1+
+         sablier()
+         lchaineverification	est une chaine
+         
+         i					est un entier	= 1
+         nbAttache			est un entier
+         nIdSession			est un entier	= 0
+         // vérification rapide des adresses email
+         //si pas SAIS_DEST..modifie alors
+         //	si pas bVérifieAdresseEmail(SAIS_DEST) alors
+         //		si acso_message("Question","L'adresse du destinataire ne semble pas correspondre au client en cours"+rc+"Voulez-vous continuer ?","OuiNon") = idno alors
+         //			RepriseSaisie(SAIS_DEST)
+         //		fin
+         //	FIN
+         //fin
+         si ltypeclientFournisseur = "C" alors
+         	lchaineverification = bVérifieAdresseEmail(sais_dest)
+         	si pas lchaineverification = "" alors
+         		si lchaineverification = "Erreur" alors
+         			si acso_message("Question","Impossible de localiser la fiche client  afin de vérifier les adresses de courriel."+rc+"Voulez-vous continuer ?","OuiNon") = idno alors
+         				RepriseSaisie(SAIS_DEST)
+         			fin
+         		sinon si lchaineverification = "Vide" alors
+         			ACSO_message("Erreur","Vous devez inscrire au moins une adresse courriel ."+RC+RC+lchaineverification,"Erreur")
+         			renvoyer faux
+         			
+         		sinon
+         			
+         			si acso_message("Question","Les adresses de courriel suivantes ne semblent pas correspondre au client  en cours."+rc+rc+lchaineverification+rc+rc+"Voulez-vous continuer ?","OuiNon") = idno alors
+         				RepriseSaisie(SAIS_DEST)
+         			fin
+         		FIN
+         	FIN
+         sinon si ltypeclientFournisseur = "F" alors
+         	
+         	
+         fin
+         si sansespace(SAIS_DEST) = "" alors
+         	acso_message("Erreur","Aucune adresse courriel d'inscrite","Erreur")
+         	renvoyer vrai
+         FIN
+         SI DROITE(SansEspace(SAIS_DEST),1) <> ";" ALORS
+         	SAIS_DEST=SansEspace(SAIS_DEST)+";"
+         FIN
+         //SauveEmail(lModification)
+         //			SauveEmail(lmodif)
+         EmailAenvoyer		est un Email
+         EmailFichierAttache	est un emailAttache
+         
+         
+         si  EnModeTest() alors
+         	
+         	//si pas EmailOuvreSessionSMTP("InfoErreur",sansespace(config.ServeurSMTP)) alors
+         	//	acso_message("Erreur","Impossible de se connecter au serveur de courrier sortant","Erreur")
+         	
+         	// code pour ExchangeServer
+         	//	idsession =  EmailOuvreSession("OutLook") 
+         	MailSession est un EmailSessionSMTP
+         	MailSession..AdresseServeur	= "smtp.gmail.com"
+         	MailSession..Nom			= "jeanhamelin2007@gmail.com"
+         	//	MailSession..MotDePasse = "1511Caro"
+         	MailSession..MotDePasse		= "xioxrnrcizldmyuc"
+         	
+         	MailSession..Port			= 587
+         	//	MailSession..AdresseServeur = "smtp.videotron.ca"
+         	//	MailSession..Nom = "vlkhbnel"
+         	//	MailSession..MotDePasse = "pl4nisof"
+         	//	MailSession..Port = 465
+         	
+         	MailSession..Option			= emailOptionSécuriséTLS
+         	EmailChangeTimeOut(5)
+         	
+         	
+         	SI pas EmailOuvreSession(MailSession) = Vrai ALORS
+         		//si pas EmailOuvreSession("OutLook") alors
+         		//	acso_message("Erreur","Impossible de se connecter au serveur de courrier sortant","Erreur")
+         		
+         		renvoyer faux
+         		
+         	sinon
+         		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+         		// Code original
+         		// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+         		// 		
+         		//		POUR i = 1 _A_ ChaîneOccurrence(SAIS_DEST,";")  
+         		//			email.destinataire[i] = extraitchaine(SAIS_DEST,i,";")
+         		//		fin
+         		//		email.NbDestinataire = i-1
+         		//		//		email.NbDestinataire = 1
+         		//		//		email.destinataire[1] = SAIS_DEST
+         		//		
+         		//		Email.sujet = SAIS_SUJET
+         		//		email.message = SAIS_MESSAGE
+         		//		email.expediteur = CourrielExpediteur
+         		//		nbAttache = ChaîneOccurrence(lfichieraenvoyer,";")
+         		//
+         		//		email.NbAttache = nbAttache
+         		//		pour i =1 a nbAttache
+         		//			email.Attache[i] = ExtraitChaîne(lfichieraenvoyer,i,";")
+         		//		fin
+         		//		
+         		//		
+         		//		
+         		//		ExécuteTraitement(jauge1,trtInit)
+         		//		emailjauge(jauge1,1000)
+         		//		si  pas EmailEnvoieMessage(MailSession,faux) alors
+         		//			
+         		//			si email.erreur > 26 alors
+         		//				acso_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+rc+"Erreur inconnue","Erreur")
+         		//			sinon
+         		//				acso_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+rc+lerreuremail[email.erreur],"Erreur")
+         		//			fin
+         		//			//fo(erreurinfo(errMessage))
+         		//			renvoyer faux
+         		//		sinon
+         		//			SauveEmail(lmodification)
+         		//			//			SauveEmail(lmodif)
+         		//			acso_message("Information","Envoi effectué avec succès","Info")
+         		//			EmailFermeSession("InfoErreur")
+         		//			ferme(fenemail)
+         		//		FIN
+         		///////////////////////////////////////////////////////////////////////////////////////////////////////////////		
+         		//	fin
+         		
+         		
+         		///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+         		// Nouveau Code
+         		// ////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+         		
+         		POUR i = 1 _À_ ChaîneOccurrence(SAIS_DEST,";")  
+         			Ajoute(EmailAenvoyer..Destinataire, ExtraitChaîne(SAIS_DEST,i,";"))
+         			//			EmailAenvoyer.Destinataire[i] = ExtraitChaîne(SAIS_DEST,i,";")
+         		FIN
+         		
+         		
+         		//	EmailAenvoyer.NbDestinataire = i-1
+         		//		email.NbDestinataire = 1
+         		//		email.destinataire[1] = SAIS_DEST
+         		
+         		EmailAenvoyer.Sujet			= SAIS_SUJET
+         		EmailAenvoyer.Message		= SAIS_MESSAGE
+         		EmailAenvoyer.Expéditeur	= CourrielExpediteur
+         		nbAttache					= ChaîneOccurrence(lfichieraenvoyer,";")
+         		
+         		//	EmailAenvoyer.NbAttache = nbAttache
+         		POUR i =1 À nbAttache
+         			//		EmailAenvoyer.Attache[i] = ExtraitChaîne(lfichieraenvoyer,i,";")
+         			EmailFichierAttache..Nom			= fExtraitChemin(ExtraitChaîne(lfichieraenvoyer,i,";"), fFichier + fExtension)
+         			EmailFichierAttache..Contenu		= fChargeBuffer(ExtraitChaîne(lfichieraenvoyer,i,";"))
+         			EmailFichierAttache..ContentType	= "application/pdf"
+         			ajoute(EmailAenvoyer..Attache,EmailFichierAttache)
+         		FIN
+         		
+         		
+         		
+         		//		ExécuteTraitement(Jauge1,trtInit)
+         		EmailJauge(Jauge1,1000)
+         		SI  PAS EmailEnvoieMessage(MailSession,EmailAenvoyer)  ALORS
+         			si Email.Erreur <> 0
+         				SI Email.Erreur > 26 ALORS
+         					ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+"Erreur inconnue","Erreur")
+         				SINON
+         					ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+lerreuremail[Email.Erreur],"Erreur")
+         				FIN
+         				//fo(erreurinfo(errMessage))
+         				RENVOYER Faux
+         			sinon
+         				SauveEmail(lModification)
+         				mafenetre..ValeurRenvoyée = vrai
+         				//			SauveEmail(lmodif)
+         				ACSO_message("Information","Envoi effectué avec succès","Info")
+         				EmailFermeSession("InfoErreur")
+         				Ferme(FenEmail)
+         				
+         			fin
+         			
+         			
+         		SINON
+         			SauveEmail(lModification)
+         			//			SauveEmail(lmodif)
+         			MaFenêtre..ValeurRenvoyée = Vrai
+         			ACSO_message("Information","Envoi effectué avec succès","Info")
+         			EmailFermeSession("InfoErreur")
+         			Ferme(FenEmail)
+         		FIN
+         		
+         	FIN	
+         	//////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+         	
+         sinon
+         	//	SI PAS EmailOuvreSessionSMTP("InfoErreur",SansEspace(config.ServeurSMTP)) ALORS
+         	SessionSmtp est un EmailSessionSMTP
+         	//	SessionSmtp.AdresseServeur = "mail.smtp2go.com"
+         	//	SessionSmtp.Nom = "support@cybersquadit.com"
+         	//	SessionSmtp.MotDePasse = "Cyb3r$MTP*"
+         	//	SessionSmtp.Port = 2525
+         	SessionSmtp.AdresseServeur	= sansespace(extraitchaine(gclconfig.m_sServeurSMTP,1,":"))
+         	SessionSmtp.Nom				= sansespace(gclConfig.m_sUserSMTP)
+         	SessionSmtp.MotDePasse		= sansespace(gclConfig.m_sMdpSMTP)
+         	SessionSmtp.Port			= val(ExtraitChaîne(gclConfig.m_sServeurSMTP,2,":"))
+         	//   SessionSmtp..Option = emailOptionSécuriséTLS
+         	
+         	si pas EmailOuvreSession(SessionSmtp) alors
+         		//si pas EmailOuvreSessionSMTP("support@cybersquadit.com","Cyb3r$MTP*","mail.smtp2go.com",2525) alors
+         		acso_message("Erreur","Impossible de se connecter au serveur de courrier sortant","Erreur")
+         		
+         		// code pour ExchangeServer
+         		//	idsession =  EmailOuvreSession("OutLook") 
+         		//	si  idsession = 0 alors
+         		//si pas EmailOuvreSession("OutLook") alors
+         		//	acso_message("Erreur","Impossible de se connecter au serveur de courrier sortant","Erreur")
+         		
+         		renvoyer faux
+         		
+         	sinon
+         		
+         		///////////////////////////////////////////////////////////////////////////////////////////////
+         		//
+         		// Ancien code
+         		//
+         		//		email.NbDestinataire = 1
+         		//		email.destinataire[1] = SAIS_DEST
+         		//		Email.sujet = SAIS_SUJET
+         		//		email.message = SAIS_MESSAGE
+         		//		email.expediteur = CourrielExpediteur
+         		//		//		nbattache = ChaîneOccurrence(SAIS_FICAT,";")
+         		//		nbAttache = ChaîneOccurrence(lfichieraenvoyer,";")
+         		//		//		email.AttacheContentType
+         		//		email.NbAttache = nbAttache
+         		//		pour i =1 a nbAttache
+         		//			
+         		//			email.Attache[i] = ExtraitChaîne(lfichieraenvoyer,i,";")
+         		//			//			email.Attache[i] = ExtraitChaîne(SAIS_FICAT,i,";")
+         		//		fin
+         		//		ExécuteTraitement(jauge1,trtInit)
+         		//		emailjauge(jauge1,1000)
+         		//		
+         		//		//		SI  PAS EmailEnvoieMessage("InfoErreur") ALORS
+         		//		SI  PAS EmailEnvoieMessage(SessionSmtp) ALORS
+         		//			
+         		//			//   code pour Exchange
+         		//			//		si  pas EmailEnvoieMessage(idsession,faux) alors
+         		//			acso_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes"+rc+erreurinfo(errmessage),"Erreur")
+         		//			//fo(erreurinfo(errMessage))
+         		//			EmailFermeSession(SessionSmtp)
+         		//			renvoyer faux
+         		//		sinon
+         		//			SauveEmail(lmodification)
+         		//			acso_message("Information","Envoi effectué avec succès","Info")
+         		//			EmailFermeSession(SessionSmtp)
+         		//			ferme(fenemail)
+         		//		FIN
+         		///////////////////////////////////////////////////////////////////////////
+         		// 			
+         		
+         		
+         		///////////////////////////////////////////////////////////////////////////
+         		//
+         		// Nouveau code
+         		//
+         		///////////////////////////////////////////////////////////////////////////
+         		
+         		
+         		POUR i = 1 _À_ ChaîneOccurrence(SAIS_DEST,";")  
+         			Ajoute(EmailAenvoyer..Destinataire, ExtraitChaîne(SAIS_DEST,i,";"))
+         			
+         			//			EmailAenvoyer.Destinataire[i] = ExtraitChaîne(SAIS_DEST,i,";")
+         		FIN
+         		//	EmailAenvoyer.NbDestinataire = i-1
+         		//	email.NbDestinataire = cptdestinataire
+         		//		email.destinataire[1] = SAIS_DEST
+         		
+         		
+         		EmailAenvoyer.Sujet			= SAIS_SUJET
+         		EmailAenvoyer.Message		= SAIS_MESSAGE
+         		EmailAenvoyer.Expediteur	= CourrielExpediteur
+         		nbAttache					= ChaîneOccurrence(lfichieraenvoyer,";")
+         		
+         		//	EmailAenvoyer.NbAttache = nbAttache
+         		POUR i =1 À nbAttache
+         			//		EmailAenvoyer.Attache[i] = ExtraitChaîne(lfichieraenvoyer,i,";")
+         			EmailFichierAttache..Nom			= fExtraitChemin(ExtraitChaîne(lfichieraenvoyer,i,";"), fFichier + fExtension)
+         			EmailFichierAttache..Contenu		= fChargeBuffer(ExtraitChaîne(lfichieraenvoyer,i,";"))
+         			EmailFichierAttache..ContentType	= "application/pdf"
+         			//			EmailFichierAttache..ContentDescription = "Un document PDF"
+         			Ajoute(EmailAenvoyer..Attache,EmailFichierAttache)
+         		FIN
+         		
+         		
+         		
+         		
+         		//		ExécuteTraitement(Jauge1,trtInit)
+         		EmailJauge(Jauge1,1000)
+         		SI  PAS EmailEnvoieMessage(SessionSmtp,EmailAenvoyer)  ALORS
+         			
+         			//			SI Email.Erreur <> 0
+         			SI Email.Erreur > 26 ALORS
+         				ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+"Erreur inconnue","Erreur")
+         			sinon si Email.Erreur <= 0 alors
+         				ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+"Raison inconnue","Erreur")
+         			SINON
+         				ACSO_message("Erreur","Impossible d'envoyer le message pour les raisons suivantes:"+RC+lerreuremail[Email.Erreur],"Erreur")
+         			FIN
+         			//fo(erreurinfo(errMessage))
+         			RENVOYER Faux
+         			//			SINON
+         			//				SauveEmail(lModification)
+         			//				//			SauveEmail(lmodif)
+         			//				ACSO_message("Information","Envoi effectué avec succès","Info")
+         			//				EmailFermeSession("InfoErreur")
+         			//				Ferme(FenEmail)
+         			//				
+         			//			FIN
+         			
+         			
+         		SINON
+         			SauveEmail(lModification)
+         			MaFenêtre..ValeurRenvoyée = Vrai
+         			//			SauveEmail(lmodif)
+         			ACSO_message("Information","Envoi effectué avec succès","Info")
+         			EmailFermeSession("InfoErreur")
+         			Ferme(FenEmail)
+         		FIN
+         		
+         		
+         		
+         		
+         		
+         		///////////////////////////////////////////////////////////////////////////
+         		
+         		
+         		
+         		
+         		
+         	fin
+         	
+         	
+         	
+         	
+         	
+         fin
+         
+         
+         
+         
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ANNUL
+    identifier : 0x461196e92b6a2d30
+    internal_properties : CQAAAAkAAAC1tCykZnbjbi4ZdU38GJ11qTS62jRxMH1ho3c0t5ADcmU76N211JEd7DkFx0ipn0f5cEawr5yB6ARAYQM4y8fl2i/CuG5neMaV6WbZBKNFanoPB3U2wVG4X7TmX9nfyAE0BdU4rlJ9q6HQRLNSd3Exg4cktUWyS0676fyFVr5Y7ZBr1VIPi4AEYJOGeaeWi4U2lq7q8wBqgXCFtkabs7eqQfFxBw21jW+fT2jHRu3Jiuf46LxZKpKZnyOG6bk70KJJ+XtS0q1+Avdgjf5nOHs5IPE1P7sT0vJ5EPqflDiMkFIU5ibogwcVbcTQSjoKHrFOooSp3hMgnKdkhiyPRYL7d0NV4umVaJtA70Wt+gfi7+IQmPKbiwPvHDekx3HrxY9DGy9QmSphRpZQmDohADbTBHPALn+wMOYqGGR2ELV3h3VgS562v62SoFFCtLmIkkzFq3n5BP7gR6N/uc4X9dRhcg+7Rw+D77q8nWsoS8lzN/Jioi1WDYf+4uPfUsSM+txwi/XKOLlgoCB8G1g6TK0GqZaFxNB9HppDQAwCDiAaXYke1YHNCBXc7vkmDLxkOxGIEXVzYXEHeH+kUB5BEQvLEmBjUgq6GnIvEG9h6OlKTrNGHfowZWJuKR2bqVCnv7/sX5cgjb4nIjt8U+UTGpwT+PGjzsgSM5wCffsJkn/cDKX4tlDLl8+RI6+rhTzEd+i82xS7swdX0fJOrs9OeQ==
+    properties :
+     x : 524
+     y : 504
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_FICAT
+    identifier : 0x461196e965682d30
+    internal_properties : CQAAAAkAAAC9ySkp0CMf/hGhHH6LiBpFH3d2RRAe36NLiyzOPPSp+i8cv7BP70KfWD5t54b/5Vxgn8BtNmloQk5mByAhnB+vCfLFae4d9V5rLEnUAAEpvkQrpNRICKG9sje4CMlhplHRemnim6BPfmRChqMpXlfHgf8M6DWZACY8JvJIZ2bCe3Z6PuY+w7mYPP83Ijf6cQezZhVSO+kHZl20eg7W43FALRZ+3v4aq0s/2rqzSh88nyClXfklgOSDP0CfB4yz0l1PcVpMUkld269uSxbskWFNkyNPzLJDrQiMvP3jokQhMQVboEsNiC7q/smocevAWB5al3AEq29yVXRjUp2TODuKye9tq6vbD21QOF9ktbyuCCaU+rUEBjVN/hCiA7JyVU6makps02k5P61zk+nZ/aoAimpeZUM8+yJMd1qDZPTrJBwiSCBkDMUS4lgxe8nX7vNOwh6DZtD1cbAII5ZIdZviEy6PiZ8Onj+p833icE/3b8z7RDZ89uRruVKbJW/KhKvASb3eSKBHJIncejSZXcZ0Mq4fiq9X0G/phma1PDWlXijNSQmv0eBFd0edYvViZ8POSi/6Ib0XaFErat/AAVxYufxReNBkDO+En3qIAoY9AFr9DYmquI7KAuabfvGZ/B3n6rRDwR7qp+lCgBgfkJvf2RsPF5uf8wxqMdOVCBC+pw6B0A5KI/FabS6jL59HbZESC12UlTIXBZrlELwk
+    properties :
+     x : 600
+     y : 376
+     width : 24
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         //SAIS_FICAT=ouvre(FenFicAt,SAIS_FICAT,vrai)
+         lfichier  = ouvre(FenFicAt,lfichier,lmodifie)
+         SAIS_FICAT=lfichier
+         lfichieraenvoyer = bVerifierFichierAttache(lfichier)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Jauge1
+    identifier : 0x4613ce59198c6a5d
+    internal_properties : CQAAAAkAAAAG8DI4hZttygrYVK4WUGy2cW5EhgC4xUPUyAGS1WABGRCmH3r+IO/7t/OiUp/tWBBaKgdEfkpYUF3+vFfRhaWhcgrQNNX6tkw49/RVeTg07nBX2y1EYKZMVzzFPR8WSxSGPnvtpSEYPGcBib2vwnC+A60OwUJjFNSBuctpQmJACaLbzdx9F3sLzH3xuILHuy68qkD3gODUeTXa5OdO3cei/Z07Swhdbc/HSZgp7WuuiwE9nPlJYE61aL4jaJL+GtlLPXLk7qpJpbTCogba+aQGwpICIVxmszenH5/LGfSH8Q1maUhEQjGJuejDksjQh0dS0LB5z0ozgWEePPPuLe2gv9h3iYHMAJ2aJf82y2bjS4z8cAObY17jlFpPEKaCDzBS6HbjcHZw0SRgRM6HC5kyy5dbmdpISSOoBa41NBeO0dQSZ/kNM6qbllefW/XDv31eTqIszvEt3MoP5csKpt3GcLJi9tho8diAEg/m7b/f9D96TvKerVkzn6Bc7LVSxn8sn2Tc8GJ8fxrZg8n63DJd8/Q8rfoXUvYIJdc2If74YXekMpSyuYGNo9HKujCGKtZPV1cZO4nV+rhIxCpDKW+OqZURR35wsvlRJaK85dmory50ET+np4d9KF5AWEgQF/xfG6PPsWfDE9rb1TZ7CAg/vUfvpcrWkKkE8Qc/0wgHn36H5SPRoclUaJ8ZALbFnxoZc+pxIEIewHbj+to6Fg/zaBe0UHhO9wY=
+    properties :
+     x : 9
+     y : 502
+     width : 213
+     height : 38
+    type : 10
+    code_elements :
+     type_code : 17
+     p_codes : []
+  -
+    name : lNomClient
+    identifier : 0x4613e7c679af3ba8
+    internal_properties : CQAAAAkAAAADcuordGETtoPg0eLN+fScf5Diuw8qzbn0YdM9Hgt2Xic+8ZGRLktq7osDAlzwzogJhwHGcezyF4uGL2AXNfJnRkJKubqFXZZIs38LNEKA1xIAaQKyErOM8zF5RDHp7peT3giKRDcpt3HUt1O7lF0O/TxkFUKd0OWoW2SYfgKERJOy6cGkEWn9AaWzVQYoexny0MjCqMzb5ckzd6Akz1f3Sw4J1Z/pRmlTGpuyK/qe6p7i7G7o8gaK2L/l1usNxbV0zzIAyyJXG2ehze4g02uEDp9tmEB8u67Ab2pRPrUAUoVfGTUrPwDPjB/fIceKa6zhEDJuhU4BMUz1xbM1gwzMbLQd1IpsIl2VSZZy5XVD3+Ky3k/zMc7c+NjB4fZSWP6/D5PQkUjkZLZX1cF4Lw==
+    properties :
+     x : 106
+     y : 27
+     width : 421
+     height : 33
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x461196e966852d30
+  internal_properties : CQAAAAkAAACi0lbr/kufxMcwqWfVgwz5lvUFpEl1Nl10OIyVw+nQJW0U4U3tsbNVvdvnHcjlUc+qnrpNOTOFD0r+m1kG/tQCAjhoJNOgdkD+PsAMG9jLWKGt6H3EdRpcSldCREjSXiWrPHrtTC75IDhhajof2v3DICW5XYBgBxLlwhApm7chsOziZgZkzbvzGEPGhLq5z50r8yBnIRPw0P6PIR5CogN/Zp3v1Tme8gLfZ7bLPFUCcXebAI2GWl4GiFKm4m0RnoZCDwiwhlJRFd/XG3kCPFzX5PL59e62s7a3/By1VgyiJoL4Ik0YTJOi
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAB+tqgL9wh+XzClRStvlfGLkATcOahiR8fVlowyaDH6xDPEy7THaxkHjLJYguV2x5Z+1bdUxvvvPIOorzT+5l1grHr1wd1c0/vBoEdfexkgy2qf8fsokr7T7pEiuQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      procedure fenemail(lCourriel="",lsujet="",lmessage="",lfichier="",lNumClient="",lModification=faux,ltypedocument=1,lModifie=vrai,ltypeclientFournisseur = "C")
+      
+      
+      CourrielExpediteur est une chaîne
+      
+      
+      lfichieraenvoyer est une chaine
+      lerreuremail est un tableau de 26 chaine
+      
+      lerreuremail[1]="Abandon demandé par l'utilisateur"
+      lerreuremail[2]="Erreur inconnue"
+      lerreuremail[3]="Impossible de se connecter"
+      lerreuremail[4]="Disque plein"
+      lerreuremail[5]="Plus de mémoire disponible"
+      lerreuremail[6]="Accès interdit"
+      lerreuremail[7]="Erreur inconnue"
+      lerreuremail[8]="Trop de sessions ouvertes"
+      lerreuremail[9]="Trop de fichiers attachés (10 fichiers maximum)"
+      lerreuremail[10]="Trop de destinataires (20 destinataires maximum)"
+      lerreuremail[11]="Fichier attaché non trouvé"
+      lerreuremail[12]="Impossible d'ouvrir le fichier attaché"
+      lerreuremail[13]="Impossible d'écrire le fichier attaché"
+      lerreuremail[14]="Destinataire inconnu"
+      lerreuremail[15]="Erreur inconnue"
+      lerreuremail[16]="Erreur inconnue"
+      lerreuremail[17]="Message invalide"
+      lerreuremail[18]="Texte du message trop long"
+      lerreuremail[19]="Session invalide"
+      lerreuremail[20]="Erreur inconnue"
+      lerreuremail[21]="Adresse du destinateire ambigüe"
+      lerreuremail[22]="Erreur inconnue"
+      lerreuremail[23]="Erreur réseau"
+      lerreuremail[24]="Erreur inconnue"
+      lerreuremail[25]="Erreur inconnue"
+      lerreuremail[26]="Envoi annulé par l'utilisateur"
+      
+      //hlit(config,1)
+      si gclconfig.m_nTimeOutEmail  <> 0 alors
+      	EmailChangeTimeOut(gclconfig.m_nTimeOutEmail)
+      FIN
+      selon ltypedocument
+      	cas 1
+      		CourrielExpediteur = gclconfig.m_sEmailConfirmation
+      	CAS 2
+      		CourrielExpediteur = gclConfig.m_sEmailfacture
+      	CAS 3
+      		CourrielExpediteur = gclConfig.m_sEmailBonLivraison
+      	CAS 4
+      		CourrielExpediteur = gclConfig.m_sEmaillisteprix
+      	CAS 5
+      		CourrielExpediteur = gclConfig.m_sEmailSoumission
+      	CAS 6
+      		CourrielExpediteur = gclConfig.m_sEmailCommandeAchat
+      	cas 9
+      		CourrielExpediteur = gclConfig.m_sEmailPreparation	
+      	AUTRE CAS
+      		
+      FIN
+      
+      mafenetre..ValeurRenvoyée = faux
+   -
+     code : |1+
+      si enmodetest() alors sais_dest = "planisoft@videotron.ca" sinon SAIS_DEST = lcourriel
+      //SAIS_DEST = lcourriel
+      SAIS_SUJET = lsujet
+      SAIS_MESSAGE = lmessage
+      SAIS_FICAT = lfichier
+      lfichieraenvoyer = bVerifierFichierAttache(lfichier)
+      si ltypeclientFournisseur = "C" alors
+      si lnumclient <> "" alors
+      	si hlitrecherche(client,numero,lNumClient) alors
+      		lnomclient = sansespace(client.nom)
+      	sinon
+      		lnomclient = "******* Client inexistant *******"	
+      
+      	FIN
+      fin
+      sinon
+      	SI lNumClient <> "" ALORS
+      		SI HLitRecherche(fournisseur,fnumero,sansespace(lNumClient)) ALORS
+      			lNomClient = SansEspace(fournisseur.fnom)
+      		SINON
+      			lNomClient = "******* Fournisseur inexistant *******"	
+      			
+      		FIN
+      	FIN
+      fin
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  procedures :
+   -
+     name : bVérifieEmail
+     procedure_id : 5048982585370619184
+     type_code : 14
+     code : |1-
+      Procédure bVérifieEmail(psListe)
+      // vérification rapide des adresses email
+      
+      i est un entier
+      sCh est une chaine
+      
+      i=1
+      sCh = extraitchaine(psListe,i,";")
+      tantque (sCh<>"" et sCh<>eot)
+      	// si l'adresse ne contient pas @, elle est incorrecte
+      	si position(sCh,"@")=0 alors
+      		renvoyer faux
+      	FIN
+      	
+      	// si l'adresse ne contient pas ., elle est incorrecte
+      	si position(sCh,".")=0 alors
+      		renvoyer faux
+      	FIN	
+      
+      	i++
+      	sCh = extraitchaine(psListe,i,";")
+      FIN
+      
+      renvoyer vrai
+     type : 458752
+   -
+     name : bExpédier
+     procedure_id : 5048982586309750064
+     type_code : 14
+     code : |1+
+      Procédure bExpédier()
+      // renvoie vrai si le mail a été envoyé
+      
+      i est un entier
+      sCh     est une chaine = ""
+      bMsgEnv est un booleen		// compte rendu d'envoie
+      
+      email.Sujet = SAIS_SUJET
+      email.Message = SAIS_MESSAGE
+      email.Expéditeur = COMPTE.AdrMail
+      email.AdresseExpéditeur = COMPTE.AdrMail
+      
+      
+      // on récupère les destinataires, les adresses ont déjà été vérifiées
+      i=1
+      sCh = extraitchaine(SAIS_DEST,i,";")
+      tantque (sCh<>"" et sCh<>eot)
+      	email.bcc[i]   = sCh
+      	i++
+      	sCh = extraitchaine(SAIS_DEST,i,";")
+      	// le nombre de destinataires est limité à 200
+      	si i=201 sortir
+      FIN
+      // nombre de destinataires
+      email.nbbcc    = i-1
+      
+      // on récupère les fichiers attachés
+      i=1
+      sCh = extraitchaine(SAIS_FICAT,i,";")
+      TantQue (sCh<>EOT et sCh<>"")
+      	email.attache[i] = frepencours()+"\"+CHEMIN+"\"+sCh
+      	// fichier suivant
+      	i++
+      	sCh = extraitchaine(SAIS_FICAT,i,";")
+      	// les fichiers attachés par email sont limités à 10
+      	si i=11 sortir
+      Fin
+      // nombre de fichiers attachés
+      email.nbattache = i-1
+      
+      //envoie du mail sans aucun chevron
+      bMsgEnv = EMailEnvoieMessage(COMPTE.Login)
+      
+      si pas bMsgEnv alors
+      	// on essaye avec des chevrons seulement sur l'expéditeur
+      	email.Adresseexpediteur = "<"+email.Adresseexpediteur+">"
+      	email.expediteur = "<"+email.expediteur+">"
+      	//envoie du mail sans les chevrons
+      	bMsgEnv = EMailEnvoieMessage(COMPTE.Login)
+      FIN
+      
+      si pas bMsgEnv alors
+      	// on essaye avec des chevrons sur le destinataire et sur l'expéditeur
+      	pour i=1 a email.nbbcc
+      		email.bcc[i]="<"+email.bcc[i]+">"
+      	FIN
+      	//envoie du mail sans les chevrons
+      	bMsgEnv = EMailEnvoieMessage(COMPTE.Login)
+      fin
+      
+      si pas bMsgEnv alors
+      	// on essaye avec sans chevrons seulement sur le destinataire
+      	email.Adresseexpediteur = COMPTE.AdrMail
+      	email.expediteur = COMPTE.AdrMail
+      	//envoie du mail sans les chevrons
+      	bMsgEnv = EMailEnvoieMessage(COMPTE.Login)
+      FIN
+      
+      renvoyer bMsgEnv
+     type : 458752
+   -
+     name : bVérifieAdresseEmail
+     procedure_id : 5236602136949212197
+     type_code : 14
+     code : |1+
+      Procédure bVérifieAdresseEmail(psListe)
+      // vérification rapide des adresses email
+      lchainearetourner est une chaine
+      lpastrouve est un booleen 
+      i est un entier
+      j est un entier
+      
+      sCh est une chaine
+      si SansEspace(psListe) = "" alors
+      	renvoyer "Vide"
+      FIN
+      i=1
+      sCh = extraitchaine(psListe,i,";")
+      si hlitrecherche(client,numero,lnumclient) alors
+      
+      	tantque (sCh<>"" et sCh<>eot)
+      		lpastrouve = vrai
+      		pour j = 1 a 4
+      			si  sCh = sansespace(client.ccourrielBonLivraison[j]) alors
+      				lpastrouve = faux
+      				sortir
+      			FIN
+      			si  sCh = sansespace(client.ccourrielConfirmation[j]) alors
+      				lpastrouve = faux
+      				sortir
+      			FIN
+      			si  sCh = sansespace(client.ccourrielfacture[j]) alors
+      				lpastrouve = faux
+      				sortir
+      			FIN
+      			si  sCh = sansespace(client.CourrielListePrix[j]) alors
+      				lpastrouve = faux
+      				sortir
+      			FIN
+      		fin
+      
+              si lpastrouve alors
+                 lchainearetourner=AjouteAdresse(lchainearetourner,sCh)
+              fin
+              	
+      		//		si sch = sansespace(client.ccourrielBonLivraison[1]) ou  sch = sansespace(client.ccourrielConfirmation[1])...
+      		//			ou  sch = sansespace(client.ccourrielFacture[1])  	ou  sch = sansespace(client.CourrielListePrix[1]) alors
+      		//
+      		//		sinon
+      		//			renvoyer faux				
+      		//		FIN
+      		i++
+      		sCh = extraitchaine(psListe,i,";")
+      	FIN
+      
+      
+      sinon
+      	lchainearetourner = "Erreur"
+      fin
+      renvoyer lchainearetourner
+      
+      
+     type : 458752
+   -
+     name : SauveEmail
+     procedure_id : 5325370865818878479
+     type_code : 14
+     code : |1+
+      Procédure SauveEmail(lmodif)
+      
+      ArchiveEmail.dateEmail = DateHeureSys()
+      ArchiveEmail.noClient = complete(lNumClient,10)
+      ArchiveEmail.lDestinataire = sansespace(sais_dest)
+      si pas lmodif
+      	ArchiveEmail.lFichierAttaché = lfichier//SansEspace(SAIS_FICAT)
+      fin
+      ArchiveEmail.ltexte = SansEspace(SAIS_MESSAGE)
+      ArchiveEmail.lSujet = SansEspace(SAIS_SUJET)
+      ArchiveEmail.lTypeDocument = ltypedocument
+      si ltypedocument = 6 alors// Commande achat
+      	CommandeAchat.caSended = Vrai
+      	hmodifie(CommandeAchat,hNumEnrEnCours)
+      FIN
+      si lmodif alors
+      	hmodifie(ArchiveEmail,hNumEnrEnCours)
+      sinon
+      	hajoute(ArchiveEmail)		
+      FIN
+      
+     type : 458752
+   -
+     name : bVerifierFichierAttache
+     procedure_id : 5325689092405368217
+     type_code : 14
+     code : |1-
+      Procédure bVerifierFichierAttache(lFichierAttache)
+      i est un entier
+      lfichieraretourner est une chaine
+      lposition est un entier = 1
+      lpositionfin est un entier
+      nbfichier est un entier = ChaîneOccurrence(lFichierAttache,";")
+      
+      pour i = 1 a nbfichier
+      
+      	si pas fFichierExiste(ExtraitChaîne(lFichierAttache,i,";")) alors
+      		lpositionfin = Position(lFichierAttache,";",lposition)-1
+      		SAIS_FICAT..Curseur = lposition
+      		SAIS_FICAT..FinCurseur = Position(lFichierAttache,";",lposition)
+      		RTFSélection(SAIS_FICAT,rtfItalique,vrai)
+      		RTFSélection(SAIS_FICAT,rtfCouleur,irougeclair)
+      		//		RTFSélection(SAIS_FICAT,rtfgras,vrai)
+      
+      		lposition=lpositionfin+2
+      
+      	sinon
+      		lfichieraretourner+= ExtraitChaîne(lFichierAttache,i,";")+";"
+      		lposition = Position(lFichierAttache,";",lposition)+1
+      
+      	FIN
+      FIN
+      SAIS_FICAT..Curseur = 0
+      SAIS_FICAT..FinCurseur=0
+      renvoyer lfichieraretourner
+     type : 458752
+   -
+     name : AjouteAdresse
+     procedure_id : 5348647856948619718
+     type_code : 14
+     code : |1+
+      Procédure AjouteAdresse(lchaine,ladresse)
+      lchainearetourner est une chaine
+      si pas ChaîneOccurrence(lchaine,ladresse) <> 0 alors
+      	lchainearetourner=lchaine+ladresse+rc
+      sinon
+               lchainearetourner=lchaine
+      
+      FIN
+      
+      renvoyer lchainearetourner
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3f32a67708612a0d
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

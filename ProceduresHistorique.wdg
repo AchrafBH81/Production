@@ -1,0 +1,494 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ProceduresHistorique
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x184615b701daf337
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : AlimenteAnneMoisProduit
+     procedure_id : 1749109557128040671
+     type_code : 15
+     code : |1+
+      Procédure AlimenteAnneMoisProduit(lNumeroBon,lclient,lannee,lmois,lperiode,lid=0)
+      i est un entier
+      ltotal est un reel
+      ltotalsurchargepeinture est un reel = 0
+      lMultiplicateur est un reel = 0
+      
+      HExécuteRequête(RequeteDetailfacture,hRequêteDéfaut,lNumeroBon)
+      HLitPremier(RequeteDetailfacture)
+      
+      
+      tantque pas HEnDehors(RequeteDetailfacture)
+      	si requetedetailfacture.fsurchargepeinture <> 0 alors
+      		ltotalsurchargepeinture=requetedetailfacture.fsurchargepeinture
+      	FIN
+      
+      	si hlitrecherche(client,numero,RequeteDetailfacture.faclient) alors
+      		selon client.CImpressionAngMet
+      			cas 1
+      				lMultiplicateur = 1
+      			cas 2
+      				lMultiplicateur = config.conversionam	
+      		FIN
+      		hlitrecherche(hfdetail,HFCLEUNIK,RequeteDetailfacture.HFCLEUNIK)
+      		tantque  hfdetail.fdnocomm = RequeteDetailfacture.fanumero et pas hendehors(hfdetail)
+      			selon hfdetail.ftype
+      				cas 1
+      					si hlitrecherche(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,...
+      						HConstruitValClé(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,lclient,hfdetail.fdnumprod,hfdetail.fdcomposant1,...
+      						hfdetail.fdcomposant2,hfdetail.fdcomposant3,lannee,lmois)) alors
+      						HistoAnneeMoisProduit.lqte += hfdetail.fdqteafacturer
+      						HistoAnneeMoisProduit.lpied += (hfdetail.fdpiedcarrefacture*lMultiplicateur*hfdetail.fdqteafacturer)
+      						HistoAnneeMoisProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * (hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture),2)...
+      						+ arrondi(hfdetail.fdqteafacturer * hfdetail.fdextraforme,2) + ...
+      						arrondi(hfdetail.fdqteafacturer *(hfdetail.FDextra10X + hfdetail.FDextra5x),2)
+      						HistoAnneeMoisProduit.lsurcharge +=  arrondi(hfdetail.surchargeenergie,2)
+      						hmodifie(HistoAnneeMoisProduit,hNumEnrEnCours)
+      					sinon
+      						HistoAnneeMoisProduit.lperiode = lperiode
+      						HistoAnneeMoisProduit.hClient = lclient
+      						HistoAnneeMoisProduit.lAnnee = lannee
+      						HistoAnneeMoisProduit.lmois = lmois
+      						HistoAnneeMoisProduit.ldescription = hfdetail.fddesc
+      						HistoAnneeMoisProduit.lProduit = hfdetail.fdnumprod
+      						HistoAnneeMoisProduit.lComp1 = hfdetail.fdcomposant1
+      						HistoAnneeMoisProduit.lComp2 = hfdetail.fdcomposant2
+      						HistoAnneeMoisProduit.lComp3 = hfdetail.fdcomposant3
+      						HistoAnneeMoisProduit.lsurcharge =  arrondi(hfdetail.surchargeenergie,2)
+      						HistoAnneeMoisProduit.lqte = hfdetail.fdqteafacturer
+      						HistoAnneeMoisProduit.ltype = "T"
+      						HistoAnneeMoisProduit.lpied = (hfdetail.fdpiedcarrefacture*lMultiplicateur*hfdetail.fdqteafacturer)
+      						HistoAnneeMoisProduit.lvente =  arrondi(hfdetail.fdqteafacturer * (hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture),2)...
+      						+ arrondi(hfdetail.fdqteafacturer * hfdetail.fdextraforme,2) + ...
+      						arrondi(hfdetail.fdqteafacturer *(hfdetail.FDextra10X + hfdetail.FDextra5x),2)
+      
+      						si HistoAnneeMoisProduit.lvente <> 0 alors
+      							hajoute(HistoAnneeMoisProduit)
+      						fin
+      					FIN
+      //					si hfdetail.fdnocomm = 45896 alors
+      //						info(arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2))
+      //					FIN
+      //					fecritligne(lid,NumériqueVersChaine(arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  ...
+      //					+ hfdetail.fdextraforme+hfdetail.FDextra10X + hfdetail.fdextra5x),2))+","+NumériqueVersChaine(arrondi(hfdetail.surchargeenergie,2)))
+      //					ltotalbon+=arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  ...
+      //					+ hfdetail.fdextraforme+hfdetail.FDextra10X + hfdetail.fdextra5x),2)
+      //					ltotalsurcharge += arrondi(hfdetail.surchargeenergie,2)
+      
+      				cas 4
+      					si hlitrecherche(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,...
+      						HConstruitValClé(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,lclient,hfdetail.fdnumprod,"","","",lannee,lmois)) alors
+      						HistoAnneeMoisProduit.lqte += hfdetail.fdqteafacturer * hfdetail.fdnbcarreau
+      						HistoAnneeMoisProduit.lvente +=  arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2)
+      //						HistoAnneeMoisProduit.lsurcharge +=  0
+      						HistoAnneeMoisProduit.lpied = 0
+      						HistoAnneeMoisProduit.peinturecarrelage += arrondi(hfdetail.fdqteafacturer*((hfdetail.Ftotalcarreaupeinture*hfdetail.fPrixCarreauPeinture)+...
+      						(hfdetail.FDnbcarreauPeinture1*hfdetail.fdprixcarreaupeinture1)),2)
+      						hmodifie(HistoAnneeMoisProduit,hNumEnrEnCours)
+      															
+      					sinon
+      						HistoAnneeMoisProduit.lperiode = lperiode
+      						HistoAnneeMoisProduit.hClient = lclient
+      						HistoAnneeMoisProduit.lAnnee = lannee
+      						HistoAnneeMoisProduit.lmois = lmois
+      						HistoAnneeMoisProduit.ldescription = hfdetail.fddesc
+      						HistoAnneeMoisProduit.lComp1 = ""
+      						HistoAnneeMoisProduit.lComp2 = ""
+      						HistoAnneeMoisProduit.lComp3 = ""
+      						HistoAnneeMoisProduit.lProduit = hfdetail.fdnumprod
+      						HistoAnneeMoisProduit.lsurcharge =  0
+      						HistoAnneeMoisProduit.lpied = 0
+      						HistoAnneeMoisProduit.lqte = hfdetail.fdqteafacturer * hfdetail.fdnbcarreau
+      						HistoAnneeMoisProduit.lType = "C"
+      						HistoAnneeMoisProduit.lvente =  arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2)
+      						HistoAnneeMoisProduit.peinturecarrelage = arrondi(hfdetail.fdqteafacturer*((hfdetail.Ftotalcarreaupeinture*hfdetail.fPrixCarreauPeinture)+...
+      						(hfdetail.FDnbcarreauPeinture1*hfdetail.fdprixcarreaupeinture1)),2)
+      						si HistoAnneeMoisProduit.lvente <> 0 alors
+      							hajoute(HistoAnneeMoisProduit)
+      						fin
+      
+      					FIN
+                           
+      //					si hfdetail.fdnocomm = 45896 alors
+      //						info(arrondi(hfdetail.fdcarrprixtotal,2))
+      //						info(arrondi(hfdetail.fTotalPeinture * hfdetail.fdqteafacturer,2))
+      //					FIN
+      //					ltotalbon+=  arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2)
+      //					ltotalbon+=  arrondi(hfdetail.fdqteafacturer*((hfdetail.Ftotalcarreaupeinture*hfdetail.fPrixCarreauPeinture)+...
+      //					(hfdetail.FDnbcarreauPeinture1*hfdetail.fdprixcarreaupeinture1)),2)
+      //					fecritligne(lid,NumériqueVersChaine(arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2))+","+...
+      //					NumériqueVersChaine(arrondi(hfdetail.fdqteafacturer*((hfdetail.Ftotalcarreaupeinture*hfdetail.fPrixCarreauPeinture)+...
+      //					(hfdetail.FDnbcarreauPeinture1*hfdetail.fdprixcarreaupeinture1)),2)))
+      					
+      					//					ltotalsurcharge += arrondi(hfdetail.surchargeenergie,2)
+      				autre cas
+      					si hfdetail.fdverreunite alors
+      						si hlitrecherche(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,...
+      							HConstruitValClé(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,lclient,hfdetail.fdnumprod,"","","",lannee,lmois)) alors
+      							HistoAnneeMoisProduit.lqte += hfdetail.fdqteafacturer
+      							HistoAnneeMoisProduit.lpied = 0
+      							HistoAnneeMoisProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2)
+      							HistoAnneeMoisProduit.lsurcharge +=  arrondi(hfdetail.surchargeenergie,2)
+      							hmodifie(HistoAnneeMoisProduit,hNumEnrEnCours)
+      						sinon
+      							HistoAnneeMoisProduit.lperiode = lperiode
+      							HistoAnneeMoisProduit.hClient = lclient
+      							HistoAnneeMoisProduit.lAnnee = lannee
+      							HistoAnneeMoisProduit.lmois = lmois
+      							HistoAnneeMoisProduit.ldescription = hfdetail.fddesc
+      							HistoAnneeMoisProduit.lComp1 = ""
+      							HistoAnneeMoisProduit.lComp2 = ""
+      							HistoAnneeMoisProduit.lComp3 = ""
+      							HistoAnneeMoisProduit.lProduit = hfdetail.fdnumprod
+      							HistoAnneeMoisProduit.lsurcharge =  arrondi(hfdetail.surchargeenergie,2)
+      							HistoAnneeMoisProduit.lqte = hfdetail.fdqteafacturer
+      							HistoAnneeMoisProduit.lType = ""
+      							HistoAnneeMoisProduit.lpied = 0
+      							HistoAnneeMoisProduit.lvente =  arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2)
+      							HistoAnneeMoisProduit.peinturecarrelage = 0
+      							si HistoAnneeMoisProduit.lvente <> 0 alors
+      								hajoute(HistoAnneeMoisProduit)
+      							fin		
+      						FIN
+      //						ltotalbon+= arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2)
+      //						ltotalsurcharge += arrondi(hfdetail.surchargeenergie,2)
+      //		//				fecritligne(lid,NumériqueVersChaine(arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2))+","+...
+      		//				NumériqueVersChaine(arrondi(hfdetail.surchargeenergie,2)))
+      					
+      						
+      					sinon
+      						si hlitrecherche(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,...
+      							HConstruitValClé(HistoAnneeMoisProduit,hClientlComp1lcomp2lcomp3lAnneelmois,lclient,hfdetail.fdnumprod,"","","",lannee,lmois)) alors
+      							HistoAnneeMoisProduit.lqte += hfdetail.fdqteafacturer
+      							si hfdetail.ftype = 5 alors
+      								HistoAnneeMoisProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)//+RequeteDetailfacture.fsurchargepeinture
+      //								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer *  hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)))//+","+NumériqueVersChaine(HistoAnneeMoisProduit.lsurcharge)+","+...
+      						//		ltotalbon+=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)
+      							sinon
+      							
+      								HistoAnneeMoisProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      					//			ltotalbon+=arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      //								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)))//+","+NumériqueVersChaine(HistoAnneeMoisProduit.lsurcharge)+","+...
+      							FIN
+      //							HistoAnneeMoisProduit.lsurcharge +=  arrondi(hfdetail.surchargeenergie,2)
+      							si ltotalsurchargepeinture <> 0 alors
+      								HistoAnneeMoisProduit.lvente += ltotalsurchargepeinture
+      //								ltotalsurcharge+=ltotalsurchargepeinture
+      								ltotalsurchargepeinture = 0
+      							FIN
+      							HistoAnneeMoisProduit.lpied = 0
+      							hmodifie(HistoAnneeMoisProduit,hNumEnrEnCours)
+      						sinon
+      							HistoAnneeMoisProduit.lperiode = lperiode
+      							HistoAnneeMoisProduit.hClient = lclient
+      							HistoAnneeMoisProduit.lAnnee = lannee
+      							HistoAnneeMoisProduit.lmois = lmois
+      							HistoAnneeMoisProduit.ldescription = hfdetail.fddesc
+      							HistoAnneeMoisProduit.lComp1 = ""
+      							HistoAnneeMoisProduit.lComp2 = ""
+      							HistoAnneeMoisProduit.lComp3 = ""
+      							HistoAnneeMoisProduit.lProduit = hfdetail.fdnumprod
+      							HistoAnneeMoisProduit.lsurcharge =  0
+      							HistoAnneeMoisProduit.lpied = 0
+      							//							HistoAnneeMoisProduit.lsurcharge =  arrondi(hfdetail.surchargeenergie,2)
+      							HistoAnneeMoisProduit.lqte = hfdetail.fdqteafacturer
+      							si hfdetail.ftype = 5 alors
+      								HistoAnneeMoisProduit.lvente =  arrondi(hfdetail.fdqteafacturer *  hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)//+RequeteDetailfacture.fsurchargepeinture
+      //								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer *  hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)))//+","+NumériqueVersChaine(HistoAnneeMoisProduit.lsurcharge)+","+...
+      								//NumériqueVersChaine(HistoAnneeMoisProduit.peinturecarrelage))							
+      	//							ltotalbon+=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)
+      							sinon
+      
+      //								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)))//+","+NumériqueVersChaine(HistoAnneeMoisProduit.lsurcharge)+","+...
+      			//					ltotalbon+=arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      								HistoAnneeMoisProduit.lvente =  arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      							FIN
+      							
+      							HistoAnneeMoisProduit.peinturecarrelage = 0
+      							si HistoAnneeMoisProduit.lvente <> 0 alors
+      								si ltotalsurchargepeinture <> 0 alors
+      									HistoAnneeMoisProduit.lvente += ltotalsurchargepeinture
+      //									ltotalsurcharge+=ltotalsurchargepeinture
+      									ltotalsurchargepeinture = 0
+      								FIN
+      								hajoute(HistoAnneeMoisProduit)
+      							fin		
+      						FIN
+      						
+      //						si hfdetail.fdnocomm = 45896 alors
+      //							info(arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2))		
+      //						FIN
+      //						ltotalbon+=arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      					fin
+      
+      			FIN
+      //            fecritligne(lid,NumériqueVersChaine(HistoAnneeMoisProduit.lvente)+","+NumériqueVersChaine(HistoAnneeMoisProduit.lsurcharge)+","+...
+      //            NumériqueVersChaine(HistoAnneeMoisProduit.peinturecarrelage))
+      			hlitsuivant(hfdetail,HFCLEUNIK)
+      
+      		fin	
+      	fin
+      
+      	hlitsuivant(RequeteDetailfacture)
+      FIN
+      
+      
+      
+     type : 458752
+   -
+     name : AlimenteLanneemois
+     procedure_id : 1749109952272463935
+     type_code : 15
+     code : |1+
+      Procédure AlimenteLanneemois()
+      lannee est une chaine
+      lmois est une chaine
+      lclient est une chaine
+      lvendeur est un entier
+      
+      
+      
+      
+      
+      
+      		
+      		lannee = BonLivraison.Bdatefacture..Année
+      		lmois = BonLivraison.Bdatefacture..mois
+      		lclient = sansespace(bonLivraison.Bclient)
+      		lvendeur = BonLivraison.cvendeur
+      		AlimenteAnneMoisProduit(BonLivraison.bnumero,lclient,lannee,remplir_zero(lmois,2),lannee+remplir_zero(lmois,2))
+      		AlimenteJourProduit(BonLivraison.bnumero,lclient,BonLivraison.BDateFacture)
+      		hraz(HistoAnneeMois)
+      		
+      		SI HLitRecherche(HistoAnneeMois,LvendeurClientAnneeMois,HConstruitValClé(HistoAnneeMois,LvendeurClientAnneeMois,lvendeur,lclient,lannee,lmois)) ALORS
+      
+      			HistoAnneeMois.lvente+= BonLivraison.BStotal
+      			hmodifie(HistoAnneeMois,hNumEnrEnCours)
+      		sinon
+      			si BonLivraison.bstotal <> 0
+      				HistoAnneeMois.hclient = lclient
+      				HistoAnneeMois.lAnnee = lannee
+      				HistoAnneeMois.lmois = lmois
+      				HistoAnneeMois.cvendeur = lvendeur
+      				HistoAnneeMois.lvente = BonLivraison.BStotal
+      				hajoute(HistoAnneeMois)
+      			FIN
+      		fin
+      
+      	
+      
+      
+      
+      sablier(faux)                      
+      
+     type : 458752
+   -
+     name : AlimenteJourProduit
+     procedure_id : 2285552260868062799
+     type_code : 15
+     code : |1+
+      Procédure AlimenteJourProduit(lNumeroBon,lclient,ldate,lid=0)
+      i est un entier
+      ltotalbon est un reel
+      ltotalsurcharge est un reel
+      
+      ltotalsurchargepeinture est un reel = 0
+      lMultiplicateur est un reel = 0
+      
+      
+      HExécuteRequête(RequeteDetailfacture,hRequêteDéfaut,lNumeroBon)
+      HLitPremier(RequeteDetailfacture)
+      
+      
+      tantque pas HEnDehors(RequeteDetailfacture)
+      	si requetedetailfacture.fsurchargepeinture <> 0 alors
+      		ltotalsurchargepeinture=requetedetailfacture.fsurchargepeinture
+      	FIN
+      	
+      	si hlitrecherche(client,numero,RequeteDetailfacture.faclient) alors
+      		selon client.CImpressionAngMet
+      			cas 1
+      				lMultiplicateur = 1
+      			cas 2
+      				lMultiplicateur = config.conversionam	
+      		FIN
+      		hlitrecherche(hfdetail,HFCLEUNIK,RequeteDetailfacture.HFCLEUNIK)
+      		tantque  hfdetail.fdnocomm = RequeteDetailfacture.fanumero et pas hendehors(hfdetail)
+      			selon hfdetail.ftype
+      				cas 1
+      					si hlitrecherche(HistojourProduit,Hclientldate,...
+      						HConstruitValClé(HistojourProduit,Hclientldate,lclient,ldate)) alors
+      						HistojourProduit.lqte += hfdetail.fdqteafacturer
+      						HistojourProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * (hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture),2)...
+      						+ arrondi(hfdetail.fdqteafacturer * hfdetail.fdextraforme,2) + ...
+      						arrondi(hfdetail.fdqteafacturer *(hfdetail.FDextra10X + hfdetail.FDextra5x),2)+Arrondi(hfdetail.surchargeenergie,2)
+      						hmodifie(HistojourProduit,hNumEnrEnCours)
+      					sinon
+      						HistojourProduit.hClient = lclient
+      						HistoJourProduit.ldate = ldate
+      						HistojourProduit.lqte = hfdetail.fdqteafacturer
+      						HistojourProduit.lvente =  arrondi(hfdetail.fdqteafacturer * (hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture),2)...
+      						+ arrondi(hfdetail.fdqteafacturer * hfdetail.fdextraforme,2) + ...
+      						arrondi(hfdetail.fdqteafacturer *(hfdetail.FDextra10X + hfdetail.FDextra5x),2)+Arrondi(hfdetail.surchargeenergie,2)
+      						
+      						si HistojourProduit.lvente <> 0 alors
+      							hajoute(HistojourProduit)
+      						fin
+      					FIN
+      					
+      					ltotalbon+=arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  ...
+      					+ hfdetail.fdextraforme+hfdetail.FDextra10X + hfdetail.fdextra5x),2)
+      					ltotalsurcharge += arrondi(hfdetail.surchargeenergie,2)
+      					
+      				cas 4
+      					si hlitrecherche(HistojourProduit,Hclientldate,...
+      						HConstruitValClé(HistojourProduit,Hclientldate,lclient,ldate)) alors
+      						HistojourProduit.lqte += hfdetail.fdqteafacturer * hfdetail.fdnbcarreau
+      						HistojourProduit.lvente +=  arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2)
+      						hmodifie(HistojourProduit,hNumEnrEnCours)
+      						
+      					sinon
+      						HistojourProduit.hClient = lclient
+      						HistojourProduit.ldate = ldate
+      						
+      						HistojourProduit.lqte = hfdetail.fdqteafacturer  * hfdetail.fdnbcarreau
+      						
+      						HistojourProduit.lvente =  arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2)
+      						si HistojourProduit.lvente <> 0 alors
+      							hajoute(HistojourProduit)
+      						fin
+      						
+      					FIN
+      					
+      					//					si hfdetail.fdnocomm = 45896 alors
+      					//						info(arrondi(hfdetail.fdcarrprixtotal,2))
+      					//						info(arrondi(hfdetail.fTotalPeinture * hfdetail.fdqteafacturer,2))
+      					//					FIN
+      					ltotalbon+=  arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2)
+      					ltotalbon+=  arrondi(hfdetail.fdqteafacturer*((hfdetail.Ftotalcarreaupeinture*hfdetail.fPrixCarreauPeinture)+...
+      					(hfdetail.FDnbcarreauPeinture1*hfdetail.fdprixcarreaupeinture1)),2)
+      					//					fecritligne(lid,NumériqueVersChaine(arrondi(hfdetail.fdqteafacturer* ( hfdetail.frcarrprixu+hfdetail.fdcarrprixdebase),2))+","+...
+      					//					NumériqueVersChaine(arrondi(hfdetail.fdqteafacturer*((hfdetail.Ftotalcarreaupeinture*hfdetail.fPrixCarreauPeinture)+...
+      					//					(hfdetail.FDnbcarreauPeinture1*hfdetail.fdprixcarreaupeinture1)),2)))
+      					
+      				//					ltotalsurcharge += arrondi(hfdetail.surchargeenergie,2)
+      				autre cas
+      					si hfdetail.fdverreunite alors
+      						si hlitrecherche(HistojourProduit,Hclientldate,...
+      							HConstruitValClé(HistojourProduit,Hclientldate,lclient,ldate)) alors
+      							HistojourProduit.lqte += hfdetail.fdqteafacturer
+      							
+      							HistojourProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2)
+      							HistoJourProduit.lvente +=Arrondi(hfdetail.surchargeenergie,2)
+      							hmodifie(HistojourProduit,hNumEnrEnCours)
+      						sinon
+      							HistojourProduit.hClient = lclient
+      							HistojourProduit.ldate = ldate
+      							
+      							HistojourProduit.lqte = hfdetail.fdqteafacturer
+      							
+      							HistojourProduit.lvente =  arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2)
+      							HistoJourProduit.lvente +=Arrondi(hfdetail.surchargeenergie,2)
+      							si HistojourProduit.lvente <> 0 alors
+      								hajoute(HistojourProduit)
+      							fin		
+      						FIN
+      						ltotalbon+= arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2)
+      						ltotalsurcharge += arrondi(hfdetail.surchargeenergie,2)
+      						//				fecritligne(lid,NumériqueVersChaine(arrondi(hfdetail.fdqteafacturer * ((hfdetail.fdpiedcarrefacture * hfdetail.fdprixupiedfacture)  + hfdetail.fdextraforme),2))+","+...
+      						//				NumériqueVersChaine(arrondi(hfdetail.surchargeenergie,2)))
+      						
+      						
+      					sinon
+      						si hlitrecherche(HistojourProduit,Hclientldate,...
+      							HConstruitValClé(HistojourProduit,Hclientldate,lclient,ldate)) alors
+      							HistojourProduit.lqte += hfdetail.fdqteafacturer
+      							si hfdetail.ftype = 5 alors
+      								HistojourProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)//+RequeteDetailfacture.fsurchargepeinture
+      								//								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer *  hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)))//+","+NumériqueVersChaine(HistojourProduit.lsurcharge)+","+...
+      								ltotalbon+=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)
+      							sinon
+      								
+      								HistojourProduit.lvente +=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      								ltotalbon+=arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      								//								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)))//+","+NumériqueVersChaine(HistojourProduit.lsurcharge)+","+...
+      							FIN
+      							//							HistojourProduit.lsurcharge +=  arrondi(hfdetail.surchargeenergie,2)
+      							si ltotalsurchargepeinture <> 0 alors
+      								HistojourProduit.lvente += ltotalsurchargepeinture
+      								ltotalsurcharge+=ltotalsurchargepeinture
+      								ltotalsurchargepeinture = 0
+      							FIN
+      							
+      							hmodifie(HistojourProduit,hNumEnrEnCours)
+      						sinon
+      							HistojourProduit.ldate = ldate
+      							HistojourProduit.hClient = lclient
+      							
+      							//							HistojourProduit.lsurcharge =  arrondi(hfdetail.surchargeenergie,2)
+      							HistojourProduit.lqte = hfdetail.fdqteafacturer
+      							si hfdetail.ftype = 5 alors
+      								HistojourProduit.lvente =  arrondi(hfdetail.fdqteafacturer *  hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)//+RequeteDetailfacture.fsurchargepeinture
+      								//								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer *  hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)))//+","+NumériqueVersChaine(HistojourProduit.lsurcharge)+","+...
+      								//NumériqueVersChaine(HistojourProduit.peinturecarrelage))							
+      								ltotalbon+=  arrondi(hfdetail.fdqteafacturer * hfdetail.fdpiedcarrefacture*hfdetail.fdprixupied,2)
+      							sinon
+      								
+      								//								fecritligne(lid,NumériqueVersChaine( arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)))//+","+NumériqueVersChaine(HistojourProduit.lsurcharge)+","+...
+      								ltotalbon+=arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      								HistojourProduit.lvente =  arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      							FIN
+      							
+      							
+      							si HistojourProduit.lvente <> 0 alors
+      								si ltotalsurchargepeinture <> 0 alors
+      									HistojourProduit.lvente += ltotalsurchargepeinture
+      									ltotalsurcharge+=ltotalsurchargepeinture
+      									ltotalsurchargepeinture = 0
+      								FIN
+      								hajoute(HistojourProduit)
+      							fin		
+      						FIN
+      						
+      						//						si hfdetail.fdnocomm = 45896 alors
+      						//							info(arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2))		
+      						//						FIN
+      						//						ltotalbon+=arrondi(hfdetail.fdqteafacturer * hfdetail.fdprixu,2)//+RequeteDetailfacture.fsurchargepeinture
+      					fin
+      					
+      			FIN
+      			//            fecritligne(lid,NumériqueVersChaine(HistojourProduit.lvente)+","+NumériqueVersChaine(HistojourProduit.lsurcharge)+","+...
+      			//            NumériqueVersChaine(HistojourProduit.peinturecarrelage))
+      			hlitsuivant(hfdetail,HFCLEUNIK)
+      			
+      		fin	
+      	fin
+      	
+      	hlitsuivant(RequeteDetailfacture)
+      FIN
+      
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ProcéduresGlobales1
+resources :
+ string_res :
+  identifier : 0x184615b701d9f318
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

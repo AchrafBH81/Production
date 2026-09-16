@@ -1,0 +1,59 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : oCommandeEdi
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x16a039780f6f5450
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      oCommandeEdi est une classe
+      		_NoCommande est un chaîne = ""
+      		_DateCommande est un date = ""
+      		_DateRequise est un date = ""
+      		_Client est un chaîne = ""
+      		_Acheteur est un chaîne = ""
+      		_NoPorte est un chaîne = ""
+      		_Telephoneachat est un chaîne = ""
+      		_Telephonelivraison est un chaîne = ""
+      	
+      		tabLigneCommande est un tableau dynamique de 0 objet oCommandeEdiLigne dynamique
+      	
+      	
+      Fin
+       
+       
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1630366252925998160
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur( )
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1630366252926063696
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x16a039690f6916ea
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

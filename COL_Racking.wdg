@@ -1,0 +1,149 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_Racking
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x171d5a2507fb6688
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1+
+      constant 
+      	rMaxFinish		= 28.575
+      	nMaximumRack	= 47
+      FIN
+      
+      
+      
+      
+      
+      
+      stOrder			est une Structure
+      	CustomerNumber			est une chaîne	<mapping = CustomerNumber>
+      	Customername			est une chaine	<mapping = Customername>
+      	sShippingname			est une chaine	<mapping=Shippingname>
+      	OrderNumber				est une chaîne	<mapping = orderNumber>
+      	nLargeur				est un entier	<mapping = width>
+      	nHauteur				est un entier	<mapping = height>
+      	nLargeurhauteur			est une entier
+      	bRackAuMur				est un booléen	<mapping = rackAuMur>
+      	sShapeNumber			est une chaîne	<Mapping = ShapeNumber>
+      	nShippingSequence		est un entier	<MAPPING = ShippingSequence>
+      	nIdClientLivraison		est un entier
+      	nIdClient				est un entier 
+      	nQuantity				est un entier
+      	nNumberOfSlotUsed		est un entier								// nombre de slot utilisées par un thermos - triple = 2
+      	
+      	bProcess				est un booléen
+      	nRackLineNumber			est une entier	<mapping = LineNumber>
+      	bIsRackLiftShipping		est un booléen	<mapping = islift>
+      	nOrderDetailLine		est un entier	<mapping = OrderDetailLine>
+      	bTodelete				est un booleen 
+      	bTruckChange			est un booleen	<mapping = TruckChange>		// Si la commande à été changée de camion
+      	bAlreadyBatched			est un booleen	<Mapping = AlreadyBatched>	// Si la commande est déjà batché
+      	nTruckNumber			est un entier	<mapping = TruckNumber>
+      	nRackNumber				est un entier	<Mapping = RackNumber>
+      	bIstriple				est un booleen	<mapping = Istriple>
+      	sFinish					est une chaine	<mapping = finish>
+      	bFinishOverMax			est un booleen	<Mapping = IsFinishOverMax>
+      	bAlreadyOnRack			est un booleen 
+      	nStickerNumber			est un entier	<mapping = StickerNumber>
+      	
+      	
+      FIN
+      
+      CptSlot			est un Structure
+      	Low			est un entier
+      	high		est un entier
+      	LowMiddle	est une entier
+      	HighMiddle	est un entier
+      	EmptySlot	est un entier
+      FIN
+      
+      
+      STMasterOrder est un structure
+      	nShippingSequence	est un entier
+      	bIsRackLiftShipping	est un booleen
+      	OrderNumber			est une chaîne
+      	nTotalQuantity		est un entier
+      	nNumberOfSlotused	est un entier
+      	nQuantityLeft		est un entier
+      	sCustomerNumber		est une chaine
+      	tabLine				est un tableau de storder
+      	bToSuppress			est un booleen
+      	nGreatestWidth		est un entier
+      	bAlreadyOnRAck		est un booleen
+      	
+      	
+      fin
+      
+      STMasterCustomer est une structure
+      	tabAllCustomerOrder		est un tableau de stmasterorder
+      	nTotalQuantity			est un entier
+      	nTotalNumberOfSlotused	est un entier
+      	nShippingSequence		est un entier
+      	bIsRackLiftShipping		est un booleen
+      	bToSuppress				est un booleen 
+      	nRackingOrder			est un entier
+      	
+      fin
+      
+      
+      
+      
+      
+      STAllrack		est une structure
+      	tabCurrentOrder		est un tableau  de storder
+      	OneRack				est un tableau de nmaximumrack reel
+      	OneRackHauteur		est un tableau de nMaximumRack reels
+      	nShippingSequence	est un entier
+      	bIsRackLiftShipping	est un booléen
+      	nRackNumber			est un entier
+      	nNumberOfTriple		est un entier
+      	bTripleOnly			est un booleen
+      FIN
+      
+      STAllTruck est une structure
+      	taAllTruckRack				est un tableau associatif (*, *, wlEntier) de stallrack
+      	tabAlltruckrackForReport	est un tableau de stallrack
+      	nTruckID					est un entier
+      	sTruckNumber				est une chaîne
+      	sTruckDescription			est une chaîne
+      	tabRackAuMur				est un tableau de storder
+      	sTruckdate					est une chaine 
+      	
+      fin
+      
+      STAllDate est une structure
+      	taAllTruckrack				est un tableau associatif (*, *, wlEntier) de STAllTruck
+      fin
+      STOrderForReport est une structure
+      	nTruckNumber			est un entier
+      	nRackNumber				est un entier
+      	sCustomerNumber			est une chaine
+      	sCustomerName			est une chaine
+      	sShippingname			est une chaine
+      	nNumberOfThermos		est un entier
+      	nNumberOfTripleThermos	est un entier
+      	nShippingSequence		est un entier
+      	sRackingdate			est une chaine
+      	
+      fin
+      
+     type : 720896
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x171d5fd80994a8e5
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

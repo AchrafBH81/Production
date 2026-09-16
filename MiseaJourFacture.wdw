@@ -1,0 +1,302 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : MiseaJourFacture
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Mise a jour date de modification de prix
+ subtype : 0
+window :
+ name : MiseaJourFacture
+ identifier : 0x4aa6a37f57927e72
+ internal_properties : CQAAAAkAAACG94kgKea9ASAReGA3L0kIJyDTNEmSFRsm/CYLxr1HegWdYSAwPF0cDaEmwxNSKi2Sd1xhZx/DoWT7NBl5VVx9jf1kUTNHYdMNB4DqxCR2flG7Ra+ymuSR7onfWY5lZbAfMBytF27coGVYwdqyXArzh0id09+V1i141A48hkXVjiqczDsrkpIQHQkO13qcre0zARBeNJxuaoFIXp6ZarLVfpZ1adHkFDM8SzCve4dhOPUA4paX3k4JvgjkESHq4MXIiRQ4Z3pO7WZ0+5qTGIWt/xXwHWddhr1IZIbs0BJ4V202JeIDQeNO0wnPyxIZCkYQBGFfCR77lPVVSiN54cZDSQ80NdgTXpcwy4mukPdSgCRE1Y3/DjFZRv90136eAR8R+/12lb/TuPmMv6oxCksh3peJ17gOytuC4DvZx7mcCgo+dWEMQ9u42MY5MY/0K12VkncaQRlDZHiw9FfCYyTxuKDBbux+SDuAtfAcFUrgPEe99UprfM6GeGFVnfQv28fs6Nxz3uyGEW3VpI96CRu71FctHbvtYjA2xdZXn1NV1243nbhmDVtoosvq+/3sORgl2oNuFwFVaN4FGsBB8mYAOVnceHvTZwQ1dyj1+NAvGpM3jj0IUGWO2f73z7EKe/2LATsGyJkZBcfOZyK9amFLuxcfYGuqoBJiyAk/J/gpJ7x39i8LyDG0vElky+i4UYGljSODu0bhKEQT5K30ISkuYsvqB6mSdbgn24+0oUU/jYA=
+ properties :
+  x : 120
+  y : 50
+  width : 394
+  height : 127
+  widthClient : 392
+  heightClient : 95
+ controls :
+  -
+    name : BTN_SORTIE
+    identifier : 0x4aa6a38033018047
+    internal_properties : CQAAAAkAAAAyWsH12JRIWmSQ83cI5+i1ZjmAsgrDTHglCS4sGVrcrVNamke3R6MuZHSi46rM+biDwmNSNNAGTpykzd8VjPjNOCwOz4Ar2SfKCyEjgJVbzSy8oPX+fK/aoxbjIwvAgj/6QLkhj+uOeJ9mvZcMW8T5IeKRL7vtcGR3jwi3omub+lZCfGBAqV5lGQ49C6MVqVxIrEBZzHDvJSIpxpkx7xPOrQh3vz+Z8/3kV5Ac1diR/SkJ1k8wZmYYHeT7UrI7AoN4dGGBoGqAVo0cqO3TG0BR1n3XZicHWlilYQaJv665AO2EzH1hzw18mdApuNEg4jI0t/N1T3mdRcmAgIeQOnWuEH2LBpaT13Wvxqkqf9arpODR5uTjw4Nu5wYv4mU5MdG6US832aT8I0nXIPF4cJfPEz3zbEDY6CObY9ROS7QQLcDzxI89bkPcq3wy0AFalMdDtubrGnLvW+cPTM4Yqh4orwdrBBfrSzF6ZRhDm1G7mIqlGzu9C/fDO8cXjiq4RBisacU51K5RyW8H/gjIL4/7DqNt6V+9AohE600aLjjNdoxFS7i5P017pETkWQUjv+ESflN26wrUeim3Ffp+U1i0Ob4O6LdDpiwpLj8Uov/T9VvQk0vV96AlcHloDZBNQdsoZZWzNu1a0na0+Htp6va6/iIHNnPZYF5tF6l0RkqLbZ5BgHNk8axPJ6+wl6m5NI30m/bKgPp3rRURR8fiMRvw+MG98nmppouS0+wlFChFe8tCpl1/IZA/8m+gvcayyB3BkKdz6xkOjIVVjtU=
+    properties :
+     x : 523
+     y : -24
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_OK
+    identifier : 0x4aa6a38063b78057
+    internal_properties : CQAAAAkAAAAXOaaGxpTmk2Wulgg4UmDrHHIQ0hcw2XvEURIuR8Ru3HvNw4E+vJ3g6zTIIor6aGtawzomPE3PJQNnQcW3ltHhTK8JmtAba1S/sAE6r54dD9235BWGQIdce+Ij092YV5FgEeDTP5NIzvUPglnwzdRUx5zfj0LR8OqIQJLu9zou0MJvlm/+5ZdjWkb3r4gi4eMs2GUSm1klg90GMbBmJBWvJcYpmNUU9ucpIDaSgXZ+S3btRw9bxY30TIaRe89X3lQBl2ZnCT/PloFZEtadadb1e0A2HxNzHufEjJoS5nQKgWtOgeiBD7QTgKr7savhJR83c0hP4K0h3zE5CEbZdp+kqypVx4W7lSslCAJ59cs5b2lAAZdE7VcceOtW/PbVqKKAqPp+Rr/75hjBMCMn0SnWqXQDOBW0k96kEyIMppl4hLoYOmkM8FSx3sY67rQHBICVy0q35wxUhEDJWPwzbzaXm3ZjsMwXqGbNwf6nft4lzyzqR7l67UZKvGvtIBMv/E+eoqfvdW4S1qYVkrh38HOImtoN/c7vk7HrdZEsrwebMaDyx4qSf6p0Cez+GzYSnSqIrfOcNGoJ/8x5Lil+BT6jrseSa8XOoAh1KemHhv4t2O1axeOh+V/tn/0cg7DjQMVHaeqReKttaNQcCpwfZL1kH4d7VllhSCaivsrtuT/uVeIg6cKD7yU5EZJ0e/Z764+3HdGFOFVpTTc=
+    properties :
+     x : 500
+     y : 60
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         hlitpremier("invent","INUM")
+         tantque pas HEnDehors()
+         	saisie1 = invent.inum
+         
+         	multitache(1)
+         	selon invent.itype
+         
+         		// Verre produit de base et additionnel
+         
+         		cas 1 
+         			si invent.ibase alors		
+         				invent.iprixa = invent.iprixfutur 
+         				invent.iprixm = invent.iprixfuturm 
+         				invent.iprixdouble = invent.iprixfuturdouble 
+         				invent.iprixdoublem = invent.iprixfuturdoublem 
+         				invent.iprixtriple = invent.iprixfuturtriple 
+         				invent.iprixtriplem = invent.iprixfuturtriplem 
+         				// mise a zéro des prix  futur et date 
+         				invent.iprixfutur = 0
+         				invent.iprixfuturm = 0
+         				invent.iprixfuturdouble = 0 
+         				invent.iprixfuturdoublem = 0
+         				invent.iprixfuturtriple  = 0
+         				invent.iprixfuturtriplem = 0
+         				invent.idateprixfutur = ""
+         
+         			sinon
+         				invent.iprixa = invent.iprixfutur
+         				invent.iprixm = invent.iprixfuturm
+         
+         				// mise a zéro des prix futur et date
+         
+         				invent.iprixfutur = 0
+         				invent.iprixfuturm = 0
+         				invent.idateprixfutur = ""
+         
+         
+         			fin
+         			// verre a l'unite et produit a l'inité
+         		cas 2 
+         			selon invent.iunitetype
+         
+         				cas 2   // verre a l'unite
+         
+         					invent.iprixunitaire = invent.iprixfuturunite 
+         					invent.iprixunitem = invent.iprixfuturunitem 
+         
+         					// mise a zéro des prix futur et date
+         
+         					invent.iprixfuturunite = 0
+         					invent.iprixfuturunitem = 0
+         					invent.idateprixfutur = ""
+         
+         				cas 3
+         
+         					invent.iprixuniterouleau = invent.iprixfuturuniterouleau
+         					invent.iprixunite = invent.iprixfuturu
+         					// mise a zéro des prix futur et date
+         
+         					invent.iprixfuturuniterouleau = 0
+         					invent.iprixfuturu = 0
+         					invent.idateprixfutur = ""
+         
+         				autres cas
+         
+         					invent.iprixunite = invent.iprixfuturu
+         					invent.iprixfuturu = 0
+         					invent.idateprixfutur = ""
+         
+         			FIN
+         		cas 4   // carrelage
+         
+         			si invent.iprixfuturbasecarrelage <> 0.00  alors
+         				invent.iprixbasecarrelage =  invent.iprixfuturbasecarrelage
+         				invent.iprixfuturbasecarrelage = 	 0
+         			FIN
+         			si invent.iprixfuturcarreau <> 0.00  alors
+         				invent.iprixcarreau = invent.iprixfuturcarreau
+         				invent.iprixfuturcarreau = 	 0
+         				invent.idateprixfutur = ""
+         			fin
+         		cas 5   // carrelage
+         
+         			si invent.iprixFuturPeinture <> 0.00  alors
+         				invent.iprixPeinture =  invent.iprixFuturPeinture
+         				invent.iprixFuturPeinture = 0
+         			FIN
+         			si invent.iprixFuturPeinturem <> 0.00  alors
+         				invent.iprixPeinturem =  invent.iprixFuturPeinturem
+         				invent.iprixFuturPeinturem = 0
+         			FIN
+         	fin
+         
+         	hmodifie("invent")
+         	hlitsuivant("invent","INUM")
+         
+         fin	
+         hlitpremier(persoens,ennumero)
+         tantque pas HEnDehors(persoens)
+         	saisie1 = persoens.ennumero
+         	multitache(1)
+         	si persoens.enprixfutura <> 0 alors
+         		persoens.enprixa = persoens.enprixfutura
+         		persoens.enprixfutura = 0
+         		gModifCommande = vrai
+         	fin
+         	si persoens.enprixfuturm <> 0 alors
+         		persoens.enprixm = persoens.enprixfuturm
+         		persoens.enprixfuturm = 0
+         		gModifCommande = vrai
+         	fin
+         	HModifie(persoens,hNumEnrEnCours)
+         	HLitSuivant(persoens,ennumero)
+         fin
+         si gModifCommande alors
+         	si acso_message("Question","Voulez-vous appliquer les changements de prix de thermos aux commandes et bons de livraison ?","OuiNon") = idyes ALORS
+         			ModifierCommande()
+         	fin	
+         fin
+         ModifierCommandePeinture()
+         ferme(miseajourdate)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : csnCompteur
+    identifier : 0x4aa6a38048a48066
+    internal_properties : CQAAAAkAAAAFiNFrYtuSd0NJu0OqWTpK3hLMHr8I1z773PrWt3qzAUL2VSJDz6lh4cjuD+QlzXAGglWbQIhSOA7WUSAR7VLN6wYrMMj3jWJ3uzy26RrLGPMBIgr+uv97j3O+mzysHXSefqj2Bid8FKpOjCMt17Wm/HwMHhntNuQSe5yZ2oa02HTZKOMbZdfdjS84EE6gO4SfT0owdpLp0coLALEJ4OgOxnITk+v2AjxX/lewnASjm0fl12FjKpdyVYihdlieruCUrrC8Sm878TEhKNZh94Qoio6cjaMSN3WFdKgRwFg2c/Khz/RbLXDqNtI6dgLPIJTIXloTUBC77vzLaxe/cUEg0MI2kvtuxMV4ZDD9sGq+rIDSmMvD8ZS9DEpsOG86ty1ee2stAdcqc+yNMqWgJmvV7GSh13/b7bM29Dsr4he4tu0PXWvXb0+t4XV4rE1j5wkYEihVQcE2HtvldkfxwOuEbK3V7zL+3pW5QygzFjc5Q4WBCtT4nebn4H7C14Gzrj6vc7VYZVgBNEefUCV4kWjeLx/hLis5EGsdOBf9mVEM5rgutJ/G5gKKTC4NaFKLnn8fkg/bZtbGJ5wKNB6Zro+9OtiQHUsnwbiwlpPAF66sHepgH29eUVMN73kULWFn3HqTG9bUWbVmK/etH0nkH76QxgxEQQB/B8nROZMazcSF8IG+51EDHmRR5m8/2bCt7OhAcIH3TPHf8QA5mjkX9I2Xl0oZ/N43QLiovDM5Qx8PKIGaTn1/svXz/4hOdXmzY4DVybikIo3l7rpqy5Z9+/Aw4Q==
+    properties :
+     x : 132
+     y : 32
+     width : 129
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x4aa6a38033268066
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAB+tqgL9wh+XzClRStvlfGLkATcOahkdXnHxP78ROqsPvEqPYDFtUlHbhCwsCH6ni/JULxFqdBYh0S5+FEhW2eAlFbBqeFQ0/vBoEdfexkgy2qf8fsokr7T7pEiuQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      fonction miseajourfacture()
+      
+      
+      
+   -
+     code : |1+
+      MajHistoFac()
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : MajHistoFac
+     procedure_id : 5379170630790932829
+     type_code : 14
+     code : |1-
+      Procédure MajHistoFac()
+      rectotal est une chaine = sansespace(NumériqueVersChaine(hnbenr(facture)+hnbenr(hfacture)))
+      i est un entier
+      
+      pour tout hfacture 
+      i++
+      MiseaJourFacture.csnCompteur = sansespace(NumériqueVersChaine(i))+"/"+rectotal
+      MultitacheRepeint(MiseaJourFacture)
+      	si hlitrecherche(client,numero,hfacture.faclient) alors
+      		hfacture.nom = client.nom
+      		hfacture.Adresse = client.crue
+      		hfacture.ville = client.cville
+      		hfacture.CodePostal = client.ccodepostal
+      		hfacture.noTelephone = client.ctelephone
+      		hmodifie(hfacture,hNumEnrEnCours)
+      	FIN
+      	
+      FIN
+      pour tout facture 
+      	i++
+      	MiseaJourFacture.csnCompteur = sansespace(NumériqueVersChaine(i))+"/"+rectotal
+      	MultitacheRepeint(MiseaJourFacture)
+      	si hlitrecherche(client,numero,facture.faclient) alors
+      		facture.nom = client.nom
+      		facture.Adresse = client.crue
+      		facture.ville = client.cville
+      		facture.CodePostal = client.ccodepostal
+      		facture.noTelephone = client.ctelephone
+      		hmodifie(facture,hNumEnrEnCours)
+      	FIN
+      
+      FIN
+      multitache(200)
+      ferme(MiseaJourFacture)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x4aa6a38015038076
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

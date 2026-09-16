@@ -1,0 +1,107 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : EtatConcatFacture
+ major_version : 29
+ minor_version : 0
+ type : 3
+ description : ""
+ subtype : 0
+report :
+ identifier : 0x5732721009ee4c4f
+ internal_properties : CQAAAAkAAADsfljF+JEXkf1yobdJHLhB/AMSzDgL64WZzjxYgAroFO+qHJACHLWqXzI4fvmJmZSTmLy9ZgqT37D0+VX2iqU6nllfOkcn+yw5/lpn8C8r7wqfRIBptMYGe9XXooqua3tRjGqbpTocYv0cEhvexjgCUU5tQcxAIQqhz3shFcBHFvsACnmp+U1BTGDL7R3hFgKHEQFyf+Yg8XmOlNagwDz9pGrMwt6CB/IGfA17sMBARdKuvFaUGCzZiPsjMG6IH+pypp1TEdSUjuMQw67XMRKaix2NA7IWvZOjzK8qnga6lwXkyZMibrO18GPnqWI6ICGeG7SPmYqIhE6qZQZUuaCD6VEmJXEpDcvPzift0KWFcwypv+R16/LLxvwC83SoPcEKHZAKLK0gBfLTczilSbWkHFboo3VyE7uuVxdWlNYUm00wzLWcb0XV5cVBlvSu7wrOKLV2pZY2U7qRcT90hTOMC1v3Bmp0Ot+eCpLT/IhFPEK3X4dpYgBOU3SuaZiqHWtv/J2L4GG7Dt+GFD9k4/c4kj2185zYa5/FG3jZnYYvPB9xDqEc6C30GAIxjUwHnG3ZsFhrdSbSL3JpQgtGB/FmPpwc/IEOIJa08XPFBF4/zX1KF0L9Vtovao9r4ra5moXyu1cMgnkL1fFKzmky3tLHl+NFnX7+DHbuIl4z/gBIm6/dVxY58grmRGv7oOXoYBAzi+sTwChjh7FbNnxO0yFDjt7e3QTl5Nm9JiOv0tNCOnHl54q44q4i9PkyM66yrPtcvhQhYMfOYJ82B86JqUcwvuNv
+ languages :
+  - fr-FR
+ blocks :
+  -
+    name : CORPS
+    identifier : 0x5732721009ef4c4f
+    internal_properties : CQAAAAkAAACMZZVL8kWgc5H1L6pAsjnBbQ/9JhPEUYJbewBHbPY3zM72i2xZvZjJWAHp3CIfTdB8gBaMHYIbtda1Wp2LjQSECqzVDm3BH8U20Hr2MG74gRlSvkumEW+ypu9rLtD88c/4WIQjjyytWDD6IjzLcYIEFCtjHsprcJU/RcDCjRPJ6OXd5F56dy/n6zrSapDguOh+pw2p0+6vzNEONIFaPULo9mhiO+bysAvwKVm8t8QyqxjQqpjEm0oCStZgU/c=
+    properties :
+     width : 287.
+     height : 2.592
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        code : |1+
+         
+         pour i = 1 _a_ ChaîneOccurrence(lConcatFacture,";")
+         	iHautBasPageImbriqué(vrai)
+              iPageNum(1)
+         	HExécuteRequête(ReqGroupShippingBill,hRequêteDéfaut,ExtraitChaîne(lconcatfacture,i,";"))
+         	iimprimeetat(EGroupInvoice,Faux,extraitchaine(lconcatfacture,i,";"))
+         	si i < chaineoccurrence(lconcatfacture,";") alors iterminepage()
+         FIN
+         
+         
+        type : 327692
+      -
+        type : 327697
+        enabled : false
+  -
+    name : BAS_DE_PAGE
+    identifier : 0x5732798c0c628796
+    internal_properties : CQAAAAkAAAB8PPC3dE6w/ngV4Dj5kto2OK6xGmW3czJaLQg1/39Ajvnhc+oPOq17MbzIFODaLlTsUebVICFQ5U4LOzHu4VoCi8X6/j7DViV7y5fiRYf+fDKpBSJ1yYxCStfqxzGOWlvZ4FNTGP+lVMyTaa3tcrHhQ2W4CylZCBurZU/XbDw8vsF4L+KIUkk2aOtpkVGd4KO/eS80YaaCIyyzkOQ7BHUB2zqp3Vv1MmWu3xBOCUGkgyPFN7ppsahAXl0ty4Me+gM2J/q8WmCn
+    controls :
+     -
+       name : Facrecupar
+       identifier : 0x573279900c669774
+       internal_properties : CQAAAAkAAAAIsTU9FGH4UJjLa/+X6KVjfg2yZ1XkMNdePxgUjeW84tBkx5tOzVMlXycVzTX3cvms8pzlrqNGRJLATUlpKIlaN1/AOQVCPOzQTc3po4QsdBFdTVH94Qw+EafmDwZ1q+hbM6GG3VCygbPM9A7Ty0qysrOm3Mevv0VjWQh2MeIWHCuNKZMTzdsAoCYMhxP0pbZe+vU4BJaSg2L5SWsI2d1SuiH44LcuJJb/CDC6BWW6DkCXSER3dUiMB8GsnuW5DTPqlFHOUa6vxa6LGYCkKAl0MtU4xu+QePfY0CMuqecN5VikGl5ksGa7LkVEM6rJoPoQdrH2u6g4zKMUHWqz4Lolx5vswN2aVw+yX2ODAx4oud+sKIGe8c6lPgm8tp57BSkibMHKudm4azD8qXX37tQQCQJpFPkFOK6HYuxCPEyjTVQkXo60GLsJROqUcOH32GDhz8B6iIxXKHkv1sZdifw93HIqdIOeRf/iWg==
+       properties :
+        x : 11.669
+        y : 3.209
+        width : 38.382
+        height : 6.086
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+     -
+       name : faxClient
+       identifier : 0x573279900c6b9793
+       internal_properties : CQAAAAkAAABB8ndoehUMQa94p/0EYF9L2yKKxoBI1r0d+xUYStKbo/ueAuxbl0WxXVZTEBBWCT8gGhcj4UZMaN92wVfh5xTCeWgzPqM0Ixq4EWk7Nv6q3eamcouxqict0HA5AoSZ5aTpxuvc9I2TQDJ/lJ5keaidD3RJQLhkK52G+88RaV/F+5rAK6OoE7vNj6R8sYxBkXbxSGGUua4M3yKsCnT9BapivKsbJdqwBVaZ2Bb0fJh4fMDEyfYXJvP1a6S8ESAZREM3/hMEj2XcCendoDzBUK9fMUgeCn47HUuonKWjpJEpnbCPJmpIugg79S/vA9M8OFAaptqnhT+jHSsixZ4nx/Z2iFP6mFfwLAOgew8av7t2345MzMDsLs2IKtgP/Lx/qcwzzev6k1xPeMAJSPSfEUcCzbpa2WGw/+HDWHgz+L7vZzKpjFt5oO5Gibw9mxzLyznc2qCwSJS+zBbpEhnS9Q==
+       properties :
+        x : 50.054
+        y : 3.209
+        width : 72.523
+        height : 6.085
+       code_elements :
+        type_code : 29
+        p_codes :
+         -
+           type : 327699
+           enabled : false
+    properties :
+     y : 2.592
+     width : 287.
+     height : 15.293
+    code_elements :
+     type_code : 30
+     p_codes :
+      -
+        type : 327697
+        enabled : false
+ controls : []
+ code_elements :
+  type_code : 13
+  p_codes :
+   -
+     code : |1-
+      procedure EtatConcatFacture(lconcatfacture)
+      
+      HLitRecherche(Client,numero,ReqGroupShippingBill.Bclient)
+      faxclient = client.cfax
+     type : 327680
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  integrate_compiled_code : true
+  original_name : Etat1
+resources :
+ string_res :
+  identifier : 0x1732718b01e34275
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=

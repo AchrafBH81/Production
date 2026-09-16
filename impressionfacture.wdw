@@ -1,0 +1,1779 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : impressionfacture
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Impression des factures
+ subtype : 0
+window :
+ name : impressionfacture
+ identifier : 0x3e9d90b144643ddd
+ internal_properties : CQAAAAkAAABLjOfLrrXg+Dqyc+Q6gcQfCJFwpea6rOGZeuHJyoi5A5TxyCOOwQZVg8xHrWtMig0DgOi1kcoi+r3Y50W9Az98RghIpJeTgvGIBAr3j1LqMq2oR+fxRVWH4ifO9673AepCvtogO+4ILvYsxIHFehJp+J9FnY5/YB3YpmMlFCf0Z7YzjF1kbbpRFxMFImVhCL3dPuXsiuZWOcxAl7/SQE/DnmvXJdkFtBq7u/d/j6yYadOLD3G9c7dNuhz2HHaTgTG08o8+beZzMGRH9jMsn3fWB18gqTQ6FIPAvEtfDE6qe2a19ddBXajGbtceCXtOt7bu8W7Cu7UYuBszvGjauBMDoZLe16zINjYul/9JZsh5wY///fU29xrwELNWkKMfsqzaO7+Ky326Xkm9cUFqYtD0zDVgsC29v6Jo4xRycmTZazI8HtcKfLSb9VXwf8aSIvedGoKDCjo8lbEA+/jPDzqzfApviuqFB93fo/JMv5wdfk9HsPW5Nyb53wH9UnVREDolIkqf8PyOmQ13eG5wYGgcE97LmAGf4ueH4okUevrimGC3eF1YN16X+hZBbo57DhrmSAqTAtOz2uAiz6uXHiKUd/KLrHLUuNf+14F3voGNH7wMR1iS0G4OZfmssDQoWTad4tlnwiIrAmKgI+O27/oG6s6Y/05Z6DHT/D0ZgZQw3W+hiMrSf6qxaXGKf/LR8EPDwZQ9LBYI25IXibCDmlMcwOoQcb40Irm+h89qNfEW1RJZKBd8sXLFXNdtrByD7N8XtlEyNL2BfVcf/9FkP39H3gfNavpPUz1NP4b2DUgmPx2+jd9V8cpF7xv5lgM/CF7P
+ properties :
+  x : 120
+  y : 50
+  width : 806
+  height : 525
+  widthClient : 804
+  heightClient : 493
+ controls :
+  -
+    name : TABLE_FACTURE
+    identifier : 0x3e9d90b102ce3de7
+    internal_properties : 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
+    properties :
+     x : 22
+     y : 89
+     width : 669
+     height : 380
+    columns :
+     -
+       name : CHOIX
+       identifier : 0x3e9d90b17fc03e91
+       internal_properties : CQAAAAkAAAAEa6TS0rKNtF9sUE3RtZxaFpaIXl3atlOiy4sR+0Rw2CQWgiV28CRZElNLSKjpRhh/QC4/SeWSOyKX5f9pFzycFq8iz2WSD0X8RI5xVJ1qM0drSdmmHc9ijtGfX2VdKmt4cGpdwK06rkTFk9KM2SERjvYE7fS9nFG+cuwMWFqIYviFbqhy+MHGrA==
+       type : 14
+       content :
+        internal_properties : CQAAAAkAAACXcofpirsI+0LkG3IW4DRa6bjjQKlaUE8HVYqldFPJYxxsbbmrgTdqk0aXRbZI3YIO3C7HFb9FXP/yYINc/U+nnAC+SAwM2L2vRZxRGMJFh37J81MlWKqclAkZPZHbB54h3TnEaIgOqr1SETDV2yJSOoq3+zWogjCmr6kSOB5lvvBSaIEH5bHjDW0LrkWw94aa9CeymGKsbUov5yOhgSptOW2mVcRGYM3e2vxaa1nYEIR1ycXefFXugYrtQ7pYgcZ8PJzpzeI6Tnv7P/mt7BexUCv2u0r2YZ/0tbV0ZwpEytwTr05LKRGtD4XlM7HpB1PdlmxzYJk24tsMU9UvksSxX1TpEExcM7v62tGpENZRAx4Dm1KA01AjyPfs8xH8qO3/IurdjPVlr0+Sv5AU9iPzU22lxKZIhLgiSvre6gEpuarBDoqH2EGiucXcle8PhNOmQoj536fGc5wqFwzCtJamZKf4/dVXcQYXCHCGATmhBCQDoIhBr1kjkODT3iUozJ7Eb/6A2dKbjODPoprVIaq6fUs4r2wRd6T9nBZ+8xDMvUUg70S7dJ6inYzOoyjWLpN4kbGiylUt+TgEUMASiiVwvIL2bXvQiXcJC8vPtXQZPI5ksWhHTWJX+nkE/ZPPFJuUw6CSWYuMrcp1wlmWk5fl6GZiE5tzVQoXHhEM/hxNkJCO9cKVh/EyKY0EY98F60kktX8Myix9TqMAUM/W5KRFgfuSkHMiX2T6bpIxa/VUVU5bKS1gUk7N++vrpj2TY0m9ysCAiAz2JmRKP5jkj/S653NdTzDUj+mLy+J6+khR7cQgXgKgg9lCumKRVf93oeB/jEkuJaCdNYjgSoRi3xPGEGU7tcfdXY4joFU2IO2FEI0OVCjwuyq+YciZ05bfLNttdn7Gt2S7SKX6z2/MMbo3TQOn114dKNJcekYbrOXxwywlrV/trOXECW23z0fGzTwxb5DYP8UEjh0HCn57XYduDQ8fpNJYHsxjPNUiTYJwfN6yt4Y/odoAHB3COea8zDe+DJg8RtFP4NWhNc/MOcOc1fgDFmj6Yl5SBdYY1yZ0KYPUBRniodikv1WuARzzvFoEmdfsNS5qxWEBBdSS0j7dxc8VZDyvlMJExzpyvZKs2t48Zmk6Ty6vHH5TzuCOjZIrS5XCjLlApFmDUU4=
+        properties : {}
+        dropdown :
+         internal_properties : CQAAAAkAAAA9x3d+Gl14BOKhsx3nyGmq8PP/8u7x8oDlbdqzgCevhfZwZf21B2GT/CGEilyQWknnX17WBzqPv5bkwRcFeI0mIzra97F0t/MBp101YVSwvT+GaTkKmyHcXUDHSdV7lAscUavqhfJhfxqAsDv3s4oz5lbc22hw7cwT0L9cuFyqnRo783OjLm8GgYMT83kSYd4IxHEShv1E1FrfjEXwVcoiKmg+DOVugOvqJxzPvWK4wgkKkO1UOpBUL6eKgS9icQH1tiW6MnB22NRlCuY70RyR5a3RzJVFSK4+XFABeDK8z+9HNh0Nl4wSyw5Gn6nJ0JJY476ja7JoWXb16dVIjiAl281wtvV+BvBCV65zZ/kybg/xApKUJG6gZmHh8mwmL163MmN7Yzt1aWcGyC6ulHTcpNBF49PLy02+LwDkc+yPaptm/XynUj7C4xW+ceU6yvhg8m3C7igvci8zx4VN1MxgJzmw6YcfIC9wdp7xe3oFwNAPpoSPdlGMKGBtHaJjo2qf9imoKV+k
+         type : 7
+        type : 14
+       code_elements :
+        internal_properties : CQAAAAkAAABGdsNcGTJX4JvQQndO6bGIpeeIO/kpaLc2isndEKIT3YaQfSo1ASw9c+WT1HdtyMb46pp0R/u+ZL5J3esBMZHpF94gzc8D7QKf/NytwSu3mzOIxyoAxkpsxwpCGkI6xMd1L7ccfJUYGiIPQqfcoN7VP8s=
+        type_code : 23
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           type : 17
+           enabled : false
+     -
+       name : CIMPRIME
+       identifier : 0x3e9d90b10d243e9b
+       internal_properties : CQAAAAkAAAD4viRKRlrpwoIE5BXZShkPQYlDUlspxxGmcySUVOOvel4grqyB4IUSidCIeKmlmU7eUQJvqLbQHxE3WBZnD3WlffRF1ozaVQaanjAIse36BYFsvE9CBupuXxfybc0fqZeoNFTgK0b6barIMSTb/3NvgS/QN7Oc5g4yuKftjAsUTFkYfWJsRMM=
+       type : 14
+       content :
+        internal_properties : CQAAAAkAAACXcofpirsI+0LkG3IW4DRa6bjjQKlaUE8HVYqldFPJYxxsbbmrgTdqk0aXRbZI3YIO3C7HFb9FXP/yYINc/U+nnAC+SAwM2L2vRZxRGMJFh37J81MlWKqclAkZPZHbB54h3TnEaIgOqr1SETDV2yJSOoq3+zWogjCmr6kSOB5lvvBSaIEH5bHjDW0LrkWw94aa9CeymGKsbUov5yOhgSptOW2mVcRGYM3e2vxaa1nYEIR1ycXefFXugYrtQ7pYgcZ8PJzpzeI6Tnv7P/mt7BexUCv2u0r2YZ/0tbV0ZwpEytwTr05LKRGtD4XlM7HpB1PdlmxzYJk24tsMU9UvksSxX1TpEExcM7v62tGpENZRAx4Dm1KA01AjyPfs8xH8qO3/IurdjPVlr0+Sv5AU9iPzU22lxKZIhLgiSvre6gEpuarBDoqH2EGiucXcle8PhNOmQoj536fGc5wqFwzCtJamZKf4/dVXcQYXCHCGATmhBCQDoIhBr1kjkODT3iUozJ7Eb/6A2dKbjODPoprVIaq6fUs4r2wRd6T9nBZ+8xDMvUUg70S7dJ6inYzOoyjWLpN4kbGiylUt+TgEUMASiiVwvIL2bXvQiXcJC8vPtXQZPI5ksWhHTWJX+nkE/ZPPFJuUw6CSWYuMrcp1wlmWk5fl6GZiE5tzVQoXHhEM/hxNkJCO9cKVh/EyKY0EY98F60kktX8Myix9TqMAUM/W5KRFgfuSkHMiX2T6bpIxa/VUVU5bKS1gUk7N++vrpj2TY0m9ysCAiAz2JmRKP5jkj/S653NdTzDUj+mLy+J6+khR7cQgXgKgg9lCumKRVf93oeB/jEkuJaCdNYjgSoRi3xPGEGU7tcfdXY4joFU2IO2FEI0OVCjwuyq+YciZ05bfLNttdn7Gt2S7SKX6z2/MMbo3TQOn114dKNJcekYbrOXxwywlrV/trOXECW23z0fGzTwxb5DYP8UEjh0HCn57XYduDQ8fpNJYHsxjPNUiTYJwfN6yt4Y/odoAHB3COea8zDe+DJg8RtFP4NWhNc/MOcOc1fgDFmj6Yl5SBdYY1yZ0KYPUBRniodikv1WuARzzvFoEmdfsNS5qxWEBBdSS0j7dxc8VZDyvlMJExzpyvZKs2t48Zmk6Ty6vHH5TzuCOjZIrS5XCjLlApFmDUU4=
+        properties : {}
+        dropdown :
+         internal_properties : CQAAAAkAAAA9x3d+Gl14BOKhsx3nyGmq8PP/8u7x8oDlbdqzgCevhfZwZf21B2GT/CGEilyQWknnX17WBzqPv5bkwRcFeI0mIzra97F0t/MBp101YVSwvT+GaTkKmyHcXUDHSdV7lAscUavqhfJhfxqAsDv3s4oz5lbc22hw7cwT0L9cuFyqnRo783OjLm8GgYMT83kSYd4IxHEShv1E1FrfjEXwVcoiKmg+DOVugOvqJxzPvWK4wgkKkO1UOpBUL6eKgS9icQH1tiW6MnB22NRlCuY70RyR5a3RzJVFSK4+XFABeDK8z+9HNh0Nl4wSyw5Gn6nJ0JJY476ja7JoWXb16dVIjiAl281wtvV+BvBCV65zZ/kybg/xApKUJG6gZmHh8mwmL163MmN7Yzt1aWcGyC6ulHTcpNBF49PLy02+LwDkc+yPaptm/XynUj7C4xW+ceU6yvhg8m3C7igvci8zx4VN1MxgJzmw6YcfIC9wdp7xe3oFwNAPpoSPdlGMKGBtHaJjo2qf9imoKV+k
+         type : 7
+        type : 14
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 23
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           type : 17
+           enabled : false
+     -
+       name : CTRANSFERT
+       identifier : 0x3e9d90b1327f3ea5
+       internal_properties : CQAAAAkAAACg1oyCDjLBqrpsfD1xwqGH+RG7+pPxb0mOK0zs/MvHIuaYNsQpGJ26YfjgIEE9AcZW2brXAB64d7mvAK6JV3Wl0TiRpJLYazhIwNigCYVi7enUFOe6jnL2158KFbUHQS/AzPxIs/6ypZLg2XxzV5sXKVeIj2skbpaKQD8V9LPspDFwxaoUnBs=
+       type : 14
+       content :
+        internal_properties : CQAAAAkAAACXcofpirsI+0LkG3IW4DRa6bjjQKlaUE8HVYqldFPJYxxsbbmrgTdqk0aXRbZI3YIO3C7HFb9FXP/yYINc/U+nnAC+SAwM2L2vRZxRGMJFh37J81MlWKqclAkZPZHbB54h3TnEaIgOqr1SETDV2yJSOoq3+zWogjCmr6kSOB5lvvBSaIEH5bHjDW0LrkWw94aa9CeymGKsbUov5yOhgSptOW2mVcRGYM3e2vxaa1nYEIR1ycXefFXugYrtQ7pYgcZ8PJzpzeI6Tnv7P/mt7BexUCv2u0r2YZ/0tbV0ZwpEytwTr05LKRGtD4XlM7HpB1PdlmxzYJk24tsMU9UvksSxX1TpEExcM7v62tGpENZRAx4Dm1KA01AjyPfs8xH8qO3/IurdjPVlr0+Sv5AU9iPzU22lxKZIhLgiSvre6gEpuarBDoqH2EGiucXcle8PhNOmQoj536fGc5wqFwzCtJamZKf4/dVXcQYXCHCGATmhBCQDoIhBr1kjkODT3iUozJ7Eb/6A2dKbjODPoprVIaq6fUs4r2wRd6T9nBZ+8xDMvUUg70S7dJ6inYzOoyjWLpN4kbGiylUt+TgEUMASiiVwvIL2bXvQiXcJC8vPtXQZPI5ksWhHTWJX+nkE/ZPPFJuUw6CSWYuMrcp1wlmWk5fl6GZiE5tzVQoXHhEM/hxNkJCO9cKVh/EyKY0EY98F60kktX8Myix9TqMAUM/W5KRFgfuSkHMiX2T6bpIxa/VUVU5bKS1gUk7N++vrpj2TY0m9ysCAiAz2JmRKP5jkj/S653NdTzDUj+mLy+J6+khR7cQgXgKgg9lCumKRVf93oeB/jEkuJaCdNYjgSoRi3xPGEGU7tcfdXY4joFU2IO2FEI0OVCjwuyq+YciZ05bfLNttdn7Gt2S7SKX6z2/MMbo3TQOn114dKNJcekYbrOXxwywlrV/trOXECW23z0fGzTwxb5DYP8UEjh0HCn57XYduDQ8fpNJYHsxjPNUiTYJwfN6yt4Y/odoAHB3COea8zDe+DJg8RtFP4NWhNc/MOcOc1fgDFmj6Yl5SBdYY1yZ0KYPUBRniodikv1WuARzzvFoEmdfsNS5qxWEBBdSS0j7dxc8VZDyvlMJExzpyvZKs2t48Zmk6Ty6vHH5TzuCOjZIrS5XCjLlApFmDUU4=
+        properties : {}
+        dropdown :
+         internal_properties : CQAAAAkAAAA9x3d+Gl14BOKhsx3nyGmq8PP/8u7x8oDlbdqzgCevhfZwZf21B2GT/CGEilyQWknnX17WBzqPv5bkwRcFeI0mIzra97F0t/MBp101YVSwvT+GaTkKmyHcXUDHSdV7lAscUavqhfJhfxqAsDv3s4oz5lbc22hw7cwT0L9cuFyqnRo783OjLm8GgYMT83kSYd4IxHEShv1E1FrfjEXwVcoiKmg+DOVugOvqJxzPvWK4wgkKkO1UOpBUL6eKgS9icQH1tiW6MnB22NRlCuY70RyR5a3RzJVFSK4+XFABeDK8z+9HNh0Nl4wSyw5Gn6nJ0JJY476ja7JoWXb16dVIjiAl281wtvV+BvBCV65zZ/kybg/xApKUJG6gZmHh8mwmL163MmN7Yzt1aWcGyC6ulHTcpNBF49PLy02+LwDkc+yPaptm/XynUj7C4xW+ceU6yvhg8m3C7igvci8zx4VN1MxgJzmw6YcfIC9wdp7xe3oFwNAPpoSPdlGMKGBtHaJjo2qf9imoKV+k
+         type : 7
+        type : 14
+       code_elements :
+        internal_properties : CQAAAAkAAADMu5fvu92bhktfXbWPExcrhvRRZxMrt2B22Z1VEyI8P2BncJPIWLDXWo98tPrzjCsBBgtBK+kYtrgG+AYixyD/alC/tA==
+        type_code : 23
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           type : 17
+           enabled : false
+     -
+       name : TBonLivraison
+       identifier : 0x3e9d90b1112a3ea5
+       internal_properties : CQAAAAkAAACJYVn3h4W31P5wrqDs+GxfW6ygXPaYu2DXmfqMxZLNpJMQ+qauYdCVrHvIq5DVa/Okwsp7TlgJytc5dxb3cf3I6OMB8CDnhkGnGt/ySVdjxyV+YBH3iAISgPJm5xZ0cgoL4E4/4FaZ4j6rmSa0IIgoUf8j5o3CpQFAbXYKXq1MatpvTcc/R9X7Cgf8cYgSF82pGBQD5Ab9O6LGmlk+aUEW1lh5IrNcrI6UqzGzi3JP8B3KBDb8WB+zWsMPvOR2O3xlQb94dWBOc4yKhg==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAADm1jLkldQWzKexF855+MuDwljNljXiU8bnPZfkuGpxAj0G7kwzlq285FfdqGANpbU2wfshSSVlXWN8NjiZPpp+3TAXVI9q9OZ3OGBqOc4AdVYB16K5h1h+QQY4hyNbL2aiEwezx6a5iGeKiE2sX75XPsodQoJsoFrvD8+ApkhOQ6THiWbyBDN3FfvKNRFBk4LE/lAsqA7n4R/3UbUfw0uzOrhBg7yRqRHFxa0sm6zeCQCOs8z4hfqNa0NxGQah1lEhtTQ/IjzYXvuX+mg3j5DhOAC2cTjjhdRrzLJxK0jzPikt9hj6cxA3gmFJpALzARWL+Nv0uJeRfWTYAXt3pMqECTF26CyNJ8HSYZaPYl0x3sdiL07JcXekqtgSYDvoGkMZAVA3C9veDW/vVzeu1nicFpWAjTyiZquVFlO8paKMn8l19QBPrpz5orKCez/nbfpCqvf6xgI7CMfoX8xT4NI5SofiG1It+67J0XJghu8BZuk7nDgKLhkgeurE9l+YBvfHowW19Rf8niaMczN84VgvqR7INxXnBxiA3Q50/CpOO5+0NxkEFpaMu1h8EnMY58KS4QZZ3a4cQE6WpaBdWgGGH3LRKUC6/Q==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAAC2cMSUIMwgkp8+t10GL9Hi3k7C1GMezRQkBGG+MAryXcWQODX0xcgsX/fTVErcNuD9zhuL8CXP2R0IBbEl
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : DATE
+       identifier : 0x3e9d90b105a13eaf
+       internal_properties : CQAAAAkAAACHwKeuCj8g1v5KrnZUZp3u8vmrMLuhCZWRv+dCSy9ZxeAjhTxtD4dQvxe/XlI8rtCU630nJ8JVt9gq+MkRhuPf0fGHK64Pbo7o8Luh8XlSfVFhy4Qd5tOZuA+YTWoJfSg5k48LdpE8L0Q1G+YG/GpuCkWsWnAZizvhFHbzEZTMKilxXao/X6H6VJGAUX8nzClj0bkV0hO4QgjihDEvvk/n+I+xE2jHz7sBt41misFQjWJSYqtBCo2t3WKYpOukvqxk20gvGO/ZKIRpqf83IUWPs75H3RZlfNy7NjQmJQO0iyzcrtcz/TDuRU7G
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABAqrSfqQ51nyCQ/r+oB0aZPrD10WRG5HSzY/aQgw8bvKvtfEgYL6bo0sHHwiJwZLCPFja8tm+rXrDZwiJdYdGPr5isa34SkkTEIio0XlbXi5geCFEZftlGGLb2Mf18JcA5vgHlwrooLoBDl3uuseb4imcqzVVqERVlLT50taGiwxyZgs8WBZupf9QLammVcSvU6Mgvr2/4HeWi7qGeoNZlnw0lFwtPy36hCFEM1fOASalO3dJdz7edAZBKyqh3cBjw8AXY0f6tDiNy3ZlbGMTgfqTQ1nyOIB+Sx1CrmVD1ZeGt3XwGz0h8KCl5LPJTL7hQFCpTsNHlpEIXvmscnDz9PLG7xUxvj/CI/GdTnY17+y4Img0tS/1FBJnZ7vI2QPrKhb+osSuk7IUY3n3xPrTJ6XupApBMCqYddUQAwKyMDCCl6MetxpYohuU7U2jbWaNxHFY1mCq9QZsLMD6Afqj6UaX9JHwNS8uhANeoN8sxi1AJj22QHim32IMjNlhqIn5g7WK846vmH7oLdK1Tjygi1j4py7Rwfl0ofdXSQAxkbkL6YIG1TYgvCyohkoUH+NSOPxugk26UnuZ/BKRhI2BkIm0MPvFaVes59VpmrQFDcOD3hdQ2cGM7FX+aBQ==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : TCLIENT
+       identifier : 0x3e9d90b143483eb9
+       internal_properties : CQAAAAkAAADUP0gyX7qtibT6DzLUaRXBDJGsxNEi1uGqGjxYp0iRzgBFEdtGeKcIneMpckL2dUAiX0rWMoyaoSWg/np7VPgEESHWxXqYlnYx17GAWR1B8cat85pVXTWepQaDU9AbEFMz7nYadK5xQeY0NtPkgw6m+9NFzYuQ1WWbR5oe0WwyH8qf8Zw5W5VroSsZ+xcrJWn0L2bmFB2FZaVpj+ZwTGecV5KcFjRJScxZRWUZOu30cpJS5lx30ULxdwutLIKsqPDDQw==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAA+mRByizIihFbBymByX7MDSWBQXyHRWE3bMZE6kLrgcnRgEronXItZQYs0pQKOnnCF1SNY9LLBsMeeCDECNt+C32/9qQZ4GkqYyRRu2008bb3Ktj0LD4ODW9FS9561xT9IheTGR+2zHB/GyHLRy+9Zc26plXrqzu/PHQVmYDs2xxAti8X0utyEFl9i64TGPMsGL/VLKl+R7/i050ohVETPU3nUiT6HHcS3aM7sxLU6EEGBkFATZNX95lgHFjYxYTlZQZfx8/ZVD58rcmpGz+vtlSQtmoHaLcCn0JIwFjoCkdIE1Uegf0h+JfWOVPEVqcq/zep5cDUlQAvuoI9EkAA9oSg3E7TTnYrbSUX7Qc2N5S8HIvEXRUNfsaAbrK5eyDYLSF105VMWUpC91h9JeprnonYvkg7iyNjW+Dx0fMyoHC34pq2rXHwiO/zlq26xP5mAXWQxRCqNTZh+dPiScF7IkDKDlibHv2NCc10eCfX1+3+y3W205pEjqcJFgAIsoORNwKDY53tmmzPWPJ+pDYo+Wc2dTYBfj/XCywRbrdoyLq9TzFD0+HdmTQgSK33Vc9mM2jHC
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAAAWt9QfrZUTg5s053BLDYoK2Jw8YyDkkEgOrcnOXmTmsNManNyVQpIB95qdlP1TRiHF0t1q8eYn+x7YWCSVEg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NOM
+       identifier : 0x3e9d90b116883ec3
+       internal_properties : CQAAAAkAAABp5ud3BKN5fmJ1biGgxe0C3PoxyjANbrmcL9djPXGc2mO7pwYI69OxeJ0uWdn+S9EE4znk+4S4H39Qo0FxHkfECS7fV7WziGsH6xpTLyQKteIf7i0tG0ygDi7BE6zOFlWPhlgjS0PBkjvF+O10QoWCdtmhgnlEIHhBGK+mp5SPMFALMN+9w37d35IYoq9PNtQLGyugPh1q
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAADy1TQWrxa2CMpNdvyOyw//dZQcm929ZGlHFSVO5O6EFjic1o6buqPFLVdQIZp6zih5uZMUCBbpVJtqdEXKereyw+NdrWqcMn5kpQg6Kzm0PQEuliFPm4MXn132S97hddcU0QQSC0n7WJuiDNYBbxfJj/rB4ZbGLgvjCbF6KIc2Z6zB2xkw1jxYekOWjzxajDuKuwXHfktha8yQA45Z8NR/x3Vkdfq7fVC7XGJYXNHq0OW1IMSn4B25osRDop5lGdmF3Y/lx6Ltg8tvZgbOE2PVgRhl9k2OtSR7DCBeIEhoawxme4WaRS6kf7ukWoujlzQJ95DnAtvLpl0cfvVetuYnsyI9SWbxw6hlD5upE9PTvwlBmAcJW1F164ZxIiCExhBtCvPyPwnUkJLLxFVDcDhhtHAVUCAQFm54BsrCjmKmHqdaBOtNcnpobbrLiTiH5dNaZ6JfDhBr6zqMmr5kziQy4jyZ/Kj11XnU0SN8+6sztbFcC7tevIcZM0hblmTS/rYn6m5GKbmsGZ38Ur2Lq/aqJRFZAdw7Y8mWH+i/yb7WUnOfgCwojAPy2YSep/FBj/Wo/u2G
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACZ/s43sDQmLquT2UWPC5Tp3sgiRnsqNTL4v/o48TW0Tz2TvtqJVPV7+q27P2Pxf+++PIN4WZ2l9amumkcdBWAQPjzw9jI=
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : DATEF
+       identifier : 0x3e9d90b141ae3eb9
+       internal_properties : CQAAAAkAAAAROBiVmzVqU++C7SPdnV+OUao61/YnFspHa5rNBtULAUSxu19e2Xg6GK0WLhh6q/0WrfA/F2UYpgpKU0NzPa38nmuO1iA04GBaOmm2fKcaRptB/+P7/rJPN9OkmCFLsefhiYzvlH1WL5gSLBsPw6LgWD3xHQR98GcPSZ7tUUJHOTVGHavMMwLbbJ8m14JZNoVWHCIeDxZQYQXnDFBMqxuljeEVLZhYtKMPW2vTmRwDLGc1+x5SlNlN971GzJhtmYPsN4ANpK/F0t9QUQTGlF428xsR
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAADxZpgTtJC/zwGrzsJYD2o8DNmU4NPIyIdGAexmmVjR2X1+d9KZR/DgZkQ3+f7zjDVJWkCHiHEmYsy+IUxUrTujVDcA6vDjJC7H14VO/e429SitXcUoJG86KcJjlUorKBwYy4Bky9wodEykLpi8f7mHLdWJYEc96Z/c6a6HIJuL6V3ajpx9frEWvDepRjxGvuSGN9OuaUocoUXaugntfnv9joDG4zeVVG6IXG5hS8iavJilC7JuhIsKXuuoaGFHA8lVHV8QgdxOevrG07ykcJ/0ecHGCH+ZIz3oenUrTeRVb5uj5Jr9rNlJD4mArV6KATL49UuWonTTR+ZVZcac2eYHIFCAWCRSj5X6aO5+e+I/a+Sda9yXUMtMprnSzd6ZfnhSPqCTb1SIp4HSKeIbJ9zVe35g+zq5EAkrUZsTOm8wdHY6X6b9Pc6XOP3WhjwoOyUpb02Kph392gmPZSkimygWP2pUp6ZixYa1GmMlnBmZD1Zq4n4adK6QMc6xWYA0te+mWpm/w2kqe6qkXvT3Cb6aLHdwsL5gIgBGuagoSN8evigKOYZdiZ/oTNkXs1dMZIc1d250UwKwpoM9VBTctbNTzR2a55wIYoOBb5yGvmXGD2m50cTwZrZKt/hw
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACLhKh6XeXhc1JW2/VJl/rcezHHt7BnWrChnnoZxZok0WUj8M74gGAfwJOOfS8ntVDimpspB6+KqnSAnxcuIfcNcn1WZYgxUwCo6IK5PNurqKlVi/kCwSZhggPQMIUrSTGb8WxiucYP
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : FENREGISTREMENT
+       identifier : 0x3e9d90b159ce3ecd
+       internal_properties : CQAAAAkAAABGhcTCbkt8xI52EcidwU/9XO5mEROETQUsRy61s+r2ED5EmN2/imlmgJgTXHZKW90bM+INcd99oUV5wIlZD0gBU9fTswxRmqr3do3bgMZgJwrv7unBqdVnDioNmqFJqL7prjAffxlcT5BlVNYlNOqDxJ//C5bIRzxsNNK4Ps0yR7x4aurn4SVp8noeG9mb7ubufbnxfuKonLPEr4QgTEeDsg==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAACDkpIEGn0L8VSVpuDrWAFYwImLdyyrP/zaIRkqZfcKCNtR/uEVCvdgBWMEv+iNePfdi3GSgRv8bPryernXK/OY/LFFJIT9sPoD4jWTF9UFt8mWg0HT7EDUOdZAvU798zpIvBzsYZ//oxRDlpyEIlAXX1dqpZcOIWLrDPS/PgESpad61/C5KILEsnK6b5gbaoqYafC1yZB0eSsRjzsQqEUrEEedxYQ8aiVPdw/kF6+JzdyhnAQqg65S6yoz7OzIZo4lR1U3I749wOLlHPoSYw0sXou6JBZ6iep6WMfESOD4XlQOJzeDMwIA3oyD7qjnc+AZH/I4fceB3JAB2acTJGzJaei92rVxCXYk1HiZRBU/a4FBTsh0xwVpzF22IMOYLrhLmC81erE6doVE0wciXrylsMTnTeXkojqFiacUne76kmU40Moi/vieMLOi5+Oxx/Eg3SKcKdYTC7ltdbJNDizqfpjDi3PhuZ2VYLrcCnnlq/HU1YoNMsXXoF9qTI3WoBRVWLKNVPWsYUbLkVlKyRLyNYttbxT/vx80jhC+dnaYhtfxl01FrRBDCo02kR6foIOrWVx0NTqlEhxC8p4o8fSwvVAjW/EJCGr1RO2B+K8=
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : FHISTORIQUE
+       identifier : 0x3e9d90b17c293ed7
+       internal_properties : CQAAAAkAAAD165GKZRWOzs4d70xbgaXOsUTVcg4LUZrbWicY2Sqe9H/lcXusOd37JEbkaNL8mYmhKzfSeOmQhVAw0p++shEwvoJOkSjmrvY4us7yg3oQE/NDqrLzpony2fi6RqsbQ/1KsIJMFVbGCAN5T+KjFqEaUWdn0gQlnxlHPhejCbHN0Km5HvwS0VFtOnWkXuLprzw183mgcO5ksQOEukaUPw==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAArj49vuyEuurgnXaMiDB4bDhPB7Y5Yuipo15otro59HxVsvIppc9WqRVGNnKT7FbvHCaIy1N7mrJW7ffe2IbA/hzsdnZnp3wINmOA/zOlo/qJShK5E7Xk6tYC6CCU6ydBbO6/2MiRlHBbTh1ywy1GhTodnYperluWTxUOsYIXjFnoBEe1co9R/vBi2Y6Ln2Qwxf9NkEvQEsV41EkNPi41C1DLcBnhed6w7sMZXyxMyexFUO0P0D+pGTkS+0Nh5CTL63cxWcXSQDSH7pJsZ62dGJO30LJE8IA/fm2CkKeuu/Ehx7efhbHArRnHBEkFIb43bDZrPAjaF886iExPSu1hwHRgjIcTeV0sImzAz0aQR+uuvvk3NZgHmqI4wWHKtDm9llit04TJWf83xiYuh+aZSrIwh5L4xjHmHUJUUlF0uBa+OYIOnHcr78IhgKy4qZcyMfUg5SPGlZtGqeYQQpTKzHJLHNGYsf84Z0al+RgVB4mUUR13QanRWVxvvEIoM+RyjipKOo/F+RYTVYMftpP8Ghrmsd9e4Y//baStXxyphyv3JJtM5rcOtZb0fK2LR9WZ0x5rUT2P0v66wrQN6OcgDoke2nymsZEXGPEZGrg==
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1+
+         
+         si hlitrecherche(client,numero,table_facture.Tclient[table_facture]) alors
+         	table_facture.NOM = client.nom
+         FIN
+        type : 21
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 340
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : TABLEGL
+    identifier : 0x3e9d90b170ec3df1
+    internal_properties : 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
+    properties :
+     x : 201
+     y : 155
+     width : 236
+     height : 261
+    columns :
+     -
+       name : NUMEROGL
+       identifier : 0x3e9d90b14fdf3ed7
+       internal_properties : CQAAAAkAAABkIvZp4NfQdHbVmQKLR3gsZtkN73nKcpTUUZ3IuO1Dh7XlyzC4skEs65dfZE5hNioq3x0QyGX2QAHYIIa9kPUsH09djuJ5j7VAjELmcWHQ1ZFwucB50UbQgX182u/uJl07ad/61LsN3XbVI2ZkmeXW1TNYnm4xHGb6BCReZ6uqNscJQ1KNeT11qMwlXYwG+8JMNwQTUvg93A==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAAcbuu5XFcWtWjnmZhoKLyA6njVV23deAXT2vwAzDiqvWma0Rh773xTP/ApgzVKElYW+eA8BS2m0ApZ78JvHOeEQ9D8gGDa07n/6Uu312jghyrGJkouS0ofMoJUqD2OIfyt0OgEoOa0Q1UXfcGn+mk7ReZJyUluX7WkfLRaAEtTmUepzOhuzaRLTxT01btVhJjvJrWrva+0gK9xJXxRymMLmnOafJfd6NAeE1SMbfwB6oXiY7xZMAWl6uTA1M1qRtjUfcqQS+Ibtn1VqFFD+WJ1BdqYL8+8Mi7rA2p6gWI3fzPbPffNS815PmkcJCg7wizIxP4LGxFS87BUZMXHVHFRvAUNE5N/7hGQhcOvgNk622LYAFd264yS9iRTVMFEMUCM2wXIyHeR+x8T/h2CAPntYaMh5tH0gU/HANDsf8xpjl6v+hF8TAPXxq5TQYNfbhXX+uRZiVgOEGWmePwJog/En39bYg0PXJrvHSRmqdxIq5TNjR1N/1fsZ3mKjol5yiUKCzIsNB7hdxRbhetCk4egkg0yR2SBMDNi8j44E8TMWUtRmIjpdgrRUIw4AeVVipwuEx8=
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADYBn8jBy6wazQP8O61iESByw72DZGUb5CRIRkP0ZFgDOms9jWh7N6EEq6s7cZMnL1l6C4R1C1VWxOxPSvTorSvVEjUxv6EMbbSANYwbsYp3BgLVcFkaIsyInCu7o0Hop0GGfVKhxvrVMN2lIogXM5T
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : MONTANTGL
+       identifier : 0x3e9d90b11a413ee1
+       internal_properties : CQAAAAkAAAC65DjjSlY3W6uiyuOsnC+VsQok9FHGirt0y/M6moTnjw29c2iASsVQvUDJUSTfkID83dN+7ocU3v+WbhybRp9iAcvZKsZlwxmECIJ6v/8yr+cOi/6/41BKb/uK1DEcUCsJvzUkPiGnxzQTgUCvKrsucUsARrYJNJ7CuFExQtyPN//x/67tyY3B5gr3g+rYr3AwE36pyEKDog==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAADIW0ixIK8kn+xeM+sDqebYt0IcqHb06G2e1KzbuUF56NCl7QknUj6jLxxk5QQTRUntR7WVARGNlwU6c2FiMmX+YrZA+C4gWlESIoibqVsAHDpSUohFIEk/bIPwcMRGZskmDsNpfvDv90Yy69t1nqiMF+PfLZVdUHj8gO77dofNynTMHxxwEG3VXLln82ps+rIs/DuEzWDS2EnEm2pUbO8ZtzmBHDuuFWVGL+q1aGtsLVwWOFRVkyIYQDGw/Rmm+iEKhsclNI8t5E/7wCzH39fNk4Mf8ItVvn85Loa2LSbFpc7PO1Bww3eOIA5JCKjY4H65v9GzZouKltg5SbctNdv3DVTGYzDLgFT4CGBx1pJGsadvf7GjtdQrqpvECsN/OXT3DDaceUszrvcmjR3+AyvPcgY8FiZeLdZFmX+k6/dx3vkU1wl/fG3c2i3oYScmQjPkURl7WPpub6F1SX4vZXFMzqhixiQNCIu/uqXUkwVa41FUBOt2u3mBObhFBMsccqO5PMksMXzRxkKGsClMvlbB+D9vZzmjEmCX2EsxDnMZnhzozj11Felfu1HbQUSgUYmFUWERtdj6HMrrK8AFX+vqaWRIiGDhOz4=
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAABozBobLJZmWg46E1JPOzSAVYnClRlG6pvRIiXjS2TrPoTzv4bn1CcCuLePa1ZpmN62zMeAgZLzqmLtapbvL7inEQ2ZHDeXKXX1AZsbm/LdNZHBDKJmEGc=
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 340
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : BTN_SORTIE
+    identifier : 0x3e9d90b154553dfb
+    internal_properties : CQAAAAkAAAAPy5205d2c+iJfKUq3fBWQRi2zfNRVxIQQqoICPIJ98tOU45s82LupVcguk0OaRMPRqnj/UnItYUwm6P3yDzMAtm9Xenetj7n/NtAI9STTdQSzRWcy6cFAKwlRfgln866Ary7hH2oLcCffnigD452reUPoPWOp4mzWFQkyi+36L5gygdaL0E1wjuFh0+Y1a+lKSPdAJptBXRP2elfeuqyiv3Fq3wZJXJJpyuqwb/B+3t+Lzb4+J4ega+FBJTR077fg6608osfDtYYGCdAFWB8v1r84GeVDlLrexL9hdCv4hbQqxvkwCML0K0w5+xICud91gO0vNrYTq2MnBW/BlSkjs1bghNDO7Y670hurQNScULYaS4YsyqGGXLmJzlTXGYos5X1NtnQZsf7RFhecKRJV7kbEojYxQUMFPAqacgxQ+ArYgrErSPeTm09ShYYcHKfI+4gM4bYovSO9CTddX/JWZqInRLz47KT/qUeE1+yam3bTxFS4CFtljI1J+DokIsgkdkw1RiKW8p6zzRuoVtwuIqcPGIbCobCX1xO2Ih8/UZr4DsZScfvBx4C5Q8z+CjGdnBF3f6Bn34i9yLTYowAp4lUTu4N4ItXR7WteYE7w9mycclq6DcbnfYk0XxyRCfapr1MBZxXqmgj//V+tk13Xvuw8PvoQ+XQwbla4aXG5Mq77B2GQ9VBng9przxWbdyfEfSPgU6jUJGkttznycK6rWz3LzlB6pqjXRhEz/aAvoofTC2zLIpP73tJFh1wThD5GE+aLVXhSL9+v8qlVdUZeOhF9O7+GaGpO9XG6Mh7fbsDYxl0+In4OvC7JnePun2py4IBZKHTuHlhRqWy689YAAhY=
+    properties :
+     x : 7
+     y : 3
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_MARQUE
+    identifier : 0x3e9d90b1578d3dfb
+    internal_properties : CQAAAAkAAAD0/DSaCQAIO+a8A2p6se6j7hS6cmrNE8A74nJOyMEFEbMO+Uji/JOBwTW7nrGDc7DROdfS9IkZNCxF7xiUFAROeY0vx25CVM3DU9tP9nfCxurffrHu0VTSkRFnf9yhvRPCbpI+QtGLwxVsR9edvTHpx5yE6s78zgC5JIi8FSanS2dS3sCYscjbCZbcmuZLbV3+AuT1wdAvotM23VLBXlcErBNkgd9isO/hFKNuEoKB4aEqwzWuhVZrzTD3sgsoRvYJjehxpwLqf0Tb8acAzh7Xt6uPhaGMoL4CaW1CX1ANLxf1FA8d5XDEhbOTbElA84j+hb42E9awaBH7KHvooPH+bdIzc6Ll4b7bZ1BLjA+fp+tDPSfjeQf89381OW+fW9EkoC9Nvjab4EAJqQQ38QkZ+0IzR7VT7tfJUj8LSC8kjHm39DuJIYuU8mkgENpMRJ5WGVIfQiqpZ901AuK1Vjdvartn+c4z7qYMKEOfxw2sBqlsoB8y7ea6ueUxtyCCjhukTuSOzMquIGxmobbEmtx2PHLejx2jf5jpkJ0JL8ldMyaNaGFppubgfHaikiBlsysDMT0fsVMmzh5Q+QkRk7TfA+cMMCHRDqif4A0e6aXUmCOdDcB4wRw1xSTCN3fpBz15rhTxmaLd08LVfrwvNk7tAYAaP9z5BNs2OdEn36Hik7lvRp39oDs6qsa/K41eK8+pFXeoJjsNnkCHKLM=
+    properties :
+     x : 821
+     y : 93
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         //si choix = vrai alors
+         //	choix = faux
+         //sinon
+         //	choix = vrai	
+         //FIN
+         i est un entier
+         AuMoinsUneFactureChoisie=faux
+         pasmemeclient = faux
+         lnumeroclient est un chaine
+         
+         si choix = vrai alors
+         	choix = faux
+         	datef = ""
+         sinon
+         	choix = vrai	
+         	datef = csdDateFacture
+         FIN
+         pour i =1 a TableOccurrence(TABLE_FACTURE)
+         	si TABLE_FACTURE.CHOIX[i] alors
+         		AuMoinsUneFactureChoisie=vrai
+         		si Table_Facture.tclient[i] <> lnumeroclient et pas lnumeroclient = "" alors
+         			pasmemeclient = vrai
+         		sinon
+         			lnumeroclient = Table_Facture.tclient[i]	
+         		FIN
+         	FIN
+         FIN
+         
+         allumeboutonimpression(AuMoinsUneFactureChoisie)
+         si AuMoinsUneFactureChoisie alors
+         	si pasmemeclient alors
+         		csDestination[2]..etat= grise
+         	sinon
+         //		si gImprimantePdfStatus alors
+         			csDestination[2]..etat= actif
+         //		sinon
+         //			csDestination[2]..etat= grise
+         		VerifieAdresse(lnumeroclient)
+         //
+         //		fin
+         
+         	fin
+         
+         fin
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_IMPRIME
+    identifier : 0x3e9d90b112793e19
+    internal_properties : CQAAAAkAAABCCbEZQHD+Z+WKSyXBqHPX1WlZ9MGHIEni+mhjlUyNm5/g02d2ZE/VjV2s0KNiTYEbrg4kFUWa35lu5RNwD11asdIfQBpomTcnRonpbTZWXvPqhqKHpe1bXerS3QxJZCzS1Lbrs9L45MNaKPY15QKro8fwbj0zUB6B8FF2QP4JoBuLaOps5cRSj276xYC3gIIOmcWMq226hZc3BUN9GKi6N8vM1AFJy+RkUVG2NkJiOwqxN4pchynLgLQkEFcEs6Rdz9+SK/eEOydnCjETkkKbI3ypS0PGtF9IpykQCrKX0ssWzXRQ7wNm+Lv/+uBniIPdE9XjERtKgb3uuGrv4HMfDJzfD1sq+szIwIZ7xeoaNpcT7flXGTgKr9d880VbrlfBxD6a082n7HM8RR36xrnt+BF22NFKkcjsEq1JPV1Hqli2zr9QYa4fZS90p447ZI8/c7AmcR+8AoydGynQ5EGb3MRqlupB/xbE+EKYyhzoS6+gF/VZBurU2j/AX1R5claSAhxyQVyt9Kv3VTnrikDDrH8zoj2Bd5QAWXsErd69tHLoDcs+9Ro2oLOA2FAoS01e/aXYHlx4A82lmai505qcwgMmla7QrQMiq6pTX/7GTR+nTxoIGGaiWOlhn242rZT7h4Ue//PJYj0PonNJqpu7RIi2zKLcvYy2qdpLYanhnrKWM1XP9wHyXHzeSYeFtXeDzGAvtMKhuoEx4rpLFxcxC4sNVvqatdsREIzjOh4uPjOAxs8BdjrPXkQnlqQzksX9OTN0RLt2JnocYyHKfZeIh/QgPNZP8PVzu79UjpJaBQjAqry+3Ge+08YbfwUp2ReHfoGZrrlcIndOoxRmZk3O
+    properties :
+     x : 73
+     y : 6
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //iimprimeetat("LISTE PRIX SPéCIAUX",client.numero,client.numero)
+         j est un entier
+         i est un entier
+         premierefacture EST UN ENTIER 
+         dernierefacture est un entier
+         lnumeroclient est une chaine
+         pasmemeclient est un booleen = faux
+         lAdresseCourriel est une chaine
+         ListeFichier est une chaine
+         ListeNoFacture est une chaine=""
+         lSujet est une chaine
+         lMessage est une chaine 
+         lnomfichier est une chaine
+         lnbcopiefacture est un entier
+         
+         hlitpremier("config","COCLEUNIK")
+         restaure_bouton()
+         impression_ok = vrai
+         
+         prochainnumerodefacture = config.numfact
+         
+         
+         si acso_message("Question","Imprimer toutes les factures choisies","OuiNon") = idyes alors
+         	si csdestination = 2
+         		pour j = 1 a TableOccurrence(Table_Facture)
+         			si TABLE_FACTURE.CHOIX[j] alors
+         				si Table_Facture.tclient[j] <> lnumeroclient et pas lnumeroclient = "" alors
+         					pasmemeclient = vrai
+         				sinon
+         					lnumeroclient = Table_Facture.tclient[j]	
+         				FIN
+         			fin
+         		FIN
+         	fin
+         
+         	si pasmemeclient alors
+         		si csdestination = 2 alors
+         			acso_message("Erreur","Toutes les factures doivent appartenir au même client,l'envoi par courriel est donc annulé","Erreur")
+         			csDestination = 1
+         		fin
+         	fin
+         
+         	premierefacture = 1
+         	dernierefacture = tableoccurrence(TABLE_FACTURE)
+         sinon
+         	renvoyer vrai
+         	//	premierefacture = table_facture
+         	//	dernierefacture = TABLE_FACTURE
+         	//	lNumeroClient = Table_Facture.tclient[TABLE_FACTURE]	
+         FIN
+         
+         si csDestination = 1 alors
+         	lnbcopiefacture = config.nbcopiefacture
+         sinon
+         	lnbcopiefacture = config.nbcopiefacturecourriel
+         FIN
+         
+         tableselectplus("TABLE_FACTURE",1)
+         sablier(vrai)
+         pour j = premierefacture a dernierefacture
+         	si j >= tableposition(TABLE_FACTURE)+TableOccurrence(TABLE_FACTURE,toVisible) alors
+         		TablePosition(TABLE_FACTURE,j)
+         	fin
+         
+         	si choix[j] = vrai alors
+         		libérer fac_detail
+         		fac_detail = allouer un tableau de 1 par 4 chaine
+         		fac_detail[1,1] = ""
+         		fac_detail[1,2] = "0.00"
+         		fac_detail[1,3] = "0"
+         		hlitrecherche(BonLivraison,Bnumero,table_facture.tBonLivraison[j])
+         		si htrouve(BonLivraison) alors
+         			bonlivraison.BDateFacture = table_facture.DATEF[j]
+         //			BonLivraison.bTauxTvh = config.tauxtps
+         //			BonLivraison.bTauxTvq = config.tauxtvq
+         			bonlivraison.Bfacture = prochainnumerodefacture
+         			hmodifie(BonLivraison,hNumEnrEnCours)
+         			fac_entete[1] = bonlivraison.Bclient
+         			fac_entete[2] = dateverschaine(bonlivraison.Bdatefacture,"JJ/MM/AAAA")
+         			fac_entete[3] = numeriqueverschaine(bonlivraison.Bfacture) 
+         
+         			fac_entete[4] = numeriqueverschaine(bonlivraison.Bnumero)
+         			fac_entete[5] = "Transfert / Logiciel de production"
+         			prochainnumerodefacture++
+         
+         			hexecuterequete(RequeteBlEtat,hRequêteDéfaut,table_facture.tbonlivraison[j])
+         			//iAperçu(i100, "Aperçu écran", Vrai)
+         			// Ne sauvegarde pas les paramètres spécifiés
+         			iconfigure(sansespace(imprimantefacture),vrai)
+         			iParamètre("DEFAUT=NON")
+         			iParamètre("COPIES="+lnbcopiefacture)
+         			iParamètre("QUALITE=HAUTE")
+         			iParamètre("ASSEMBLE=OUI")
+         			iFenêtreAbandon(faux)
+         			selon gFormatFacture
+         				cas 1
+         					iimprimeetat(laFactureNovy,faux,table_facture.TBonLivraison[j])
+         				cas 2
+         					iimprimeetat(FactureTRN,faux,table_facture.TBonLivraison[j])
+         
+         			FIN
+         			cimprime[j] = vrai
+         
+         
+         
+         
+         
+         
+         			bonlivraison.BStotal = (val(fac_detail[1,2] ) * -1) -val(fac_detail[dimension(fac_detail)/4,2] ) 
+         			bonlivraison.BStotal -= val(fac_detail[(dimension(fac_detail)/4)-1,2] ) 
+         			bonlivraison.BTPS = val(fac_detail[(dimension(fac_detail)/4)-1,2] ) 
+         			bonlivraison.BTvq = val(fac_detail[dimension(fac_detail)/4,2] ) 
+         			bonlivraison.Bsurcharge = val(fac_detail[(dimension(fac_detail)/4)-2,2] ) 
+         
+         			multitache(50)
+         			SI bonlivraison.BStotal = 0 ALORS
+         				ctransfert[j] = vrai
+         				bonlivraison.Btransfere = vrai
+         				//			 hmodifie("hfacture")
+         			sinon
+         			FIN
+         			hmodifie(BonLivraison)
+         			si hlitrecherche(hfacture,Bnumero,BonLivraison.Bnumero) alors
+         				pour tout Fcoutant avec "cNoCommande = "+ hfacture.fanumero
+         					fcoutant.cDAteFacture = BonLivraison.bdatefacture
+         					hmodifie(Fcoutant,hnumenrencours)
+         			FIN
+         			pour tout Fcoutantligne avec "cNoCommande = "+ hfacture.fanumero
+         				fcoutantligne.cDAteFacture = BonLivraison.bdatefacture
+         				hmodifie(Fcoutantligne,hnumenrencours)
+         			FIN
+         			maj_detail_comptable(bonlivraison.Bnumero)
+         			hlitpremier(RequeteBlEtat)
+         			tantque pas hendehors(RequeteBlEtat)
+         				SupprimeFacture(RequeteBlEtat.fanumero)
+         				hlitsuivant(RequeteBlEtat)
+         			FIN
+         
+         
+         			si csDestination = 2 alors
+         
+         				pdfc>>cPrinterStop = 1
+         				si frep(completerep(repdonnees)+"PDF\"+sansespace(lnumeroclient)+"\Facture",frRépertoire) = "" alors
+         					fRepCrée(completerep(repdonnees)+"PDF\"+sansespace(lnumeroclient)+"\Facture")
+         			fin
+         			pdfc>>cOption("AutosaveDirectory") = repdonnees+"PDF\"+sansespace(lnumeroclient)+"\Facture"
+         			pdfc>>cOption("AutosaveFilename")  ="Facture"+BonLivraison.bfacture
+         		//			pdfc>>cOption("AutosaveFilename")  ="Facture"+BonLivraison.bfacture+".pdf"
+         					lnomfichier = pdfc>>cOption("AutosaveDirectory")+"\Facture"+BonLivraison.bfacture+".pdf"
+         			si fFichierExiste(lnomfichier) alors
+         				fSupprime(lnomfichier)
+         			fin
+         
+         			iconfigure(sansespace(imprimantepdf),vrai)
+         			iFenêtreAbandon(faux)
+         			selon gFormatFacture
+         				cas 1
+         					iimprimeetat(laFactureNovy,vrai,table_facture.TBonLivraison[j])
+         					Cimprime[j]=3
+         				cas 2
+         					iimprimeetat(Facturetrn,vrai,table_facture.TBonLivraison[j])
+         			fin
+         
+         			sablier(vrai)
+         			//		multitache(500)
+         			//		frenomme(sansespace(config.DossierFichierPDF),...
+         			//		fExtraitChemin(config.DossierFichierPDF, fDisque+fRépertoire)+"Facture"+BonLivraison.bfacture+".pdf")
+         			tantque pas pdfc>>ccountofprintjobs() = 1
+         			fin
+         			pdfc>>cPrinterStop = 0
+         			tantque pdfc>>ccountofprintjobs() >= 1
+         				//	tantque sansespace(pdfc>>cOutputFilename) = ""
+         				//		si modulo(i,1000) = 0 alors
+         				//			message(pdfc>>cOutputFilename)
+         				//		fin
+         				i++
+         			FIN
+         			multitache(100)
+         
+         			pdfc>>cPrinterStop = 1
+         
+         			ListeFichier+=lnomfichier+";"
+         			ListeNoFacture+=sansespace(BonLivraison.bfacture)+","
+         
+         		fin
+         
+         	fin	
+         	//			hdebloquenumenr("Facture",h.numenr)
+         sinon
+         	choix[j] = 2
+         fin 
+         sinon
+         fin
+         fin
+         sablier(faux)
+         hlitpremier("config","COCLEUNIK")
+         config.NumFact = prochainnumerodefacture
+         hmodifie("config",1)
+         
+         si csDestination = 2 alors 
+         	si hlitrecherche(client,numero,lnumeroclient) alors
+         		pour i = 1 a 4
+         			si sansespace(client.ccourrielFacture[i]) <> "" alors
+         				lAdresseCourriel += sansespace(client.ccourrielFacture[i])+";"
+         			fin
+         		fin
+         
+         		si client.CLangue = 1 alors
+         			lSujet = SANSESPACE(config.SujetFrancais[1])+" "+ListeNoFacture
+         			lMessage = config.TexteFrancais[1]
+         		sinon
+         			lSujet = SANSESPACE(config.Sujetanglais[1])+" "+ListeNoFacture
+         			lMessage = config.Texteanglais[1]
+         		fin	
+         	fin
+         
+         	sablier(faux)
+         	lSujet=lSujet[[1 a taille(lSujet)-1]]
+         	ouvre(FenEmail,lAdresseCourriel,lSujet,lMessage,ListeFichier,lnumeroclient)
+         fin
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         si impression_ok alors
+         	btn_imprime..etat = grisé; btn_imprime..Visible=Vrai
+         	btn_ecran..etat = grisé; btn_ecran..Visible=Vrai
+         	si pas gLogCompt = "Cameleon" alors
+         		si acso_message("Question","Transfert des factures à la comptabilité ?","OuiNon") = idyes alors
+         			ExecuteTraitement(BTN_ACOMBA,TRTclic)
+         		fin
+         	FIN
+         FIN
+         iraz
+         //iimprimeetat("fichier de transfert")
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ACOMBA
+    identifier : 0x3e9d90b12b153e55
+    internal_properties : CQAAAAkAAABAUHv5P168qAn9IshhU+fIt4OHfLVwfWMIw49X6Ze0ptDOrNt5qS45H9t0kNjJe0JnOQSFN33sbzFF2+r4kBrcd5Rrl+Zp6K331p0OzpTx8Qizcz0OlaxrAJEauZCTdwv8VdJ1dl0oh2zzYN8ARLi5PG3R5rv3qquvtK+pNdZaLztbvDvDZ2XjEPATr2LCBLD7/zFI/paIMk4hjZm0X5zkbIOwW96j1DjPLdmINiD2jDPlzJfpk7M767rTpETv2ALpjJdcwlg7gONCxLhH5WMzuV5uIrUrZMolirJL78NFILaZZLuiOzLGOes4zj67pGMvlJKu20wiKRlg6ltm9+V86vAgv4PVHoTwOo3zclnzHWu/Y91dMyTOJhp/mqodYP23Os3fmq/wwOCtVeH1eXxu+EgOA/BWpLdoNMegwD4c/yZm5VxH4kyjJsBR4L70NurxRxH8eHDGTyOlGd1PfDk2gGkEpZy19eN90PacZcuRYjX1bciqJnTDMY448IXFUZ4I0pQ5C664NO02Yl1xnlUQ/qFOR1vOQc+85bWCeO76ujj2x1rl+YqQNNo6JD75WQT0iNsrKdw2LE2sywNmiygUYy+fJbnhv2oegvkFxoti81k0Vzrcx+dFFQ54Xv1Zdjdz5R6oW5+32nR09+C7mkCEK4kGsXBPzqcocLiayjFTAZ5ZGgsExxqJda72B0YiP8VoEBjeDzuG7ef18eRfHAoSZYNM5pqJMaozUh3Hxyu88pMpTKMKLBNRbKxyiYK20jnjUUkcG35Oy8xF7cMu2QNJic6zUq5Ns1aqx8SxqOqULLI5ycfmHFs=
+    properties :
+     x : 835
+     y : 3
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         j est un entier
+         //Code WinDev 5.5 remplacé par la migration :
+         //btn_ecran..etat = actif
+         btn_ecran..etat = actif; btn_ecran..Visible=Vrai
+         //Code WinDev 5.5 remplacé par la migration :
+         //btn_imprime..etat = actif
+         btn_imprime..etat = actif; btn_imprime..Visible=Vrai
+         //Code WinDev 5.5 remplacé par la migration :
+         //moimeme..etat = grisé
+         moimeme..etat = grisé; moimeme..Visible=Vrai
+                tableselectplus("TABLE_FACTURE",1)
+         		
+         		pour j = 1 a tableoccurrence("TABLE_FACTURE")
+         		  si j > tableoccurrence("TABLE_FACTURE",1) alors
+         		    tableselectplus("TABLE_FACTURE",j)
+         		  fin
+         			si cimprime[j] et ctransfert[j] = 0  alors
+                       si hlitrecherche(BonLivraison,Bnumero,table_facture.TBonLivraison[j]) alors
+         				si transfert_facture(table_facture.TBonLivraison[j]) alors
+         					
+         				
+         								    ctransfert[j] = 1
+         		            
+         				sinon
+         		            ctransfert[j] = 2
+         			    fin
+         			   fin 
+         			fin	
+         //         multitache(100)
+         	   FIN
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BOUTON5
+    identifier : 0x3e9d90b15c7c3e7d
+    internal_properties : CQAAAAkAAAD5lCT2YcE3grEV9Psg6MP0Q4VT/2dFZUY0BM2ZWTomoCTW0goXpIDCjefWdHbddY70FuJz35vmxytL3WeH3tfgmdHbV6VJ/fqc05wWzlzsfTkwYxIXfXinunnr75JbEyvZzC4pHGkNiwH7RE0EQ8cAcp1by8CRxgdEl6cmcXTggZ7yVcssvx9jNOCV3Pnj3Ku2Cd5+uwtYrv31XBOKJUrFeq7918YAobWDuE9C6OWdg+xKA2Q+r1vnhrkrirWB9y5hz46AtzQqbDhCSEixpC+tso3YX0y8DbDBLnHlQQc6ZQUdcaNebGioPdfmMYbA5MOlN5piyt1wpXwVxnacdmSKdoHyi0RDllrh5qXJFQNqRzdZ4EIa13Ik8uvzWqKhGOHYZqzgF2IYmkNVRwvG6VRPpSZO/Oaze6XcLiUQE6nxsAn1UxDmJV6KAwFC24Huay7qswlM2ywADdifgmvWisQdbHdalgNvX7r3rH38fGMVCqGSwxIrGc2+WLW3JllyS/dMbKsfRcyZ6ml8Qfs1nheQ6uqPMLodGhCqikVIUkEk3Uxt93aYggegaVqQyUe5JCkV0cR8dAP7YreY5zAy+R8pUUNZr44z9VKQYF8BYMUFMhkBFnerRevzwBDAYnYjkNmBbJmaosh2qVvD5EoE4n/c9f/96KNg6M3Gmy4YTsz1CgG0qxcBHK2cnQSgxFDW1FkAWaqeEFz8HdWxAYDg
+    properties :
+     x : 520
+     y : 226
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //Code WinDev 5.5 remplacé par la migration :
+         //_onglet1..etat = actif
+         MaFenetre..Plan=1
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BOUTON6
+    identifier : 0x3e9d90b1374e3e87
+    internal_properties : CQAAAAkAAADhphvO0l5SYO7inPHW+gyw0QLRi4SWz+2vNGrCDZWzi6omAF2D+T9x6dAYMc47MMeYet0TuX+8ujVLCMRZ8NDy5CSSosoRVTLqgV2uKpmu3lFSKYBne6vcwL1MQrGusvKgaLWSXgKO/HTIUs/rUywj9gURD/6EShJKB1feOtuhm9+I2J8IBFbxFRJM5DJpI30NvDj1CYqqEiagatsgGxJtDHvZXeeGpPFEMdwf5Yq3ykVcjit6wHADlz8NuT7MmY4syhmh4cO1/8jpAmYDYPBr6bXvfXcgXvA2qIPiY6zOB1LsTA0d4BqxYPIZ0Zr6x9l7vyvt873qLj5LQ+/A79N21YNSqR8iV6oyw2dvhqkOrA2LYMktgvLN7tKx/hFOEBhMHhKzAGV+6UOYQQftGKhez+TiZZUimSxk6YnK/rarKXMjQ7VhrGLB2fRcw4YDBw8YhfGZxv9ogAKuUBNB2agyoP8ooRQ426E93RfIJ9pHj19M+7e8qM+xopKDbDa9ORzG8jsKKtklvU9NS+/Gi9+fJIAHNf/WbkX+GWVGb0qWjg5bUykRAdHpVSN6FWiOomix4To3rQavRaVLAdybbAlG6UcneJHIE7vKd3WR+3D/2RcTPjQS3MteAm1sVHFemibVrI8r8+U7cN00crclP6eNulBo+L86M5UvQQ1PjW0XaV/bDkyBPKEvBcRxNq1ntu00LuZ9daDF0f/Z+d1aTQ==
+    properties :
+     x : 949
+     y : 6
+     width : 25
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //Code WinDev 5.5 remplacé par la migration :
+         //_onglet2..etat = actif
+         MaFenetre..Plan=2
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BOUTON8
+    identifier : 0x3e9d90b110073e87
+    internal_properties : CQAAAAkAAAABn6uE9cdD0t8q3yXC+0Xk71GjOOsj89za7WlPGYxpUI0DppA1oLCa9hRYuj/dhuxHvl17WWTXk1SXytmnXH9kX+/kdW4TIHraH3Ttvz47249F/cfNJUExyD3p7Cw98PBX9rlnmLgyyIfiRFR74zOoYSZ1gk2SyAGLo4k8Ycf9abXjF/NgSzyDk7dh+Fc224BDh992QQMrAY43F1out4VkbjqL2FgZBfV98Iygb1MtAmK7xRV+KHr026niAYbOCDhNQqGLzPdrppUA7jcZZdWDNuARuyekqStdRVJrvWyqBTuUgPTvOTwbxnW/7exNeKUUYUSP1bip5vq8oSZMY0Or6Ouj66o82rvzMy1MzXTO0+4eLnbo9BI6xDOzworLZrMKcEJawxqYHPGJsycY28rDIdpabl5/l2GIGgkEBfuX6htXrTSUseIMgQGyu7OYwYQIUW/MVQSYdQDxdHk6KCb/TnEAZjnbyxZzVp9OrJ3TWhk6tzQRpUk6lHGrnhGsoUk21hmDGf6XSJsmm63bvodwygprsjyztD60mq3ckO0AJcyN05JSzFXumwRyF6cD0m8bX/Yq2v3x2i+C4Q4k9ZuVJY+BUfaVk+5sjn2TwoW1TAtzROFBwW9nZMwUxo45esvT3ntYAt6pC9lB4ppwMVrFMeIq8UI8SV3BOQ8vttJmTU8VRzl7gpzjKNHyvQDAAC9ELWZVYVLZyqsvLytBiYmR+pnTQsI6Ch11Jxxmkg==
+    properties :
+     x : 542
+     y : 6
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         hlitpremier("hfdetail","fdnofact")
+         
+         //Code WinDev 5.5 remplacé par la migration :
+         //tantque pas h.endehors
+         tantque pas HEnDehors()
+         	si hfdetail.ftype = 1 alors
+         		hlitrecherche("persoens","ennumero",hfdetail.fdnumprod)
+         //Code WinDev 5.5 remplacé par la migration :
+         //		si pas h.endehors et h.trouve alors
+         		si pas HEnDehors() et HTrouve() alors
+         			hfdetail.fdcomposant1 = persoens.encomposant1
+         			hfdetail.fdcomposant2 = persoens.encomposant2
+         			hfdetail.fdcomposant3 = persoens.encomposant3
+         			hmodifie("hfdetail")
+         		FIN
+         	FIN
+         	hlitsuivant("hfdetail","fdnofact")
+         FIN
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SELECT_TOUT
+    identifier : 0x3f81f3aa3c0a163d
+    internal_properties : CQAAAAkAAAAag39247/9BZV3XhaXiFpGoPsXjeHytPQVB0/h6UQHCHfVT7AsvnJ+7N6d5PNoQ8NfY62rVBeBrpscUR/Sw1sLv8ezu7NWj/HVtS6JFs/BNmJR5kZ5OSL4kBmMN0M0YXViU6TTGZOmcH2On9NvwZLyLODg0xZx4CAZuGTKZf9pk9I/wV1Je14fskQmdVl4vSGHCBGk6UBPa+XYSAQXZLyo3a4nPzcBXha77k7Irw2JKpitToacCBRllUW2bTEPaLffQnZdqr7Ln3frA7agr6zuRKy4LOptesrQD9gY6ISN0PEkGLmOsa6wagrTdpbfmrmDzPuatokOlHO/9ozTtHia8A+PGm+U1tdDVqj6eSF/77WyvTpep7/wbgwKGUYra+pZzciFEasU06NNZ9+FKMH1UD3aMbM4Muv5QN5dISKMnuZkGNqGUTdth8690u6fW2zVV2pwUwxjxEN/HOq0uV02OC5xf4j0kBDKaqL+X831t3UHCCo/+0w051sdjX5v6TVm0eRojF1cj4QT+SpnmeI932362RiTUa3E8tLx4YygvzZRXPH01UtxEZQo1jikN0PXuFsH3JMBmsi0ZEDE8gnLPidoRbys/T8QfupsUHWfH9jlhobRYHcxRjWxSFpWSTNTB62VVBilr6MSv7uQt9UsQ1OQljTnl+5VOG1PT6QCiWLPyrJmYfyIMK2HRuXo6VfEV3JHchjTH2iT7VPQUEp4jhDcTG5LgM4KuosYaQ4=
+    properties :
+     x : 700
+     y : 123
+     width : 100
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         j est un entier
+         AuMoinsUneFactureChoisie=faux
+         pasmemeclient = faux
+         lnumeroclient est un chaine
+         i est un entier
+         
+         pour j = 1 to tableoccurrence(TABLE_FACTURE)
+         	choix[j] = Vrai
+         	table_facture.DATEF[j] = csdDateFacture
+         FIN
+         
+         pour i =1 a TableOccurrence(TABLE_FACTURE)
+         	si TABLE_FACTURE.CHOIX[i] alors
+         		AuMoinsUneFactureChoisie=vrai
+         		si Table_Facture.tclient[i] <> lnumeroclient et pas lnumeroclient = "" alors
+         			pasmemeclient = vrai
+         		sinon
+         			lnumeroclient = Table_Facture.tclient[i]	
+         		FIN
+         	FIN
+         FIN
+         
+         allumeboutonimpression(AuMoinsUneFactureChoisie)
+         si AuMoinsUneFactureChoisie alors
+         	si pasmemeclient alors
+         		csDestination[2]..etat= grise
+         	sinon
+         //		si gImprimantePdfStatus alors
+         			csDestination[2]..etat= actif
+         //		sinon
+         //			csDestination[2]..etat= grise
+         //		fin
+         		VerifieAdresse(lnumeroclient)
+         	fin
+         
+         fin
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : DESELECT_TOUT
+    identifier : 0x3f81f3aa37741647
+    internal_properties : CQAAAAkAAAAQXFLu2ND4trOIqIe0xhoNYPdt3kgsakhllrI7n6AiQXhOceJNIuCkc4vw0FTx1lsntG08i6Dg8AyxdAu5AuZbDGY66ykCRoPJ2NztYOIQlXG/txfwP9lb7LsQRGv6B80dMAjrx+KTN5DIxZW72wihsXwPenBe1rii9se6zyDNq7HmvmrqMwPT/pWDeodbkEtYc1FbFYeGDHBTcihPqEc260Xivglx+rthDfCVNi8hktcvhNa2IncrlRNmx/3ALOEYGPlHysteJOd61Y+1TmyIhcQCImDPerwCdtA59RFVf6UXHFm2hFgzHe099sV3rgDrOB3VYFn8Vg+EpInbBJ6PjvepfLDMbmfe6FnXjTziZ6O3XjX+vxMG/OHSTDeXgp7nhp0FpoDMnflc+6jcQiZbANzF3XoBHkl7WWL2wHZp/GAbC1zLTkXB68uvY4UVTkQ9QD+G3k17Vp3QYnO7xRJs7hd+p6v1opxqAT49ZKd2s2nil2ymDjqYmfg34h0vCjkWtkVaYVZyN4h8XVfKmS/7FbSl/TFqB2VsoQSY3vI7Z3bm9W+/ygcjx0NEKQHqEhttYzq/ARiTpuQb2O0rHoxTjAZzi8cJZTVab8BxJ802HcZ4FdbWvZ8rgEZHu1OQVqm2VthdPwXH1ycPueY9J2jOg9iJEtPW43zDb5EKSBqpxTx0wzKBfgwS5t61MUigdvUA4A+BkHkrmTZSiz0vqBmkk4fSD8MRNjIY
+    properties :
+     x : 700
+     y : 160
+     width : 100
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         j est un entier
+         
+         pour j = 1 to tableoccurrence(TABLE_FACTURE)
+         	choix[j] = faux
+         	TABLE_FACTURE.DATEF[j]=""
+         	
+         FIN
+         allumeboutonimpression(faux)
+         csDestination[2]..etat= grise
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ecran
+    identifier : 0x40313b6269d674c2
+    internal_properties : CQAAAAkAAABAa9k7Wu8mrxJBc3xXingFWrBxsl/vQSAQAN+1KSbIe7O5Gw8SPfk5ZdmljnaDby0zTyUPtL3nCriPav6b5kWYHbXZiMrfERa2BvorKoup6YgV9bzFOAcedhRzFBHi8kGmvjZ1JrHkxndC3jvOUe6yGr59naEF4tIhSYJ9BQ6pTmP1TlHEpXP4nwWoWsz3qz0HFgvvw4rJbFSaK45kIsI/J8kZ54o1pbXoUCNFbHqWsEfdAcCm4LOsT0T3z8HVEXZJjbGrvGU1IVlGbWH+k11s3mHv7M+9cJZ1sFzhvth5KwMlvdGsDXJqTO9CgPxSn13AbIEuMKPOHyEtV//NC5s3NOLMRz62j4E0HAlq9llOLLMATivjPZ+WP+SjizG11pXqOqwL/QRI7wi1rXhKCgHxbp6Z/2OBo9Nt7gB1simyhZbNe0SIhmZxOIhv1wJ+FbqjZFgMmuP8yB8MyQiLFjwLkIxl0G6w8xC1JIcX6CCp4WwUIM/vTFarsV2gy7Nm/Em9sz87w8mB2Fh2RsRaKv/087VGJsZzT/Q16jMBLYTxfPdqhbGrLeoIA7K9Pl/M5dm2eQrYH08jCEim2wbuUfORNLBXhkWeJlThMYZB3dyUB4kL53OQnpz0sPycR9vqlfvj1Bl+dLe4wUandUu8zWkCuX/kJz4Ri9IFj6A7oig8P5cmRfmpcJJLBoNfrHAdUXJ3iYDjqSWnZPSnXyDQOH9FOdUB8AZpu2KsSTDz2yK76va3KtkQbfmu9HAEvDKUZlJZhBDmvlhP08HdU4Sr0KAMg8YFbBpzEMuGBEqvacweJVRg206+4CiLZhvYrY14bzmT8YYtDfQ5fxJ7+9BlDjdxcsc302c=
+    properties :
+     x : 318
+     y : 8
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         j est un entier
+         
+         restaure_bouton()
+         
+         
+         
+         
+         hlitrecherche(BonLivraison,Bnumero,table_facture.TBonLivraison[Table_Facture])
+         
+         si htrouve(BonLivraison) alors
+         
+         	hexecuterequete(RequeteBlEtat,hRequêteDéfaut,BONLIVRAISON.BNUMERO)
+         	iConfigure(imprimantefacture)
+         	iAperçu(i100, "Aperçu écran",faux)
+         	iParamètre("DEFAUT=NON")
+         	//Nombre de copies à imprimer
+         	//iParamètre("COPIES="+CONFIG.nbcopiefacture)
+         	//		iimprimeetat(laFactureNovy,vrai,BONLIVRAISON.BNUMERO)
+         	iimprimeetat(laFactureNovy,vrai,BONLIVRAISON.BNUMERO)
+         	multitache(50)
+         fin 
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BtnDetailBL
+    identifier : 0x415ab69c22d582f8
+    internal_properties : CQAAAAkAAAAEOZ+U+xm1UZbrUAc0/9Dx9N8QmRJ1kv1VsYT0p4Ad/e/MbL+sdMwYE8m9hgSwV6WV8l7vOc6ZzLEwvvEHKRnSeyAlAE8737HzKYp/swgXlAyU40ju8Q/+YfXTlJ/qpq1ZCN6lj9DOqesLJ5fcfjHPUMXyOuFNr8s732UcPTdZQ1dG+N0XpEsDltj/jDlRi1Hi4zMMbRXZYz7hmOg/NFJAsiIV9YsXnWv+BUuha3dfVemwV0CW68Bn9BgOdM2wC0Yi/7aXiq3LdiboYj+fo6mTK5CypAq8GBpuSjk1rWW7/GpAkvrbxFC9InHycW3Lwu7PwJnRrkN+NrWaw6nD0c4LlYKxn1qhlJV5fVmDfqkXHiCjYdwxiKnfgA3UwB++G6VJIVqmxwLG2HqCu0UEVnmZQRkkrHSmTsvenn2uWzfSEEyLfQxE1YXy2l3svuaRkPRlwS3jyzLFc9WFtX4dIENtZ2/QN/XGmsNMNx2gKPeqUy7Vzra7hkaAa0YmWsiNAyc19sHdqwvKp1xPkv0jGreDcGJ6lmPTsMTF+Lzd+I2yXZVO6YDgQi/hz7Z38J4Al1NOXXMkzfHQiyhrO7zqJQ30QEBIJ2oEK55TZnIkAKx6zNELd4NIEFeIwgUHvfii+jvQMuIlIKqavnr7yQYQYcgdd3T1T1o7NDhIc/AQXzymjgvYMOy01MrBw/O/HUemHiCu80oVxScZuXtWBigD7eqOBYgM0kvPhi2hAVwp6UNK++zJ4SSMvjOS9s+dpbh64ISXiDkttKjPLzFD734voj/+TU/hNzlZ6ssfF72SxzKqDX53z/6+LpHS8SiPZ7/4cvsuzPxhMTfGmenJ/52knSO4jRYNI3HIV1nZkJNffNABBg==
+    properties :
+     x : 376
+     y : 6
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         ouvre(fModifBL,TABLE_FACTURE.TBonLivraison,TABLE_FACTURE.NOM)
+         remplir_tablefacture()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : csDestination
+    identifier : 0x4612d0e961adbea7
+    internal_properties : CQAAAAkAAACG90RhJ+l57H7/YeCM9zqwlAlZxvfxpmtvU7BKomG0dPaAiRHukXM3l40Vs2TYLWIW53oMYw215OJ7/UfP6wJInVBu0WRfuXYaPqulHqdTehpCzbxR30y/CaT/j+JRAX1A5Kw9u7Dha3P5NLsKpRXIeSvRiXVKFGrlEMYKg3uNEFQhXOdRfHFi6uyzy+caJuwCybo1ZYHw5ojDCMKP5ZjS+IrUF8+84E+ig/Wx/gUPdZNyxsBvjUFEFeYOFnrqaUwuHdLb9RxFfNxoSXMWWkwC21OvpBKdSqXo+avfYZkxiFoaaleEpkV1fKyhCSQhUc5PYKhVNv7KgpM3qtKKBA+NvPbfRTSyZNbiv+0TYtClqcSRC+wu5FFJPdjIcqkphqLa7GFhagnNxMJNpXiYNJV/STy3wmdROLgpe3g2a/uJ0wzqTb7RlofsiFArD1q5vmiUgY/5zmbt3Nqx7dRl0sBrjBqxUBQS5C/XXA0r9pmZGzUQoa5weLq9jwk9fHO7W4cUkg9RGiRlQK1ej5oh8IHluH0PpdhdGsICWrk2z/TLjodkXmzpG09x+QMRfKDsVkWmBSbooaovuttsygmCr9Em5QDgk9v05/7UFpfBcE4KVciga4S0QAfxFwiRE8eZk+1EN6xN6DyJDpoBJABT/4wrPNYVxEaClAebbTTcVoMpwgz+FyLmrNbBu280etji1xEBljY39+T9zb5LVXoJMS4aZ8RGVag9inBqYJvKuRI/jYA=
+    properties :
+     x : 117
+     y : 6
+     width : 142
+     height : 58
+    options :
+     -
+       internal_properties : CQAAAAkAAABshdGVS1Vhj3G274PvNc9psvIMslMu39cehNpRokEsT10VksZYJquypXGfpUsSHT/bwIHf2zRwT0TIJjdb5ipUDAFOfenQDE2pCGlC0L8UGuRIBajNOBgLi40thHuisr1peKzzPrv9fKDnm39j0SAlLgYbo+Y418XAarDjZw==
+     -
+       internal_properties : CQAAAAkAAADVK1kichBmqw2DGFYq+JtpO2R0joXVbOose+1eSQk9z2pfQQ+1HrZyzy7rAveGrdS9enWrWMICAidi4/0YxsgtJpJfv1cE0B6LUKVtls5REUpBxNMfCo4uOeGFf/XPlczhzddYYuFnBYzvpwj/pNJ5IAnFH8xnkM2Fsb1rGXNaNudGqzBT4MMX/Q==
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : csdDateFacture
+    identifier : 0x4906f8df2ceeaf05
+    internal_properties : CQAAAAkAAADUFJJtRVpwsK6dWzBOuXcq/lMxg4bsIzJYBt0TzEJuWdwxHhBmFuSKT1MoYLTvr7E7/znOAdQiEKfzjExjXVKaIUbSw5Y9Gya1u9/CSx1uAqoDPMEpHd47AkGKa9SWr8BLL+2Qs2IQVsgL2u8npy9kwp9mkOu518n+r+it0RTUXCXbJQG3HYCNZv2+IEJ+Kem4xsBkw3d4/WVTN9+8xzwYo7JHhhGCnZ5otTbRe/UnRJisIrnrA8U6j+7++Cl8610bdlgx+1KTRZ+NwfAqD2CgCso0GWFFivxSSj+MdPlKFOLlLDxmdjhYGJpgFGfGbCoOXFpbvqTA5MuaKnZmZRiYyDmN8WKn3K3jD6xWWMa38di7eoRkJt1w/pSuye/2U9SUSZ7AKeugEkn5EXMQX3V5zvr91x+CBRerlH7KfxOJSVMe6iwxr3hfeRnxaeB8T6ZCm2SRmeFHjA0JoXbES5BQj/uaDGCNjo1wc4/n8726rfQjle+34RHEcW5UWqnWtx6g6XoZCrDuqchJUhBK3CC1JQiBM6syXLMoCeLmE7IQBcmrdqXV7ALNf0VM2BPdajmZxRvw0kJioLkrNPaM/E1bQyxKp6UDJMVms7zzNx8vq8PejIv7qFVzDeyVj+XHAtPFgLDNR7hJiG4mNdc8KzorjPn+qZlIdVopT1nsjPv3OpBPc4C2+JT5soQeWvGo7v6WejrL6smTBJFAV2Op9u9FygCFtlAcZMvzkNDDs6SviOcSq5eLrHGwIxwUUlWa1+OvQdVcEB736QpcvdUag2hWxRTh678jBWWAAxbKqSX/WZplIFAAN+DNfTQJaKA/8l/nKk+uOtk7W1py7ZPH
+    properties :
+     x : 590
+     y : 59
+     width : 71
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         si moimeme = "" alors
+         	acso_message("Erreur","La date est obligatoire","Erreur")
+         	reprisesaisie()
+         FIN
+         i est un entier
+         pour i = 1 a TableOccurrence(TABLE_FACTURE)
+         	si TABLE_FACTURE.CHOIX[i] = 1 alors 
+         		TABLE_FACTURE.datef[i] = moimeme
+         	fin
+         FIN
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : BtnCalendrier1
+    identifier : 0x4906fac7437322ac
+    internal_properties : CQAAAAkAAAAiap5FZlRmo/5FxGTOPxxO2XrNF/7G3E5r3uJN6EXfY9i94CfbVQ0jY7/Adp94+6Uz6VHRsd4dtrqjnskVgOHezYgU4suKnfid3yAhOzhxw/6At87YC+JYfCc1ptR6Icg7Ju/rKb/D2AFLAGPLVDZaItIB19X/VDqO/AnXJSRh6IfPFMeUzompD63mpQGpx+1zWB8W+FQnXE2RpNa1rJ7k7kHGUPvzc1KgGmUV/ue94NppnfCl9mwjmjEaXZmeixqBSQRFRQIzyHZepT48u6LEiUwPT0o2IFCXNv8KpwL3KhC+vfM+prLLVU/bG5z+90jREecBR4jCquP87Nxv03b7f1KCaFZ3lnsih0D5yRh68f06qlF/I0ZWTYWXdDR6wm8S83BUN+qDH4vR0RTdwKuFz9E+Q67ExD9ojv3FDnknLfir1jJ420hwiguRsZv7Q++251l0nFPrpR1NwRHFNbyMcqvX4EnwUX/Xg57kyplrT4woXdZDTINjJIQLgDsH867nhbPdOV2Il4q1V3+b+bsTFzZ+SrpArkuWtVbXJwlLEaicORz6fXkb2oEya8xoZBvxyBjCDHlW3Fz/L7QGbDpVmcL+tDhRMJRNRljP8gLg8338oilNN+whf7U22SK+83EeK6+OZC9L1e44k2gSm7Q4EgYly3PHm7n3Wir3Zx43T1mNATuteSha1XFKWgYqy2Mh8lsgSGk6ZTlfOagUToZtI9DTA2tRqk8vH6jvOw1cnoRDIMXFIwvc3fRZoBN2KblBNAvoAgFbY75lnsU=
+    properties :
+     x : 663
+     y : 60
+     width : 20
+     height : 20
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         impressionfacture.csdDateFacture = ouvre("wd5calen",impressionfacture.csdDateFacture)
+         exécuteTraitement(impressionfacture.csdDateFacture,trtsortie)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BtnPdfStatusVert
+    identifier : 0x49072e512aff6ec7
+    internal_properties : CQAAAAkAAADWUjqIV4upbAWALGxG53hs2/QMDeCFx/W5KW3WNHdS21V8dWgPqJfmdtxDIZfw6hB9+Ir/ob4bmglsTxmqtEyoxRo4Q6scWQh3oazoOLFphOhLKfk8ZtB1m2uOIuVgBztNygKkoq3RhxInw8TE1iIZiuYpm618L005DoMWl3W3Q4El5wkUWl4ZDIJlHV8aMXXfFKdSdpQwyFrwCcOGG4XcXAZ24Vh3WAO0IJJIy6ImErbnf4bb08PFjPZ2B8D2kMo+rGJiCjVgvBvDLa3KQFFodJHTFxpagJPPAuOv/x91PvEMD8uyIXY9g7INUMjT7pkwFx4StJNdDw/gYSt7TP0cPYMnwAxxb2kXxmEUaekRQ29VU5Gt6xm6Xs3AljT8NtpRNQGSQCi/sB7Fi91YDs9YCuXFYBxCSRQgxoIJdLPbp5xmwYFVJVq2WPCAb69YFnXNKTJ4nfC+Wr1biSjqyQJuEiXoi7sCpsVMXOfkzi6HJGbyHp6LVXl6KvvNtdcamGmKkrrFaMMHL9EWXOd7tEJY/P2FXfP5A4aFJBt1xy+Y+wnkJbR2XkhV0TWX4l0o+zVC2Bgc+lIoh1KybRnrTU1LHMCNWihbD3H2MS60Zr2djK7+5yX9rcsDBQvjbUZYWormWjkK0tbdU8frsbJa7nDYSwdz2SGHSMfNWi+5cb9cIsGHkSktlRXRGF/fis6HImcLRYJzwpzvSaHPp3OvgUaq5rNQ0LiMuJK3ziKqybxJ5ff7MwDQoNPSeL5rOLh2HBm5w7QY+OuzvSPD2nw516yF22WGFzyY6RPXGMNaYTkrvcNH
+    properties :
+     x : 746
+     y : 6
+     width : 52
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        type : 161
+        enabled : false
+  -
+    name : BtnPdfStatusRouge
+    identifier : 0x49072e8c7dbd5493
+    internal_properties : CQAAAAkAAADNiUpS/AuNgQP+Ez/csfvu+8QxnSWn1sIvQfZjMbWUdzG0HhjFJqipgxN/8lh50dKaEmoBf/dUeYSzp8J+ZyqUvhEumXoGVRmd4sm6kSklRki3Klq8WpKl8HhpkT/X3ay8qt9gewFbDI0NI4onahYonEnKaBvphV2hhcz9ErCeQ1Zmy2qe4ePKlK6ZXI9prSPnTKKNR6J4kANwC95Zp3ar6SdbV+1noGj52XlF9NlCjcOMRgYXQTq0ir8uVDc/mgU/LbukEAqwkoAizj2AmmqjcHMOr9br51i4uzT3BMPEej6yONFV6+xT+Ro/EyPcXhUpye/XDDzAPcJsPyigxsMOZ5TYBGr4Mp3tu8dGYBuYXvasYAqnAVBy90w0iPgmMPVegWdDJ+P1jwxMmhdHifieR3qTQ+32CIRvv0TV9rbjsPlGOKVFglF+x1kSY5nnejq+z2ewNcs/JGz8NwyA7FIpAacr03m9lzmXReNi+K0N/cc88dgzsogSd/zr1WfvRujNLBsJDJIM9ySRwrvn3xJDW93e4YvUjL4YZ4+zz7CS4jyCti4MccGhKAjT7GN3ISjRjGss7i8PP/HFH/kbgo0gxW4ikgMLS4SAR+O5n62utuIlp9oiCbvckat4Ukfg1za4i1/NZUbZNEulmDG9Eq2+B+UQz62nsgT/M1uv1GMYlEsC08nn901C1OYUMY+m5/z6scLusCT7doITtNRfXnTZeD/wFXv81I9nOXjlkseuseESNFauWXLxz9sGHphUEx4HNfQDJDZADarPiEq9ZDFHDfgXXPHs0P0evyVS/LJuzimYSpmJumbPapDgrNQ=
+    properties :
+     x : 746
+     y : 6
+     width : 52
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bouton1
+    identifier : 0x22d486395a4c4280
+    internal_properties : CQAAAAkAAAA92ulz3KWqHW5xWor9MfWXNkfNkm47VwPfCRnD7dZS0ZpqJm8a3pezFMzTMEtZhoCnMsQhQuUR5NPFg0ThMkteknm6GhHy7SBFfe1YWDTkw0QJJJCyt57ebDWf2Vc4bTLYXAC0jNvuRBm52oTdMcY2RxhDL+FhJPgHMsUBzazyv5VW3Dj5U3QWWCvhRS6GJ+fB0R/+Stxa32xebnN6BoSkbTQ61zDfiUxNgzbIS2iY9IctT89Xk/uVaxPokyVXIJxcqmD9Uf/2QXSGB2XKmnsCP2Mpq9lHtKIpeNQ1WvGvYE5MpW9MQqaPT0Z+14xLV/U4RnWvBvbiu9W4JhycTI2LHHonXrROva63wVtYXBPD1aj6CjxrVkrRYT9DGjcd1xcGGr1tIM1lIDjCVYPBDs03JG0Sd4IGewKv09DEWo47ZkRIlbstPo2lXLgCYx/POfloKKxKcn1F/02UpxIhIVhY6DWuZWWdrynaivD/Ezlx6Jpm+lZoMXdx4filSQW7gPIErv60aTQXy3lnj10MOTct/1PXPSpqxvo7lifqcK6xUbBha9UjFub49lBD8ynYdJkDQvKvmKw4Uq5/L8OVazaIqQlt9hEQeu5dPztBg5AELN5R+hlYMAvY4N3BQi4QciJidgzkpr41kQuG30sd5xizscNcc8ON2TsqJtcmCUz3Ce9gXVc0TMPqpW3524h6lpP+FgDjWKjsd6QaEv9zLXezjc5V8WbjZ++zjKGs4ya5+q2PJOYkhIWytbIQB5WkTdaBk4FsxnQQ7X01tlBDqJf9VzmMLcaT1JaSMLCIMkb/4Ee3WTpGIPy0TNoBlc/DxyCu/GoQe5b/UeCkVpyZQYvrECQ=
+    properties :
+     x : 432
+     y : 7
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         _date est une date = ouvre(wChangeDateBL,TABLE_FACTURE[TABLE_FACTURE,4],TABLE_FACTURE[TABLE_FACTURE,5])
+         si datevalide(_date) alors
+         	TABLE_FACTURE[TABLE_FACTURE,5]=_date
+         FIN
+         
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3e9d90b148723ddd
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ popup_menus :
+  -
+    name : MenuContextuel1
+    identifier : 0x491361b339f13f24
+    internal_properties : CQAAAAkAAABQ9o5mblumVyjwF2k9oYjf01JV/Ni2XLOm48mBEcxfFBtFf0xAAK9kgZ7cz7Pq1G7CILgcO3qZaki8fJCb6FLN7VSpnztDYUOJ2rDqEdVAfQ8mK/gBvgCyjvLts45xEUPk9OWbkZ/TGVkKDVjf9woh+UjB+d/27Jz8cEkiKltjxXGvddMAnVmfYOHoDTEsk+yC3amD7U0ItSd2XHk24vYl26Lep9iI8mrcx+VtTK398lH5NqSzDaATqY4+ZLxvTC0G//SiaivCBbEJgbZLQHPSdXCYwQf254DVZOmI3zQEpkTONKK1Vc1oLxBLmYdBC56F1+yFYd365XLIA2tV9O8n+T+/zBQCCmyQG2CEAbdDvHXX9hr0Cih6QaFvyz8=
+    options :
+     -
+       name : OptionSel
+       identifier : 0x491361b9405f5869
+       internal_properties : CQAAAAkAAADbPEi/GxrqSH10Fg38hwyL5rvu+rxmJRe5l5igYNqowLq4d+1I+iNB53Z3fOczMhfU9eAk2ajRPv5PlCNMMknV9r1yHAeI+w1r/kpjdC/rFJxTKm6JGjMY5eMkwlVlky7TNEtS59xQqpxEQxLQoQYbAlyxW0HFjSdktPY08SIMHknI+uhqL3y3MvkqOnY221xxNbSSWlXAQ+eS5b3J9UMWZpMHsxJrC40/vmTmxjUE8Q0QPqR3VR0pwLRFBMNolhRBNbixxzwVi7eP4TxSqikcarG5ow0owUn5HxNJWqXmiJDKhRQR+XXWvcxQLhJgpjAfo/ieH1wvD9wPHIAVuByqp5la6gfhXk6OTsCUSqR2qYDbc9Kf4Kp4YX9854jebvoft7LpgSvo6tOKoONxEBzOTGGc8chvDJlzSc4eHIqPSIS50kj8
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1+
+            i est un entier
+            AuMoinsUneFactureChoisie=faux
+            pasmemeclient = faux
+            lnumeroclient est un chaine
+            
+            pour i = 1 a TableSelectOccurrence(TABLE_FACTURE)
+            	TABLE_FACTURE.CHOIX[TableSelect(TABLE_FACTURE,i)] = vrai
+            	TABLE_FACTURE.datef[TableSelect(TABLE_FACTURE,i)] = csdDateFacture
+            FIN
+            
+            TableSelectMoins(TABLE_FACTURE)
+            
+            pour i =1 a TableOccurrence(TABLE_FACTURE)
+            	si TABLE_FACTURE.CHOIX[i] alors
+            		AuMoinsUneFactureChoisie=vrai
+            		si Table_Facture.tclient[i] <> lnumeroclient et pas lnumeroclient = "" alors
+            			pasmemeclient = vrai
+            		sinon
+            			lnumeroclient = Table_Facture.tclient[i]	
+            		FIN
+            	FIN
+            FIN
+            
+            allumeboutonimpression(AuMoinsUneFactureChoisie)
+            si AuMoinsUneFactureChoisie alors
+            	si pasmemeclient alors
+            		csDestination[2]..etat= grise
+            	sinon
+            //		si gImprimantePdfStatus alors
+            			csDestination[2]..etat= actif
+            //		sinon
+            //			csDestination[2]..etat= grise
+            //		fin
+            		VerifieAdresse(lnumeroclient)
+            	fin
+            
+            fin
+            
+            
+            
+           type : 32
+     -
+       name : Déselectionner
+       identifier : 0x491361d0762eb0ca
+       internal_properties : CQAAAAkAAACaefMLCJXIlRf89skl3w0bje/T14ro0pP9N2bnM++zoJdOgnGbH3V40AJwZyloEZGo/924Tnjv68fS7G8Y2tUOsCro5+P9rEteFZ2pZuD0R/RfT1WhMfaLQFonNH/1N6/iQ1FzPmsVP/8n4e/Lcjip6xrs/tVyYb8xnpf4BOzqksBkEtoFU9ewHNnTK4xMzlyQ75x0o6UKyEyeVhpZ0lrXoabt0NDde9RkYJ8/Sw0PeZ9aU/wFGlhpM/L6YBZFBqGZ8sWnwOEJTJbM6My4VPxxmFl+VZLdV91X+DTgmF1dJOjFMIaOjbhCZr0bAjRQ8ztnyAFIvLhm4goNwys9GpcNuX5TLRI+y9JjByAIZsbdUhbIedmkOOX2JPUBTd9Sc8jwhCgdDIRqWvgS4W11+vFDdFQEEeYP9t4I/WTdhodmHEeS/XBjfA==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1+
+            i est un entier
+            AuMoinsUneFactureChoisie=faux
+            pasmemeclient = faux
+            lnumeroclient est un chaine
+            
+            pour i = 1 a TableSelectOccurrence(TABLE_FACTURE)
+            	TABLE_FACTURE.CHOIX[TableSelect(TABLE_FACTURE,i)] = faux
+            	TABLE_FACTURE.datef[TableSelect(TABLE_FACTURE,i)] = ""
+            
+            FIN
+            
+            TableSelectMoins(TABLE_FACTURE)
+            
+            pour i =1 a TableOccurrence(TABLE_FACTURE)
+            	si TABLE_FACTURE.CHOIX[i] alors
+            		AuMoinsUneFactureChoisie=vrai
+            		si Table_Facture.tclient[i] <> lnumeroclient et pas lnumeroclient = "" alors
+            			pasmemeclient = vrai
+            		sinon
+            			lnumeroclient = Table_Facture.tclient[i]	
+            		FIN
+            	FIN
+            FIN
+            
+            allumeboutonimpression(AuMoinsUneFactureChoisie)
+            si AuMoinsUneFactureChoisie alors
+            	si pasmemeclient alors
+            		csDestination[2]..etat= grise
+            	sinon
+            //		si gImprimantePdfStatus alors
+            			csDestination[2]..etat= actif
+            //		sinon
+            //			csDestination[2]..etat= grise
+            //		fin
+            		VerifieAdresse(lnumeroclient)
+            	fin
+            
+            fin
+            
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - fr-FR
+ message_bar :
+  internal_properties : CQAAAAkAAADCMsSX0/Saexx5MQcb4a0HXPjwHYySp5+dnlRvsJyrRu3GvdwFwSkz2oSsXLVm1OnTvpJzu85mpaaT3o/DsN6f0E4pJZHYt9/lhLsjB21U/z7rRRcM9hqviv2eBQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      fac_entete est un tableau de 5 chaine
+      //si gImprimantePdfStatus alors
+      //	BtnPdfStatusVert..visible = vrai
+      //	BtnPdfStatusrouge..visible = faux
+      //sinon
+      //	BtnPdfStatusVert..visible = faux
+      //	BtnPdfStatusrouge..visible = vrai
+      //
+      //FIN
+      
+      
+      //gImprimantePdfStatus est un booleen = vrai
+      //gImprimantePdfStatusNumber est un entier  = PrinterGetStatus(imprimantepdf)
+      //
+      //si pas gImprimantePdfStatusNumber = 0 alors
+      //	gImprimantePdfStatus = faux
+      //	BtnPdfStatusVert..visible = faux
+      //	BtnPdfStatusrouge..visible = vrai
+      //
+      //sinon
+      //	//si pas PrinterGetStatus(imprimantefacture) = 0 alors
+      //	//	info("pas prete")
+      //	//FIN
+      //
+      //	OuvreSoeur(FenAttentePetite,"Configuration de l'imprimante PDF virtuelle en cours ......")
+      //
+      //	pdfc est un objet automation dynamique
+      //	pdfc = allouer un objet automation "pdfcreator.clspdfcreator"
+      //
+      //
+      //	si pdfc>>cProgramIsRunning() alors
+      //		KillProcess("PDFCreator.exe")
+      //		//	    pdfc>>cclose()
+      //		liberer pdfc
+      //		pdfc = allouer un objet automation "pdfcreator.clspdfcreator"
+      //	FIN
+      //
+      //	pdfc>>cstart()
+      //	//pdfc>>cOption("AutosaveFilename") = "FichierTest"
+      //	pdfc>>cOption("UseAutosave") = 1
+      //	pdfc>>cOption("UseAutosaveDirectory") = 1
+      //	pdfc>>cOption("AutosaveFormat") = 0
+      //	pdfc>>cWindowState = 1
+      //	pdfc>>cvisible = 0
+      //	pdfc>>cClearCache()
+      //	pdfc>>cPrinterStop = 1
+      //	ferme(FenAttentePetite)
+      //	BtnPdfStatusVert..visible = vrai
+      //	BtnPdfStatusrouge..visible = faux
+      //	// Pour compatibilité 5.5
+      //FIN
+      
+      
+      
+      // Pour compatibilité 5.5
+      MoiMême..Visible=Vrai
+      
+      //ListeAjoute("choix",gImage("MarquTab.ICO"))
+      //ListeAjoute("choix",gImage("xrouge.ICO"))
+      //
+      //ListeAjoute("cimprime",gImage("print.ICO"))
+      //ListeAjoute("cimprime",gImage("printrouge.ICO"))
+      //
+      //ListeAjoute("ctransfert",gImage("pen.ICO"))
+      //ListeAjoute("ctransfert",gImage("xrouge.ICO"))
+      //ListeAjoute("ctransfert",gImage("iconepdf16.bmp"))
+      
+      chargeimage(1,maitre.FichierImage..valeur,1,13)
+      
+      ListeAjoute("choix",gImage(1,7))
+      ListeAjoute("choix",gImage(1,10))
+      
+      ListeAjoute("cimprime",gImage(1,9))
+      ListeAjoute("cimprime",gImage(1,11))
+      ListeAjoute("cimprime",gImage(1,8))
+      
+      ListeAjoute("ctransfert",gImage(1,12))
+      ListeAjoute("ctransfert",gImage(1,10))
+      
+      
+      memcree("afacturer")
+      remplir_tablefacture()
+      global 
+      impression_ok est un booléen = faux
+      
+      hlitpremier("config","COCLEUNIK")
+      prochainnumerodefacture = config.NumFact
+      AuMoinsUneFactureChoisie est un booleen=faux
+      pasmemeclient est un booleen = faux
+      //Code WinDev 5.5 remplacé par la migration :
+      //_onglet1..etat = actif
+      csdDateFacture = datesys()
+      MaFenetre..Plan=1
+      
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      hdesactivefiltre("fdetail")
+      hdesactivefiltre("Facture")
+      //si gImprimantePdfStatus alors
+      //	OuvreSoeur(FenAttentePetite,"Fermeture de l'imprimante PDF virtuelle en cours ......")
+      //	pdfc>>cOption("AutosaveFilename") = "Fichier"
+      //	killprocess("PDFCreator.exe")
+      //	multitache(50)
+      //	liberer pdfc
+      //	ferme(FenAttentePetite)
+      //fin
+      
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : majhistorique
+     procedure_id : 4511921492230553323
+     type_code : 14
+     code : |1+
+      Procédure majhistorique(numeroenregistrement,nocommande)
+      multiplicateur est un entier
+      hlit("Facture",numeroenregistrement)
+      si facture.fatypedocument  = 2 alors
+      	multiplicateur = -1
+      sinon
+      	multiplicateur = 1	
+      FIN
+      hfacture.ftransfere      = faux
+      hfacture.fanumero        = nocommande
+      hfacture.fadate          = facture.fadatefacture
+      hfacture.fadatecommande  = facture.fadate
+      hfacture.fatype          = facture.fatype
+      hfacture.faclient        = facture.faclient
+      hfacture.fanofacture     = facture.fanofacture
+      hfacture.fanojob         = facture.fanojob
+      hfacture.fanocommande    = facture.fanocommande
+      hfacture.fasecteur       = facture.fasecteur
+      hfacture.facalcul        = facture.facalcul
+      hfacture.fasurcharge     = facture.fasurcharge 
+      hfacture.fatotal         = facture.fatotal     
+      hfacture.fatps           = facture.fatps       
+      hfacture.fatvq           = facture.fatvq       
+      hfacture.fatypedocument  = Facture.fatypedocument
+      hfacture.fareference     = Facture.fareference
+      hfacture.fabonlivraison  = facture.fabonlivraison
+      hfacture.nolot           = facture.nolot
+      hfacture.nom 			 = facture.nom
+      hfacture.adresse 		 = facture.adresse
+      hfacture.Ville 			 = facture.ville
+      hfacture.CodePostal		 = facture.CodePostal
+      hfacture.noTelephone	 = facture.noTelephone
+      hfacture.ftypecredit     = facture.Ftypecredit
+      hfacture.cvendeur        = facture.cvendeur
+      
+      hfacture.IDCamions    = Facture.IDCamions
+      
+      hfacture.fafraistransport= Facture.fafraistransport * multiplicateur
+      hajoute("hfacture")
+      pour tout Fcoutant avec "cNoCommande = "+ facture.fanumero
+      	fcoutant.cDAteFacture = BonLivraison.bdatefacture
+      	hmodifie(Fcoutant,hnumenrencours)
+      FIN
+      pour tout Fcoutanligne avec "cNoCommande = "+ facture.fanumero
+      	fcoutantligne.cDAteFacture = BonLivraison.bdatefacture
+      	hmodifie(Fcoutantligne,hnumenrencours)
+      FIN
+      //Code WinDev 5.5 remplacé par la migration :
+      //si hdoublon() alors
+      si HErreurDoublon() alors
+      	erreur("Impossible d'ajouter la facture "+numeriqueverschaine(facture.fanofacture,"10d"))
+      	renvoyer vrai
+      FIN
+      fhistorique[lignedetable] = h.numenr
+      
+      hlitrecherche("fdetail","fdnocomm",facture.fanumero)
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //tantque fdetail.fdnocomm = facture.fanumero et pas h.endehors
+      tantque fdetail.fdnocomm = facture.fanumero et pas HEnDehors()
+      
+      	si fdetail.fdqteafacturer <> 0 alors  
+      		hfdetail.fdligne        = fdetail.fdligne
+      		hfdetail.fdnumprod      = fdetail.fdnumprod
+      		hfdetail.fddesc         = fdetail.fddesc
+      		hfdetail.fdqteafacturer = fdetail.fdqteafacturer  * multiplicateur
+      		hfdetail.fdespace       = fdetail.fdespace
+      		hfdetail.fdlargeur      = fdetail.fdlargeur
+      		hfdetail.fdhauteur      = fdetail.fdhauteur
+      		hfdetail.fdhauteur1     = fdetail.fdhauteur1
+      		hfdetail.fdlargeura     = fdetail.fdlargeura
+      		hfdetail.fdhauteura     = fdetail.fdhauteura
+      		hfdetail.fdhauteur1a    = fdetail.fdhauteur1a
+      		hfdetail.fdprixu        = fdetail.fdprixu
+      		hfdetail.fdcarrelage    = fdetail.fdcarrelage
+      		hfdetail.fdcarreauh     = fdetail.fdcarreauh
+      		hfdetail.fdcarreauv     = fdetail.fdcarreauv
+      		hfdetail.fdnumcarr      = fdetail.fdnumcarr
+      		hfdetail.ftype          = fdetail.ftype
+      		hfdetail.fdprixtotal    = fdetail.fdprixtotal
+      		hfdetail.fdcarrpruxuc   = fdetail.fdcarrpruxuc
+      		hfdetail.frcarrprixu    = fdetail.frcarrprixu * multiplicateur
+      		hfdetail.fdcarrprixtotal= fdetail.fdcarrprixtotal * multiplicateur
+      		hfdetail.fdprixupied    = fdetail.fdprixupied
+      		hfdetail.fdcodegl       = fdetail.fdcodegl
+      		hfdetail.fcapgaztube    = fdetail.fcapgaztube 
+      		hfdetail.fdverreunite   = fdetail.fdverreunite
+      		hfdetail.fdnofact       = Facture.fanofacture
+      		hfdetail.FDJOBLIGNE      = fdetail.FDJOBLIGNE
+      		hfdetail.fdcomposant1    =fdetail.fdcomposant1
+      		hfdetail.fdcomposant2    =fdetail.fdcomposant2
+      		hfdetail.fdcomposant3    =fdetail.fdcomposant3
+      		hfdetail.fdcarrprixdebase=fdetail.fdcarrprixdebase * multiplicateur
+      		hfdetail.surchargeenergie=fdetail.surchargeenergie  
+      		hfdetail.fdcommentaire   = fdetail.fdcommentaire
+      		hfdetail.fdlargeuru      = fdetail.fdlargeuru
+      		hfdetail.fdhauteuru      = fdetail.fdhauteuru
+      		hfdetail.fdforme         = fdetail.fdforme
+      		hfdetail.fdextraforme    = fdetail.fdextraforme
+      		hfdetail.fdhauteuranglais  = Fdetail.fdhauteuranglais
+      		hfdetail.fdhauteuranglais1  = Fdetail.fdhauteuranglais1
+      		
+      		hfdetail.fdlargeuranglais  = fdetail.fdlargeuranglais
+      		hfdetail.fdpiedcarre       = fdetail.fdpiedcarre
+      		hfdetail.fdpiedcarrefacture=fdetail.fdpiedcarrefacture
+      		hfdetail.fdprixupiedfacture=fdetail.fdprixupiedfacture
+      		hfdetail.fnotes            = fdetail.fnotes
+      		hfdetail.fdvariablex       = fdetail.fdvariablex
+      		hfdetail.fdextracap       = fdetail.fdextracap
+      		hfdetail.fdtypecalcul     = fdetail.fdtypecalcul
+      		hfdetail.fdvariablex1     = fdetail.FDvariablex1
+      		hfdetail.fdDDH            = fdetail.fdDDH
+      		hfdetail.fdDDv            = fdetail.fdDDv
+      		hfdetail.fTypePeinture     = fdetail.fTypePeinture
+      		hfdetail.fNoPeintureExtTout = fdetail.fNoPeintureExtTout
+      		hfdetail.FnopeintureInterieure = fdetail.FnopeintureInterieure
+      		hfdetail.fdescpeintureExtTout = fdetail.fdescpeintureExtTout
+      		hfdetail.fDescPeintureInterieure  = fdetail.fDescPeintureInterieure
+      		hfdetail.fPrixCarreauPeinture = fdetail.fPrixCarreauPeinture
+      		hfdetail.Ftotalcarreaupeinture = fdetail.Ftotalcarreaupeinture
+      		hfdetail.fTotalPeinture = fdetail.fTotalPeinture
+      		hfdetail.fPeinture = fdetail.fPeinture
+      		hfdetail.libelleNbcarreauinterieur = fdetail.libelleNbcarreauinterieur
+      		hfdetail.libelleNbCarreauExtTlt = fdetail.libelleNbCarreauExtTlt
+      		hfdetail.FtotalbarrePeinture = fdetail.FtotalbarrePeinture
+      		hfdetail.fnopeinture = fdetail.fnopeinture
+      		hfdetail.fdescpeinture = fdetail.fdescpeinture
+      		hfdetail.fextrapeinture = fdetail.fextrapeinture
+      		hfdetail.fdescpeinture1 = fdetail.fdescpeinture1
+      		hfdetail.fTypePeinture1     = fdetail.fTypePeinture1
+      		hfdetail.fnopeinture1 = fdetail.fnopeinture1
+      		hfdetail.FDnbcarreauPeinture1 = fdetail.FDnbcarreauPeinture1
+      		hfdetail.fdprixcarreaupeinture1 = fdetail.fdprixcarreaupeinture1
+      		hfdetail.fdfabrication = fdetail.FDfabrication
+      		hfdetail.FDextra10X = fdetail.FDextra10X
+      		hfdetail.FDextra5X = fdetail.FDextra5X
+      		hfdetail.ExtraArgonPrice = Fdetail.ExtraArgonPrice
+      		hfdetail.CalculArgon = Fdetail.CalculArgon
+      		hfdetail.PietageArgon = Fdetail.PietageArgon
+      		hfdetail.fdbase = Fdetail.fdbase
+      		
+      
+      		hajoute("hfdetail")
+      
+      
+      
+      	fin
+      	hlitsuivant("fdetail","fdnocomm")
+      
+      FIN
+      
+     type : 458752
+   -
+     name : remplir_memoire
+     procedure_id : 4511921491791068967
+     type_code : 14
+     code : |1+
+      Procédure remplir_memoire()
+      j est un entier
+      memcrée("afacturer")
+      pour j = 1 a tableoccurrence("TABLE_FACTURE")
+         si choix[j] alors
+      	   memajoute("afacturer",fenregistrement[j],fenregistrement[j])
+      	   cimprime[j] = vrai
+      	   tableaffiche("TABLE_FACTURE")
+         fin
+      		  
+      FIN
+      
+     type : 458752
+   -
+     name : remplir_tablefacture
+     procedure_id : 4511921493615132475
+     type_code : 14
+     code : |1+
+      Procédure remplir_tablefacture()
+      TableSupprimeTout(TABLE_FACTURE)
+      hexecuterequete(RequeteBLaFacturernovy)
+      hlitpremier(RequeteBLaFacturernovy)
+      //Code WinDev 5.5 remplacé par la migration :
+      //tantque pas h.endehors
+      tantque pas HEnDehors(RequeteBLaFacturerNovy)
+      	tableajoute("TABLE_FACTURE",faux+tab+faux+tab+faux+tab+RequeteBLaFacturerNovy.Bnumero...
+      	+tab+RequeteBLaFacturernovy.Bdate+tab+RequeteBLaFacturernovy.Bclient+TAB+""+TAB)
+      	hlitsuivant(RequeteBLaFacturernovy)
+      FIN
+      tableaffiche("TABLE_FACTURE",taDebut)
+      
+     type : 458752
+   -
+     name : maj_detail_comptable
+     procedure_id : 4622975568795213342
+     type_code : 14
+     code : |1+
+      Procédure maj_detail_comptable(numeroBL)
+      i est un entier
+      
+      pour i = 1 a dimension(fac_detail)/4
+      	detailcompta.numeroBL = numeroBL
+      	si pas SansEspace(fac_detail[i,1]) = "" ou i = 1 alors
+      		detailcompta.NoGlivre = fac_detail[i,1]
+      	sinon
+      		detailcompta.NoGlivre = config.glventedefaut
+      	fin
+      	
+      	detailcompta.MontantGlivre = fac_detail[i,2]
+      	detailcompta.EstTaxe = fac_detail[i,3]
+      	detailcompta.noLigne = i
+      	hajoute(DetailCompta)
+      FIN
+      
+      
+      
+     type : 458752
+   -
+     name : allumeboutonimpression
+     procedure_id : 5262225452259727303
+     type_code : 14
+     code : |1+
+      Procédure allumeboutonimpression(laction=vrai,lpasmemeclient=faux)
+      
+      si laction alors
+      	BTN_IMPRIME..etat = actif
+      	csDestination..etat = actif
+      	si lpasmemeclient alors
+      		csdestination[2]..etat = grise
+      	sinon
+      		csdestination[2]..etat = actif
+      	fin
+      
+      sinon
+      	BTN_IMPRIME..etat = grise
+      	csDestination..etat = grise
+      FIN
+      
+      
+      
+      
+     type : 458752
+   -
+     name : ValideClientUnique
+     procedure_id : 5262225483446023318
+     type_code : 14
+     code : |1+
+      Procédure ValideClientUnique()
+      i est un entier
+      j est un entier
+      lnumeroclient est une chaine
+      pasmemeclient=faux
+      si TableSelectOccurrence(Table_Facture) >= 1 alors
+      	pour i = 1 a TableSelectOccurrence(Table_Facture)
+      		//Table_Facture.datef[TableSelect(TABLE_FACTURE,i)] = csdDateFacture
+      		AuMoinsUneFactureChoisie=vrai
+      		si Table_Facture.tclient[TableSelect(TABLE_FACTURE,i)] <> lnumeroclient et pas lnumeroclient = "" alors
+      			pasmemeclient = vrai
+      		sinon
+      			lnumeroclient = Table_Facture.tclient[TableSelect(TABLE_FACTURE,i)]	
+      		FIN
+      	FIN
+      fin
+      
+      
+      allumeboutonimpression(AuMoinsUneFactureChoisie,pasmemeclient)
+      
+      
+      
+      
+     type : 458752
+   -
+     name : VerifieAdresse
+     procedure_id : 5348668456603146153
+     type_code : 14
+     code : |1+
+      Procédure VerifieAdresse(lnoclient=0)
+      
+      si HLitRecherche(client,numero,lnoclient) alors
+      	si sansespace(client.ccourrielFacture[1]) <> "" ou  sansespace(client.ccourrielFacture[2]) <> "" ou sansespace(client.ccourrielFacture[3]) <> "" ...
+      		ou sansespace(client.ccourrielFacture[4]) <> "" alors
+      		csdestination[2]..etat = actif
+      	sinon
+      		csdestination[2]..etat = grise
+      
+      	FIN
+      fin
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3e9d90b137c83ddd
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : "Impossible de se connecter au serveur,transfert de facture impossible"
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

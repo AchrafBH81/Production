@@ -1,0 +1,767 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cOrderGenerate
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1ffb2e4906e1597e
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cOrderGenerate est une Classe
+      	
+      	
+      	Customer							est une chaîne 
+      	OrderNumber							est une chaîne
+      	InvoiceNumber						est une chaîne 
+      	ShippingStreet						est une chaîne 
+      	ShippingCity						est une chaîne 
+      	DateSent							est une DateHeure
+      	DateRequested						est une date
+      	ShippingPostalCode					est une chaîne 
+      	ShippingState						est une chaîne 
+      	ShippingCountry						est une chaîne 
+      	BillingStreet						est une chaîne 
+      	BillingCity							est une chaîne 
+      	BillingPostalCode					est une chaîne 
+      	BillingState						est une chaîne 
+      	BillingCountry						est une chaîne 
+      	FranchiseCode						est une chaîne
+      	JobNumber							est une chaine
+      	DefaultSpacer						est une chaîne
+      	DefaultSpacerID						est un entier
+      	ClientID							est une entier
+      	ShippingCustomerID					est un entier
+      	NoClient							est une chaîne 
+      	unitedemesure						est un entier 
+      	ClientCalculeSurfaceReelle			est un booléen
+      	PourcSurchargeCarrelage				est un réel
+      	
+      	SurchargeEnergieBase				est un réel
+      	SurchargeEnergieCarrelage			est un réel
+      	SurchargeEnergieForme				est un réel
+      	
+      	minimuma							est une réel
+      	minimumm							est un réel
+      	clientcalculCarrelageSpecialContour	est un booléen	//si client calcule contour de carrelage avec la formule spéciale dans typecarr.
+      	TexteMessage						est une chaîne
+      	NumeroInterne						est une chaîne
+      	
+      	NbLignetrempee						est un entier
+      	NbLigneNonTrempee					est un entier
+      	
+      	PurchaseOrderItems					est un tableau de cOrderdetailsGenerate
+      	
+      	CommandeExiste						est une booléen 
+      	IsArgon								est un booléen	= Faux
+      	
+      	m_clCustomerInfo					est un mclient
+      	
+      	m_clShippingInfo est un cClientLivraison
+      	
+      	
+      	
+      	
+      	
+      	
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2304486525513128318
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+      Constructeur m_clShippinginfo(m_clCustomerInfo.m_IDClient,m_clCustomerInfo.m_numero)
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2304486525513193854
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : TransferOrder
+     procedure_id : 1153855711845314274
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //TransferOrder (<_order> est cOrder)
+      //
+      // Paramètres :
+      //	_order (cOrder) : <indiquez ici le rôle de _order>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE TransferOrder(_order est un corder)
+      
+      
+      
+      :Customer          = _order.m_clCustomerInfo.m_numero
+      :DateSent          = _order.m_dCotationDate
+      :OrderNumber       = _order.m_sCotationNumber
+      :JobNumber         = _order.m_sJobNumber
+      //
+      //
+      //si hlitrecherche(ClientLivraison,IDClientLivraison,_order.m_clCustomerInfo.m_IDClient) alors
+      //	:ShippingStreet    = clientlivraison.lRue
+      //	:ShippingCity      = clientlivraison.lVille
+      //	:ShippingPostalCode= clientlivraison.lCodePostal
+      //	:ShippingState     = clientlivraison.lprovince
+      //	:ShippingCountry   = "Canada"
+      //fin
+      //si hlitrecherche(Client,numero,:Customer)
+      //	:BillingStreet     = client.crue
+      //	:BillingCity       = client.cville
+      //	:BillingPostalCode = client.ccodepostal
+      //	:BillingState      = ""
+      //	:BillingCountry    = "Canada"
+      //fin
+      :unitedemesure = _order.m_sCalculType
+      
+      :SetDefault()
+      	cl_purchaseorderitem est un cOrderdetailsGenerate
+      
+      pour chaque clOrderItem de _order.m_tabCorderitem
+      //		
+      		cl_purchaseorderitem = allouer une corderdetailsGenerate()
+      		cl_purchaseorderitem.TransferOrderItem(clOrderItem,objet)
+      		Ajoute(:PurchaseOrderItems,cl_purchaseorderitem)
+      FIN
+      
+     type : 458752
+   -
+     name : SetDefault
+     procedure_id : 1154231126220680790
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SetDefault ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	CustomerNumber (chaîne ANSI) : <indiquez ici le rôle de CustomerNumber>
+      PROCEDURE SetDefault()
+      
+      si hlitrecherche(client,numero,:Customer)  ALORS
+      	:ClientID = client.IDClient
+      	:ClientCalculeSurfaceReelle = Client.Calculsurfacereelle
+      	:clientcalculCarrelageSpecialContour = client.cQteSpecialeContour
+      	:TrouvePourcentageSurcharge()
+      	si hlitrecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,client.cspacerdefaut) alors
+      		:DefaultSpacer = IntercalaireCouleurs.DescriptionCourte
+      		:defaultSpacerId = client.cspacerdefaut
+      	FIN
+      	si client.surchargecarrelage alors
+      		PourcSurchargeCarrelage = client.cSUrchargecarrelage
+      	FIN
+      	minimuma = client.cminimuma
+      	minimumm = client.cminimumm
+      FIN
+      :CommandeExiste = faux
+     type : 458752
+   -
+     name : TrouvePourcentageSurcharge
+     procedure_id : 1154231886430003146
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // TrouvePourcentageSurcharge ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE TrouvePourcentageSurcharge()
+      
+      hlit(config,1)
+      SI Client.surcharge ALORS
+      	SI Client.csurchargebase <> 0 ALORS
+      		:SurchargeEnergieBase = Client.csurchargebase
+      	SINON
+      		:SurchargeEnergieBase = config.surchargebase
+      	FIN
+      SINON
+      	:SurchargeEnergieBase=0
+      FIN
+      
+      
+      //
+      //SI Client.surchargeverreunite ALORS
+      //	SI Client.csurchargeverreunite <>0 ALORS
+      //		surchargeverreunite = Client.csurchargeverreunite
+      //	SINON
+      //		surchargeverreunite = config.surchargeverreunite
+      //	FIN
+      //SINON
+      //	surchargeverreunite = 0
+      //FIN
+      //
+      //
+      SI Client.SUrchargeforme ALORS
+      	SI Client.Csurchargeforme <>0 ALORS
+      		:SurchargeEnergieForme = Client.Csurchargeforme
+      	SINON
+      		:SurchargeEnergieForme = config.SUrchargeforme
+      	FIN
+      SINON
+      	:SurchargeEnergieForme = 0
+      FIN
+      
+      SI Client.SUrchargecarrelage ALORS
+      	SI Client.Csurchargecarrelage <>0 ALORS
+      		:SurchargeEnergieCarrelage = Client.Csurchargecarrelage
+      	SINON
+      		:SurchargeEnergieCarrelage= config.SUrchargecarrelage
+      	FIN
+      SINON
+      	:SurchargeEnergieCarrelage = 0
+      FIN
+      
+      //
+      //
+      //SI config.SUrchargeTauxActive _ET_ Client.SUrchargeTaux ALORS
+      //	SI Client.CSurchargeTauxBase <> 0 ALORS
+      //		SurchargeTauxClient = Client.CSurchargeTauxBase
+      //	SINON
+      //		SurchargeTauxClient = config.SurChargeTauxBase
+      //	FIN	
+      //SINON
+      //	SurchargeTauxClient = 0
+      //FIN
+      
+      
+     type : 458752
+   -
+     name : GenererCommande
+     procedure_id : 1156759165454425198
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //GenererCommande ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	_po (PurchaseOrderBasco) : <indiquez ici le rôle de _po>
+      PROCEDURE GenererCommande()
+      nEstTrempe est un entier = 0
+      lPrixcarreauPeinture est un reel
+      FlagPeinture est un booleen = faux
+      
+      	
+      	
+      	
+      	HRAZ(Facture)
+      	Facture.fadate = DateDuJour()
+      	Facture.FDATEREQUISE = :DateRequested
+      	Facture.faclient = :Customer
+      	//	Facture.fanocommande = :Display
+      	//	//	Facture.fanojob = :OrderNumber
+      	//	Facture.fanojob = :Customer
+      	//	Facture.fanocommande = :Customer
+      	Facture.fanocommande = :OrderNumber
+      	//	Facture.fanojob = :OrderNumber
+      	Facture.fanojob = :JobNumber
+      	
+      	
+      	
+      	SI HLitRecherche(Client,numero,Facture.faclient) ALORS
+      		lPrixcarreauPeinture = Client.CPrixSpecialPeintureCarrelage
+      		Facture.fasecteur = Client.secteur
+      		Facture.nom = Client.nom
+      		Facture.adresse = Client.crue
+      		Facture.ville = Client.cville
+      		Facture.CodePostal = Client.ccodepostal
+      		Facture.noTelephone = Client.ctelephone
+      		Facture.FSURCHARGEENERGIE = Client.surcharge
+      		Facture.cvendeur = Client.cvendeur
+      		Facture.IDClient = :ClientID
+      		
+      		SI HLitRecherche(ClientLivraison,IDClientLivraison,:ShippingCustomerID) ALORS
+      			Facture.idLivraison = ClientLivraison.IDClientLivraison
+      			Facture.lNom = ClientLivraison.lNom
+      			Facture.lRue = ClientLivraison.lRue
+      			Facture.lVille = ClientLivraison.lVille
+      			Facture.lCodePostal = ClientLivraison.lCodePostal
+      			facture.lnote = clientlivraison.Note
+      		SINON
+      			SI HExécuteRequête(RequeteLivraisonDefaut,hRequêteDéfaut,SansEspace(Facture.faclient)) ET HNbEnr(RequeteLivraisonDefaut) ALORS
+      				HLit(RequeteLivraisonDefaut,1)
+      				Facture.idLivraison = RequeteLivraisonDefaut.IDClientLivraison
+      				Facture.lNom = ClientLivraison.lNom
+      				Facture.lRue = ClientLivraison.lRue
+      				Facture.lVille = ClientLivraison.lVille
+      				Facture.lCodePostal = ClientLivraison.lCodePostal
+      				facture.lnote = ClientLivraison.note
+      			FIN
+      			
+      			
+      		fin
+      		
+      	FIN
+      	Facture.facalcul = :unitedemesure
+      	Facture.fatypedocument = 1
+      	Facture.IDCamions = :getcamiondefault(facture.idlivraison,facture.faclient)
+      	facture.NewEdiOrder = vrai
+      	HLit(config,1)
+      	Facture.fanumero = config.Numcomm
+      	
+      	config.Numcomm = Facture.fanumero + 1
+      	HModifie("config")	
+      	
+      	facture.isedi = Vrai
+      	facture.computername = NetNomMachine()
+      	Facture.Username = gsUser
+      	Facture.CreatedTime = HeureSys()
+      	HAjoute(Facture)
+      	cpt est un entier = 0
+      	AvecCarrelage est un booleen
+      	bAvecForme est un booleen
+      	bAvecProduitSpeciaux est un booleen
+      	AvecPinede est un booleen
+      	AvecSatine est un booleen
+      	AvecUltraClair est un booleen
+      	
+      	
+      	
+      	POUR CHAQUE _item de :PurchaseOrderItems
+      		SI _item.SortingType = i ALORS
+      			
+      			AvecCarrelage = SansEspace(_item.Grill) <> "" ? 1 SINON 0
+      			cpt++
+      			_item.TrnNumber = Facture.fanumero
+      			_item.bligne = cpt
+      			HRAZ(Fdetail)
+      			Fdetail.IDPurchaseOrderItemEdi = _item.PurchaseOrderItemId
+      			Fdetail.fdligneEdi = _item.VisibleIndex
+      			//	fdetail.fdjobligne = _item.PurchaseOrderItemId
+      			Fdetail.fdnocomm = Facture.fanumero
+      			Fdetail.fdligne = cpt
+      			Fdetail.fdnumprod =_item.ThermosNumber
+      			Fdetail.fdforme = _item.Shape
+      			Fdetail.fdqte = _item.Quantity
+      			Fdetail.fdqteafacturer = _item.Quantity
+      			Fdetail.fdespace = _item.Intercalaire1
+      			Fdetail.FDespace2 = _item.intercalaire2
+      			Fdetail.fdlargeur = _item.Width
+      			Fdetail.fdlargeura = _item.LargeurCachee
+      			Fdetail.fdhauteur = _item.Height
+      			Fdetail.fdhauteura = _item.HauteurCachee
+      			fdetail.fdhauteuranglais = Fdetail.fdhauteura
+      			fdetail.fdlargeuranglais = Fdetail.fdlargeura
+      			Fdetail.ftypespacer = _item.SpacerID
+      			Fdetail.ftype = 1
+      			Fdetail.fdprixu = Arrondi(_item.PrixUnitaire,2)
+      			Fdetail.fdprixupied = Arrondi(_item.PrixPied,2)
+      			Fdetail.fdprixupiedfacture = Arrondi(_item.PrixPied,2)
+      			Fdetail.fdextraforme = _item.extraShape
+      			Fdetail.fdprixtotal = ( Arrondi(_item.PrixUnitaire,2)+ _item.extraShape) * _item.Quantity
+      			Fdetail.fdlien =  SansEspace(_item.Grill) <> "" ? cpt SINON 0
+      			Fdetail.fdcarrelage =  SansEspace(_item.Grill) <> "" ? 1 SINON 0
+      //			Fdetail.fdpiedcarrefacture = _item.unitedemesure = 1 ? _item.SurfaceAnglais SINON _item.SurfaceMetrique
+      //			Fdetail.fdpiedcarrereel = _item.unitedemesure = 1 ? _item.SurfaceAnglaisReel SINON _item.SurfaceMetriqueReel
+      			Fdetail.fdpiedcarrefacture = :unitedemesure = 1 ? _item.SurfaceAnglais SINON _item.SurfaceMetrique
+      			Fdetail.fdpiedcarrereel = :unitedemesure = 1 ? _item.SurfaceAnglaisReel SINON _item.SurfaceMetriqueReel
+      			:IsArgon = faux
+      			Fdetail.fdcomposant1 = _item.Pane1
+      			AddZforArgon(_item.pane1)
+      			Fdetail.fdcomposant2 = _item.Pane2
+      			AddZforArgon(_item.pane2)
+      			Fdetail.fdcomposant3 = _item.Pane3
+      			AddZforArgon(_item.pane3)
+      			si :IsArgon alors fdetail.fcapgaztube= "Z"
+      			Fdetail.fdbase = _item.ProduitDeBase
+      			facture.EpaisseurVerre = val(droite(sansespace(fdetail.fdbase),2))
+      			Fdetail.ffini = _item.Finish
+      			Fdetail.surchargeenergie = _item.SurchargeEnergie
+      			fdetail.SUrchargeafacturer = _item.SurchargeEnergie
+      			Fdetail.FDextra5x = _item.PrixException5X
+      			Fdetail.FDextra10X = _item.PrixException10X
+      			Fdetail.ThermosType = Gauche(ThermosType[CalculNombreVerre(Fdetail.fdcomposant1,Fdetail.fdcomposant2,Fdetail.fdcomposant3)],1)
+      			//	Fdetail.fidintercalaire = _commande.IDSpacerRelation
+      			Fdetail.fddesc = _item.DescriptionThermos
+      			Fdetail.fdescoriginale = _item.DescriptionThermos
+      			Fdetail.fdcodegl = _item.CodeGLThermos
+      			si sansespace(fdetail.fdforme) <> "" alors facture.avecforme = vrai
+      
+      			Fdetail.fdenergiverre = _item.EnergiVerre
+      
+      			SI Fdetail.fdcarrelage ALORS
+      				
+      				Fdetail.fdnumcarr = _item.Grill
+      
+      				Fdetail.fdcarreauv = _item.GrillBase
+      				Fdetail.fdcarreauh = _item.GrillHeight
+      				Fdetail.fdcarrpruxuc = _item.PrixUnitaireCarrelage
+      				Fdetail.fdcarrprixdebase = _item.PrixDeBaseCarreau
+      				Fdetail.fdnbcarreau = _item.NbCarreau
+      				Fdetail.frcarrprixu = _item.NbCarreau * _item.PrixUnitaireCarrelage
+      				Fdetail.fdcarrprixtotal = (Fdetail.frcarrprixu + Fdetail.fdcarrprixdebase) * _item.Quantity
+      				Fdetail.fdtypecalcul = _item.typecarrelage
+      				Fdetail.FDdesccarr = _item.DescriptionCarrelage
+      				Fdetail.fdvariablex = _item.Variablex
+      				Fdetail.FDvariablex1 = _item.variablex1
+      				SI _item.GrillInteriorColor <> "" ALORS
+      					Fdetail.FnopeintureInterieure = _item.GrillInteriorColor
+      					Fdetail.fdprixcarreaupeinture1 = lPrixcarreauPeinture
+      					Fdetail.FDnbcarreauPeinture1 = _item.NbCarreau
+      					Fdetail.fTotalPeinture += Fdetail.FDnbcarreauPeinture1 * Fdetail.fdprixcarreaupeinture1
+      					SI HLitRecherche(FCouleur,noCouleur,_item.GrillInteriorColor) ALORS
+      						Fdetail.fDescPeintureInterieure = FCouleur.DescriptionCouleur
+      						
+      					FIN
+      					Fdetail.libelleNbcarreauinterieur = "1 X " + _item.NbCarreau + " carreaux"
+      					Fdetail.fpeinture = Vrai
+      				FIN
+      				SI _item.GrillExteriorColor <> "" ALORS
+      					Fdetail.fNoPeintureExtTout = _item.GrillExteriorColor
+      					Fdetail.fPrixCarreauPeinture = lPrixcarreauPeinture
+      					Fdetail.Ftotalcarreaupeinture = _item.NbCarreau
+      					Fdetail.fTotalPeinture += Fdetail.Ftotalcarreaupeinture * Fdetail.fPrixCarreauPeinture
+      					SI HLitRecherche(FCouleur,noCouleur,_item.GrillExteriorColor) ALORS
+      						Fdetail.fdescpeintureExtTout = FCouleur.DescriptionCouleur
+      						
+      					FIN
+      					Fdetail.libelleNbCarreauExtTlt = "1 X " + _item.NbCarreau + " carreaux"
+      					Fdetail.fpeinture = Vrai
+      					Fdetail.fTypePeinture = 1
+      					FlagPeinture = Vrai
+      				FIN
+      				
+      				
+      				
+      				
+      				
+      				
+      				
+      				
+      				
+      			FIN
+      			
+      			nBcomposant est un entier = 0
+      			nBComposantSpeciaux est un entier = 0
+      			facture.AvecProduitSpeciaux = :CheckIfSpecialProduct(fdetail.fdcomposant1,Fdetail.fdcomposant2,Fdetail.fdcomposant3,AvecPinede,AvecSatine,AvecUltraClair)
+      			facture.AvecPinede = AvecPinede
+      			facture.avecsatine = AvecSatine
+      			facture.AvecUltraClair = avecUltraClair
+      			Fdetail.PoidsUnitaire = CalculPoidsThermos(Fdetail.fdpiedcarrereel,Fdetail.ThermosType,Fdetail.fdbase,facture.facalcul)
+      			
+      			
+      			
+      			
+      			HAjoute(Fdetail)
+      			
+      			SI  AvecCarrelage ALORS
+      				Facture.AvecCarrelage = Vrai
+      				cpt++
+      				HRAZ(Fdetail)	
+      				Fdetail.fdcarrelage = 1
+      				
+      				Fdetail.IDPurchaseOrderItemEdi = _item.PurchaseOrderItemId
+      				Fdetail.fdligneEdi = _item.VisibleIndex
+      				Fdetail.fdnocomm = Facture.fanumero
+      				Fdetail.fdligne = cpt
+      				Fdetail.fdnumprod =_item.ThermosNumber
+      				Fdetail.fdqteafacturer = _item.Quantity
+      				Fdetail.fdqte = _item.Quantity
+      				Fdetail.fdnumprod = _item.Grill
+      				Fdetail.fdnumcarr = _item.Grill
+      				Fdetail.fdcodegl = _item.CodeGlCarrelage
+      				Fdetail.fdcarreauv = _item.GrillBase
+      				Fdetail.fdcarreauh = _item.GrillHeight
+      				Fdetail.fdcarrpruxuc = _item.PrixUnitaireCarrelage
+      				Fdetail.fdcarrprixdebase = _item.PrixDeBaseCarreau
+      				Fdetail.fdnbcarreau = _item.NbCarreau
+      				Fdetail.frcarrprixu = _item.NbCarreau * _item.PrixUnitaireCarrelage
+      				Fdetail.fdcarrprixtotal =(Fdetail.frcarrprixu + Fdetail.fdcarrprixdebase) * _item.Quantity
+      				Fdetail.fdtypecalcul = _item.typecarrelage
+      				Fdetail.FDdesccarr = _item.DescriptionCarrelage
+      				Fdetail.fddesc = _item.DescriptionCarrelage
+      				Fdetail.fdlien = cpt-1
+      				Fdetail.ftype = 4
+      				Fdetail.fdprixtotal = Fdetail.fdcarrprixtotal
+      				Fdetail.fdvariablex = _item.Variablex
+      				Fdetail.FDvariablex1 = _item.variablex1		
+      				SI _item.GrillInteriorColor <> "" ALORS
+      					Fdetail.FnopeintureInterieure = _item.GrillInteriorColor
+      					Fdetail.fdprixcarreaupeinture1 = lPrixcarreauPeinture
+      					Fdetail.FDnbcarreauPeinture1 = _item.NbCarreau
+      					Fdetail.fTotalPeinture += Fdetail.FDnbcarreauPeinture1 * Fdetail.fdPrixCarreauPeinture1
+      					SI HLitRecherche(FCouleur,noCouleur,_item.GrillInteriorColor) ALORS
+      						Fdetail.fDescPeintureInterieure = FCouleur.DescriptionCouleur
+      						
+      					FIN
+      					Fdetail.libelleNbcarreauinterieur = "1 X " + _item.NbCarreau + " carreaux"
+      					Fdetail.fpeinture = Vrai
+      				FIN
+      				SI _item.GrillExteriorColor <> "" ALORS
+      					Fdetail.fNoPeintureExtTout = _item.GrillExteriorColor
+      					Fdetail.fPrixCarreauPeinture = lPrixcarreauPeinture
+      					Fdetail.Ftotalcarreaupeinture = _item.NbCarreau
+      					Fdetail.fTotalPeinture += Fdetail.Ftotalcarreaupeinture * Fdetail.fprixcarreaupeinture
+      					SI HLitRecherche(FCouleur,noCouleur,_item.GrillExteriorColor) ALORS
+      						Fdetail.fdescpeintureExtTout = FCouleur.DescriptionCouleur
+      						
+      					FIN
+      					Fdetail.libelleNbCarreauExtTlt = "1 X " + _item.NbCarreau + " carreaux"
+      					Fdetail.fpeinture = Vrai
+      					Fdetail.fTypePeinture = 1
+      					FlagPeinture = vrai
+      				FIN
+      				
+      				
+      				HAjoute(Fdetail)
+      				
+      			FIN
+      			
+      			SI _item.Option1 <> "0" ET SansEspace(_item.Option1) <> "" ALORS
+      				cpt++
+      				HRAZ(Fdetail)
+      				Fdetail.IDPurchaseOrderItemEdi = _item.PurchaseOrderItemId
+      				Fdetail.fdligneEdi = _item.VisibleIndex
+      				Fdetail.fdnocomm = Facture.fanumero
+      				Fdetail.fdligne = cpt
+      				Fdetail.fdnumprod =_item.Option1
+      				Fdetail.fdprixupied = _item.Option1PrixUnitaire
+      				Fdetail.fdprixu = _item.Option1PrixUnitaire
+      				Fdetail.fdqte = (_item.unitedemesure = 1 ? _item.SurfaceAnglais SINON _item.SurfaceMetrique )* _item.Quantity
+      				Fdetail.fdqteafacturer = Fdetail.fdqte
+      				Fdetail.fdprixtotal = Fdetail.fdqte * Fdetail.fdprixu
+      				SI HLitRecherche(invent,INUM,Fdetail.fdnumprod) ALORS
+      					Fdetail.fdescoriginale = invent.IDESC
+      					Fdetail.fddesc = invent.IDESC
+      					Fdetail.ftype = invent.itype
+      				FIN
+      				HAjoute(Fdetail)
+      			FIN
+      			SI _item.Option2 <> "0" ET SansEspace(_item.Option2) <> "" ALORS
+      				cpt++
+      				HRAZ(Fdetail)
+      				Fdetail.IDPurchaseOrderItemEdi = _item.PurchaseOrderItemId
+      				Fdetail.fdligneEdi = _item.VisibleIndex
+      				Fdetail.fdnocomm = Facture.fanumero
+      				Fdetail.fdligne = cpt
+      				Fdetail.fdnumprod =_item.Option2
+      				Fdetail.fdprixupied = _item.Option2PrixUnitaire
+      				Fdetail.fdprixu = _item.Option2PrixUnitaire
+      				Fdetail.fdqte = (_item.unitedemesure = 1 ? _item.SurfaceAnglais SINON _item.SurfaceMetrique )* _item.Quantity
+      				Fdetail.fdqteafacturer = Fdetail.fdqte
+      				Fdetail.fdprixtotal = Fdetail.fdqte * Fdetail.fdprixu
+      				SI HLitRecherche(invent,INUM,Fdetail.fdnumprod) ALORS
+      					Fdetail.fdescoriginale = invent.IDESC
+      					Fdetail.fddesc = invent.IDESC
+      					Fdetail.ftype = invent.itype
+      				FIN
+      				HAjoute(Fdetail)
+      			FIN
+      			SI _item.Option3 <> "0" ET SansEspace(_item.Option3) <> "" ALORS
+      				cpt++
+      				HRAZ(Fdetail)
+      				Fdetail.IDPurchaseOrderItemEdi = _item.PurchaseOrderItemId
+      				Fdetail.fdligneEdi = _item.VisibleIndex
+      				Fdetail.fdnocomm = Facture.fanumero
+      				Fdetail.fdligne = cpt
+      				Fdetail.fdnumprod =_item.Option3
+      				Fdetail.fdprixupied = _item.Option3PrixUnitaire
+      				Fdetail.fdprixu = _item.Option3PrixUnitaire
+      				Fdetail.fdqte = (_item.unitedemesure = 1 ? _item.SurfaceAnglais SINON _item.SurfaceMetrique )* _item.Quantity
+      				Fdetail.fdqteafacturer = Fdetail.fdqte
+      				Fdetail.fdprixtotal = Fdetail.fdqte * Fdetail.fdprixu
+      				SI HLitRecherche(invent,INUM,Fdetail.fdnumprod) ALORS
+      					Fdetail.fdescoriginale = invent.IDESC
+      					Fdetail.fddesc = invent.IDESC
+      					Fdetail.ftype = invent.itype
+      				FIN
+      				HAjoute(Fdetail)
+      			FIN
+      		FIN
+      		
+      	FIN
+      	
+      	
+      	SI FlagPeinture ALORS
+      		Facture.fpeinture = FlagPeinture
+      		//	HModifie(Facture,hNumEnrEnCours)
+      	FIN
+      	hmodifie(Facture,hNumEnrEnCours)
+      	majtracking(facture.fanumero,NetNomMachine(),vrai,factrure.faclient,faux)
+      	//
+     type : 458752
+   -
+     name : getcamiondefault
+     procedure_id : 1156831243853081711
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] getcamiondefault (<IdLivraison> est entier, <NoClient> est chaîne)
+      //
+      // Paramètres :
+      //	IdLivraison (entier) : <indiquez ici le rôle de IdLivraison>
+      //	NoClient (chaîne ANSI) : <indiquez ici le rôle de NoClient>
+      // Valeur de retour :
+      // 	Type indéterminé : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE getcamiondefault(IdLivraison est un entier,NoClient est une chaine)
+      SI IdLivraison = -1 ALORS
+      	SI HLitRecherche(Client,numero,NoClient) ALORS
+      		RENVOYER Client.IdDefaultCamion
+      	FIN
+      SINON
+      	SI HLitRecherche(ClientLivraison,IDClientLivraison,IdLivraison) ALORS
+      		SI ClientLivraison.lJourCamionMaster ALORS
+      			SI HLitRecherche(Client,numero,NoClient) ALORS
+      				RENVOYER Client.IdDefaultCamion
+      			FIN
+      		SINON
+      			RENVOYER ClientLivraison.IdDefaultCamion	
+      		FIN
+      	FIN
+      FIN
+      
+      RENVOYER -1
+      
+      
+     type : 458752
+   -
+     name : AddZforArgon
+     procedure_id : 1156831505846147845
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //AddZforArgon (<Composant> est chaîne)
+      //
+      // Paramètres :
+      //	Composant (chaîne ANSI) : <indiquez ici le rôle de Composant>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE AddZforArgon(Composant est une chaine)
+      
+      si hlitrecherche(invent,INUM,Composant) alors
+      	si (invent.ienergieverre OU invent.ienergieverreESC) alors :IsArgon = vrai
+      FIN
+     type : 458752
+   -
+     name : CheckIfSpecialProduct
+     procedure_id : 1156831707709658319
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CheckIfSpecialProduct (<sComposant1> est chaîne, <sComposant2> est chaîne, <sComposant3> est chaîne, <Avecpinede>, <Avecsatine>, <AvecUltraClair>)
+      //
+      // Paramètres :
+      //	sComposant1 (chaîne ANSI) : <indiquez ici le rôle de nbcomposant>
+      //	sComposant2 (chaîne ANSI) : <indiquez ici le rôle de nbComposantSpeciaux>
+      //	sComposant3 (chaîne ANSI) : <indiquez ici le rôle de composant3>
+      //	Avecpinede : <indiquez ici le rôle de Avecpinede>
+      //	Avecsatine : <indiquez ici le rôle de Avecsatine>
+      // 	AvecUltraClair : <indiquez ici le rôle de AvecUltraClair>
+      
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CheckIfSpecialProduct(sComposant1 est un chaine,sComposant2 est une chaîne ,sComposant3 est une chaine ,Avecpinede,Avecsatine,AvecUltraClair)
+      
+      nbcomposant est un entier = 0
+      nbComposantSpeciaux est un entier = 0
+      POUR i = 1 À 3
+      	SI SansEspace({"scomposant"+i,indVariable}) <> "" ALORS 
+      		nbcomposant++
+      	FIN
+      	SI HLitRecherche(invent,INUM,{"scomposant"+i,indVariable}) ALORS
+      		SI invent.IproduitSpecial ALORS
+      			nbComposantSpeciaux++
+      		FIN
+      		Avecpinede = invent.IPinede
+      		Avecsatine = invent.ISatine
+      		AvecUltraClair = invent.IsUltraClair
+      	FIN
+      FIN
+      
+      renvoyer nbcomposant <> 0 _et_ nbComposantSpeciaux = nbcomposant
+     type : 458752
+   -
+     name : GetCustomerInfo
+     procedure_id : 1521135472217650644
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //GetCustomerInfo (<nCustomerId> est entier)
+      //
+      // Paramètres :
+      //	nCustomerId (entier) : <indiquez ici le rôle de nCustomerId>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure GetCustomerInfo(nCustomerId est un entier)
+      
+      
+      si HLitRecherchePremier(Client,IDClient,nCustomerId) alors
+      	FichierVersMémoire(:m_clCustomerInfo,client)
+      FIN
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1ffb2e3306de037f
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

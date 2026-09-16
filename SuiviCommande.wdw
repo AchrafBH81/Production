@@ -1,0 +1,1022 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : SuiviCommande
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : SuiviCommande
+ identifier : 0x22685cf7523fc21c
+ internal_properties : CQAAAAkAAABZVdCW3t8jZXBmwzss2vAQcXfwUu7iWF3ZdLPKhOozUEaizEp0qi4NBMOukPBpcvVwxkkaJbuBBpJB6T2cuRkmAFMXG6w8FICQRuds/uYoHIfrdRepBtUgxktdqqcpK/T2IxJVdzIB2eKKwSsgVWgbcJVW0ku0nwNld8HMeiQgaj60ZJpbuu2lvXH06wm0bc6zBrZzShxlxFg8j8w5RBdzmmAgSwLQC8ZaB0Vt5Zh86mt/FUQptssWzFNksfTblcOJ6TXCW+F3KthlOh1r63V2uTQz0f+m4kiUd2Q720tKRCAwaKdnWXW6VnqacWMVdwBEOGtz33PWtC9+HQABlhOubo9hK5RsJsiO+XZ2CVQxDYW3PPeeynK0E8Ku/Nl/MebgGPh+ArnAt69F4YN571fPI0Hx8HXJdZPd/ykiRva+nOiyi7EA0nK2pfUnwZemlwEWSL7SZH4Raz+B/qvgEptiqvFTr8cdHmO/MeF46go1YV47/4HX49nWaut35O20/LWe68q5Eok3vAvX231gown0L2r7/G6STsNCCTMWJ08VeNiqdiTc15oAQBYuE7kbaSaYRyPFrKcHKor2ahVKpAHm8pdVfBNHsdwTwFbdngs/MRvY8KSmHJ5h0ou/G2SqjsgtBDcPI7Fs2YdNxm/A22Hw97v9ZppCF2GnRdzruWlR2iB38++b8xQr4Z3bV47ymVrlqM4lp5KIRyN0lqObqfNknRTH5xnLy51RvautlaxilKJRU9+dw9SvSGjqWHM/vfw9DHIj0Gt/QG6IivQISBJ6qS2P4S27QBOhfjE51oDojEvo7nPE5EArHbC5d7KPdfXb+jGPPjfD6+VvR5GBSlBROHykuCoGlHO72LcGG7N+Ie/5vsGaa8whtfeAF/O/eaGZUDcbGJeb3dudo8LbO8fRbjfv2pfhbfqZXR8iuPVeBDD1i1catzjJ
+ properties :
+  width : 781
+  height : 768
+  widthClient : 779
+  heightClient : 736
+ controls :
+  -
+    name : BTN_SORTIE
+    identifier : 0x22685cf75250c21c
+    internal_properties : CQAAAAkAAABjVSOWmS/V+q//Wg2UbGPyOulamCmGsGtW2l58QZnZNGX+FZfoVnL7hWlASTlQ12rwdz7fKxQYNP6NWwLiYQ9Ptth/hvHy6kNdHydbvsLjgdjcN1mKURtSbf5KedGPdhkap+LUI9qjHYNYsgUHsHmKeLgueAE71eewRTrz8yT40zR/zYxaxEFHZrFduwFna/vbtXtz/GUkiYK/8iS79HIkDusAI3kG6QkJqukHQzk2Oj6wY9KMxH4DFVncpk7+mvvz80+L6zxS1WuO5PjU/4PBGdt2IYBfVz6grIzMGaqis4+xvNvseg9vNurjJ2jkKvOeDkZrdEYmuetrDgH/DvdtzsbevJ3Wb90vPDVcXRjJi5ck4hiIzZuhz9Gx1pTfvLJD+DTTruAb7sgI1nwZVdgqbJm1cGoEl6pslpxPshdTRSYGC+0LSKfyZoIvp+vTG3CGmUzcJJRHD59Jgce7V01qh7qiEPOX5SdrpXuX1NfxrFyvCm6vYQKqoLmrXIq/ia+9HGVjJ7mKF1RpTfYPUI6S4u8z1UqCvjs1xaMU3ea4jNOWb7cTWF5aKtSUJZcs8feV8nkJJGiYKCNomSdpwPrcIdPfY72w+oI5U/hKPqVYmTFZCvMylsqhlYSORQ0yxUWU48g0XKgySWthERr4u1PdpZVvne1H245ihLjlJyr7DYiLUuK29NBGv+3pR1ReGgxhEMoDN3rksl3KFLJQHDkgbtroHQ1dY/uPu4nXHkjP14FTFbxVCLOIGHDqmkgR0toW0g==
+    properties :
+     x : 16
+     y : 6
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme()
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Table1
+    identifier : 0x22685cf75255c21c
+    internal_properties : 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
+    properties :
+     x : 11
+     y : 97
+     width : 756
+     height : 623
+    columns :
+     -
+       name : ComputerName
+       identifier : 0x22685cf75256c21c
+       internal_properties : CQAAAAkAAACLcpLX7LbdMLNFOLGBhyDeA8FJb5wqPbjIbcU0JGwFckaO5iC+VHHV9cbbFmVpGiYvVvH2lbW9E4Lne5xa9IWAm5zsKtsI7ob66N+BJtmLr9KA6qyVyXoT0Gl4LE9XFHt1TfbIIpM4bU33LwE5gMNRQzlaKUMWiQ1Zv/fzDhoqMM+m12+2xJRsmrZ7P9ujhjr0BXiuIsvyojzEJ4IzUkKN7JpGR6T7wNWKq/l0kA==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAAN7ro0PhldMzjsnMRy5xE8I/n22si+yB8DOdZu+mElP9AKK40/vOrcKEY0nQNlneX7yGRUAO2MgT98Jmg6v4F1C/saRxDC8cJuSaSdvfK1cMlRZfeWizBWzsZsILVBlVqXJ8B/SW7Z6q8jp4yb9ELcW4J3SQgNzZamWJesD4cQincwLAB66Z2dpZ/yuHTx3IgzNb/IErpAzij43bd9WD4apPI17U17ditQS84RIH6MrJBX+9IUkh2H3owjrbuAscFfSwDg71P3i6RefmRjC4Jg3ARF8zGxCe26nmidM7TCLWYEymGFkXhCyJq2FcjbeQbNb3VDybHBsBideqCDwDaDAQR+T7053W7M8Gm6ApUZVTmNhw36G/V9go/Fq1cIuHJThCDGaOPSeqt+smKWqBZvPGw88s+ysp5Pt+CJq+wkpNdmuUsQIiByhHvHrIXPD9XCu2XDsQorf4vLvm9zBioAJjTiInMnGen3Pvvt9n2lf2NCRteDsF0bsiVjiePchiovVm30wqekrfI7zjqG1OCmwWqo6lmmLWvlHuzB5b7fe/yMbpHqq9VHDZ+bz9NKioCv536hksk=
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADR0V5+NZ/U9Bk2hWhkihsImi0bw2rTEzBw3KfHQ3E6fgR5ydBgGBMwJ+yVCHRxX0eCigTC68DmiKQCVyc8DqLrl4VHdG8d5pHsIrSu/kVZi0rU9T8Dmd3kVm1LAnIvZKk9w8UNbNUx1JSY0iVqBq9ccwl6lrUNSg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfOrders
+       identifier : 0x22685cf75257c21c
+       internal_properties : CQAAAAkAAADxeaaCUbUyUbKJcAT0BVXHyo29vFkdB08xt95jC7KOf1VlfnT0yqaS/JoR+nSgDrUFvnP9dLhbg6aQbwT/BcfhB8SEuhdic8b8yFtHnxo4a/IEUXsH1F6pR4rVWO3ogJ/zlXfKCdwiolLJKYc99eF/uNvlwKWQk0uQNe8shySRWpTlZ2V/WRu9DJwonK/0pukTs4Q+8gHMRhIHqBEKEvVwgLdwAYzlKBcflmmkRVCNkJMWCU4TSPd4
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAB5Lx/EA7DSoqJKgunuaIlbA0qtM1SDVAdthKxIMtGf5JT7zXbAaDI1c3Xh97aKPXlk1/KyN1pOvdfxt9Hw5o4z3PVmepadAOA4LX8C5wa/wxMz8pyvsPo04a9AnV0N1CZnwqxTRhkL/RErv7LJI4H8LJ78J1YgwVoq0z9CBSekJ1lwjo7O6KlLLM6RKgB/HUeMDqMD2+X2cb7uKJqP1+7dfRwS5kg31iNqyFS0gSSHxeLuLlEx9DRSmViomBUDe8E0fVzsig88q8cdPizjlSFI56oW/YQuOrhGhJDUHM4TZeWow9HOjoqC3BWBrbERBgApWLcgMHoh/qTeKyBSBrWzE6Hi+oqILdQmDaZYaTEsWfVCG9TrPEutJjKY1UKWkbpnw06nL55iqOmhpaBF2sG9QK1EsWTZ3HYBrldjtpZdDO3Ld/jbaZaOmrQwarwXsGWWxof8JAeXHV8uwaH+wC969IfuiaRGBev7YT5xafku94mJdsAe78FR6HLwIRwW8d6hWUfvOzwEf8rWqRYxtB+Sg30SvUjzuxts0ldwXus8RTbTytTL9i1eetHZaAsXRjMGQ4pd9iOu83Xwy9wPaWDx60007mO57xPJ
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADaQRjRgh1PoQvbwqLYHNiC8rnYrViLr0h86pavGNjo1pifOnEHNDHSpzeI7EMvtR3IZ0tp9Pej6NR+oaTjq1cY6tJY
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfLines
+       identifier : 0x22685cf75258c21c
+       internal_properties : CQAAAAkAAACANzHXPXcB6agXkEJPLgLeG19N59qSU9kSJpK/xxspCzcG9rjRcyXXm3kXP3SfjAFrOkuV+8RnWV59eo/akxD6UXx8ZNSdWXHGA0rikAuHh6Ovki3OLWnSAy6V46FOj07epwyYjBqCB73J+FG7pehqh61CEjpqX9h7S7bKwcyyv0PP5LleA1c7tn22W1KfKqwvIpvqudhz77p4Q7Pv9a9sM2cu3cWhCS3jece02D0dsP/9RC1yBefIpg==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAB5Lx/EA7DSoqJKgunuaIlbA0qtM1SDVAdthKxIMtGf5JT7zXbAaDI1c3Xh97aKPXlk1/KyN1pOvdfxt9Hw5o4z3PVmepadAOA4LX8C5wa/wxMz8pyvsPo04a9AnV0N1CZnwqxTRhkL/RErv7LJI4H8LJ78J1YgwVoq0z9CBSekJ1lwjo7O6KlLLM6RKgB/HUeMDqMD2+X2cb7uKJqP1+7dfRwS5kg31iNqyFS0gSSHxeLuLlEx9DRSmViomBUDe8E0fVzsig88q8cdPizjlSFI56oW/YQuOrhGhJDUHM4TZeWow9HOjoqC3BWBrbERBgApWLcgMHoh/qTeKyBSBrWzE6Hi+oqILdQmDaZYaTEsWfVCG9TrPEutJjKY1UKWkbpnw06nL55iqOmhpaBF2sG9QK1EsWTZ3HYBrldjtpZdDO3Ld/jbaZaOmrQwarwXsGWWxof8JAeXHV8uwaH+wC969IfuiaRGBev7YT5xafku94mJdsAe78FR6HLwIRwW8d6hWUfvOzwEf8rWqRYxtB+Sg30SvUjzuxts0ldwXus8RTbTytTL9i1eetHZaAsXRjMGQ4pd9iOu83Xwy9wPaWDx60007mO57xPJ
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAAAQB+GF9PKUg0M31NuD+4YdHmlqqYm43ItDQlMioJ9bjGV7qjhGxJr1HS8NQ9vSsvKabiVlKVFJGG21GKWHWpwNeq0uN+gBE4fBxqnZ1FTrvLL6jyJWZUjxzjFVgxbJz7qjGV9i1UtBPU2rmgWOA+/qACY8BYXSgls3
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfThermos
+       identifier : 0x22685cf75259c21c
+       internal_properties : CQAAAAkAAABKmpA4n+VjXtLR/7WfRQVp3Wlg0PdH1cHCBXJlV5773L2QsS19F0an0sMBYw5yVPK21IopJ9FLtNER2Uy9Hpal+ErawjTuPmWHbZU31UIYvlvc2Sa8SKgHPG0LgO9xnJotkDK7+LlSmWDa5Jgdv0ivDACe2wDpl05YrgLFrVxUqs4QLHzactf1bbBwIIb/ixAQIXHbMeQ/qnT8scuknmeZiYHKWwiz5iWotpYxNgV7hV3gPdFm+4ykrJQ=
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAAI/k6bIqCwFuwtYjlOCLmbk7qdswSTlDcNtEyYkrHPtHS7DcbgKrbpN+V7d/aKfbkkF/Iy99qOPdexd5FwJg6zXPWmuhbdACD4rX+Cp4b/A9Pz8hzvMDq04W8A3d3N1KZnwmwTxtmLPVErP7KJI8E8bN58p5aggVqqE/8ChWekp1lwzs5OqKkLbM4RKkB/3YdMziMDG+W2cT4uaFqPl+5dfRzSJsh31uOqyNQ0wSRHBSKurtFx9HRSGRjo2BXD+8E0/ZysCk+864cdviwjlWGIp+oW/USu+rjGRNCUHI4TZeUoA5Eu7qpiPPXhDRHxZmCJeJdAENrBXoS+CwAy5hWTc0FCGmrozTSG7QY4SZEMOdVie3RLHOsNBpL4tSJ28ZpHYy7HD34CiEkBhYAlOqGdoE0kUcQ5/NbhjjdDlna97M3rV5g7ybZu+pSQyhz3kMV2ZuechOc3fb8OIQHeoI9a1CfOqYSmpcvbwZ7RSVmOV2kp1uD+T+GxSFJQgXx2Ub6B+ScPGxwkX6o2CfYRFP/yYx3yXahTW3vMMrfQvkuSl5RdBDxD/oUmIsmxoANfzpvu62JlDstGG71owzSnUcjk3qadB0SYwGIY
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADaQRjRgh1PoQvbwqLYHNiC8rnYrViLr0h86pavGNjo1pifOnEHNDHSpzeI7EMvtR3IZ0tp9Pej6NR+oaTjq1cY6tJY
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfOrdersEDI
+       identifier : 0x22685cf7525bc21c
+       internal_properties : CQAAAAkAAACRmQbi8Ulu7SDVZ8QU7YOH3rGP9YlJWyNHe0YWiUMiKgCFmxwe6+ZBclwDiTrvvHkyD+mSjQ+KjYD0wp7i0s0fthSeA+rGMLi6y+FmmXL8o++WxY/gsV0lXzdbXXkSdB9ePFgr1QtJkmZVsfGMcLsHeixQVZr+AWRjoJ1UUfW+/QPo7Hiw1PeOuxOmLngfXf4/b5fnUWcSbyDHwZ6IQNfURPOkSUcKRy5gB+zZ0gpr0LsGKa6z6JeY
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABcAvJvZtJyREbm6o8etgtLR8TZz8QRoLlp9HBiJquVeDz9/V5InurLqxnPNRKQ49EMKaoya0DmUxtZZxfUFKCPaFu+qi7H3JbA0cN0T+jdqw9p1uBnQl7SHW8M0yHLOtZvsDwDVgOnX+Vf42wZFZNAhOykX04CFTTiU6sEvZn2+1lqaqJiZqFxlFp5yNTdO6/g8D/nPwsu7zICABxv+dT1RfqSFqgxYh02EPgaJbopub683nENsky4XeD4+iV1SZEE15ig0nkohb+RmsoPW2ewi0hKEeB0yraOWDTSOJy5TTHGE9HNjSshmXz4MDzGe3WaL54zQ21O7UHduqMloyKYVEgZTQWXhmPjbAU7FEYpPv65wp/uM1Tk22HH6F37Rmu09rFuRoVbj4IMED8ky2LiRcBvgIvo1XUycRqqBcfqdaoWMj9yGA99p2PvhZdsKboTWRLTI4b4/BjxhOA9oazXcRo5UMPlBuqExJHQQFKPVBrIfUtx3tKkCb076JvHdgOimE7qLr/J+jOBVK3A5XR/lOyBsGsazBZ1rTJPBfQLjOkI/xlcG0BbxUpC1XhK2RoRqKceF0hpLGDpxCmkxIuYCm7VSwAkVPbs
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACy9JJL0O8e4MIrXQpp7xpyNn3ZSfmfEjunw3sAY+gdVqEsnwKxRQE7kMGcFhC2/N6DewQr/WULMb8TsipIoyzMs9Na68PdIDV9zW9ytPE6IyJDZ61NeXO0AfJ3W4PXTHDqkF1ILuOlpKwOeQ1p
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfLinesEDI
+       identifier : 0x22685cf7525cc21c
+       internal_properties : CQAAAAkAAACv6tAGDHgOgs/M35VmyQutUhaQ9Jqr1t8z7UFuGJaL6k5+5C4kpC+Dkmaq2oJ6tFrbLZ9H24xtkCk0ySfYaqzFzkosj2qwZO3BtJrFNj4W5jY3csAjJ/EEPXj0SoUM3RyTfq0XvDM7zUX7lmsS8ArwqW5rCbF+Q/ngZI4CywWhglwcVxxfNFn73SBwhxWMZU3OZpZDLjqiJehmZKggguibjHH4EboagK5kRkQjRy4Y/aYcUx6DNAjrhQ==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABcAvJvZtJyREbm6o8etgtLR8TZz8QRoLlp9HBiJquVeDz9/V5InurLqxnPNRKQ49EMKaoya0DmUxtZZxfUFKCPaFu+qi7H3JbA0cN0T+jdqw9p1uBnQl7SHW8M0yHLOtZvsDwDVgOnX+Vf42wZFZNAhOykX04CFTTiU6sEvZn2+1lqaqJiZqFxlFp5yNTdO6/g8D/nPwsu7zICABxv+dT1RfqSFqgxYh02EPgaJbopub683nENsky4XeD4+iV1SZEE15ig0nkohb+RmsoPW2ewi0hKEeB0yraOWDTSOJy5TTHGE9HNjSshmXz4MDzGe3WaL54zQ21O7UHduqMloyKYVEgZTQWXhmPjbAU7FEYpPv65wp/uM1Tk22HH6F37Rmu09rFuRoVbj4IMED8ky2LiRcBvgIvo1XUycRqqBcfqdaoWMj9yGA99p2PvhZdsKboTWRLTI4b4/BjxhOA9oazXcRo5UMPlBuqExJHQQFKPVBrIfUtx3tKkCb076JvHdgOimE7qLr/J+jOBVK3A5XR/lOyBsGsazBZ1rTJPBfQLjOkI/xlcG0BbxUpC1XhK2RoRqKceF0hpLGDpxCmkxIuYCm7VSwAkVPbs
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADaQRjRgh1PoQvbwqLYHNiC8rnYrViLr0h86pavGNjo1pifOnEHNDHSpzeI7EMvtR3IZ0tp9Pej6NR+oaTjq1cY6tJY
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfThermosEDI
+       identifier : 0x22685cf7525dc21c
+       internal_properties : CQAAAAkAAADp/f8bujzY10AyNjwQzfwOlPBDr6gKbueb0lGNmDoa4oflORt0nje5A3W/OfUy/Zptrs9XXh68I9T5zzLnRFRoph4GkzRMPJdMk2U25XNsGB2Ecwc0GFs85tRih2kOPZaxxJoN65nuVGPf8wsRVdlkd/4MDfLiDnRmFGWo3NC2wkJ2St5oiLQqHQL5/95PTipr4m/ZKaTKBBzfdweZEenbwcvHnjdCk6BnJQUyJvV73ctbuF5L3mmDT/c=
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAC/Yd0KuSg2lgY6ZolKAG3T/2bVI6ADkBvJPEAAphErxNiHpbYItG4lfGI5I07+jZ009yZGL042lTdVVz2YeraHXBUChs6BqAhAWb8W35I/TzN7RrAPxNrEGQtYEfV5pHJHEsCHjm1bxYm3n1YBfyHQRK7I2x40QdoKh/++PdssM8GIClKO7NkDvPIx7rgDjUOMrk8fk5m+gV6iyO5fO8aRJWRuumjrHlNCxKwIKWC/kaI2Wv0pUKzS6UwQTP2nQwWEVVigEpsMIwfRRqBTGSHMj+rSIUza+vCGWCBYjBLL2Z2IN50o9LyoAvdzt4PfNIqn0jkqOuibfDogbfJsDJOFWbPMfPRmd5IMB6BKW89i8zM0Bd6t6g0zFEyixzz8X+QVZSh5STwMxuerP8q3yGdP9t8OAxZvdpR/KMH9UJyrNrs94bIdN4DscB4aTJ5F1uc8AEEm/m2p4/2IGztQns2M6vFAO+YEB6H5i+iLexe8YTfjANrQvVMn7nTyM2ZMH5An++n5PSrmVXg4m2iDUv3sYVd8zzrBjSGiPDFaCEHqgFjdxEJVbO9cCMvDSv2lDNV0DRy3uOH4SUsCXUa5z/ZrYScegN0HMdWP
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfQuotation
+       identifier : 0x22685cf7525fc21c
+       internal_properties : CQAAAAkAAAB9xSIO3S3KyRxxw6AgoUdLQgUDeR1VT7c7j8qKDT/eBuxhN3i6Dw49nIjTZTdqgV5r3g+P5S/5iz1xqyufYXxwB4lXDLvPJU2ZWri5LM9pDrptrjhJajfAEQabHVnyRkYjOD7VPcPBbG4tm89ClhPdejRCYwZiHc7/DDcqX9eq6zHeJr78oKPg70dobC5lt36nCztD9btuy0yzPRoMzENA0AewvdOGu6KUyyDtLq7PtJ9ijcqXzHP0
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABcAvJvZtJyREbm6o8etgtLR8TZz8QRoLlp9HBiJquVeDz9/V5InurLqxnPNRKQ49EMKaoya0DmUxtZZxfUFKCPaFu+qi7H3JbA0cN0T+jdqw9p1uBnQl7SHW8M0yHLOtZvsDwDVgOnX+Vf42wZFZNAhOykX04CFTTiU6sEvZn2+1lqaqJiZqFxlFp5yNTdO6/g8D/nPwsu7zICABxv+dT1RfqSFqgxYh02EPgaJbopub683nENsky4XeD4+iV1SZEE15ig0nkohb+RmsoPW2ewi0hKEeB0yraOWDTSOJy5TTHGE9HNjSshmXz4MDzGe3WaL54zQ21O7UHduqMloyKYVEgZTQWXhmPjbAU7FEYpPv65wp/uM1Tk22HH6F37Rmu09rFuRoVbj4IMED8ky2LiRcBvgIvo1XUycRqqBcfqdaoWMj9yGA99p2PvhZdsKboTWRLTI4b4/BjxhOA9oazXcRo5UMPlBuqExJHQQFKPVBrIfUtx3tKkCb076JvHdgOimE7qLr/J+jOBVK3A5XR/lOyBsGsazBZ1rTJPBfQLjOkI/xlcG0BbxUpC1XhK2RoRqKceF0hpLGDpxCmkxIuYCm7VSwAkVPbs
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADaQRjRgh1PoQvbwqLYHNiC8rnYrViLr0h86pavGNjo1pifOnEHNDHSpzeI7EMvtR3IZ0tp9Pej6NR+oaTjq1cY6tJY
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfLinesQuotation
+       identifier : 0x22685cf75260c21c
+       internal_properties : CQAAAAkAAACdxC4sWlbgyJ1iJUOMN/F36NgmWigBuL2JO+e09jyh7HQgKpzyAqFpeERwYNF3helGwCsUiULKnCyV4oSfD5c8+Y89cI8xWy5iL110My039yNai3kYJEBmRvDISiWsuQF6Cik9mhf3bUf/qmEIeoSQ7wo3X28C5wkeAOrs/VObpmp+CRpNuKVLQ6QEKbfahxM0zAzdgOhUV95selKKKEJx4s9euwzIMuCqHKqF4YRCq/TiqUhVGvLVsw==
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAABcAvJvZtJyREbm6o8etgtLR8TZz8QRoLlp9HBiJquVeDz9/V5InurLqxnPNRKQ49EMKaoya0DmUxtZZxfUFKCPaFu+qi7H3JbA0cN0T+jdqw9p1uBnQl7SHW8M0yHLOtZvsDwDVgOnX+Vf42wZFZNAhOykX04CFTTiU6sEvZn2+1lqaqJiZqFxlFp5yNTdO6/g8D/nPwsu7zICABxv+dT1RfqSFqgxYh02EPgaJbopub683nENsky4XeD4+iV1SZEE15ig0nkohb+RmsoPW2ewi0hKEeB0yraOWDTSOJy5TTHGE9HNjSshmXz4MDzGe3WaL54zQ21O7UHduqMloyKYVEgZTQWXhmPjbAU7FEYpPv65wp/uM1Tk22HH6F37Rmu09rFuRoVbj4IMED8ky2LiRcBvgIvo1XUycRqqBcfqdaoWMj9yGA99p2PvhZdsKboTWRLTI4b4/BjxhOA9oazXcRo5UMPlBuqExJHQQFKPVBrIfUtx3tKkCb076JvHdgOimE7qLr/J+jOBVK3A5XR/lOyBsGsazBZ1rTJPBfQLjOkI/xlcG0BbxUpC1XhK2RoRqKceF0hpLGDpxCmkxIuYCm7VSwAkVPbs
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAACVbIAZKIyLUtOx/TRl3LdawH8KiRIbZVPHIi3CQG0ZQWORAsfR1LV9KK1m6uVL3Trxd5kjIU0MB2uWkg==
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+     -
+       name : NumberOfThermosQuotation
+       identifier : 0x22685cf75261c21c
+       internal_properties : CQAAAAkAAADXJz0l9EYynToM4I5C/w5AWmL5QZLsCAU1bMMHCvQk3I3vPx1+iCGfHR8BG5YDhs80SW/O7LQnL7EanuH8+b/14VtFUr/PRYzDqto/uH5ZbyZ7aq7jzxzB1OHiN6FvdinK1vKl4YNa6L9xB7/D+wPmG8BERTCszrSq2nncCkpMKKrYSOgyJlCeUWg9IxT5tFxd3FHnH67QChbZcQ3no19NU2VpfFVsuUbZ17dANMcpD521AoQREKdBCTE=
+       type : 2
+       content :
+        internal_properties : CQAAAAkAAAAI/k6bIqCwFuwtYjlOCLmbk7qdswSTlDcNtEyYkrHPtHS7DcbgKrbpN+V7d/aKfbkkF/Iy99qOPdexd5FwJg6zXPWmuhbdACD4rX+Cp4b/A9Pz8hzvMDq04W8A3d3N1KZnwmwTxtmLPVErP7KJI8E8bN58p5aggVqqE/8ChWekp1lwzs5OqKkLbM4RKkB/3YdMziMDG+W2cT4uaFqPl+5dfRzSJsh31uOqyNQ0wSRHBSKurtFx9HRSGRjo2BXD+8E0/ZysCk+864cdviwjlWGIp+oW/USu+rjGRNCUHI4TZeUoA5Eu7qpiPPXhDRHxZmCJeJdAENrBXoS+CwAy5hWTc0FCGmrozTSG7QY4SZEMOdVie3RLHOsNBpL4tSJ28ZpHYy7HD34CiEkBhYAlOqGdoE0kUcQ5/NbhjjdDlna97M3rV5g7ybZu+pSQyhz3kMV2ZuechOc3fb8OIQHeoI9a1CfOqYSmpcvbwZ7RSVmOV2kp1uD+T+GxSFJQgXx2Ub6B+ScPGxwkX6o2CfYRFP/yYx3yXahTW3vMMrfQvkuSl5RdBDxD/oUmIsmxoANfzpvu62JlDstGG71owzSnUcjk3qadB0SYwGIY
+        properties : {}
+        type : 2
+       code_elements :
+        internal_properties : CQAAAAkAAADaQRjRgh1PoQvbwqLYHNiC8rnYrViLr0h86pavGNjo1pifOnEHNDHSpzeI7EMvtR3IZ0tp9Pej6NR+oaTjq1cY6tJY
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+         -
+           type : 338
+           enabled : false
+         -
+           type : 339
+           enabled : false
+    titleheader :
+     -
+       internal_properties : CQAAAAkAAAB8ihNU3EPUpxJ5WUMuz4ihj3Ct2ButK1TNv6Y8ZFSRUoPwTE6eEF2Vry1VdyZqm3wrTulICjWQvNW9LHflAiIvZZkimLKv5XUAzZIktWj3tdXkUfnN9h/9ZZ/Pbpieud2V03yYgRyb5nldKiWwyaW1VqIx1SjuzNw5CqBOcR8ZZYvEGwwLhdaNGNvgSgjCu3Us+ztjKVqL0gw8qsX4m9urqlYuvKw9FM5gphtqFHXqtVz5YueIbKduI9/0SbmgivOW0AvO1esRTrF0EofwmjjR5LCKXaoeRNOzKCNkNv+t3ZnjKCPFZDFLAf8Vi+YHUtsEBxtZhUsgfrdpt7dBbj/4ZKAbI1zK/28WX+Yl4uH0e4J+O80z9hg9CDfZhlopmLoCH17FhE1WLjSdPvmK6L59Mh7zyTdX4MKTxOKpNObO5WW2SiSEX6GfsxyNpwHHbEcN6gwD+Jq/8UKBCxIUMmpwB6hhzX8eOtFZoLpNfurm8iYuIr12iPCXh6bzbgRNGh5qe8fo3YerOLGfAAhEO0zbDINgQ24SvNeVNhV3+7ifKNTgz/en4bGJj/v6OfPi+8Re50HE5EbbX6FPq+338/7bghraHCRjjImJGx97UFOUHlYPUPQP98ETyJ5mOxn/a0JlzTOgKrJELhMbheMCrxH6buDWtVs9yDQ7x0AemkKd+kk2FhfoeCFhCH36PhpvSkNviFSId+HcsTOICdktiF+8fS4f7wBmBUgQCyayCqeKrYcIajnSQSWWY3wZoDc5LVUfV9+Uqnr3G0i3o5HKOZBN4CO+0g4lsnhbjKm6wzXgu61X//A1xsa4x6fGgezr3gwGbRzYyfp27j7F6gb9opJMHftnF+4FRaqvyKdFgCQ79Z9ZPVz7BB94nRxjc4iYM/VQ8K0zQRTeLUPjdj7WS+wi9sAsItAvEd+La3SvUqqqr3l4/fIjPFQF2wpLrmTBrUUsBohtU5UYh525gm/WxyWg634nd8TKPgz/NfAkxk0HJsahDittSarwrjVGwucZwLnrK+2BZA1unF49K6WPuFMf4d/VrzEuPGFMR2u/fZCt67+J/zdjWAzbHmTGXYpurjH4KUCV8b0XB0JHKogjyvxF2medhnVmtT2Jxgqe8y3m9eVrpNXM0WfzAhQVzyifeV5IZZxQVYIfAi4yAeXJnVVFnI705mIPwj1GNOqPeP60VV/2z8FXIOrLaeYFzPRBAq9xRFtoXJROssodrE25suuLHW3+k8cCoMymJdCZtBIGWgOEGPcuLvTbpmdqKTm5oooLeXZsHR9cDI4y7N8eYAPXct04oDuhDr1crkB/ef6fclQL8BNjvSlAfBnBTDZ3/JCzwpdf0KxwVRjHWofSsnCwueozKjJS36RR59dthBCZsy66HujuObvOTZOxhzVDDjwDhoI3sWYJ8qGPGApKinuvXpCrzb6JXRM0Xr4j84lV1ADOrD0b3JjSqCcZupDUFtW7ZR8WLSdmHtLattO4+Grv
+    type : 9
+    controls : []
+    code_elements :
+     type_code : 9
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 340
+        enabled : false
+      -
+        type : 263
+        enabled : false
+      -
+        type : 262
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+  -
+    name : BtnRefresh
+    identifier : 0x22685cf75254c21c
+    internal_properties : CQAAAAkAAACJ7aeVGp80FUJOWj9A7ZPs7jFvgqtdXRNMrea3jmteLfkhhuQekrvS14NMgQnGBal/E0HA5WEqXq0na5RVwoPnq2XDWtmFUo5X75xc/jtlkecAyMzS5WG8M3cRXHZpfLlrWcIZBWwqpmhG9UBWYAGQVBA5sqGiZ4iFhuMZA+7bIjDPsfllAr3NBacSvClxS9njLX62yZpa/MoQgfih728gV6X+nfRZoZC/OZfA/cBEYYWHpXrNckrrE3M6iMWdPXYczAWfZFB7spuC4MZzDKR3ExWNrBqffjqzfXxp/PSImk6HoBnqnXATpCKZiGukG964AfknllYghPxjB146230Nz3mh0VKhI5gVTcX5x7EP1HuwzlD/yvMUi0VkE+p8xjRHHO0ViKsD7ZMX/qvm0d11LJYsWdb56oefmwvy3blrF/F97jVAY0M1k0wdOBv3Xjo+WGPEjT9lyGpMc93NruPJH+UnyWDxCgEsWCJJ0QE2IXbKkx/CoXUQjgg39okG+IReP/xpmHdxbJH/yEfdBZEGJQwv4+UAa14l7J+p24xIG1HxuvY2HK1sWZHQJIAiqbKDaTMK+0jXRjxyOP+mTk4XStjbU2Kr4nrZKpJizWStpBKMdEUS1xkuEYGsZbEnmcVmtE1VEao6SHxMf9uIancMUhm3qxqz8RMSAzKBer+MZ+qBMs8jTasNdvojVStylWrCukB2DZA2ssPNqp1ET5BsUQFNO0Vs0E/NiURxshq5RA43c2EiyW5u1LIlNu+qGN7gsRZYB5ZJ+6zogWQPLOfcy3UFP9mYHzZp6pjVR+Mh4xTzeprl/7YcV92QzEGf8mE+K2kN7yyShnrRgrl1B71k/xSuqaxtCuOuClFpbNmIgTmNX3xXDZiAtfxVVnj+kJKnRFI7RraMPQEtNsjUUR5I8a4PRgmHKERERAIKfNQRh7zIqECqIDE2sXvqLYN42pvmEqUSIx6PMgiyEZ9ENozWDd1XK6j2pcuh
+    properties :
+     x : 682
+     y : 6
+     width : 80
+     height : 80
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         FinTimerSys((1))
+         RefreshOrder()
+         TimerSys("Refreshorder",gnIntervalle,1)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SansNom1
+    identifier : 0x226869525ad2047a
+    internal_properties : CQAAAAkAAAAgYbKxdHrTiTct9oiqrUYbAWR3FmgWSc0hrl81on6ToDayNxeGezhKWHts68cNui2JK0TdF3ERfwtQu8Gdg1VyVQ6NaII4pE3KSRFdMP0qn3zGmdYzp1/t1fytBES9PiQMOQyLG7p+o06lR4TPjn7lOA/p46Yxkl+7J/GV8Gxs6eA+EmFprUkpPTIaqT4tbfs6I6po2Oi+C+VFays3KdjyAvS8l4XLqGdSdM0CAUG6K2vci7X+4LdyCA0B7lQ8KvPF7FqWL9t7N3Wzq3WrV8HbNfIMOjyOnJvPUoNrL4t7ayCfmxwhwlQbh3+c55mxXUnD1OnlfLYVSYaGPAKa72jS1bGZEDZ2xWH5fw00vzB4EWx7GzjApnPyb/i78Qc3Sz9IToTqYoJYdYXAt8EqgWYPJujSJ3sHkz6kLgpV5CJCeAhXFGtpsNbGVPj3gSM5/7mOgExHl5yYW/OSpZLedQ714ZHV16RWjqkHBUflL4ML0VJCq3Tguk2NIwZTst6eDB1Dic5JAtLjPF6HDQLdm1bTBTL9QqN4X5jErz6MiHvuSvkgJuY3uhHXklnn1zKg1qPngo/lbI9FZ4IcVgEmLZKLYCympwBPXysJ6zfO4kP2sRcmdFr8bDFRVGD8Um52slB3QX0njENFdnB4HrmB8cDUm3DK9tc3g9o6cklUSrQ4CLfON4FwOqWGOPoPeicFHWykKBGv9jK/AMg2GW6asY5z6agjc6wqU/O910MUETiQVbk4anXfvVN1ekJtmj+opZUJAXyIrSTAit17V4da8kdTVpJ2Ny2otZvd3f7KFJuc8sKNGzz8vmXNmIXKtGwaBGTBI3Jt4RTd4LL5qTHhYV8vxEP09xmADbFmRln2a6Al/wPZBPOEWB1MET9JXhx8zZTU2ZL3eEceUHBVElL6ulCGDxLKWMoua2t9t2X8AOIL6sqgi4f/yezt1mTKPpJhXrt6NWXAjPEkOQVgD9STn76uwt9bqeniKBKDLETbQURY0qjB+2GrykCcdAQvsbt2uQvB/iiPGIci+FEO2ow0phepthH5gHo3cKU2ciXJJm36Ui43IvfArTunWlNaM8vhvxHMEVq4ueeBh6oXTkxJr2/hfp+qBv+k
+    properties :
+     x : 250
+     y : 6
+     width : 279
+     height : 65
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         FinTimerSys((1))
+         nNewgap est un entier
+         sOldGap est une chaine = INILit("Intervalle","Minutes","5","config.ini") 
+         
+         saisie("Inscrivez l'intervalle de rafraichissement en minutes",nNewgap)
+         
+         si nNewgap <= 0 alors
+         	Erreur("L'intervalle doit être supérieur à 0")
+         TimerSys("Refreshorder",gnIntervalle,1)
+         	renvoyer faux
+         FIN
+         gnIntervalle = nNewgap * 60 * 100
+         INIecrit("Intervalle","Minutes",numeriqueverschaine(nNewgap),"config.ini")
+         
+         BTN_SansNom1..Libellé = Remplace(BTN_SansNom1..Libellé,sOldGap +" Minutes",numeriqueverschaine(nNewgap) + " Minutes" )
+         
+         
+         TimerSys("Refreshorder",gnIntervalle,1)
+         
+         
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : CQAAAAkAAADAfZ27Q+jJ/MBXHLGCb7PyE2Yqjvuo9mAX2ZN+LLuyQtzms1431znXR0sNCCeLESXZp1gqmo+m2mUhb2ELR2phZ8VOgUSyXddfQyxpxffipvH/iiFuFkCLgpjx1Ah9/9/ndeRpWb0s9Qcjy8oPtW3aMcRtuglgDe5Ch9/jnC/Drp19/hhf+qz96diLw5T0yWlzg33c/E8hhMwUBdSOV69/8iDQGLfTvLoTvV3YkiQ5Dce7dxB2gUx1AVvVTykQMm7G+0haIOV568KMGgPEJluRN2XjgQ11Tb8vVxt6P2g=
+  options : []
+ popup_menus :
+  -
+    name : MenuDatePrédéfinie
+    identifier : 0x22685cf75263c21c
+    internal_properties : CQAAAAkAAAAo09oj/PgQBHM5MfvmvyUTxrIbD9MYr8odstkX5xC8y5ZPIc0NCD66utRpBfg6AsP6mfjeB/qjvlVq3D21SWTmdWwTvyeQ6Dm4GrlSJYldXaKZrfRgrQIU/g5caeYwF44lFFFxSCGugfb36rIkYZswpJ4v9Hnrt8FMgoUwStPXVsn5Q4lTEQF0xShpnW6v3HeTX2oEjsitJ9OdkOhACfoRJ6Uf4KD19pp8fbsdMjz91qQVb+Z3WzE/b7GCeyQXwqoDH03DqvhZqv30VYzSqNKwiOjo8GGlF2Hoy5koN5z98DLrA+JCf2ylzmXp14Ym8H9r0Pl4TpjOJk0HGobq2QWLKsasgrLAVxeR0lZaYCLmqgSFEV6dFJM=
+    options :
+     -
+       name : MenuAujourdhui
+       identifier : 0x22685cf75264c21c
+       internal_properties : CQAAAAkAAABR3xy96O82g1QAWPVLjVnYLd+RQYj9eFppuQlu6tNImm7+wwaoshRXSAkfW24/EkvSjb3cMMSor/1cx3olOF6Boq4LDlwcLKAlzfod0/OehEcEs5LQYoEXW96x5nixXfRGBRQ2zNFNS0lepDpqfgvnD3uIEpIgK+Tt0muOCmOCemncte5U12bbdMKruLSp4F1TF4Y+AGr0jpqlRn7y/EiKQU6GeN0EhMHMd3SLosohAwJQ3XqBv9tV07bbpMiPwY9pcZ+ZF0G8I5Q6xkAuSTuh2zlBkULasZb/LlFo8YoBtRaOT4i7x0UOSLcDkutuN3SA99aRh1aR8hp8F6AkICgMMJiZM7T2kVzFVWzsIhTr0mfRay6bMYDYUFlLfWceFFU+jsG71ChIy8LTIPbW90lIF8yFXv3lQNE=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            sSuperChamp est une chaîne
+            dDate est une date = DateSys()
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDate
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDate)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDate
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDate)
+            
+            {sSuperChamp,indChamp}..valeur = dDate+TAB+dDate
+           type : 32
+     -
+       name : MenuHier
+       identifier : 0x22685cf75265c21c
+       internal_properties : CQAAAAkAAABWRAOLn1PmL2p8A+YgcEHjeMZdjh9M3J8/mjLs5iFDhMiafeGf/a4C57zq6B7KE4+uv6jaKOmfKzGjf/nmo9MrKCHi6L0CaudZHLPgdconNQy8+5ZtS6OQeag/v/1qAiVnZt9ouph/sogQ9DXCQu8kTKKaFKTR4N/XRT3IIpIygBK2WsfycIUP0lsEWbKKEzpf6yTR2BAycuOBeIFflRkZ8R8mbH+5pUL7oVtgIFKd0POGdPq/Cpe/Hn/TG/eaWjyrSKGbRFXuqFwVBxxpjtkARPniIY5UoFkZ+bfmesmsZrwW2OsZltFXiEO7eXF+tIfQ1c54GmbsD1bc+tPCdlzW23CBO26LZWAAL4lLdQcii58o/zKcWp9EXtDhrENcuizYhI/M5zGxqgqebhd0O4E=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDate 	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Récupérer le jour précédent
+            dDate..jour--
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDate
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDate)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDate
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDate)
+            
+            {sSuperChamp,indChamp}..valeur = dDate+TAB+dDate
+           type : 32
+     -
+       name : MenuSemaineCourante
+       identifier : 0x22685cf75266c21c
+       internal_properties : CQAAAAkAAAC/FLVF+sIdK4FV49PKgVZ0m8VXM85gty+SKQmVdMll0heV01OF2PfwUvoQpX98qyY4VA/WhRKE4NmsFdMJZFoIqeGuEQxRr7/WlVxp3B9VxXgArCmqTrIGa1nQi0JTFSq5H8N4zFzsNc46RmdXEhjPv8C23CqowGIr88D8kTEtY97dQ7we/F17D4IHzJ8as//gyQj8icr3K15Gj1+giL6koi/HT9Gymwa/MoPndiqr2S43ZF0L68b1g2fOqgRSA/IIL3LHovWPccFQ4C8ypncmf3BYZzRnz307d9wAOS/GPgY1xyC0vNidRS1Vwj6puRzGELl1xzZv6CLerOLTDO3fe1dKY0HShyjpJC1ydeX7/zxVUdlC3pFee4Z8Sw3mpuZq3a1JuJCMujYhDhVJQiRey1pYY7/GoF13
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            nNumJour 	est un entier
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Récupérer le numéro du jour de la semaine
+            nNumJour = EntierVersJour(dDateDebut)
+            
+            // Semaine courante
+            dDateDebut..jour -= (nNumJour-1)
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            dDateFin = dDateDebut
+            dDateFin..Jour += 6
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : MenuSemainePrécédente
+       identifier : 0x22685cf75267c21c
+       internal_properties : CQAAAAkAAAAw//3Xd0y75W3QS3K3mzT0bWsEhwPx5EF0RnvQji3AspSDC3TTuKS8ZLgpPs4XflLwDVfAirt2vCXs7hj5XFpYxTDeBpZiaLIv0hLh8ScoYcPxio1gsKGxesfC0mQTWt4XH2TsN1V1uvVuQL/EuNItV/t/iuyjxuVVsk9qq4ZrwvSPwjUyJql2RwacBY+8iRuFNltCFj3hQZESrRgZDUB2GtfayH2eO1Y478BfEpZ3+LQ3FVTInUrSEcdKgA/zp+HsuayXJTy5Hzc0IETnBrGGjusLYWdkGAaH6sg9hMKTM7bKADmwSVnsg2XGD8vj2Z4l916p4GRFBp3ln74DNRYGh7RJTBwTVcGF2t5dvUjFJWNlE1Y3MSvFNRqWXKs0HMvFwFtP+2vxGDlekwXBIYpcTsb4IZ9MgtC+C443ow==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Positionner le jour sur la semaine précédente
+            dDateDebut..jour -= 6
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : Semaine_précédente
+       identifier : 0x22685cf75268c21c
+       internal_properties : CQAAAAkAAAA6Kf3FqUC3cZQ6Hf0NMwg4KSPPs5fj6LWItFbM+iuFRPjkKCTc4ZoqEhBRFCTZ7APxEIOw8GFH2/dyMAo7cBKSgIbIgmwCNi7+4Ewht7kKc8+HqC6eUPc+qkct9ZfyMFG5mQWeiVUkVgG4OpHzDNHxxMMCnGRkSQL0Y2QImJNAOlwlXoGcoYcFqi5X4v2sdtmnGfHOjKYxUXnngZYfoKSAR3aFFj1T1zKJ1HnY01U5uIHCEiv1bcj5y6Fx9K7nRhN8/H/M6gM6ECTxOLxyQauI88Jy8LSxRMShIHtyQUQVJlBrdrFummBn/mcw7ZMjxfaFUfh3/WMOt2KwKkODsQx+31Rp3CCk9afpmpYeWTWyfhrc2q3o5kptnm1uX/rdnq/pDAiwZiZ2mZ59KZNLqwDC5k9NdkecyhgmI1htmQ==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            nNumJour 	est un entier
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Semaine précédente
+            dDateDebut..jour -= 7
+            nNumJour = EntierVersJour(dDateDebut)
+            dDateDebut..jour -= (nNumJour-1)
+            dDateFin = dDateDebut
+            dDateFin += 6
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : MenuMoisCourant
+       identifier : 0x22685cf75269c21c
+       internal_properties : CQAAAAkAAAD1GsmDngHxeboV6e1LoFu18vVIEEDjVP3jF+cSUXHDdvPDzto1snCHjf2lSnqn09oJs7ZMDcoqAeIS7S1iph5AuGl4azX/4L6VSByRfLeT/dg0PT1OLt4Yxo+nRlX7E1hs3EGlv3+1Hn2h520A7quFKolQeCnLTidrp3ZEJMr5oSYfqCE/fdU7O67o0Cp2j8cz9ybUXqrILj26zJh/jnqtEbz3kK5pacY7ZuIv4iklqbYN+wBtoW7m1RbJ2FiXjnRRX/uSofCXTM971HeGQIueFONouPVtB7g+r5b462zM3+wUbOO3lGqJlqMRY8sfBaRBvb+0NJ6DrcbPkO6S2wVejE52R3Q7Of+5byMck6h8uQWi+52SLj3Ztx7VKpR+aVFg3rDTBqkoycW2HjNk+JSG5hlxjcSL/xN7/HQ=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Mois courant
+            dDateDebut..jour = 1
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : MenuMoisFlottant
+       identifier : 0x22685cf7526ac21c
+       internal_properties : CQAAAAkAAADhLYyrIPS4DyAEyE0Gi35iSHrkILX7h9B7aJKjXosWquyqrkMs2jpHZLpp04q4nlREELyInb+tDUgKisRC387hLesksDvXz0JQFjQUEUGVuPQFj5HxdAQgquCkE+F+S8ljb5wZK+p3RE6XEZ4JuzqSrw0q9LQtHe3ETocM7kHK0e6eggNC+X2/N7L2sITbgnwklYYj2j3crdHCP1nKeGwnSfrLlSr4Gm1EtqaG5IzMF1uZ1SDzmmeeYokSFD8nyjNasbukNLymb4Bk5g15nxlb+VmKARNZ+lhaf9oOsGgY6zKow/iLROfADuFsgGZBO9sW1Z1TtmiuH5diSjbwv6nIkXKWR5SpCwnyAkQXQ/bCUbSkyh1tL22PIUV4wkjKApvnCXaF3SSx5wDJDbZmtLqlQ1naIklTyDbl4Duk
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Mois flottant
+            dDateDebut..mois--
+            dDateDebut..jour++
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : MenuMoisPrécédent
+       identifier : 0x22685cf7526bc21c
+       internal_properties : CQAAAAkAAAACIYnVuQMQegrtWHBsGq8BG/JhD0Z+lAcG26UGLLOuUArp0X85abgQSLwlkpKrrs/HdFJY4JtlevekMtrHFnzMs5xU7himKrAiSPAdswPOTWJq0Vfkmu1xOoVhKSCfRiAnGfiCwy/R5vVQ/lWUSEYNihRaiLdfKSlAszD3CfF7m/HqRTq8nwNT8dHcYQ9aH8N7JJJftfAIy0jciN1QFWyyX20KeMsI4YocDR6Mur6/tEij4X6awX6mFd0ovrMR8aiXOBMAhuWYTbyBoUPrwv1S8nCM7sbDMQPguW9OvxnK6rdEk/zxChjTumagkqXfDVB3o66h+0PmJ/KIep/SRHHdoD3GTROOGQX/jPmDNEA5iceR91JL5SfOMpjEPqUKNvHrXgGkztIE7NT2+wOyVNkZRT5Y2w+2OFQyN2BlkQ==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Mois précédent
+            dDateDebut..mois--
+            dDateDebut..jour = 1
+            dDateFin..mois--
+            dDateFin..jour = 31
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : MenuAnnéeCourante
+       identifier : 0x22685cf7526cc21c
+       internal_properties : CQAAAAkAAADrH7IbHqs7+K3pawYaPkNnewQQFSsta6AewBXFN4TCGyk1r6JoLz8+phXFoBiAADPS7WpebHu6SMIQioL+EyrY5U8sgtZT5skXlMN84YTDQXeOaU22NJGw/IWBiYXIAvS3sD3hdPwp+B9Do/GkxVGxM68+0Qnf9ZswwLessn9bokno/w3YLoe6pynkj31DVFEilMcYmYx2r0bUrltGoJw/3qKSOi9TY7GIEHe+7KWVOx0GRcRORmjFq0rfjK/M+SOMnw/s0ODOUMQy6FctKznz0UWA2rBsr9AW6HAopwaWY5JZqzStLf7UfJ9X3PnytyXuZI4Fpc5QwI6VyRGKUzNMPTwUHUVtHThJ1RytAufB+DgEj5QVSL2nnNnDML3LsDy4UQpw5st8YEHpxImRif8p9YNOkCX5OCYX0i2q
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Année courante
+            dDateDebut..jour = 1
+            dDateDebut..mois = 1
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : MenuAnnéeFlottante
+       identifier : 0x22685cf7526dc21c
+       internal_properties : CQAAAAkAAACTkloSAtzRj7qK/RPvOOYuCNXIODvbAZgVEoLVfBzyqfda21U77xCdm74709pZE3PvpoBtPRVYjwTDgVGIBeiPFhp/Hu/QyQ7isfG5Zh6HHLDXJAQHSgJ/N3D2A9cx2Q7DrZFmtj1xO4BSTd8s87x4NxEMSkrp1NIWB/UZDTVaeWzA6jiBfmEZfTjM+VIPxq5m8a6dMczW4CVy4uAJAd78gL0Ht3pmQlD5dZHtrRLMDA8uztT0mxoonzZwIhjNx3TNsroPf3i1XWEAFeMVi+o9HoSap2WYRV6xPX03O3qdAKEdmPk4VgJqO6OdrY/F++aZIiU6u7AtJyDNz8GWwAZE3TpnvGK/yr3RMKxHAabTJj+9WNrtXwAW5aRJbxi9XgmCURK7p0VpH9tFAn5tacIHGXIwmRSVCTM9ArHUAA==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Année flottante
+            dDateDebut..annee--
+            dDateDebut..jour++
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+     -
+       name : Année_précédente
+       identifier : 0x22685cf7526ec21c
+       internal_properties : CQAAAAkAAADbCuKaehrr3a0OnRK377VEEDtouL0BM24HAmyjWvoQBwWgn6erFBQ3h10OtblhsEA1Va8VgQh0daqnEYeJ5wdcp/drtzVGCXRZOhdadf6I6D3YrRZLDCqPtcZyp4sVbcD7j1GUModdVyj8R9/sih/wctGPS7R4zvOG2xx5F2Ort8p+wcOFirtlycXsSf9OLxu4t65f7bhQB/BQuDWQub58wZ/gMukG4wiOP5j3yGQhJgJVL8Bgm5SiEcdCmC7n2vVeJ9qz2w6XSrk2Li5sDZyCjbN5fnp9ILksrs4mVJ/26cBssUoZUznBGowVJnVp2Purc8JijB/SfEfZM1YUIYxSfuMUud3+ifPf1kvBdSvVILx4DuN0PGusKWBfoTKTgC+o/0ALU42xGxeJXiwfOXO14TGLyPzhLevlejlMuA==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            dDateDebut 	est une date = DateSys()
+            dDateFin	est une date = DateSys()
+            sSuperChamp est une chaîne
+            
+            // Récupérer le nom du super champ
+            sSuperChamp = ExtraitChaîne(ChampContextuel(), 1, ".")
+            
+            // Année précédente
+            dDateDebut..annee--
+            dDateDebut..mois=1
+            dDateDebut..jour=1
+            
+            dDateFin..annee--
+            dDateFin..mois=12
+            dDateFin..jour=31
+            
+            {sSuperChamp+".SAI_DateDébut",indChamp} = dDateDebut
+            {sSuperChamp+".LIB_JOUR_DEB",indChamp} = EntierVersJourEnLettre(dDateDebut)
+            
+            {sSuperChamp+".SAI_DateFin",indChamp} = dDateFin
+            {sSuperChamp+".LIB_JOUR_FIN",indChamp} = EntierVersJourEnLettre(dDateFin)
+            
+            {sSuperChamp,indChamp}..valeur = dDateDebut+TAB+dDateFin
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - fr-FR
+ message_bar :
+  internal_properties : CQAAAAkAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+      
+      CompileOrders est un structure
+      	sUser est une chaine
+      	xtotalEdi est un monetaire
+      	nNumberOrdersEDI est un entier
+      	nNumberOfLinesEDI est un entier
+      	nNumberOfThermosEDI est un entier
+      	xtotal est un monetaire
+      	nNumberOrders est un entier
+      	nNumberOfLines est un entier
+      	nNumberOfThermos est un entier
+      	xtotalQuotation est un monetaire
+      	nNumberOrdersQuotation est un entier
+      	nNumberOfLinesQuotation est un entier
+      	nNumberOfThermosQuotation est un entier
+      	
+      	
+      	
+      	
+      fin
+      reqsql est une source de donnees
+      orderTracking est un tableau associatif de CompileOrders
+      CurrentOrderTracking est un CompileOrders
+      gnIntervalle est un entier 
+      
+      gnNbOrders est un entier
+      gnNbOrderLines est un entier
+      gnNbOrderThermos est un entier
+      gnNbEDIOrders est un entier
+      gnNbEDIOrderLines est un entier
+      gnNbEDIOrderThermos est un entier
+      gnNbQuotations est un entier
+      gnNbQuotationLines est un entier
+      gnNbQuotationThermos est un entier
+      gnNbTotalOrders est un entier
+      gnNbTotalLines est un entier
+      gnNbTotalThermos est un entier
+      
+      si pas fFichierExiste("Config.ini") alors
+      	fcree("config.ini")
+      FIN
+      NbMinutes est une chaine = INILit("Intervalle","Minutes","5","config.ini") 
+      gnintervalle = val(inilit("Intervalle","Minutes","5","config.ini")) * 60 * 100
+      BTN_SansNom1..Libellé = remplace(BTN_SansNom1..Libellé,"5 minutes",nbminutes + " Minutes" )
+      
+      
+      
+      
+   -
+     code : |1+
+      
+      ExécuteTraitement(BtnRefresh,trtclic)
+      timersys("Refreshorder",gnintervalle,1)
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+  procedures :
+   -
+     name : RefreshOrder
+     procedure_id : 1326416571204888476
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // RefreshOrder ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE RefreshOrder()
+      
+      orderTracking.SupprimeTout()
+      
+      gnNbOrders = 0
+      gnNbOrderLines = 0
+      gnNbOrderThermos = 0
+      gnNbEDIOrders = 0
+      gnNbEDIOrderLines = 0
+      gnNbEDIOrderThermos = 0
+      gnNbQuotations = 0
+      gnNbQuotationLines = 0
+      gnNbQuotationThermos = 0
+      gnNbTotalOrders = 0
+      gnNbTotalLines = 0
+      gnNbTotalThermos = 0
+      
+      CurrentLine est un entier
+      txtreq est une chaine = [
+      	select tracking.isedi,tracking.DocumentType,sum(tracking.amount) as Total,
+      	count(tracking.IDTracking) as NumberOfInvoice,sum(tracking.NumberOfThermos) as numberofthermos,
+      	sum(tracking.NumberOfLines) as numberofLines,trim(tracking.Computername) as scomputername,
+      	trim(Tracking.Username) as susername,
+      	trim(usager.Prenom)+' '+trim(usager.nom) as sUserCompletedname
+      	from tracking 
+      	inner join usager on usager.NomUsager = tracking.Username
+      	where tracking.InvoiceDate = '%1' 
+      	group by scomputername,isedi,documenttype,sUserCompletedname,susername
+      	order by sUserCompletedname
+      ]
+      ReqSqlData est une source de donnees
+      TexteRequete est un chaine
+      
+      TexteRequete = ChaîneConstruit(txtreq,"20220413")
+      
+      Sablier(Vrai)
+      SI HExécuteRequêteSQL(ReqSqlData,hRequêteDéfaut,TexteRequete) ALORS
+      	POUR TOUT ReqSqlData 
+      		SI orderTracking[ReqSqlData.sUserCompletedname] = Null ALORS
+      			CurrentOrderTracking = allouer un CompileOrders
+      			SELON ReqSqlData.DocumentType
+      				CAS "F"
+      					SI ReqSqlData.isedi ALORS
+      						CurrentOrderTracking.nNumberOfLinesEDI = ReqSqlData.Numberoflines
+      						CurrentOrderTracking.nNumberOfThermosEDI = ReqSqlData.numberofthermos
+      						CurrentOrderTracking.xtotalEdi = ReqSqlData.Total
+      						CurrentOrderTracking.nNumberOrdersEDI = ReqSqlData.Numberofinvoice
+      						
+      					SINON
+      						CurrentOrderTracking.nNumberOfLines = ReqSqlData.Numberoflines
+      						CurrentOrderTracking.nNumberOfThermos = ReqSqlData.numberofthermos
+      						CurrentOrderTracking.xtotal = ReqSqlData.Total
+      						CurrentOrderTracking.nNumberOrders = ReqSqlData.Numberofinvoice	
+      					FIN
+      				CAS "S"
+      					CurrentOrderTracking.nNumberOfLinesQuotation = ReqSqlData.Numberoflines
+      					CurrentOrderTracking.nNumberOfThermosQuotation = ReqSqlData.numberofthermos
+      					CurrentOrderTracking.xtotalQuotation = ReqSqlData.Total
+      					CurrentOrderTracking.nNumberOrdersQuotation = ReqSqlData.Numberofinvoice	
+      				AUTRE CAS
+      					
+      			FIN
+      			orderTracking[ReqSqlData.sUserCompletedname] = CurrentOrderTracking
+      		SINON
+      			SELON ReqSqlData.DocumentType
+      				CAS "F"
+      					SI ReqSqlData.isedi ALORS
+      						orderTracking[ReqSqlData.sUserCompletedname].nNumberOfLinesEDI = ReqSqlData.Numberoflines
+      						orderTracking[ReqSqlData.sUserCompletedname].nNumberOfThermosEDI = ReqSqlData.numberofthermos
+      						orderTracking[ReqSqlData.sUserCompletedname].xtotalEdi = ReqSqlData.Total
+      						orderTracking[ReqSqlData.sUserCompletedname].nNumberOrdersEDI = ReqSqlData.Numberofinvoice
+      						
+      					SINON
+      						orderTracking[ReqSqlData.sUserCompletedname].nNumberOfLines = ReqSqlData.Numberoflines
+      						orderTracking[ReqSqlData.sUserCompletedname].nNumberOfThermos = ReqSqlData.numberofthermos
+      						orderTracking[ReqSqlData.sUserCompletedname].xtotal = ReqSqlData.Total
+      						orderTracking[ReqSqlData.sUserCompletedname].nNumberOrders = ReqSqlData.Numberofinvoice	
+      					FIN
+      				CAS "S"
+      					
+      					orderTracking[ReqSqlData.sUserCompletedname].nNumberOfLinesQuotation = ReqSqlData.Numberoflines
+      					orderTracking[ReqSqlData.sUserCompletedname].nNumberOfThermosQuotation = ReqSqlData.numberofthermos
+      					orderTracking[ReqSqlData.sUserCompletedname].xtotalQuotation = ReqSqlData.Total
+      					orderTracking[ReqSqlData.sUserCompletedname].nNumberOrdersQuotation = ReqSqlData.Numberofinvoice	
+      				AUTRE CAS
+      					
+      			FIN
+      			
+      			
+      		FIN
+      		
+      		
+      	FIN
+      SINON
+      	Erreur(HErreurInfo(hErrComplet)	)
+      FIN
+      TableSupprimeTout(Table1)
+      POUR CHAQUE compileTracking,cle de ordertracking
+      CurrentLine = 	TableAjouteLigne(Table1,cle,compileTracking.nNumberOrders,compileTracking.nNumberOfLines,compileTracking.nNumberOfThermos,...
+      	compileTracking.nNumberOrdersEDI,compileTracking.nNumberOfLinesEDI,compileTracking.nNumberOfThermosEDI,...
+      	compileTracking.nNumberOrdersQuotation,compileTracking.nNumberOfLinesQuotation,compileTracking.nNumberOfThermosQuotation)
+      Table1[CurrentLine].ComputerName..PoliceGras = Vrai
+      
+      
+      	gnNbOrders+= compileTracking.nNumberOrders
+      	gnNbOrderLines += compileTracking.nNumberOfLines
+      	gnNbOrderThermos += compileTracking.nNumberOfThermos
+      	gnNbEDIOrders+= compileTracking.nNumberOrdersEDI
+      	gnNbEDIOrderLines += compileTracking.nNumberOfLinesEDI
+      	gnNbEDIOrderThermos += compileTracking.nNumberOfThermosEDI
+      	gnNbquotations+= compileTracking.nNumberOrdersQuotation
+      	gnNbQuotationLines += compileTracking.nNumberOfLinesQuotation
+      	gnNbQuotationThermos += compileTracking.nNumberOfThermosQuotation
+      	
+      	
+      FIN
+      
+      tableajouteligne(table1)
+      CurrentLine = TableAjouteLigne(table1,"Total",gnNbOrders,gnNbOrderLines,gnNbOrderThermos,gnNbEDIOrders,gnNbEDIOrderLines,gnNbEDIOrderThermos,gnNbQuotations,gnNbQuotationLines,gnNbQuotationThermos)
+      table1[CurrentLine]..CouleurFond = igrisclair
+      table1[CurrentLine]..PoliceGras = vrai
+      Sablier(Faux)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x12685cfb06d1d1db
+  internal_properties : CQAAAAkAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
+embedded_elements :
+ elements :
+  -
+    name : SuiviCommande_1$Requête
+    internal_properties : CQAAAAkAAAAsF7Gfkt1KYN+fQxeiA5uA7r6KML7Z6S5ZEWtIKY+6cbn1eO7eTUDxuNyzPn8HpIixjh9BD0s/fYz29fW99aUYlu+GQHBZLEvqSlO4qo11F42DUykp8eonPIWErw8YcvwFlSfMt+IS4uJJo/2dQy+Qy5uwpILE2dLdLXmTLHLcbmb2rt7AyzA/9LPG13mFooBzS0/+7j/qk6A/+H9H9h3UR2e768/viaeXhzh0n5B9nwiIK1/gA7cbZ2ByFZnWE9ZInulhIHy9W93LoamF/85a4U4P7WRSNHm+n1nzBlYtLOcRPe1qNQCCEqjt4ij7l6BcvoQNmqdokZ0qu5CjtfP2TAhwQaFQy2QO+a4iNDqm/Flng16q/AjnGzidOJRocihoR6c5DMiFTEjkgjOat/jnZE/Hj4o0mfQGtJuhDFoANC0PNOxuNKVXRQooiFVJwLC+R+3R/tBj9f9uBCynkda/eXLDCwi4YhN5gY7Y15J9WQnf4KEI9e9c0/DsdKUyQu6fVlEMitox6WnOGhT7+jToc/JwcADR2MICeaY8LVtzc89KIEmzVDVO49DyrgckhXPBKEsexnn8CnNX97kClgLfh4udQGP/91oTf0+XTMxhMfo7tz+FOlPLK8eXU3T9RRRA0FL+9eyE91ymZz66lInimdUremW5otfhZTkX9L4+y+FyzFclIQBp5Mpjp8/lpqiJ+U+1NZLGGT7Rdd0Qh4H6paLwWWgLviNyOL9Ag5EvCUYxudjtS9KBYKbqWFLprcvMR1P9JKJntLaDoWgLcKjsR+YraBEJECRTI2ialh7lJ1RfZ79nHSf6PbvEwuRVPmzgQzewyFRbRUurQi9OrAi1f0uKyu+ko1Q3FDHZYCdj8MEBJU2cbbiSw7IWY1xyG7mgut+WtThHJCKorcGu7qFLeAXDLWj/i8FKS7tRx65Gw+g+vTYNUxiuJyC4uklGqtaFw5YjzbsvBiEZRjuDKKb5rKLgRj1BBFN7U25ObrBUXWLw/PgYKfLmd99CxzRxKbiL8q4Oq2Kwfu7mKOXBTvH8JHlZ/uvOHf26uydv1TkJ1B2+gBYcokKY0ENiyIIORFwxUUd1so0dk3/y0Z2LPsumkyCEImdwXOABqGJsze3hGg+5Jjgl2DmTJBNuWhwMPra1a7Fua/58MS4M8bDQmbMJISaYDUBVwgwNvjbp6iVFCinEf6Osgjc+QqglDKHh0CRF7w95pbB352eXwT46LTQnRXo/F9OyYMPGbe0+nfqaJlS9+3CkDEpIjihogxfJMmDFtY9d2sZM0461sex6AVOMlyw00P1Ju7NgMZimoiWqvAw4w+4rdkNY9pa8r7NrdZzJ0BXr0FlXWgDYRN5pIbSt8DP16i73dd/1lBrf1IAtggFuQWs+AeJ2Ai2miWdBdQKphMpz3XUykWayzaFW9+Ney7S9fjSrO7nWUfBFnk9hpVOkpKUZde6m9D5si5z60syJrWkstpXqp3163ek3GpcKgXnBJkuOCEDrhqsNtXNZawRZvsta5cD8L/J+phlzKSnyaBMjcH+K05UNxeWWNUVMb570mV0NYUpwI0JyaziiRShXa4GaREvTj0K6QiiL4dAvcbMK+fYpPwuIf/Y/5gZQs4bdyRQRuBpq/1pQn+gXqwy75QUCf2Pbp2nHLG+JwapfgLCYlJMnL5mkBcxGhz/ZK9TOrk47al5a12MQ/HVJnB9gVGDNqBIYCEsKSF4p67rD7v7u96Q3r53fSnbc8/UzaZoBJs/I

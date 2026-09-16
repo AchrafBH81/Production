@@ -1,0 +1,146 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cCotationDetails
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x14ff953937db420f
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cCotationDetails est une Classe <MAPPING=CotationDetails>
+      	
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis le menu contextuel
+      	// du fichier dans l'explorateur de projet "..Regénérer la classe modèle".
+      	<MAPPING>
+      	m_nIDCotationDetails						est un entier sur 8 octets				<MAPPING=IDCotationDetails, clé unique>
+      	m_sThermosCode								est une chaîne ANSI						<MAPPING=ThermosCode>
+      	m_sThermosDescription						est une chaîne ANSI						<MAPPING=ThermosDescription>
+      	m_sTag										est une chaine							<mapping=tag>
+      	m_sSpacerType								est une chaîne ANSI						<MAPPING=SpacerType>
+      	m_sSpacerDimension							est une chaîne ANSI						<MAPPING=SpacerDimension>
+      	m_sFinish									est une chaîne ANSI						<MAPPING=Finish>
+      	m_sThermosHeight							est une chaîne ANSI						<MAPPING=ThermosHeight>
+      	m_sThermosHeight1							est une chaîne ANSI						<MAPPING=ThermosHeight1>
+      	m_sThermosWidth								est une chaîne ANSI						<MAPPING=ThermosWidth>
+      	
+      	m_sPane1									est une chaîne ANSI						<MAPPING=Pane1>
+      	m_sPane2									est une chaîne ANSI						<MAPPING=Pane2>
+      	m_sPane3									est une chaîne ANSI						<MAPPING=Pane3>
+      	m_sPane1description							est une chaîne							<MAPPING=pane1description>
+      	m_sPane2description							est une chaîne							<MAPPING=pane2Description>
+      	m_sPane3description							est une chaîne							<MAPPING=Pane3Description>
+      	m_sGridCode									est une chaîne ANSI						<MAPPING=GridCode>
+      	m_nGrillBase								est un entier							<MAPPING=GridBase>
+      	m_nGrillheight								est un entier							<MAPPING=Gridheight>
+      	m_bGrillHalfThermos							est un booléen							<MAPPING=GridHalfThermos>
+      	m_nDrawingType								est un entier							<MAPPING=DrawingType>
+      	m_nIDCotation								est un entier sur 8 octets				<MAPPING=IDCotation>
+      	m_bIsDeleted								est un booléen							<MAPPING=IsDeleted>
+      	m_nQuantity									est un entier							<MAPPING=Quantity>
+      	m_sGridDescription							est une chaîne ANSI						<MAPPING=griddescription>
+      	m_sInteriorColorCode						est une chaîne ANSI						<MAPPING=InteriorColorCode>
+      	m_sInteriorColorDescription					est une chaîne ANSI						<MAPPING=InteriorColorDescription>
+      	m_sExteriorColorCode						est une chaîne ANSI						<MAPPING=exteriorColorCode>
+      	m_sExteriorColorDescription					est une chaîne ANSI						<MAPPING=ExteriorColorDescription>
+      	m_sShapeNumber								est une chaîne ANSI						<MAPPING=ShapeCode>
+      	m_sShapeDescription							est une chaîne							<MAPPING=Shapedescription >
+      	m_rSurface									est un réel								<MAPPING=Surface>
+      	m_rRealSurface								est un reel								<mapping = realSurface>
+      	m_rBilledSurface							est un réel								<MAPPING = BilledSurface>
+      	m_moEnergySurcharge							est un monétaire						<MAPPING=EnergySurcharge>
+      	m_moThermosUnitPrice						est un monétaire						<MAPPING=ThermosUnitPrice>
+      	m_moShapeUnitPrice							est un monétaire						<MAPPING=ShapeUnitprice>
+      	m_moGridUnitPrice							est un monétaire						<MAPPING=GridUnitPrice>
+      	m_moHalfgridPrice							est un monétaire						<MAPPING=halfgridprice>
+      	m_moBarrotinPrice							est un monétaire						<MAPPING=Barrotinprice>
+      	m_moGridTilePrice							est un monétaire						<MAPPING=GridTilePrice>
+      	m_moGridBasePrice							est un monétaire						<MAPPING=GridBasePrice>
+      	m_moPaintUnitPrice							est un monétaire						<MAPPING=PaintUnitPrice>
+      	m_moPrice5X									est un monétaire						<MAPPING=Price5x>
+      	m_moPrice10X								est un monétaire						<MAPPING=Price10X>
+      	m_moSquareFeetPrice							est un monétaire						<MAPPING = SquarefeetPrice>
+      	m_moTotalThermosPrice						est un monétaire						<MAPPING=TotalThermosPrice>
+      	m_moTotalGridPrice							est un monétaire						<MAPPING = totalGridPrice>
+      	m_nNumberOfTiles							est un entier							<MAPPING = NumberOfTiles>
+      	m_nNumberOfTilesExt							est un entier							<MAPPING = NumberOfTilesExt>
+      	m_nNumberOfTilesInt							est un entier							<MAPPING = NumberOfTilesInt>
+      	m_moPaintUnitPriceExt						est un monétaire						<MAPPING = PaintUnitPriceExt>
+      	m_moPaintUnitPriceInt						est un monétaire						<MAPPING = PaintUnitPriceInt>
+      	m_moPaintTilePriceExt						est un monétaire						<MAPPING = PaintTilePriceExt>
+      	m_moPaintTilePriceInt						est un monétaire						<MAPPING = PaintTilePriceInt>
+      	m_moTotalPaintPrice							est un monétaire						<MAPPING = TotalPaintPrice>
+      	m_sGridType									est une chaîne							<MAPPING = GridType>
+      	m_nZRLineNumber								est un entier							//<mapping = LineNumber>
+      	m_moTotalShape								est un monétaire						<MAPPING = totalShapeprice>
+      	m_sCalculType								est une chaîne							<MAPPING = CalculType>
+      	
+      	m_sShapeWidth								est une chaîne							<MAPPING = Width>
+      	m_sShapeWidth1								est une chaîne							<MAPPING = Width1>
+      	m_sShapeWidth2								est une chaîne							<MAPPING = Width2>
+      	m_sShapeHeight								est une chaîne							<MAPPING = Height>
+      	m_sShapeHeight1								est une chaîne							<MAPPING = Height1>
+      	m_sShapeHeight2								est une chaîne							<MAPPING = Height2>
+      	m_sShapeDiameter							est une chaîne							<MAPPING = Diameter>
+      	m_sShapeRadius								est une chaîne							<MAPPING = Radius>
+      	m_sShapeRadius1								est une chaîne							<MAPPING = Radius1>
+      	m_sShapeRadius2								est une chaîne							<MAPPING = Radius2>
+      	
+      	m_bFifteenYearsWarranty						est un booléen							<MAPPING = FifteenYearsWarranty>
+      	m_moFifteenYearsWarrantyTotal				est un monétaire						<MAPPING = FifteenYearsWarrantyTotal>
+      	m_bExtraArgonGaz							est un booléen							<MAPPING = ExtraArgonGaz>
+      	m_moExtraArgonGazTotal						est un monétaire						<MAPPING = ExtraArgonGazTotal>
+      	
+      	m_nDTH										est un entier							<MAPPING = DTH>
+      	m_nBarrotinID								est un entier							<MAPPING = BarrotinID>
+      	m_sBarrotinDescription						est une chaîne							<MAPPING = Barrotindescription>
+      	m_sGrillNote								est une chaîne							<MAPPING = GrillNote>
+      	
+      	m_sBaseproduct								est une chaîne							<MAPPING = baseproduct>
+      	m_sThermosGL								est une chaîne							<MAPPING = ThermosGL>
+      	m_sGridGL									est une chaîne							<MAPPING = GridGL>
+      	m_bTemplateToCome							est un booleen							<mapping=TemplateToCome>
+      	
+      	
+      	<FIN>
+      	
+      	
+      FIN
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1513092072802632207
+     type_code : 27
+     code : |1+
+      procédure Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1513092072802697743
+     type_code : 28
+     code : |1+
+      procédure Destructeur()
+      
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x14ff953037d51e5a
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,250 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : listeparsecteur
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Listeparsecteur
+ subtype : 0
+window :
+ name : listeparsecteur
+ identifier : 0x3e9d90ce7534b053
+ internal_properties : CQAAAAkAAABBYHx/zYoL6g5lnOrUiYz9gK3tGhFYOeUp31I7dcCm40dT1yMWdwD8LDGh3PXh65zdeEsdKSnlg3DybWgv+6ZuXg2W4lPJoCv+d10v5URRtMtKOuNTPsx20jaVZVQ1Xl8uJVzyA+21pLGrWT7RzD1gXgY80vvNG2DCylEnjJAMabwHtYN5eeDyhY4NdN/JP+BRZb0eRpbLEW/a/pHQhIG4JAyBRu5fD2mwl15JzImUnI4bq/YIP3cX8euU3gFtVmLXMo1pEN8JWfVLCwpGQb/fKiqALfAw269KZrCAtjo01OihTffLMP4EVNDdeo840HKV3O/aw16sdsDYekG9EN2y9Gx62jKtHSl+ctv3JpupHSCIBxur9gMpZ4NO4g29r+g2PKZE7lVyYq+/iape/mwY6tndItjwWZXtHIg/up2P4SE7ISvphSZouh1ffC9QQlQ81QBx3bMg+/pVdJoa2nBocfkeodSDA+TTbf+60FxA2IDhDE5tcQDrUCem3+/N9TwT2g7PmdEEUiG8uIiy9U56UL9XJiCc94y6JcG9h4tLwcTXXGXgPgotivs0ezVRvdrXAIgBiNtFCrdIcZ6CPoiS9P7XA9AhzPrUoJbJq1nokBLXWFgzNYIU6aNd+IvCQpBnjRzsD8lw4HLs+y6IUCg9CSi3UgxcNd63uuqw7PpIT9xjeFUNnelFVla81GIVOb5/hc3kRwpikp93L0mGRqMIxks+sMRKqNCfx4Jt825CLHcp9Y5B0wHPmer3WxzqfLPclTrHY7LkzPIK6XQQxkZaIt/ftJrD3G9OXQnePtt9VUHhNDM=
+ properties :
+  x : 120
+  y : 50
+  width : 504
+  height : 230
+  widthClient : 502
+  heightClient : 198
+ controls :
+  -
+    name : SelecteurCommande
+    identifier : 0x3e9d90ce5878b053
+    internal_properties : CQAAAAkAAAA1rspJXCJo/MEdp4B0rdNXQ6P6/a1c9xRVvAvmiRAoFl2ek1JVczZfCZ5wXXfKXP55Mc37E6uMgJ24tFWAMULFwGY58xAMmDgO0Dpy86Z0gR7JfUng2YDEq78AHnTJ685Cf6YeUVN37ts/0T4g18IDdsbrGWgBwSeyG43iuYk7mCDYENwS9Yz3rmG+TH+Iotslrfhbujf8WRIm4J+SUtd7IYPjOfNDdwiIxUNhPgFliF6AaIewUY0CWA23YPupuOmYqHwK6G9/0oevV00pp0AJyb+ypXeGnDNZRjIc/IHws9doRk1WXaUpMSwOx30r/Zl/1N6L4JXw0tdwFL5Dn3DDvY31BXWVLx1b6vWLsicPn9QFb/S9UDEYskLQ2+fpZuU8xbtic6XARpLbxGB2ZgfN4hZNUVsEMZxIGRs1J6h4EMZ/WFEYUZU4AIlhTAhuJo7N4r/laTUsWuwD1HHSe19gmltYatlUOFhJK2bCAtuaUuG9aPKLtsvSYd3tHZ5NfVw59G+zqNOaMuRl1wLHvHDxhGp6gI4w3X6Sn0dbJScYONSpQweXKhQtk4kb3nMT5vEZZGteAxSe39ZWEmqlsJVmSTKqllx7N0e1vtwenNf1ICsPBr8x1EZn3zDSKoLTUXwtvttMuNHwilwPK5BlTPae28EL627xsoyo36fS6dq3pbXMyLAJoMsJHmgGkqc7L3FD9KJqkwiCUmzA7llgJSvHhR+qbqX35sBpT35thuE=
+    properties :
+     x : 67
+     y : 29
+     width : 79
+     height : 57
+    options :
+     -
+       internal_properties : CQAAAAkAAACE+/WCF1rBdyLyItl8E9E1OhyO42S8gNmrBgImrwuG7+NepqTM5dz4ODqZ2X9bg+6KIW72jBNhd/LVoAU/Mn29YGvQR45NN0tqm/Aul/24eDNIg1iUHZv1BppOtiyY2pWWvUbUxXhEoEbFFiIpj9vrKIxb2bh+Zr+r
+     -
+       internal_properties : CQAAAAkAAAAWnxh75/OCvYDGewFVhzUhcFUg1j/+L7dhCG0aduUYxU1TzgDoNLcqvR+xrVMWtRF7PqnFI/q8AzxGarNpaBEViTqRtJ4FP+wYOeod2aS5T6MPXEMm8dfmRk5mSwiTQ9Y43p+Qshsp7Ci3c1gaoEPUN98UgOTSIhxrw5r5fQ==
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1+
+         si moimeme = 2 alors
+         //Code WinDev 5.5 remplacé par la migration :
+         //	combo_secteur..etat = actif
+         	combo_secteur..etat = actif; combo_secteur..Visible=Vrai
+         	listeselectplus("COMBO_SECTEUR",1)
+         FIN
+         
+        type : 16
+      -
+        code : |1+
+         si moimeme = 2 alors
+         //Code WinDev 5.5 remplacé par la migration :
+         //	combo_secteur..etat = actif
+         	combo_secteur..etat = actif; combo_secteur..Visible=Vrai
+         	listeselectplus("COMBO_SECTEUR",1)
+         FIN
+         
+        type : 17
+  -
+    name : COMBO_SECTEUR
+    identifier : 0x3e9d90ce767db067
+    internal_properties : CQAAAAkAAACX9bkgBZC0vI/gO6nPRrYz++LH6BONulDvKc8UdgcXOgZo2sVTgQY1vO6QsFbAhVdafxGl/TA9vqw63txqDBGmj9uQJyMKyEN20RoPM3kDMcSgBxpY/wDv7iTruQ/HLHBPHKlNfZoP/1SSsHj+CsuROPXWb5z+I0xg/b3LKhqK6iCsNUOAQ/N4J3SBsu4KUIsN7a7ZRrDanPZD909SP82DtXMYOjGaIJYTfnQ9tCDKfpMNM4uagW+tCWSuTZX4yZlBMAJEILpeaiWH65AxViVXvBAt5OX1NwJC9LzUP2tOja0OyvA+/jbaK34p58iwwNpq1yi/1jJMWZqXK+/B7APpuxL0NHP1LJLwTTANuPt7XtNvPBLiNef3KOoVZGt9mmUQYrSI70+fyTibFOtTuP391x3VCE9vqPhyGjPjsP0f5HDbbKCiUozkCAzFsM3eAMRs3xnUtwXKahA+vfXzDv3TOoIMbTQYgE4U+3//G+LJBXBC2QDqypk7T9wG6CMy8D08724JEshBB+T1emX9ATikBC5KMz8ENtKEIp/pM5hdmxs5W8mgc08PUPweDmDs+LmjEZZV1yUmVt9zxK3oBUMiRXQzyOWvLT+0aXOHdEym6SzvPR34vVVulsL5ffH7HMUJ43FjlfDoBX5CmLqHdnn3VtlCvINb9Z4UKEfJVLUOVWbNA/BWULGQnM1Rh2p+iHfDQmyrYJwNyLEkU6v8BeRSXTMIaAq8bu+EO8ao/bUpKiCyJV6Mlf/2m38zzvv3gSogRScyuI472/TE4fPlcQZv2pe4KdildC0g5TnsE3TW5sHM8LIr/mV1HR/iqwZh2vrVPOdd595atEpQma/4FRppNUDIIArzyDZAoWPvwUcloGc8CJHP9mJ+y6nAJ9S3G5xXS/g+F1NMmkxYCx69Wg6XpEh4bUoVfUZM6RPMjNH1WHLPYxD1BC8NBeZPy5X+lb1CuKNLrEEBe82Gs7mvSuBy53Asd9geGCDh9yGN1PxN+XXsYVhRTruwYW0ZXMHJJcDobr1VM0spFt6JwcbY/zcdAf+PR9sTR29+qpbkRN1XG2+tiXScTyskP+bWJSEkBk+bInK5rt0sbVJFACjkQGPDeH+k/5w2UGjLm4AUy87YqZawCedUBYlsT4YmndgnkvvnmAkxMRSORXovRlQfi1PnUJ2KcuZ1kbaU2PWq5GCRu4zShrbapIDL1IpQvESvtSZdBVx6Ua0eWjkWhmRYi8M5q/2JwvEwUtxXamsOniMALrrTDwfOXVrfp/HcPWoIJBNMvoDgF6mMxHBdLF+Wiupb17IQTD+3+QphaXWi4L3+IJmcWvzEYsbB4NBYVrHV3qRicUNR1hAEF3vGUrFo83rt58h2FxPfR9stqNpWIpVD3tttmQNtURKdiVah1bI29wxrWPz4or6Q+KbpBBiuVIkFvQ1w4BVW38MZ5lBtu16Akw==
+    properties :
+     x : 57
+     y : 110
+     width : 169
+     height : 26
+    dropdown :
+     internal_properties : CQAAAAkAAABS8waMwyKqoidfY6WDFrY77EVsLKGRBZz91XNWOB11rH4RbJN6oYTMoDvn91ZTdmnexjlSz4IQPOmk77eg4E6W5iaNq9sX5exNZggTQP/Zqy6DC2JkQCBzzSiTaL2iJX1Q9kRpdv+vE2CtKVXG4ae41HzI/muYWCSBHGMtPH6nhu61DpbFNYfs3StlVK0Uhc6+V+GW3tlkRuUP6xNCxfCqn+s4YO2GR70oFFMw4dV/ziu96hqLzPd4UM61AO9r9gKsxaXcVs9O3AP+/9P5nfxiTdKZZcZoleIoSSQ/L9MYwcAunI5/I6SifKcMSYSricmz89vGlKrs7PsRZOheN8abzR/rg9WwfDZevE4spXtWRUDAwAIKHOl3phQpoVtTxiHVrgOcK1eTDM22BQeK0SDtasldtyT+MAL8qfWh8Y2QaGCmNKhse018lG6y59UVI8d78PeNmIkPDIhYvmNnLUZ+4/jopiWqkBD0+wx2axOKqapSaks6zoAKLDxsgiAOWq94DX19fSc4+/nXraul3l7jgukjU7IsOlWQuA==
+     properties :
+      height : 152
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1+
+         hOuvre("secteur")
+         HLitPremier("secteur","secteur")
+         //Code WinDev 5.5 remplacé par la migration :
+         //TANTQUE pas h.EnDehors
+         TANTQUE pas HEnDehors()
+         	ListeAjoute("combo_secteur",secteur.sdescription+glien(secteur.secteur))
+         	HLitSuivant
+         FIN
+         
+         //Code WinDev 5.5 remplacé par la migration :
+         //Infoobjet(combo_secteur..Nom,43,vrai)
+         gLienActive(combo_secteur..Nom,vrai)
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        type : 17
+        enabled : false
+  -
+    name : DESTINATION
+    identifier : 0x3e9d90ce0fd1b07b
+    internal_properties : CQAAAAkAAACJhc90LORA06ispJ4VHQnUohuVHG2DrPV7i3KmnsFlKY9e8KsyeN+AfCATbQlLh0Z8YMgTL5wmRexQ0evF1Tb0WOXzQ1EmU0WhjdCv006Lx1WtVsEYYJQLSvaL2BhGtQ32QFnrDhKckVnI0gCHQx4po2WmjVI2OL+i6JtZhzATCthLNyM7NXvDmOzDMuKkklsXEVKR/kvY+LBllNiYoXbztqBK49lPNuz+7Ry3wiXoIN0dBMMM/rrBMUF5C/HiVpu4OK36oeqMPs4a53KXttBoDpQXmAPAmQXuWwAwdZgRZLiDbRqGC8Ta2kr+MDWK7fxXKzz4KgqjPZPi8tf7bn7e4gR00xDirbGKDb3zRkZh4U8Z/w6+Rmh9OdZsL57/xAvnK4T7DGsDmTklAFxjJp2bCbbUTINL3wAA4M76If3/7cSSTknGfDN0yCrUccbtU/WwBDDegotbNTE7oit7P6NIXTh0TLfJiEpbsE/xLDjJ7ysowIid0Y+sWWb2RC5AalvdM5stbOquN2qQdM0XM2/Whq/eaV0kRJXp1TnZpFe+nlvjzHjSoFFOdnFHsvrJKCNMu7UmCXfQnHkyzBfLuBM05gY3mJBwkUOVKcyP/PLQ7ylekqCYn6QSeoHeTIddw6CElcXz4y5StuLs3K9wpyWDMKPHX7I9x5eSeMDO/C2kadaX/xtzlU9z7C/rdpcDkHbXiCBu7WizCLWAEgrmbOGyOArrbfazoBT4auJ+z4N0goSQ
+    properties :
+     x : 296
+     y : 85
+     width : 86
+     height : 57
+    options :
+     -
+       internal_properties : CQAAAAkAAABUXfl9430J59nOF1unfQcR6roEilvGd79mXAIpuokEd9V9ih4AfkMa/Zk37XMqJbfjGIlnk5x4B4zgCNZpSEHFma8mdcGYFLUhMCHKuMcMEvwArRB1sJAjs+UV3PN62mWx4GSrlmOlpJjvk0crGVjdZj7DC45Q790oAti7Pw==
+     -
+       internal_properties : CQAAAAkAAADP4Rnjqa2sHj/DfLV2jd9Y7CmxzNCszu0q7iaUgVFwCntxzkbvpQjRKsODDQ/oyESiEvMOtDAlhFypMoh9x6mhNRcwA0Z0Q4y4QbJfLlPREeUUy3wMFIUsWBQkz+dSrWROZOM+5MF+tdPcJsqT32fbLcPWiekTVA==
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : BTN_OK
+    identifier : 0x3e9d90ce70e4b07b
+    internal_properties : CQAAAAkAAAAS/TXJHbtuSzsdLHueRbonHVIQh40rOLF9mzYqYnP8S2A37SUrkCu+T3PWTwzJmLhKCn2Ht0TmF/PpfpNa+4Nd2FqrVEqiaW2dzMWPP+fW1kmA2mSHqGtDmPn2tWHRtsPnkN57MI1rwCQIQkWqMeZrg01X4dFtoFOmIxuva9CgjyfDjbrw1qu0O3Y+Xf8CHUUCILxEEMYMWMAmFYuCDlAmz5Hro8NcwJS027T+OC5O0UpN0cxkdEvlSBvrp9kUrKaFB5JxgwJhOrQqCFEyPfnzf2kXKylQO6Oz9ZkDN41O5H0YvDqaqCpe/CdgggxjiAIMKJ8j2SXZEPJdmQQGDscUd+xZe9NlRnm9F3qlv+O/TV9WdaaSAQqTgepVaJXZckoeByQ/hCBQwCIRUo93ySjg6Yb8/YtxKIZLvmkRPq8nR48WbFsuyZ5rVmQsgUFvbldH2crluWmYCBNe2ZmIGkhGtcv4QnkeHudHCmvAj7pWZ7lLtOIMkFXuwGMn+co9QSlw15a3zN7G8dNZIh2F2mFpAsfFur1Xkhwj4SxV9J5T+4+w/hm4xzXGcMcpLMVaFyJd0tvQmHmJVttJVdgduv3Y1Ntzv+MAANCDTGZyeWRVbFUcL8ydnJl8Adg/3yJJqA+OVqHx0PjR4u8cUi+e9sbOBRr/QdXG5pC3nzlr9fwee3+eEJlLSTRegW5cACQyIjBVh5qCoCc4fhVvj7bg3TMk9nmCBbrItHzxCWhfl6iOIlFY34HIrEBJHQ8KhNIM+ZkAuwYOrNPuVz9R8D9Evfcn9g==
+    properties :
+     x : 414
+     y : 106
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         memcree("zonefacture")
+         si selecteurcommande = 2 alors
+         	//info(combo_secteur[combo_secteur])
+         	si combo_secteur[combo_secteur] = -1 alors
+         		erreur("Vous devez sélectionner un secteur")
+         		reprisesaisie("combo_secteur")
+         	FIN
+         fin	 
+         hexecuterequete(RequeteCommande)
+         //hlitpremier("Facture","fanumero")
+         hlitpremier(requetecommande)
+         //Code WinDev 5.5 remplacé par la migration :
+         //tantque pas h.endehors
+         tantque pas HEnDehors(requetecommande)
+         	//info(facture.fasecteur = sansespace(combo_secteur[combo_secteur]))
+         hlitrecherche(facture,fanumero,requetecommande.fanumero)
+         	si SelecteurCommande = 2 alors
+         //		
+         si sansespace(facture.fasecteur)  = sansespace(combo_secteur[combo_secteur]) alors
+         			memajoute("zonefacture",h.numenr,h.numenr)
+         		FIN
+             sinon
+         		memajoute("zonefacture",h.numenr,h.numenr)
+         		
+         	FIN
+         	//    hlitsuivant("Facture","fanumero")
+         	    hlitsuivant(requetecommande)
+         fin
+         
+         iconfigure(sansespace(imprimanterapport),vrai)
+         //Début du code généré par l'assistant de code de la fonction iParamètre
+         
+         
+         iParamètre("DEFAUT=NON")
+         iParamètre("FORMATPAPIER=LETTRE")
+         iParamètre("QUALITE=HAUTE")
+         
+         
+         
+         si destination = 2 alors
+         	iapercu(75,"Commandes")
+         fin
+         //iimprimeetat("LISTE DES COMMANDES","zonefacture")
+         //iimprimeetat(LISTE_DES_COMMANDES_detail,"zonefacture")
+         //iImprimeEtat("liste des commandes detail","zonefacture")
+         iImprimeEtat(LISTE_DES_COMMANDES_detail,"zonefacture")
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SORTIE
+    identifier : 0x3e9d90ce2bf1b099
+    internal_properties : CQAAAAkAAAAu9Lytjjb9YdewQqKAhXYlg/YY2fECPX/j79C8jryHKNXWfQXOMhXjgzIsfQ3k3pnrvFKpnMX9F9iQZMrsKbIoWAHoT6pM3ZAETwI0pRBNiUMNyADr2k3Z3+HskFBJmTS+YQ7LRDPay3z6z4re4mSZGeEmVyV0RinK9Z6MtvwuqMZ5iBGW+9Z9lA+v5tycxQxB/rrqZ5wICOQTCfNV22X1viPW1Hnkf4LjlLKojVmXdPkWhmouHiM3PFPvy6qogjh/mSPKQiI0oiaTjrdP/cGw+5iTSO9zOTR6ceaVIUXAIyy/C/GRvpMOILzPbgp15EmS/+SjPQWo+Ps+AKCd7y9+BojxlHAnefUJTzWr8yPdkI3WsZrgFMsbxw/CREtYPiVPaLYyOAAWOvglg//cEjb+XQBfZHmL8hloFIXvCnGTVrpp8AjogybUgQceqj/eTr36HAh2ed3GHzzxHd4whV4CsoQK4T3+lG6U/6cXi/EQmzYMnMd85CN7/S6H1IJQ9fub3gQaDDqQ1jDuPmqL4VFTqTSXFc/hgl1EHkQGdNMdkw7bGL5m5ZHFCeZbcVFDz2SiY0Enrjd1FyLibUtJIY8Q/apZlr1CTOcqiVLP7zHJCvoHT+0FgPNdxv+D0BIchA1d6Xd+4uLt+5axqBhm8QzGGM9RSuxGbhURv66fmy/5ojj6PoKzElZ0Wg/5OGgso0L2ITNpRvwx72GmrZQyIP7bZ9WvariSHvhH8+6cg4rDzlfBNUtTkiN33/M2Xpm462dxYCdIqM23ghSOO2Azl7xALLO/iV1gntDgR4Po8HiFUOI6YDNUlKz8pEDFmalYr1JGJnzdht43Sd+MUI1f3u8fIzc=
+    properties :
+     x : 8
+     y : 5
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3e9d90ce0275b049
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAABqSrxfqyyiM+RR+U9ziQXvtCA4NZS4uU2rgCK2QyQCzFeYexhvF/nrKCZc/imKlSBIw6VaqNFFkl1i1aJI5BzOOOI1BcX0z/fNvGN7XwU85wYzHc9EvuL3wqU2rQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      
+      
+      
+      // Pour compatibilité 5.5
+      MoiMême..Visible=Vrai
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3e9d90ce429bb053
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

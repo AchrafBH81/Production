@@ -1,0 +1,74 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cCotation
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x14ff950237d16be3
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cCotation est une Classe <MAPPING=Cotation>
+      	
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis le menu contextuel
+      	// du fichier dans l'explorateur de projet "..Regénérer la classe modèle".
+      	<MAPPING>
+      	m_nIDCotation							est un entier sur 8 octets				<MAPPING =IDCotation, clé unique>
+      	m_dCotationDate							est une Date							<MAPPING =CotationDate>
+      	m_sIdentification						est une chaîne ANSI						<MAPPING =identification>
+      	m_sJobNumber							est une chaîne							<MAPPING = Jobnumber>
+      	m_nCurrentUserID						est un entier							<MAPPING = idCustomer>
+      	m_moCotationTotal						est un monétaire						<MAPPING = CotationTotal>
+      	m_moFifteenYearsWarrantyTotal			est un monétaire						<MAPPING = FifteenYearsWarrantyTotal>
+      	m_moExtraArgonGazTotal					est un monétaire						<MAPPING = ExtraArgonGazTotal>
+      	m_sCalculType							est une chaîne							<MAPPING = calculType>
+      	m_sCotationNumber						est une chaîne							<MAPPING = CotationNumber>
+      	m_bOrderSended							est un booléen							<MAPPING =  sended>
+      	m_dRequireddate							est une Date							<MAPPING = RequiredDate>
+      	m_nShippingAddressID					est un entier							<MAPPING = ShippingAddressID>
+      	m_nTruckID								est un entier							<mapping = TruckID>
+      	
+      	
+      	<FIN>
+      	
+      	m_tabCotationdetails est un tableau de cCotationDetails
+      	
+      FIN
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1513091836578786275
+     type_code : 27
+     code : |1+
+      procédure Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1513091836578851811
+     type_code : 28
+     code : |1+
+      procédure Destructeur()
+      
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x14ff94fc37cb53d7
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

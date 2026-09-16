@@ -1,0 +1,64 @@
+# .gitignore for WINDEV, WEBDEV and WINDEV Mobile projects
+#
+# WINDEV – WEBDEV – WINDEV Mobile
+Backup
+Bin
+cache.gestion de sources
+Corbeille
+Groupware
+Lastsave
+Sauvegarde
+.tmp
+*.cache
+*.cpl
+*.env
+*.rep
+*.waudit
+*.wdcoverage
+*.wpf
+HstDuree.log
+#
+#WEBDEV
+*\res
+*.awl
+*.awp
+#
+# WINDEV Mobile 
+android
+*.xcode.gen
+# --- Caches et fichiers temporaires ---
+*.cache
+*.tmp
+*.bak
+*.bkp
+*.~*
+*.wx_backup
+Thumbs.db
+.DS_Store
+
+# --- Environnement utilisateur et compilation WinDev ---
+*.cpl
+*.syn
+*.env
+*.conf
+
+# --- Bases de données et fichiers de test HFSQL ---
+*.fic
+*.ndx
+*.mmo
+*.ftx
+
+# --- Dossiers d'exécutables et compilations ---
+Exe/
+exe/
+*.exe
+
+# --- Images et médias ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.bmp
+*.svg
+*.webp

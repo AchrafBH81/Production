@@ -1,0 +1,81 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : MFdetailtempo
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1329f0d21dce38c8
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      MFdetailtempo est une Classe <mapping=Fdetailtempo>
+      
+      	// Le code se trouvant entre <MAPPING> et <FIN> est généré automatiquement.
+      	// Il sera effacé et recréé entièrement à chaque génération depuis l'analyse.
+      	<MAPPING>
+      	m_nIDFdetailtempo	est un entier							<mapping=IDFdetailtempo, clé unique>
+      	m_rHAUTEUR			est un réel sur 4 octets				<mapping=HAUTEUR>
+      	m_nFdnocomm			est un entier							<mapping=fdnocomm>
+      	m_nFdligne			est un entier sur 8 octets				<mapping=fdligne>
+      	m_rLARGEUR			est un réel sur 4 octets				<mapping=LARGEUR>
+      	m_sFNoForme			est une chaîne ANSI						<mapping=fNoForme>
+      	m_sFEspace			est une chaîne ANSI						<mapping=fEspace>
+      	m_nFEspaceTri		est un entier sans signe sur 4 octets	<mapping=fEspaceTri>
+      	m_nTposition		est un entier sans signe sur 2 octets	<mapping=Tposition>
+      	m_nTPositionTempo	est un entier sans signe sur 2 octets	<mapping=TPositionTempo>
+      	m_sTbase			est une chaîne ANSI						<mapping=tbase>
+      	m_bDeleted			est un booléen							<mapping=deleted>
+      	m_nTqte				est un entier							<mapping=tqte>
+      	m_bDiffere			est un booléen							<mapping=Differe>
+      	m_bRupture			est un booléen							<mapping=rupture>
+      	m_nTQteRupture		est un entier							<mapping=TQteRupture>
+      	m_rTDimensionTotale	est un réel sur 4 octets				<mapping=tDimensionTotale>
+      	m_nTNoTable			est un entier sans signe sur 2 octets	<mapping=TNoTable>
+      	m_nTenergiverre		est un entier sans signe sur 1 octet	<mapping=tenergiverre>
+      	m_sTHauteurReelle	est une chaîne ANSI						<mapping=tHauteurReelle>
+      	m_sTLargeurReelle	est une chaîne ANSI						<mapping=tLargeurReelle>
+      	m_sTnorack			est une chaîne ANSI						<mapping=tnorack>
+      	m_sTNoThermos		est une chaîne ANSI						<mapping=tNoThermos>
+      	m_nTGroupe			est un entier sans signe sur 2 octets	<mapping=tGroupe>
+      	m_sFdbase			est une chaîne ANSI						<mapping=fdbase>
+      	m_nFQteTotal		est un entier sans signe sur 2 octets	<mapping=fQteTotal>
+      	m_sTcarrelage		est une chaîne ANSI						<mapping=Tcarrelage>
+      	m_nTscellant		est un entier sur 2 octets				<mapping=tscellant>
+      	m_xPoidsUnitaire	est un numérique						<mapping=PoidsUnitaire>
+      	<FIN>
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1380899545999882440
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1380899545999947976
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1329f0d51dda45e7
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

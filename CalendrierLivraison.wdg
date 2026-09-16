@@ -1,0 +1,371 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CalendrierLivraison
+ major_version : 29
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1cfa88f60b835688
+ internal_properties : CQAAAAkAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : GetJourLivraisonCompagnie
+     procedure_id : 2088132135083110675
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //GetJourLivraisonCompagnie ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      
+      //	IdClient (entier) : <indiquez ici le rôle de IdClient>
+      //	idsaison (entier) : <indiquez ici le rôle de idsaison>
+      PROCEDURE GetJourLivraisonCompagnie() 
+      TableauSupprimeTout(gtabsaison)
+      _stLivraison est un stlivraison
+      pour TOUT SaisonLivraison 
+      	_stLivraison.IdSaison = SaisonLivraison.IDSaisonLivraison
+      	_stLivraison.ddatedebut = SaisonLivraison.DateDebut
+      	_stLivraison.ddatefin = SaisonLivraison.DateFin
+      	_stLivraison.JourLivraison = lGetJourLivraison(SaisonLivraison.JoursLivraison)
+      	gtabSaison.Ajoute(_stLivraison)
+      //	gJoursLivraisonCompagnie.Ajoute(lGetJourLivraison(SaisonLivraison.IDSaisonLivraison,SaisonLivraison.JoursLivraison))
+      fin
+      
+      
+      
+      
+      
+      	procédure interne lGetJourLivraison(valeurJour)
+      	lJoursLivraison est un tableau de 7 entier
+      	
+      	POUR i = 1 À 7
+      		lJoursLivraison[i] = 0
+      	FIN
+      	
+      	
+      	i est entier
+      	SI valeurJour <> 0 ALORS
+      		POUR i = 1 À 7
+      			SI valeurJour & Puissance(2,i-1) = 0 ALORS
+      				lJoursLivraison[i]  = 2
+      			SINON	
+      				lJoursLivraison[i] = 0
+      			FIN
+      		FIN
+      	FIN
+      	
+      	RENVOYER lJoursLivraison
+      	
+      	fin
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : GetJoursLivraisonClient
+     procedure_id : 2088137254684139452
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetJoursLivraisonClient (<_IdClient> est entier [, <IdClientLivre> est entier [, <Casemanuelle> est booléen]])
+      //
+      // Paramètres :
+      //	_IdClient (entier) : <indiquez ici le rôle de IdClient>
+      //	IdClientLivre (entier - valeur par défaut=0) : <indiquez ici le rôle de IdClientLivre>
+      //	Casemanuelle (booléen - valeur par défaut=0) : <indiquez ici le rôle de Casemanuelle>
+      // Valeur de retour :
+      // 	tableau associatif : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	IdSaison : <indiquez ici le rôle de IdSaison>
+      PROCEDURE GetJoursLivraisonClient(_IdClient est un entier,IdClientLivre est un entier = 0,Casemanuelle est un booleen = faux)
+      tableausupprimetout(gJoursLivraisonClient)
+      tafrequence.SupprimeTout()
+      ValeurJourLivraisonClient  = 0
+      valeurjourlivraison   = 0
+      IndiceTableauSaison est un entier
+      //lJoursLivraison est un tableau de 7 entier
+      lJoursLivraison est un tableau de 7 stJourLivraisonCamion
+      
+      idSaisonLivraison est un entier
+      JourLivraisonMaster est un booleen
+      JourLivraisonPickUp est un booleen
+      
+      _frequence est un stFrequence
+      
+      pour CHAQUE SaisonLivraison 
+      	tafrequence[SaisonLivraison.IDSaisonLivraison] = _frequence
+      FIN
+      
+      si pas Casemanuelle _ET_ IdClientLivre <> 0 _et_ hlitrecherche(ClientLivraison,IDClientLivraison,IdClientLivre,hIdentique)  alors
+      	HLitRecherche(ClientLivraisonFrequence,IDClientLivraison,IdClientLivre)
+      	TANTQUE ClientLivraisonFrequence.IDClientLivraison = IdClientLivre _ET_ PAS HEnDehors(ClientLivraisonFrequence)
+      		_frequence= allouer un stfrequence
+      		_frequence.Frequence = ClientLivraisonFrequence.Frequence
+      		_frequence.DateDeReference = ClientLivraisonFrequence.DateDeReference
+      		TAFrequence[ClientLivraisonFrequence.IDSaisonLivraison] = _frequence
+      		HLitSuivant(ClientLivraisonFrequence)
+      	FIN
+      
+      	
+      	
+      	si ClientLivraison.EstPickUp alors
+      		JourLivraisonPickUp = vrai
+      	sinon	
+      		JourLivraisonMaster = ClientLivraison.lJourCamionMaster
+      	fin
+      sinon
+      	JourLivraisonMaster = vrai
+      FIN
+      
+      
+      
+      si JourLivraisonMaster  alors
+      	HLitRecherche(ClientLivraisonFrequence,IDClientLivraison,_IdClient)
+      	TANTQUE ClientLivraisonFrequence.IDClientLivraison = _IdClient _ET_ PAS HEnDehors(ClientLivraisonFrequence)
+      		_frequence = allouer un stfrequence
+      		_frequence.Frequence = ClientLivraisonFrequence.Frequence
+      		_frequence.DateDeReference = ClientLivraisonFrequence.DateDeReference
+      		tafrequence[ClientLivraisonFrequence.IDSaisonLivraison] = _frequence
+      		HLitSuivant(ClientLivraisonFrequence)
+      	FIN
+      	pour TOUT JourLivraisonClient avec  "idclient = " +_IdClient + "ET idadresselivraison = 0"
+      
+      		idSaisonLivraison = JourLivraisonClient.IDSaisonLivraison
+      		IndiceTableauSaison = GetIdSaison(idSaisonLivraison,gtabsaison)
+      		si IndiceTableauSaison = 0 alors continuer
+      		ValeurJourLivraisonClient = JourLivraisonClient.JourLivraison
+      		SI ValeurJourLivraisonClient <> 0 ALORS
+      			
+      			POUR i = 1 À 7
+      				SI ValeurJourLivraisonClient & Puissance(2,i-1) > 0 ALORS
+      					lJoursLivraison[i].JourLIvraison = GtabSaison[IndiceTableauSaison].JourLivraison[i] <> 2 ? 1 SINON 2
+      				SINON
+      					lJoursLivraison[i].JourLIvraison = GtabSaison[IndiceTableauSaison].JourLivraison[i] <> 2 ? 0 SINON 2
+      				FIN
+      				lJoursLivraison[i].Camion = JourLivraisonClient.IDCamions[i]
+      			FIN
+      			
+      			
+      			
+      		FIN
+      		gJoursLivraisonClient[GtabSaison[IndiceTableauSaison].IdSaison]=(lJoursLivraison)
+      	FIN
+      sinon si JourLivraisonPickUp
+      	TANTQUE ClientLivraisonFrequence.IDClientLivraison = _IdClient _ET_ PAS HEnDehors(ClientLivraisonFrequence)
+      		_frequence = allouer un stFrequence
+      		_frequence.Frequence = ClientLivraisonFrequence.Frequence
+      		_frequence.DateDeReference = ClientLivraisonFrequence.DateDeReference
+      		tafrequence[ClientLivraisonFrequence.IDSaisonLivraison] = _frequence
+      		HLitSuivant(ClientLivraisonFrequence)
+      	FIN
+      	
+      	POUR CHAQUE SaisonLivraison 
+      		idSaisonLivraison = saisonLivraison.IDSaisonLivraison
+      		IndiceTableauSaison = GetIdSaison(idSaisonLivraison,GtabSaison)
+      		
+      		POUR i = 1 À 7
+      			lJoursLivraison[i].JourLIvraison = GtabSaison[IndiceTableauSaison].JourLivraison[i] <> 2 ? 1 SINON 2
+      			lJoursLivraison[i].Camion = gIDCamionPickup
+      		FIN
+      		
+      		gJoursLivraisonClient[GtabSaison[IndiceTableauSaison].IdSaison]=(lJoursLivraison)
+      	FIN
+      	
+      sinon
+      	
+      	POUR TOUT JourLivraisonClient AVEC  "idclient = " +_IdClient + "ET idadresselivraison = " + IdClientLivre
+      		idSaisonLivraison = JourLivraisonClient.IDSaisonLivraison
+      		IndiceTableauSaison = GetIdSaison(idSaisonLivraison,GtabSaison)
+      		ValeurJourLivraisonClient = JourLivraisonClient.JourLivraison
+      		SI ValeurJourLivraisonClient <> 0 ALORS
+      			
+      			POUR i = 1 À 7
+      				SI ValeurJourLivraisonClient & Puissance(2,i-1) > 0 ALORS
+      					lJoursLivraison[i].JourLIvraison = GtabSaison[IndiceTableauSaison].JourLivraison[i] <> 2 ? 1 SINON 2
+      				SINON
+      					lJoursLivraison[i].JourLIvraison = GtabSaison[IndiceTableauSaison].JourLivraison[i] <> 2 ? 0 SINON 2
+      				FIN
+      				lJoursLivraison[i].Camion = JourLivraisonClient.IDCamions[i]
+      			FIN
+      			
+      			
+      			
+      		FIN
+      		gJoursLivraisonClient[GtabSaison[IndiceTableauSaison].IdSaison]=(lJoursLivraison)
+      	FIN
+      	
+      fin
+      
+      renvoyer gJoursLivraisonClient
+      
+     type : 458752
+   -
+     name : AlimenteTableauJours
+     procedure_id : 2088148082297313546
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] AlimenteTableauJours (<idsaison>)
+      //
+      // Paramètres :
+      // 	idsaison : <indiquez ici le rôle de idsaison>
+      // Valeur de retour :
+      // 	tableau : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE AlimenteTableauJours(idsaison)
+      
+      	lJoursLivraison est un tableau de 7 entier
+      	SI HLitRecherche(SaisonLivraison,IDSaisonLivraison,idsaison) ALORS
+      		valeurjourlivraison = SaisonLivraison.JoursLivraison
+      	FIN
+      	
+      	POUR i = 1 À 7
+      		lJoursLivraison[i] = 0
+      	FIN
+      	
+      	
+      	i est entier
+      	SI valeurjourlivraison <> 0 ALORS
+      		POUR i = 1 À 7
+      			SI valeurjourlivraison & Puissance(2,i-1) = 0 ALORS
+      				lJoursLivraison[i]  = 2
+      			SINON	
+      				lJoursLivraison[i] = 0
+      			FIN
+      		FIN
+      	FIN
+      	
+      	RENVOYER lJoursLivraison
+     type : 458752
+   -
+     name : GetIdSaison
+     procedure_id : 2088155353704393885
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] GetIdSaison (<UneDate> est date, <tabsaison> est tableau)
+      //
+      // Paramètres :
+      //	UneDate (date) : <indiquez ici le rôle de UneDate>
+      //	tabsaison (tableau) : <indiquez ici le rôle de tabsaison>
+      // Valeur de retour :
+      // 	entier : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE GetIdSaison(UneDate est une date,tabsaison est un tableau de  stLivraison)
+      
+      nRes est un entier 
+      
+      pour i = 1 _a_ tabsaison..Occurrence
+      	si tabsaison[i].ddatedebut <= UneDate <= tabsaison[i].ddatefin alors
+      		 renvoyer i
+      	FIN
+      FIN
+      renvoyer 0
+      
+      
+     type : 458752
+   -
+     name : GetIdSaison
+     procedure_id : 2088155353704393885
+     type_code : 15
+     code : |1+
+      PROCEDURE GetIdSaison(_IdSaison est un entier,tabsaison est un tableau de  stLivraison):entier
+      
+      POUR i = 1 _a_ tabsaison..Occurrence
+      	SI tabsaison[i].IdSaison = _IdSaison ALORS
+      		RENVOYER i
+      	FIN
+      FIN
+      renvoyer 0
+     type : 458753
+   -
+     name : GetIdSaison
+     procedure_id : 2088155353704393885
+     type_code : 15
+     code : |1+
+      PROCEDURE GetIdSaison(dUnedate est une chaine)
+      
+      nRes est un entier 
+      
+      POUR TOUT SaisonLivraison 
+      	SI SaisonLivraison.DateDebut <= dUnedate <= SaisonLivraison.DateFin ALORS
+      		RENVOYER SaisonLivraison.IDSaisonLivraison
+      	FIN
+      FIN
+      RENVOYER 0
+      
+      
+      
+     type : 458754
+   -
+     name : checkifMasterConfig
+     procedure_id : 1399555466204608273
+     type_code : 15
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] checkifMasterConfig (<nIdAdresseLivraison> est entier)
+      //
+      // Paramètres :
+      //	nIdAdresseLivraison (entier) : <indiquez ici le rôle de nIdAdresseLivraison>
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE checkifMasterConfig(nIdAdresseLivraison est un entier)
+      
+      
+      si hlitrecherchepremier(ClientLivraison,IDClientLivraison,nIdAdresseLivraison) _et_ clientlivraison.lJourCamionMaster alors
+      	renvoyer vrai
+      FIN
+      
+      renvoyer faux
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ProcéduresGlobales1
+resources :
+ string_res :
+  identifier : 0x1cfa88ed0b813506
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

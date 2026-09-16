@@ -1,0 +1,638 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : impressionetiquettexopt
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : IMPRESSION DES ETIQUETTES
+ subtype : 0
+window :
+ name : impressionetiquettexopt
+ identifier : 0x3e9d90cb2445a45a
+ internal_properties : CQAAAAkAAABWuzC2zrjLO30gvo2Yqow0DUK+rbcsZmmjH00uhV1oGk4zvCrfmDrrnjJPk5wO9yKxFlGA9SPAzDYbXMmE/56NcQxe0EkVMrym+P6KSrJRkKxy1a54oNYbJIfzhn53AwoV1RmE1XX2OI+5dvLb2tIqy+5TvR/deVUfxIUbJX/yEpEqH+W8Xd4qKKoiuDAVJcMzcrlSIg4tTmEpcvdmkuqYhVvOGKtS7HDYGMtQEPyyhDouI4n0uYupXF3fbwyjo19bgolWOWiMb5U60g5ko4GF2TyqQ52F1+2RN8YZy1IX1fJ8Xll3PlSUwZC22PAXKjPgRgYkJzA7ATot9f1FR5JZKbAJdbjBsv0A6LbHwyEWC7Vw9dE2mI4Km/DzG9RaQGFfbCNsG2bREIchheMfjqxZr4OAcfYiJIwRI3AQpb8JMxfonO5+4W4besv6Lj4ok7Etbq/vb24iUoluYFYYB5B/Q5px38ASw1Xk+HVK4MvxtvNoV7o2kkxlMwDWokgCgDSa3rVkn5tIVu79uEF/5gTzyceUUlpZyoeGy6hrzuWyjzSSoTNhnrJDPwT+mdWBoDU+CqbcY/J0msvapTqBrkx1FejMTmFHgoW/O5duFnNq36HdjOEPnKgJjwN4MzK5WBzYZpe3GElqevVDljUm0TNaZtyHq8/U0PgJPr6rNuu8vHRQmcgti8Uyj9sUhZvZS1Vido3IuuunUkaJuV+ucNkqkhsHPB538cM7AeLhiMzu1xX0MJaIfXaFnZ63Hc7VCpUTjKjksMYPJSaI05DdG76DnopPnC5QlQd3+yskxfCmnrIoV2KXRUVnsQu3HRmNaf59CzWyeU9GZkBc+0SY/OF84lPQYXwLTcOFMbgXd/xXoqduCOyMEO8P5d+1cKUbPvN0ajPNaQ==
+ properties :
+  x : 120
+  y : 50
+  width : 434
+  height : 242
+  widthClient : 432
+  heightClient : 210
+ controls :
+  -
+    name : LIBELLE1
+    identifier : 0x3e9d90cb6f1ea464
+    internal_properties : CQAAAAkAAAB+KYyxbFPOiDvDqfqHFnu0h4p4cNO247LdqQDmi3mJKkVeJC8rBYpceQxEPb4WuV++oReCMZlJ4YVIKwy4H9pPOcor4hmleLa3Vmv9b9pjm+NAa4keH3LX3lM30Wfp+Q8O9vPBXNGnpTHOcOg/ok+JBXqVtdbdwv45sM0ao7uejJHPfVZqWp8SZmGjc8hZg1OeRTQjuaisokUOzcUpkwh8nzBTXUuzYC+ycqjF4lnJT6QIoG6XpAP2h7b/Dnv2BanCygoSEWOxRO+f1VD1dVQQXjHjnZLrhDZFWr0eWYMQqtIzDIHfHd21RdrhM9RfqV2YwGELc2bOcvh061YQsxbLIuC1Axu2jLy8YJs4K0typj5G5RP8HmQ+XSzRbgydTOwIGOtaMqkmm3zU
+    properties :
+     x : 12
+     y : 84
+     width : 180
+     height : 51
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : LOWE
+    identifier : 0x3e9d90cb3e97a464
+    internal_properties : CQAAAAkAAABUHWJvSWd3/cE+muPndcGn1dgODagKoQXHJ/igopLXNMiFhpc4bESn0LTyxPnIzI38N1vJ3r/T69B0nyYXh1M+74HLobI6esTJcnIPyX4z9wTw/g7PueExIsY2feQA4XjZ0duLHA1t9ofHbf7z+x9IDSGixausbCQ8qocnmO98Cv8OnvoMZtUP99nUFVVTl5+avIDOWVgL4IBeygGG/cQcb+Ja1aVRnL9m15+ssJxCtHqE98VWyASgqQbL+1kOyYDvA3bU+qmAxKmSJ9+nfj7jqtItCKEDqdhwp0hTz/XapIinFH0neN+OKcpf+n8amC24+sNUUroxUt2O3BwEC2ZVecRNHzw0tB/uXyQv3qv4Sv7TKp2g+Ds3ZCkUUondaHTGUhmGz6qZSWH3UTk3F9KmVTpe0lVDNtj/PrqpVAhi65/XD6TCSGng6p9FK3yhE3sUESpJtxrEohbDCdqfFPRIShQtc7pUA4csMIy4TTzlLqKZMZbKoBvawuAQ7FKwCgLTBiMG2wJqJG9ruzmGTpAsAkiTWzsUM2Uid3ggCM9NsF/+MQcVAb8PWbcASCixL1hV6VJ905io47cDD/GrJB5z/S//anjrXL6+gYqYIdMwPeAKiWN2Dby2Z0ptTqfA
+    properties :
+     x : 30
+     y : 98
+     width : 79
+     height : 24
+    options :
+     -
+       internal_properties : CQAAAAkAAABXGWF7saUkhrdLNP2u5QfwhIABkmYSEFu4MuomKT/4vIspkHKXzy5LPDOTn78uaPY29m3CBAISP/jz8GXafCjnvJS5dA9bCvNTvieyUYYiHijZEC1lvzC3p9WlLhIFFtGNlcLfB+mmXYsE3hLbZ99Tpbve8XGLzA==
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes : []
+  -
+    name : DESTINATION
+    identifier : 0x3e9d90cb221ca478
+    internal_properties : CQAAAAkAAAAjH7F2Jq56HZbmSoAfHwvavBWn9v/dnkcJ/eBwSFNvZxmACh20QokKWkqJh/MliXz+KmL92Y6wLwqKf9Xn95Casnd9XdMQ3X//1+4ZbRDgH1sJrkEklMgDyjqb6FSSAekuRLk7KhagmXlsYkBbF9K145HOzSZKLEcyvCv5gzyXrohXZ3vXiaejuADrMiYQNv+fBXp5gpd8IHhRxEhkNepfbuTCmz1bWsQGmYTfVlEEbPXJ5BvAMp6RQYVRG42+MnfohGVqpYYw3m6uf6K7ahR0/hiniJ+Epd2mNygQOUStyIAnRapyx1ASuu7eSAn+GVj3D1zYTganFSsuqifnAuqKokAkA/zucXECWT1LEjolbae9V66q4nyF4ehCCQxB+g0lpbLdKl1Bg183tp7JoJuNB7Ca9sFNLQoeynxMh7c97wIUDHuUdvl2ziwqIzSfIX/mBq5gEP0ZLz8lUAWZEVG6y+pi7h2bBiSBYsVzMiJnqWHyFiLzs80GjzjMpnzyOLXzpcH3glTkGTCyahcl9TVwbLHUc1smUg/vtx8zEhkEGMFlatqI6heghCvF9IBDPnVqpZNox7Gm7g+EkkGxoqn21ACdsoayf51Tk0oRemRuYbfIIIK+cbJMWLu87nUvaTIiy+/JKaAApBzW9pWeibvVIl1J3TB/xVXcMsqEKh+qs0C5WbHp39U5pmlVDG1dPmDhUjrEm/oBFgdSZPiU3nfEKgTta/S9tirCpKy0BX1y/B4q
+    properties :
+     x : 229
+     y : 78
+     width : 86
+     height : 57
+    options :
+     -
+       internal_properties : CQAAAAkAAAAowRUpj6kl0/UqawdzqVPNZkb4Pt9a6wNKwG69Dr2Iq7khtgqcui926UWrGZ/GIeNPFH0rp2AMe1DkmAUSi0jTgDcCSR2kGNkltEXuxOvgZpA8sfx5lLyvb6FxuPdm9gFtxKAPEu8pKBxjB8u3bYyRuoqXJ2KEG4mErnQnow==
+     -
+       internal_properties : CQAAAAkAAADT5e2HxfHAIhNnkAliucvkiBWd2ORY2vkWOlIgJSWUbt8F0mqLiVxlPifXgUvEdBAefu8KVN9CT3hzwC2SVDDPxCc0DyqIfyiEnR7L8v+NrUGIl6DIEJkgTBg4E8PWwXhicPcqCOWaUb/IEiY3O4P3yWdybfUPSA==
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : BTN_OK
+    identifier : 0x3e9d90cb1672a478
+    internal_properties : CQAAAAkAAAChAiNAS45DOZsS/y3jpugsytavI5fG6zikQY5/iNntaELsWrcmisvEdk9/OVWATcb+of/rPqTfe2M9nxXiFO8nEsQdl5kqEz5ZyM74TyWaUWdqwCZOZx+YoS8ouZ+sMazoB6eE91J4zp6DQwuhT//LevEYJutBE/X1T4m+bFIvZ7qzejr/MzPPqEYMjbE70f/wRfn5Y+xCzeY78vwOAWgx0YcnNTrKVBN0Qoxs7PHbjYVTdbYiiVI0nWIDRWrR8hvvOmLoFKUhynje5pNwqcshM7j7jVwaexm34WDEm7kUK0PG1/n/OzNc5NpD+1r4+BbjY1F9d6Vmb4fkxxEQLT8csRvrV06oXLnXYDedHCkEsNd+Z0woKqbsthyEGmZGTD65fcpyUEz4BcTjsp3JHXZBdZJhjXwLCU2QtQQoIq9vHQCCrMQFd/CCerRILmQlX6PP25o05jWSFwCXRhxDPeHcswL3W+0uwMGTExAFPBZIcrRC3ySrtAyRLEUHngETWmVf2Puzlg8QJVA2G3xwYkZBOZIkiF3UBC5EQO+yleS6vbJZczMElut+72RSUfY4DjRw8YbSEJ7FLmp6OjcVq18FHf1hOgwNLJV6fYdY9FO5fXfDVWB81v57SHPl3QQTuAr/TLkoQ594mRgEB3Qjoy3JoK+zaQpLHnvxYZxihLkbAv1ufNkqUueOlj1tmKG2BQvaAe4S3hqaT2wS6MWaM/JFzKlX8XtRhK/v8yhv+6HIf78GmIpfSCo0hatiHqXohudawiDoD7ce7yx3kc/iqtQ=
+    properties :
+     x : 359
+     y : 89
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         reppourxopt est une chaine = sansespace(config.DossierOptimisation)
+         lefichier est une chaine = reppourxopt+"\etiq.asc"
+         numerodefichier est un entier = fouvre(reppourxopt+"\"+"etiq.asc",folecture)
+         //uneligne est une chaine
+         uneligne est une tableau de 9 chaine
+         ligneclient est un entier = 3
+         lignedecommande est un entier = 4
+         ligneproduit est un entier = 1
+         lignedimension est un entier = 5
+         ligneposition est un entier = 7
+         i est un entier
+         findefichier est un booleen = faux
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         si destination = 2 alors
+         
+         //iconfigure(sansespace(imprimanteetiquette),vrai)
+         //iparametre("FORMATPAPIER = DEFINIUTILISATEUR")
+         //iparametre("HAUTEURPAGE = 635")
+         //iparametre("LARGEURPAGE = 1020")
+         iconfigure(sansespace(imprimanteetiquette),vrai)
+         
+         iParamètre("DEFAUT=NON")
+         iparametre("FORMATPAPIER = DEFINIUTILISATEUR")
+         iparametre("HAUTEURPAGE = 635")
+         iparametre("LARGEURPAGE = 1020")
+         
+         //	iimprimeetat("ETIQUETTE FORME 99 MASTER")
+         
+         
+         
+         si  numerodefichier <> - 1 alors
+             flitligne(numerodefichier)
+         	
+         	boucle
+         		si destination = 2 alors
+         			iapercu(75,"Etiquette après optimisation",faux)
+         			//	iapercu(50,"Etiquettes")
+         		fin
+                  si destination = 1 alors
+         			sablier(vrai)
+                  fin
+         		ifenetreabandon(faux)
+         //        iCreePolice(1,10,iNormal,"Courier",iNoir,0)
+         		iCreePolice(1,11,iNormal,"Times New Roman",iNoir,0)
+         		iCreePolice(2,18,inormal+iitalique,"Times New Roman",iNoir,0)
+         		iCreePolice(3,20,inormal,"Times New Roman",iNoir,0)
+         		
+         		
+         		pour i  = 1 a 9
+         			uneligne[i] = flitligne(numerodefichier)
+         			si uneligne[i] = eot alors
+         				findefichier = vrai
+         				sortir
+         			FIN
+         			
+         			
+         		fin	
+         		si findefichier alors
+         		//	info("fin de fichier")
+         		    sortir
+         		FIN
+         	    
+                si pas milieu(uneligne[ligneclient],2,7) = "Plateau" alors
+         		iimprimemot(ipolice(1)+gauche(trouvenomclient(milieu(uneligne[ligneclient],8,10)),28))
+         //Code WinDev 5.5 remplacé par la migration :
+         //		iimprime(IPOSH(60)+droite(uneligne[ligneproduit],10))
+         		iimprime(iPosX(60)+droite(uneligne[ligneproduit],10))
+         		iimprimemot(milieu(uneligne[lignedecommande],2,6)+repete(" ",16))
+         //Code WinDev 5.5 remplacé par la migration :
+         //		iimprime(iposh(54)+milieu(uneligne[ligneclient],26,15))
+         		iimprime(iPosX(54)+milieu(uneligne[ligneclient],26,15))
+         		isauteligne
+         //Code WinDev 5.5 remplacé par la migration :
+         //		iimprime(IPOSV(IPOSV()-3)+iposh(5)+milieu(uneligne[ligneproduit],2,27))
+         		iimprime(iPosY(iPosY()-3)+iPosX(5)+milieu(uneligne[ligneproduit],2,27))
+         		isauteligne
+         //Code WinDev 5.5 remplacé par la migration :
+         //		iimprime(IPOSV(IPOSV()-3)+uneligne[lignedimension])
+         		iimprime(iPosY(iPosY()-3)+uneligne[lignedimension])
+         		iimprime(trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3)))
+         //		isauteligne
+         		isauteligne
+         		SI impressionetiquettexopt.lowe alors
+         			iimprime(ipolice(2)+"low-e argon")
+         			iimprime("surface intérieure")
+         		fin
+         		
+         //Code WinDev 5.5 remplacé par la migration :
+         //		iimprime(ipolice(1)+IPOSV(46)+uneligne[ligneposition])
+         		iimprime(ipolice(1)+iPosY(46)+uneligne[ligneposition])
+                sinon
+                 isauteligne
+         		iimprime(ipolice(1)+milieu(uneligne[ligneclient],2,7)+" "+milieu(uneligne[ligneclient],10,20))
+                 isauteligne
+                 isauteligne
+         		iimprime(uneligne[lignedecommande])
+                 isauteligne
+                 isauteligne
+         		iimprime(uneligne[lignedimension])
+         		
+         		
+         	   fin	
+         		ifinimprime
+         		//info("|"+uneligne[ligneclient]+"|")
+         		//info("|"+uneligne[lignedecommande]+"|")
+         		//info("|"+uneligne[ligneproduit]+"|")
+         		//info("|"+uneligne[lignedimension]+"|")
+         		//info("|"+uneligne[ligneposition]+"|")
+         		sablier(faux)
+         
+         	fin
+         //Code WinDev 5.5 remplacé par la migration :
+         //			iimprime(ipolice(3)+iposv(32)+iposh(15)+ipolice(3)+"G E O N ")
+         			iimprime(ipolice(3)+iPosY(32)+iPosX(15)+ipolice(3)+"G E O N ")
+                     ifenetreabandon(faux)
+          			ifinimprime
+         
+         FIN
+         // 			ifinimprime
+         sablier(faux)
+         sinon
+          impressiondirecte()
+         fin	 
+         //info("fermeture de fichier")
+         multitache(50)
+         fferme(numerodefichier)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SORTIE
+    identifier : 0x3e9d90cb662ba50f
+    internal_properties : CQAAAAkAAAC3NWpRAhaXjtfxl4PGZMrkmPicrsUNULgOA/ResaHwaqMgldWc54kX3YKEsVQBsEWhU/oyp+dK2CjE3BsV/czWY8QDF0LnOUbYrHdqOIpo582nedAos5Hc+w9oTOLtZhUABVwCeb/MJvZPuLMc+GdafwTP0XCJ7+XoUIQTaOEuFME77FCAwhtaD6HON9hjfoto3PwP5hfvzrpvugWXT6gFVoVinuYiOjmAvvXmFBDxa7mqetHCFPgJ4PEQznXMujci9/PbW2OIDU6PKhfPVnLIOkuNceCdScGPQU6pDCqb6UCqfONDkZIr2J6RQX1Z0GadACldUojVk60YxouYrRGHY863HAB3OZ3pWD7FyomKzsNSF0GXIdEqwgN7RtDv+YlpGHP6X9MnGJTOIaLL0u5ez+3YPuTw49fvSSIrea4UL4eL/+wE4rAStL6OA1fap78nLvB5km/QOTKpLJkLf0lQPsbTs3t+bKtcGNl1vViGCnMxRiUMueoKuiNegskwc6AktbRlz6wYqo9nVrBDKY59sXGLjatOIKkjFTA38q4VKjOx4AkCqj6VYva+jfZFLrJpAIkj/8XmKEfzX/WLoVdhTkBS2beFdHH9lFbbNvHHe8KKy268IN/CRi7JrZ7vHFe+Q9LNgabyZ+T4npEbMD2gYhW5CDRNWReQypoup4pzH6TT4B+EMNGSwwr8Zwn2YE4/OhDw/+VuqWa9X1ZMM9h4QoUwxaxcnAjr21BTJzKoWPqPQQeVWaFxlA3kXtBvpDw9xSBf5tMXdNFBt4P9w+zQAjZRTGLx23hdlFtuKmul3tpNag2Hfsoj8s9hsbXEiNJGVP8kAUAvPuHYCrAk
+    properties :
+     x : 8
+     y : 5
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3e9d90cb6d33a45a
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAADoyD7dLaIgsVrDT8VZL2NFIray27bccWn//AaNQ3+j5uHSlWi9rbEnHlDwwKkC2rNdBIAZzfxc+0D9pM0lxg3BDsQvJ5uecRkjQvntyauWvXypi1HGPGR5QCO0Lw==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      
+      
+      
+      // Pour compatibilité 5.5
+      MoiMême..Visible=Vrai
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : impressiondirecte
+     procedure_id : 4511921603965199641
+     type_code : 14
+     code : |1+
+      Procédure impressiondirecte()
+      reppourxopt est une chaine = sansespace(config.DossierOptimisation)
+      numerodefichier est un entier = fouvre(reppourxopt+"\"+"etiq.asc",folecture)
+      //uneligne est une chaine
+      uneligne est une tableau de 9 chaine
+      ligneclient est un entier = 3
+      lignedecommande est un entier = 4
+      ligneproduit est un entier = 1
+      lignedimension est un entier = 5
+      ligneposition est un entier = 7
+      i est un entier
+      findefichier est un booleen = faux
+      port est une chaine = extraitchaine(inilit("Devices",imprimanteetiquette),2,",")
+      portimp est un entier
+      dimensionanglais est une chaine
+      aveccap est un booleen = faux
+      aveccarrelage est un booleen = faux
+      job est une chaine
+      argon est un booleen
+      ligneaimprimer est une chaine
+      Ref est une chaine
+      low_e est un booleen
+      surface est un booleen
+      description est une chaine
+      selon port
+      
+      cas "LPT1:"
+         portimp = -1
+      cas "LPT2:"
+         portimp = -2
+      cas "LPT3:"
+         portimp = -3
+      autres cas
+      //   erreur(MessTraduit(2000))		  //2000:L'imprimante choisie pour les étiquettes n'est pas locale.Choisir une imprimante loc...
+      //  renvoyer 0
+      fin
+      //Début du code généré par l'assistant de code de la fonction iParamètre
+      
+      
+      //Ne sauvegarde pas les paramètres spécifiés
+      
+      //Qualité d'impression
+      //iParamètre("QUALITE=BASSE")
+      
+      //Fin du code généré par l'assistant de code de la fonction iParamètre
+      
+      
+      //	iimprimeetat("ETIQUETTE FORME 99 MASTER")
+      
+      souvre(portimp,100,100)
+      sablier(vrai)
+      si  numerodefichier <> - 1 alors
+          //simprimeligne(portimp,caract(27)+caract(77))
+          
+          flitligne(numerodefichier)
+      	
+      	boucle
+      		pour i  = 1 a 9
+      			uneligne[i] = flitligne(numerodefichier)
+      			si uneligne[i] = eot alors
+      				findefichier = vrai
+      				sortir
+      			FIN
+      			
+      			
+      		fin	
+      		si findefichier alors
+      		//	info("fin de fichier")
+      		    sortir
+      		FIN
+             dimensionanglais = ""
+      	   aveccap = faux
+      	   aveccarrelage = faux
+             si (milieu(uneligne[ligneclient],18,1)  = "L" ou impressionetiquettexopt.lowe ) alors
+      		 low_e = vrai
+             sinon
+      		 low_e = faux
+      		
+             FIN
+             si milieu(uneligne[ligneclient],19,1) = "A" alors
+      		 argon = vrai
+             sinon
+      		 argon = FAUX
+             FIN
+             si (milieu(uneligne[ligneclient],20,1) = "S" ou impressionetiquettexopt.lowe ) alors
+      		 surface = vrai
+      	   sinon
+      		 surface = faux
+             FIN
+      	   dimensionanglais = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ) 
+      	   aveccap = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Cap") 
+             aveccarrelage = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Carrelage")
+            // argon = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Argon")
+             job = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Job")
+      	   Ref = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Ref")
+      	   description = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Desc")
+      	  // low_e = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Lowe")
+      	  // Surface = trouvelignecommande(milieu(uneligne[lignedecommande],2,6),milieu(uneligne[ligneclient],5,3) ,"Surface")
+      	   si pas milieu(uneligne[ligneclient],2,7) = "Plateau" alors
+      		simprimeligne(portimp,caract(27)+caract(77)) 
+      		simprimeligne(portimp,gauche(trouvenomclient(milieu(uneligne[ligneclient],8,10)),28)+"  ")
+              simprimeligne(portimp,droite(uneligne[ligneproduit],10)+rc)
+      		
+      		simprimeligne(portimp,milieu(uneligne[lignedecommande],2,6)+repete(" ",16))
+      		simprimeligne(portimp,milieu(uneligne[ligneclient],26,15)+rc)
+      		ligneaimprimer = ""
+      		si aveccarrelage  alors
+                    ligneaimprimer+="Carrelage"
+      			  //  simprimeligne(portimp,"Carrelage"+rc)
+      		sinon
+      	            ligneaimprimer+="         "
+      				//	simprimeligne(portimp,rc)
+      		fin
+              si pas job = "" alors
+      		 ligneaimprimer+=repete(" ",14)+"Job:"+job
+      		fin 
+      		simprimeligne(portimp,ligneaimprimer+rc)
+      //		simprimeligne(portimp,milieu(uneligne[ligneproduit],2,10)+ " "+milieu(uneligne[ligneproduit],12,17)+rc)
+      //		simprimeligne(portimp,rc)
+      		simprimeligne(portimp,milieu(uneligne[ligneproduit],2,9)+rc)
+      		simprimeligne(portimp,milieu(uneligne[ligneproduit],11,1)+ milieu(uneligne[ligneproduit],12,8)+" "+description+rc)
+      		simprimeligne(portimp,milieu(uneligne[ligneproduit],20,9)+rc)
+              si aveccap = vrai alors
+      		  simprimeligne(portimp,transformeligne(uneligne[lignedimension])+rc)
+      		sinon
+      		  simprimeligne(portimp,uneligne[lignedimension]+rc)
+      	    fin
+      		simprimeligne(portimp,repete(" ",15)+dimensionanglais+rc)
+      		si milieu(uneligne[lignedecommande],8,1) = "F" alors
+      			 simprimeligne(portimp,repete(" ",33)+"FORME"+rc)
+      		sinon
+      				simprimeligne(portimp,rc)
+      		fin
+      		SI low_e alors
+      			simprimeligne(portimp,caract(27)+caract(14))
+      			simprimeligne(portimp,"Low-e ")
+      		sinon
+      			simprimeligne(portimp,caract(27)+caract(14))
+      			simprimeligne(portimp,"      ")
+      		fin
+      		si argon alors
+      	       simprimeligne(portimp,"Argon"+rc)
+      		sinon
+            	simprimeligne(portimp,"     "+rc)
+      					
+      		FIN
+      		si surface alors
+      			simprimeligne(portimp,caract(27)+caract(14))
+      			simprimeligne(portimp,"Surface intérieure"+rc)
+      			simprimeligne(portimp,caract(20))
+             sinon
+      		simprimeligne(portimp,rc)
+      			
+      	    fin
+      //		SI impressionetiquettexopt.lowe alors
+      //			simprimeligne(portimp,caract(27)+caract(14))
+      //			simprimeligne(portimp,"Low-e ")
+      //			si argon alors
+      //		       simprimeligne(portimp,"Argon"+rc)
+      //		    sinon
+      //      		simprimeligne(portimp,rc)
+      //				
+      //			FIN
+      //			simprimeligne(portimp,caract(27)+caract(14))
+      //			simprimeligne(portimp,"Surface intérieure"+rc)
+      //			simprimeligne(portimp,caract(20)+rc)
+      //       sinon
+      //		simprimeligne(portimp,rc)
+      //		simprimeligne(portimp,rc)
+      			
+      //	    fin
+      //		simprimeligne(portimp,rc)
+      		//simprimeligne(portimp,rc)
+      		si pas sansespace(Ref) = "" alors
+      		   simprimeligne(portimp," Ref: "+Ref+rc)
+      	    sinon
+      		  simprimeligne(portimp,rc)
+      				
+      		FIN
+      		simprimeligne(portimp,uneligne[ligneposition])
+      		simprimeligne(portimp,rc)
+      		simprimeligne(portimp,rc)
+      		simprimeligne(portimp,rc)
+             sinon
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,milieu(uneligne[ligneclient],2,7)+" "+milieu(uneligne[ligneclient],10,20)+rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+      		simprimeligne(portimp,uneligne[lignedecommande]+rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+      		simprimeligne(portimp,uneligne[lignedimension]+rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+      		
+      		
+      	   fin	
+      	//	ifinimprime
+      		//info("|"+uneligne[ligneclient]+"|")
+      		//info("|"+uneligne[lignedecommande]+"|")
+      		//info("|"+uneligne[ligneproduit]+"|")
+      		//info("|"+uneligne[lignedimension]+"|")
+      		//info("|"+uneligne[ligneposition]+"|")
+      //		sablier(faux)
+      
+      	fin
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+      		simprimeligne(portimp,caract(27)+caract(14)+"       G E O N"+rc)
+      //		simprimeligne(portimp,caract(18)+rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+              simprimeligne(portimp,rc)
+      
+      
+      FIN
+      sablier(faux)
+      SIMPRIMELIGNE(portimp,CARACT(27)+CARACT(77))
+      sferme(portimp)
+      fferme(numerodefichier)
+      
+     type : 458752
+   -
+     name : simprimeligne
+     procedure_id : 4511921604334560917
+     type_code : 14
+     code : |1+
+      Procédure simprimeligne(portimp,sligne)
+      
+      
+      secrit(portimp,ansiversoem(sligne))
+      
+     type : 458752
+   -
+     name : transformeligne
+     procedure_id : 4511921604471596693
+     type_code : 14
+     code : |1+
+      Procédure transformeligne(ligneamodifier)
+      valeuraretourner est une chaine = ligneamodifier
+      
+      souschaine est une chaine
+      souschainemodifie est une chaine
+      souschaine = milieu(ligneamodifier,15,6)
+      souschainemodifie = numeriqueverschaine(val(souschaine)+4,"6d")
+      valeuraretourner = remplace(valeuraretourner,souschaine,souschainemodifie)
+      
+      souschaine = milieu(ligneamodifier,23,6)
+      souschainemodifie = numeriqueverschaine(val(souschaine)+4,"6d")
+      
+      valeuraretourner = remplace(valeuraretourner,souschaine,souschainemodifie)
+      
+      
+      renvoyer valeuraretourner
+      
+     type : 458752
+   -
+     name : trouvelignecommande
+     procedure_id : 4511921604300351155
+     type_code : 14
+     code : |1+
+      Procédure trouvelignecommande(numerocommande,numeroligne,type = "")
+      valeuraretourner est une chaine = ""
+      clederecherche est une chaine
+      commandeconverti est une chaine
+      ligneconverti est une chaine
+      hconvertl(commandeconverti,val(numerocommande))
+      hconvertl(ligneconverti,val(numeroligne))
+      clederecherche = commandeconverti+ligneconverti
+      hlitrecherche("tempo","clecommandeligne",clederecherche)
+      //hlitrecherche("tempo","clecommandeligne",val(numerocommande)+val(numeroligne))
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //si pas h.endehors alors
+      si pas HEnDehors() alors
+      //Code WinDev 5.5 remplacé par la migration :
+      //	si h.trouve alors
+      	si HTrouve() alors
+      		selon type
+      		cas  "Cap" 
+      			si pas position(tempo.tcapgaztube,"C") = 0 alors
+      				
+      				valeuraretourner = vrai
+      			sinon   
+      				valeuraretourner = faux
+      			fin   
+      		cas  "Argon" 
+      			si pas position(tempo.tcapgaztube,"Z") = 0 aLORS
+      				
+      				valeuraretourner = vrai
+      			sinon   
+      				valeuraretourner = faux
+      			fin   
+      		cas "Carrelage"
+      			si tempo.tcarrelage alors
+      				valeuraretourner = vrai
+      			sinon
+      				valeuraretourner = faux	
+      			FIN
+      		cas "Job"
+      			valeuraretourner = sansespace(tempo.tjob)
+      		cas "Ref"
+      			valeuraretourner = gauche(sansespace(tempo.tjobligne),29)
+      		cas "Desc"
+      			valeuraretourner = gauche(sansespace(tempo.tdescription),28)
+      		cas "Lowe"
+      			valeuraretourner = tempo.tienergiverre
+      		cas "Surface"
+      			valeuraretourner = tempo.tsurfaceinterieure
+      		autres cas
+      			si tempo.ttype = "1" alors
+      				valeuraretourner = sansespace(tempo.tlargeura) + "  X  " + tempo.thauteura
+      			fin
+      		fin   
+      		
+      	fin
+      FIN
+      renvoyer valeuraretourner 
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3e9d90cb457ca45a
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : L'imprimante choisie pour les étiquettes n'est pas locale.Choisir une imprimante locale
+     index : 0
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

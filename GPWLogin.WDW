@@ -1,0 +1,603 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : GPWLogin
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : Saisie du login du groupware
+ subtype : 0
+window :
+ name : GPWLogin
+ identifier : 0x3bd58f500130b737
+ internal_properties : CQAAAAkAAAB/ZNBHo6vZ7pZ8iWJfviaD9gBTq0Vsq8uEYMXKpuma7zO+BipXhBPtCjQWMHUyaWOK3ip3TX4mynjpK42jXZNvLLrTPqoT6+BhCb7rGVU/X/kLWkOOcra9NiGbeXPEzlKmBGT2kqnGk5tf5TVzFLPfSz2dSrPKF/rpaol9e+r0Ot4ByHNz5iu+gaV0E912zMQcMY01HKRexzog4dhhbi8tWs/JmIphj7JogJKA23PsUuj1p47UTl7PVV6kzzhqLGk3Bn2Dig99pOIlfV0LaZD/UPcHOq2Q0hLKKvHH6I54acM6Hza1F6W/q3vqzlD15wgQRgQ47irfhs+TDIQw3PPRWfmIWSzC0/lnTbKK0UIj85hf02hZhaNFhyW4jLkJoBGno2qEzmnRHum8nvLlTe/yFXsjzh1p897pHix8JSKjeMlFC1u5R8/Sindu+Qk+3PMqa79jcFTSWSrVpBalKRtmr42jv+fGbNNnNTGTrsalOvbkku4MMKhMeGAH/66Pg7fsCaVuvbMGgWrlUgrhXR1wZ1QItYyw6n8F5KqimfLL5cYFz7FfZBGJ/WrhhiRIoDYMStIO+33gJZ9rJg+wYoSmH0KBgGNp93Uaq0WBEt4kw/LJx5Jd56vcKbFb/RTSv9YpJo6FUE00eKm7dLFyBhDV2pcIruqifl4uaOgsfxUfI+ucHFyghdrXRaEBMBSuL5D/gg5nCrwZZIGV6TEJXdgbAoRmRSUqSI6RRHgIqYxDjnvUhbWwBRoVsvdxIUFK1NUiFgx2GLt+2EKM+srXJqdjwP+AfeWQdvc=
+ properties :
+  width : 322
+  height : 240
+  widthClient : 320
+  heightClient : 208
+  widthMin : -4
+  heightMin : 5
+ controls :
+  -
+    name : MotPasse
+    identifier : 0x3bd5903d260655e6
+    internal_properties : CQAAAAkAAAC433q9YnfsLjyIA2GR4MXsmgxXWxntnOfkVADnBA/HrhEErjHFhRO1AFo4DwjjEvfnreUSfKsmPtfv3jSXUC9tMV1mBfKK8eg0ZrLaT5fawjs0OvGxvHp2kBCtkys1n9dPyj5F+fA+eiT/P/sw1+VMEaV+2uTfu49oXr28yMOrOToQsQ0AnqPMbftA+UCRD1mqadlQ/6yYi5TZVs2QSpTipLfoiAYnj+aJhqiMv+1hN/E0Bfhycf0H6oORdPqHOVNIcGHHnPWeac0sjMR4SAvfY+rzUE1YBIrR9BG0z08OTOmQCqnmxjykqhD9aGViW9s/2nDdWnSdYWBCcmmPAgyydF6f/tzGrXDc448UINZW55/B84twPY6iPn4m53jLQK4h87mOILDFD2x/AP+IbJVzh7f9uRMvksRtGdFa4jHJsVNlG7kRUBd8tzqzIrHa+q2HLwTGOphLcbF1YqRC7wz8YMecgDe5wnC/0FvgAZpYQRUCZEa0e/CZUeuT/RfKrjF84i9mRq1WOHY/pOi32J2dtqMOEEuOA5cwRr7Y+1gm2kPRwdgElP3EOjgPCQd+8Deg6BEVle2mDPysbfJh6al7lIFqbm5gWIjFFn/PMADsp7v+sRTS1E3pVODM8N1Ese6ic5ahxLZ1VUE99tjNq5ULJYvhQdS0enjhk3Qa0ertVm/EzqNjfANJxQZTgQs4Jyh4CcyE3vVCvDeqlM5DwTkFWiSGUUAxCQWoxIP3YOKINs+AFtoIFdZWmBTQplAGXAO22oQrT/AO2tE1XsmKKPhbXk1TCaJss+6bI0HBT+2U7ElS8lxancK81/yOnBOE
+    properties :
+     x : 20
+     y : 106
+     width : 279
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : OK
+    identifier : 0x3bd590f30b071ef4
+    internal_properties : CQAAAAkAAADE1P9hCRyR0vIPX1m1HVHeiK/4RXOX9ASxFcRWZ1Iw7vV4BcDC3TenKHSi+z0RoC3Z/eznkQiM/FyMDO8qo5dgEH4tixWspQF+KzvbcB34sqpLqv3S0jmjI5iKlIcokkT5C6CHMYgtnPKfq+PYz5FspmUd0iFDiK1ZeTroS2t2eYVqjRrbqC9y8DQ4J3gfoLdqiI25+R7P2S/IGr9wK7lg7SFaDeZYLCiblNyHApJSp2Yr1A4oebrcfZvWpufYoMk1QfwZ9Jiw2Jwc0BP0hsx6lVNcvoQVsqnQrhjd4ub/so8dmK0zsyXMuAimaHaTvW1pTVIAKfUIecDKhcHetEw6b128D2S1yxfVF+h9ZpuXIfM4bdEtqtivAj2zNousYmR++ffo6ZY58KzixM2oS+alUcaX9xVnOBZnf8QSduBtnnd0cBY7Zel/zF4n+yAIMMYC26f8sIRtvqO0iymmLM+y3EUnt43uiP4L8VuN/BOtmburIpr/de6T0f6o3qM5P5A+omVQl3DZ1lqkZBTTMLdHjw0W9wEo+zVWWLpGdfZIbyCw2yTTzn2WxV+QgtC9lcRIju+OBg0wnflV+FifGvnRvfuT+AE8GfiVu1zWk8sQGS4leM9PZeBpd510lCL1Vpc+NpIGxgtwAAsUYwSlkffDslYNwa78SLMuoN+zetMr5c0sHslmo7VSe5Fj2bIhr7T1V4LVK44GAcsYcB5Wssr7HwIFXvLle/pygxFoLTLUqVbpepxO1cEWmF8wfsjTJnP9xM9t/9JfaHt15jpDX/Pb+zAiX4WXEUa4l2T80tg3O+bTsUtimN8=
+    properties :
+     x : 77
+     y : 178
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         // valeur renvoyée par défaut
+         MaFenêtre..ValeurRenvoyée=gpwOk
+         
+         // si l'authentification n'est pas faite avec un annuaire LDAP
+         SI PAS gpwEnModeLDAP() ALORS
+         	// vérification du Login en allant lire dans le fichier
+         	VerifLogin()
+         fin
+         
+         si mafenetre..ValeurRenvoyée=gpwok ALORS
+         	sablier()
+         	mafenetre..ValeurRenvoyée=GPWLogin(gpwEnModeLDAP() ou gbSecurite ? SAI_Login sinon COMBO_Login..ValeurAffichée,MotPasse)
+         	
+         	// en LDAP, on affiche le message d'erreur après l'appel au GPWLogin
+         	si gpwEnModeLDAP() et MaFenêtre..ValeurRenvoyée<>gpwOk et MaFenêtre..ValeurRenvoyée<>gpwAnnulation ALORS
+         		// trop d'essais
+         		si gnNbEssai=nNBESSAISMAX-1 ALORS
+         			Ferme()
+         		FIN
+         		
+         		// affiche l'erreur
+         		Erreur(<§$000c§>+rc+RC+ErreurInfo())
+         		
+         		// un essai de plus
+         		gnNbEssai++
+         		
+         		// redonne le focus à la saisie du login
+         		RepriseSaisie(gpwEnModeLDAP() ou gbSecurite ? SAI_Login sinon COMBO_Login)
+         	FIN
+         FIN
+         
+         // fermeture de la fenêtre et lancement automatique de l'application
+         ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Annuler
+    identifier : 0x3bd590f8182e30c1
+    internal_properties : CQAAAAkAAAALJDsYJOgQGJ+8+vfjenrRG0oe+iegyb3zBbOSbe2GLDrZZC/94n2a3DCxe55nUaKhizCvg4X4OfGH0Ura95r9KyQ/r9MhX4KprPl/2R3mmEtA5/oUu8ocqG/MRIiVWdJlBRVQubEkQLHjUTG0ukAWGJgkxlk1DvE4IIEZfsM+iOdgPO/lJQ8mJLZtdk6N8v+lRHFNM2BkjJoJiCCT6NyEzN+lpzAwpOvR5++MgEFcJVMA8pBDFBC3rMjb5C9owcHCgwOD68xbZaHceocHvbuYEqNh/HVO2gF6K2mgG92Zw+rAB3VY34+nYYia5kBDwahZl1sBNYF1Y48JxmthlaOC7a2f5xJvFG/o6azuH9E+r3fbEzfgrCo0jinmjARLt7uSpHf+BF9F5mvDezRXNQ9iFLfwSTrsP/QvtV/POIfBOcsu4YaoBvwRcJ6wMlZpOnfMZWIS4eHgMnnOZgauY5XJZJdsGyxZifDDB54CFByhphfHRRj60OOzoyD9UTfsFem+WjrsxFFICCr0ReuLj5vk+1+zC5Yh9H34trfh6RHA1A5YkFg6NWaQaf+HG3h8iR8KBvyo7+JXr33nkVevwVeeGa0MUDRjPoz3T32FbZC6Gibx0V3+aIfLi22L3QD4OKbG4nWEVTKlbH1qXLNdEukuxtBMafUHGdGWJiRm+srlO7PPeX5ES3tBAvIykqTgP22m3FoMc4mPkJrPo8FlFQZFJcsNFf9h0FwvOBeQUBkq8eC+oP1ZzyWfIFBl/mT5OA7G7k4UnovwZyXBLYT6qAmo9Gq+Jp0z3/m03zwXnJypPWs2mHgNdDDGqUE=
+    properties :
+     x : 163
+     y : 178
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // annulation
+         mafenetre..ValeurRenvoyée=gpwAnnulation
+         
+         // fermeture de la fenêtre
+         Ferme()
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Bienvenue
+    identifier : 0x3bd595c26c24e7c8
+    internal_properties : CQAAAAkAAAC1eRvms+13yUloXG1XkSxAFEp89Vvc+Qscu3a/aVJor7EcCM8sPunQCex1HT7XCEm0/3rncpJGX/aZNDNpREGXSM3GHzRAkWbdhuk0Ss2UA499A4/RHYBdNJtMhRnBlAJWKr68rDxP90DIB3dznSPxhh/Iao79c2KIz09Xo7TLFRtgVvZ6AvqPWHL/IpdG+M2joVqzfu+idfSYykN0G3ch3IzYYJ4q4T2BksIASuBQw8u5UZ1YSxgUnD0gp6zE5bUu5MOukM7Vw0s5hEoqywOrUnEUZzqL85K1VEcZDfRthJMyV6D0/JTpFuAbKjUfDm67isP9/LjE6OSrruOu78yF0TSPcOeDVVnLPA9NgOFxqgli7pcX3/NwvVwh6LM5TWDx
+    properties :
+     x : 6
+     y : 6
+     width : 308
+     height : 25
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1+
+         // modification du libellé de bienvenu
+         moimeme=<§$000b§>+ProjetInfo()
+        type : 14
+  -
+    name : Confirmation
+    identifier : 0x3beabd867bcadb84
+    internal_properties : CQAAAAkAAABDcOQ2tfZERxwUMzCShpvwVQl8AS1RvQaZG1hlZsu/lrPuKCaOg1Bv6InVcdeMl0hzeDgmVm8Rg50gGvhbaX233bKi9Tf8FuO3XddVPtMKopGu579yEGeEu5aTiy+9o9XEB4dEDLDOMqmJ33Q57HG1u/UJ5I2PDhNrQGAvakZz7XL9KLTTolDYFDHpA1SKBXAgtGzfDkYQAx/R2wH1u6wPvmh6CGOy5RoP0sjwfvgr2ZLFjB/T0iiwhA+0ypnFxysWKQitxo3UssGIPxkKvAR9CJEdL/ONN91naVc8u7X6u+XaqQKF3N+D/WCeewJhi75x3DVHeLHEBl5LCV+n+Rapatz6t+khdBwzlMY3zOU6iHRqK+1jHouIew10vtOnyZV/t7xmyodE8YEDTVzHqOGV4aD0muOQMwTNm3NWQtbzM9wUt/tvZFOTp3rd9lkTuUsehzh4lWjNKZMvkff9nwup9ltlvmDxEUqCwlmhpyP1EytehqPqF61RMqbcHFTKcR9wk9wiKrPjzu/THexHwCjRxbJlntW/5TcqvoKISiFwGEtgDuIOEmX5YsUBwlhGBopRxV2/J4apl11f3a30vii3r02n99d0aqT+4rRaK9TNJ7B9OzfLDo9eI7BOIiPVxlXZYroNLhYUEzOKRI2z7GXj+ROhgzfY43HI5ESpOyhEqz5znuZJmDlQzNppk47iZ+bn6g0eSA5iLVL5DdHEFYb2nSwfr8Aqac24zmbtmWRF4k0ZsK0V28mdtQZwsvub3ahrgW5GhO6xlF1RH1q5iRzTnbJuv1ZHk19DqhEB1+4/JF8mDWgfUFxw47L3pOPE21GLTe8hrs3fnA0iPFUUag5dLKlz9Bn0aqs=
+    properties :
+     x : 20
+     y : 136
+     width : 279
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : COMBO_Login
+    identifier : 0x3beac02571d519b9
+    internal_properties : CQAAAAkAAAAAlmhz3tfsLsFdNjAj+pQLraDJ6uEqYcowohPwH79HrLY6+Yv7N7WEWmhmnJrIjHsgAQMP77Pn2lsGs6aUJUc0LYW8D2bgUBilafz1J0L2SHT57eq2ybiK2YXWpA0S8pU4oP4rzqftdBI/4WSbf3UXo7naeUTGxpeJWuYhOKEsBgKdt5z3D1OYQal7mvgrOO0x5xPd+sfxvueudJACyjtsUfMxsH1HRA/IIb+cdxlYshiY0KKEibAADINx0tyAHJNseksr0SEFK5pC9l1JMG/ZpTX0tgUVd6SiSDRYW03fu/bNMXi2CIvDXwQoQRgWg5VKiiK0uDOBuVCJfCjIrLHZhXAyHNjpgM6UbmlMrKS5AbVgThy36tkmt5U/KmJeu/GW+BrC+m3TRA+Di1U+Ta12qrdn6CSQ+0nc/YHqqiarH6J3y34lEjvNG6zlUPyq3NQJgMxEYK6V5hR/c0vWKg8BCDu6syKrC7xF2Go9e90B4EKN8i7QMROwjYU+YLRpyqqVG8NB8lT1VUZRMy39T4y+ZDeweACly/JMKIWeUvz1GrbbbcYdPF4ReH7In6PCwZ05mFUOhHxyQS5YqkfRU1S30Y6Sj771AcIVTlKNcgI9q/yJ91I8vIvwM8RxaFzpBTE2Y8NDC7fu31ir6FKhBrlbgNoae4o3sL99+ly5P9HChJmwF9Ki7mku/KyVu9rt5ookw9FgOQBdNYlzs8U5bInCdHVMJkz60DmRjJDlJN4xj452xVRbFasz3KDKNmo8I51hRfDCAY1ckmJbVdczhnEErkz8IMuYufqEB8E3/N10SLIeC8ut3yd/o2Z+DpRHDdt3ucO2JTSVw5P2v7VtWLbS/jYNwcytXKR2kX4MZP2kvv2cJKxMrt4ak7+hne772HhDb81o/zGCHfCOvfrR33bSL8GU8svOd69UKaxyMD2dDyGjaSKVCCcOw33K5uRAQnbcH1U5GDIgiyJaKcWGRsJHR3wrLnVl/XSqCQn9k67A0mszAamSsDOj7vQV3Z78Wxd0cLP69uZsigzZeq6cAtq2ucLvAKYrbs+ARdQ2wWAVfkx+mnATDItD73UaauFrxL5dUCLq9swVPEA7ZqSj2kPNPCKqyq6sUgHbuWnE7vXtMOknLt7tFz/KP4MWNAnWLCzu5jIGxkohsLln6k/Iubn1sB3YDbzmwY0YK+bl4Brj2KQ+sfGB4PUF6XDs3Gv22YnNRqbbO+POxRDEkXFNIIpUJoiTLUJb0NC7PqOIi0n/R1YFTji5K7wR0kQrzLkzq0EEVr1g3MxFZMwRM29MJ9kt5236Oeve/H/Nfnyvmz6aeNs/CuyOFa1CPtd6/AtmlA02HS+ORMCCTj5oKfiRQqrMT2TTPp8CFTnnWIjX9eDq/u6qEc2Z8b9fgfJzOqDVV2os2/A3rU6KjfhwRlAjbbrGDxVOGnc10I1J/H5oYjZ/V2of/eo=
+    properties :
+     x : 20
+     y : 76
+     width : 279
+     height : 24
+    input :
+     internal_properties : CQAAAAkAAADBAiDYiaPgqhw4nGWl6mas88fvl+WwUs3y9In5VEU39w0w2yCSMIArpmEwhHme4nQU4JpM8zs78B2wgVFT6/SgwVIr/65UrgUGPxg472bqVVxymWCeqs8An2v8WHNHdSOhjNm8xqFZ+POV3tdy5rDILfQGJ1IGG3yDpeU2xxdgDQcqv/Gl6ILIdE5z551VQdPN1OfeFNC0FRwQ6Wv4Bg1lw78L7UyHGhy2+xnyEJrlOAO4NekZmSN1sobdWeqfGbhGr3SK9fQmfLabPc9bm7zPW0GgjCqaJrSTJT/VPXHmAyiVpuFPHQsy11U5/BqzpjwaJ+TP02U/2souW8D/mpXlW3hJqFhM1/MHMHgBeWo7tMPx8Vv+o8XOAxezVDW4oeACQJzXjAesP9KtjotuIrfZYwuS8f6RdKfKz1hhBFDMdRGom7m3A+F9Jnhtx4jSmIFaYNLylceJAg8C1S+dLhd8oCjHUY9CFcwm11pPXE6mbXq3XI6uI7Yrl+ydjSRHUX6CnouFlrC3hLyBqTBc0GT+sLmHWdRcXuPRxWrPC9mUmYK+4nRTXhF6gXm464LKNA==
+     type : 2
+    dropdown :
+     internal_properties : CQAAAAkAAABzrTsSPBE1KTaMpjEqW6vob84owlL1zVpgPxRHLxAfXLgyS5uGz+0buljXezRCptVLFLowuhzyM8bWYFIgtYpyw0z3b9EYPNIlI8ZQBmW6jzGkCrFWdE+QZpWviS7ICQvmYwNycaKC1mqh2fCkDOFr2+dP67yiWCtqTAw4JPfnPeomdiRnMyXOZ+Aeqz354qMJWLJcLHDuNYNdHe9HM96QgTAN76bb87pQEHvnNeD73/5l94cRh8iiWEytJL9DPgJ/CI4kBnxh4och0Q1WZk5OyKZ3Rwmbh/0ypXdNWwH8OwpA06YC3stBKqVANLw3XJOaE4AxNPB3JYoYV+yNIVXv44gxWdhxNGGcxKz7aS8B9zrtSYqWyPzwd9cd0YFug3fDnZ7AaJb3jMh1cP16pbm4z+lpmcoZlRa+9DUwugv+l0131r9SYn/7AQR3hUIBnOU3eb7jhqJGbaPLjBjFGvJTQ2cOZ9IUh462TAWtpwub4vYesXqtamjcxr7WlfucUVAdT2sxhzjs3LmGw+eHzSwQMxfd1z/82mMG2MtUgyd9phNSEGUc8BpvCec2fsPvGJEdMoTJicPPL9k=
+     properties :
+      height : 152
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1+
+         // par défaut le champ de confirmation du mot de passe est invisible
+         AvecConfirmation(faux)
+        type : 15
+      -
+        code : |1+
+         // vérification de la confirmation
+         VerifConfirmation()
+         
+        type : 16
+  -
+    name : libelle2
+    identifier : 0x3beac404652a36d7
+    internal_properties : CQAAAAkAAABKGt5jhHG+q/NWuo5FAUGHU29gPdKjHlW4+QEoeyA+98ri14H/SnVDYUiGnt7Nomp0p/7FCJQy+6s5QTDJK+dUI0fQQTLbTeRSVDrmzEN/BzXauozCgKl1n5wCC2DKQhya7itzrKL3mgB2AdeVPca2TMdKKdzH7g9+RLVrKyPyERWuq0iDHkTOqBKlvLvnYZcg9ZAHUq/Vh/0g1QmF+ZnBO/Zwwx+30c+NTdzWzfpAagBw9FyDy6ZB6cxTWClsQ9bVz9LRR3rbBIKGtS/DJRv+OyZ9alFZj1+4M0JWrkBXWZSRwokZgqzyZdv6SyqH0HVG2f6GoaaUMxO0g4jfyZQE+EufI54Wby9hDVWxQp28FmlrzmY+zTzMkdYZFtwTHIpDHkN/lrT3BDohri0UzVyHZG8onMpRy2VZOarMKxZ/UG9px9kjhyLAOvKugQ589SxpnuE/aMJkCOI=
+    properties :
+     x : 20
+     y : 41
+     width : 262
+     height : 17
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : Image1
+    identifier : 0x21c316263f38f783
+    internal_properties : CQAAAAkAAADnoaGbuqm2IbkeZtCuIw6opFquSuIzFPxOOKkePA0BmXWqu8sr0LEnTaYTwsxyLp6RO+faPffNKQavp+QX9cpY9JMBbEMsaPxRm0LiBKUyqZgz2AysPXoYtMtInn8wgmQhCOEfPtEjd58TemN9mrx3XQlzabgs43+cq8mCXOzWqqorGe44rrPaXfY1RSiOMfWasoajgA23qx++/z52OC/oac2Ul+kBRJKOa22DQclJ+20bs+5y33bpHlicRUl3Pgu+54MuW2/8rBAFCXO96G8k1gNR3KzJgyDXS73hHIENUh5Cj50MvTyY4iunm0dgUblqLPY5HIh7I3Mk2LxEYcEW2qWSOJudeKm2yplgH7wf8nFLVJEFTKC7sW2M23qgS4jKQB45iAg3vU8yfhgX0iTgRULVN+zhRVTD8CoQ0QxNmHXlkNCALQpqJ2jegkQG0+SPbxHsMDdpojaKNr1WbTvGcV9k9INkYbcJTSVqXSB8VkNsuz6ci9qKz0+D+1UY3CPIfCs4axapPNuQmg8qBdy2c3sTsKYVnVU2XEYWvfgzpX8yG8Q4q3DWNNk855Jf9ScAm99/i245B7NKdz0DzvRAwoDXR9+wNwclp6/Bdi0LC/RPD/P8PbIlEq8XRlQz
+    properties :
+     x : 6
+     y : 64
+     width : 308
+     height : 108
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : Forme
+    identifier : 0x21c316543f68a8f1
+    internal_properties : CQAAAAkAAAAVgDPvQEL5G1d8vA6PTpVUisjOWD2fRr1SFgFYBhznzxHx/hwD0PFQNY+BvgArDhAgX3LY5k+xdC3/iQGsEM3GSgOQtjksMEcg4AUlmXml8ogZzW74KlW5jrDOPRReVf2go5bF/YXGx82umwTSQ6qn8HZDFt3/EBhRLdfL1V+FcpQy4Uy/w29GfUj5BT+OGirKkisvfwZ7WcmoKCYOPMF7r39Ebs/7mSGSYFHDguC1y0v/0GTuBdIVcUqSIIfFqkK0roTFJmqLDzmNUsRjAgJiB966JeCVARV9b5KpiS9kifr+xRi5ds4bksTLGJ+2WzrhhyVXWHStzPCEtfyGQOnllQ4nqQQY44fMdEKb4y4QQOF1XQIspmVBkaMMd6yHo+aEGl6vpzlCLM7w9dubMwi5hjJEjL/8DnVJ4x1XKrZY6sF8x+yMJnokSpvHYNM9k4yikU+7b0TZzDYLIliRMfsF8Us7n8R0Hzwq7X1VXB2hKCuAVJiwPJVkgWG3U+p+i8syz8+h758YYwTEpzsAast9BLUXMqwgCuBj8uKVgL93otn2UqTYYjmlZco2VSj6+AmaOROx11TFu9U9vqE912QvoTajAgG2Fhs=
+    properties :
+     x : 6
+     y : 64
+     width : 308
+     height : 77
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : SAI_Login
+    identifier : 0x26a8601e04e54935
+    internal_properties : CQAAAAkAAADrkgjInMB6EsUMZ5QwuJWFEo2xrDIaIwNdQay31R4roaUFZEvRUcY451lg1afh+pgxNf+EalkpdztNvE2Fwo5zJVK/KiJM69VAK1keK823K2Txs86UFMdo8wjt/vculiW5Cnt+lSKs+NUxCisISt6huG83mbEehOvf+SPd6hy9S3irhSXQunJOPF8IcT4g9APASmgTgdXWLrG4L86QKc7TYaX0iHEiT2lTqZbOBA5EDsuGDcemfwkdNQruzuXYLE8yDigMPQfI1wrV9inOvKlttVLDjHH/Y3ojbqVyQhaFqz7vf/sGUXa/o5GUuL4YacnukxtKEdSFoW86x++yRGRs0GJQz1Yh2l+YdgopXXKL6oqXrgAoVMF4aLnEQ/ZVwGSdOkQL8RfslwgdFVdm7UDeEQ10fDFKZqEczMjD90oyIonSQLntLdE2mFMiY6rPef5GzUyc+QVbHJIGjCBf2mzXS6j3FsAc0qg+89gl9A5MEltSEuCxllceMq84hBjfyEzH3K+H4bNaTeVn66Gwt32E5rNGfdSxd0i6ddunpBbBtydDbYckNRk46plilkaTISOB4L/bLDHjgVhNB7W4iS+VV5Giw8tjDGrof7bjNEE2nKQLpqUMUXB6fual1r2yLXROBew0Z+2MKsHqgFmi0jjnSROUaRVNsrxEjnNZkuLRW/pBPTrvkSIQrGfB4slGiQBu7yLRYutMFa6azOBWzIAiYHQIQIZXhVmeWUKLQ7mfbVpt3byLGzrFA+XmLUd9tOXt8uz0UT1XeM/59ODZgRGTKMTlOR89Yi56Bjj7dl0=
+    properties :
+     x : 20
+     y : 76
+     width : 279
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         // par défaut le champ de confirmation du mot de passe est invisible
+         AvecConfirmation(Faux)
+        type : 15
+      -
+        code : |1+
+         // vérification de la confirmation
+         VerifConfirmation()
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3bd58f5028f5b737
+  internal_properties : CQAAAAkAAAAbq1+mNDaDBZcqQvbWBaDZ5Jui4twharj2/575pBSh0PyCVcL5u3mR6TzbYv5DwC67T9xz88szSCE9fR3yA/H3pb0hXZTlh/z77BHbh1jQGPr8wxmM0dzQTBh6H86nTNUME//eTm3FVDUp/XiwW+2Eoy8dQ9uBYw5OLgmsY1W4CmmUUegh6Kl2n4wsAWw9o6GZKKTEEQtjhv40Ll7OfNeKO1qmikU99eiC3/N7/q99+iA3F9kT17f6Ztl9ytg6xGCakrySJ6M4XeNItP5DECFsBZTCPsV8s5lz
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAADqkqJzxKWZdhJZp/UzUpDrQ13bqfT7Lj0SB5adlPUsY+Dz29xY08NEihX2V8ygvWy1akkZD/lviEMkNk57Ywtou72YQ0i9jVFSzZg14MfqrF4ueUm++SiBuaZYCHhd
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      // Fenêtre de Login
+      
+      //-----------------------------------------------
+      GPWUtilisateur est une source de données
+      GPWUtilisateurConfiguration est une source de données
+      GPWConfiguration est une source de données
+      GPWConfigurationElement est une source de données
+      GPWElement est une source de données
+      //-----------------------------------------------
+      
+      global
+      	gnNbEssai est un entier = 0					// nombre d'essai
+      	gbAvecConfirmation est un booléen = vrai	// Vrai si la fenêtre affiche le champ de confirmation de mot de passe
+      	constantE nNBESSAISMAX = 3					// nombre d'essais maximum
+      	constante nMODIFHAUTEUR =30					// différence de hauteur lorsque la fenêtre est agrandie
+      	gbSecurite est un booléen=Vrai				// Faux pour avoir la combo des utilisateurs
+      
+      // pas de confirmation de  mot de passe à l'ouverture de la fenêtre
+      AvecConfirmation(faux)
+   -
+     code : |1+
+      // si on en dans le mode LDAP ou en mode sécurisé
+      SI gpwEnModeLDAP() ou gbSecurite ALORS
+      	// on n'affiche pas une combo dans ce cas mais seulement un champ de saisie pour saisir son mot de passe
+      	COMBO_Login..visible=Faux
+      	SAI_LOGIN..visible=Vrai
+      fin
+      
+      // initialise la combo auto-alimentée si on n'est pas en mode LDAP sans fichier
+      SI pas gpwEnModeLDAP()
+      	// initialisation
+      	SI PAS gpwInitAnalyse() ALORS
+      		MaFenêtre..ValeurRenvoyée=gpwErreur
+      		Erreur(<§$0000§> + ErreurInfo())
+      		Ferme()
+      	FIN
+      	
+      	// si utilisation de la combo des utilisateurs
+      	SI PAS gbSecurite ALORS
+      		// description de la combo
+      		COMBO_Login..RubriqueParcourue = "Login"
+      		COMBO_Login..RubriqueAffichée = "Login"
+      		COMBO_Login..RubriqueMémorisée = "Login"
+      		COMBO_Login..FichierParcouru = "GPWUtilisateur"
+      	
+      		// intilisation de la combo auto alimentée
+      		ListeAffiche(COMBO_Login,taInit)
+      		ListeSelectMoins(COMBO_Login)
+      	FIN
+      FIN
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : VerifLogin
+     procedure_id : 4312177304049488224
+     type_code : 14
+     code : |1+
+      // Vérification du Login
+      Procédure VerifLogin()
+      
+      // recherche du login dans le fichier
+      HLitRecherchePremier("GPWUtilisateur","Login",Majuscule(gbSecurite ? SAI_Login sinon COMbo_Login))
+      
+      // un essai de plus
+      gnNbEssai++
+      
+      // vérification de l'utilisateur
+      VerifUtilisateur()
+      
+      // sortie si erreur
+      SI MaFenêtre..ValeurRenvoyée<>gpwOk ALORS RETOUR
+      
+      // si le mot de passe n'est pas encore initialisé
+      si GPWUtilisateur.MotPasseASaisir alors
+      	// initialisation du mot de passe
+      	InitialisationMotPasse()
+      	// sortie si erreur
+      	si mafenetre..ValeurRenvoyée<>gpwOk ALORS retour
+      FIN
+      
+      // vérification du mot de passe
+      VerifMotPasse()
+      
+     type : 458752
+   -
+     name : VerifUtilisateur
+     procedure_id : 4312254488678779844
+     type_code : 14
+     code : |1+
+      // Vérification de l'utilisateur saisie
+      Procédure VerifUtilisateur()
+      
+      // si on n'est pas en mode LDAP
+      	si pas HTrouve(GPWUtilisateur) alors
+      		si gnNbEssai=nNBESSAISMAX alors
+      			// utilisateur inconnu
+      			erreur(<§$0002§>)
+      			// fixe la valeur de retour
+      			mafenetre..ValeurRenvoyée=gpwUtilisateurInconnu
+      			// terminé
+      			retour
+      		FIN
+      
+      	// utilisateur inconnu
+      	erreur(<§$0003§>)
+      	// reprend la saisie
+      	reprisesaisie(gbSecurite ? SAI_Login sinon COMBO_Login)
+      fin
+      
+     type : 458752
+   -
+     name : InitialisationMotPasse
+     procedure_id : 4312254801737902161
+     type_code : 14
+     code : |1+
+      // Initialisation du mot de passe
+      Procédure InitialisationMotPasse()
+      
+      // erreur de confirmation du mot de passe
+      si majuscule(confirmation)<>majuscule(MotPasse) alors
+      	erreur(<§$0005§>+rc+<§$0006§>)
+      	reprisesaisie(MotPasse)
+      FIN
+      
+      // modification de l'enregistrement dans le fichier
+      GPWUtilisateur.MotPasse=Majuscule(MotPasse)
+      GPWUtilisateur.MotPasseASaisir=faux
+      si pas HModifie("GPWUtilisateur") ALORS
+      	erreur(<§$0007§>+rc+<§$0008§>)
+      	// fixe la valeur de retour
+      	mafenetre..ValeurRenvoyée=gpwerreur
+      FIN
+      
+     type : 458752
+   -
+     name : VerifMotPasse
+     procedure_id : 4312264733254528567
+     type_code : 14
+     code : |1+
+      // Vérification du mot de passe
+      Procédure VerifMotPasse()
+      
+      // le mot de passe n'est pas correct
+      si Majuscule(MotPasse)<>GPWUtilisateur.MotPasse ALORS
+      	si gnNbEssai=nNBESSAISMAX alors
+      		// mot de passe incorrect
+      		erreur(<§$0001§>)
+      		// fixe la valeur de retour
+      		mafenetre..ValeurRenvoyée=gpwMotPasseInvalide
+      		// terminé
+      		retour
+      	FIN
+      
+      	// mot de passe invalide
+      	erreur(<§$0004§>)
+      	// reprend la saisie
+      	reprisesaisie(MotPasse)
+      FIN
+      
+     type : 458752
+   -
+     name : AvecConfirmation
+     procedure_id : 4320388400489363957
+     type_code : 14
+     code : |1+
+      // Affiche ou cache le champ de confirmation du mot de passe
+      // Entrée:	bAvec		Vrai affiche le champ
+      //						Faux cache le champ
+      Procédure AvecConfirmation(bAvec)
+      
+      // si la fenêtre est déjà dans le bon état
+      // on ne fait rien
+      si gbAvecConfirmation=bAvec alors retour
+      
+      // s'il faut afficher le champ
+      si bAvec alors
+      		// modification de la hauteur de la fenêtre
+      		mafenetre..hauteur=mafenetre..HauteurInitiale
+      		// modification de la position des champs
+      		ok..Y=ok..YInitial
+      		Annuler..y=Annuler..YInitial
+      		// cache le champ de confirmation
+      		GP_CONFIRM..Visible=vrai
+      		Forme..visible=faux
+      		// conserve l'état courant
+      		gbAvecConfirmation=vrai
+      
+      // s'il faut cacher le champ
+      sinon
+      	// modification de la hauteur de la fenêtre
+      	mafenetre..hauteur=mafenetre..HauteurInitiale-nMODIFHAUTEUR
+      	// modification de la position des champs
+      	ok..y=ok..YInitial-nMODIFHAUTEUR
+      	Annuler..y=Annuler..YInitial-nMODIFHAUTEUR
+      	// affiche le champs de confirmation
+      	GP_CONFIRM..Visible=faux
+      	Forme..visible=vrai
+      
+      	// conserve l'état courant
+      	gbAvecConfirmation=faux
+      FIN
+      
+     type : 458752
+   -
+     name : VerifConfirmation
+     procedure_id : 1741774891127655892
+     type_code : 14
+     code : |1+
+      // Il faut afficher la champ de confirmation du mot de passe
+      // si l'utilisateur se connecte la première fois et que son mot de passe
+      // est à saisir par l'utilisateur
+      Procédure VerifConfirmation()
+      
+      SI PAS gpwEnModeLDAP() ALORS
+      	// recherche du login dans le fichier
+      	HLitRecherchePremier("GPWUtilisateur","Login",Majuscule(gbSecurite ? SAI_Login SINON COMBO_Login..ValeurAffichée))
+      	// par défaut le champ est invisible
+      	AvecConfirmation(Faux)
+      	
+      	// si l'utilisateur existe et qu'il doit confirmer son mot de passe
+      	SI HTrouve("GPWUtilisateur") ET GPWUtilisateur.MotPasseASaisir ALORS
+      		// le champ de confirmation devient visible
+      		AvecConfirmation(Vrai)
+      		// le focus est donné au champ contenant le mot de passe
+      		RepriseSaisie(MotPasse)
+      	FIN
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3bf3e8b54ec8d2d0
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Impossible d'initialiser le groupware utilisateur.
+     index : 0
+   -
+     text :
+      fr-FR : Le mot de passe est incorrect.
+     index : 1
+   -
+     text :
+      fr-FR : L'utilisateur n'existe pas. Consultez votre superviseur.
+     index : 2
+   -
+     text :
+      fr-FR : Utilisateur inconnu.
+     index : 3
+   -
+     text :
+      fr-FR : mot de passe invalide.
+     index : 4
+   -
+     text :
+      fr-FR : Erreur lors de la confirmation du mot de passe.
+     index : 5
+   -
+     text :
+      fr-FR : Recommencez la saisie du mot de passe
+     index : 6
+   -
+     text :
+      fr-FR : Erreur lors de l'écriture dans le fichier des utilisateurs.
+     index : 7
+   -
+     text :
+      fr-FR : Consultez le superviseur.
+     index : 8
+   -
+     text :
+      fr-FR : Impossible d'ajouter la configuration '
+     index : 9
+   -
+     text : {}
+     index : 10
+   -
+     text :
+      fr-FR : "Bienvenue dans l'application "
+     index : 11
+   -
+     text :
+      fr-FR : "L'authentification a échoué.\r\nConsultez votre superviseur."
+     index : 12
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

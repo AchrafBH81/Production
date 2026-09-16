@@ -1,0 +1,732 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : rappventedetail
+ major_version : 29
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : rappventedetail
+ identifier : 0x3e9d90cf781fb627
+ internal_properties : CQAAAAkAAADCaea2pEPA6g7Ak14qucgeM6bto6EtiGBDZeBB4umf6nErNmeTBzC4mWHR6b9idW7PrrvoMf4Uzo444MR1zeBgSu0WkYcTGdEGRB2dYFNgPVCjx98eh9vBbepKlsa0Ih9W11j0giRqkFRkVwv9N2fsfbLORpCf+FFemLgeIveaALJqGzkl9UfTx7V/3d4b71zLJzdgL+YTWusskcfesnz8wQMMrlOSUuDBTC+Wirt/JE6yF6BKGgIwUW8MUWLyhSXjBX1TGhxIYnRe52m8iMV+jPH6GGCaE9mx1I564ZINztIxqrPCAh72RkTx70kIphKfCTjxZU1vc1I+VNYo6aks73WRuW70oH+HYGuM3FsGiWWVs4lFtmJ6DdT+vF1zqoirrukY/m7Sdw6tvUB+CbPnrUzBZ02eyrCCrH2YDnlK41WCH3S2Yjuput6V/SrKElgInelbtuUysb0m8jMdKmZ+4RIwsLHduMbs7Oh9ozCqYJsE0EQ79ZhXTZjL0RsGH2TOp0UjePtGszF1ANrIT2CkG7QmMMs6AGsDOF0k5wJeMrXeu+wXrhZopK6bcafeJXa+yVx78oTXOLqaBu5npiHteHfKrqgEXJbRYSuDtZCGXM1c54287I8kKN1agO5XDcsCYgGLTygr0mZxkyelGokhlEhGVpENPynluM+pBndNLodxjbcfsugsRDRnMtYFoLXtKNXEI6F4hmd4jh60UXFb0y4u8r4xWMZtd/Zk0t1UiO8yuVkR25YUzHMCokFOZi/yu5DU1PNMiEJY4OlVHc9RGrTRbW+gSxHarwcBwf5e/yRhl0ol7deot+xNWqvH8uDxMYdt4oP0az77n0mhalLoZWg7c5t27EUfR9m4mj/8edYupfb1ng==
+ properties :
+  x : 120
+  y : 50
+  width : 553
+  height : 491
+  widthClient : 551
+  heightClient : 459
+ controls :
+  -
+    name : BTN_SORTIE
+    identifier : 0x3e9d90cf19feb627
+    internal_properties : CQAAAAkAAAAylPn+LkUGC0WBL7VSxU589JxenhMHcYRxQb2mWMv5r7i+cMtZAdA7vR0vR+KBzHCxK7ISokV6RXkatXrQeICezsRWMReovaTdVhb7zZPa1RklSchJ7PGYmsDvxrbeoKi32UMYFP1hy6o0dna+E0ax9441dW3DAvoxW4PanPc6jDX+ea94VrjPv1Xo2+hKEqQidl1sTVyICXS0FbDwgmZ3Jg2QIBwwrd/8h/VU+BHi3+B4lHIaQA11xFHT+J2n3EdBEPS+69IBLb0BpepXAg4m6c/adi080WjklO4zG1MEPP3xFFWPWhkkA/mGAH8uE0N/nqUYGEq2HLdZg5lOcik7Z9LGoZ/+z5H0WxCbXhzb957U9y4YJs4TkTm9mb7T9UuFd4LQviP5+rn2I5qizE6pvy/vqEeOH8v9ox2q0RwYnmDOl7462SabzrHjN0/rRb5ISdyhnrIqUPhIiWn3HmnXszn5W7WNyvqiNeh380dSN3LizEEoPnTJWBK7ujnLC5cRbPD5WXFgtcdYUfp9yBgcevhXBXstxgAn4stJqF0bhbh4jn92i0K2Hjl7gZoonLtUgaVl8+SyafFm8CfbOPsmMeHWAXmeptLxAdl3xloZeq8NtV6ac9nx2ru0k1IAPMiNQHKxowFAVkr9xVkLFxFjk5iFBk76E640T01o49Nr5qFynM8AzceneyuzxYcN+hPWA4bKHy5sGEqVbXyU/lFJL8h2nY+ubiTrSwdRH+rHMOsj883HZpb+ClzLfi/HXs44P1R5MTY6pMeFSqZfrcH/QM+9TOllYStvv0tUEFAbcLw9FV7eD9Ae3SgmBxcfx3Im4/uwDUdd/zkZ5PM=
+    properties :
+     x : 11
+     y : 6
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         ferme
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SOMDET
+    identifier : 0x3e9d90cf4921b631
+    internal_properties : CQAAAAkAAADm+NdxmkApTo6PKYUh3ZY6yiwOb8HTYYxaiuPGw0lymc5/9wuO6dfCSlAzWDnfPjhZdiEaNdV2QQqVTma/tvGUQqOsayQcrAe6qSAU9aiSEmqhq4CCOC36yEPjNEAeg/cw/qyI7E7QnqW5opXu8k1cFoKPBmJQBHE4yWowdWUvGPjnRxz+7ohD8npPtYJ40BOmAejPxggKywXzWzfdJmWRkSj5nVosWrrgDzpbdC+ba7XywjLOUAdJzF2b5mnpnYzBEYrcL4xr4i6y1yZ6HxvM0myXPw/fPAgYIBvo+4G3xhZWFQmBMvF7VMrFP9PyZGeKX9VecKvNKI0TN0xffs5liTspkzHe8E+Ry+PybgAc3nmDrytAbS4lvxcDFwfZEiBE/qxQsFFgd9yGVrKILseyvA825xNNoLypKULKXJcp8oUtvkz8SFYiX6v6j4uNZTDPLXIpRgWyrQJ8vP2mN1lJjnVS+zPPD4Qyp8PxNXRbpDyb5u0fBY6MHJvy/FlYphqExllk+JD529MVprfkg/elpfjIDLk2P43ioO8/3Xli8bryZEUErKTwIabZDFWjjtRdGpPdFTHjcozhhrkifpHvfU0VP/5AYKsI1JQ7MWg8vCp52F3mn9V0Nc486pjpbozEi/TPElnI20K6XSrDAJIF5U957NP612/mfn2YsP/SjZcV1O/JMpBGE4XH8Kdffeb/gOZcQ0t1O17v+8xZdZ0ghh6/cUzEi6efa5kg4WZIKf348QEqovU=
+    properties :
+     x : 427
+     y : 371
+     width : 107
+     height : 57
+    options :
+     -
+       internal_properties : CQAAAAkAAACWU1UeLO0zw/GWkx0EYeTqJlIkvg/Xx5AtJLWsZxder7vLQCf22RPQFFO3FnGzI7FNl+jJI4+dZwCHIpEfJhMEID5O0ew3odaqUIJEUVChFFgXv06GExkMPENaukwL92UrvO7etvcdSn5ohqgQ2yaO4oZ9Q7AJZwK4c4s=
+     -
+       internal_properties : CQAAAAkAAADZPxWi6DjeR0pt57IBjjv3MPn59naaVU8AhOPUa/Lcih18ILPbLANj58NSB0fRTnlWov3B0paqoyNAZSZvYblasCTSncetXDwV9SSccnIoUbkDbxRdddQiXxD6NjvpxvLgQZ/eLHbhZeo6F2b3UAshtl8HaaRkG6B3WP2W
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes : []
+  -
+    name : VENTEDEBUT
+    identifier : 0x3e9d90cf2fe4b63b
+    internal_properties : CQAAAAkAAABhG1mKsPBdg8Wvx8EaIdw7Fhnx6TOjZjPDhpjCK2vx+NjE2M7i2rc9sQ/Ke9YYvVytZlyhrKq/vgGO3JND6Pfop11SwNKQOZYofXKHwxc7ReeC3LqfVR9ku31e+XW9alZw8DdwuiAiHZSydP62B+C+A3wgH0rTkSXtHB8Fb/Bld/iAv9fvY0XxrRDQSm+vTDQrzayw8Y6AOw4uBtVUOKZogLBvRBZmtowtI88X3hsZXKCWFiHXetu6llABASV1jJB/n6QW3HaOHuipGRcIvmrqJ91gGibCoFANaS/PZ1nGl2YDDjhf87S3q6cwzm1iTcBjzxF4kg4cXnB8N62jgk6rS63iI03KiLuC1GM7QlicCLaEfpNhBw5myQ6o3NUo/BqPKRpdpT4itOQhbtXPMKLgtlH2s6uVzjPqk6WwpJvo2M/OvPMSK5Wv4HCCw0IeIPh+bIZyrJth+6ux6K1zF9HCM9CAk93DRAwEFW9EylEz4wsV833IhGhHuquEqCGbBWMlevDQMA2Gj9npz4MkNfcoZE6emKWVXX+CY2tlPeAHo28CYk83O2epjIhsMP60zkEfwCFvN8qm3YHrHYCQeQpbibccSvc4rS4zn1WwIqmYeLB16cU0nJaOOf8mRsls699FFAGD6apDAzWGXKmeaudDvrKxUP7ILSqlhU+FPf40V4miGEDkFylj5s15O5FBrzoCkOspdaakoA3jSvhQAx0Y+prlqWuLxk1MI2npQd+upoj1DSml/HpiYYQ4JrfUJddOJQj/EY7+47fkqh856xBbEnx9AAcgXPkurMlkjBS3Sp2nr7O4aWkYJJL3fEFT1/+22N//ci82gRIKn86m26pBEfWUZrZzYLRUXq8ztcU82BTQ
+    properties :
+     x : 138
+     y : 49
+     width : 73
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         moimeme = config.canneeencoursdebut
+         
+        type : 14
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : VENTEFIN
+    identifier : 0x3e9d90cf033bb63b
+    internal_properties : CQAAAAkAAAAdlDHvVYjp3bDsZqw4MufZfB8i7bN9BmLrVRfIroZyfWuA8RezvRcHWIX6QBky0UoyUyMx1um1ucXSQGFjRQEo/q/71goDCnXqqXFfFfeFbU7BQrB7xdzrYgQuGWurjBO49L9laLr0UTFXteVVWCzLOrgSPwNm9U5zTN23n6r6IoVDW/6gWRD0jJEYXYkkeUsrIAhdJOm19G9e3b9fzcrQajU/gURO7naikQ/vcjLlfTD0Mv8bz8u8it5zaAGpur05wl/73SnBWMQySkq1tGRmCHDJMwgMdFvZMc3AYJC57/5sRi9mS5N3vdAKRW84qjSL/Eohq6oN8LQpZBP5R8swN/pQZLvvwPdQStKIVOnunuLk50a5NAO4+DBd1DDBQt/+DYnXd8hSq7i9OP0q91KoyiLA9gveudy2i/Gkv98AjlcjHgCKKeZiJbCgk54B7WPqAwEJ87E1+ALdWeWzgo7FAX9dcsvCXGaf2+xyPtB92SC7z77aokuOQmhKxnQlR8Q9BPwA/iGkChYG9Rc+ABdIdd6hoYGKj/fqYvFlvcu0Z8HKNVGaS+nhG4IfxdlWkCOdN6kHZnS+Kb2gNsO/ptQk67bqTADkOT0fu8o3ev4q1lMaOMBU61cPO7J1Qmf3I3Hz0h18KeWjYKYNyYqCgvLpYd+hryBy258F5EKc+RqqMNfibWS9XKr3q1MwdFpLXCar8qYp6UDX1Z/Zr9n6YVNX5nGmeo+2w8WZL7CCUHpJcfmdyTrb5uziDWAFfMnWUgtYILrbU0IIKnBeOqMuRK1dc5bALx6gvAv0sFpr9FjyL4GWlJGtIUg+TmJA9D28LunjIQXH0FTFlAcBK+Sne8RDPXGbykCnp2Y+5TQiSD8ZHzMP+iPa8Q==
+    properties :
+     x : 77
+     y : 81
+     width : 133
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         moimeme= config.canneeencoursfin
+         
+        type : 14
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : SELECTCLIENT
+    identifier : 0x3e9d90cf3120b645
+    internal_properties : CQAAAAkAAACtyR2jrzUOLgSeJLLoA5P4RbiwCnYqcKa9eIPpMLylcpPgVR6X3WDfOg6Ol9OgH8UyVZlkFkgucjiEBvWYVtp6EazxnXBpHEDYq5OMnjKM4buOXE7pcwj+LDxOMOdaNimAAVwgyveJiHUc7s9Eeb71r43ncnwV5aWFmNEnkUy3vTTx59HeXrTGIHm0FojeLZr+7M6tHEkeEHi0PEVe3HUJg9f64KLt63xj6C0Jms20E5fypTRaQnK1g1aIcf48S6+V5lmrG1HNKKKDxUf0yxStfSwrTHq3LSBKmGyWYoAanZGihCMYURmJUUxwpf87fZHvVEovjXCpM0yOPXvkDJ+yTi6ioJyWZBZc86LMixCehholx3yFKBHEjk5kF+MJIKN8/aPKGf1mLLJLsrIk1pFbYtZdlQizLmMDlBzcUmsxzxnKg6Y3cLTZN1Cml+dJ46HpRlsNsc9sGg7FLDmuj6OU3mAlXVbXr5ngYq3LC9aHTea6lTmyqyi5zHjwCle4LA1OgYx675D3DCcICt/UGb/C+efvOsAmNQ6Ws+uvaeXg+Ailx4//7vrbs7lN5DnJ2oUHS7wFVJMXk/I0iomeBFGSbUSsHVsKAmDgTz4t025uFSjsS931ifeFF32KCP4lafYBvcbIYogfG/U8fs00cPY2Ae9ZI7ZXBJ7UmwnYscIBQ0dlOTtMYg2pRZ/LZeMmBUesx4eoVbKur6f0SbIu3X5uNEarmuhxvO7sFbTWHnk=
+    properties :
+     x : 80
+     y : 155
+     width : 172
+     height : 84
+    options :
+     -
+       internal_properties : CQAAAAkAAABiGf8lZVp8hDiPMXoQyyJBSA0RAUs0aGOPpkD5M9YdrgKrVy5qqd9sNf1IzqrZ8iEBFn3rYvelTw77oVseTSfPyvSQH+b9fxHvVurENYzxv4tRe1jkAS//HWVYgvhb8z4YLBTeL12ZSa/x8WMI6LrR9cEVT10aw3sAUrgM2pbfqmVP3w==
+     -
+       internal_properties : CQAAAAkAAAAzKRO8pmntNgGAbMvKX9B8NTnkcVDoVtU0CQpCIbSiYOPCWtnVGim5DcX4/dVXpG+kyGfHNCR4IXkaoPBnaSb95TaUc6VX8nLHLybCuLxmG3NduUI7X6pYCSL0PGFTUHiWutOI3pf+DH0dDwx7rL1XTOmfN9Q06e6BUufs
+     -
+       internal_properties : CQAAAAkAAABGr0irF6PSbVCWy3Eld0URYCWQRq8u/+exWD1KxlWotb0j/vCY5MeaTe8BnSNGBUErTlm1E6rM84zW+mp56Pq+0MohJC617xxI6RotKXRp//PfrPN2oYcWtv6WG9ijs0aIru/AgktZnJgn4ygqsLNEh69kMDSC0kxb80oJTQ==
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1+
+         selon moimeme
+         cas 3
+         //Code WinDev 5.5 remplacé par la migration :
+         //	choixclient..etat = actif
+         	choixclient..etat = actif; choixclient..Visible=Vrai
+             
+         //Code WinDev 5.5 remplacé par la migration :
+         //	groupeclient..VISIBLE = FAUX		
+         	groupeclient..Visible=Faux		
+         cas 1
+         	listeselectmoins("CHOIXCLIENT")
+         //Code WinDev 5.5 remplacé par la migration :
+         //	choixclient..VISIBLE = FAUX
+         	choixclient..Visible=Faux
+         //Code WinDev 5.5 remplacé par la migration :
+         //    groupeclient..VISIBLE = FAUX		
+             groupeclient..Visible=Faux		
+         cas 2
+         //Code WinDev 5.5 remplacé par la migration :
+         //    groupeclient..etat = actif		
+             groupeclient..etat = actif; groupeclient..Visible=Vrai		
+         	listeselectmoins("CHOIXCLIENT")
+         //Code WinDev 5.5 remplacé par la migration :
+         //	choixclient..VISIBLE = FAUX
+         	choixclient..Visible=Faux
+         FIN
+         
+        type : 16
+      -
+        code : |1+
+         selon moimeme
+         cas 3
+         //Code WinDev 5.5 remplacé par la migration :
+         //	choixclient..etat = actif
+         	choixclient..etat = actif; choixclient..Visible=Vrai
+             
+         //Code WinDev 5.5 remplacé par la migration :
+         //	groupeclient..VISIBLE = FAUX		
+         	groupeclient..Visible=Faux		
+         cas 1
+         	listeselectmoins("CHOIXCLIENT")
+         //Code WinDev 5.5 remplacé par la migration :
+         //	choixclient..VISIBLE = FAUX
+         	choixclient..Visible=Faux
+         //Code WinDev 5.5 remplacé par la migration :
+         //    groupeclient..VISIBLE = FAUX		
+             groupeclient..Visible=Faux		
+         cas 2
+         //Code WinDev 5.5 remplacé par la migration :
+         //    groupeclient..etat = actif		
+             groupeclient..etat = actif; groupeclient..Visible=Vrai		
+         	listeselectmoins("CHOIXCLIENT")
+         //Code WinDev 5.5 remplacé par la migration :
+         //	choixclient..VISIBLE = FAUX
+         	choixclient..Visible=Faux
+         FIN
+         
+        type : 17
+  -
+    name : SAISIENUMERO
+    identifier : 0x3e9d90cf32f4b663
+    internal_properties : CQAAAAkAAACo22yFtZsccMjoGI503SPrFJvZMgbLI++EC2ciSKvV6MJOCiEXQkZfx8xeFfTXS5qfuJvcSfqDjhVv25AYCco0q2cohAM/WLO8ci2F0mh5ukav/4D0Om/Vkon175IF5Csl0YTBg9xZgNXP2cWDehQaDqxuzCbY3bkJjNQTfN20GdfWMO966Jb7fgITlfvoUJ5bbr697Hsr0mTQnTu0s7wU4hi33Vno5BlfiFhUqk+cVuAY4YUimbs2Zu6NIUNRAJFkfzR2zSrdke/bI7g2r+exUntyyJxBExrGsN8jzyYY7ggXbShQitXEczbjsvvwWNtEqy3A8IMthIpQtguDqVuFEqd53JVVcDEm51xMNIe426HfqMjw5d1PRh8SKQXBbHAR9kNRu3fRK0vBBphPS/RT5Fx4B9lu9NAexD0mXZU2/kCexhlsd9U9ncOXbGZN2SV161hiBGhAnYQaRiCJlwhmLIWulS/mijHrY3z/6w7JryW7dyiI1SCHlCYDbOkhH+9G1s1KqIqbfsUJYrhvmDrkHu8el/G6Vz+EU05FUvrUi+jSuUe4A8y4EFXnXoLr7bGNrbc1zuw4yrsFapYnaIJ5RWXClKNipJNUk5Xo21s9DQAsTpU6GVCXS1Zndjo7NrH0iZEUz2Xp/+BaXqLD5D0FJZkSHUOnUp/DPX5e7oUbXYiFW6EVyk9j1EurSTLfrd6khEfjosdTGgCFrdZsjhLjVR16UNXIN0L+2x67YHVt2hfXs0H699wZY2QGG98K+xvkSdrgKSSdiKcfHv8/Q4J53aYIfenbOGj8Ho2L3yyxxlv5770CF0AhSC+QsLMFvw==
+    properties :
+     x : 261
+     y : 191
+     width : 96
+     height : 24
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        code : |1+
+         hlitrecherche("client","numero",moimeme)
+         //Code WinDev 5.5 remplacé par la migration :
+         //si pas h.trouve alors
+         si pas HTrouve() alors
+         	moimeme = ""
+         	reprisesaisie
+         	
+         sinon
+            rappventedetail.saisie4 = client.nom
+         FIN
+         
+        type : 16
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : CHOIXCLIENT
+    identifier : 0x3e9d90cf5774b66d
+    internal_properties : CQAAAAkAAABQCpG1VGH0A+rwpyo5lSjzWXmXR8GT7MWx7i71jI6ixRxMQdvfSHC6f3NsjAwF+Gaa91ijsvpEbwaE7elJu1g6iMo+Mf4EQDN5Mz+g/Ypziz4fdl8QDHgC0/5nyyb7Q/tpskmLaTfJPTm+7s4tArvlqmja6ccAkUZHYmFqKZntd90d9RP2PBWzPBkhKI+MznkHdYb4pkZDeJi/uTpKZqume3VXgPjHt0YSrhZtRGduRYiPtfL9bQ1R13O0pP84dMNXwrV7a0m9cRm/2nnGDK7vQkXYST4GUBmbwzGKLPn/4yiwUOp3A46Safu+sw8b5O/W2e/FJBhI7cFc4vdRZCP6T82LyGpWoaVTXP6U90SRTktJflttvfOAoh3vnBdIRaKSNQtvjK78nANxyEmPTyg5A14BvPlCrKYzXrZphnza1WfkAzVmr2gqD4+JzSCi0avYjbHELRO9UdgXmvUbxLWB+R7Gnc1J7jKMwUGWSSavdnD7VSEcJAIwQCU6kENTSBTMPT6ZYqudMqKMPpkuy4gDI35VoyK7UU4O/SW493YW7ovhHz8YAX/4Zn1QPgXjjP+oSwipyZaQtSgjsefbvIB1WYWHfMeuRM6Nxg3Sb3qEb8+h0cusubyCFUrVGSQJgIac3Hs9IbGjrM33rWkeI2U2HmLFkfmg5CwD+sijtdO86vJf0w==
+    properties :
+     x : 95
+     y : 269
+     width : 304
+     height : 186
+    type : 7
+    code_elements :
+     type_code : 7
+     p_codes :
+      -
+        code : |1+
+         hOuvre("client")
+         HLitPremier("client","nom")
+         //Code WinDev 5.5 remplacé par la migration :
+         //TANTQUE pas h.EnDehors
+         TANTQUE pas HEnDehors()
+         	ListeAjoute("choixclient",client.nom+glien(client.numero))
+         	HLitSuivant("client","nom")
+         FIN
+         //infoobjet("choixclient",43)
+         //Code WinDev 5.5 remplacé par la migration :
+         //Infoobjet(choixclient..Nom,43,vrai)
+         gLienActive(choixclient..Nom,vrai)
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+  -
+    name : DESTINATION
+    identifier : 0x3e9d90cf3fd9b677
+    internal_properties : CQAAAAkAAAB4Wsv0WgaMnMHfPjM94UBFvgpsztkLqTbhPYRDeNCh8JBfTlkLuwUEu3NL/dpoGSn2fnYQG15rPVqmIUyrZFW/4KsGdsytqMSh8KV+Bw7lhngPLvqrXxvn4YvZ5dbDVH8TeG8AQV0G7MOKZPXe+1atGmpgP/tL8Y1iuNZwUq+CUUvMcEEQ2n4PHhvubq3gZ1hQIbCSfSPD+xEp4UfpcEyByKwiBmj5B76JSHSAVPD4QJUKmqQJaIpSzU99+jHRpqGPIFL90bN1/oEe1KfIcV7ycfXWRawsWqIKAWpWwJs84jSTZULGu0i85QSf3JaTgr9tFQ6+O1EmGCpkcyg53ywq/Y4XZFu81pGMDR+HnewoY+Q61dhRwvbTCcaEpPogxshsZ5bUcLA6JDfjqH0hF3/C3J46/x9MKnMWumbJ8R4JlL+2RFpmB5Q9fNAMtHIgY5adaGQfgDymyCv9gn51pGnhtorsKaWAJZNDwruKGP+3cJgG2lUTNNjd/36mZ2pFIAS+58l6QnkTvBK2aEg/qKcfT8+g8gud1/z3zyEYbGL4o4zrzrve6YQJyLsTeVCkGlJ7UemnyxpBmRXcWBzrqW2xd8AXoVQDUoTXAxbcSMUo3mwa2qNIXvnjPrmaGQ308YujVa/0s6mj+8RCZlTsmvcS+9nx/kb+Ir7y8gjXhtBWxm/PX5SbJAppBUCcEeI6pknF9jtOJRGx+jPuNnUhzNICx/4ubzL2S4W6swnGZeOryxIX2w==
+    properties :
+     x : 264
+     y : 46
+     width : 86
+     height : 57
+    options :
+     -
+       internal_properties : CQAAAAkAAACEbSmtEy1ZV2me54v3LddBmsp0ugv2h292bBLZSjlUJ0VNeo5wrhNKDemH3cOataeTaDlXw4xIN5zwGM65SGktYb82ZdGIBKXRYNEayNd8gkzQ/UBF4MDTY1WFrIPKChXB8HSbphNV1Mjfg1c76QgNNg4Tu94Anw0YMojLDw==
+     -
+       internal_properties : CQAAAAkAAAAfUamzeZ18Tg9z7AWm/Q+IvBmB3OBc3t063hZksQEgOoshnhY/FViB+vOzHT9YeDSyAsMexGg15DxpomAlD2FpfSfA81ZkM/wo8eJvPiOBQbVkmyxcxDVciMRUn7dinVRedPMu9PGuZYMM1hojL5eLfZMmOTnDBA==
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1+
+         moimeme= 2
+        type : 14
+  -
+    name : BOUTON3
+    identifier : 0x3e9d90cf7014b681
+    internal_properties : CQAAAAkAAADfM23fYNKnelJT3lK4qEtVxsEfgiuFqejMAD3eAMOAvZ69Ve8kpCvUqXBotCR7vEARmiReLdtqvWwQ7IZVkfg466CDhQA/sZR6FSr3OUn06keY73WszpnXeJ0sj6MhXe0V4l6WLO4RYHIDnRo+Wp8FPN2QlnzAWsxs52LOfbMd8g2CyQpvwE8lEGCweesSAGsQQrg/kTODtpJJylFtgnycPtnfRL8Yf+K3R9LaYiEfkluJVExAVc8paTbhEsYo04V+RzavF5Ex4XlkIs5JIovDKmF7/ZVOk27AXy1z7ZWRa2BwoPauRZ+LNRbpUj9cW/DEfsikAX/9XafOAzD2aHrR3IdWcbWqC5D6tyAjrNGLcvdWWMCbD3pYbgfxJlRw4HG/2Dnpu+y13Z+7qF9YQR7juq+FbxZerrA90bwHG8+Inu7ptuQ79L/1LlbOr8B/TmOdjxbVoCOQfLgOyyFpnszGpHZgzMsOgCGUkToXL35gONZWzb/ja5eYnpz00cB0UWPcnPv73Ab09YPVFZY7yW9YnmJcKRQRRhPZ99IiCXcIjt57GYKRrYZAJmI0uYQlZYyCh/YGSpWJ7vmrxCd5HQonbGBQv1hARTTq874yuWUe8OpxHHnSAD4g2O8+gY3js8/a/9hVCNddLzFV7FtmHXIYHd8cS+YlqXy3NO9di9Kfq5XF5iIFHOjz8gofqvA3x4EHtY0yh629LOyYnN93tbB3t9fFRpzmbHnWMIlIOIuJv7pHPsyTobi/UZcSIYbMo4uMClFZXGd7mT/tjMtyyoPqOw==
+    properties :
+     x : 396
+     y : 70
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //conditiondeselection est une chaine
+         
+         ouvrefille(FenAttente,"Préparation du rapport en cours ... ",ijaunebulle,ivertfonce)
+         multitache(200)
+         memcree("zonefacture")
+         //clederecherche EST UNE CHAINE 
+         //Code WinDev 5.5 remplacé par la migration :
+         //numerovue est un entier long
+         numerovue est un entier  
+         choixrapport est une chaine
+         choixsommaire est un booleen  
+         tableaudate est un tableau de 8 chaines
+         datedebutannee est une chaine= config.canneeencoursdebut
+         datefinannee est une chaine= ventefin
+         datedebutanneeprecedent est une chaine
+         datefinanneeprecedent est une chaine
+         datedebutperiodeprecedent est une chaine
+         datefinperiodeprecedent est une chaine
+         Rang est un entier
+         Indice est un entier
+         ligne est une chaine
+         Rang = 1
+         datedebutperiodeprecedent = numeriqueverschaine(val(dateverschaine(ventedebut,"AAAA"))-1,"4d")
+         //datedebutanneeprecedent =dateverschaine(datedebutanneeprecedent+droite(datedebutannee,4))
+         datedebutperiodeprecedent =datedebutperiodeprecedent+droite(ventedebut,4)
+         
+         datefinperiodeprecedent = numeriqueverschaine(val(dateverschaine(ventefin,"AAAA"))-1,"4d")
+         //datedebutanneeprecedent =dateverschaine(datedebutanneeprecedent+droite(datedebutannee,4))
+         datefinperiodeprecedent =datefinperiodeprecedent+droite(ventefin,4)
+         
+         datedebutanneeprecedent = numeriqueverschaine(val(dateverschaine(datedebutannee,"AAAA"))-1,"4d")
+         //datedebutanneeprecedent =dateverschaine(datedebutanneeprecedent+droite(datedebutannee,4))
+         datedebutanneeprecedent =datedebutanneeprecedent+droite(datedebutannee,4)
+         datefinanneeprecedent = datefinperiodeprecedent
+         tableaudate[1] =  ventedebut
+         tableaudate[2] =  ventefin
+         tableaudate[3] =  datedebutannee
+         tableaudate[4] =  datefinannee
+         tableaudate[5] =  datedebutanneeprecedent
+         tableaudate[6] =  datefinanneeprecedent
+         tableaudate[7] =  datedebutperiodeprecedent
+         tableaudate[8] =  datefinperiodeprecedent
+         
+         selon rappventedetail.selectclient
+         cas 3
+         Boucle
+          	Indice = ListeSelect("CHOIXCLIENT", Rang)
+         	Si Indice<>-1 alors
+               
+         		hexecuterequete(RequeteVenteDetail,hRequêteDéfaut,datedebutanneeprecedent,ventefin, ...
+         		complete(sansespace(choixclient[Indice]),10," "),complete(sansespace(choixclient[Indice]),10," "))
+         		
+         		hlitpremier(requeteventedetail)
+         
+         		tantque pas HEnDehors(RequeteVenteDetail) 
+         			hexecuterequete(RequeteDetailfacture,hRequêteDéfaut,RequeteVenteDetail.Bnumero)
+         			hlitpremier(RequeteDetailfacture)   
+         			//           si hfacture.fadate >=  ventedebut et hfacture.fadate <=  ventefin alors
+         			tantque pas hendehors(RequeteDetailfacture)
+         				ajoutedetail(RequeteDetailfacture.HFCLEUNIK)
+         				hlitsuivant(RequeteDetailfacture)
+         			fin
+         			//			info(hfacture.fanofacture)
+         			//			memajoute("zonefacture",h.numenr,h.numenr)
+         			hlitsuivant(RequeteVenteDetail)
+         		FIN
+         
+         
+         
+         	Sinon 
+         		Sortir     // Sort de la boucle
+         	Fin
+         	Rang++
+         Fin 
+         cas 1
+         	hexecuterequete(RequeteVenteDetail,hRequêteDéfaut,datedebutanneeprecedent,ventefin,"","ZZZZZZZZZZ")
+         	hlitpremier(requeteventedetail)
+         //Code WinDev 5.5 remplacé par la migration :
+         //		tantque pas h.endehors 
+         
+         		tantque pas HEnDehors(RequeteVenteDetail) 
+             	hexecuterequete(RequeteDetailfacture,hRequêteDéfaut,RequeteVenteDetail.Bnumero)
+             	hlitpremier(RequeteDetailfacture)   
+         //           si hfacture.fadate >=  ventedebut et hfacture.fadate <=  ventefin alors
+                 tantque pas hendehors(RequeteDetailfacture)
+         			ajoutedetail(RequeteDetailfacture.HFCLEUNIK)
+         		hlitsuivant(RequeteDetailfacture)
+         			fin
+         //			info(hfacture.fanofacture)
+         //			memajoute("zonefacture",h.numenr,h.numenr)
+         			hlitsuivant(RequeteVenteDetail)
+         		FIN
+         
+         cas 2
+         	hexecuterequete(RequeteVenteDetail,hRequêteDéfaut,datedebutanneeprecedent,ventefin,complete(saisienumero,10," "),complete(saisienumero,10," "))
+         	hlitpremier(requeteventedetail)
+         	tantque pas HEnDehors(RequeteVenteDetail) 
+         		hexecuterequete(RequeteDetailfacture,hRequêteDéfaut,RequeteVenteDetail.Bnumero)
+         		hlitpremier(RequeteDetailfacture)   
+         		//           si hfacture.fadate >=  ventedebut et hfacture.fadate <=  ventefin alors
+         		tantque pas hendehors(RequeteDetailfacture)
+         			ajoutedetail(RequeteDetailfacture.HFCLEUNIK)
+         			hlitsuivant(RequeteDetailfacture)
+         		fin
+         		//			info(hfacture.fanofacture)
+         		//			memajoute("zonefacture",h.numenr,h.numenr)
+         		hlitsuivant(RequeteVenteDetail)
+         	FIN
+         
+         	
+         fin	
+         ferme(fenattente)
+         iconfigure(imprimanterapport,vrai)
+         iParamètre("DEFAUT=NON")
+         iParamètre("FORMATPAPIER=LEGAL")
+         iParamètre("QUALITE=HAUTE")
+         
+         si rappventedetail.destination = 2 alors
+          iapercu(1,"Rapport de vente")
+         fin
+         iimprimeetat("RAPPORTVENTEDETAIL","zonefacture",tableaudate)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SAISIE4
+    identifier : 0x3e9d90d01b31b6e5
+    internal_properties : CQAAAAkAAABkEdH+63MsZWCR8GR6S/Q1THTE68cJ4nqtlChLSeD1xZqJgKD/2leg3ibRHfx/GgT6r5PtuZj6B6F2u+Wv5FpYpN3+6dl2C+3+nnMa5p0533WO3Sod3szpxFoaPOZTserms+WZtuJKvcZwmJVo+QtG3KC55vMXgmRKnCG4W4mWo0c4kUKu5MyKqdeUHTei62MTpK4JUCzUorjhRv/hip8ill42HgXmfmyBgLPHOnfzijefM8LEkk/ey0WrjGqob0UzLljizXmt8lvCP5bOa9+bR1k/moI44U0bqv7RpyG3wf05irXVtBhTaeRjWIojig4oKdt+tzhZOHmkISBjYOPHgq9OatvlVfO8ImF0xjjmpmXAF7FVHx8mqTNhZyN3miD4JxMTxxGy1cIGK2qc4v4OriqLxvY/ZIwYd5ypyc6YFqtZujfL8pekoDGsQadysy8XWN3RlgHxJnNuEfjDgCM1obO6q+yj374/3rmmN1r+5zrSJT35qpHq/JXcg1nWrQ0vChkMy269gEr11M73fIQhHPLUpFJyYPNAllFuN0ldjBCQFPrkGtiOP11FiTHg8rxL9seWSTT3tI6hrMwcpMynkwcMaJm5WR7DL647p6LORtqOAOlB9wwuLxvB+Ho9YjfTi6/ixRRvX1UQpdOKSbKYTaNW7lbfi5hFNGvtcN9wt1na5Xb4NeBXRT18FWEteolnBpDGBLRzYdJ5nZOBDn73CxYSibBG9y7Tnpmng0eaI/b+cxF8ez7hY3otbBmum2ftq5/xQQ==
+    properties :
+     x : 261
+     y : 217
+     width : 274
+     height : 21
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+      -
+        type : 338
+        enabled : false
+      -
+        type : 339
+        enabled : false
+  -
+    name : BOUTON4
+    identifier : 0x3f87178547402839
+    internal_properties : CQAAAAkAAADvLPdTbkN3CN/SQuzEkwIabZm9dhIMKhDXUUzgeJVvRx+KSYV5Gs3GCq9lJzakDtKNMc2hu/rX/Y3OSWhT95Lbj4PD4Lp1+KBkgizarCvgkm88FSQbfisaRWfhbrl3FBLL5MoPGI6sIk6phENekJ6airbOOwThlImgS1MX0O7Cwe0LsBpjc+GucPaYlrx7Xnef21/ubvxF/fs7v05nxrAW6ORHhWDqVf0D94Mmko1zYXJVUQ9PDFFeVnZ6H+pq2LRzyM3mjUgTCna7I89oNjQSBRiBfAYb+yJHJsCzHRs07139vlfGHY7PuO7lKm5E0cGJd2QXpKvBhKNkwGG7T9E+n3nXikkhEPECK5+pEBz2fbB6nAgH8/61G0nl1jqH+ThShpinRbnlpO+2VkjT/Bzh0kFylj52CEye53G1K13hlBS0SB6f7ookF+jtbNxJFrgLZ7lT299rqfT8/32cR0/jByTGEm6Ne7S8G/QISc7dlUn14NxRjPHJ6a65t2ms4Fb2vz4HdeGkY1hf/EQS70ojLiC2nSbZWYbyQ0uU7MJd0o4DFAJ6ZQslGYSlfjltIJD0G4NCOVzw+FIvL/EDXToB0EuX04Q6PNK6MBbX4xBVyEDLfKMGhjGzTgbeaFi8UUxLU/njTGW6oUN0mSdvVYIkl22ja7KqTcuAmM1kcfMA98PCSAGXa0eZFct5eXHOQCcC1umzTOL3rSgjvRuynYPsEmJGKCoW96ckTWErgGCoMZ5G/VGotkDgjnHt+JMiJVDxHy/yrAYRwf/XY0/wk8hb
+    properties :
+     x : 499
+     y : 81
+     width : 35
+     height : 35
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //conditiondeselection est une chaine
+         memcree("zonefacture")
+         //clederecherche EST UNE CHAINE 
+         //Code WinDev 5.5 remplacé par la migration :
+         //numerovue est un entier long
+         numerovue est un entier  
+         choixrapport est une chaine
+         choixsommaire est un booleen  
+         tableaudate est un tableau de 8 chaines
+         datedebutannee est une chaine= config.canneeencoursdebut
+         datefinannee est une chaine= ventefin
+         datedebutanneeprecedent est une chaine
+         datefinanneeprecedent est une chaine
+         datedebutperiodeprecedent est une chaine
+         datefinperiodeprecedent est une chaine
+         Rang est un entier
+         Indice est un entier
+         ligne est une chaine
+         Rang = 1
+         datedebutperiodeprecedent = numeriqueverschaine(val(dateverschaine(ventedebut,"AAAA"))-1,"4d")
+         //datedebutanneeprecedent =dateverschaine(datedebutanneeprecedent+droite(datedebutannee,4))
+         datedebutperiodeprecedent =datedebutperiodeprecedent+droite(ventedebut,4)
+         
+         datefinperiodeprecedent = numeriqueverschaine(val(dateverschaine(ventefin,"AAAA"))-1,"4d")
+         //datedebutanneeprecedent =dateverschaine(datedebutanneeprecedent+droite(datedebutannee,4))
+         datefinperiodeprecedent =datefinperiodeprecedent+droite(ventefin,4)
+         
+         datedebutanneeprecedent = numeriqueverschaine(val(dateverschaine(datedebutannee,"AAAA"))-1,"4d")
+         //datedebutanneeprecedent =dateverschaine(datedebutanneeprecedent+droite(datedebutannee,4))
+         datedebutanneeprecedent =datedebutanneeprecedent+droite(datedebutannee,4)
+         datefinanneeprecedent = datefinperiodeprecedent
+         tableaudate[1] =  ventedebut
+         tableaudate[2] =  ventefin
+         tableaudate[3] =  datedebutannee
+         tableaudate[4] =  datefinannee
+         tableaudate[5] =  datedebutanneeprecedent
+         tableaudate[6] =  datefinanneeprecedent
+         tableaudate[7] =  datedebutperiodeprecedent
+         tableaudate[8] =  datefinperiodeprecedent
+         
+         
+         selon rappventedetail.selectclient
+         cas 3
+         Boucle
+          	Indice = ListeSelect("CHOIXCLIENT", Rang)
+         	Si Indice<>-1 alors
+         		// Ajoute l'élément sélectionné dans ListeSel
+                 hlitrecherche("hfacture","faclient",choixclient[Indice])
+         //Code WinDev 5.5 remplacé par la migration :
+         //		tantque pas h.endehors et hfacture.faclient = choixclient[Indice]
+         		tantque pas HEnDehors() et hfacture.faclient = choixclient[Indice]
+             	   
+                    si hfacture.fadate >=  datedebutanneeprecedent et hfacture.fadate <=  datefinanneeprecedent alors
+         			ajoutedetail(hfacture.fanofacture)
+         		   fin
+                    si hfacture.fadate >=  datedebutannee et hfacture.fadate <=  datefinannee alors
+         			ajoutedetail(hfacture.fanofacture)
+         		   fin
+         //			info(hfacture.fanofacture)
+         //			memajoute("zonefacture",h.numenr,h.numenr)
+         			hlitsuivant("hfacture","faclient")
+         		FIN
+         		//ligne+=choixclient[Indice] //+ "_"
+         	Sinon 
+         		Sortir     // Sort de la boucle
+         	Fin
+         	Rang++
+         Fin 
+         cas 1
+                 hlitpremier("hfacture","faclient")
+         //Code WinDev 5.5 remplacé par la migration :
+         //		tantque pas h.endehors 
+         		tantque pas HEnDehors() 
+             	   
+         //           si hfacture.fadate >=  ventedebut et hfacture.fadate <=  ventefin alors
+                    si hfacture.fadate >=  datedebutanneeprecedent et hfacture.fadate <=  ventefin alors
+         			ajoutedetail(hfacture.fanofacture)
+         			fin
+         //			info(hfacture.fanofacture)
+         //			memajoute("zonefacture",h.numenr,h.numenr)
+         			hlitsuivant("hfacture","faclient")
+         		FIN
+         cas 2
+                 hlitrecherche("hfacture","faclient",rappventedetail.saisienumero)
+         //Code WinDev 5.5 remplacé par la migration :
+         //		tantque pas h.endehors et hfacture.faclient = rappventedetail.saisienumero    	   
+         		tantque pas HEnDehors() et hfacture.faclient = rappventedetail.saisienumero    	   
+         //           si hfacture.fadate >=  ventedebut et hfacture.fadate <=  ventefin alors
+                    si hfacture.fadate >=  datedebutanneeprecedent et hfacture.fadate <=  ventefin alors
+         			ajoutedetail(hfacture.fanofacture)
+         			fin
+         //			info(hfacture.fanofacture)
+         //			memajoute("zonefacture",h.numenr,h.numenr)
+         			hlitsuivant("hfacture","faclient")
+         		FIN
+         	
+         fin	
+         iconfigure(imprimanterapport,vrai)
+         iParamètre("DEFAUT=NON")
+         iParamètre("FORMATPAPIER=LEGAL")
+         
+         si rappventedetail.destination = 2 alors
+          iapercu(1,"Rapport de vente")
+         fin
+         iimprimeetat("RAPPORTVENTEDETAIL","zonefacture",tableaudate)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : DATECOMM
+    identifier : 0x3f8c4dc04ee5f41a
+    internal_properties : CQAAAAkAAAA+ESmewLyIR/1Akyki85oxDBOk4PmQjxLLZQNOJzdoRMyHJLeo0mRG81pdMa/Da7OWR37dUp3R14kZzTyHnm2EcIsxD4STnKJKVOJYjjeqMSsF7eiZ2BBXLrGEqKxa1WPvvfWJI80x5mt+ftdpimKlogebDbbEetE/nFhfvlvn2d3+DU/KOdHqqmYEgOOXNFROEB0mc/Rn8shfoIGpswRZ/ykPgXbg/5nswM+fNFMouWzQLxJr66JwGpfP1OqQ6oA1XTjff4QV16tZTDOUfKQhuEBQQvmfYu9nByIFAXtqoxQr1VotQaIJqq0pN/MaSiOEOYbxSPCxNAd3n2JfpcDcoeJCVK3LjGPwTAcKV4t3qhXyc5WdkXkRc2T2S3CGDUPg7uxLcsfFbIPiY1OuEs8+pGlvZuP82t+vzkwrWpi9mNfNr5e5/QH78WzGcercZ7sia5W/KDO2av5pazi6klnVUEruW+tTLskaemGawkGvBHXpXfNOmZHKE39sBwcEBs6ip0ca/l7e1d73aUyK7HSZKYEGzUFQQ/gLwE0nCdtiPSMVIh7s7iA57eQB19bfk4HushHwbhvtZPYEyQ8RHA3WRbVozfb39KYTNfGfiIqSbBdC+TII5z0GVbQT92llfFFkOg9Rg+5j4+y7l8cj4xJnRkdTx8P3JjC1xL7acLdQdo7ItV2kPciXRcFYPPp9bfr+tFMdBMQZzYeoZaoKEhp48EYCFiHW1mgUvqCCLXWgYzEEV99p6VeA6tvAc1tFq18CT6Hf8tfFijcJTp3n+7kharqgX6Hqc8SxTWvvpfO0Dzh0r9WpERQVOqFFdpbmDpSV45+J9Uk78zKJbCeY8G6Ya7ftrZk=
+    properties :
+     x : 59
+     y : 49
+     width : 73
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         rappventedetail.VENTEDEBUT = ouvre("wd5calen",rappventedetail.VENTEDEBUT)
+         si champencours() = "VENTEDEBUT" alors
+         	envoietouche("{entree}")
+         sinon
+         	ExécuteTraitement(rappventedetail.ventedebut,trtsortie)
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : DATECOMM1
+    identifier : 0x3f8c4dc06d45f42e
+    internal_properties : CQAAAAkAAABptoK4QWXT63dgrWTTNwgii5qUsUiHZiDq5rxSs5DzMYiIDdZd9jsWG2JqfNpoTQocsbs/9XYWXIsWVT5Aau8X5payVmuC8fcxbOblHaQwlgS1/JQ1y79XdxSGjMJ/C7rmsUyDaVoQMQI+m51iqcfIpyOAa1OqnHvvFxRCKKEQ/eBgt/znqlT915JEbpvNk+JX0wlMFPquXgd5pMd6LXt5ibj6MN1AiBZJWqlY36Z7D1fOQUcindgQmeP/AxsDRMTAo52cd9re6/EoqA3CHcWpbJCywMHNsjdz+HAQjhi6vvrBgt25Ydlox1MhQ/yXCmem3Pd5rsi0nMA0IkcRZrUg2rNVJ85ae3l0618u9GMdUerDq7lTJ6iDT4eG6lDTyeFGUHeCcZpfcuLq35+Uw5LDWCI0xCqixJXHxhY8OZSn+HCuSRdz8M7tlFYbq5pxq8h3aPdzSmy9JA/R5o5GgUPi7TXcf93cZd/3ULICto7Dx2TKuzMS9LbKmA2P8wtjvgvvqIe0fklDoznhXmY+w7xQ6FI0hW/xogCoJMIBaf5gMF7oBN5cB2etHsjcQ6KQ+d7rs3WOAjjwVFH4UH9DYenvskyifUKeXRoUrXhfIpcsx0KzOYSKKoqSCJq+Vd9Cxv4p04MPoT/CnWWl7NnhEoIKFWAHgdesYZDkSgeIFoQqof0xLZtmqF3VNsFB8pZi2SsP6TUR9h9es7bcFLxCcZJBWf1G2F+nhUYJKNFq22befEK1Waer8h7erxG3w1cWeezX6sMPhpaW8NBFZfeTuhsS8xHEmYu/7o5+UWZl4XiWEL2T6Vnlok3P8RMC6NgbODXl2z6flFUe8TfEEhl8wWzfZPA=
+    properties :
+     x : 59
+     y : 79
+     width : 73
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         rappventedetail.VENTEfin = ouvre("wd5calen",rappventedetail.VENTEfin )
+         si champencours() = "VENTEFIN" alors
+         	envoietouche("{entree}")
+         sinon
+         	ExécuteTraitement(rappventedetail.ventefin,trtsortie)
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3e9d90cf49e6b61d
+  internal_properties : CQAAAAkAAAAbGq3Z9ozl+igc5g0VMUW1JVI410Rjco7gjgaLOHilSlRYrwpaqnhT/zQpzq+UCCgorc9d4NcsSNx9aSy636SgPjzOlEIemI0dcMJWD++57kwFLZBLJMNyTNxa7PvxlL1ndq8H6uyJKlh6HjLGyWOcoBSRIF3t5FEdlccSpbMZuXYXJPiz8PA9ISLiDcDjTnyMIkhOuSWa+hmXJsbsnDhMYX4VwSftcilYb6T/vHtkx/mCSuX6TMJQiow/iJIMmNwZp+GX6XKlHjZnQJx3YinTi9Rw6sda1RKiIVLbUA5k
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CQAAAAkAAAAKahz/S0wCE4TxGW8TaSWPlADYFfSYWW2L4AKWsjQ49u2G7QxlwZmTKmTsvCV2fNErBmor0/beDd5LNqdLhcuuGMIVJaXUr9ftnENbf+XcBybTva9kXoIXIkVWTQ==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      
+      
+      
+      // Pour compatibilité 5.5
+      MoiMême..Visible=Vrai
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : ajoutedetail
+     procedure_id : 4511921626718910191
+     type_code : 14
+     code : |1+
+      Procédure ajoutedetail(numerofacture)
+       hlitrecherche(hfdetail,HFCLEUNIK,numerofacture)
+       
+      
+      //hlitrecherche("hfdetail","fdcle",numerofacture)
+      
+      //Code WinDev 5.5 remplacé par la migration :
+      //tantque pas h.endehors et hfacture.fanofacture = hfdetail.fdnofact
+      tantque pas HEnDehors() et hfdetail.HFCLEUNIK = numerofacture
+         	memajoute("zonefacture",h.numenr,h.numenr)
+      
+      	hlitsuivant(hfdetail,HFCLEUNIK)
+      	
+      FIN
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x3e9d90cf68c9b627
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CQAAAAkAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

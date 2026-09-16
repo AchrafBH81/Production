@@ -1,0 +1,97 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cPurchaseOrder
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1ff1e87b0055933e
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      cPurchaseOrder est une Classe
+      	PurchaseOrderId est une chaîne
+      	EdiKey est une chaîne
+      	Label est une chaîne
+      	Display est une chaîne 
+      	BascoFranchise est chaîne 
+      	Customer est une chaîne 
+      	OrderNumber est une chaîne
+      	InvoiceNumber est une chaîne 
+      	ShippingStreet est une chaîne 
+      	ShippingCity est une chaîne 
+      	DateSent est une DateHeure
+      	ShippingPostalCode est une chaîne 
+      	ShippingState est une chaîne 
+      	ShippingCountry est une chaîne 
+      	BillingStreet est une chaîne 
+      	BillingCity est une chaîne 
+      	BillingPostalCode est une chaîne 
+      	BillingState est une chaîne 
+      	BillingCountry est une chaîne 
+      	FranchiseCode est une chaîne
+      	
+      	DefaultSpacer est une chaîne
+      	DefaultSpacerID est un entier
+      	ClientID est une entier
+      	NoClient est une chaîne
+      	unitedemesure est un entier 
+      	ClientCalculeSurfaceReelle est un booléen
+      	PourcSurchargeCarrelage est un réel
+      	
+      	SurchargeEnergieBase est un réel
+      	SurchargeEnergieCarrelage est un réel
+      	SurchargeEnergieForme est un réel
+      	
+      	minimuma est une réel
+      	minimumm est un réel
+      	clientcalculCarrelageSpecialContour est un booléen //si client calcule contour de carrelage avec la formule spéciale dans typecarr.
+      	TexteMessage est une chaîne
+      	NumeroInterne est une chaîne
+      	
+      	NbLignetrempee est un entier
+      	NbLigneNonTrempee est un entier
+      	
+      	PurchaseOrderItems est un tableau de cPurchaseOrderItem
+      	RelationCarrelage est un tableau de cRelationCarrelage
+      	RelationComposant est un tableau de cRelationThermos
+      	
+      	CommandeExiste est une booléen 
+      	IsArgon est un booléen = Faux
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 2301876499547329342
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 2301876499547394878
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1ff1e870005268f2
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

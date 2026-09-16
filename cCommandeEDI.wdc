@@ -1,0 +1,797 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cCommandeEDI
+ major_version : 29
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1806b23200e4f919
+ internal_properties : CQAAAAkAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      STFdetail est une structure
+      	_Qte est un entier
+      	_Numthermos est une chaine
+      	_Largeur est une chaine
+      	_Hauteur est une chaine
+      	_spacer est une chaine
+      	_SpacerInex est une chaine
+      	_epaisseur est un entier
+      	_unitedemesure est un entier
+      	_avecCap est un booleen
+      	_AvecGaz est un booleen
+      	_extraintercalaired est un reel
+      	_extraintercalairet est un reel
+      	_PrixUnitaire est un reel
+      	_PrixTotal est un reel
+      	_PrixPied est un reel
+      	_surchargeBase est un reel
+      	_surchargeenergie est un reel
+      
+      	_codeGL est une chaine
+      	_descThermos est une chaine
+      	_JobLigne est une chaine
+      	_noLigne est un entier
+      	_CommSpeciale est un booleen
+      	_NoCommandeInterne est un entier
+          _EnergiVerre est un booleen
+      FIN
+      
+      STfdetailCarrelage est une structure
+      	_NbCarreaul est un entier
+      	_NbCarreauH est un entier
+      	_LargeurCarreauContourM est une chaine
+      	_LargeurCarreauContourA est une chaine
+      	_HauteurCarreauContourM est une chaine
+      	_HauteurCarreauContourA est une chaine
+      	_HauteurBarreTete est une chaine
+      	_HauteurBarreTeteA est une chaine
+      	_numCarrelage est une chaine
+      	_prixcarreau est un reel
+      	_PrixDeBase est un reel
+      	_PrixUnitaireCarrelage est un reel
+      	_PrixTotalCarrelage est un reel
+      	_codegl est une chaine
+      	_descCarrelage est une chaine	
+      	_unitemesure est un entier
+      		_surchargeCarrelage est un reel 
+      FIN
+      
+      STfdetailForme est une structure
+      	 _NumeroForme est une chaine
+      	_Dimension1 est une entier
+      	_Dimension2 est une entier
+      	_Dimension3 est une entier
+      	_Dimension4 est une entier
+      	_Dimension5 est une entier
+      FIN
+      
+      cCommandeEDI est une classe
+          herite de ccommandebase
+      	IDClient est une chaine
+      	NoCommande est une chaine
+      	DateCommande est une date
+      	DateReq est une date
+      	NoJob est une chaine
+      	NomClient est une chaine
+      	Commentaire est une chaine
+      	AdresseLivraison est une chaine
+      	VilleLivraison est une chaine
+      
+      	Qte est un entier
+      	Largeur est une chaine
+      	hauteur est une chaine
+      	Desc1 est une chaine
+      	Desc2 est une chaine
+      	Desc3 est une chaine
+      	Desc4 est une chaine 
+      	Desc5 est une chaine
+      	Desc6 est une chaine
+      	Desc7 est une chaine
+      	Desc8 est une chaine
+      	Desc9 est une chaine
+      	Desc10 est une chaine
+      	code est une chaine
+      	
+      	NoThermos est une chaîne
+      		Thermos est une chaine
+      	Spacer est une chaine
+      	épaisseur est une chaine
+      	Carrelage est une chaine
+      	DescCarrelage est une chaine
+      	dimcarrelage est une chaine
+      	fini est une chaine
+      	NoJobLigne est une chaine
+      	DoubleSeal est un booleen
+      	NbCarreaul est un entier
+      	NbCarreauH est un entier
+      	CarrelageContour est un booleen
+      	LargeurCarreauContour est un entier
+      	HauteurCarreauContour est un entier
+      	HauteurBarreTete est un entier
+      	CarrelageTete est un booleen
+      	CarrelageTeteDimension est un entier
+      	
+      	
+      	IdThermosRelation est un entier
+      	IDCarrelageRelation est une chaine
+      	IDSpacerRelation est un entier
+      	IDRelationEdi est un entier
+      	IDFormeRelation est une chaine
+      	FIniRelation est une chaine
+      	TypeSpacer est un entier   // 1 = inex, 2 = aluminium, 3 = ThermoPlastic
+      	composant1 est une chaine
+      	composant2 est une chaine
+      	composant3 est une chaine
+      	ComposantBase1 est une chaine   // composant de base de composant1
+      	// exemple le composant de base de HER3 = CL03
+      	ComposantBase2 est une chaine
+      	ComposantBase3 est une chaine
+          produitdebase est une chaine	
+      	
+      	DescriptionForme est une chaine
+      	FormeDimension1 est un entier
+      	FormeDimension2 est un entier
+      	FormeDimension3 est un entier
+      	FormeDimension4 est un entier
+      	FormeDimension5 est un entier
+      	
+      	
+      	
+      	
+      	nbVerre est un entier
+      	
+      	
+      	relationThermosOK est un booleen 
+      	relationCarrelageOK est un booleen
+      	relationSpacerOK est un booleen
+      	relationFiniOK est un booleen
+      	relationFormeOk est un booleen
+      	detailFacture est un STFdetail
+      	DetailCarrelage est un STfdetailCarrelage
+      	DetailForme est un STfdetailForme
+      	bexception est un booleen
+      	bexceptionRaison est une chaine
+      	
+      	NoLigneClient est un entier
+      	
+      Fin
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1731267034603845913
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructeur()
+      
+      :relationCarrelageOK = Faux
+      :relationFiniOK = faux
+      :relationSpacerOK = Faux
+      :relationThermosOK = faux
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1731267034603911449
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : ParserThermos
+     procedure_id : 1731267034603976985
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //ParserThermos (<idclientencours>)
+      //
+      // Paramètres :
+      // 	idclientencours : <indiquez ici le rôle de idclientencours>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE ParserThermos(idclientencours)
+      sChaineaparser	est une chaine	= sansespace(:desc1)+" "+sansespace(:desc2)
+      nPos			est un entier	//= PositionOccurrence(chaineaparser," ",2,DepuisFin)
+      
+      
+      
+      
+      :épaisseur = 0
+      SI HLitRecherche(RelationEDI,IdClientdescriptionEDIClient,[idclientencours,1,:Thermos]) ALORS
+      	:IdThermosRelation = relationedi.IDpersoEns	
+      	:IDRelationEdi = relationedi.IDRelationEDI
+      	:relationThermosOK = vrai
+      	:detailFacture._CommSpeciale = faux
+      	:detailFacture._unitedemesure = 1
+      	si hlitrecherche(persoens,PECLEUNIK,IdThermosRelation) alors
+      		:detailFacture._Numthermos = persoens.ennumero
+      		:detailfacture._AvecCap = persoens.encap
+      		:detailFacture._AvecGaz = persoens.engaz
+      		:composant1 = Persoens.encomposant1
+      		:produitdebase = persoens.epbase
+      		:detailFacture._codeGL = persoens.encodegl
+      		:detailFacture._descThermos = persoens.endescription
+      		:detailfacture._JobLigne = :nojob
+      		
+      		si Pas sansespace(:composant1) = "" _et_ hlitrecherche(invent,INUM,:composant1) alors
+      			:ComposantBase1 = invent.ipbase
+      			:detailfacture._epaisseur+= invent.iepaisseur
+      			si pas :detailFacture._EnergiVerre alors detailFacture._EnergiVerre = (invent.ienergieverre OU invent.ienergieverreESC)
+      			
+      		FIN
+      		:composant2 = Persoens.encomposant2
+      		SI PAS SansEspace(:composant2) = "" _ET_ HLitRecherche(Invent,INUM,:composant2) ALORS
+      			:ComposantBase2 = Invent.IPBASE
+      			:detailFacture._epaisseur+= Invent.iepaisseur
+      			SI PAS :detailFacture._EnergiVerre ALORS detailFacture._EnergiVerre = (invent.ienergieverre OU invent.ienergieverreESC)
+      		fin
+      		:composant3 = Persoens.encomposant3
+      		SI PAS SansEspace(:composant3) = "" _ET_ HLitRecherche(Invent,INUM,:composant3) ALORS
+      			:ComposantBase3 = Invent.IPBASE
+      			:detailFacture._epaisseur+= Invent.iepaisseur
+      			SI PAS :detailFacture._EnergiVerre ALORS detailFacture._EnergiVerre = (invent.ienergieverre OU invent.ienergieverreESC)
+      		FIN
+      		si sansespace(:composant3) = "" alors :nbverre = 2 sinon :nbverre =3
+      	fin
+      fin
+      
+      SI sansespace(:spacer) = "" _ou_ HLitRecherche(RelationEDI,IdClientdescriptionEDIClient,[idclientencours,3,:Spacer],hIdentique) ALORS
+      	
+      	IdSpacerRelation = RelationEDI.IDSpacer
+      	:relationSpacerOK = Vrai
+      	SI HLitRecherche(IntercalaireCouleurs,IDIntercalaireCouleurs,:IDSpacerRelation) ALORS
+      		TypeSpacer = IntercalaireCouleurs.IDIntercalaireCouleurs
+      	FIN
+      FIN
+      
+      
+     type : 458752
+   -
+     name : ParserCarrelage
+     procedure_id : 1731267034604042521
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ParserCarrelage (<Idclientencours>)
+      //
+      // Paramètres :
+      //	Idclientencours : <indiquez ici le rôle de I>
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE ParserCarrelage(Idclientencours)
+      pos est un entier
+      pos1 est un entier
+      pos2 est un entier
+      
+      si sansespace(:DescCarrelage) = "" ou  SansEspace(:DescCarrelage) = "0" alors renvoyer vrai
+      
+      
+      
+      
+      
+      //SI ChaîneOccurrence(:Desc5,"HAUT SEULEMENT") > 0  ALORS
+      //	:carrelage +=( " "+sansespace(:Desc5))
+      ////	:HauteurBarreTete = Val(ExtraitChaîne(ExtraitChaîne(SansEspace(:Desc6),2,"BARRE HORIZONTALE"),1,"mm"))
+      ////	:HauteurBarreTete = Val(ExtraitChaîne(ExtraitChaîne(SansEspace(:Desc6),2,"HORIZONTAL"),1,"mm"))
+      //	:HauteurBarreTete = val(extraitchaine(:desc6[[Position(:desc6,"HORIZONTAL") + 11 A ]],1,"mm"))
+      //	
+      //	:DetailCarrelage._HauteurBarreTete = :HauteurBarreTete
+      //	si ChaîneOccurrence(:desc7,"EXT") > 0 alors
+      //		:carrelage += " "+sansespace(:desc7)+" "+SansEspace(:desc8)
+      //		SI  SansEspace(:Desc9) <> "" OU SansEspace(:Desc10) <> "" ALORS
+      //			:bexception = vrai
+      //		FIN	 
+      //	sinon
+      //		SI  SansEspace(:Desc7) <> "" OU SansEspace(:Desc8) <> "" OU SansEspace(:Desc9) <> "" OU SansEspace(:Desc10) <> ""ALORS
+      //			:bexception = Vrai
+      //		FIN	 
+      //		
+      //	fin
+      //	
+      //sinon SI ChaîneOccurrence(:Desc5,"CONTOUR") > 0  ALORS
+      //	:carrelage +=( " CONTOUR")
+      //	
+      //	
+      //	:LargeurCarreauContour = Val(SansEspace(ExtraitChaîne(SansEspace(ExtraitChaîne(:Desc5,2,"CONTOUR")),1,"mm")))
+      //	:DetailCarrelage._LargeurCarreauContourM = :LargeurCarreauContour
+      //	SI  SansEspace(:Desc7) <> "" OU SansEspace(:Desc8) <> "" OU SansEspace(:Desc9) <> "" OU SansEspace(:Desc10) <> ""ALORS
+      //		:bexception = Vrai
+      //	FIN	 
+      //	
+      //sinon  SI ChaîneOccurrence(:Desc5,"EXT") > 0 ALORS
+      //	:Carrelage += " "+SansEspace(:Desc5)+" "+SansEspace(:Desc6)
+      //	SI  SansEspace(:Desc7) <> "" OU SansEspace(:Desc8) <> "" OU SansEspace(:Desc9) <> "" OU SansEspace(:Desc10) <> ""ALORS
+      //		:bexception = Vrai
+      //	FIN	 
+      //	
+      //FIN
+      //
+      //
+      //
+      //
+      //
+      //
+      //:dimcarrelage = chaineaparser[[pos+1 A ]]
+      //pos  = PositionOccurrence(:dimcarrelage,"X",1,DepuisFin)
+      //:NbCarreaul =  Val(:dimcarrelage[[1 A pos]])
+      //:NbCarreauH =  Val(:dimcarrelage[[pos+1 A]])
+      :DetailCarrelage._NbCarreaul = :NbCarreaul
+      :DetailCarrelage._NbCarreauH = :NbCarreauH
+      
+      SI  HLitRecherche(RelationEDI,IdClientdescriptionEDIClient,[Idclientencours,2,:Desccarrelage],hIdentique) ALORS
+      	:IdCarrelageRelation = RelationEDI.IDCarrelage
+      	:relationcarrelageOK = Vrai
+      	:DetailCarrelage._numCarrelage = :IDCarrelageRelation
+      
+      FIN
+      //si :bexception alors :bexceptionRaison = "Exception de carrelage"
+     type : 458752
+   -
+     name : ParserFini
+     procedure_id : 1731267034604108057
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //ParserFini (<idclientencours>)
+      //
+      // Paramètres :
+      //	idclientencours : <indiquez ici le rôle de idclientencours>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE ParserFini(idclientencours)
+      
+      
+      SI HLitRecherche(RelationEDI,IdClientdescriptionEDIClient,[idclientencours,4,:fini],hIdentique) ALORS
+      	:FIniRelation = RelationEDI.fini	
+      	:relationfiniOK = Vrai
+      FIN
+      //:DoubleSeal = PositionOccurrence(chaineaparser[[pos+1 A ]],"DOUBLE SEAL",1,DepuisDébut)
+     type : 458752
+   -
+     name : CalculNbCarreau
+     procedure_id : 1736116108989028211
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CalculNbCarreau ( [<methode>])
+      //
+      // Paramètres :
+      // 	methode (valeur par défaut=1) : < indiquez ici le rôle de methode >
+      // Valeur de retour :
+      // 	entier : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculNbCarreau(methode = 1)
+      // méthode  1 = normal
+      //          2 = contour
+      //          3 = semi-contour 
+      
+      
+      LOCAL
+      	nbcarreau est un entier
+      	met1 est une chaine = config.formulecontour
+      	met2 est une chaine = config.formulesemicontour
+      	formule1 est une chaine 
+      	formule2 est une chaine = "y est un reel"+RC+"y="+met2+RC+"renvoyer(y)"
+      	res est une chaine
+      	
+      SI Client.cQteSpecialeContour ALORS
+      	SI SansEspace(typecarr.TcalculQteContour) <> "" ALORS
+      		nbl est un entier = commandeTRN.CDCARREAUV
+      		nbh est un entier = commandeTRN.CDCARREAUH
+      		formule1 = "y est un reel"+RC+"y="+typecarr.TcalculQteContour+RC+"renvoyer(y)"
+      		methode = 2
+      	FIN	
+      SINON
+      	methode = 1
+      FIN
+      
+      SELON methode
+      	CAS 1
+      		nbcarreau = commandeTRN.CDCARREAUV * commandeTRN.CDCARREAUH
+      	CAS 2
+      		res = Compile("formulec1",formule1)
+      		SI res = "" ALORS
+      			nbcarreau = ExécuteTraitement("formulec1",trtProcédure) 
+      		FIN
+      		
+      	
+      	CAS 3
+      		res = Compile("formulec2",formule2)
+      		SI res = "" ALORS
+      			nbcarreau = ExécuteTraitement("formulec2",trtProcédure) 
+      		FIN
+      		
+      		
+      FIN
+      RENVOYER nbcarreau
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : CalculSurface
+     procedure_id : 1736119167005864686
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CalculSurface ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	réel : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculSurface()
+      
+      
+      surface_entier_largeur est un reel
+      surface_fraction_largeur est un reel
+      surface_entier_hauteur est un reel
+      surface_fraction_hauteur est un reel
+      largeur_calcul est un reel
+      hauteur_calcul est un reel
+      
+      SELON :detailFacture._unitedemesure
+      	// Anglais
+      	CAS 1 
+      		
+      		surface_entier_largeur = PartieEntière(Val(:Largeur))
+      		surface_fraction_largeur = PartieDécimale(Val(:Largeur))
+      		surface_entier_hauteur = PartieEntière(Val(:hauteur))
+      		surface_fraction_hauteur = PartieDécimale(Val(:hauteur))
+      		
+      		SI modulo(surface_entier_largeur,2) = 0 ALORS
+      			SI PAS surface_fraction_largeur = 0  ALORS
+      				largeur_calcul = surface_entier_largeur + 2
+      			SINON
+      				largeur_calcul = surface_entier_largeur 
+      			FIN	
+      		SINON
+      			largeur_calcul = surface_entier_largeur + 1
+      		FIN	
+      		
+      		SI modulo(surface_entier_hauteur,2) = 0 ALORS
+      			SI PAS surface_fraction_hauteur = 0  ALORS
+      				hauteur_calcul = surface_entier_hauteur + 2
+      			SINON
+      				hauteur_calcul = surface_entier_hauteur 
+      			FIN	
+      		SINON
+      			hauteur_calcul = surface_entier_hauteur + 1
+      		FIN	
+      		
+      		
+      		RENVOYER hauteur_calcul * largeur_calcul / 144
+      		
+      		
+      		//Métrique
+      		
+      	CAS 2
+      		
+      		//largeur_calcul = val(commande.cdlargeur) * 1000
+      		largeur_calcul = Val(:Largeur) //* 1000
+      		SI PAS modulo(largeur_calcul,20) = 0 ALORS
+      			
+      			largeur_calcul = largeur_calcul + (20 - modulo(largeur_calcul,20))
+      			
+      		FIN
+      		
+      		largeur_calcul = largeur_calcul / 1000
+      		
+      		hauteur_calcul = Val(:hauteur) //* 1000
+      		SI PAS modulo(hauteur_calcul,20) = 0 ALORS
+      			
+      			hauteur_calcul = hauteur_calcul + (20 - modulo(hauteur_calcul,20))
+      			
+      		FIN
+      		
+      		hauteur_calcul = hauteur_calcul / 1000
+      		
+      		
+      		RENVOYER hauteur_calcul * largeur_calcul
+      		
+      		
+      FIN	
+      
+      
+      
+      
+     type : 458752
+   -
+     name : VerifieSurface
+     procedure_id : 1736119544963009683
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] VerifieSurface (<surfaceaverifier1>)
+      //
+      // Paramètres :
+      // 	surfaceaverifier1 : <indiquez ici le rôle de surfaceaverifier1>
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE VerifieSurface(surfaceaverifier1)
+      
+      
+      valeuraretourner EST UN BOOLEEN = VRAI
+      surfaceaverifier est un reel
+      decision est un entier 
+      lemessage est une chaine = " Le composant "
+      produitremplacement est une chaine
+      
+      
+      composantrempl1 est une chaine = :composant1
+      composantrempl2 est une chaine = :composant2
+      composantrempl3 est une chaine = :composant3
+      saveccap est un booleen = faux
+      savecgaz est un booleen = faux
+      cleaveccap est une chaine
+      cleavecgaz est une chaine
+      SI :detailFacture._unitedemesure = 2 ALORS
+      	surfaceaverifier = surfaceaverifier1 * tauxconversionam
+      	
+      SINON
+      	surfaceaverifier = surfaceaverifier1
+      FIN
+      
+      SI SansEspace(:composant1) <> "" ALORS 
+      	HLitRecherche(Invent,INUM,SansEspace(:composant1))
+      	SI Invent.isurfmax <> 0.00 ALORS
+      		TANTQUE  surfaceaverifier > Invent.isurfmax ET Invent.isurfmax <> 0.00
+      			composantrempl1 = SansEspace(Invent.ipsuivant)
+      			valeuraretourner = Faux
+      			SI composantrempl1 = "" ALORS
+      				SORTIR
+      			FIN
+      			HLitRecherche(Invent,INUM,SansEspace(Invent.ipsuivant))
+      			
+      		FIN  
+      	FIN
+      FIN
+      
+      SI SansEspace(:composant2) <> "" ALORS 
+      	
+      	HLitRecherche(Invent,INUM,SansEspace(:composant2))
+      	
+      	SI Invent.isurfmax <> 0.00 ALORS
+      		TANTQUE  surfaceaverifier > Invent.isurfmax ET Invent.isurfmax <> 0.00
+      			composantrempl2 = SansEspace(Invent.ipsuivant)
+      			valeuraretourner = Faux
+      			SI composantrempl2 = "" ALORS
+      				SORTIR
+      			FIN
+      			
+      			HLitRecherche(Invent,INUM,SansEspace(Invent.ipsuivant))
+      			
+      		FIN  
+      	FIN	
+      FIN
+      SI SansEspace(:composant3) <> "" ALORS 
+      	
+      	HLitRecherche(Invent,INUM,SansEspace(:composant3))
+      	
+      	SI Invent.isurfmax <> 0.00 ALORS
+      		TANTQUE  surfaceaverifier > Invent.isurfmax ET Invent.isurfmax <> 0.00
+      			composantrempl3 = SansEspace(Invent.ipsuivant)
+      			valeuraretourner = Faux
+      			SI composantrempl3 = "" ALORS
+      				SORTIR
+      			FIN
+      			HLitRecherche(Invent,INUM,SansEspace(Invent.ipsuivant))
+      			
+      		FIN  
+      	FIN
+      FIN
+      HLitRecherche(Persoens,ennumero,:detailFacture._Numthermos)
+      //Code WinDev 5.5 remplacé par la migration :
+      //si pas h.endehors et h.trouve alors
+      SI PAS HEnDehors() ET HTrouve() ALORS
+      	saveccap = Persoens.encap
+      	savecgaz = Persoens.engaz
+      FIN
+      HConvertC(cleaveccap,saveccap)
+      HConvertC(cleavecgaz,savecgaz)
+      
+      HLitRecherche(Persoens,clecomposantcapgaz,Complète(composantrempl1,10)+Complète(composantrempl2,10)+Complète(composantrempl3,10)+cleaveccap+cleavecgaz)
+      //Code WinDev 5.5 remplacé par la migration :
+      //SI PAS H.ENDEHORS ET H.TROUVE ALORS
+      SI PAS HEnDehors() ET HTrouve() ALORS
+      	produitremplacement = SansEspace(Persoens.ennumero)
+      	
+      FIN
+      
+      RENVOYER valeuraretourner
+      
+      
+      
+      
+      
+     type : 458752
+   -
+     name : ParserForme
+     procedure_id : 1777155259769385562
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ParserForme (<IdClientEnCours>)
+      //
+      // Paramètres :
+      // 	IdClientEnCours : <indiquez ici le rôle de IdClientEnCours>
+      // Valeur de retour :
+      // 	booléen : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE ParserForme(IdClientEnCours)
+      
+      SI SansEspace(:DescriptionForme) = "" ALORS RENVOYER Vrai
+      
+      :DetailForme._Dimension1 = :FormeDimension1
+      :DetailForme._Dimension2 = :FormeDimension2
+      :DetailForme._Dimension3 = :FormeDimension3
+      :DetailForme._Dimension4 = :FormeDimension4
+      :DetailForme._Dimension5 = :FormeDimension5
+      
+      
+      SI  HLitRecherche(RelationEDI,IdClientdescriptionEDIClient,[IdClientEnCours,6,:DescriptionForme],hIdentique) ALORS
+      	:IDformeRelation = RelationEDI.IDforme
+      	:relationformeOK = Vrai
+      	:Detailforme._NumeroForme = :IDformeRelation
+      	
+      FIN
+     type : 458752
+   -
+     name : CalculSurfaceReelle
+     procedure_id : 1777686993898734871
+     type_code : 12
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] CalculSurfaceReelle ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	réel : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CalculSurfaceReelle()
+      
+      
+      surface_entier_largeur est un reel
+      surface_fraction_largeur est un reel
+      surface_entier_hauteur est un reel
+      surface_fraction_hauteur est un reel
+      largeur_calcul est un reel
+      hauteur_calcul est un reel
+      
+      SELON :detailFacture._unitedemesure
+      	// Anglais
+      	CAS 1 
+      		
+      		surface_entier_largeur = PartieEntière(Val(:Largeur))
+      		surface_fraction_largeur = PartieDécimale(Val(:Largeur))
+      		surface_entier_hauteur = PartieEntière(Val(:hauteur))
+      		surface_fraction_hauteur = PartieDécimale(Val(:hauteur))
+      		
+      
+      		
+      		
+      		RENVOYER hauteur_calcul * largeur_calcul / 144
+      		
+      		
+      		//Métrique
+      		
+      	CAS 2
+      		
+      		//largeur_calcul = val(commande.cdlargeur) * 1000
+      		largeur_calcul = Val(:Largeur) //* 1000
+      
+      		
+      		largeur_calcul = largeur_calcul / 1000
+      		
+      		hauteur_calcul = Val(:hauteur) //* 1000
+      
+      		
+      		hauteur_calcul = hauteur_calcul / 1000
+      		
+      		
+      		RENVOYER hauteur_calcul * largeur_calcul
+      		
+      		
+      FIN	
+      
+      
+      
+      
+     type : 458752
+  properties :
+   -
+     name : NumeroCommande
+     identifier : 0x1806b23200e5f919
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         PROCEDURE NumeroCommande()
+         renvoyer sansespace(:Nojob)+:code
+        type : 1966080
+      -
+        code : |1+
+         PROCEDURE NumeroCommande(Valeur)
+         
+        type : 2031616
+     template_refs : []
+   -
+     name : DescriptionLongue
+     identifier : 0x1806b23200e6f919
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         PROCEDURE DescriptionLongue()
+         concat est une chaine
+         concat = :thermos  +" "+ :spacer+ " "+ :fini  + " " + (sansespace(:DescCarrelage) <> "" ? :DescCarrelage + " "+:NbCarreaul + " X " + :NbCarreauh sinon "")
+         renvoyer concat
+        type : 1966080
+      -
+        code : |1+
+         PROCEDURE DescriptionLongue(Valeur)
+         
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CQAAAAkAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x1806b23200fef987
+  internal_properties : CQAAAAkAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CQAAAAkAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
